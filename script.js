@@ -310,3 +310,4 @@ function updateActiveFilter() {
     button.setAttribute("aria-pressed", String(isActive));
   });
 }
+
