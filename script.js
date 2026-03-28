@@ -1,85 +1,92 @@
-const learningPlan = [
+﻿const learningPlan = [
   {
     day: 1,
-    videoTime: "00:00 - 00:30",
-    focus: "جمل المصدر Infinitiv + zu",
-    task: "اكتب 5 جمل عما تخطط أو تنسى فعله في عملك كمطور باستخدام zu.",
+    videoTime: "00:00 - 00:26",
+    module: "الجمل المصدرية (Infinitiv + zu)",
+    task: "حل تمارين الترتيب التي تظهر في الدقيقة 20:54.",
+    duration: "~26 د",
   },
   {
     day: 2,
-    videoTime: "00:30 - 01:00",
-    focus: "الـ Modalverben بدون zu",
-    task: "قم بتحويل 5 جمل من يومك الأول إلى صيغة الاستطاعة أو الوجوب بدون zu.",
+    videoTime: "00:26 - 01:03",
+    module: "متى لا نستخدم zu + الأفعال المساعدة",
+    task: "كتابة 5 جمل عن ما يجب وما يمكن فعله في مشروعك البرمجي.",
+    duration: "~37 د",
   },
   {
     day: 3,
-    videoTime: "01:00 - 01:30",
-    focus: "الروابط dass, weil, wenn",
-    task: "كون جملتين لكل رابط تصف فيهما: لماذا تتعلم الألمانية؟ ومتى تنهي عملك؟",
+    videoTime: "01:03 - 01:41",
+    module: "الروابط الأساسية (dass, weil, wenn)",
+    task: "تأليف جملتين لكل رابط تشرح فيها سبب تعلمك للألمانية.",
+    duration: "~38 د",
   },
   {
     day: 4,
-    videoTime: "01:30 - 02:00",
-    focus: "حالات الـ Dativ & Akkusativ",
-    task: "اختر 5 أفعال من الفيديو وضعها في جمل مع تحديد المفعول به الصحيح (جر أو نصب).",
+    videoTime: "01:41 - 02:18",
+    module: "مراجعة الـ Dativ & Akkusativ بالكامل",
+    task: "ممارسة الـ Shadowing مع جمل ميرا لضبط النهايات الإعرابية.",
+    duration: "~37 د",
   },
   {
     day: 5,
-    videoTime: "02:00 - 02:30",
-    focus: "أفعال الحركة والسكون",
-    task: "صف مكان أشياء مكتبك (الحاسوب، الكرسي، المكتب) باستخدام حروف الجر المتغيرة.",
+    videoTime: "02:18 - 02:45",
+    module: "أفعال الحركة والسكون (Wechselpräp)",
+    task: "وصف مكتبك ومكان الحاسوب والشاشة باستخدام حروف الجر.",
+    duration: "~27 د",
   },
   {
     day: 6,
-    videoTime: "02:30 - 03:00",
-    focus: "الماضي البسيط Präteritum",
-    task: "اكتب فقرة من 5 جمل تحكي فيها ماذا فعلت في مشروعك البرمجي السابق.",
+    videoTime: "02:45 - 03:22",
+    module: "زمن الماضي (Präteritum & Perfekt)",
+    task: "كتابة فقرة قصيرة تحكي فيها ماذا برمجت بالأمس.",
+    duration: "~37 د",
   },
   {
     day: 7,
-    videoTime: "03:00 - 03:30",
-    focus: "الماضي التام Perfekt",
-    task: "مارس الـ Shadowing مع جمل الماضي التي تذكرها ميرا لضبط تصريف الفعل المساعد.",
+    videoTime: "03:22 - 03:52",
+    module: "جمل الوصل (Relativsätze)",
+    task: "وصف لغة برمجة أو تطبيق تحبه باستخدام جملة وصل.",
+    duration: "~30 د",
   },
   {
     day: 8,
-    videoTime: "03:30 - 04:00",
-    focus: "جمل الوصل Relativsätze",
-    task: "حاول وصف زميلك في العمل أو لغة برمجة تحبها باستخدام جملة وصل (die, der, das).",
+    videoTime: "03:52 - 04:33",
+    module: "المبني للمجهول (Passiv)",
+    task: "تحويل جمل تنفيذ المهام في العمل إلى صيغة المبني للمجهول.",
+    duration: "~41 د",
   },
   {
     day: 9,
-    videoTime: "04:00 - 04:30",
-    focus: "المبني للمجهول Passiv",
-    task: "حول جمل معلومة (مثل: أنا أكتب الكود) إلى مبني للمجهول (الكود يُكتب) كما في الشرح.",
+    videoTime: "04:33 - 05:05",
+    module: "التمني والنصيحة (Konjunktiv II)",
+    task: "كتابة 3 جمل تبدأ بـ لو كان لدي وقت لـ.. (كود/سفر/دراسة).",
+    duration: "~32 د",
   },
   {
     day: 10,
-    videoTime: "04:30 - 05:00",
-    focus: "التمني والنصيحة Konjunktiv II",
-    task: "اكتب 3 جمل تبدأ بـ لو كنت مكانك.. أو أتمنى لو.. تخص تعلم اللغة أو العمل.",
+    videoTime: "05:05 - 05:40",
+    module: "مقارنة وتصريف الصفات",
+    task: "قارن بين لغتين (مثلاً JS vs Python) من حيث الصعوبة والسرعة.",
+    duration: "~35 د",
   },
   {
     day: 11,
-    videoTime: "05:00 - 05:30",
-    focus: "مقارنة وتصريف الصفات",
-    task: "قارن بين لغتي برمجة أو تطبيقين من حيث السهولة والسرعة مستخدماً صيغة المقارنة.",
+    videoTime: "05:40 - 06:12",
+    module: "حروف الجر الزمانية والمكانية",
+    task: "وضع جدول زمني ليومك باستخدام (vor, nach, seit, um).",
+    duration: "~32 د",
   },
   {
     day: 12,
-    videoTime: "05:30 - 06:00",
-    focus: "حروف الجر الزمانية والمكانية",
-    task: "ارسم جدولاً زمنياً ليومك مستخدماً حروف الجر الزمانية (um, vor, nach, seit).",
-  },
-  {
-    day: 13,
-    videoTime: "06:00 - النهاية",
-    focus: "الروابط obwohl, trotzdem",
-    task: "تحدَّ نفسك بكتابة جملة واحدة طويلة تجمع فيها بين رغم من و النتيجة لملخص الكورس.",
+    videoTime: "06:12 - النهاية",
+    module: "الروابط المتقدمة (obwohl, trotzdem)",
+    task: "كتابة ملخص نهائي للكورس باستخدام روابط التناقض والنتيجة.",
+    duration: "~23 د",
   },
 ];
 
 const storageKey = "daily-german-learning-progress";
+const validDays = new Set(learningPlan.map((item) => item.day));
 const state = {
   filter: "all",
   search: "",
@@ -106,6 +113,7 @@ init();
 
 function init() {
   updateOverview();
+  updateActiveFilter();
   bindEvents();
   render();
 }
@@ -113,7 +121,11 @@ function init() {
 function loadCompletedState() {
   try {
     const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
-    return new Set(Array.isArray(saved) ? saved : []);
+    const normalizedDays = Array.isArray(saved)
+      ? saved.filter((day) => validDays.has(Number(day))).map(Number)
+      : [];
+
+    return new Set(normalizedDays);
   } catch {
     return new Set();
   }
@@ -144,7 +156,7 @@ function bindEvents() {
     }
 
     const day = Number(target.dataset.day);
-    if (!day) {
+    if (!validDays.has(day)) {
       return;
     }
 
@@ -162,22 +174,29 @@ function bindEvents() {
 function updateOverview() {
   const totalDays = learningPlan.length;
   const totalMinutes = calculateTotalMinutes(learningPlan);
-  const uniqueTopics = new Set(learningPlan.map((item) => item.focus)).size;
+  const uniqueModules = new Set(learningPlan.map((item) => item.module)).size;
 
   elements.totalDays.textContent = String(totalDays);
   elements.totalDuration.textContent = formatMinutes(totalMinutes);
-  elements.mainTopics.textContent = `${uniqueTopics} محوراً`;
+  elements.mainTopics.textContent = `${uniqueModules} محوراً`;
 }
 
 function calculateTotalMinutes(items) {
-  return items.reduce((total, item) => {
-    const [start, end] = item.videoTime.split(" - ");
-    if (!start || !end || end === "النهاية") {
-      return total;
-    }
+  return items.reduce((total, item) => total + getItemDurationMinutes(item), 0);
+}
 
-    return total + Math.max(0, toMinutes(end) - toMinutes(start));
-  }, 0);
+function getItemDurationMinutes(item) {
+  const durationMatch = item.duration?.match(/(\d+)/);
+  if (durationMatch) {
+    return Number(durationMatch[1]);
+  }
+
+  const [start, end] = item.videoTime.split(" - ");
+  if (!start || !end || end === "النهاية") {
+    return 0;
+  }
+
+  return Math.max(0, toMinutes(end) - toMinutes(start));
 }
 
 function toMinutes(time) {
@@ -219,7 +238,8 @@ function render() {
 
 function getVisibleTasks() {
   return learningPlan.filter((item) => {
-    const matchesSearch = `${item.focus} ${item.task}`.toLowerCase().includes(state.search);
+    const haystack = `${item.module} ${item.task} ${item.videoTime} ${item.duration}`.toLowerCase();
+    const matchesSearch = haystack.includes(state.search);
     const isCompleted = state.completed.has(item.day);
 
     if (state.filter === "completed") {
@@ -253,17 +273,22 @@ function createTaskCardMarkup(item) {
       </div>
 
       <div class="task-block">
-        <h3 class="task-title">${item.focus}</h3>
+        <h3 class="task-title">${item.module}</h3>
       </div>
 
       <div class="task-block">
-        <span class="task-label">التركيز الأساسي</span>
-        <p class="task-text">${item.focus}</p>
+        <span class="task-label">الموضوع المتكامل</span>
+        <p class="task-text">${item.module}</p>
       </div>
 
       <div class="task-block">
         <span class="task-label">المهمة التطبيقية</span>
         <p class="task-text">${item.task}</p>
+      </div>
+
+      <div class="task-block">
+        <span class="task-label">المدة التقريبية</span>
+        <p class="task-text">${item.duration}</p>
       </div>
 
       <div class="task-footer">
