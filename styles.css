@@ -597,6 +597,7 @@ button {
   .controls-card,
   .motivation-card {
     border-radius: 20px;
+    padding: 20px;
   }
 
   .topbar,
@@ -613,7 +614,7 @@ button {
 
   .hero-copy h1 {
     max-width: none;
-    font-size: 2.35rem;
+    font-size: 2.2rem;
   }
 
   .hero-panel__card,
@@ -636,6 +637,23 @@ button {
   .split-heading {
     align-items: start;
     flex-direction: column;
+  }
+
+  .task-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-text {
+    font-size: 1rem;
   }
 }
 
