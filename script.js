@@ -1,24 +1,32 @@
 const DATA_URL = "./src/data/b1Lessons.json";
+const STATUS_OPTIONS = [
+  { value: "all", label: "الكل" },
+  { value: "completed", label: "المنجز" },
+  { value: "pending", label: "غير المنجز" },
+];
 
 const state = {
   plan: null,
   lessons: [],
   search: "",
   statusFilter: "all",
-  focusFilter: "all",
+  focusFilters: new Set(),
+  openDropdown: null,
 };
 
 const elements = {
   playlistButton: document.querySelector("#playlistButton"),
-  playlistTitle: document.querySelector("#playlistTitle"),
   heroTitle: document.querySelector("#heroTitle"),
   heroDescription: document.querySelector("#heroDescription"),
-  summaryPlaylistTitle: document.querySelector("#summaryPlaylistTitle"),
   tasksContainer: document.querySelector("#tasksContainer"),
   emptyState: document.querySelector("#emptyState"),
   searchInput: document.querySelector("#searchInput"),
-  statusFilters: document.querySelector("#statusFilters"),
-  focusFilters: document.querySelector("#focusFilters"),
+  statusDropdownTrigger: document.querySelector("#statusDropdownTrigger"),
+  statusDropdownText: document.querySelector("#statusDropdownText"),
+  statusDropdownMenu: document.querySelector("#statusDropdownMenu"),
+  focusDropdownTrigger: document.querySelector("#focusDropdownTrigger"),
+  focusDropdownText: document.querySelector("#focusDropdownText"),
+  focusDropdownMenu: document.querySelector("#focusDropdownMenu"),
   progressFill: document.querySelector("#progressFill"),
   heroProgressText: document.querySelector("#heroProgressText"),
   heroProgressPercent: document.querySelector("#heroProgressPercent"),
@@ -49,7 +57,7 @@ async function bootstrap() {
     state.lessons = Array.isArray(plan.lessons) ? plan.lessons : [];
 
     hydrateStaticContent();
-    renderFocusFilters();
+    renderDropdowns();
     render();
   } catch (error) {
     renderErrorState(error);
@@ -62,25 +70,44 @@ function bindEvents() {
     render();
   });
 
-  elements.statusFilters?.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-filter-group='status']");
-    if (!(button instanceof HTMLButtonElement)) {
+  elements.statusDropdownTrigger?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    toggleDropdown("status");
+  });
+
+  elements.focusDropdownTrigger?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    toggleDropdown("focus");
+  });
+
+  elements.statusDropdownMenu?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const option = event.target.closest("[data-option-value]");
+    if (!(option instanceof HTMLElement)) {
       return;
     }
 
-    state.statusFilter = button.dataset.filterValue || "all";
-    updateFilterButtons(elements.statusFilters, state.statusFilter);
+    state.statusFilter = option.dataset.optionValue || "all";
+    closeDropdown("status");
+    renderDropdowns();
     render();
   });
 
-  elements.focusFilters?.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-filter-group='focus']");
-    if (!(button instanceof HTMLButtonElement)) {
+  elements.focusDropdownMenu?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const doneButton = event.target.closest("[data-dropdown-done='focus']");
+    if (doneButton instanceof HTMLElement) {
+      closeDropdown("focus");
       return;
     }
 
-    state.focusFilter = button.dataset.filterValue || "all";
-    updateFilterButtons(elements.focusFilters, state.focusFilter);
+    const option = event.target.closest("[data-option-value]");
+    if (!(option instanceof HTMLElement)) {
+      return;
+    }
+
+    toggleFocusFilter(option.dataset.optionValue || "all");
+    renderDropdowns();
     render();
   });
 
@@ -106,6 +133,23 @@ function bindEvents() {
 
     render();
   });
+
+  document.addEventListener("pointerdown", (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) {
+      return;
+    }
+
+    if (!target.closest(".custom-dropdown")) {
+      closeAllDropdowns();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeAllDropdowns();
+    }
+  });
 }
 
 function hydrateStaticContent() {
@@ -113,29 +157,155 @@ function hydrateStaticContent() {
 
   document.title = `${playlistTitle} | لوحة B1`;
   elements.playlistButton.href = playlistUrl;
-  elements.playlistTitle.textContent = playlistTitle;
-  elements.summaryPlaylistTitle.textContent = playlistTitle;
   elements.heroTitle.textContent = `رحلة ${totalLessons} درسًا نحو B1 بثبات ووضوح`;
   elements.heroDescription.textContent =
-    "كل شيء في الصفحة الآن يُشتق من ملف JSON واحد: التقدم، الملخص، الفلاتر، والبطاقات نفسها.";
+    "كل درس تقطعه اليوم يقرّبك خطوة من الحديث بثقة. التزم بالخطة، أنجز المهام، ودع التقدّم اليومي يصنع الفرق.";
   elements.lessonsDescription.textContent =
     "كل بطاقة تعرض ما ستتعلمه، الهدف الحواري، ومهام اليوم مع حفظ مستقل لكل مهمة في المتصفح.";
-  updateFilterButtons(elements.statusFilters, state.statusFilter);
 }
 
-function renderFocusFilters() {
+function renderDropdowns() {
+  renderStatusDropdown();
+  renderFocusDropdown();
+}
+
+function renderStatusDropdown() {
+  if (!elements.statusDropdownMenu || !elements.statusDropdownText) {
+    return;
+  }
+
+  elements.statusDropdownMenu.innerHTML = STATUS_OPTIONS.map((option) =>
+    createDropdownOptionMarkup({
+      value: option.value,
+      label: option.label,
+      selected: state.statusFilter === option.value,
+      multi: false,
+    })
+  ).join("");
+
+  const activeStatus = STATUS_OPTIONS.find((option) => option.value === state.statusFilter);
+  elements.statusDropdownText.textContent = activeStatus?.label || "الكل";
+}
+
+function renderFocusDropdown() {
+  if (!elements.focusDropdownMenu || !elements.focusDropdownText) {
+    return;
+  }
+
   const focuses = getUniqueFocuses(state.lessons);
-  elements.focusFilters.innerHTML = [
-    `<button class="filter-button is-active" type="button" data-filter-group="focus" data-filter-value="all">الكل</button>`,
-    ...focuses.map(
-      (focus) =>
-        `<button class="filter-button" type="button" data-filter-group="focus" data-filter-value="${escapeAttribute(
-          focus
-        )}">${escapeHtml(focus)}</button>`
+  const noSelection = state.focusFilters.size === 0;
+
+  elements.focusDropdownMenu.innerHTML = [
+    createDropdownOptionMarkup({
+      value: "all",
+      label: "الكل",
+      selected: noSelection,
+      multi: true,
+    }),
+    ...focuses.map((focus) =>
+      createDropdownOptionMarkup({
+        value: focus,
+        label: focus,
+        selected: state.focusFilters.has(focus),
+        multi: true,
+      })
     ),
+    `<button class="dropdown-done" type="button" data-dropdown-done="focus">تم</button>`,
   ].join("");
 
-  updateFilterButtons(elements.focusFilters, state.focusFilter);
+  elements.focusDropdownText.textContent = getFocusTriggerLabel();
+}
+
+function createDropdownOptionMarkup({ value, label, selected, multi }) {
+  return `
+    <button
+      class="dropdown-option${selected ? " is-selected" : ""}"
+      type="button"
+      role="option"
+      aria-selected="${selected}"
+      data-option-value="${escapeAttribute(value)}"
+    >
+      <span class="dropdown-option__label">${escapeHtml(label)}</span>
+      <span class="dropdown-option__mark${multi ? " is-multi" : ""}" aria-hidden="true"></span>
+    </button>
+  `;
+}
+
+function toggleDropdown(name) {
+  if (state.openDropdown === name) {
+    closeDropdown(name);
+    return;
+  }
+
+  openDropdown(name);
+}
+
+function openDropdown(name) {
+  closeAllDropdowns();
+  const parts = getDropdownParts(name);
+  if (!parts) {
+    return;
+  }
+
+  parts.trigger.setAttribute("aria-expanded", "true");
+  parts.trigger.closest(".custom-dropdown")?.classList.add("is-open");
+  state.openDropdown = name;
+}
+
+function closeDropdown(name) {
+  const parts = getDropdownParts(name);
+  if (!parts) {
+    return;
+  }
+
+  parts.trigger.setAttribute("aria-expanded", "false");
+  parts.trigger.closest(".custom-dropdown")?.classList.remove("is-open");
+  if (state.openDropdown === name) {
+    state.openDropdown = null;
+  }
+}
+
+function closeAllDropdowns() {
+  closeDropdown("status");
+  closeDropdown("focus");
+}
+
+function getDropdownParts(name) {
+  if (name === "status" && elements.statusDropdownTrigger && elements.statusDropdownMenu) {
+    return { trigger: elements.statusDropdownTrigger, menu: elements.statusDropdownMenu };
+  }
+
+  if (name === "focus" && elements.focusDropdownTrigger && elements.focusDropdownMenu) {
+    return { trigger: elements.focusDropdownTrigger, menu: elements.focusDropdownMenu };
+  }
+
+  return null;
+}
+
+function toggleFocusFilter(value) {
+  if (value === "all") {
+    state.focusFilters.clear();
+    return;
+  }
+
+  if (state.focusFilters.has(value)) {
+    state.focusFilters.delete(value);
+  } else {
+    state.focusFilters.add(value);
+  }
+}
+
+function getFocusTriggerLabel() {
+  const selected = [...state.focusFilters];
+  if (selected.length === 0) {
+    return "الكل";
+  }
+
+  if (selected.length === 1) {
+    return selected[0];
+  }
+
+  return `${selected.length} محاور محددة`;
 }
 
 function render() {
@@ -174,7 +344,7 @@ function getFilteredLessons() {
       state.statusFilter === "all" ||
       (state.statusFilter === "completed" && completed) ||
       (state.statusFilter === "pending" && !completed);
-    const matchesFocus = state.focusFilter === "all" || lesson.focus === state.focusFilter;
+    const matchesFocus = state.focusFilters.size === 0 || state.focusFilters.has(lesson.focus);
     const matchesSearch = createSearchableText(lesson).includes(state.search);
 
     return matchesStatus && matchesFocus && matchesSearch;
@@ -215,7 +385,7 @@ function getTaskStorageKey(lessonId, taskIndex) {
 }
 
 function buildResultsSummary(visibleCount, totalCount) {
-  if (!state.search && state.statusFilter === "all" && state.focusFilter === "all") {
+  if (!state.search && state.statusFilter === "all" && state.focusFilters.size === 0) {
     return `كل الدروس متاحة الآن: ${visibleCount} من ${totalCount}`;
   }
 
@@ -254,9 +424,7 @@ function createLessonCardMarkup(lesson) {
       <div class="task-block">
         <span class="task-label">مهام اليوم</span>
         <div class="lesson-tasks">
-          ${tasks
-            .map((task, taskIndex) => createTaskItemMarkup(lesson.id, taskIndex, task))
-            .join("")}
+          ${tasks.map((task, taskIndex) => createTaskItemMarkup(lesson.id, taskIndex, task)).join("")}
         </div>
       </div>
 
@@ -285,18 +453,8 @@ function createTaskItemMarkup(lessonId, taskIndex, task) {
   `;
 }
 
-function updateFilterButtons(container, activeValue) {
-  container?.querySelectorAll(".filter-button").forEach((button) => {
-    const isActive = button.dataset.filterValue === activeValue;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
-}
-
 function renderErrorState(error) {
   console.error("Failed to load B1 lesson data:", error);
-  elements.playlistTitle.textContent = "تعذّر تحميل الخطة";
-  elements.summaryPlaylistTitle.textContent = "تعذّر تحميل الخطة";
   elements.tasksContainer.innerHTML = "";
   elements.emptyState.hidden = false;
   elements.emptyState.textContent = "تعذّر تحميل ملف الخطة. تأكد من وجود src/data/b1Lessons.json ثم أعد المحاولة.";

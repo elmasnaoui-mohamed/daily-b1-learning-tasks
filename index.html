@@ -16,17 +16,12 @@
 <body>
   <div class="page-shell">
     <header class="hero" id="top">
-      <nav class="topbar" aria-label="التنقل الرئيسي">
-        <a class="nav-link" href="#lessons">الدروس</a>
-        <a class="brand" href="#top">B1 Deutsch Dashboard</a>
-      </nav>
-
       <section class="hero-content">
-        <div class="hero-copy">
+        <div class="hero-copy hero-card">
           <p class="eyebrow">خطة B1 منظمة وواقعية</p>
           <h1 id="heroTitle">رحلة 24 درسًا نحو B1 بثبات ووضوح</h1>
           <p class="hero-text" id="heroDescription">
-            حمّل الخطة، راقب تقدمك، واشتغل على كل درس بمهماته العملية من نفس المكان.
+            كل درس تقطعه اليوم يقرّبك خطوة من الحديث بثقة. التزم بالخطة، أنجز المهام، ودع التقدّم اليومي يصنع الفرق.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#lessons">ابدأ من الدروس</a>
@@ -36,16 +31,6 @@
             <a class="button button-secondary" href="#summary">اكتشف الملخص</a>
           </div>
         </div>
-
-        <aside class="hero-glance" aria-label="لمحة سريعة">
-          <div class="hero-panel__card">
-            <p class="panel-label">اسم الخطة</p>
-            <strong class="hero-panel__title" id="playlistTitle">جارٍ تحميل الخطة...</strong>
-            <p class="panel-note" id="heroPlaylistNote">
-              سيتم تحديث الصفحة تلقائيًا من ملف البيانات المعتمد.
-            </p>
-          </div>
-        </aside>
       </section>
     </header>
 
@@ -103,11 +88,6 @@
             <p class="stat-caption">كل درس متبقٍ هو فرصة تقدم جديدة.</p>
           </article>
 
-          <article class="stat-card accent-card stat-card--wide">
-            <p class="stat-label">اسم الخطة</p>
-            <strong class="stat-value" id="summaryPlaylistTitle">جارٍ التحميل...</strong>
-            <p class="stat-caption">مصدر واحد للحقيقة يمكن تحديثه بإضافة أو تعديل الدروس فقط.</p>
-          </article>
         </div>
       </section>
 
@@ -130,25 +110,24 @@
                 autocomplete="off" />
             </label>
 
-            <div class="filters-block">
-              <p class="filters-label">الحالة</p>
-              <div class="filters" id="statusFilters" role="tablist" aria-label="تصفية الدروس حسب الحالة">
-                <button class="filter-button is-active" type="button" data-filter-group="status"
-                  data-filter-value="all">
-                  الكل
-                </button>
-                <button class="filter-button" type="button" data-filter-group="status" data-filter-value="completed">
-                  المنجز
-                </button>
-                <button class="filter-button" type="button" data-filter-group="status" data-filter-value="pending">
-                  غير المنجز
-                </button>
-              </div>
+            <div class="filter-field dropdown-field custom-dropdown" data-dropdown="status">
+              <span class="filters-label">الحالة</span>
+              <button class="dropdown-trigger" id="statusDropdownTrigger" type="button" aria-haspopup="listbox"
+                aria-expanded="false" aria-controls="statusDropdownMenu">
+                <span class="dropdown-trigger__text" id="statusDropdownText">الكل</span>
+                <span class="dropdown-trigger__icon" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-menu" id="statusDropdownMenu" role="listbox" aria-label="تصفية الدروس حسب الحالة"></div>
             </div>
 
-            <div class="filters-block">
-              <p class="filters-label">المحور</p>
-              <div class="filters" id="focusFilters" aria-label="تصفية الدروس حسب المحور"></div>
+            <div class="filter-field dropdown-field custom-dropdown" data-dropdown="focus">
+              <span class="filters-label">المحور</span>
+              <button class="dropdown-trigger" id="focusDropdownTrigger" type="button" aria-haspopup="listbox"
+                aria-expanded="false" aria-controls="focusDropdownMenu">
+                <span class="dropdown-trigger__text" id="focusDropdownText">الكل</span>
+                <span class="dropdown-trigger__icon" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown-menu" id="focusDropdownMenu" role="listbox" aria-label="تصفية الدروس حسب المحور"></div>
             </div>
           </div>
 
