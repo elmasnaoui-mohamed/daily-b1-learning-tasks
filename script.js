@@ -8,9 +8,16 @@ const STATUS_OPTIONS = [
 const state = {
   plan: null,
   lessons: [],
-  search: "",
-  statusFilter: "all",
-  focusFilters: new Set(),
+  pending: {
+    search: "",
+    statusFilter: "all",
+    focusFilters: new Set(),
+  },
+  applied: {
+    search: "",
+    statusFilter: "all",
+    focusFilters: new Set(),
+  },
   openDropdown: null,
 };
 
@@ -39,6 +46,8 @@ const elements = {
   completedLessons: document.querySelector("#completedLessons"),
   remainingLessons: document.querySelector("#remainingLessons"),
   lessonsDescription: document.querySelector("#lessonsDescription"),
+  applyFiltersButton: document.querySelector("#applyFiltersButton"),
+  clearFiltersButton: document.querySelector("#clearFiltersButton"),
 };
 
 bootstrap();
@@ -66,8 +75,7 @@ async function bootstrap() {
 
 function bindEvents() {
   elements.searchInput?.addEventListener("input", (event) => {
-    state.search = event.target.value.trim().toLowerCase();
-    render();
+    state.pending.search = event.target.value.trim().toLowerCase();
   });
 
   elements.statusDropdownTrigger?.addEventListener("click", (event) => {
@@ -87,20 +95,13 @@ function bindEvents() {
       return;
     }
 
-    state.statusFilter = option.dataset.optionValue || "all";
+    state.pending.statusFilter = option.dataset.optionValue || "all";
     closeDropdown("status");
     renderDropdowns();
-    render();
   });
 
   elements.focusDropdownMenu?.addEventListener("click", (event) => {
     event.stopPropagation();
-    const doneButton = event.target.closest("[data-dropdown-done='focus']");
-    if (doneButton instanceof HTMLElement) {
-      closeDropdown("focus");
-      return;
-    }
-
     const option = event.target.closest("[data-option-value]");
     if (!(option instanceof HTMLElement)) {
       return;
@@ -108,7 +109,14 @@ function bindEvents() {
 
     toggleFocusFilter(option.dataset.optionValue || "all");
     renderDropdowns();
-    render();
+  });
+
+  elements.applyFiltersButton?.addEventListener("click", () => {
+    applyFilters();
+  });
+
+  elements.clearFiltersButton?.addEventListener("click", () => {
+    clearFilters();
   });
 
   elements.tasksContainer?.addEventListener("change", (event) => {
@@ -152,6 +160,31 @@ function bindEvents() {
   });
 }
 
+function applyFilters() {
+  state.applied.search = state.pending.search;
+  state.applied.statusFilter = state.pending.statusFilter;
+  state.applied.focusFilters = new Set(state.pending.focusFilters);
+  closeAllDropdowns();
+  render();
+}
+
+function clearFilters() {
+  state.pending.search = "";
+  state.pending.statusFilter = "all";
+  state.pending.focusFilters.clear();
+  state.applied.search = "";
+  state.applied.statusFilter = "all";
+  state.applied.focusFilters.clear();
+
+  if (elements.searchInput) {
+    elements.searchInput.value = "";
+  }
+
+  closeAllDropdowns();
+  renderDropdowns();
+  render();
+}
+
 function hydrateStaticContent() {
   const { playlist_title: playlistTitle, playlist_url: playlistUrl, total_lessons: totalLessons } = state.plan;
 
@@ -178,12 +211,12 @@ function renderStatusDropdown() {
     createDropdownOptionMarkup({
       value: option.value,
       label: option.label,
-      selected: state.statusFilter === option.value,
+      selected: state.pending.statusFilter === option.value,
       multi: false,
     })
   ).join("");
 
-  const activeStatus = STATUS_OPTIONS.find((option) => option.value === state.statusFilter);
+  const activeStatus = STATUS_OPTIONS.find((option) => option.value === state.pending.statusFilter);
   elements.statusDropdownText.textContent = activeStatus?.label || "الكل";
 }
 
@@ -193,7 +226,7 @@ function renderFocusDropdown() {
   }
 
   const focuses = getUniqueFocuses(state.lessons);
-  const noSelection = state.focusFilters.size === 0;
+  const noSelection = state.pending.focusFilters.size === 0;
 
   elements.focusDropdownMenu.innerHTML = [
     createDropdownOptionMarkup({
@@ -206,11 +239,10 @@ function renderFocusDropdown() {
       createDropdownOptionMarkup({
         value: focus,
         label: focus,
-        selected: state.focusFilters.has(focus),
+        selected: state.pending.focusFilters.has(focus),
         multi: true,
       })
-    ),
-    `<button class="dropdown-done" type="button" data-dropdown-done="focus">تم</button>`,
+    )
   ].join("");
 
   elements.focusDropdownText.textContent = getFocusTriggerLabel();
@@ -284,19 +316,19 @@ function getDropdownParts(name) {
 
 function toggleFocusFilter(value) {
   if (value === "all") {
-    state.focusFilters.clear();
+    state.pending.focusFilters.clear();
     return;
   }
 
-  if (state.focusFilters.has(value)) {
-    state.focusFilters.delete(value);
+  if (state.pending.focusFilters.has(value)) {
+    state.pending.focusFilters.delete(value);
   } else {
-    state.focusFilters.add(value);
+    state.pending.focusFilters.add(value);
   }
 }
 
 function getFocusTriggerLabel() {
-  const selected = [...state.focusFilters];
+  const selected = [...state.pending.focusFilters];
   if (selected.length === 0) {
     return "الكل";
   }
@@ -341,11 +373,12 @@ function getFilteredLessons() {
   return state.lessons.filter((lesson) => {
     const completed = isLessonCompleted(lesson);
     const matchesStatus =
-      state.statusFilter === "all" ||
-      (state.statusFilter === "completed" && completed) ||
-      (state.statusFilter === "pending" && !completed);
-    const matchesFocus = state.focusFilters.size === 0 || state.focusFilters.has(lesson.focus);
-    const matchesSearch = createSearchableText(lesson).includes(state.search);
+      state.applied.statusFilter === "all" ||
+      (state.applied.statusFilter === "completed" && completed) ||
+      (state.applied.statusFilter === "pending" && !completed);
+    const matchesFocus =
+      state.applied.focusFilters.size === 0 || state.applied.focusFilters.has(lesson.focus);
+    const matchesSearch = createSearchableText(lesson).includes(state.applied.search);
 
     return matchesStatus && matchesFocus && matchesSearch;
   });
@@ -385,7 +418,11 @@ function getTaskStorageKey(lessonId, taskIndex) {
 }
 
 function buildResultsSummary(visibleCount, totalCount) {
-  if (!state.search && state.statusFilter === "all" && state.focusFilters.size === 0) {
+  if (
+    !state.applied.search &&
+    state.applied.statusFilter === "all" &&
+    state.applied.focusFilters.size === 0
+  ) {
     return `كل الدروس متاحة الآن: ${visibleCount} من ${totalCount}`;
   }
 
