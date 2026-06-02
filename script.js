@@ -19,6 +19,7 @@ const state = {
     focusFilters: new Set(),
   },
   openDropdown: null,
+  isBackToTopVisible: false,
 };
 
 const elements = {
@@ -48,6 +49,7 @@ const elements = {
   lessonsDescription: document.querySelector("#lessonsDescription"),
   applyFiltersButton: document.querySelector("#applyFiltersButton"),
   clearFiltersButton: document.querySelector("#clearFiltersButton"),
+  backToTopButton: document.querySelector("#backToTopButton"),
 };
 
 bootstrap();
@@ -158,6 +160,26 @@ function bindEvents() {
       closeAllDropdowns();
     }
   });
+
+  elements.backToTopButton?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
+  window.addEventListener("scroll", handleBackToTopVisibility, { passive: true });
+  handleBackToTopVisibility();
+}
+
+function handleBackToTopVisibility() {
+  const shouldBeVisible = window.scrollY > 400;
+  if (state.isBackToTopVisible === shouldBeVisible || !elements.backToTopButton) {
+    return;
+  }
+
+  state.isBackToTopVisible = shouldBeVisible;
+  elements.backToTopButton.classList.toggle("is-visible", shouldBeVisible);
 }
 
 function applyFilters() {
