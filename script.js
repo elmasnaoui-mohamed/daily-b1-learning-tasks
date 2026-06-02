@@ -190,7 +190,7 @@ function hydrateStaticContent() {
 
   document.title = `${playlistTitle} | لوحة B1`;
   elements.playlistButton.href = playlistUrl;
-  elements.heroTitle.textContent = `رحلة ${totalLessons} درسًا نحو B1 بثبات ووضوح`;
+  elements.heroTitle.textContent = `خطة يومية لتعلم مستوى B1 في اللغة الألمانية (${totalLessons} درسًا)`;
   elements.heroDescription.textContent =
     "كل درس تقطعه اليوم يقرّبك خطوة من الحديث بثقة. التزم بالخطة، أنجز المهام، ودع التقدّم اليومي يصنع الفرق.";
   elements.lessonsDescription.textContent =
@@ -468,8 +468,8 @@ function createLessonCardMarkup(lesson) {
       <div class="task-footer">
         <span class="lesson-state">${completed ? "اكتمل هذا الدرس بعد إنهاء جميع المهام." : "أكمل كل المهام ليُحتسب الدرس منجزًا."}</span>
         <a class="button button-secondary lesson-link" href="${escapeAttribute(
-          state.plan.playlist_url
-        )}" target="_blank" rel="noopener noreferrer">مشاهدة الدرس</a>
+    state.plan.playlist_url
+  )}" target="_blank" rel="noopener noreferrer">مشاهدة الدرس</a>
       </div>
     </article>
   `;
