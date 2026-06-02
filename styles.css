@@ -3,11 +3,14 @@
   --surface: rgba(11, 23, 41, 0.82);
   --surface-strong: #0f1b30;
   --surface-muted: #13253f;
+  --surface-soft: rgba(15, 31, 56, 0.72);
   --text: #eff4ff;
   --text-soft: #9db0ce;
   --primary: #3d7dff;
   --primary-strong: #2f67d7;
   --primary-soft: rgba(61, 125, 255, 0.16);
+  --success: #6bd6ac;
+  --success-soft: rgba(107, 214, 172, 0.14);
   --border: rgba(142, 177, 255, 0.14);
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
   --shadow-soft: 0 12px 28px rgba(0, 0, 0, 0.2);
@@ -73,8 +76,6 @@ button {
 .topbar,
 .hero-content,
 .stats-grid,
-.controls-row,
-.tasks-meta,
 .tasks-grid {
   display: grid;
 }
@@ -114,10 +115,10 @@ button {
 
 .hero-copy,
 .hero-panel__card,
+.progress-card,
 .stat-card,
 .controls-card,
 .task-card,
-.motivation-card,
 .footer {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -125,8 +126,27 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
+.hero-copy,
+.hero-panel__card,
+.progress-card,
+.stat-card,
+.controls-card,
+.task-card,
+.footer {
+  backdrop-filter: blur(12px);
+}
+
 .hero-copy {
   padding: 36px;
+}
+
+.hero-panel__card,
+.progress-card,
+.controls-card,
+.stat-card,
+.task-card,
+.footer {
+  padding: 24px;
 }
 
 .eyebrow,
@@ -142,8 +162,7 @@ button {
 }
 
 .hero-copy h1,
-.section-heading h2,
-.motivation-card h2 {
+.section-heading h2 {
   margin: 0;
   line-height: 1.2;
 }
@@ -153,15 +172,23 @@ button {
   max-width: 12ch;
 }
 
+.hero-panel__title,
 .hero-text,
 .section-description,
 .panel-note,
 .stat-caption,
 .task-text,
-.motivation-card p,
-.footer p {
+.footer p,
+.lesson-state {
   color: var(--text-soft);
   line-height: 1.85;
+}
+
+.hero-panel__title {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  color: var(--text);
 }
 
 .hero-text {
@@ -220,32 +247,32 @@ button {
   border-color: rgba(142, 177, 255, 0.28);
 }
 
-.hero-panel__card {
-  height: 100%;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .progress-header,
-.tasks-meta,
+.progress-foot,
 .task-topline,
-.task-footer {
+.task-footer,
+.tasks-meta,
+.split-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
+}
+
+.progress-card {
+  background:
+    radial-gradient(circle at top left, rgba(61, 125, 255, 0.14), transparent 30%),
+    linear-gradient(135deg, rgba(14, 27, 48, 0.96), rgba(10, 20, 36, 0.96));
 }
 
 .progress-header strong {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .progress-bar {
   position: relative;
   width: 100%;
-  height: 12px;
+  height: 14px;
   border-radius: 999px;
   background: var(--surface-muted);
   overflow: hidden;
@@ -265,14 +292,6 @@ button {
   margin-bottom: 22px;
 }
 
-.split-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
 .section-heading h2 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
 }
@@ -287,8 +306,8 @@ button {
   gap: 18px;
 }
 
-.stat-card {
-  padding: 24px;
+.stat-card--wide {
+  grid-column: span 4;
 }
 
 .stat-label {
@@ -314,14 +333,12 @@ button {
 }
 
 .controls-card {
-  padding: 18px;
-  margin-bottom: 24px;
+  padding: 20px;
 }
 
-.controls-row {
-  grid-template-columns: minmax(0, 1.2fr) auto;
-  gap: 14px;
-  align-items: center;
+.controls-stack {
+  display: grid;
+  gap: 18px;
 }
 
 .search-field input {
@@ -343,7 +360,7 @@ button {
 
 .search-field input:focus-visible,
 .filter-button:focus-visible,
-.task-toggle input:focus-visible+.toggle-mark,
+.task-toggle input:focus-visible + .toggle-mark,
 .button:focus-visible,
 .nav-link:focus-visible {
   outline: none;
@@ -352,6 +369,17 @@ button {
 
 .search-field input:focus-visible {
   border-color: rgba(142, 177, 255, 0.34);
+}
+
+.filters-block {
+  display: grid;
+  gap: 12px;
+}
+
+.filters-label {
+  margin: 0;
+  color: var(--text-soft);
+  font-weight: 700;
 }
 
 .filters {
@@ -388,7 +416,7 @@ button {
 }
 
 .tasks-meta {
-  margin-top: 14px;
+  margin-top: 18px;
   color: var(--text-soft);
   flex-wrap: wrap;
 }
@@ -399,11 +427,11 @@ button {
 }
 
 .task-card {
-  padding: 22px;
   transition:
     transform 220ms ease,
     box-shadow 220ms ease,
     border-color 220ms ease,
+    background-color 220ms ease,
     opacity 180ms ease;
 }
 
@@ -414,36 +442,49 @@ button {
 }
 
 .task-card.is-completed {
-  background: linear-gradient(180deg, rgba(20, 40, 72, 0.96), rgba(12, 25, 44, 0.96));
+  background:
+    linear-gradient(180deg, rgba(14, 42, 58, 0.98), rgba(10, 27, 41, 0.96)),
+    var(--surface);
+  border-color: rgba(107, 214, 172, 0.24);
 }
 
-.task-day {
+.task-day,
+.status-pill {
   display: inline-flex;
   align-items: center;
   min-height: 34px;
   padding: 0 12px;
   border-radius: 999px;
-  background: var(--primary-soft);
-  color: var(--primary);
   font-weight: 800;
 }
 
-.task-time {
+.task-day {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.status-pill {
+  background: var(--surface-muted);
   color: var(--text-soft);
-  font-weight: 600;
+}
+
+.status-pill--completed {
+  background: var(--success-soft);
+  color: var(--success);
 }
 
 .task-title {
-  margin: 18px 0 10px;
+  margin: 18px 0 8px;
   font-size: 1.3rem;
 }
 
-.task-text {
+.task-focus {
   margin: 0;
-  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 700;
 }
 
-.task-block+.task-block {
+.task-block + .task-block {
   margin-top: 18px;
 }
 
@@ -454,20 +495,56 @@ button {
   color: var(--text);
 }
 
+.lesson-tasks {
+  display: grid;
+  gap: 10px;
+}
+
+.lesson-task {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(142, 177, 255, 0.12);
+  background: var(--surface-soft);
+  transition:
+    border-color var(--transition),
+    background-color var(--transition),
+    transform var(--transition);
+}
+
+.lesson-task:hover {
+  transform: translateY(-1px);
+  border-color: rgba(142, 177, 255, 0.22);
+}
+
+.lesson-task.is-checked {
+  background: rgba(14, 44, 36, 0.72);
+  border-color: rgba(107, 214, 172, 0.2);
+}
+
+.lesson-task__text {
+  color: var(--text);
+  line-height: 1.8;
+}
+
 .task-footer {
   margin-top: 22px;
   padding-top: 18px;
   border-top: 1px solid rgba(142, 177, 255, 0.1);
+  align-items: flex-end;
+}
+
+.lesson-link {
+  flex-shrink: 0;
 }
 
 .task-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: var(--text);
-  font-weight: 700;
   user-select: none;
-  cursor: pointer;
 }
 
 .task-toggle input {
@@ -501,30 +578,14 @@ button {
   margin-top: -2px;
 }
 
-.task-toggle input:checked+.toggle-mark {
-  background: var(--primary);
-  border-color: var(--primary);
+.task-toggle input:checked + .toggle-mark {
+  background: var(--success);
+  border-color: var(--success);
 }
 
-.task-toggle input:checked+.toggle-mark::after {
-  border-right-color: #fff;
-  border-bottom-color: #fff;
-}
-
-.status-pill {
-  min-height: 34px;
-  padding: 0 12px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  background: var(--surface-muted);
-  color: var(--text-soft);
-  font-weight: 700;
-}
-
-.task-card.is-completed .status-pill {
-  background: rgba(61, 125, 255, 0.16);
-  color: var(--primary);
+.task-toggle input:checked + .toggle-mark::after {
+  border-right-color: #062012;
+  border-bottom-color: #062012;
 }
 
 .empty-state {
@@ -532,23 +593,13 @@ button {
   padding: 20px;
   text-align: center;
   color: var(--text-soft);
-}
-
-.motivation-card {
-  padding: 34px;
-  background:
-    radial-gradient(circle at top left, rgba(61, 125, 255, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(14, 27, 48, 0.96), rgba(10, 20, 36, 0.96));
-}
-
-.motivation-card p {
-  margin: 14px 0 0;
-  max-width: 58ch;
+  background: rgba(10, 19, 35, 0.72);
+  border: 1px dashed rgba(142, 177, 255, 0.2);
+  border-radius: var(--radius-lg);
 }
 
 .footer {
   margin-top: 28px;
-  padding: 18px 22px;
   text-align: center;
 }
 
@@ -569,7 +620,6 @@ button {
 }
 
 @media (max-width: 1080px) {
-
   .hero-content,
   .stats-grid,
   .tasks-grid {
@@ -583,6 +633,10 @@ button {
   .hero-copy {
     padding: 30px;
   }
+
+  .stat-card--wide {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 760px) {
@@ -594,8 +648,10 @@ button {
   .hero,
   .hero-copy,
   .hero-panel__card,
+  .progress-card,
   .controls-card,
-  .motivation-card {
+  .task-card,
+  .footer {
     border-radius: 20px;
     padding: 20px;
   }
@@ -603,7 +659,6 @@ button {
   .topbar,
   .hero-content,
   .stats-grid,
-  .controls-row,
   .tasks-grid {
     grid-template-columns: 1fr;
   }
@@ -617,35 +672,29 @@ button {
     font-size: 2.2rem;
   }
 
-  .hero-panel__card,
-  .stat-card,
-  .task-card,
-  .motivation-card {
-    padding: 22px;
-  }
-
   .filters {
     width: 100%;
   }
 
   .filter-button {
-    flex: 1 1 0;
+    flex: 1 1 180px;
   }
 
   .tasks-meta,
   .task-footer,
-  .split-heading {
+  .split-heading,
+  .progress-header,
+  .progress-foot {
     align-items: start;
     flex-direction: column;
   }
 
   .task-footer {
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: stretch;
   }
 
-  .button {
-    font-size: 12px;
+  .lesson-link {
+    width: 100%;
   }
 
   .hero-actions {
@@ -654,6 +703,10 @@ button {
 
   .hero-text {
     font-size: 1rem;
+  }
+
+  .stat-card--wide {
+    grid-column: span 1;
   }
 }
 

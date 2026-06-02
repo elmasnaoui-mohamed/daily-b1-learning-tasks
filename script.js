@@ -1,138 +1,59 @@
-﻿const learningPlan = [
-  {
-    day: 1,
-    videoTime: "00:00 - 00:26",
-    module: "الجمل المصدرية (Infinitiv + zu)",
-    task: "اكتب 5 جمل عما تخطط أو تأمل فعله في عطلة نهاية الأسبوع باستخدام zu.",
-    duration: "~26 د",
-  },
-  {
-    day: 2,
-    videoTime: "00:26 - 01:03",
-    module: "الأفعال المساعدة بدون zu",
-    task: "اكتب 5 جمل عما يجب أو يمكن للشخص فعله ليعيش حياة صحية.",
-    duration: "~37 د",
-  },
-  {
-    day: 3,
-    videoTime: "01:03 - 01:41",
-    module: "الروابط الأساسية (dass, weil, wenn)",
-    task: "عبّر عن رأيك في موضوع عام (مثلاً: لماذا السفر مهم؟) باستخدام هذه الروابط.",
-    duration: "~38 د",
-  },
-  {
-    day: 4,
-    videoTime: "01:41 - 02:18",
-    module: "حالات الـ Dativ & Akkusativ",
-    task: "اختر 5 أفعال من الفيديو وضعها في جمل تصف مواقف يومية في السوق أو المنزل.",
-    duration: "~37 د",
-  },
-  {
-    day: 5,
-    videoTime: "02:18 - 02:45",
-    module: "أفعال الحركة والسكون (Wechselpräp)",
-    task: "صف محتويات غرفتك أو صالة الجلوس باستخدام حروف الجر المتغيرة بدقة.",
-    duration: "~27 د",
-  },
-  {
-    day: 6,
-    videoTime: "02:45 - 03:22",
-    module: "زمن الماضي (Präteritum & Perfekt)",
-    task: "اكتب فقرة قصيرة تحكي فيها قصة بسيطة عن رحلة قمت بها في الماضي.",
-    duration: "~37 د",
-  },
-  {
-    day: 7,
-    videoTime: "03:22 - 03:52",
-    module: "جمل الوصل (Relativsätze)",
-    task: "حاول وصف صديقك المفضل أو مدينتك باستخدام جملة وصل (der, die, das).",
-    duration: "~30 د",
-  },
-  {
-    day: 8,
-    videoTime: "03:52 - 04:33",
-    module: "المبني للمجهول (Passiv)",
-    task: "صف عملية يومية (مثل: كيف تُطبخ الأكلة المفضلة؟) باستخدام صيغة المبني للمجهول.",
-    duration: "~41 د",
-  },
-  {
-    day: 9,
-    videoTime: "04:33 - 05:05",
-    module: "التمني والنصيحة (Konjunktiv II)",
-    task: "قدم 3 نصائح لصديق يريد تعلم الألمانية باستخدام لو كنت مكانك لفعلت..",
-    duration: "~32 د",
-  },
-  {
-    day: 10,
-    videoTime: "05:05 - 05:40",
-    module: "مقارنة وتصريف الصفات",
-    task: "قارن بين وسيلتي مواصلات أو مدينتين من حيث السرعة والجمال والتكلفة.",
-    duration: "~35 د",
-  },
-  {
-    day: 11,
-    videoTime: "05:40 - 06:12",
-    module: "حروف الجر الزمانية والمكانية",
-    task: "صف روتينك اليومي بدقة باستخدام حروف الجر (vor, nach, seit, um).",
-    duration: "~32 د",
-  },
-  {
-    day: 12,
-    videoTime: "06:12 - النهاية",
-    module: "الروابط المتقدمة (obwohl, trotzdem)",
-    task: "اكتب ملخصاً عما تعلمته، موضحاً رغم صعوبة اللغة إلا أنك مستمر في التعلم.",
-    duration: "~23 د",
-  },
-];
+const DATA_URL = "./src/data/b1Lessons.json";
 
-const storageKey = "daily-german-learning-progress";
-const validDays = new Set(learningPlan.map((item) => item.day));
 const state = {
-  filter: "all",
+  plan: null,
+  lessons: [],
   search: "",
-  completed: loadCompletedState(),
+  statusFilter: "all",
+  focusFilter: "all",
 };
 
 const elements = {
+  playlistButton: document.querySelector("#playlistButton"),
+  playlistTitle: document.querySelector("#playlistTitle"),
+  heroTitle: document.querySelector("#heroTitle"),
+  heroDescription: document.querySelector("#heroDescription"),
+  summaryPlaylistTitle: document.querySelector("#summaryPlaylistTitle"),
   tasksContainer: document.querySelector("#tasksContainer"),
   emptyState: document.querySelector("#emptyState"),
   searchInput: document.querySelector("#searchInput"),
-  filterButtons: document.querySelectorAll(".filter-button"),
+  statusFilters: document.querySelector("#statusFilters"),
+  focusFilters: document.querySelector("#focusFilters"),
   progressFill: document.querySelector("#progressFill"),
   heroProgressText: document.querySelector("#heroProgressText"),
   heroProgressPercent: document.querySelector("#heroProgressPercent"),
   completedSummary: document.querySelector("#completedSummary"),
-  resultsSummary: document.querySelector("#resultsSummary"),
   progressBar: document.querySelector(".progress-bar"),
-  totalDays: document.querySelector("#totalDays"),
-  totalDuration: document.querySelector("#totalDuration"),
-  mainTopics: document.querySelector("#mainTopics"),
+  resultsSummary: document.querySelector("#resultsSummary"),
+  visibleBreakdown: document.querySelector("#visibleBreakdown"),
+  totalLessons: document.querySelector("#totalLessons"),
+  mainFocuses: document.querySelector("#mainFocuses"),
+  completedLessons: document.querySelector("#completedLessons"),
+  remainingLessons: document.querySelector("#remainingLessons"),
+  lessonsDescription: document.querySelector("#lessonsDescription"),
 };
 
-init();
+bootstrap();
 
-function init() {
-  updateOverview();
-  updateActiveFilter();
+async function bootstrap() {
   bindEvents();
-  render();
-}
 
-function loadCompletedState() {
   try {
-    const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
-    const normalizedDays = Array.isArray(saved)
-      ? saved.filter((day) => validDays.has(Number(day))).map(Number)
-      : [];
+    const response = await fetch(DATA_URL);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
 
-    return new Set(normalizedDays);
-  } catch {
-    return new Set();
+    const plan = await response.json();
+    state.plan = plan;
+    state.lessons = Array.isArray(plan.lessons) ? plan.lessons : [];
+
+    hydrateStaticContent();
+    renderFocusFilters();
+    render();
+  } catch (error) {
+    renderErrorState(error);
   }
-}
-
-function saveCompletedState() {
-  localStorage.setItem(storageKey, JSON.stringify([...state.completed]));
 }
 
 function bindEvents() {
@@ -141,173 +62,257 @@ function bindEvents() {
     render();
   });
 
-  elements.filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      state.filter = button.dataset.filter || "all";
-      updateActiveFilter();
-      render();
-    });
+  elements.statusFilters?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-filter-group='status']");
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    state.statusFilter = button.dataset.filterValue || "all";
+    updateFilterButtons(elements.statusFilters, state.statusFilter);
+    render();
+  });
+
+  elements.focusFilters?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-filter-group='focus']");
+    if (!(button instanceof HTMLButtonElement)) {
+      return;
+    }
+
+    state.focusFilter = button.dataset.filterValue || "all";
+    updateFilterButtons(elements.focusFilters, state.focusFilter);
+    render();
   });
 
   elements.tasksContainer?.addEventListener("change", (event) => {
-    const target = event.target;
-    if (!(target instanceof HTMLInputElement) || target.type !== "checkbox") {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement) || input.type !== "checkbox") {
       return;
     }
 
-    const day = Number(target.dataset.day);
-    if (!validDays.has(day)) {
+    const lessonId = Number(input.dataset.lessonId);
+    const taskIndex = Number(input.dataset.taskIndex);
+
+    if (!Number.isFinite(lessonId) || !Number.isFinite(taskIndex)) {
       return;
     }
 
-    if (target.checked) {
-      state.completed.add(day);
+    const storageKey = getTaskStorageKey(lessonId, taskIndex);
+    if (input.checked) {
+      localStorage.setItem(storageKey, "true");
     } else {
-      state.completed.delete(day);
+      localStorage.removeItem(storageKey);
     }
 
-    saveCompletedState();
     render();
   });
 }
 
-function updateOverview() {
-  const totalDays = learningPlan.length;
-  const totalMinutes = calculateTotalMinutes(learningPlan);
-  const uniqueModules = new Set(learningPlan.map((item) => item.module)).size;
+function hydrateStaticContent() {
+  const { playlist_title: playlistTitle, playlist_url: playlistUrl, total_lessons: totalLessons } = state.plan;
 
-  elements.totalDays.textContent = String(totalDays);
-  elements.totalDuration.textContent = formatMinutes(totalMinutes);
-  elements.mainTopics.textContent = `${uniqueModules} محوراً`;
+  document.title = `${playlistTitle} | لوحة B1`;
+  elements.playlistButton.href = playlistUrl;
+  elements.playlistTitle.textContent = playlistTitle;
+  elements.summaryPlaylistTitle.textContent = playlistTitle;
+  elements.heroTitle.textContent = `رحلة ${totalLessons} درسًا نحو B1 بثبات ووضوح`;
+  elements.heroDescription.textContent =
+    "كل شيء في الصفحة الآن يُشتق من ملف JSON واحد: التقدم، الملخص، الفلاتر، والبطاقات نفسها.";
+  elements.lessonsDescription.textContent =
+    "كل بطاقة تعرض ما ستتعلمه، الهدف الحواري، ومهام اليوم مع حفظ مستقل لكل مهمة في المتصفح.";
+  updateFilterButtons(elements.statusFilters, state.statusFilter);
 }
 
-function calculateTotalMinutes(items) {
-  return items.reduce((total, item) => total + getItemDurationMinutes(item), 0);
-}
+function renderFocusFilters() {
+  const focuses = getUniqueFocuses(state.lessons);
+  elements.focusFilters.innerHTML = [
+    `<button class="filter-button is-active" type="button" data-filter-group="focus" data-filter-value="all">الكل</button>`,
+    ...focuses.map(
+      (focus) =>
+        `<button class="filter-button" type="button" data-filter-group="focus" data-filter-value="${escapeAttribute(
+          focus
+        )}">${escapeHtml(focus)}</button>`
+    ),
+  ].join("");
 
-function getItemDurationMinutes(item) {
-  const durationMatch = item.duration?.match(/(\d+)/);
-  if (durationMatch) {
-    return Number(durationMatch[1]);
-  }
-
-  const [start, end] = item.videoTime.split(" - ");
-  if (!start || !end || end === "النهاية") {
-    return 0;
-  }
-
-  return Math.max(0, toMinutes(end) - toMinutes(start));
-}
-
-function toMinutes(time) {
-  const [hours, minutes] = time.split(":").map(Number);
-  return hours * 60 + minutes;
-}
-
-function formatMinutes(totalMinutes) {
-  const hours = Math.floor(totalMinutes / 60);
-  const minutes = totalMinutes % 60;
-
-  if (hours && minutes) {
-    return `${hours} ساعات و${minutes} دقيقة`;
-  }
-
-  if (hours) {
-    return `${hours} ساعات`;
-  }
-
-  return `${minutes} دقيقة`;
+  updateFilterButtons(elements.focusFilters, state.focusFilter);
 }
 
 function render() {
-  const visibleTasks = getVisibleTasks();
-  const completedCount = state.completed.size;
-  const totalCount = learningPlan.length;
-  const progressPercent = Math.round((completedCount / totalCount) * 100);
+  if (!state.plan) {
+    return;
+  }
 
-  elements.tasksContainer.innerHTML = visibleTasks.map(createTaskCardMarkup).join("");
-  elements.emptyState.hidden = visibleTasks.length > 0;
+  const totalLessons = state.lessons.length;
+  const completedLessons = getCompletedLessonsCount(state.lessons);
+  const remainingLessons = Math.max(0, totalLessons - completedLessons);
+  const progressPercent = totalLessons === 0 ? 0 : Math.round((completedLessons / totalLessons) * 100);
+  const filteredLessons = getFilteredLessons();
+  const uniqueFocuses = getUniqueFocuses(state.lessons);
+
+  elements.tasksContainer.innerHTML = filteredLessons.map(createLessonCardMarkup).join("");
+  elements.emptyState.hidden = filteredLessons.length > 0;
+
+  elements.totalLessons.textContent = String(state.plan.total_lessons ?? totalLessons);
+  elements.mainFocuses.textContent = String(uniqueFocuses.length);
+  elements.completedLessons.textContent = String(completedLessons);
+  elements.remainingLessons.textContent = String(remainingLessons);
 
   elements.progressFill.style.width = `${progressPercent}%`;
   elements.progressBar?.setAttribute("aria-valuenow", String(progressPercent));
-  elements.heroProgressText.textContent = `أنجزت ${completedCount} من ${totalCount}`;
-  elements.completedSummary.textContent = `أنجزت ${completedCount} من ${totalCount}`;
+  elements.heroProgressText.textContent = `أنجزت ${completedLessons} من ${totalLessons}`;
+  elements.completedSummary.textContent = `أنجزت ${completedLessons} من ${totalLessons}`;
   elements.heroProgressPercent.textContent = `${progressPercent}%`;
-  elements.resultsSummary.textContent = buildResultsSummary(visibleTasks.length);
+  elements.resultsSummary.textContent = buildResultsSummary(filteredLessons.length, totalLessons);
+  elements.visibleBreakdown.textContent = `عدد الدروس الظاهرة الآن: ${filteredLessons.length}`;
 }
 
-function getVisibleTasks() {
-  return learningPlan.filter((item) => {
-    const haystack = `${item.module} ${item.task} ${item.videoTime} ${item.duration}`.toLowerCase();
-    const matchesSearch = haystack.includes(state.search);
-    const isCompleted = state.completed.has(item.day);
+function getFilteredLessons() {
+  return state.lessons.filter((lesson) => {
+    const completed = isLessonCompleted(lesson);
+    const matchesStatus =
+      state.statusFilter === "all" ||
+      (state.statusFilter === "completed" && completed) ||
+      (state.statusFilter === "pending" && !completed);
+    const matchesFocus = state.focusFilter === "all" || lesson.focus === state.focusFilter;
+    const matchesSearch = createSearchableText(lesson).includes(state.search);
 
-    if (state.filter === "completed") {
-      return matchesSearch && isCompleted;
-    }
-
-    if (state.filter === "pending") {
-      return matchesSearch && !isCompleted;
-    }
-
-    return matchesSearch;
+    return matchesStatus && matchesFocus && matchesSearch;
   });
 }
 
-function buildResultsSummary(count) {
-  if (count === learningPlan.length && !state.search && state.filter === "all") {
-    return "جميع المهام ظاهرة الآن";
-  }
-
-  return `عدد النتائج الحالية: ${count}`;
+function createSearchableText(lesson) {
+  return [
+    lesson.title,
+    lesson.focus,
+    lesson.what_you_learn,
+    lesson.conversational_goal,
+    ...(lesson.tasks || []),
+  ]
+    .join(" ")
+    .toLowerCase();
 }
 
-function createTaskCardMarkup(item) {
-  const completed = state.completed.has(item.day);
+function getUniqueFocuses(lessons) {
+  return [...new Set(lessons.map((lesson) => lesson.focus).filter(Boolean))];
+}
+
+function getCompletedLessonsCount(lessons) {
+  return lessons.filter(isLessonCompleted).length;
+}
+
+function isLessonCompleted(lesson) {
+  const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
+  return tasks.length > 0 && tasks.every((_, taskIndex) => isTaskCompleted(lesson.id, taskIndex));
+}
+
+function isTaskCompleted(lessonId, taskIndex) {
+  return localStorage.getItem(getTaskStorageKey(lessonId, taskIndex)) === "true";
+}
+
+function getTaskStorageKey(lessonId, taskIndex) {
+  return `b1-lesson-${lessonId}-task-${taskIndex}`;
+}
+
+function buildResultsSummary(visibleCount, totalCount) {
+  if (!state.search && state.statusFilter === "all" && state.focusFilter === "all") {
+    return `كل الدروس متاحة الآن: ${visibleCount} من ${totalCount}`;
+  }
+
+  return `النتائج المطابقة الحالية: ${visibleCount} من ${totalCount}`;
+}
+
+function createLessonCardMarkup(lesson) {
+  const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
+  const completedTasks = tasks.filter((_, taskIndex) => isTaskCompleted(lesson.id, taskIndex)).length;
+  const completed = completedTasks === tasks.length && tasks.length > 0;
 
   return `
-    <article class="task-card${completed ? " is-completed" : ""}">
+    <article class="task-card${completed ? " is-completed" : ""}" data-lesson-id="${lesson.id}">
       <div class="task-topline">
-        <span class="task-day">اليوم ${item.day}</span>
-        <span class="task-time">${item.videoTime}</span>
+        <span class="task-day">اليوم ${lesson.id}</span>
+        <span class="status-pill${completed ? " status-pill--completed" : ""}">
+          ${completed ? "مكتمل" : `أنجزت ${completedTasks} من ${tasks.length}`}
+        </span>
       </div>
 
       <div class="task-block">
-        <h3 class="task-title">${item.module}</h3>
+        <h3 class="task-title">${escapeHtml(lesson.title)}</h3>
+        <p class="task-focus">${escapeHtml(lesson.focus)}</p>
       </div>
 
       <div class="task-block">
-        <span class="task-label">الموضوع المتكامل</span>
-        <p class="task-text">${item.module}</p>
+        <span class="task-label">ما ستتعلمه</span>
+        <p class="task-text">${escapeHtml(lesson.what_you_learn)}</p>
       </div>
 
       <div class="task-block">
-        <span class="task-label">المهمة التطبيقية العامة</span>
-        <p class="task-text">${item.task}</p>
+        <span class="task-label">الهدف الحواري</span>
+        <p class="task-text">${escapeHtml(lesson.conversational_goal)}</p>
       </div>
 
       <div class="task-block">
-        <span class="task-label">المدة</span>
-        <p class="task-text">${item.duration}</p>
+        <span class="task-label">مهام اليوم</span>
+        <div class="lesson-tasks">
+          ${tasks
+            .map((task, taskIndex) => createTaskItemMarkup(lesson.id, taskIndex, task))
+            .join("")}
+        </div>
       </div>
 
       <div class="task-footer">
-        <label class="task-toggle">
-          <input type="checkbox" data-day="${item.day}" ${completed ? "checked" : ""} />
-          <span class="toggle-mark" aria-hidden="true"></span>
-          <span>${completed ? "تم الإنجاز" : "تحديد كمكتمل"}</span>
-        </label>
-        <span class="status-pill">${completed ? "منجز" : "قيد التنفيذ"}</span>
+        <span class="lesson-state">${completed ? "اكتمل هذا الدرس بعد إنهاء جميع المهام." : "أكمل كل المهام ليُحتسب الدرس منجزًا."}</span>
+        <a class="button button-secondary lesson-link" href="${escapeAttribute(
+          state.plan.playlist_url
+        )}" target="_blank" rel="noopener noreferrer">مشاهدة الدرس</a>
       </div>
     </article>
   `;
 }
 
-function updateActiveFilter() {
-  elements.filterButtons.forEach((button) => {
-    const isActive = button.dataset.filter === state.filter;
+function createTaskItemMarkup(lessonId, taskIndex, task) {
+  const checked = isTaskCompleted(lessonId, taskIndex);
+  const inputId = `lesson-${lessonId}-task-${taskIndex}`;
+
+  return `
+    <label class="lesson-task${checked ? " is-checked" : ""}" for="${inputId}">
+      <span class="task-toggle">
+        <input id="${inputId}" type="checkbox" data-lesson-id="${lessonId}" data-task-index="${taskIndex}" ${checked ? "checked" : ""} />
+        <span class="toggle-mark" aria-hidden="true"></span>
+      </span>
+      <span class="lesson-task__text">${escapeHtml(task)}</span>
+    </label>
+  `;
+}
+
+function updateFilterButtons(container, activeValue) {
+  container?.querySelectorAll(".filter-button").forEach((button) => {
+    const isActive = button.dataset.filterValue === activeValue;
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
 }
 
+function renderErrorState(error) {
+  console.error("Failed to load B1 lesson data:", error);
+  elements.playlistTitle.textContent = "تعذّر تحميل الخطة";
+  elements.summaryPlaylistTitle.textContent = "تعذّر تحميل الخطة";
+  elements.tasksContainer.innerHTML = "";
+  elements.emptyState.hidden = false;
+  elements.emptyState.textContent = "تعذّر تحميل ملف الخطة. تأكد من وجود src/data/b1Lessons.json ثم أعد المحاولة.";
+  elements.resultsSummary.textContent = "لا توجد بيانات متاحة حاليًا.";
+  elements.visibleBreakdown.textContent = "عدد الدروس الظاهرة الآن: 0";
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value);
+}

@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="خطة المهام اليومية لتعلم الألمانية مع متابعة التقدم، البحث، والتصفية ضمن واجهة عربية حديثة ومتجاوبة." />
-  <title>خطة المهام اليومية لتعلم الألمانية</title>
+    content="لوحة عربية لتعلّم الألمانية مستوى B1 مع متابعة التقدم، البحث، والتصفية اعتمادًا على خطة من 24 درسًا." />
+  <title>خطة B1 لتعلّم الألمانية</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -15,41 +15,34 @@
 
 <body>
   <div class="page-shell">
-    <header class="hero">
+    <header class="hero" id="top">
       <nav class="topbar" aria-label="التنقل الرئيسي">
-        <a class="brand" href="#top">Daily German Tasks</a>
-        <a class="nav-link" href="#tasks">المهام اليومية</a>
+        <a class="brand" href="#top">B1 Deutsch Dashboard</a>
+        <a class="nav-link" href="#lessons">الدروس</a>
       </nav>
 
-      <section class="hero-content" id="top">
+      <section class="hero-content">
         <div class="hero-copy">
-          <p class="eyebrow">خطة دراسية عملية ومنظمة</p>
-          <h1>خطة المهام اليومية لتعلم الألمانية</h1>
-          <p class="hero-text">
-            مسار يومي واضح مبني على مقاطع فيديو قصيرة وتمارين تطبيقية تساعدك
-            على تثبيت القواعد، ممارسة اللغة، ومتابعة تقدمك خطوة بخطوة.
+          <p class="eyebrow">خطة B1 منظمة وواقعية</p>
+          <h1 id="heroTitle">رحلة 24 درسًا نحو B1 بثبات ووضوح</h1>
+          <p class="hero-text" id="heroDescription">
+            حمّل الخطة، راقب تقدمك، واشتغل على كل درس بمهماته العملية من نفس المكان.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#tasks">ابدأ خطة اليوم</a>
-            <a class="button button-secondary" href="https://www.youtube.com/watch?v=wGNWEZKeb3Q&t=4494s"
-              target="_blank" rel="noopener noreferrer">مشاهدة الفيديو</a>
-            <a class="button button-secondary" href="#overview">اكتشف الخطة</a>
+            <a class="button button-primary" href="#lessons">ابدأ من الدروس</a>
+            <a class="button button-secondary" id="playlistButton" href="#" target="_blank" rel="noopener noreferrer">
+              مشاهدة الدرس
+            </a>
+            <a class="button button-secondary" href="#summary">اكتشف الملخص</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="ملخص الإنجاز">
+        <aside class="hero-glance" aria-label="لمحة سريعة">
           <div class="hero-panel__card">
-            <p class="panel-label">متابعة التقدم</p>
-            <div class="progress-header">
-              <strong id="heroProgressText">أنجزت 0 من 12</strong>
-              <span id="heroProgressPercent">0%</span>
-            </div>
-            <div class="progress-bar" role="progressbar" aria-label="نسبة التقدم" aria-valuemin="0" aria-valuemax="100"
-              aria-valuenow="0">
-              <span id="progressFill"></span>
-            </div>
-            <p class="panel-note">
-              إنجاز صغير كل يوم يصنع فرقاً كبيراً على المدى الطويل.
+            <p class="panel-label">اسم الخطة</p>
+            <strong class="hero-panel__title" id="playlistTitle">جارٍ تحميل الخطة...</strong>
+            <p class="panel-note" id="heroPlaylistNote">
+              سيتم تحديث الصفحة تلقائيًا من ملف البيانات المعتمد.
             </p>
           </div>
         </aside>
@@ -57,102 +50,137 @@
     </header>
 
     <main>
-      <section class="overview section" id="overview" aria-labelledby="overviewTitle">
+      <section class="section" id="progress" aria-labelledby="progressTitle">
         <div class="section-heading">
-          <p class="section-kicker">نظرة سريعة</p>
-          <h2 id="overviewTitle">ملخص الخطة</h2>
+          <p class="section-kicker">بطاقة التقدم</p>
+          <h2 id="progressTitle">متابعة الإنجاز</h2>
         </div>
 
-        <div class="stats-grid">
-          <article class="stat-card">
-            <p class="stat-label">إجمالي الأيام</p>
-            <strong class="stat-value" id="totalDays">12</strong>
-            <p class="stat-caption">مهام يومية قصيرة وواضحة</p>
-          </article>
+        <article class="progress-card">
+          <div class="progress-header">
+            <strong id="heroProgressText">أنجزت 0 من 0</strong>
+            <span id="heroProgressPercent">0%</span>
+          </div>
+          <div class="progress-bar" role="progressbar" aria-label="نسبة التقدم" aria-valuemin="0" aria-valuemax="100"
+            aria-valuenow="0">
+            <span id="progressFill"></span>
+          </div>
+          <div class="progress-foot">
+            <p class="panel-note" id="completedSummary">أنجزت 0 من 0</p>
+            <p class="panel-note" id="progressNote">التقدم يُحسب من الدروس المكتملة بالكامل.</p>
+          </div>
+        </article>
+      </section>
 
+      <section class="section" id="summary" aria-labelledby="summaryTitle">
+        <div class="section-heading">
+          <p class="section-kicker">الملخص</p>
+          <h2 id="summaryTitle">نظرة عامة على الخطة</h2>
+        </div>
+
+        <div class="stats-grid" id="summaryGrid">
           <article class="stat-card">
-            <p class="stat-label">مدة الفيديو الإجمالية</p>
-            <strong class="stat-value" id="totalDuration">6 ساعات</strong>
-            <p class="stat-caption">مقسمة إلى مقاطع سهلة المتابعة</p>
+            <p class="stat-label">إجمالي الدروس</p>
+            <strong class="stat-value" id="totalLessons">0</strong>
+            <p class="stat-caption">عدد الدروس المعتمد في ملف الخطة.</p>
           </article>
 
           <article class="stat-card">
             <p class="stat-label">المحاور الرئيسية</p>
-            <strong class="stat-value" id="mainTopics">12 محوراً</strong>
-            <p class="stat-caption">
-              قواعد، روابط، أزمنة، وتطبيق عملي مستمر
-            </p>
+            <strong class="stat-value" id="mainFocuses">0</strong>
+            <p class="stat-caption">عدد المحاور الفريدة المستخرجة من البيانات.</p>
           </article>
 
-          <article class="stat-card accent-card">
-            <p class="stat-label">رسالة تحفيزية</p>
-            <strong class="stat-value">خطوة يومية ثابتة</strong>
-            <p class="stat-caption">
-              التقدم المنتظم أهم من الدراسة المكثفة غير المستمرة.
-            </p>
+          <article class="stat-card">
+            <p class="stat-label">الدروس المنجزة</p>
+            <strong class="stat-value" id="completedLessons">0</strong>
+            <p class="stat-caption">يُحتسب الدرس منجزًا بعد إكمال كل مهامه.</p>
+          </article>
+
+          <article class="stat-card">
+            <p class="stat-label">الدروس المتبقية</p>
+            <strong class="stat-value" id="remainingLessons">0</strong>
+            <p class="stat-caption">كل درس متبقٍ هو فرصة تقدم جديدة.</p>
+          </article>
+
+          <article class="stat-card accent-card stat-card--wide">
+            <p class="stat-label">اسم الخطة</p>
+            <strong class="stat-value" id="summaryPlaylistTitle">جارٍ التحميل...</strong>
+            <p class="stat-caption">مصدر واحد للحقيقة يمكن تحديثه بإضافة أو تعديل الدروس فقط.</p>
           </article>
         </div>
       </section>
 
-      <section class="tasks section" id="tasks" aria-labelledby="tasksTitle">
+      <section class="section" id="controls" aria-labelledby="controlsTitle">
         <div class="section-heading split-heading">
           <div>
-            <p class="section-kicker">التنفيذ اليومي</p>
-            <h2 id="tasksTitle">المهام اليومية</h2>
+            <p class="section-kicker">البحث والتصفية</p>
+            <h2 id="controlsTitle">اعثر على الدرس المناسب بسرعة</h2>
           </div>
           <p class="section-description">
-            ابحث في المحتوى، صفِّ المهام حسب حالتها، وتابع إنجازك مباشرة من
-            نفس الصفحة.
+            ابحث في العنوان والمحور وما ستتعلمه والهدف الحواري والمهام، ثم صفِّ النتائج بالحالة أو بالمحور.
           </p>
         </div>
 
         <div class="controls-card">
-          <div class="controls-row">
+          <div class="controls-stack">
             <label class="search-field" for="searchInput">
-              <span class="visually-hidden">ابحث في المهام</span>
-              <input id="searchInput" type="search" placeholder="ابحث حسب الموضوع أو المهمة التطبيقية العامة"
+              <span class="visually-hidden">ابحث في الدروس</span>
+              <input id="searchInput" type="search" placeholder="ابحث باسم الدرس أو المحور أو المهام"
                 autocomplete="off" />
             </label>
 
-            <div class="filters" role="tablist" aria-label="تصفية المهام">
-              <button class="filter-button is-active" type="button" data-filter="all">
-                الكل
-              </button>
-              <button class="filter-button" type="button" data-filter="pending">
-                غير المنجز
-              </button>
-              <button class="filter-button" type="button" data-filter="completed">
-                المنجز
-              </button>
+            <div class="filters-block">
+              <p class="filters-label">الحالة</p>
+              <div class="filters" id="statusFilters" role="tablist" aria-label="تصفية الدروس حسب الحالة">
+                <button class="filter-button is-active" type="button" data-filter-group="status"
+                  data-filter-value="all">
+                  الكل
+                </button>
+                <button class="filter-button" type="button" data-filter-group="status" data-filter-value="completed">
+                  المنجز
+                </button>
+                <button class="filter-button" type="button" data-filter-group="status" data-filter-value="pending">
+                  غير المنجز
+                </button>
+              </div>
+            </div>
+
+            <div class="filters-block">
+              <p class="filters-label">المحور</p>
+              <div class="filters" id="focusFilters" aria-label="تصفية الدروس حسب المحور"></div>
             </div>
           </div>
 
           <div class="tasks-meta">
-            <p id="resultsSummary">جميع المهام ظاهرة الآن</p>
-            <p id="completedSummary">أنجزت 0 من 12</p>
+            <p id="resultsSummary">جارٍ تحميل النتائج...</p>
+            <p id="visibleBreakdown">عدد الدروس الظاهرة الآن: 0</p>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="lessons" aria-labelledby="lessonsTitle">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">شبكة الدروس</p>
+            <h2 id="lessonsTitle">دروس مستوى B1</h2>
+          </div>
+          <p class="section-description" id="lessonsDescription">
+            كل بطاقة تعرض ما ستتعلمه، الهدف الحواري، ومهام اليوم مع متابعة لحظية.
+          </p>
         </div>
 
         <div class="tasks-grid" id="tasksContainer" aria-live="polite"></div>
         <p class="empty-state" id="emptyState" hidden>
-          لا توجد نتائج مطابقة حالياً. جرّب تغيير البحث أو التصفية.
+          لا توجد دروس مطابقة حاليًا. جرّب تغيير البحث أو اختيار محور آخر.
         </p>
-      </section>
-
-      <section class="motivation section" aria-labelledby="motivationTitle">
-        <div class="motivation-card">
-          <p class="section-kicker">استمر بهدوء</p>
-          <h2 id="motivationTitle">الاستمرارية أهم من الكمال</h2>
-          <p>
-            لا تحتاج إلى جلسات طويلة حتى تتقدم. يكفي أن تحافظ على إيقاع يومي
-            واضح، وتمنح نفسك فرصة للتكرار والفهم والمراجعة.
-          </p>
-        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>خطة يومية عربية لتعلم الألمانية بشكل عملي ومنظم ❤️ Von Rinkute</p>
+      <p>
+        خطة يومية لتعلم الألمانية خطوة بخطوة • Mit ❤️ von Rinkute
+      </p>
     </footer>
   </div>
 
