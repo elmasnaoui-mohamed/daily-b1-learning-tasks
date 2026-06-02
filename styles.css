@@ -168,8 +168,7 @@ button {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.1rem, 4vw, 4rem);
-  max-width: 12ch;
+  font-size: clamp(1.1rem, 2vw, 2rem);
 }
 
 .hero-panel__title,
@@ -182,6 +181,10 @@ button {
 .lesson-state {
   color: var(--text-soft);
   line-height: 1.85;
+}
+
+.task-footer .lesson-state {
+  font-size: 13px;
 }
 
 .hero-panel__title {
@@ -209,10 +212,11 @@ button {
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 0 20px;
+  padding: 0 15px;
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 700;
+  font-size: 14px;
   transition:
     transform var(--transition),
     background-color var(--transition),
@@ -293,7 +297,7 @@ button {
 }
 
 .section-heading h2 {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: clamp(1.1rem, 2vw, 2rem);
 }
 
 .section-description {
@@ -360,7 +364,7 @@ button {
 
 .search-field input:focus-visible,
 .filter-button:focus-visible,
-.task-toggle input:focus-visible + .toggle-mark,
+.task-toggle input:focus-visible+.toggle-mark,
 .button:focus-visible,
 .nav-link:focus-visible {
   outline: none;
@@ -484,7 +488,7 @@ button {
   font-weight: 700;
 }
 
-.task-block + .task-block {
+.task-block+.task-block {
   margin-top: 18px;
 }
 
@@ -578,12 +582,12 @@ button {
   margin-top: -2px;
 }
 
-.task-toggle input:checked + .toggle-mark {
+.task-toggle input:checked+.toggle-mark {
   background: var(--success);
   border-color: var(--success);
 }
 
-.task-toggle input:checked + .toggle-mark::after {
+.task-toggle input:checked+.toggle-mark::after {
   border-right-color: #062012;
   border-bottom-color: #062012;
 }
@@ -620,6 +624,7 @@ button {
 }
 
 @media (max-width: 1080px) {
+
   .hero-content,
   .stats-grid,
   .tasks-grid {
