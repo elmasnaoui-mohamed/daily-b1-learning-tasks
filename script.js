@@ -47,7 +47,6 @@ const elements = {
   completedLessons: document.querySelector("#completedLessons"),
   remainingLessons: document.querySelector("#remainingLessons"),
   lessonsDescription: document.querySelector("#lessonsDescription"),
-  applyFiltersButton: document.querySelector("#applyFiltersButton"),
   clearFiltersButton: document.querySelector("#clearFiltersButton"),
   backToTopButton: document.querySelector("#backToTopButton"),
 };
@@ -78,6 +77,7 @@ async function bootstrap() {
 function bindEvents() {
   elements.searchInput?.addEventListener("input", (event) => {
     state.pending.search = event.target.value.trim().toLowerCase();
+    syncFilters();
   });
 
   elements.statusDropdownTrigger?.addEventListener("click", (event) => {
@@ -100,6 +100,7 @@ function bindEvents() {
     state.pending.statusFilter = option.dataset.optionValue || "all";
     closeDropdown("status");
     renderDropdowns();
+    syncFilters();
   });
 
   elements.focusDropdownMenu?.addEventListener("click", (event) => {
@@ -111,10 +112,7 @@ function bindEvents() {
 
     toggleFocusFilter(option.dataset.optionValue || "all");
     renderDropdowns();
-  });
-
-  elements.applyFiltersButton?.addEventListener("click", () => {
-    applyFilters();
+    syncFilters();
   });
 
   elements.clearFiltersButton?.addEventListener("click", () => {
@@ -182,11 +180,10 @@ function handleBackToTopVisibility() {
   elements.backToTopButton.classList.toggle("is-visible", shouldBeVisible);
 }
 
-function applyFilters() {
+function syncFilters() {
   state.applied.search = state.pending.search;
   state.applied.statusFilter = state.pending.statusFilter;
   state.applied.focusFilters = new Set(state.pending.focusFilters);
-  closeAllDropdowns();
   render();
 }
 
