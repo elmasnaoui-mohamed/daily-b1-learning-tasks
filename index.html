@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="لوحة عربية لتعلّم الألمانية مستوى B1 مع متابعة التقدم، البحث، والتصفية اعتمادًا على خطة من 24 درسًا." />
-  <title>خطة B1 لتعلّم الألمانية</title>
+    content="لوحة عربية لتعلّم الألمانية بمستويات متعددة مع متابعة التقدم، البحث، والتصفية اعتمادًا على خطط دراسية يومية." />
+  <title>خطة تعلم اللغة الألمانية متعددة المستويات</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -19,25 +19,51 @@
     <header class="hero" id="top">
       <section class="hero-content">
         <div class="hero-copy hero-card">
-          <h1 id="heroTitle">خطة يومية لتعلم مستوى B1 في اللغة الألمانية</h1>
+          <h1 id="heroTitle">خطة يومية لتعلم اللغة الألمانية من B1 إلى B2 وما بعدها</h1>
           <p class="hero-text" id="heroDescription">
-            كل درس تقطعه اليوم يقرّبك خطوة من الحديث بثقة. التزم بالخطة، أنجز المهام، ودع التقدّم اليومي يصنع الفرق.
+            اختر المستوى المناسب لك، تابع تقدمك، وادرس الدروس بالترتيب مع مهام يومية واضحة.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#lessons">ابدأ من الدروس</a>
-            <a class="button button-secondary" id="playlistButton" href="#" target="_blank" rel="noopener noreferrer">
-              مشاهدة الدرس
-            </a>
-            <a class="button button-secondary" href="#summary">اكتشف الملخص</a>
+          <div class="hero-inspiration" aria-label="رسالة تحفيزية">
+            <p class="hero-inspiration__message">
+              كل يوم تدرسه هو استثمار في مستقبلك، وكل خطوة صغيرة تقرّبك من هدفك الكبير.
+            </p>
+            <p class="hero-inspiration__verse">
+              ﴿ وَأَنْ لَيْسَ لِلْإِنْسَانِ إِلَّا مَا سَعَىٰ ۝ وَأَنَّ سَعْيَهُ سَوْفَ يُرَىٰ ۝ ثُمَّ يُجْزَاهُ
+              الْجَزَاءَ الْأَوْفَىٰ ﴾
+            </p>
+            <p class="hero-inspiration__source">سورة النجم (39-41)</p>
           </div>
         </div>
       </section>
     </header>
 
     <main>
+      <section class="section level-switcher-section" aria-label="مستويات التعلم">
+        <div class="level-tabs level-tabs--main" id="levelTabs" role="tablist" aria-label="مستويات التعلم"></div>
+      </section>
+
+      <section class="section" id="levelIntro" aria-labelledby="levelIntroTitle">
+        <article class="progress-card level-intro-card">
+          <div class="section-heading level-intro-heading">
+            <div>
+              <h2 id="levelIntroTitle">مستوى B1 باللغة الألمانية</h2>
+            </div>
+          </div>
+          <p class="section-description" id="levelIntroDescription">
+            اختر هذا المستوى لمتابعة الخطة اليومية، مراجعة التقدم، والوصول السريع إلى قائمة الدروس الخاصة به.
+          </p>
+          <div class="level-intro-actions">
+            <a class="button button-primary" id="heroPrimaryButton" href="#" target="_blank"
+              rel="noopener noreferrer">مشاهدة دروس B1</a>
+            <a class="button button-secondary btn-secondary-glass" href="#lessons">الانتقال إلى الدروس</a>
+            <a class="button button-secondary btn-secondary-glass" href="#summary">اكتشف الملخص</a>
+          </div>
+        </article>
+      </section>
+
       <section class="section" id="progress" aria-labelledby="progressTitle">
         <div class="section-heading">
-          <h2 id="progressTitle">متابعة الإنجاز</h2>
+          <h2 id="progressTitle">متابعة إنجاز مستوى B1</h2>
         </div>
 
         <article class="progress-card">
@@ -58,7 +84,7 @@
 
       <section class="section" id="summary" aria-labelledby="summaryTitle">
         <div class="section-heading">
-          <h2 id="summaryTitle">نظرة عامة على الخطة</h2>
+          <h2 id="summaryTitle">نظرة عامة على مستوى B1</h2>
         </div>
 
         <div class="stats-grid" id="summaryGrid">
@@ -85,7 +111,6 @@
             <strong class="stat-value" id="remainingLessons">0</strong>
             <p class="stat-caption">كل درس متبقٍ هو فرصة تقدم جديدة.</p>
           </article>
-
         </div>
       </section>
 
@@ -130,7 +155,8 @@
             </div>
 
             <div class="controls-actions">
-              <button class="button button-secondary" id="clearFiltersButton" type="button">مسح</button>
+              <button class="button button-secondary btn-secondary-glass" id="clearFiltersButton"
+                type="button">مسح</button>
             </div>
           </div>
 
@@ -160,7 +186,8 @@
 
     <footer class="footer">
       <p>
-        خطة يومية لتعلم اللغة الألمانية - مستوى B1 خطوة بخطوة • Mit ❤️ von Mohamed El Masnaoui </p>
+        خطة يومية لتعلم اللغة الألمانية متعددة المستويات خطوة بخطوة • Mit ❤️ von Mohamed El Masnaoui
+      </p>
     </footer>
   </div>
 
@@ -171,7 +198,7 @@
     </svg>
   </button>
 
-  <script src="./script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
