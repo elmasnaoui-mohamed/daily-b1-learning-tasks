@@ -1,20 +1,10 @@
 import b1Lessons from "./src/data/b1Lessons.json" with { type: "json" };
 import b2Lessons from "./src/data/b2Lessons.json" with { type: "json" };
 
-const LEVELS = {
-  B1: {
-    label: "B1",
-    title: b1Lessons.playlist_title,
-    playlistUrl: b1Lessons.playlist_url,
-    lessons: Array.isArray(b1Lessons.lessons) ? b1Lessons.lessons : [],
-  },
-  B2: {
-    label: "B2",
-    title: b2Lessons.playlist_title,
-    playlistUrl: b2Lessons.playlist_url,
-    lessons: Array.isArray(b2Lessons.lessons) ? b2Lessons.lessons : [],
-  },
-};
+const LEVELS = buildLevels({
+  B1: b1Lessons,
+  B2: b2Lessons,
+});
 
 const LEVEL_KEYS = Object.keys(LEVELS);
 
@@ -211,6 +201,40 @@ function getActiveLevelData() {
 
 function getActiveLessons() {
   return getActiveLevelData().lessons;
+}
+
+function buildLevels(levelSources) {
+  return Object.fromEntries(
+    Object.entries(levelSources).map(([level, data]) => [
+      level,
+      {
+        label: level,
+        title: data?.playlist_title ?? "",
+        playlistUrl: data?.playlist_url ?? "#",
+        lessons: Array.isArray(data?.lessons) ? data.lessons : [],
+      },
+    ])
+  );
+}
+
+function getLessonsForLevel(level) {
+  return LEVELS[level]?.lessons ?? [];
+}
+
+function getLevelStats(level, lessons = getLessonsForLevel(level)) {
+  const totalLessons = lessons.length;
+  const completedLessons = getCompletedLessonsCount(level, lessons);
+  const remainingLessons = Math.max(0, totalLessons - completedLessons);
+  const mainTopics = getUniqueFocuses(lessons).length;
+  const progressPercent = totalLessons === 0 ? 0 : Math.round((completedLessons / totalLessons) * 100);
+
+  return {
+    totalLessons,
+    completedLessons,
+    remainingLessons,
+    mainTopics,
+    progressPercent,
+  };
 }
 
 function setActiveLevel(level) {
@@ -429,27 +453,23 @@ function render() {
   renderDynamicText();
 
   const lessons = getActiveLessons();
-  const totalLessons = lessons.length;
-  const completedLessons = getCompletedLessonsCount(lessons);
-  const remainingLessons = Math.max(0, totalLessons - completedLessons);
-  const progressPercent = totalLessons === 0 ? 0 : Math.round((completedLessons / totalLessons) * 100);
+  const stats = getLevelStats(state.activeLevel, lessons);
   const filteredLessons = getFilteredLessons();
-  const uniqueFocuses = getUniqueFocuses(lessons);
 
   elements.tasksContainer.innerHTML = filteredLessons.map(createLessonCardMarkup).join("");
   elements.emptyState.hidden = filteredLessons.length > 0;
 
-  elements.totalLessons.textContent = String(totalLessons);
-  elements.mainFocuses.textContent = String(uniqueFocuses.length);
-  elements.completedLessons.textContent = String(completedLessons);
-  elements.remainingLessons.textContent = String(remainingLessons);
+  elements.totalLessons.textContent = String(stats.totalLessons);
+  elements.mainFocuses.textContent = String(stats.mainTopics);
+  elements.completedLessons.textContent = String(stats.completedLessons);
+  elements.remainingLessons.textContent = String(stats.remainingLessons);
 
-  elements.progressFill.style.width = `${progressPercent}%`;
-  elements.progressBar?.setAttribute("aria-valuenow", String(progressPercent));
-  elements.heroProgressText.textContent = `أنجزت ${completedLessons} من ${totalLessons}`;
-  elements.completedSummary.textContent = `أنجزت ${completedLessons} من ${totalLessons}`;
-  elements.heroProgressPercent.textContent = `${progressPercent}%`;
-  elements.resultsSummary.textContent = buildResultsSummary(filteredLessons.length, totalLessons);
+  elements.progressFill.style.width = `${stats.progressPercent}%`;
+  elements.progressBar?.setAttribute("aria-valuenow", String(stats.progressPercent));
+  elements.heroProgressText.textContent = `أنجزت ${stats.completedLessons} من ${stats.totalLessons}`;
+  elements.completedSummary.textContent = `أنجزت ${stats.completedLessons} من ${stats.totalLessons}`;
+  elements.heroProgressPercent.textContent = `${stats.progressPercent}%`;
+  elements.resultsSummary.textContent = buildResultsSummary(filteredLessons.length, stats.totalLessons);
   elements.visibleBreakdown.textContent = `عدد الدروس الظاهرة الآن: ${filteredLessons.length}`;
 }
 
@@ -478,9 +498,10 @@ function renderDynamicText() {
 
 function getFilteredLessons() {
   const filters = getCurrentFilters().applied;
+  const activeLevel = state.activeLevel;
 
   return getActiveLessons().filter((lesson) => {
-    const completed = isLessonCompleted(lesson);
+    const completed = isLessonCompleted(activeLevel, lesson);
     const matchesStatus =
       filters.statusFilter === "all" ||
       (filters.statusFilter === "completed" && completed) ||
@@ -508,13 +529,13 @@ function getUniqueFocuses(lessons) {
   return [...new Set(lessons.map((lesson) => lesson.focus).filter(Boolean))];
 }
 
-function getCompletedLessonsCount(lessons) {
-  return lessons.filter(isLessonCompleted).length;
+function getCompletedLessonsCount(level, lessons) {
+  return lessons.filter((lesson) => isLessonCompleted(level, lesson)).length;
 }
 
-function isLessonCompleted(lesson) {
+function isLessonCompleted(level, lesson) {
   const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
-  return tasks.length > 0 && tasks.every((_, taskIndex) => isTaskCompleted(state.activeLevel, lesson.id, taskIndex));
+  return tasks.length > 0 && tasks.every((_, taskIndex) => isTaskCompleted(level, lesson.id, taskIndex));
 }
 
 function isTaskCompleted(level, lessonId, taskIndex) {
@@ -536,10 +557,9 @@ function buildResultsSummary(visibleCount, totalCount) {
 }
 
 function createLessonCardMarkup(lesson) {
+  const activeLevel = state.activeLevel;
   const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
-  const completedTasks = tasks.filter((_, taskIndex) =>
-    isTaskCompleted(state.activeLevel, lesson.id, taskIndex)
-  ).length;
+  const completedTasks = tasks.filter((_, taskIndex) => isTaskCompleted(activeLevel, lesson.id, taskIndex)).length;
   const completed = completedTasks === tasks.length && tasks.length > 0;
 
   return `
@@ -580,7 +600,7 @@ function createLessonCardMarkup(lesson) {
           ? "اكتمل هذا الدرس بعد إنهاء جميع المهام."
           : "أكمل كل المهام ليُحتسب الدرس منجزًا."}</span>
         <a class="button button-secondary btn-secondary-glass lesson-link" href="${escapeAttribute(
-          getActiveLevelData().playlistUrl
+          lesson.url || getActiveLevelData().playlistUrl
         )}" target="_blank" rel="noopener noreferrer">مشاهدة الدرس</a>
       </div>
     </article>
@@ -588,8 +608,9 @@ function createLessonCardMarkup(lesson) {
 }
 
 function createTaskItemMarkup(lessonId, taskIndex, task) {
-  const checked = isTaskCompleted(state.activeLevel, lessonId, taskIndex);
-  const inputId = `${state.activeLevel.toLowerCase()}-lesson-${lessonId}-task-${taskIndex}`;
+  const activeLevel = state.activeLevel;
+  const checked = isTaskCompleted(activeLevel, lessonId, taskIndex);
+  const inputId = `${activeLevel.toLowerCase()}-lesson-${lessonId}-task-${taskIndex}`;
 
   return `
     <label class="lesson-task${checked ? " is-checked" : ""}" for="${inputId}">
@@ -650,7 +671,7 @@ function renderErrorState(error) {
   elements.tasksContainer.innerHTML = "";
   elements.emptyState.hidden = false;
   elements.emptyState.textContent =
-    "تعذّر تحميل ملفات الخطة. تأكد من وجود src/data/b1Lessons.json و src/data/b2Lessons.json ثم أعد المحاولة.";
+    "تعذّر تحميل ملفات الخطة. تأكد من وجود ملفات الدروس داخل src/data ثم أعد المحاولة.";
   elements.resultsSummary.textContent = "لا توجد بيانات متاحة حاليًا.";
   elements.visibleBreakdown.textContent = "عدد الدروس الظاهرة الآن: 0";
 }
@@ -660,7 +681,7 @@ function escapeHtml(value) {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
+    .replace(/\"/g, "&quot;")
     .replace(/'/g, "&#39;");
 }
 

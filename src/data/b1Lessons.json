@@ -1,10 +1,10 @@
 {
   "playlist_title": "مستوى B1 باللغة الألمانية - Deutsch mit Mira",
   "playlist_url": "https://www.youtube.com/playlist?list=PLawKOZJF6P4bjm9Iq1Xm4ZWUmRrHpctyp",
-  "total_lessons": 24,
   "lessons": [
     {
       "id": 1,
+      "url": "https://www.youtube.com/watch?v=ytqaWZ2Hcik",
       "title": "Infinitiv mit ZU (Teil 1)",
       "focus": "Satzstruktur",
       "what_you_learn": "مقدمة في تركيب الجملة باستخدام (zu) وكيفية بناء الجمل المصدرية دون تكرار الفاعل.",
@@ -18,6 +18,7 @@
     },
     {
       "id": 2,
+      "url": "https://www.youtube.com/watch?v=7rCn4T0ZU7U",
       "title": "Infinitiv ohne ZU",
       "focus": "Satzstruktur",
       "what_you_learn": "التعرف على الحالات التي لا يُستخدم فيها (zu) مثل الأفعال الناقصة وأفعال الإدراك والحركة.",
@@ -31,6 +32,7 @@
     },
     {
       "id": 3,
+      "url": "https://www.youtube.com/watch?v=bXZGHbVrdJc",
       "title": "Wichtige Verben mit ZU",
       "focus": "Infinitiv mit zu",
       "what_you_learn": "التعرف على أهم الأفعال التي تأتي مع Infinitiv mit zu وكيفية ربط فعلين في جملة واحدة باستعمال zu بشكل صحيح.",
@@ -44,6 +46,7 @@
     },
     {
       "id": 4,
+      "url": "https://www.youtube.com/watch?v=wm-F4_bXJe8",
       "title": "Um... zu oder Damit?",
       "focus": "Finalsätze (Purpose Clauses)",
       "what_you_learn": "فهم الفرق بين (um ... zu) و(damit) للتعبير عن الهدف والغرض.",
@@ -57,6 +60,7 @@
     },
     {
       "id": 5,
+      "url": "https://www.youtube.com/watch?v=d9mFD22RpHE",
       "title": "Das Verb LASSEN",
       "focus": "Verben-Nuancen",
       "what_you_learn": "فهم الاستخدامات المختلفة للفعل (lassen) مثل السماح أو طلب تنفيذ شيء من شخص آخر أو ترك شيء في مكانه.",
@@ -70,6 +74,7 @@
     },
     {
       "id": 6,
+      "url": "https://www.youtube.com/watch?v=G6xWu4tSJ80",
       "title": "Konjunktiv II (Gegenwart)",
       "focus": "Irreale Bedingungen",
       "what_you_learn": "تكوين صيغة Konjunktiv II في الحاضر باستخدام würde + Infinitiv مع الأشكال الشاذة الشائعة مثل wäre وhätte.",
@@ -83,6 +88,7 @@
     },
     {
       "id": 7,
+      "url": "https://www.youtube.com/watch?v=kcu-l-uhaQQ",
       "title": "Verben mit festen Präpositionen",
       "focus": "Präpositionalobjekte",
       "what_you_learn": "حفظ الأفعال المرتبطة بحروف جر ثابتة ومعرفة الحالة الإعرابية المطلوبة مع كل حرف جر.",
@@ -96,6 +102,7 @@
     },
     {
       "id": 8,
+      "url": "https://www.youtube.com/watch?v=akVLp0R-hiU",
       "title": "Reflexive Verben mit festen Präpositionen",
       "focus": "Reflexive Verben mit Präpositionen",
       "what_you_learn": "التعرف على أهم الأفعال الانعكاسية المرتبطة بحروف جر ثابتة واستعمالها بشكل صحيح داخل الجمل.",
@@ -110,6 +117,7 @@
     },
     {
       "id": 9,
+      "url": "https://www.youtube.com/watch?v=aY05BTaPmEY",
       "title": "Pronominaladverbien (Darüber, Damit, Worüber...)",
       "focus": "Da- und Wo-Verbindungen",
       "what_you_learn": "استخدام Pronominaladverbien مثل darüber وdamit وworüber للإشارة إلى أفكار أو جمل سابقة بطريقة مختصرة.",
@@ -123,6 +131,7 @@
     },
     {
       "id": 10,
+      "url": "https://www.youtube.com/watch?v=j4qAI6hYFYo",
       "title": "Pronominaladverbien (Teil 2)",
       "focus": "Präpositionaladverbien (damit, dabei, darauf)",
       "what_you_learn": "فهم كيفية تعويض الأشياء باستخدام مركبات da (مثل damit و darauf) والفرق بينها وبين تعويض الأشخاص.",
@@ -136,6 +145,7 @@
     },
     {
       "id": 11,
+      "url": "https://www.youtube.com/watch?v=RA4GjbBtcjI",
       "title": "Verben mit Dativ und Akkusativ",
       "focus": "Kasus bei Verben",
       "what_you_learn": "التعرف على الأفعال التي تتطلب Dativ والأفعال التي تتطلب Akkusativ واستعمالها بشكل صحيح داخل الجمل.",
@@ -150,6 +160,7 @@
     },
     {
       "id": 12,
+      "url": "https://www.youtube.com/watch?v=-H_jxCgNFO4",
       "title": "Verben mit Dativ und Akkusativ (Teil 2)",
       "focus": "Kasus bei Verben",
       "what_you_learn": "تعميق فهم الأفعال التي تتطلب Dativ أو Akkusativ والتدرب على استخدامها في سياقات أكثر تنوعاً.",
@@ -164,6 +175,7 @@
     },
     {
       "id": 13,
+      "url": "https://www.youtube.com/watch?v=T82YSCwmryg",
       "title": "Das Plusquamperfekt",
       "focus": "Vergangenheit (Past Tense)",
       "what_you_learn": "تعلم صيغة Plusquamperfekt باستخدام hatte/war + Partizip II للتعبير عن حدث وقع قبل حدث آخر في الماضي.",
@@ -177,6 +189,7 @@
     },
     {
       "id": 14,
+      "url": "https://www.youtube.com/watch?v=4ZBsOdkJrtY",
       "title": "Temporale Nebensätze mit NACHDEM",
       "focus": "Satzstruktur",
       "what_you_learn": "فهم استخدام (nachdem) وربط الأزمنة بشكل صحيح بين الجملة التابعة والجملة الرئيسية.",
@@ -190,6 +203,7 @@
     },
     {
       "id": 15,
+      "url": "https://www.youtube.com/watch?v=5n0pVFO-N40",
       "title": "Indirekte Fragen (Ob & W-Fragen)",
       "focus": "Nebensätze",
       "what_you_learn": "تكوين الأسئلة غير المباشرة باستخدام ob وأدوات الاستفهام مع وضع الفعل المصرف في نهاية الجملة.",
@@ -203,6 +217,7 @@
     },
     {
       "id": 16,
+      "url": "https://www.youtube.com/watch?v=SeoBsQgg7vA",
       "title": "Das Pronomen MAN",
       "focus": "Pronomen",
       "what_you_learn": "استخدام الضمير العام (man) ومشتقاته مثل einen وeinem في مختلف الحالات.",
@@ -216,6 +231,7 @@
     },
     {
       "id": 17,
+      "url": "https://www.youtube.com/watch?v=NLLemphteSk",
       "title": "Indefinitpronomen: jemand und niemand",
       "focus": "Deklination",
       "what_you_learn": "تصريف jemand وniemand في الحالات الإعرابية المختلفة: Nominativ وAkkusativ وDativ.",
@@ -229,6 +245,7 @@
     },
     {
       "id": 18,
+      "url": "https://www.youtube.com/watch?v=-uyOXeyOVyg",
       "title": "Adverbien mit -irgend (irgendwer, irgendwo...)",
       "focus": "Lokal- und Temporaladverbien",
       "what_you_learn": "استخدام كلمات irgend- مثل irgendwo وirgendwann وirgendwie للتعبير عن العشوائية أو عدم التحديد.",
@@ -242,6 +259,7 @@
     },
     {
       "id": 19,
+      "url": "https://www.youtube.com/watch?v=FCEHYNACoBQ",
       "title": "10 Wichtige Adjektive auf B1",
       "focus": "Wortschatz (Vocabulary)",
       "what_you_learn": "اكتساب مجموعة من أهم الصفات المطلوبة في مستوى B1 للنجاح في المحادثة والكتابة.",
@@ -255,6 +273,7 @@
     },
     {
       "id": 20,
+      "url": "https://www.youtube.com/watch?v=p0mP3MuhJjU",
       "title": "Zweiteilige Konnektoren (Weder... noch)",
       "focus": "Doppelkonjunktionen",
       "what_you_learn": "استخدام أداة الربط المزدوجة (weder ... noch) لنفي خيارين في نفس الجملة.",
@@ -268,6 +287,7 @@
     },
     {
       "id": 21,
+      "url": "https://www.youtube.com/watch?v=PH3BDrnoDt4",
       "title": "Zweiteilige Konnektoren (Sowohl... als auch)",
       "focus": "Doppelkonjunktionen",
       "what_you_learn": "استخدام أداة الربط (sowohl ... als auch) للتعبير عن الجمع بين شيئين أو أكثر.",
@@ -281,6 +301,7 @@
     },
     {
       "id": 22,
+      "url": "https://www.youtube.com/watch?v=xj6mmMb7wbk",
       "title": "Zweiteilige Konnektoren (Nicht nur... sondern auch)",
       "focus": "Doppelkonjunktionen",
       "what_you_learn": "استخدام (nicht nur ... sondern auch) لإضافة التأكيد والتدرج في الأفكار.",
@@ -294,6 +315,7 @@
     },
     {
       "id": 23,
+      "url": "https://www.youtube.com/watch?v=aOJb6L0EwIE",
       "title": "Trotzdem vs. Obwohl",
       "focus": "Konzessivsätze (Concessive Clauses)",
       "what_you_learn": "فهم الفرق بين obwohl كجملة تابعة يكون فيها الفعل في النهاية وtrotzdem كرابط يأتي بعده الفعل في المركز الثاني.",
@@ -307,6 +329,7 @@
     },
     {
       "id": 24,
+      "url": "https://www.youtube.com/watch?v=QpbM_EbXMAs",
       "title": "Der Unterschied zwischen Damit und Weil",
       "focus": "Kausalsätze vs. Finalsätze",
       "what_you_learn": "فهم الفرق بين السبب باستخدام weil والهدف أو الغرض باستخدام damit.",

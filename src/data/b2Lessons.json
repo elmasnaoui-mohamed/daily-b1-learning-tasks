@@ -1,10 +1,10 @@
 {
-  "playlist_title": "مستوى B2 باللغة الالمانية - Deutsch mit Mira",
+  "playlist_title": "مستوى B2 باللغة الألمانية - Deutsch mit Mira",
   "playlist_url": "https://www.youtube.com/playlist?list=PLawKOZJF6P4bi-3OC22Fw_uptWQwqtuiA",
-  "total_lessons": 15,
   "lessons": [
     {
       "id": 1,
+      "url": "https://www.youtube.com/watch?v=DktooIz41ts",
       "title": "Partizip als Adjektiv",
       "focus": "Partizip I und Partizip II",
       "what_you_learn": "استخدام Partizip I وPartizip II كصفات لوصف الأشخاص والأشياء والأحداث بطريقة أكثر دقة وتقدماً.",
@@ -19,6 +19,7 @@
     },
     {
       "id": 2,
+      "url": "https://www.youtube.com/watch?v=oME6reNG5es",
       "title": "Partizip II als Adjektiv",
       "focus": "Partizip II als Attribut",
       "what_you_learn": "استخدام اسم المفعول (Partizip II) كصفة لوصف الأشخاص والأشياء والحالات بطريقة أكثر دقة وتقدماً.",
@@ -33,6 +34,7 @@
     },
     {
       "id": 3,
+      "url": "https://www.youtube.com/watch?v=JpUTGPvV5qU",
       "title": "Partizip I und II als Adjektiv – Übungen",
       "focus": "Anwendung von Partizipien",
       "what_you_learn": "تطبيق استعمال Partizip I وPartizip II كصفات والتمييز بينهما في مواقف مختلفة من خلال تمارين عملية.",
@@ -47,6 +49,7 @@
     },
     {
       "id": 4,
+      "url": "https://www.youtube.com/watch?v=rHFzpE-eCUU",
       "title": "Verben mit der Präposition an + Dativ",
       "focus": "Verben mit Präpositionen",
       "what_you_learn": "التعرف على الأفعال المرتبطة بحرف الجر an مع حالة Dativ واستعمالها بشكل صحيح في الجمل اليومية والرسمية.",
@@ -61,6 +64,7 @@
     },
     {
       "id": 5,
+      "url": "https://www.youtube.com/watch?v=C_py-Cm_QjQ",
       "title": "Verben mit der Präposition an + Akkusativ",
       "focus": "Verben mit Präpositionen",
       "what_you_learn": "التعرف على الأفعال المرتبطة بحرف الجر an مع حالة Akkusativ واستعمالها بشكل صحيح في مواقف الحياة اليومية والسياقات الرسمية.",
@@ -75,6 +79,7 @@
     },
     {
       "id": 6,
+      "url": "https://www.youtube.com/watch?v=kdpQE8zyeRI",
       "title": "Als ob – Irreale Vergleiche",
       "focus": "Konjunktiv II und Vergleichssätze",
       "what_you_learn": "استخدام als ob للتعبير عن المقارنات أو الانطباعات غير الواقعية مع توظيف Konjunktiv II بشكل صحيح.",
@@ -89,6 +94,7 @@
     },
     {
       "id": 7,
+      "url": "https://www.youtube.com/watch?v=xQqRC5NnGSg",
       "title": "Konjunktiv I (Indirekte Rede)",
       "focus": "Indirekte Rede",
       "what_you_learn": "استخدام Konjunktiv I لنقل الأقوال والتصريحات والآراء بطريقة غير مباشرة مع التمييز بينه وبين Konjunktiv II.",
@@ -103,6 +109,7 @@
     },
     {
       "id": 8,
+      "url": "https://www.youtube.com/watch?v=ymVmDu_XtU8",
       "title": "Konjunktiv I (Indirekte Rede) – Teil 2",
       "focus": "Indirekte Rede",
       "what_you_learn": "تعميق استعمال Konjunktiv I في نقل الأقوال والتصريحات، والتعامل مع الحالات الخاصة وصيغ الأفعال المختلفة في الكلام غير المباشر.",
@@ -117,6 +124,7 @@
     },
     {
       "id": 9,
+      "url": "https://www.youtube.com/watch?v=Qaz5jjNHBvc",
       "title": "Wichtiger B2-Wortschatz",
       "focus": "Wortschatz und Ausdruck",
       "what_you_learn": "اكتساب مجموعة من أهم مفردات B2 المستخدمة في النقاشات والمواضيع الاجتماعية والتعليمية والمهنية.",
@@ -131,6 +139,7 @@
     },
     {
       "id": 10,
+      "url": "https://www.youtube.com/watch?v=RO2MXDMmIwI",
       "title": "Konjunktiv I mit W-Fragen (Indirekte Rede)",
       "focus": "Indirekte Rede",
       "what_you_learn": "استخدام Konjunktiv I مع أسئلة W-Fragen في الكلام غير المباشر مع الحفاظ على ترتيب الجملة الصحيح.",
@@ -145,6 +154,7 @@
     },
     {
       "id": 11,
+      "url": "https://www.youtube.com/watch?v=eKigYVrMPf4",
       "title": "B2 Prüfungsvorbereitung: Text, Wortschatz und Übungen",
       "focus": "Leseverstehen und Wortschatz",
       "what_you_learn": "تحليل نص بمستوى B2 واكتساب مفردات جديدة والتدرب على أسئلة وتمارين مشابهة لما يظهر في الامتحانات.",
@@ -159,6 +169,7 @@
     },
     {
       "id": 12,
+      "url": "https://www.youtube.com/watch?v=ihqlVhTsyVc",
       "title": "Wichtige Verben mit Präpositionen (B2)",
       "focus": "Verben mit Präpositionen",
       "what_you_learn": "التعرف على أهم الأفعال المرتبطة بحروف الجر في مستوى B2 واستعمالها مع الحالة الإعرابية الصحيحة داخل الجمل والسياقات الرسمية.",
@@ -173,6 +184,7 @@
     },
     {
       "id": 13,
+      "url": "https://www.youtube.com/watch?v=pN9-AUVu5CM",
       "title": "Das Futur II (Die vollendete Zukunft)",
       "focus": "Tempora (Tenses)",
       "what_you_learn": "التعمق في بناء واستخدام Futur II بدقة من خلال الصيغة werden + Partizip II + haben/sein.",
@@ -186,6 +198,7 @@
     },
     {
       "id": 14,
+      "url": "https://www.youtube.com/watch?v=R0PRUVNvsOk",
       "title": "Relativsätze im Genitiv",
       "focus": "Relativpronomen (Genitive Case)",
       "what_you_learn": "تكوين Relativsätze في حالة Genitiv باستخدام ضمائر مثل dessen وderen لإظهار الملكية والعلاقة بين العناصر بوضوح.",
@@ -199,6 +212,7 @@
     },
     {
       "id": 15,
+      "url": "https://www.youtube.com/watch?v=jHY4-5uw7vg",
       "title": "Relativsätze im Überblick",
       "focus": "Relativpronomen und Satzbau",
       "what_you_learn": "فهم واستخدام الجمل الموصولة (Relativsätze) مع ضمائر الوصل المختلفة في حالات Nominativ و Akkusativ و Dativ و Genitiv، مع تعلم ترتيب الكلمات داخل الجملة التابعة.",
