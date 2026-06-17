@@ -1,7 +1,15 @@
+import a1Lessons from "./src/data/a1Lessons.json" with { type: "json" };
+import a2Lessons from "./src/data/a2Lessons.json" with { type: "json" };
 import b1Lessons from "./src/data/b1Lessons.json" with { type: "json" };
 import b2Lessons from "./src/data/b2Lessons.json" with { type: "json" };
 
+const LAST_LEVEL_STORAGE_KEY = "germanLearning:lastLevel";
+const LAST_LESSON_STORAGE_KEY = "germanLearning:lastLesson";
+const LESSON_HIGHLIGHT_DURATION = 2200;
+
 const LEVELS = buildLevels({
+  A1: a1Lessons,
+  A2: a2Lessons,
   B1: b1Lessons,
   B2: b2Lessons,
 });
@@ -17,14 +25,18 @@ const STATUS_OPTIONS = [
 const GLOBAL_PAGE_TITLE = "خطة تعلم اللغة الألمانية متعددة المستويات";
 
 const state = {
-  activeLevel: LEVEL_KEYS[0] || "B1",
+  activeLevel: getInitialActiveLevel(),
   filters: Object.fromEntries(LEVEL_KEYS.map((level) => [level, createLevelFilters()])),
   openDropdown: null,
   isBackToTopVisible: false,
+  highlightedLessonKey: null,
+  highlightTimeoutId: null,
 };
 
 const elements = {
   heroPrimaryButton: document.querySelector("#heroPrimaryButton"),
+  continueLearningButton: document.querySelector("#continueLearningButton"),
+  continueLearningNote: document.querySelector("#continueLearningNote"),
   levelIntroTitle: document.querySelector("#levelIntroTitle"),
   levelIntroDescription: document.querySelector("#levelIntroDescription"),
   tasksContainer: document.querySelector("#tasksContainer"),
@@ -63,6 +75,7 @@ function bootstrap() {
 
   try {
     migrateStoredProgress();
+    persistLastLevel(state.activeLevel);
     renderLevelTabs();
     renderDropdowns();
     render();
@@ -125,6 +138,10 @@ function bindEvents() {
     clearFilters();
   });
 
+  elements.continueLearningButton?.addEventListener("click", () => {
+    continueLearning();
+  });
+
   elements.tasksContainer?.addEventListener("change", (event) => {
     const input = event.target;
     if (!(input instanceof HTMLInputElement) || input.type !== "checkbox") {
@@ -138,6 +155,7 @@ function bindEvents() {
       return;
     }
 
+    persistLastLesson(state.activeLevel, lessonId);
     const storageKey = getTaskStorageKey(state.activeLevel, lessonId, taskIndex);
     if (input.checked) {
       localStorage.setItem(storageKey, "true");
@@ -146,6 +164,20 @@ function bindEvents() {
     }
 
     render();
+  });
+
+  elements.tasksContainer?.addEventListener("click", (event) => {
+    const lessonCard = event.target.closest("[data-lesson-id]");
+    if (!(lessonCard instanceof HTMLElement)) {
+      return;
+    }
+
+    const lessonId = Number(lessonCard.dataset.lessonId);
+    if (!Number.isFinite(lessonId)) {
+      return;
+    }
+
+    persistLastLesson(state.activeLevel, lessonId);
   });
 
   document.addEventListener("pointerdown", (event) => {
@@ -189,6 +221,11 @@ function createFilterSnapshot() {
     statusFilter: "all",
     focusFilters: new Set(),
   };
+}
+
+function getInitialActiveLevel() {
+  const savedLevel = safelyReadLocalStorage(LAST_LEVEL_STORAGE_KEY);
+  return savedLevel && LEVELS[savedLevel] ? savedLevel : LEVEL_KEYS[0] || "B1";
 }
 
 function getCurrentFilters() {
@@ -243,6 +280,7 @@ function setActiveLevel(level) {
   }
 
   state.activeLevel = level;
+  persistLastLevel(level);
   closeAllDropdowns();
   renderLevelTabs();
   renderDropdowns();
@@ -458,6 +496,7 @@ function render() {
 
   elements.tasksContainer.innerHTML = filteredLessons.map(createLessonCardMarkup).join("");
   elements.emptyState.hidden = filteredLessons.length > 0;
+  applyPendingLessonHighlight();
 
   elements.totalLessons.textContent = String(stats.totalLessons);
   elements.mainFocuses.textContent = String(stats.mainTopics);
@@ -546,6 +585,158 @@ function getTaskStorageKey(level, lessonId, taskIndex) {
   return `${level}-${lessonId}-task-${taskIndex}`;
 }
 
+function getLessonStateKey(level, lessonId) {
+  return `${level}:${lessonId}`;
+}
+
+function getLessonsForLevelMap(level) {
+  return new Map(getLessonsForLevel(level).map((lesson) => [lesson.id, lesson]));
+}
+
+function getLessonByLevelAndId(level, lessonId) {
+  return getLessonsForLevelMap(level).get(lessonId) ?? null;
+}
+
+function persistLastLevel(level) {
+  safelyWriteLocalStorage(LAST_LEVEL_STORAGE_KEY, level);
+}
+
+function persistLastLesson(level, lessonId) {
+  if (!LEVELS[level] || !getLessonByLevelAndId(level, lessonId)) {
+    return;
+  }
+
+  safelyWriteLocalStorage(
+    LAST_LESSON_STORAGE_KEY,
+    JSON.stringify({
+      level,
+      lessonId,
+    })
+  );
+}
+
+function getSavedLastLesson() {
+  const rawValue = safelyReadLocalStorage(LAST_LESSON_STORAGE_KEY);
+  if (!rawValue) {
+    return null;
+  }
+
+  try {
+    const parsed = JSON.parse(rawValue);
+    if (!parsed || !LEVELS[parsed.level]) {
+      return null;
+    }
+
+    const lessonId = Number(parsed.lessonId);
+    if (!Number.isFinite(lessonId) || !getLessonByLevelAndId(parsed.level, lessonId)) {
+      return null;
+    }
+
+    return {
+      level: parsed.level,
+      lessonId,
+    };
+  } catch (error) {
+    return null;
+  }
+}
+
+function getFirstIncompleteLesson(level) {
+  return getLessonsForLevel(level).find((lesson) => !isLessonCompleted(level, lesson)) ?? null;
+}
+
+function continueLearning() {
+  const savedLesson = getSavedLastLesson();
+  if (savedLesson) {
+    focusLesson(savedLesson.level, savedLesson.lessonId, "تم الرجوع إلى آخر درس كنت تدرسه.");
+    return;
+  }
+
+  const firstIncompleteLesson = getFirstIncompleteLesson(state.activeLevel);
+  if (firstIncompleteLesson) {
+    focusLesson(state.activeLevel, firstIncompleteLesson.id, "تم توجيهك إلى أول درس غير مكتمل في هذا المستوى.");
+    return;
+  }
+
+  const firstLesson = getLessonsForLevel(state.activeLevel)[0];
+  if (firstLesson) {
+    focusLesson(state.activeLevel, firstLesson.id, "أنجزت كل الدروس في هذا المستوى، لذا تم إعادتك إلى أول درس.");
+    return;
+  }
+
+  setContinueLearningMessage("لا توجد دروس متاحة للمتابعة حالياً.");
+}
+
+function focusLesson(level, lessonId, message) {
+  persistLastLevel(level);
+  persistLastLesson(level, lessonId);
+
+  if (state.activeLevel !== level) {
+    setActiveLevel(level);
+  }
+
+  state.highlightedLessonKey = getLessonStateKey(level, lessonId);
+  setContinueLearningMessage(message);
+  render();
+
+  requestAnimationFrame(() => {
+    const lessonCard = elements.tasksContainer?.querySelector(
+      `[data-level="${escapeSelectorValue(level)}"][data-lesson-id="${lessonId}"]`
+    );
+
+    if (!(lessonCard instanceof HTMLElement)) {
+      return;
+    }
+
+    lessonCard.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  });
+}
+
+function applyPendingLessonHighlight() {
+  if (!state.highlightedLessonKey) {
+    return;
+  }
+
+  if (state.highlightTimeoutId) {
+    window.clearTimeout(state.highlightTimeoutId);
+  }
+
+  state.highlightTimeoutId = window.setTimeout(() => {
+    state.highlightedLessonKey = null;
+    state.highlightTimeoutId = null;
+    render();
+  }, LESSON_HIGHLIGHT_DURATION);
+}
+
+function setContinueLearningMessage(message) {
+  if (elements.continueLearningNote) {
+    elements.continueLearningNote.textContent = message;
+  }
+}
+
+function safelyReadLocalStorage(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch (error) {
+    return null;
+  }
+}
+
+function safelyWriteLocalStorage(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (error) {
+    // Ignore storage write failures so the app keeps working.
+  }
+}
+
+function escapeSelectorValue(value) {
+  return String(value).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+}
+
 function buildResultsSummary(visibleCount, totalCount) {
   const filters = getCurrentFilters().applied;
 
@@ -561,9 +752,11 @@ function createLessonCardMarkup(lesson) {
   const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
   const completedTasks = tasks.filter((_, taskIndex) => isTaskCompleted(activeLevel, lesson.id, taskIndex)).length;
   const completed = completedTasks === tasks.length && tasks.length > 0;
+  const shouldHighlight = state.highlightedLessonKey === getLessonStateKey(activeLevel, lesson.id);
 
   return `
-    <article class="task-card${completed ? " is-completed" : ""}" data-lesson-id="${lesson.id}">
+    <article class="task-card${completed ? " is-completed" : ""}${shouldHighlight ? " is-resuming" : ""}"
+      data-lesson-id="${lesson.id}" data-level="${activeLevel}">
       <div class="task-topline">
         <span class="task-day">اليوم ${lesson.id}</span>
         <span class="status-pill${completed ? " status-pill--completed" : ""}">

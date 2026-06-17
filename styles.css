@@ -243,8 +243,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 4px;
+  margin-top: 6px;
+  padding-top: 20px;
   width: 100%;
+  border-top: 1px solid rgba(142, 177, 255, 0.14);
 }
 
 .button {
@@ -772,6 +774,13 @@ p {
   width: 100%;
 }
 
+.continue-learning-note {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 
 .tasks-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -787,6 +796,16 @@ p {
     border-color var(--transition-fast),
     box-shadow var(--transition-fast),
     opacity var(--transition-fast);
+}
+
+.task-card.is-resuming {
+  border-color: rgba(79, 140, 255, 0.42);
+  background:
+    radial-gradient(circle at top right, rgba(79, 140, 255, 0.18), transparent 38%),
+    var(--surface);
+  box-shadow:
+    0 0 0 1px rgba(79, 140, 255, 0.18),
+    0 18px 36px rgba(0, 0, 0, 0.26);
 }
 
 .task-card.is-completed {
