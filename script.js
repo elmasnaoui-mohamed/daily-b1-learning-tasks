@@ -22,7 +22,7 @@ const STATUS_OPTIONS = [
   { value: "pending", label: "غير المنجز" },
 ];
 
-const GLOBAL_PAGE_TITLE = "خطة تعلم اللغة الألمانية متعددة المستويات";
+const GLOBAL_PAGE_TITLE = "Deutsch mit Rinkute";
 
 const state = {
   activeLevel: getInitialActiveLevel(),
