@@ -498,6 +498,24 @@ body {
   line-height: 1;
 }
 
+/* CSS-only Hören hiding to keep the SPA stable. */
+.navbar-btn[data-nav="hoeren"] {
+  display: none !important;
+}
+
+.mhub-stats > .mhub-stat:first-child {
+  display: none !important;
+}
+
+.mhub-skills > .mhub-card:nth-child(3) {
+  display: none !important;
+}
+
+.mhub-skills > .mhub-card:nth-child(6) p,
+footer > p.sf {
+  display: none !important;
+}
+
 @media (max-width: 760px) {
   .navbar-btn-back.tp-back-nav-pill {
     min-height: 42px !important;
@@ -674,4 +692,3 @@ body {
 })();
 </script>
 <script src="/telcpremium.com/app.bundle_v%3D381.js"></script></body></html>
-
