@@ -1286,7 +1286,9 @@ p {
     width: 45px;
     height: 45px;
   }
-
+  #continueLearningButton{
+    width: 100%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
