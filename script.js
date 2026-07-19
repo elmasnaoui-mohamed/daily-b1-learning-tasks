@@ -808,7 +808,7 @@ function createTaskItemMarkup(lessonId, taskIndex, task) {
   return `
     <label class="lesson-task${checked ? " is-checked" : ""}" for="${inputId}">
       <span class="task-toggle">
-        <input id="${inputId}" checked="${checked}" type="checkbox" data-lesson-id="${lessonId}" data-task-index="${taskIndex}" ${checked ? "checked" : ""} />
+        <input id="${inputId}" type="checkbox" data-lesson-id="${lessonId}" data-task-index="${taskIndex}" ${checked ? "checked" : ""} />
         <span class="toggle-mark" aria-hidden="true"></span>
       </span>
       <span class="lesson-task__text">${escapeHtml(task)}</span>
