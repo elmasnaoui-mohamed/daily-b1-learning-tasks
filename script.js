@@ -783,18 +783,18 @@ function createLessonCardMarkup(lesson) {
         <span class="task-label">مهام اليوم</span>
         <div class="lesson-tasks">
           ${tasks.length > 0
-            ? tasks.map((task, taskIndex) => createTaskItemMarkup(lesson.id, taskIndex, task)).join("")
-            : `<p class="task-text">لا توجد مهام محفوظة لهذا الدرس حاليًا.</p>`}
+      ? tasks.map((task, taskIndex) => createTaskItemMarkup(lesson.id, taskIndex, task)).join("")
+      : `<p class="task-text">لا توجد مهام محفوظة لهذا الدرس حاليًا.</p>`}
         </div>
       </div>
 
       <div class="task-footer">
         <span class="lesson-state">${completed
-          ? "اكتمل هذا الدرس بعد إنهاء جميع المهام."
-          : "أكمل كل المهام ليُحتسب الدرس منجزًا."}</span>
+      ? "اكتمل هذا الدرس بعد إنهاء جميع المهام."
+      : "أكمل كل المهام ليُحتسب الدرس منجزًا."}</span>
         <a class="button button-secondary btn-secondary-glass lesson-link" href="${escapeAttribute(
-          lesson.url || getActiveLevelData().playlistUrl
-        )}" target="_blank" rel="noopener noreferrer">مشاهدة الدرس</a>
+        lesson.url || getActiveLevelData().playlistUrl
+      )}" target="_blank" rel="noopener noreferrer">مشاهدة الدرس</a>
       </div>
     </article>
   `;
@@ -808,7 +808,7 @@ function createTaskItemMarkup(lessonId, taskIndex, task) {
   return `
     <label class="lesson-task${checked ? " is-checked" : ""}" for="${inputId}">
       <span class="task-toggle">
-        <input id="${inputId}" type="checkbox" data-lesson-id="${lessonId}" data-task-index="${taskIndex}" ${checked ? "checked" : ""} />
+        <input id="${inputId}" checked="${checked}" type="checkbox" data-lesson-id="${lessonId}" data-task-index="${taskIndex}" ${checked ? "checked" : ""} />
         <span class="toggle-mark" aria-hidden="true"></span>
       </span>
       <span class="lesson-task__text">${escapeHtml(task)}</span>
