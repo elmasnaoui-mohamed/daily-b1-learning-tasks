@@ -5,6 +5,7 @@ import b2Lessons from "./src/data/b2Lessons.json" with { type: "json" };
 
 const LAST_LEVEL_STORAGE_KEY = "germanLearning:lastLevel";
 const LAST_LESSON_STORAGE_KEY = "germanLearning:lastLesson";
+const TASK_COMPLETION_STORAGE_KEY = "germanLearning:taskCompletion:v2";
 const LESSON_HIGHLIGHT_DURATION = 2200;
 
 const LEVELS = buildLevels({
@@ -75,6 +76,7 @@ function bootstrap() {
 
   try {
     migrateStoredProgress();
+    restoreTaskCompletion();
     persistLastLevel(state.activeLevel);
     renderLevelTabs();
     renderDropdowns();
@@ -149,20 +151,20 @@ function bindEvents() {
     }
 
     const lessonId = Number(input.dataset.lessonId);
-    const taskIndex = Number(input.dataset.taskIndex);
+    const taskId = input.dataset.taskId;
 
-    if (!Number.isFinite(lessonId) || !Number.isFinite(taskIndex)) {
+    if (!Number.isFinite(lessonId) || !taskId) {
+      return;
+    }
+
+    const task = getTaskById(state.activeLevel, lessonId, taskId);
+    if (!task) {
       return;
     }
 
     persistLastLesson(state.activeLevel, lessonId);
-    const storageKey = getTaskStorageKey(state.activeLevel, lessonId, taskIndex);
-    if (input.checked) {
-      localStorage.setItem(storageKey, "true");
-    } else {
-      localStorage.removeItem(storageKey);
-    }
-
+    task.completed = input.checked;
+    persistTaskCompletion();
     render();
   });
 
@@ -248,10 +250,43 @@ function buildLevels(levelSources) {
         label: level,
         title: data?.playlist_title ?? "",
         playlistUrl: data?.playlist_url ?? "#",
-        lessons: Array.isArray(data?.lessons) ? data.lessons : [],
+        lessons: Array.isArray(data?.lessons)
+          ? data.lessons.map((lesson) => ({
+            ...lesson,
+            tasks: createTaskModels(level, lesson),
+          }))
+          : [],
       },
     ])
   );
+}
+
+function createTaskModels(level, lesson) {
+  const duplicateIds = new Map();
+
+  return (Array.isArray(lesson.tasks) ? lesson.tasks : []).map((taskText) => {
+    const text = String(taskText);
+    const baseId = `${level}:${lesson.id}:${hashTaskText(text)}`;
+    const occurrence = duplicateIds.get(baseId) ?? 0;
+    duplicateIds.set(baseId, occurrence + 1);
+
+    return {
+      id: occurrence === 0 ? baseId : `${baseId}:${occurrence + 1}`,
+      text,
+      completed: false,
+    };
+  });
+}
+
+function hashTaskText(text) {
+  let hash = 2166136261;
+
+  for (const character of text.normalize("NFC")) {
+    hash ^= character.codePointAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+
+  return (hash >>> 0).toString(36);
 }
 
 function getLessonsForLevel(level) {
@@ -260,7 +295,7 @@ function getLessonsForLevel(level) {
 
 function getLevelStats(level, lessons = getLessonsForLevel(level)) {
   const totalLessons = lessons.length;
-  const completedLessons = getCompletedLessonsCount(level, lessons);
+  const completedLessons = getCompletedLessonsCount(lessons);
   const remainingLessons = Math.max(0, totalLessons - completedLessons);
   const mainTopics = getUniqueFocuses(lessons).length;
   const progressPercent = totalLessons === 0 ? 0 : Math.round((completedLessons / totalLessons) * 100);
@@ -540,7 +575,7 @@ function getFilteredLessons() {
   const activeLevel = state.activeLevel;
 
   return getActiveLessons().filter((lesson) => {
-    const completed = isLessonCompleted(activeLevel, lesson);
+    const completed = isLessonCompleted(lesson);
     const matchesStatus =
       filters.statusFilter === "all" ||
       (filters.statusFilter === "completed" && completed) ||
@@ -558,7 +593,7 @@ function createSearchableText(lesson) {
     lesson.focus,
     lesson.what_you_learn,
     lesson.conversational_goal,
-    ...(lesson.tasks || []),
+    ...(lesson.tasks || []).map((task) => task.text),
   ]
     .join(" ")
     .toLowerCase();
@@ -568,21 +603,18 @@ function getUniqueFocuses(lessons) {
   return [...new Set(lessons.map((lesson) => lesson.focus).filter(Boolean))];
 }
 
-function getCompletedLessonsCount(level, lessons) {
-  return lessons.filter((lesson) => isLessonCompleted(level, lesson)).length;
+function getCompletedLessonsCount(lessons) {
+  return lessons.filter(isLessonCompleted).length;
 }
 
-function isLessonCompleted(level, lesson) {
+function isLessonCompleted(lesson) {
   const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
-  return tasks.length > 0 && tasks.every((_, taskIndex) => isTaskCompleted(level, lesson.id, taskIndex));
+  return tasks.length > 0 && tasks.every((task) => task.completed);
 }
 
-function isTaskCompleted(level, lessonId, taskIndex) {
-  return localStorage.getItem(getTaskStorageKey(level, lessonId, taskIndex)) === "true";
-}
-
-function getTaskStorageKey(level, lessonId, taskIndex) {
-  return `${level}-${lessonId}-task-${taskIndex}`;
+function getTaskById(level, lessonId, taskId) {
+  const lesson = getLessonByLevelAndId(level, lessonId);
+  return lesson?.tasks.find((task) => task.id === taskId) ?? null;
 }
 
 function getLessonStateKey(level, lessonId) {
@@ -642,7 +674,7 @@ function getSavedLastLesson() {
 }
 
 function getFirstIncompleteLesson(level) {
-  return getLessonsForLevel(level).find((lesson) => !isLessonCompleted(level, lesson)) ?? null;
+  return getLessonsForLevel(level).find((lesson) => !isLessonCompleted(lesson)) ?? null;
 }
 
 function continueLearning() {
@@ -750,7 +782,7 @@ function buildResultsSummary(visibleCount, totalCount) {
 function createLessonCardMarkup(lesson) {
   const activeLevel = state.activeLevel;
   const tasks = Array.isArray(lesson.tasks) ? lesson.tasks : [];
-  const completedTasks = tasks.filter((_, taskIndex) => isTaskCompleted(activeLevel, lesson.id, taskIndex)).length;
+  const completedTasks = tasks.filter((task) => task.completed).length;
   const completed = completedTasks === tasks.length && tasks.length > 0;
   const shouldHighlight = state.highlightedLessonKey === getLessonStateKey(activeLevel, lesson.id);
 
@@ -783,7 +815,7 @@ function createLessonCardMarkup(lesson) {
         <span class="task-label">مهام اليوم</span>
         <div class="lesson-tasks">
           ${tasks.length > 0
-      ? tasks.map((task, taskIndex) => createTaskItemMarkup(lesson.id, taskIndex, task)).join("")
+      ? tasks.map((task) => createTaskItemMarkup(lesson.id, task)).join("")
       : `<p class="task-text">لا توجد مهام محفوظة لهذا الدرس حاليًا.</p>`}
         </div>
       </div>
@@ -800,18 +832,17 @@ function createLessonCardMarkup(lesson) {
   `;
 }
 
-function createTaskItemMarkup(lessonId, taskIndex, task) {
+function createTaskItemMarkup(lessonId, task) {
   const activeLevel = state.activeLevel;
-  const checked = isTaskCompleted(activeLevel, lessonId, taskIndex);
-  const inputId = `${activeLevel.toLowerCase()}-lesson-${lessonId}-task-${taskIndex}`;
+  const inputId = `task-${task.id.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
 
   return `
-    <label class="lesson-task${checked ? " is-checked" : ""}" for="${inputId}">
+    <label class="lesson-task${task.completed ? " is-checked" : ""}" for="${inputId}">
       <span class="task-toggle">
-        <input id="${inputId}" type="checkbox" data-lesson-id="${lessonId}" data-task-index="${taskIndex}" ${checked ? "checked" : ""} />
+        <input id="${inputId}" type="checkbox" data-lesson-id="${lessonId}" data-task-id="${escapeAttribute(task.id)}" ${task.completed ? "checked" : ""} />
         <span class="toggle-mark" aria-hidden="true"></span>
       </span>
-      <span class="lesson-task__text">${escapeHtml(task)}</span>
+      <span class="lesson-task__text">${escapeHtml(task.text)}</span>
     </label>
   `;
 }
@@ -819,44 +850,91 @@ function createTaskItemMarkup(lessonId, taskIndex, task) {
 function migrateStoredProgress() {
   const legacyPatterns = [
     { pattern: /^b1-lesson-(\d+)-task-(\d+)$/, level: "B1" },
-    { pattern: /^b1-(B\d+)-(\d+)-task-(\d+)$/, levelIndex: 1, lessonIndex: 2, taskIndex: 3 },
-    { pattern: /^(B\d+)-(\d+)-task-(\d+)$/, levelIndex: 1, lessonIndex: 2, taskIndex: 3 },
+    { pattern: /^b1-([AB]\d+)-(\d+)-task-(\d+)$/i, levelIndex: 1, lessonIndex: 2, taskIndex: 3 },
+    { pattern: /^([AB]\d+)-(\d+)-task-(\d+)$/i, levelIndex: 1, lessonIndex: 2, taskIndex: 3 },
   ];
 
-  const updates = [];
+  const storedCompletion = readStoredTaskCompletion();
+  const migratedCompletion = { ...storedCompletion };
 
-  for (let index = 0; index < localStorage.length; index += 1) {
-    const key = localStorage.key(index);
-    if (!key) {
-      continue;
-    }
-
+  for (const { key, value } of getStoredEntries()) {
     for (const config of legacyPatterns) {
       const match = key.match(config.pattern);
       if (!match) {
         continue;
       }
 
-      const level = config.level ?? match[config.levelIndex];
+      const level = config.level ?? match[config.levelIndex].toUpperCase();
       const lessonId = Number(match[config.lessonIndex ?? 1]);
       const taskIndex = Number(match[config.taskIndex ?? 2]);
 
-      if (!LEVELS[level]) {
+      const task = getLessonByLevelAndId(level, lessonId)?.tasks[taskIndex];
+      if (!task || Object.prototype.hasOwnProperty.call(migratedCompletion, task.id)) {
         continue;
       }
 
-      const nextKey = getTaskStorageKey(level, lessonId, taskIndex);
-      if (nextKey !== key && localStorage.getItem(key) === "true" && localStorage.getItem(nextKey) !== "true") {
-        updates.push({ key: nextKey, value: "true" });
-      }
+      migratedCompletion[task.id] = parseStoredBoolean(value);
 
       break;
     }
   }
 
-  updates.forEach(({ key, value }) => {
-    localStorage.setItem(key, value);
+  safelyWriteLocalStorage(TASK_COMPLETION_STORAGE_KEY, JSON.stringify(migratedCompletion));
+}
+
+function getStoredEntries() {
+  try {
+    return Array.from({ length: localStorage.length }, (_, index) => {
+      const key = localStorage.key(index);
+      return key ? { key, value: localStorage.getItem(key) } : null;
+    }).filter(Boolean);
+  } catch (error) {
+    return [];
+  }
+}
+
+function restoreTaskCompletion() {
+  const storedCompletion = readStoredTaskCompletion();
+
+  Object.values(LEVELS).forEach(({ lessons }) => {
+    lessons.forEach((lesson) => {
+      lesson.tasks.forEach((task) => {
+        task.completed = parseStoredBoolean(storedCompletion[task.id]);
+      });
+    });
   });
+}
+
+function readStoredTaskCompletion() {
+  const rawValue = safelyReadLocalStorage(TASK_COMPLETION_STORAGE_KEY);
+  if (!rawValue) {
+    return {};
+  }
+
+  try {
+    const parsed = JSON.parse(rawValue);
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch (error) {
+    return {};
+  }
+}
+
+function parseStoredBoolean(value) {
+  return value === true || value === "true";
+}
+
+function persistTaskCompletion() {
+  const completion = {};
+
+  Object.values(LEVELS).forEach(({ lessons }) => {
+    lessons.forEach((lesson) => {
+      lesson.tasks.forEach((task) => {
+        completion[task.id] = task.completed === true;
+      });
+    });
+  });
+
+  safelyWriteLocalStorage(TASK_COMPLETION_STORAGE_KEY, JSON.stringify(completion));
 }
 
 function renderErrorState(error) {
