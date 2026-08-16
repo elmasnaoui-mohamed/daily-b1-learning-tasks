@@ -1,403 +1,492 @@
-﻿<!DOCTYPE html><html lang="de" dir="ltr"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Deutsch mit Rinkute</title>
-<meta name="description" content="لوحة عربية لتعلّم الألمانية بمستويات متعددة مع متابعة التقدم، البحث، والتصفية اعتمادًا على خطط دراسية يومية.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="icon" type="image/svg+xml" href="/src/assets/flag-for-flag-germany-svgrepo-com.svg">
+﻿<!DOCTYPE html>
+<html lang="de" dir="ltr">
 
-<!-- Fonts and styles -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap">
-</noscript>
-<link rel="stylesheet" href="/telcpremium.com/style_v%3D317.css">
-<style>
-html,body{margin:0;padding:0;min-height:100%;background:#050812!important;color:#eef1f8}
-#root{min-height:100vh;background:#050812}
-@keyframes tpSpin{to{transform:rotate(360deg)}}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Deutsch mit Rinkute</title>
+  <meta name="description"
+    content="لوحة عربية لتعلّم الألمانية بمستويات متعددة مع متابعة التقدم، البحث، والتصفية اعتمادًا على خطط دراسية يومية.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="icon" type="image/svg+xml" href="/src/assets/Deutsch mit Rinkute.ico">
 
-<!-- Preload critical scripts -->
-<link rel="preload" href="/telcpremium.com/vendor/react-18.3.1.min.js" as="script">
-<link rel="preload" href="/telcpremium.com/vendor/react-dom-18.3.1.min.js" as="script">
-<link rel="preload" href="/telcpremium.com/app.bundle_v%3D381.js" as="script" fetchpriority="high">
+  <!-- Fonts and styles -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="/telcpremium.com/style_v%3D317.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: #050812 !important;
+      color: #eef1f8
+    }
 
-<!-- Meta Pixel removed in the local mirror. -->
-<!-- Re-enable only if a real Pixel ID and matching CSP rules are needed. -->
+    #root {
+      min-height: 100vh;
+      background: #050812
+    }
+
+    @keyframes tpSpin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+  </style>
+
+  <!-- Preload critical scripts -->
+  <link rel="preload" href="/telcpremium.com/vendor/react-18.3.1.min.js" as="script">
+  <link rel="preload" href="/telcpremium.com/vendor/react-dom-18.3.1.min.js" as="script">
+  <link rel="preload" href="/telcpremium.com/app.bundle_v%3D381.js" as="script" fetchpriority="high">
+
+  <!-- Meta Pixel removed in the local mirror. -->
+  <!-- Re-enable only if a real Pixel ID and matching CSP rules are needed. -->
 
 </head>
+
 <body>
-<div id="root">
-  <div id="tp-boot-fallback" data-tp-state="loading" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#050812;color:#eef1f8;font-family:Arial,sans-serif;padding:24px;text-align:center;box-sizing:border-box">
-    <div style="max-width:440px">
-      <div id="tp-boot-spinner" style="width:40px;height:40px;border:3px solid #1e2640;border-top-color:#7c7ff4;border-radius:50%;animation:tpSpin .8s linear infinite;margin:0 auto 18px"></div>
-      <h1 style="font-size:22px;line-height:1.25;margin:0 0 10px;font-weight:800">Deutsch mit Rinkute</h1>
-      <p id="tp-boot-msg" style="font-size:14px;line-height:1.7;color:#9ca3af;margin:0 0 18px">Loading your learning space...</p>
-      <p id="tp-boot-hint" style="display:none;font-size:12px;line-height:1.6;color:#6b7280;margin:0 0 18px">Check your Internet connection (Wi-Fi or 4G), then try again.<br>تأكد من اتصالك بالإنترنت ثم أعد المحاولة.</p>
-      <button type="button" id="tp-boot-retry" onclick="window.tpHardRefresh&&window.tpHardRefresh()" style="border:0;border-radius:12px;background:linear-gradient(135deg,#7c7ff4,#a855f7);color:#fff;padding:12px 18px;font-weight:800;font-size:14px;box-shadow:0 8px 24px rgba(124,127,244,.35);cursor:pointer">Rafraichir</button>
+  <div id="root">
+    <div id="tp-boot-fallback" data-tp-state="loading"
+      style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#050812;color:#eef1f8;font-family:Arial,sans-serif;padding:24px;text-align:center;box-sizing:border-box">
+      <div style="max-width:440px">
+        <div id="tp-boot-spinner"
+          style="width:40px;height:40px;border:3px solid #1e2640;border-top-color:#7c7ff4;border-radius:50%;animation:tpSpin .8s linear infinite;margin:0 auto 18px">
+        </div>
+        <h1 style="font-size:22px;line-height:1.25;margin:0 0 10px;font-weight:800">Deutsch mit Rinkute</h1>
+        <p id="tp-boot-msg" style="font-size:14px;line-height:1.7;color:#9ca3af;margin:0 0 18px">Loading your learning
+          space...</p>
+        <p id="tp-boot-hint" style="display:none;font-size:12px;line-height:1.6;color:#6b7280;margin:0 0 18px">Check
+          your Internet connection (Wi-Fi or 4G), then try again.<br>تأكد من اتصالك بالإنترنت ثم أعد المحاولة.</p>
+        <button type="button" id="tp-boot-retry" onclick="window.tpHardRefresh&&window.tpHardRefresh()"
+          style="border:0;border-radius:12px;background:linear-gradient(135deg,#7c7ff4,#a855f7);color:#fff;padding:12px 18px;font-weight:800;font-size:14px;box-shadow:0 8px 24px rgba(124,127,244,.35);cursor:pointer">Rafraichir</button>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Local noscript fallback -->
-<noscript>
-<div style="max-width:820px;margin:40px auto;padding:32px;font-family:'DM Sans',Arial,sans-serif;color:#e8e8f0;background:#0b0f1a;border-radius:16px;line-height:1.7">
-  <header>
-    <h1 style="font-size:32px;margin:0 0 12px;color:#fff">Deutsch mit Rinkute</h1>
-    <p style="font-size:17px;color:#bfc9de;margin:0 0 24px">
-      TELC B1 and TELC B2 preparation with reading, listening, writing, and speaking practice in one learning space.
-    </p>
-  </header>
-  <footer style="margin-top:32px;padding-top:20px;border-top:1px solid #1e2640;font-size:13px;color:#6b7280">
-    <p>Please enable JavaScript to use this learning space.<br>
-    Bitte aktivieren Sie JavaScript, um die Lernplattform zu nutzen.<br>
-    Please enable JavaScript to continue.</p>
-    <p>Mit ❤️ von Rinkute</p>
-  </footer>
-</div>
-</noscript>
+  <!-- Local noscript fallback -->
+  <noscript>
+    <div
+      style="max-width:820px;margin:40px auto;padding:32px;font-family:'DM Sans',Arial,sans-serif;color:#e8e8f0;background:#0b0f1a;border-radius:16px;line-height:1.7">
+      <header>
+        <h1 style="font-size:32px;margin:0 0 12px;color:#fff">Deutsch mit Rinkute</h1>
+        <p style="font-size:17px;color:#bfc9de;margin:0 0 24px">
+          TELC B1 and TELC B2 preparation with reading, listening, writing, and speaking practice in one learning space.
+        </p>
+      </header>
+      <footer style="margin-top:32px;padding-top:20px;border-top:1px solid #1e2640;font-size:13px;color:#6b7280">
+        <p>Please enable JavaScript to use this learning space.<br>
+          Bitte aktivieren Sie JavaScript, um die Lernplattform zu nutzen.<br>
+          Please enable JavaScript to continue.</p>
+        <p>Mit ❤️ von Rinkute</p>
+      </footer>
+    </div>
+  </noscript>
 
-<script src="/telcpremium.com/vendor/react-18.3.1.min.js"></script>
-<script src="/telcpremium.com/vendor/react-dom-18.3.1.min.js"></script>
-<script>
-(function(){
-  window.tpHardRefresh = function(){
-    location.reload();
-  };
-  window.tpResetClientSession = function(){
-    try {
-      localStorage.removeItem('telc_session');
-      localStorage.removeItem('_ts_telc_session');
-    } catch (_) {}
-    location.reload();
-  };
-})();
-</script>
-<script>
-// Local mirror: the final bundle tag already loads the app directly.
-</script>
+  <script src="/telcpremium.com/vendor/react-18.3.1.min.js"></script>
+  <script src="/telcpremium.com/vendor/react-dom-18.3.1.min.js"></script>
+  <script>
+    (function () {
+      window.tpHardRefresh = function () {
+        location.reload();
+      };
+      window.tpResetClientSession = function () {
+        try {
+          localStorage.removeItem('telc_session');
+          localStorage.removeItem('_ts_telc_session');
+        } catch (_) { }
+        location.reload();
+      };
+    })();
+  </script>
+  <script>
+    // Local mirror: the final bundle tag already loads the app directly.
+  </script>
 
-<!-- Service worker cleanup -->
-<script>
-// Local mirror: disable production cache and service-worker recovery logic.
-</script>
+  <!-- Service worker cleanup -->
+  <script>
+    // Local mirror: disable production cache and service-worker recovery logic.
+  </script>
 
-<!-- Sprechen-Trainer floating action -->
-<style>
-.tp-sprechen-fab{
-  position:fixed;
-  left:18px; bottom:96px;
-  z-index:9998;
-  display:none;
-  align-items:center; gap:8px;
-  padding:10px 14px; border-radius:50px;
-  background:linear-gradient(135deg,#7c7ff4,#a855f7);
-  color:#fff; font-family:'DM Sans',system-ui,sans-serif;
-  font-weight:700; font-size:13px; text-decoration:none;
-  box-shadow:0 4px 18px rgba(124,127,244,.45), 0 0 0 1px rgba(255,255,255,.06);
-  transition:.2s; border:none; cursor:pointer;
-}
-.tp-sprechen-fab.tp-show{display:flex}
-.tp-sprechen-fab:hover{transform:translateY(-2px);box-shadow:0 6px 26px rgba(124,127,244,.6);text-decoration:none;color:#fff}
-.tp-sprechen-fab .tp-icon{font-size:18px;line-height:1}
-.tp-sprechen-fab .tp-new{background:rgba(255,255,255,.22);padding:2px 7px;border-radius:50px;font-size:9px;letter-spacing:1px;font-weight:800}
-@media (max-width:720px){
-  .tp-sprechen-fab{
-    left:14px; bottom:90px;
-    width:48px; height:48px;
-    padding:0; border-radius:50%;
-    justify-content:center; gap:0;
-  }
-  .tp-sprechen-fab .tp-label-full,
-  .tp-sprechen-fab .tp-new{display:none}
-  .tp-sprechen-fab.tp-show::after{
-    content:'NEU';
-    position:absolute; top:-4px; right:-4px;
-    background:#ef4444; color:#fff;
-    font-size:8px; font-weight:900; letter-spacing:1px;
-    padding:2px 5px; border-radius:50px;
-    box-shadow:0 2px 6px rgba(0,0,0,.4);
-  }
-  .tp-sprechen-fab .tp-icon{font-size:20px}
-}
-@media (max-width:380px){
-  .tp-sprechen-fab.tp-show{bottom:84px}
-}
-</style>
-<a href="/sprechen.html" class="tp-sprechen-fab tp-show" id="tpSprechenFab" title="Sprechen-Trainer KI" aria-label="Sprechen-Trainer oeffnen">
-  <span class="tp-icon">ðŸŽ™ï¸</span>
-  <span class="tp-label-full">Sprechen-Trainer</span>
-  <span class="tp-new">NEU</span>
-</a>
-<script>
-// Show the helper button everywhere except on the selector screen.
-(function(){
-  var LANDING_MARKERS = [
-    'Try for free',
-    'Activate via WhatsApp',
-    'Explore the platform',
-    'Choose your exam',
-  ];
-  function isLandingPage(){
-    try {
-      var root = document.getElementById('root');
-      if (!root || root.children.length === 0) return true; // app not ready yet -> keep it hidden
-      var text = root.textContent || '';
-      for (var i = 0; i < LANDING_MARKERS.length; i++){
-        if (text.indexOf(LANDING_MARKERS[i]) !== -1) return true;
+  <!-- Sprechen-Trainer floating action -->
+  <style>
+    .tp-sprechen-fab {
+      position: fixed;
+      left: 18px;
+      bottom: 96px;
+      z-index: 9998;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #7c7ff4, #a855f7);
+      color: #fff;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(124, 127, 244, .45), 0 0 0 1px rgba(255, 255, 255, .06);
+      transition: .2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .tp-sprechen-fab.tp-show {
+      display: flex
+    }
+
+    .tp-sprechen-fab:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 26px rgba(124, 127, 244, .6);
+      text-decoration: none;
+      color: #fff
+    }
+
+    .tp-sprechen-fab .tp-icon {
+      font-size: 18px;
+      line-height: 1
+    }
+
+    .tp-sprechen-fab .tp-new {
+      background: rgba(255, 255, 255, .22);
+      padding: 2px 7px;
+      border-radius: 50px;
+      font-size: 9px;
+      letter-spacing: 1px;
+      font-weight: 800
+    }
+
+    @media (max-width:720px) {
+      .tp-sprechen-fab {
+        left: 14px;
+        bottom: 90px;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+        gap: 0;
       }
-    } catch(_) {}
-    return false;
-  }
-  function tpUpdate(){
-    var fab = document.getElementById('tpSprechenFab');
-    if (!fab) return;
-    if (isLandingPage()) fab.classList.remove('tp-show');
-    else fab.classList.add('tp-show');
-  }
-  function init(){
-    tpUpdate();
-    setInterval(tpUpdate, 1000);
-    if ('MutationObserver' in window) {
-      var root = document.getElementById('root');
-      if (root) new MutationObserver(tpUpdate).observe(root, {childList:true, subtree:false});
-    }
-  }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
-})();
-</script>
 
-<style>
-/* Local-only learning copy: keep app content visible, hide auth status controls */
-.auth-bar {
-  display: none !important;
-}
-body {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-</style>
-
-<script>
-// Local-only auth shim: preserve the original UI while bypassing the sign-in flow.
-(function () {
-  console.log("[TELC shim active]", location.href);
-  var SESSION_KEY = "telc_session";
-  var LOCAL_SESSION = {
-    id: "local-learning-copy",
-    email: "local@learn.invalid",
-    accessType: "premium",
-    user_token: "local-learning-token"
-  };
-  var EXPIRY = "2099-12-31T23:59:59.000Z";
-
-  function saveSession() {
-    try {
-      var current = JSON.parse(localStorage.getItem(SESSION_KEY) || "null") || {};
-      localStorage.setItem(SESSION_KEY, JSON.stringify(Object.assign({}, current, LOCAL_SESSION)));
-      window.__TELC_IS_TRIAL = false;
-      window.__TELC_AUTH_EMAIL = LOCAL_SESSION.email;
-    } catch (_) {}
-  }
-
-  function jsonResponse(payload) {
-    return Promise.resolve({
-      ok: true,
-      status: 200,
-      json: function () {
-        return Promise.resolve(payload);
+      .tp-sprechen-fab .tp-label-full,
+      .tp-sprechen-fab .tp-new {
+        display: none
       }
-    });
-  }
 
-  function parseRequestBody(init) {
-    if (!init || typeof init.body !== "string") return null;
-    try {
-      return JSON.parse(init.body);
-    } catch (_) {
-      return null;
-    }
-  }
-
-  function buildAudioStatusPayload(body) {
-    var files = {};
-    var slots = body && Array.isArray(body.slots) ? body.slots : null;
-
-    if (slots) {
-      slots.forEach(function (slot) {
-        if (typeof slot === "string" && slot) {
-          files[slot] = { exists: false, url: "" };
-        }
-      });
-    }
-
-    return { success: true, files: files };
-  }
-
-  function buildExercisesPayload(body) {
-    var action = body && body.action;
-
-    if (action === "list") {
-      return { success: true, exercises: [] };
-    }
-
-    return { success: true };
-  }
-
-  function isLocalPhpApi(url) {
-    return url.indexOf("/api/audio.php") !== -1 || url.indexOf("/api/exercises.php") !== -1;
-  }
-
-  function buildShimPayload(url, body) {
-    if (url.indexOf("/api/audio.php") !== -1) {
-      console.log("[TELC shim audio intercepted]", url);
-      return buildAudioStatusPayload(body);
-    }
-
-    if (url.indexOf("/api/exercises.php") !== -1) {
-      console.log("[TELC shim exercises intercepted]", url);
-      return buildExercisesPayload(body);
-    }
-
-    return null;
-  }
-
-  function emitXhrEvent(xhr, type) {
-    try {
-      if (typeof xhr.dispatchEvent === "function" && typeof Event === "function") {
-        xhr.dispatchEvent(new Event(type));
+      .tp-sprechen-fab.tp-show::after {
+        content: 'NEU';
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        background: #ef4444;
+        color: #fff;
+        font-size: 8px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        padding: 2px 5px;
+        border-radius: 50px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
       }
-    } catch (_) {}
 
-    try {
-      var handler = xhr["on" + type];
-      if (typeof handler === "function") {
-        handler.call(xhr);
+      .tp-sprechen-fab .tp-icon {
+        font-size: 20px
       }
-    } catch (_) {}
-  }
-
-  saveSession();
-
-  var originalFetch = window.fetch ? window.fetch.bind(window) : null;
-  if (!originalFetch) return;
-
-  window.fetch = function (input, init) {
-    var url = typeof input === "string" ? input : (input && input.url) || "";
-    var body = parseRequestBody(init);
-
-    if (url.indexOf("check_session.php") !== -1) {
-      saveSession();
-      return jsonResponse({
-        valid: true,
-        id: LOCAL_SESSION.id,
-        email: LOCAL_SESSION.email,
-        accessType: LOCAL_SESSION.accessType,
-        expiresAt: EXPIRY,
-        user_token: LOCAL_SESSION.user_token
-      });
     }
 
-    if (url.indexOf("login.php") !== -1 || url.indexOf("register.php") !== -1) {
-      saveSession();
-      return jsonResponse({
-        success: true,
-        id: LOCAL_SESSION.id,
-        email: LOCAL_SESSION.email,
-        accessType: LOCAL_SESSION.accessType,
-        expiresAt: EXPIRY,
-        user_token: LOCAL_SESSION.user_token
-      });
+    @media (max-width:380px) {
+      .tp-sprechen-fab.tp-show {
+        bottom: 84px
+      }
     }
-
-    if (url.indexOf("logout.php") !== -1) {
-      saveSession();
-      return jsonResponse({ success: true });
-    }
-
-    if (isLocalPhpApi(url)) {
-      return jsonResponse(buildShimPayload(url, body));
-    }
-
-    return originalFetch(input, init);
-  };
-
-  var NativeXHR = window.XMLHttpRequest;
-  if (!NativeXHR || !NativeXHR.prototype) return;
-
-  var nativeOpen = NativeXHR.prototype.open;
-  var nativeSend = NativeXHR.prototype.send;
-  var nativeSetRequestHeader = NativeXHR.prototype.setRequestHeader;
-
-  NativeXHR.prototype.open = function (method, url) {
-    var targetUrl = typeof url === "string" ? url : String(url || "");
-    this.__telcShim = isLocalPhpApi(targetUrl) ? {
-      method: method,
-      url: targetUrl,
-      responseType: ""
-    } : null;
-
-    if (this.__telcShim) {
-      return;
-    }
-
-    return nativeOpen.apply(this, arguments);
-  };
-
-  NativeXHR.prototype.setRequestHeader = function (name, value) {
-    if (this.__telcShim) {
-      if (!this.__telcShim.headers) this.__telcShim.headers = {};
-      this.__telcShim.headers[name] = value;
-      return;
-    }
-
-    return nativeSetRequestHeader.apply(this, arguments);
-  };
-
-  NativeXHR.prototype.send = function (body) {
-    if (!this.__telcShim) {
-      return nativeSend.apply(this, arguments);
-    }
-
-    var xhr = this;
-    var parsedBody = typeof body === "string" ? parseRequestBody({ body: body }) : null;
-    var payload = buildShimPayload(this.__telcShim.url, parsedBody);
-    var responseText = JSON.stringify(payload);
-    var requestedType = xhr.responseType || xhr.__telcShim.responseType || "";
-    xhr.__telcShim.responseType = requestedType;
-
-    Object.defineProperties(xhr, {
-      readyState: { configurable: true, get: function () { return 4; } },
-      status: { configurable: true, get: function () { return 200; } },
-      statusText: { configurable: true, get: function () { return "OK"; } },
-      responseURL: { configurable: true, get: function () { return xhr.__telcShim.url; } },
-      responseText: { configurable: true, get: function () { return responseText; } },
-      responseXML: { configurable: true, get: function () { return null; } },
-      responseType: {
-        configurable: true,
-        get: function () { return xhr.__telcShim.responseType || ""; },
-        set: function (value) { xhr.__telcShim.responseType = value || ""; }
-      },
-      response: {
-        configurable: true,
-        get: function () {
-          return xhr.__telcShim.responseType === "json" ? payload : responseText;
+  </style>
+  <a href="/sprechen.html" class="tp-sprechen-fab tp-show" id="tpSprechenFab" title="Sprechen-Trainer KI"
+    aria-label="Sprechen-Trainer oeffnen">
+    <span class="tp-icon">ðŸŽ™ï¸</span>
+    <span class="tp-label-full">Sprechen-Trainer</span>
+    <span class="tp-new">NEU</span>
+  </a>
+  <script>
+    // Show the helper button everywhere except on the selector screen.
+    (function () {
+      var LANDING_MARKERS = [
+        'Try for free',
+        'Activate via WhatsApp',
+        'Explore the platform',
+        'Choose your exam',
+      ];
+      function isLandingPage() {
+        try {
+          var root = document.getElementById('root');
+          if (!root || root.children.length === 0) return true; // app not ready yet -> keep it hidden
+          var text = root.textContent || '';
+          for (var i = 0; i < LANDING_MARKERS.length; i++) {
+            if (text.indexOf(LANDING_MARKERS[i]) !== -1) return true;
+          }
+        } catch (_) { }
+        return false;
+      }
+      function tpUpdate() {
+        var fab = document.getElementById('tpSprechenFab');
+        if (!fab) return;
+        if (isLandingPage()) fab.classList.remove('tp-show');
+        else fab.classList.add('tp-show');
+      }
+      function init() {
+        tpUpdate();
+        setInterval(tpUpdate, 1000);
+        if ('MutationObserver' in window) {
+          var root = document.getElementById('root');
+          if (root) new MutationObserver(tpUpdate).observe(root, { childList: true, subtree: false });
         }
       }
-    });
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
 
-    setTimeout(function () {
-      emitXhrEvent(xhr, "readystatechange");
-      emitXhrEvent(xhr, "load");
-      emitXhrEvent(xhr, "loadend");
-    }, 0);
-  };
-})();
-</script>
-<script src="/telcpremium.com/app.bundle_v%3D381.js"></script></body></html>
+  <style>
+    /* Local-only learning copy: keep app content visible, hide auth status controls */
+    .auth-bar {
+      display: none !important;
+    }
+
+    body {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  </style>
+
+  <script>
+    // Local-only auth shim: preserve the original UI while bypassing the sign-in flow.
+    (function () {
+      console.log("[TELC shim active]", location.href);
+      var SESSION_KEY = "telc_session";
+      var LOCAL_SESSION = {
+        id: "local-learning-copy",
+        email: "local@learn.invalid",
+        accessType: "premium",
+        user_token: "local-learning-token"
+      };
+      var EXPIRY = "2099-12-31T23:59:59.000Z";
+
+      function saveSession() {
+        try {
+          var current = JSON.parse(localStorage.getItem(SESSION_KEY) || "null") || {};
+          localStorage.setItem(SESSION_KEY, JSON.stringify(Object.assign({}, current, LOCAL_SESSION)));
+          window.__TELC_IS_TRIAL = false;
+          window.__TELC_AUTH_EMAIL = LOCAL_SESSION.email;
+        } catch (_) { }
+      }
+
+      function jsonResponse(payload) {
+        return Promise.resolve({
+          ok: true,
+          status: 200,
+          json: function () {
+            return Promise.resolve(payload);
+          }
+        });
+      }
+
+      function parseRequestBody(init) {
+        if (!init || typeof init.body !== "string") return null;
+        try {
+          return JSON.parse(init.body);
+        } catch (_) {
+          return null;
+        }
+      }
+
+      function buildAudioStatusPayload(body) {
+        var files = {};
+        var slots = body && Array.isArray(body.slots) ? body.slots : null;
+
+        if (slots) {
+          slots.forEach(function (slot) {
+            if (typeof slot === "string" && slot) {
+              files[slot] = { exists: false, url: "" };
+            }
+          });
+        }
+
+        return { success: true, files: files };
+      }
+
+      function buildExercisesPayload(body) {
+        var action = body && body.action;
+
+        if (action === "list") {
+          return { success: true, exercises: [] };
+        }
+
+        return { success: true };
+      }
+
+      function isLocalPhpApi(url) {
+        return url.indexOf("/api/audio.php") !== -1 || url.indexOf("/api/exercises.php") !== -1;
+      }
+
+      function buildShimPayload(url, body) {
+        if (url.indexOf("/api/audio.php") !== -1) {
+          console.log("[TELC shim audio intercepted]", url);
+          return buildAudioStatusPayload(body);
+        }
+
+        if (url.indexOf("/api/exercises.php") !== -1) {
+          console.log("[TELC shim exercises intercepted]", url);
+          return buildExercisesPayload(body);
+        }
+
+        return null;
+      }
+
+      function emitXhrEvent(xhr, type) {
+        try {
+          if (typeof xhr.dispatchEvent === "function" && typeof Event === "function") {
+            xhr.dispatchEvent(new Event(type));
+          }
+        } catch (_) { }
+
+        try {
+          var handler = xhr["on" + type];
+          if (typeof handler === "function") {
+            handler.call(xhr);
+          }
+        } catch (_) { }
+      }
+
+      saveSession();
+
+      var originalFetch = window.fetch ? window.fetch.bind(window) : null;
+      if (!originalFetch) return;
+
+      window.fetch = function (input, init) {
+        var url = typeof input === "string" ? input : (input && input.url) || "";
+        var body = parseRequestBody(init);
+
+        if (url.indexOf("check_session.php") !== -1) {
+          saveSession();
+          return jsonResponse({
+            valid: true,
+            id: LOCAL_SESSION.id,
+            email: LOCAL_SESSION.email,
+            accessType: LOCAL_SESSION.accessType,
+            expiresAt: EXPIRY,
+            user_token: LOCAL_SESSION.user_token
+          });
+        }
+
+        if (url.indexOf("login.php") !== -1 || url.indexOf("register.php") !== -1) {
+          saveSession();
+          return jsonResponse({
+            success: true,
+            id: LOCAL_SESSION.id,
+            email: LOCAL_SESSION.email,
+            accessType: LOCAL_SESSION.accessType,
+            expiresAt: EXPIRY,
+            user_token: LOCAL_SESSION.user_token
+          });
+        }
+
+        if (url.indexOf("logout.php") !== -1) {
+          saveSession();
+          return jsonResponse({ success: true });
+        }
+
+        if (isLocalPhpApi(url)) {
+          return jsonResponse(buildShimPayload(url, body));
+        }
+
+        return originalFetch(input, init);
+      };
+
+      var NativeXHR = window.XMLHttpRequest;
+      if (!NativeXHR || !NativeXHR.prototype) return;
+
+      var nativeOpen = NativeXHR.prototype.open;
+      var nativeSend = NativeXHR.prototype.send;
+      var nativeSetRequestHeader = NativeXHR.prototype.setRequestHeader;
+
+      NativeXHR.prototype.open = function (method, url) {
+        var targetUrl = typeof url === "string" ? url : String(url || "");
+        this.__telcShim = isLocalPhpApi(targetUrl) ? {
+          method: method,
+          url: targetUrl,
+          responseType: ""
+        } : null;
+
+        if (this.__telcShim) {
+          return;
+        }
+
+        return nativeOpen.apply(this, arguments);
+      };
+
+      NativeXHR.prototype.setRequestHeader = function (name, value) {
+        if (this.__telcShim) {
+          if (!this.__telcShim.headers) this.__telcShim.headers = {};
+          this.__telcShim.headers[name] = value;
+          return;
+        }
+
+        return nativeSetRequestHeader.apply(this, arguments);
+      };
+
+      NativeXHR.prototype.send = function (body) {
+        if (!this.__telcShim) {
+          return nativeSend.apply(this, arguments);
+        }
+
+        var xhr = this;
+        var parsedBody = typeof body === "string" ? parseRequestBody({ body: body }) : null;
+        var payload = buildShimPayload(this.__telcShim.url, parsedBody);
+        var responseText = JSON.stringify(payload);
+        var requestedType = xhr.responseType || xhr.__telcShim.responseType || "";
+        xhr.__telcShim.responseType = requestedType;
+
+        Object.defineProperties(xhr, {
+          readyState: { configurable: true, get: function () { return 4; } },
+          status: { configurable: true, get: function () { return 200; } },
+          statusText: { configurable: true, get: function () { return "OK"; } },
+          responseURL: { configurable: true, get: function () { return xhr.__telcShim.url; } },
+          responseText: { configurable: true, get: function () { return responseText; } },
+          responseXML: { configurable: true, get: function () { return null; } },
+          responseType: {
+            configurable: true,
+            get: function () { return xhr.__telcShim.responseType || ""; },
+            set: function (value) { xhr.__telcShim.responseType = value || ""; }
+          },
+          response: {
+            configurable: true,
+            get: function () {
+              return xhr.__telcShim.responseType === "json" ? payload : responseText;
+            }
+          }
+        });
+
+        setTimeout(function () {
+          emitXhrEvent(xhr, "readystatechange");
+          emitXhrEvent(xhr, "load");
+          emitXhrEvent(xhr, "loadend");
+        }, 0);
+      };
+    })();
+  </script>
+  <script src="/telcpremium.com/app.bundle_v%3D381.js"></script>
+</body>
+
+</html>
