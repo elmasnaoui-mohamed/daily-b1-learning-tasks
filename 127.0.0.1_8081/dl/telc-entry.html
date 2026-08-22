@@ -502,8 +502,8 @@
     }
 
     .tp-local-brand-icon {
-      width: 28px;
-      height: 28px;
+      width: 50px;
+      height: 50px;
       object-fit: contain;
       border-radius: 7px;
       flex: 0 0 auto;
@@ -636,7 +636,7 @@
         var heading = Array.prototype.find.call(root.querySelectorAll("h1"), function (element) {
           return clean(element.textContent) === "Choose your exam";
         });
-        if (heading) heading.innerHTML = "Prüfung auswählen <span class='tp-ar' dir='rtl' lang='ar'>· اختر الامتحان</span>";
+        if (heading) heading.innerHTML = "Prüfung auswählen <span class='tp-ar' dir='rtl' lang='ar'> اختر الامتحان ·</span>";
 
         [[".es-card-b1", "B1"], [".es-card-b2", "B2"]].forEach(function (entry) {
           var card = root.querySelector(entry[0]);
