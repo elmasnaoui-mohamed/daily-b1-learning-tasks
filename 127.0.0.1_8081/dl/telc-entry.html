@@ -213,12 +213,6 @@
       }
     }
   </style>
-  <a href="/sprechen.html" class="tp-sprechen-fab tp-show" id="tpSprechenFab" title="Sprechen-Trainer KI"
-    aria-label="Sprechen-Trainer oeffnen">
-    <span class="tp-icon">ðŸŽ™ï¸</span>
-    <span class="tp-label-full">Sprechen-Trainer</span>
-    <span class="tp-new">NEU</span>
-  </a>
   <script>
     // Show the helper button everywhere except on the selector screen.
     (function () {
@@ -336,7 +330,12 @@
       }
 
       function isLocalPhpApi(url) {
-        return url.indexOf("/api/audio.php") !== -1 || url.indexOf("/api/exercises.php") !== -1;
+        return url.indexOf("/api/audio.php") !== -1 ||
+          url.indexOf("/api/exercises.php") !== -1 ||
+          url.indexOf("/api/ai_enhanced.php") !== -1 ||
+          url.indexOf("/api/ai.php") !== -1 ||
+          url.indexOf("/api/srs.php") !== -1 ||
+          url.indexOf("/api/themes.php") !== -1;
       }
 
       function buildShimPayload(url, body) {
@@ -346,6 +345,10 @@
 
         if (url.indexOf("/api/exercises.php") !== -1) {
           return buildExercisesPayload(body);
+        }
+
+        if (url.indexOf("/api/audio.php") === -1) {
+          return { success: false, disabled: true };
         }
 
         return null;
@@ -484,6 +487,284 @@
     })();
   </script>
   <script src="/telcpremium.com/app.bundle_v%3D381.js"></script>
+  <style>
+    /* Local mirror: remove only unavailable feature surfaces from the original app. */
+    #tpSprechenFab,
+    .ai-coach-fab,
+    .ai-coach-panel,
+    [data-nav="ai"],
+    [data-nav="hoeren"],
+    [data-nav="hören"],
+    [data-nav="audio"],
+    .navbar-premium-badge,
+    .auth-bar {
+      display: none !important;
+    }
+
+    .tp-local-brand-icon {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      border-radius: 7px;
+      flex: 0 0 auto;
+    }
+
+    .tp-local-selector-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      margin-bottom: 18px;
+      color: #eef1f8;
+      font: 800 14px 'DM Sans', sans-serif;
+    }
+
+    .tp-ar {
+      direction: rtl;
+      unicode-bidi: isolate;
+      font-family: 'Tajawal', sans-serif;
+    }
+  </style>
+  <script>
+    // Preserve the original bundle and datasets; filter only unsupported local features.
+    (function () {
+      var ROOT_ID = "root";
+      var running = false;
+      var libraryCounts = {
+        B1: { total: 183, lesen: 62, sprach: 43, schreiben: 21, sprechen: 57 },
+        B2: { total: 273, lesen: 96, sprach: 46, schreiben: 21, sprechen: 110 }
+      };
+
+      function clean(value) {
+        return String(value || "").replace(/\s+/g, " ").trim();
+      }
+
+      function textElements(root) {
+        return Array.prototype.filter.call(root.querySelectorAll("*"), function (element) {
+          return element.children.length === 0;
+        });
+      }
+
+      function currentLevel(root) {
+        var text = clean(root.textContent);
+        return /TELC B1|Niveau B1|ZERTIFIKAT DEUTSCH B1/i.test(text) ? "B1" : "B2";
+      }
+
+      function removeFeatureCard(element) {
+        var card = element.closest(".mhub-card, .home-card, .ex-card, button, [role='button']");
+        if (card) {
+          card.remove();
+          return;
+        }
+
+        var parent = element.parentElement;
+        if (parent && clean(parent.textContent).length < 280) parent.remove();
+      }
+
+      function removeListening(root) {
+        root.querySelectorAll("[data-nav]").forEach(function (element) {
+          var nav = clean(element.getAttribute("data-nav")).toLowerCase();
+          if (/hoeren|hören|audio/.test(nav)) element.remove();
+        });
+
+        root.querySelectorAll("h1,h2,h3,h4,button,[role='button']").forEach(function (element) {
+          var text = clean(element.textContent);
+          if (/^(?:🎧\s*)?(?:Hörverstehen|Hoerverstehen|Hören|Hoeren)(?:\b|\s|—|-)/i.test(text)) {
+            removeFeatureCard(element);
+          }
+        });
+
+        root.querySelectorAll("label.sf").forEach(function (element) {
+          if (/^(?:🎧\s*)?(?:Hörverstehen|Hoerverstehen|Hören|Hoeren)/i.test(clean(element.textContent))) element.remove();
+        });
+
+        textElements(root).forEach(function (element) {
+          var text = clean(element.textContent);
+          if (/^HÖRVERSTEHEN$/i.test(text)) {
+            var stat = element.parentElement;
+            if (stat) stat.remove();
+          } else if (/^\d+\s+Hören gemacht$/i.test(text)) {
+            element.innerHTML = "Lokaler Fortschritt · <span class='tp-ar' dir='rtl' lang='ar'>التقدم المحلي</span>";
+          }
+        });
+      }
+
+      function removeAi(root) {
+        root.querySelectorAll("button,a,[role='button']").forEach(function (element) {
+          var text = clean(element.textContent);
+          if (/\bAI\b|Warum diese Antwort|Pourquoi cette réponse|Générer|Generieren|Modellbrief|Musterbrief|Score-Prognose|Flashcards erstellen|Automatische Bewertung/i.test(text)) {
+            element.remove();
+          }
+        });
+
+        root.querySelectorAll("h1,h2,h3,h4").forEach(function (element) {
+          var text = clean(element.textContent);
+          if (/\bAI\b|Künstliche Intelligenz|Intelligence Artificielle/i.test(text)) {
+            var card = element.closest(".mhub-card, .home-card, .ex-card, .ai-tool-card");
+            if (card) card.remove();
+          }
+        });
+
+        textElements(root).forEach(function (element) {
+          var text = clean(element.textContent);
+          var replacements = {
+            "Briefe + AI-Korrektur": "Briefe und Schreibaufgaben",
+            "AI-Korrektur": "Lokale Schreibübung",
+            "AI Sprechen-Partner": "lokale Prüfungsvorbereitung",
+            "Aussprache-Trainer": "Prüfungsvorbereitung",
+            "AI-Coach": "lokale Übungen"
+          };
+          Object.keys(replacements).forEach(function (key) {
+            if (text.indexOf(key) !== -1) {
+              element.textContent = element.textContent.replace(key, replacements[key]);
+              text = clean(element.textContent);
+            }
+          });
+          if (/^Schreiben Sie mindestens 30 Zeichen$/i.test(text)) element.remove();
+          if (/^AI hasard ou selection manuelle$/i.test(text)) element.innerHTML = "Zufällige oder manuelle Auswahl · <span class='tp-ar' dir='rtl' lang='ar'>اختيار عشوائي أو يدوي</span>";
+          if (/^Choix des exercices$/i.test(text)) element.innerHTML = "Übungsauswahl · <span class='tp-ar' dir='rtl' lang='ar'>اختيار التمارين</span>";
+          if (/^Start manuel$/i.test(text)) element.innerHTML = "Manuell starten · <span class='tp-ar' dir='rtl' lang='ar'>ابدأ يدوياً</span>";
+          if (/^Chrono Exam/i.test(text)) element.innerHTML = element.textContent.replace(/Chrono Exam/i, "Prüfungszeit") + " · <span class='tp-ar' dir='rtl' lang='ar'>وقت الامتحان</span>";
+          if (/^\d+ XP left until /i.test(text)) element.textContent = element.textContent.replace(/ XP left until /i, " XP bis ");
+          if (/^Exam Simulator$/i.test(text)) element.innerHTML = "Prüfungssimulation · <span class='tp-ar' dir='rtl' lang='ar'>محاكاة الامتحان</span>";
+          if (/^Komplette TELC .+ · 9 Teile · \d+ Punkte · Echte Aufgaben$/i.test(text)) element.innerHTML = element.textContent.replace(/9 Teile · \d+ Punkte · Echte Aufgaben/i, "6 Teile · lokale Originalaufgaben") + "<br><span class='tp-ar' dir='rtl' lang='ar'>ستة أجزاء من التمارين الأصلية المتاحة</span>";
+          if (/^\d+\/9$/.test(text)) element.textContent = text.replace("/9", "/6");
+        });
+      }
+
+      function updateSelector(root) {
+        var heading = Array.prototype.find.call(root.querySelectorAll("h1"), function (element) {
+          return clean(element.textContent) === "Choose your exam";
+        });
+        if (heading) heading.innerHTML = "Prüfung auswählen <span class='tp-ar' dir='rtl' lang='ar'>· اختر الامتحان</span>";
+
+        [[".es-card-b1", "B1"], [".es-card-b2", "B2"]].forEach(function (entry) {
+          var card = root.querySelector(entry[0]);
+          if (!card) return;
+          var level = entry[1];
+          var counts = libraryCounts[level];
+          var leaves = textElements(card);
+          leaves.forEach(function (element) {
+            var text = clean(element.textContent);
+            if (text === "Exercises") {
+              if (element.previousElementSibling) element.previousElementSibling.textContent = counts.total;
+              element.innerHTML = "Übungen · <span class='tp-ar' dir='rtl' lang='ar'>تمارين</span>";
+            }
+            if (text === "Sections") {
+              if (element.previousElementSibling) element.previousElementSibling.textContent = "4";
+              element.innerHTML = "Bereiche · <span class='tp-ar' dir='rtl' lang='ar'>أقسام</span>";
+            }
+            if (text === "Sprechen" && element.previousElementSibling && clean(element.previousElementSibling.textContent) !== String(counts.sprechen)) {
+              element.previousElementSibling.textContent = counts.sprechen;
+            }
+            if (text === "NEW") element.textContent = "NEU";
+            if (text === "COMPLETE") element.textContent = "VOLLSTÄNDIG";
+            if (text === "Start " + level) element.innerHTML = "TELC " + level + " starten · <span class='tp-ar' dir='rtl' lang='ar'>ابدأ</span>";
+          });
+          var description = card.querySelector("p");
+          if (description && !description.dataset.tpCleaned) {
+            description.dataset.tpCleaned = "true";
+            description.innerHTML = "Lesen (3 Teile) + Sprachbausteine (2 Teile) + Schreiben + Sprechen<br><span class='tp-ar' dir='rtl' lang='ar'>القراءة والتراكيب اللغوية والكتابة والتحدث</span>";
+          }
+        });
+
+        if (heading && !root.querySelector(".tp-local-selector-brand")) {
+          var brand = document.createElement("div");
+          brand.className = "tp-local-selector-brand";
+          brand.innerHTML = "<img class='tp-local-brand-icon' src='/src/assets/Deutsch%20mit%20Rinkute.ico' alt='Deutsch mit Rinkute'> Deutsch mit Rinkute";
+          heading.parentElement.insertBefore(brand, heading);
+        }
+      }
+
+      function updateDashboard(root) {
+        if (root.querySelector(".es-card-b1, .es-card-b2")) return;
+        var level = currentLevel(root);
+        var counts = libraryCounts[level];
+        var statMap = {
+          "LESEVERSTEHEN": counts.lesen,
+          "SPRACHBAUSTEINE": counts.sprach,
+          "SCHREIBEN": counts.schreiben,
+          "SPRECHEN": counts.sprechen
+        };
+
+        root.querySelectorAll("*").forEach(function (element) {
+          Array.prototype.forEach.call(element.childNodes, function (node) {
+            if (node.nodeType === 3 && / left until /i.test(node.nodeValue || "")) {
+              node.nodeValue = node.nodeValue.replace(/ left until /i, " bis ");
+            }
+          });
+        });
+
+        textElements(root).forEach(function (element) {
+          var text = clean(element.textContent);
+          var statName = text.toUpperCase();
+          if (statMap[statName] !== undefined && element.previousElementSibling) {
+            if (clean(element.previousElementSibling.textContent) !== String(statMap[statName])) {
+              element.previousElementSibling.textContent = statMap[statName];
+            }
+          }
+          if (text === "Exam") element.innerHTML = "Prüfung · <span class='tp-ar' dir='rtl' lang='ar'>الامتحان</span>";
+          if (/^WEEKLY CHALLENGE$/i.test(text)) element.innerHTML = "WOCHENAUFGABE · <span class='tp-ar' dir='rtl' lang='ar'>التحدي الأسبوعي</span>";
+          if (/^Complete 5 Leseverstehen this week$/i.test(text)) element.innerHTML = "Diese Woche 5 Leseübungen abschließen · <span class='tp-ar' dir='rtl' lang='ar'>أكمل 5 تمارين قراءة هذا الأسبوع</span>";
+          if (/^\d+\/\d+ done$/i.test(text)) element.textContent = text.replace("done", "erledigt");
+          if (/^Reward:/i.test(text)) element.textContent = element.textContent.replace(/Reward:/i, "Belohnung:").replace(/badge/ig, "Abzeichen");
+          if (/^RANKING$/i.test(text)) element.innerHTML = "RANGLISTE · <span class='tp-ar' dir='rtl' lang='ar'>الترتيب</span>";
+          if (/^See your position among learners/i.test(text)) element.innerHTML = "Anonyme Position unter Lernenden · <span class='tp-ar' dir='rtl' lang='ar'>ترتيب مجهول بين المتعلمين</span>";
+          if (text === "Activate") element.innerHTML = "Aktivieren · <span class='tp-ar' dir='rtl' lang='ar'>تفعيل</span>";
+          if (/^\d+\+ (?:echte Aufgaben|authentic exercises)/i.test(text) || /AI-Korrektur|AI-Coach/.test(text)) {
+            element.innerHTML = counts.total + " Übungssätze · Prüfungssimulation<br><span class='tp-ar' dir='rtl' lang='ar'>تمارين أصلية ومحاكاة الامتحان</span>";
+          }
+          if (/^Sujet \d+$/i.test(text)) element.textContent = text.replace("Sujet", "Thema");
+        });
+
+        root.querySelectorAll(".mhub-card").forEach(function (card) {
+          var heading = card.querySelector("h3");
+          if (!heading) return;
+          var name = clean(heading.textContent);
+          var value = name === "Leseverstehen" ? counts.lesen : name === "Sprachbausteine" ? counts.sprach : name === "Schreiben" ? counts.schreiben : name === "Sprechen" ? counts.sprechen : null;
+          if (value === null) return;
+          textElements(card).forEach(function (element) {
+            if (/^\d+$/.test(clean(element.textContent)) && clean(element.textContent) !== String(value)) element.textContent = value;
+          });
+        });
+
+        root.querySelectorAll(".navbar-logo").forEach(function (logo) {
+          if (!logo.querySelector(".tp-local-brand-icon")) {
+            var image = document.createElement("img");
+            image.className = "tp-local-brand-icon";
+            image.src = "/src/assets/Deutsch%20mit%20Rinkute.ico";
+            image.alt = "Deutsch mit Rinkute";
+            logo.insertBefore(image, logo.firstChild);
+          }
+        });
+      }
+
+      function sanitize() {
+        if (running) return;
+        running = true;
+        try {
+          var root = document.getElementById(ROOT_ID);
+          if (!root) return;
+          removeListening(root);
+          removeAi(root);
+          updateSelector(root);
+          updateDashboard(root);
+        } finally {
+          running = false;
+        }
+      }
+
+      function start() {
+        var root = document.getElementById(ROOT_ID);
+        if (!root) return;
+        sanitize();
+        new MutationObserver(function () { sanitize(); }).observe(root, { childList: true, subtree: true });
+      }
+
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+      else start();
+    })();
+  </script>
 </body>
 
 </html>

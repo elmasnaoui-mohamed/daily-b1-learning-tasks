@@ -2093,7 +2093,7 @@ Auch ich bevorzuge bequeme Kleidung. Oftmals finde ich, dass ich in einfacher Kl
           .b1-zone .desk-nav{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;min-height:72px;justify-content:space-between}
           .b1-zone .navbar-logo{display:flex;align-items:center;gap:8px;cursor:pointer;flex-shrink:0}
           .b1-zone .navbar-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
-          .b1-zone .navbar-group{display:flex;align-items:center;justify-content:center;gap:6px;flex:1;min-width:0;padding:6px;border:1px solid rgba(6,182,212,.18);border-radius:18px;background:rgba(17,21,40,.82);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}
+          .b1-zone .navbar-group{display:flex;align-items:center;justify-content:center;gap:6px;flex:1;min-width:0;padding:6px;}
           .b1-zone .desk-nav .navbar-btn{padding:9px 13px;border-radius:12px;border:none;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .18s;font-family:'DM Sans',sans-serif;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:6px;background:transparent;color:var(--muted)}
           .b1-zone .desk-nav .navbar-btn:hover:not(.is-active){background:rgba(6,182,212,.09);color:var(--tx)}
           .b1-zone .desk-nav .navbar-btn.is-active{background:linear-gradient(135deg,#06b6d4,#14b8a6);color:#fff;box-shadow:0 8px 24px rgba(6,182,212,.24)}
