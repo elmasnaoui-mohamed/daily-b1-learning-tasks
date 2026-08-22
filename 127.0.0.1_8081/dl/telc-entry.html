@@ -273,7 +273,6 @@
   <script>
     // Local-only auth shim: preserve the original UI while bypassing the sign-in flow.
     (function () {
-      console.log("[TELC shim active]", location.href);
       var SESSION_KEY = "telc_session";
       var LOCAL_SESSION = {
         id: "local-learning-copy",
@@ -342,12 +341,10 @@
 
       function buildShimPayload(url, body) {
         if (url.indexOf("/api/audio.php") !== -1) {
-          console.log("[TELC shim audio intercepted]", url);
           return buildAudioStatusPayload(body);
         }
 
         if (url.indexOf("/api/exercises.php") !== -1) {
-          console.log("[TELC shim exercises intercepted]", url);
           return buildExercisesPayload(body);
         }
 

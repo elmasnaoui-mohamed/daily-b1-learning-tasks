@@ -37,7 +37,6 @@ const state = {
 const elements = {
   heroPrimaryButton: document.querySelector("#heroPrimaryButton"),
   continueLearningButton: document.querySelector("#continueLearningButton"),
-  continueLearningNote: document.querySelector("#continueLearningNote"),
   levelIntroTitle: document.querySelector("#levelIntroTitle"),
   levelIntroDescription: document.querySelector("#levelIntroDescription"),
   tasksContainer: document.querySelector("#tasksContainer"),
@@ -680,26 +679,23 @@ function getFirstIncompleteLesson(level) {
 function continueLearning() {
   const savedLesson = getSavedLastLesson();
   if (savedLesson) {
-    focusLesson(savedLesson.level, savedLesson.lessonId, "تم الرجوع إلى آخر درس كنت تدرسه.");
+    focusLesson(savedLesson.level, savedLesson.lessonId);
     return;
   }
 
   const firstIncompleteLesson = getFirstIncompleteLesson(state.activeLevel);
   if (firstIncompleteLesson) {
-    focusLesson(state.activeLevel, firstIncompleteLesson.id, "تم توجيهك إلى أول درس غير مكتمل في هذا المستوى.");
+    focusLesson(state.activeLevel, firstIncompleteLesson.id);
     return;
   }
 
   const firstLesson = getLessonsForLevel(state.activeLevel)[0];
   if (firstLesson) {
-    focusLesson(state.activeLevel, firstLesson.id, "أنجزت كل الدروس في هذا المستوى، لذا تم إعادتك إلى أول درس.");
-    return;
+    focusLesson(state.activeLevel, firstLesson.id);
   }
-
-  setContinueLearningMessage("لا توجد دروس متاحة للمتابعة حالياً.");
 }
 
-function focusLesson(level, lessonId, message) {
+function focusLesson(level, lessonId) {
   persistLastLevel(level);
   persistLastLesson(level, lessonId);
 
@@ -708,7 +704,6 @@ function focusLesson(level, lessonId, message) {
   }
 
   state.highlightedLessonKey = getLessonStateKey(level, lessonId);
-  setContinueLearningMessage(message);
   render();
 
   requestAnimationFrame(() => {
@@ -741,12 +736,6 @@ function applyPendingLessonHighlight() {
     state.highlightTimeoutId = null;
     render();
   }, LESSON_HIGHLIGHT_DURATION);
-}
-
-function setContinueLearningMessage(message) {
-  if (elements.continueLearningNote) {
-    elements.continueLearningNote.textContent = message;
-  }
 }
 
 function safelyReadLocalStorage(key) {
