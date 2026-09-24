@@ -621,7 +621,7 @@ a {
 
 .motivation-panel::before {
   position: absolute;
-  top: -30px;
+  top: -4px;
   left: 22px;
   color: color-mix(in srgb, var(--color-accent-purple) 16%, transparent);
   content: "“";
@@ -1069,7 +1069,7 @@ a {
   text-align: start;
 }
 
-.custom-select__option + .custom-select__option {
+.custom-select__option+.custom-select__option {
   margin-top: 6px;
 }
 
@@ -2071,6 +2071,7 @@ a {
 }
 
 @keyframes next-lesson-glow {
+
   0%,
   100% {
     background: var(--color-surface);
