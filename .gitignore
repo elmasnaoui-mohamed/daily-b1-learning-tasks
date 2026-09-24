@@ -1,0 +1,6 @@
+.cache/
+.tools/
+.vscode/
+reports/
+__pycache__/
+*.py[cod]

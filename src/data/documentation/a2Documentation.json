@@ -1,0 +1,4197 @@
+[
+  {
+    "level": "A2",
+    "lesson_id": 1,
+    "video_id": "ThfzV6MfEHM",
+    "source_type": "unavailable",
+    "source_language": null,
+    "source_coverage_percent": 0,
+    "source_duration_seconds": 1021,
+    "review_status": "needs_source",
+    "source_failure": "YouTube HTTP 429; public audio access currently requires sign-in.",
+    "reading_time_minutes": 4,
+    "summary": "",
+    "video_outline": [],
+    "learning_objectives": [],
+    "explanation": [],
+    "rules_from_video": [],
+    "examples_from_video": [],
+    "vocabulary_from_video": [],
+    "teacher_notes": [],
+    "exercises_demonstrated": [],
+    "quick_recap": [],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "tables": [],
+    "common_mistakes": [],
+    "evidence_checks": []
+  },
+  {
+    "level": "A2",
+    "lesson_id": 2,
+    "video_id": "KwG_L4GC0ck",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "متابعة استعمال الأفعال المنعكسة مع أمثلة أكثر تساعد على تثبيت القاعدة في مواقف يومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "متابعة استعمال الأفعال المنعكسة مع أمثلة أكثر تساعد على تثبيت القاعدة في مواقف يومية.",
+      "استعمال الأفعال المنعكسة بثقة أكبر عند وصف اليوم والعادات الشخصية."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "يعود الضمير المنعكس على فاعل الجملة، لذلك يجب أن يطابق الضمير الشخصي والحالة المطلوبة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع تطبيق الأفعال المنعكسة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "الضمير المنعكس",
+        "explanation": "مع ich يكون mich في Akkusativ و mir في Dativ؛ ومع du: dich أو dir.",
+        "pattern": "ich → mich/mir · du → dich/dir"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich freue mich auf das Wochenende.",
+        "ar": "أتطلع إلى عطلة نهاية الأسبوع.",
+        "note": ""
+      },
+      {
+        "de": "Wir waschen uns die Hände.",
+        "ar": "نغسل أيدينا.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "sich freuen",
+        "ar": "يفرح/يتطلع",
+        "note": ""
+      },
+      {
+        "de": "sich erinnern",
+        "ar": "يتذكر",
+        "note": ""
+      },
+      {
+        "de": "sich treffen",
+        "ar": "يلتقي",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich freue dich.",
+        "correct": "Ich freue mich.",
+        "explanation": "الضمير المنعكس يجب أن يعود على الفاعل ich."
+      }
+    ],
+    "tables": [
+      {
+        "title": "الضمائر المنعكسة",
+        "headers": [
+          "الضمير",
+          "Akkusativ",
+          "Dativ"
+        ],
+        "rows": [
+          [
+            "ich",
+            "mich",
+            "mir"
+          ],
+          [
+            "du",
+            "dich",
+            "dir"
+          ],
+          [
+            "er/sie/es",
+            "sich",
+            "sich"
+          ],
+          [
+            "wir",
+            "uns",
+            "uns"
+          ],
+          [
+            "ihr",
+            "euch",
+            "euch"
+          ],
+          [
+            "sie/Sie",
+            "sich",
+            "sich"
+          ]
+        ]
+      }
+    ],
+    "quick_recap": [
+      "المحور: تطبيق الأفعال المنعكسة.",
+      "مع ich يكون mich في Akkusativ و mir في Dativ؛ ومع du: dich أو dir.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 3,
+    "video_id": "GKB3cgYUy4A",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "التعرف على Genitiv واستعماله للتعبير عن الملكية والعلاقات بين الأسماء في مستوى A2. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "التعرف على Genitiv واستعماله للتعبير عن الملكية والعلاقات بين الأسماء في مستوى A2.",
+      "التعبير عن الانتماء والملكية بطريقة أوضح في الكلام والكتابة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "Genitiv يعبّر عن الملكية أو العلاقة، وتأتي أدواته des للمذكر والمحايد و der للمؤنث والجمع."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع حالة Genitiv، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "نهاية الاسم",
+        "explanation": "يأخذ الاسم المذكر أو المحايد غالبًا s أو es في Genitiv.",
+        "pattern": "des Mannes · des Kindes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Auto des Lehrers ist neu.",
+        "ar": "سيارة المعلّم جديدة.",
+        "note": ""
+      },
+      {
+        "de": "Die Farbe der Tasche gefällt mir.",
+        "ar": "يعجبني لون الحقيبة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "wessen?",
+        "ar": "لِمَن؟",
+        "note": ""
+      },
+      {
+        "de": "des",
+        "ar": "للمذكر والمحايد",
+        "note": ""
+      },
+      {
+        "de": "der",
+        "ar": "للمؤنث والجمع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Das Auto der Mann ist neu.",
+        "correct": "Das Auto des Mannes ist neu.",
+        "explanation": "المذكر يأخذ des، ويضاف غالبًا s أو es إلى الاسم."
+      }
+    ],
+    "tables": [
+      {
+        "title": "أدوات Genitiv",
+        "headers": [
+          "الجنس",
+          "معرفة",
+          "نكرة"
+        ],
+        "rows": [
+          [
+            "مذكر",
+            "des",
+            "eines"
+          ],
+          [
+            "محايد",
+            "des",
+            "eines"
+          ],
+          [
+            "مؤنث",
+            "der",
+            "einer"
+          ],
+          [
+            "جمع",
+            "der",
+            "—"
+          ]
+        ]
+      }
+    ],
+    "quick_recap": [
+      "المحور: حالة Genitiv.",
+      "يأخذ الاسم المذكر أو المحايد غالبًا s أو es في Genitiv.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 4,
+    "video_id": "HaFiYczo4z8",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "متابعة قاعدة Genitiv مع أمثلة إضافية تساعدك على فهم البنية والاستعمال العملي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "متابعة قاعدة Genitiv مع أمثلة إضافية تساعدك على فهم البنية والاستعمال العملي.",
+      "استخدام تراكيب الملكية في وصف الأشخاص والأشياء والعلاقات بشكل أدق."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "Genitiv يعبّر عن الملكية أو العلاقة، وتأتي أدواته des للمذكر والمحايد و der للمؤنث والجمع."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع تطبيق Genitiv، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "نهاية الاسم",
+        "explanation": "يأخذ الاسم المذكر أو المحايد غالبًا s أو es في Genitiv.",
+        "pattern": "des Mannes · des Kindes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Auto des Lehrers ist neu.",
+        "ar": "سيارة المعلّم جديدة.",
+        "note": ""
+      },
+      {
+        "de": "Die Farbe der Tasche gefällt mir.",
+        "ar": "يعجبني لون الحقيبة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "wessen?",
+        "ar": "لِمَن؟",
+        "note": ""
+      },
+      {
+        "de": "des",
+        "ar": "للمذكر والمحايد",
+        "note": ""
+      },
+      {
+        "de": "der",
+        "ar": "للمؤنث والجمع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Das Auto der Mann ist neu.",
+        "correct": "Das Auto des Mannes ist neu.",
+        "explanation": "المذكر يأخذ des، ويضاف غالبًا s أو es إلى الاسم."
+      }
+    ],
+    "tables": [
+      {
+        "title": "أدوات Genitiv",
+        "headers": [
+          "الجنس",
+          "معرفة",
+          "نكرة"
+        ],
+        "rows": [
+          [
+            "مذكر",
+            "des",
+            "eines"
+          ],
+          [
+            "محايد",
+            "des",
+            "eines"
+          ],
+          [
+            "مؤنث",
+            "der",
+            "einer"
+          ],
+          [
+            "جمع",
+            "der",
+            "—"
+          ]
+        ]
+      }
+    ],
+    "quick_recap": [
+      "المحور: تطبيق Genitiv.",
+      "يأخذ الاسم المذكر أو المحايد غالبًا s أو es في Genitiv.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 5,
+    "video_id": "0vjE-XopATY",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم الماضي البسيط في الألمانية ومتى نستخدمه خاصة في السرد وبعض الأفعال الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم الماضي البسيط في الألمانية ومتى نستخدمه خاصة في السرد وبعض الأفعال الشائعة.",
+      "رواية أحداث ماضية بشكل أبسط وأكثر قرباً من اللغة المكتوبة والقصص."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "Präteritum شائع في الكتابة، ويكثر في الكلام مع sein و haben والأفعال الناقصة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع زمن Präteritum، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "الفعل المنتظم",
+        "explanation": "يُبنى الماضي البسيط المنتظم عادةً بإضافة t ثم نهاية الشخص.",
+        "pattern": "lernen → lernte"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Früher wohnte ich in Köln.",
+        "ar": "كنت أسكن سابقًا في كولونيا.",
+        "note": ""
+      },
+      {
+        "de": "Wir hatten keine Zeit.",
+        "ar": "لم يكن لدينا وقت.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "war",
+        "ar": "كان",
+        "note": ""
+      },
+      {
+        "de": "hatte",
+        "ar": "كان لديه",
+        "note": ""
+      },
+      {
+        "de": "ging",
+        "ar": "ذهب",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "…, weil ich bin müde.",
+        "correct": "…, weil ich müde bin.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: زمن Präteritum.",
+      "يُبنى الماضي البسيط المنتظم عادةً بإضافة t ثم نهاية الشخص.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 6,
+    "video_id": "-mYamuCZKOw",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "استعمال الأفعال المساعدة في الزمن الماضي وكيف تتغير مع الفاعل داخل الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "استعمال الأفعال المساعدة في الزمن الماضي وكيف تتغير مع الفاعل داخل الجملة.",
+      "التحدث عن القدرة أو الرغبة أو الوجوب في الماضي بشكل صحيح."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تأتي الأفعال الناقصة في Präteritum بصيغ مثل konnte و musste و wollte، ويبقى المصدر في نهاية الجملة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الأفعال المساعدة في الماضي، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "Modalverb في Präteritum",
+        "explanation": "صرّف الفعل الناقص في الماضي البسيط وضع المصدر غير المصرف في النهاية.",
+        "pattern": "Subjekt + Modalverb im Präteritum + … + Infinitiv"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich musste gestern arbeiten.",
+        "ar": "كان عليّ أن أعمل أمس.",
+        "note": ""
+      },
+      {
+        "de": "Wir konnten nicht kommen.",
+        "ar": "لم نستطع الحضور.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "konnte",
+        "ar": "استطاع",
+        "note": ""
+      },
+      {
+        "de": "musste",
+        "ar": "اضطر/كان عليه",
+        "note": ""
+      },
+      {
+        "de": "wollte",
+        "ar": "أراد",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich kann Deutsch spreche.",
+        "correct": "Ich kann Deutsch sprechen.",
+        "explanation": "بعد الفعل الناقص يأتي المصدر بلا تصريف."
+      }
+    ],
+    "tables": [
+      {
+        "title": "أهم صيغ الماضي",
+        "headers": [
+          "المصدر",
+          "ich/er/sie/es",
+          "wir/sie/Sie"
+        ],
+        "rows": [
+          [
+            "können",
+            "konnte",
+            "konnten"
+          ],
+          [
+            "müssen",
+            "musste",
+            "mussten"
+          ],
+          [
+            "wollen",
+            "wollte",
+            "wollten"
+          ],
+          [
+            "dürfen",
+            "durfte",
+            "durften"
+          ]
+        ]
+      }
+    ],
+    "quick_recap": [
+      "المحور: الأفعال المساعدة في الماضي.",
+      "صرّف الفعل الناقص في الماضي البسيط وضع المصدر غير المصرف في النهاية.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 7,
+    "video_id": "Aofn3BkzshY",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "تعلم تصريف الأفعال المنتظمة في الماضي البسيط وتطبيقها في جمل واضحة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم تصريف الأفعال المنتظمة في الماضي البسيط وتطبيقها في جمل واضحة.",
+      "سرد أحداث يومية سابقة باستعمال أفعال منتظمة بشكل سليم."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "Präteritum شائع في الكتابة، ويكثر في الكلام مع sein و haben والأفعال الناقصة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الأفعال المنتظمة في Präteritum، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "الفعل المنتظم",
+        "explanation": "يُبنى الماضي البسيط المنتظم عادةً بإضافة t ثم نهاية الشخص.",
+        "pattern": "lernen → lernte"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Früher wohnte ich in Köln.",
+        "ar": "كنت أسكن سابقًا في كولونيا.",
+        "note": ""
+      },
+      {
+        "de": "Wir hatten keine Zeit.",
+        "ar": "لم يكن لدينا وقت.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "war",
+        "ar": "كان",
+        "note": ""
+      },
+      {
+        "de": "hatte",
+        "ar": "كان لديه",
+        "note": ""
+      },
+      {
+        "de": "ging",
+        "ar": "ذهب",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الأفعال المنتظمة في Präteritum.",
+      "يُبنى الماضي البسيط المنتظم عادةً بإضافة t ثم نهاية الشخص.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 8,
+    "video_id": "lF-dNXa9Nug",
+    "source_type": "unavailable",
+    "source_language": null,
+    "source_coverage_percent": 0,
+    "source_duration_seconds": 673,
+    "review_status": "needs_source",
+    "source_failure": "YouTube HTTP 429; public audio access currently requires sign-in.",
+    "reading_time_minutes": 4,
+    "summary": "",
+    "video_outline": [],
+    "learning_objectives": [],
+    "explanation": [],
+    "rules_from_video": [],
+    "examples_from_video": [],
+    "vocabulary_from_video": [],
+    "teacher_notes": [],
+    "exercises_demonstrated": [],
+    "quick_recap": [],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      }
+    ],
+    "tables": [],
+    "common_mistakes": [],
+    "evidence_checks": []
+  },
+  {
+    "level": "A2",
+    "lesson_id": 9,
+    "video_id": "EBE1Oon-j9w",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "تعلم مفردات وتراكيب تساعدك على وصف يومك العادي بتفاصيل أكثر من مستوى A1. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم مفردات وتراكيب تساعدك على وصف يومك العادي بتفاصيل أكثر من مستوى A1.",
+      "شرح الروتين اليومي وساعات النشاط والعمل والدراسة بطلاقة أفضل."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "رتّب أنشطة اليوم زمنيًا، واستخدم الساعة والظروف وروابط بسيطة؛ تنفصل سوابق الأفعال القابلة للانفصال في الجملة الرئيسية."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الروتين اليومي، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "ترتيب الروتين",
+        "explanation": "ابدأ بظرف زمني أو نشاط، وحافظ على الفعل المصرف في الموقع الثاني.",
+        "pattern": "Zeitangabe + Verb + Subjekt + …"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Um sieben Uhr stehe ich auf.",
+        "ar": "أستيقظ الساعة السابعة.",
+        "note": ""
+      },
+      {
+        "de": "Danach fahre ich zur Arbeit.",
+        "ar": "بعد ذلك أذهب إلى العمل.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "aufstehen",
+        "ar": "يستيقظ",
+        "note": ""
+      },
+      {
+        "de": "frühstücken",
+        "ar": "يفطر",
+        "note": ""
+      },
+      {
+        "de": "danach",
+        "ar": "بعد ذلك",
+        "note": ""
+      },
+      {
+        "de": "am Abend",
+        "ar": "في المساء",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الروتين اليومي.",
+      "ابدأ بظرف زمني أو نشاط، وحافظ على الفعل المصرف في الموقع الثاني.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 10,
+    "video_id": "pl0zXcWGYoA",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم استخدام welch بصيغها المختلفة للسؤال عن الاختيار أو النوع أو الشيء المحدد. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم استخدام welch بصيغها المختلفة للسؤال عن الاختيار أو النوع أو الشيء المحدد.",
+      "طرح أسئلة أدق عند المقارنة أو طلب معلومات محددة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "welch- يسأل عن اختيار محدد، وتأخذ نهايته نهاية أداة التعريف المناسبة للجنس والحالة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع أداة السؤال welch، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار النهاية",
+        "explanation": "حدّد جنس الاسم وحالته ثم أضف النهاية إلى welch-.",
+        "pattern": "welch- + Kasusendung + Nomen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Welches Buch liest du?",
+        "ar": "أي كتاب تقرأ؟",
+        "note": ""
+      },
+      {
+        "de": "Welche Farbe magst du?",
+        "ar": "أي لون تحب؟",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "welcher",
+        "ar": "أيّ للمذكر",
+        "note": ""
+      },
+      {
+        "de": "welche",
+        "ar": "أيّ للمؤنث/الجمع",
+        "note": ""
+      },
+      {
+        "de": "welches",
+        "ar": "أيّ للمحايد",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: أداة السؤال welch.",
+      "حدّد جنس الاسم وحالته ثم أضف النهاية إلى welch-.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 11,
+    "video_id": "6rzANuCC2z8",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "تعلم مفردات وتراكيب لشرح ما فعلته أو ستفعله في عطلة نهاية الأسبوع. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم مفردات وتراكيب لشرح ما فعلته أو ستفعله في عطلة نهاية الأسبوع.",
+      "إجراء محادثة طبيعية عن الخطط أو الأنشطة الماضية والمستقبلية في العطلة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "لرواية عطلة نهاية الأسبوع رتّب الأحداث، واذكر المكان والأشخاص والنشاط والانطباع. استخدم Perfekt غالبًا عند الحديث عن الماضي."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الحديث عن نهاية الأسبوع، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "سرد مترابط",
+        "explanation": "استخدم مؤشرات زمنية واختر haben أو sein في Perfekt بحسب الفعل.",
+        "pattern": "zuerst → danach → später → zum Schluss"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Am Samstag habe ich Freunde besucht.",
+        "ar": "يوم السبت زرت أصدقاء.",
+        "note": ""
+      },
+      {
+        "de": "Danach sind wir ins Kino gegangen.",
+        "ar": "بعد ذلك ذهبنا إلى السينما.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "am Wochenende",
+        "ar": "في عطلة نهاية الأسبوع",
+        "note": ""
+      },
+      {
+        "de": "zuerst",
+        "ar": "أولًا",
+        "note": ""
+      },
+      {
+        "de": "danach",
+        "ar": "بعد ذلك",
+        "note": ""
+      },
+      {
+        "de": "zum Schluss",
+        "ar": "في النهاية",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الحديث عن نهاية الأسبوع.",
+      "استخدم مؤشرات زمنية واختر haben أو sein في Perfekt بحسب الفعل.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 2,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 12,
+    "video_id": "fFKuIgf89IU",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "فهم أسماء الإشارة وكيفية استعمالها للإشارة إلى الأشخاص والأشياء بوضوح. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم أسماء الإشارة وكيفية استعمالها للإشارة إلى الأشخاص والأشياء بوضوح.",
+      "توضيح المقصود في الحديث اليومي وربط الكلام بسياق قريب أو معروف."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "جذر dies- يأخذ نهايات مشابهة لأداة التعريف وفق الجنس والحالة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع أسماء الإشارة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اسم الإشارة",
+        "explanation": "اختر نهاية dies- كما تختار der/die/das أو den/dem بحسب الحالة.",
+        "pattern": "dies- + Kasusendung + Nomen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Dieses Buch ist interessant.",
+        "ar": "هذا الكتاب ممتع.",
+        "note": ""
+      },
+      {
+        "de": "Ich kaufe diese Tasche.",
+        "ar": "أشتري هذه الحقيبة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "dieser",
+        "ar": "هذا للمذكر",
+        "note": ""
+      },
+      {
+        "de": "diese",
+        "ar": "هذه/هؤلاء",
+        "note": ""
+      },
+      {
+        "de": "dieses",
+        "ar": "هذا للمحايد",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [
+      {
+        "title": "dies- في Nominativ و Akkusativ",
+        "headers": [
+          "الجنس/العدد",
+          "Nominativ",
+          "Akkusativ"
+        ],
+        "rows": [
+          [
+            "مذكر",
+            "dieser",
+            "diesen"
+          ],
+          [
+            "مؤنث",
+            "diese",
+            "diese"
+          ],
+          [
+            "محايد",
+            "dieses",
+            "dieses"
+          ],
+          [
+            "جمع",
+            "diese",
+            "diese"
+          ]
+        ]
+      }
+    ],
+    "quick_recap": [
+      "المحور: أسماء الإشارة.",
+      "اختر نهاية dies- كما تختار der/die/das أو den/dem بحسب الحالة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 13,
+    "video_id": "YKwt6K-8CE0",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "التعرف على أهم حروف الجر التي تأتي دائماً مع Akkusativ واستعمالها في العلاقات والمعاني الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "التعرف على أهم حروف الجر التي تأتي دائماً مع Akkusativ واستعمالها في العلاقات والمعاني الشائعة.",
+      "التعبير عن الاتجاه والغاية والمدة والعلاقات الأخرى بجمل أكثر دقة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حروف الجر durch و für و gegen و ohne و um تأخذ Akkusativ دائمًا، لذلك اضبط أداة الاسم أو الضمير بعدها وفق هذه الحالة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع حروف الجر مع Akkusativ، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "حالة ثابتة",
+        "explanation": "بعد هذه الحروف لا يعتمد اختيار الحالة على الحركة أو الموقع؛ الحالة دائمًا Akkusativ.",
+        "pattern": "durch/für/gegen/ohne/um + Akkusativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir gehen durch den Park.",
+        "ar": "نسير عبر الحديقة.",
+        "note": ""
+      },
+      {
+        "de": "Das Geschenk ist für meinen Bruder.",
+        "ar": "الهدية لأخي.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "durch",
+        "ar": "عبر",
+        "note": ""
+      },
+      {
+        "de": "für",
+        "ar": "لأجل",
+        "note": ""
+      },
+      {
+        "de": "gegen",
+        "ar": "ضد/نحو",
+        "note": ""
+      },
+      {
+        "de": "ohne",
+        "ar": "من دون",
+        "note": ""
+      },
+      {
+        "de": "um",
+        "ar": "حول/في تمام",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich sehe der Mann.",
+        "correct": "Ich sehe den Mann.",
+        "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: حروف الجر مع Akkusativ.",
+      "بعد هذه الحروف لا يعتمد اختيار الحالة على الحركة أو الموقع؛ الحالة دائمًا Akkusativ.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 14,
+    "video_id": "c5NdMTMWaf4",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم حروف الجر التي تأتي دائماً مع Dativ وكيفية استخدامها في المعاني المكانية والزمنية وغيرها. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم حروف الجر التي تأتي دائماً مع Dativ وكيفية استخدامها في المعاني المكانية والزمنية وغيرها.",
+      "التحدث عن المواقع والأزمنة والعلاقات اليومية بطريقة صحيحة نحوياً."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حروف الجر aus و bei و mit و nach و seit و von و zu تأخذ Dativ دائمًا."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع حروف الجر مع Dativ، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "حالة ثابتة",
+        "explanation": "بعد هذه الحروف استخدم Dativ واضبط أداة الاسم أو الضمير وفقًا له.",
+        "pattern": "aus/bei/mit/nach/seit/von/zu + Dativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich fahre mit dem Bus.",
+        "ar": "أذهب بالحافلة.",
+        "note": ""
+      },
+      {
+        "de": "Sie kommt aus der Schweiz.",
+        "ar": "هي قادمة من سويسرا.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "aus",
+        "ar": "من داخل/من بلد",
+        "note": ""
+      },
+      {
+        "de": "bei",
+        "ar": "عند",
+        "note": ""
+      },
+      {
+        "de": "mit",
+        "ar": "مع/بواسطة",
+        "note": ""
+      },
+      {
+        "de": "nach",
+        "ar": "إلى/بعد",
+        "note": ""
+      },
+      {
+        "de": "von",
+        "ar": "من",
+        "note": ""
+      },
+      {
+        "de": "zu",
+        "ar": "إلى",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich helfe den Mann.",
+        "correct": "Ich helfe dem Mann.",
+        "explanation": "الفعل helfen يطلب Dativ."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: حروف الجر مع Dativ.",
+      "بعد هذه الحروف استخدم Dativ واضبط أداة الاسم أو الضمير وفقًا له.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 15,
+    "video_id": "0LLRh_dHn1c",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "التدرب على الإجابة عن أسئلة المكان واستعمال حرف الجر الأنسب بحسب المعنى. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "التدرب على الإجابة عن أسئلة المكان واستعمال حرف الجر الأنسب بحسب المعنى.",
+      "الإجابة عن أسئلة المكان بشكل طبيعي وواضح في المواقف اليومية."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حرف الجر يحدد معنى العلاقة وغالبًا يفرض حالة إعرابية ثابتة؛ مع حروف المكان المشتركة يحدد الاتجاه Akkusativ والموقع Dativ."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع اختيار حرف الجر المناسب، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اتجاه أم موقع",
+        "explanation": "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+        "pattern": "wohin? + Akkusativ · wo? + Dativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich warte auf den Bus.",
+        "ar": "أنتظر الحافلة.",
+        "note": ""
+      },
+      {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "ar": "الكتاب موضوع على الطاولة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "warten auf",
+        "ar": "ينتظر",
+        "note": ""
+      },
+      {
+        "de": "denken an",
+        "ar": "يفكر في",
+        "note": ""
+      },
+      {
+        "de": "mit",
+        "ar": "مع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: اختيار حرف الجر المناسب.",
+      "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 16,
+    "video_id": "ZrbyFbmzqM4",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "متابعة التدريب على الفرق بين الحروف بحسب السؤال والحركة أو الثبات في المكان. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "متابعة التدريب على الفرق بين الحروف بحسب السؤال والحركة أو الثبات في المكان.",
+      "إعطاء إجابات أدق عند وصف المكان أو الاتجاه أو الوصول."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حرف الجر يحدد معنى العلاقة وغالبًا يفرض حالة إعرابية ثابتة؛ مع حروف المكان المشتركة يحدد الاتجاه Akkusativ والموقع Dativ."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع استعمالات حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اتجاه أم موقع",
+        "explanation": "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+        "pattern": "wohin? + Akkusativ · wo? + Dativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich warte auf den Bus.",
+        "ar": "أنتظر الحافلة.",
+        "note": ""
+      },
+      {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "ar": "الكتاب موضوع على الطاولة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "warten auf",
+        "ar": "ينتظر",
+        "note": ""
+      },
+      {
+        "de": "denken an",
+        "ar": "يفكر في",
+        "note": ""
+      },
+      {
+        "de": "mit",
+        "ar": "مع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: استعمالات حروف الجر.",
+      "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 17,
+    "video_id": "X9NWlVV-P3E",
+    "source_type": "metadata",
+    "caption_language": null,
+    "reading_time_minutes": 4,
+    "summary": "مراجعة حروف الجر المكانية وقياس قدرتك على اختيار الصيغة الصحيحة في الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "مراجعة حروف الجر المكانية وقياس قدرتك على اختيار الصيغة الصحيحة في الجملة.",
+      "تثبيت استعمالات حروف الجر قبل الانتقال إلى تراكيب أكثر تعقيداً."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حرف الجر يحدد معنى العلاقة وغالبًا يفرض حالة إعرابية ثابتة؛ مع حروف المكان المشتركة يحدد الاتجاه Akkusativ والموقع Dativ."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع اختبار حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اتجاه أم موقع",
+        "explanation": "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+        "pattern": "wohin? + Akkusativ · wo? + Dativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich warte auf den Bus.",
+        "ar": "أنتظر الحافلة.",
+        "note": ""
+      },
+      {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "ar": "الكتاب موضوع على الطاولة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "warten auf",
+        "ar": "ينتظر",
+        "note": ""
+      },
+      {
+        "de": "denken an",
+        "ar": "يفكر في",
+        "note": ""
+      },
+      {
+        "de": "mit",
+        "ar": "مع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: اختبار حروف الجر.",
+      "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 3,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      }
+    ],
+    "review_status": "generated_from_metadata"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 18,
+    "video_id": "5SChfbaty4g",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "تطبيق إضافي على أجوبة المكان والاتجاه حتى يصبح الاختيار بين الحروف أوضح وأسهل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تطبيق إضافي على أجوبة المكان والاتجاه حتى يصبح الاختيار بين الحروف أوضح وأسهل.",
+      "تحسين سرعة الإجابة وصحة التراكيب عند الكلام عن الأماكن."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حرف الجر يحدد معنى العلاقة وغالبًا يفرض حالة إعرابية ثابتة؛ مع حروف المكان المشتركة يحدد الاتجاه Akkusativ والموقع Dativ."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع مراجعة حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اتجاه أم موقع",
+        "explanation": "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+        "pattern": "wohin? + Akkusativ · wo? + Dativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich warte auf den Bus.",
+        "ar": "أنتظر الحافلة.",
+        "note": ""
+      },
+      {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "ar": "الكتاب موضوع على الطاولة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "warten auf",
+        "ar": "ينتظر",
+        "note": ""
+      },
+      {
+        "de": "denken an",
+        "ar": "يفكر في",
+        "note": ""
+      },
+      {
+        "de": "mit",
+        "ar": "مع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: مراجعة حروف الجر.",
+      "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حدّد موضع الخطأ قبل التصحيح: الأداة أو الحالة أو نهاية الفعل أو ترتيب الكلمات، ثم اكتب سببًا قصيرًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 19,
+    "video_id": "EBkqQLDEFrI",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم بنية الجملة الرئيسية وترتيب العناصر الأساسية فيها بشكل منظم. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم بنية الجملة الرئيسية وترتيب العناصر الأساسية فيها بشكل منظم.",
+      "بناء جمل أوضح وأكثر ثباتاً عند الحديث والكتابة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "الفعل المصرف ثابت في الموقع الثاني في الجملة الرئيسية، حتى عندما يبدأ الكلام بظرف زمان أو مكان."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الجملة الرئيسية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "قاعدة الموقع الثاني",
+        "explanation": "العنصر الأول يمكن أن يتغير، لكن الفعل المصرف يبقى ثاني عنصر.",
+        "pattern": "Position 1 + Verb + Subjekt + …"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Heute lerne ich Deutsch.",
+        "ar": "اليوم أتعلم الألمانية.",
+        "note": ""
+      },
+      {
+        "de": "Am Abend sehe ich einen Film.",
+        "ar": "في المساء أشاهد فيلمًا.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "das Subjekt",
+        "ar": "الفاعل",
+        "note": ""
+      },
+      {
+        "de": "das Verb",
+        "ar": "الفعل",
+        "note": ""
+      },
+      {
+        "de": "die Ergänzung",
+        "ar": "التكملة",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الجملة الرئيسية.",
+      "العنصر الأول يمكن أن يتغير، لكن الفعل المصرف يبقى ثاني عنصر.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 20,
+    "video_id": "7ARuNFUrViA",
+    "source_type": "automatic_captions_verified",
+    "source_language": "ar",
+    "source_coverage_percent": 100,
+    "source_duration_seconds": 1463,
+    "source_segment_count": 302,
+    "source_model": null,
+    "source_compute_type": null,
+    "source_device": null,
+    "review_status": "source_verified",
+    "reading_time_minutes": 3,
+    "summary": "يشرح الفيديو خمس أدوات تربط جملة رئيسية بجملة رئيسية—aber و denn و und و oder و sondern—من دون تغيير موقع الفعل، ثم يبيّن الفاصلة وإمكان حذف العناصر المكررة لكل أداة ويختم باختبار من خمس جمل.",
+    "video_outline": [
+      {
+        "timestamp": "00:00",
+        "heading": "قاعدة الأدوات الخمس",
+        "summary": "Hauptsatz مع Hauptsatz والفعل يبقى في المرتبة الثانية.",
+        "origin": "video"
+      },
+      {
+        "timestamp": "00:45",
+        "heading": "aber",
+        "summary": "الفاصلة والموقع صفر وشروط الاختصار.",
+        "origin": "video"
+      },
+      {
+        "timestamp": "06:30",
+        "heading": "denn",
+        "summary": "التعليل مع فاصلة ومنع حذف الفاعل والفعل.",
+        "origin": "video"
+      },
+      {
+        "timestamp": "10:00",
+        "heading": "und",
+        "summary": "الربط وإمكان حذف العناصر المتطابقة.",
+        "origin": "video"
+      },
+      {
+        "timestamp": "13:00",
+        "heading": "oder",
+        "summary": "عدم وضع فاصلة عادة وإمكان الاختصار.",
+        "origin": "video"
+      },
+      {
+        "timestamp": "17:00",
+        "heading": "sondern",
+        "summary": "تصحيح نفي سابق بـ nicht أو kein.",
+        "origin": "video"
+      },
+      {
+        "timestamp": "22:30",
+        "heading": "اختبار ومراجعة",
+        "summary": "اختيار الأداة المناسبة في خمس جمل.",
+        "origin": "video"
+      }
+    ],
+    "learning_objectives": [
+      "التعرف على أدوات الربط الأساسية التي تساعدك على توسيع الجمل وربط الأفكار.",
+      "التحدث بطريقة أكثر سلاسة عبر ربط جملتين أو أكثر في نفس السياق."
+    ],
+    "explanation": [
+      {
+        "heading": "المبدأ المشترك",
+        "content": "الأدوات الخمس تقع في الموقع صفر، لذلك تظل الجملة التالية جملة رئيسية ويبقى الفعل المصرف في المرتبة الثانية.",
+        "source_start": "00:00",
+        "source_end": "00:45",
+        "origin": "video"
+      },
+      {
+        "heading": "aber و denn",
+        "content": "مع aber توضع فاصلة ويمكن حذف الفاعل والفعل إذا تكررا، أما denn فتأخذ فاصلة ولا يسمح الفيديو باختصار الجملة الثانية.",
+        "source_start": "00:45",
+        "source_end": "10:00",
+        "origin": "video"
+      },
+      {
+        "heading": "und و oder",
+        "content": "يمكن اختصار العناصر المتكررة مع الأداتين؛ ويؤكد الفيديو أن oder لا تسبقها فاصلة في أمثلته.",
+        "source_start": "10:00",
+        "source_end": "17:00",
+        "origin": "video"
+      },
+      {
+        "heading": "sondern",
+        "content": "تأتي لتصحيح النفي: يجب أن تحتوي الجملة الأولى على nicht أو kein، ثم تعرض الثانية البديل الصحيح.",
+        "source_start": "17:00",
+        "source_end": "22:20",
+        "origin": "video"
+      }
+    ],
+    "rules_from_video": [
+      {
+        "rule": "موقع الفعل لا يتغير",
+        "explanation": "بعد الأدوات الخمس يبقى الفعل في المرتبة الثانية.",
+        "pattern": "Hauptsatz + Konjunktion + Hauptsatz",
+        "timestamp": "00:20",
+        "origin": "video"
+      },
+      {
+        "rule": "فاصلة مع aber و denn و sondern",
+        "explanation": "يفصل الفيديو الجملتين بفاصلة مع هذه الأدوات.",
+        "pattern": "…, aber/denn/sondern …",
+        "timestamp": "01:00",
+        "origin": "video"
+      },
+      {
+        "rule": "sondern بعد النفي",
+        "explanation": "لا تستعمل sondern إلا لتصحيح nicht أو kein في الجملة الأولى.",
+        "pattern": "nicht/kein …, sondern …",
+        "timestamp": "17:30",
+        "origin": "video"
+      }
+    ],
+    "examples_from_video": [
+      {
+        "de": "aber",
+        "ar": "لكن",
+        "timestamp": "00:45",
+        "verified": true,
+        "origin": "video"
+      },
+      {
+        "de": "denn",
+        "ar": "لأن",
+        "timestamp": "06:30",
+        "verified": true,
+        "origin": "video"
+      },
+      {
+        "de": "und",
+        "ar": "و",
+        "timestamp": "10:00",
+        "verified": true,
+        "origin": "video"
+      },
+      {
+        "de": "oder",
+        "ar": "أو",
+        "timestamp": "13:00",
+        "verified": true,
+        "origin": "video"
+      },
+      {
+        "de": "sondern",
+        "ar": "بل / وإنما",
+        "timestamp": "17:00",
+        "verified": true,
+        "origin": "video"
+      }
+    ],
+    "vocabulary_from_video": [
+      {
+        "de": "aber",
+        "ar": "لكن",
+        "timestamp": "00:45",
+        "origin": "video"
+      },
+      {
+        "de": "denn",
+        "ar": "لأن",
+        "timestamp": "06:30",
+        "origin": "video"
+      },
+      {
+        "de": "und",
+        "ar": "و",
+        "timestamp": "10:00",
+        "origin": "video"
+      },
+      {
+        "de": "oder",
+        "ar": "أو",
+        "timestamp": "13:00",
+        "origin": "video"
+      },
+      {
+        "de": "sondern",
+        "ar": "بل / وإنما",
+        "timestamp": "17:00",
+        "origin": "video"
+      }
+    ],
+    "teacher_notes": [
+      {
+        "text": "لا تنقل الفعل إلى نهاية الجملة بعد هذه الأدوات.",
+        "timestamp": "00:20",
+        "origin": "video"
+      },
+      {
+        "text": "مع denn تبقى الجملة الثانية كاملة حتى لو تكرر الفاعل والفعل.",
+        "timestamp": "08:00",
+        "origin": "video"
+      }
+    ],
+    "exercises_demonstrated": [
+      {
+        "text": "الحكم على إمكان اختصار الجملة الثانية بعد كل أداة.",
+        "timestamp": "04:00",
+        "origin": "video"
+      },
+      {
+        "text": "اختبار نهائي لاختيار واحدة من الأدوات الخمس.",
+        "timestamp": "22:30",
+        "origin": "video"
+      }
+    ],
+    "quick_recap": [
+      "الأدوات الخمس تربط جملتين رئيسيتين.",
+      "الفعل يبقى ثانيًا.",
+      "sondern تصحح نفيًا سابقًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false,
+        "origin": "editorial_clarification"
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false,
+        "origin": "editorial_clarification"
+      },
+      {
+        "task_index": 2,
+        "guidance": "حدّد موضع الخطأ قبل التصحيح: الأداة أو الحالة أو نهاية الفعل أو ترتيب الكلمات، ثم اكتب سببًا قصيرًا.",
+        "video_required": false,
+        "origin": "editorial_clarification"
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false,
+        "origin": "editorial_clarification"
+      }
+    ],
+    "tables": [],
+    "common_mistakes": [],
+    "evidence_checks": [
+      {
+        "claim": "يذكر خمس أدوات في بداية الدرس.",
+        "timestamp": "00:10",
+        "verified": true
+      },
+      {
+        "claim": "يصف الأداة بأنها في الموقع صفر.",
+        "timestamp": "01:45",
+        "verified": true
+      },
+      {
+        "claim": "يمنع الاختصار مع denn.",
+        "timestamp": "08:00",
+        "verified": true
+      },
+      {
+        "claim": "يعرض oder بلا فاصلة في المثال.",
+        "timestamp": "13:20",
+        "verified": true
+      },
+      {
+        "claim": "يختم باختبار من خمس درجات.",
+        "timestamp": "22:30",
+        "verified": true
+      }
+    ],
+    "completeness": {
+      "meaningful_source_segments": 302,
+      "documented_sections": 4,
+      "german_examples_detected": 5,
+      "german_examples_documented": 5,
+      "vocabulary_items_detected": 5,
+      "vocabulary_items_documented": 5,
+      "beginning_represented": true,
+      "middle_represented": true,
+      "end_represented": true
+    }
+  },
+  {
+    "level": "A2",
+    "lesson_id": 21,
+    "video_id": "WCNUgkHtIxc",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم بناء الجملة الجانبية ومكان الفعل فيها مع أمثلة عملية مناسبة لمستوى A2. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم بناء الجملة الجانبية ومكان الفعل فيها مع أمثلة عملية مناسبة لمستوى A2.",
+      "إضافة أسباب أو معلومات إضافية داخل جمل أكثر تطوراً."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "في الجملة التابعة ينتقل الفعل المصرف إلى النهاية، وتفصلها فاصلة عن الجملة الرئيسية."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الجملة الجانبية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "الجملة التابعة",
+        "explanation": "بعد أداة الربط تأتي بقية العناصر ثم الفعل المصرف في النهاية.",
+        "pattern": "Konjunktion + Subjekt + … + Verb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bleibe zu Hause, weil ich krank bin.",
+        "ar": "أبقى في المنزل لأنني مريض.",
+        "note": ""
+      },
+      {
+        "de": "Bevor ich schlafe, lese ich.",
+        "ar": "قبل أن أنام أقرأ.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "weil",
+        "ar": "لأن",
+        "note": ""
+      },
+      {
+        "de": "obwohl",
+        "ar": "مع أن",
+        "note": ""
+      },
+      {
+        "de": "bevor",
+        "ar": "قبل أن",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "…, weil ich bin müde.",
+        "correct": "…, weil ich müde bin.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الجملة الجانبية.",
+      "بعد أداة الربط تأتي بقية العناصر ثم الفعل المصرف في النهاية.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 22,
+    "video_id": "t9yQpNuUFus",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "الفرق بين weil و da في التعبير عن السبب ومتى يفضل استعمال كل واحدة منهما. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "الفرق بين weil و da في التعبير عن السبب ومتى يفضل استعمال كل واحدة منهما.",
+      "شرح الأسباب بطريقة طبيعية وأكثر تنوعاً في الكلام والكتابة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "في الجملة التابعة ينتقل الفعل المصرف إلى النهاية، وتفصلها فاصلة عن الجملة الرئيسية."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع weil و da، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "الجملة التابعة",
+        "explanation": "بعد أداة الربط تأتي بقية العناصر ثم الفعل المصرف في النهاية.",
+        "pattern": "Konjunktion + Subjekt + … + Verb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bleibe zu Hause, weil ich krank bin.",
+        "ar": "أبقى في المنزل لأنني مريض.",
+        "note": ""
+      },
+      {
+        "de": "Bevor ich schlafe, lese ich.",
+        "ar": "قبل أن أنام أقرأ.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "weil",
+        "ar": "لأن",
+        "note": ""
+      },
+      {
+        "de": "obwohl",
+        "ar": "مع أن",
+        "note": ""
+      },
+      {
+        "de": "bevor",
+        "ar": "قبل أن",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "…, weil ich bin müde.",
+        "correct": "…, weil ich müde bin.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: weil و da.",
+      "بعد أداة الربط تأتي بقية العناصر ثم الفعل المصرف في النهاية.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 23,
+    "video_id": "oGsTpyuYdGM",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "مراجعة مجموعة من الكلمات من خلال الصور وقياس سرعة الفهم والاستدعاء. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "مراجعة مجموعة من الكلمات من خلال الصور وقياس سرعة الفهم والاستدعاء.",
+      "تقوية حصيلة المفردات البصرية وتحسين سرعة التذكر أثناء المحادثة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تعلّم المفردة مع أداة الاسم وصيغة الجمع أو مع عكس الصفة وسياق قصير، لا كترجمة منفردة فقط."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع اختبار المفردات، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "تثبيت المفردات",
+        "explanation": "اكتب لكل كلمة مثالًا قصيرًا يوضح الأداة أو الفعل المصاحب لها.",
+        "pattern": "Wort + typische Verbindung + Beispielsatz"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wetter ist heute schön.",
+        "ar": "الطقس جميل اليوم.",
+        "note": ""
+      },
+      {
+        "de": "Ich brauche eine warme Jacke.",
+        "ar": "أحتاج إلى سترة دافئة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "wichtig",
+        "ar": "مهم",
+        "note": ""
+      },
+      {
+        "de": "praktisch",
+        "ar": "عملي",
+        "note": ""
+      },
+      {
+        "de": "benutzen",
+        "ar": "يستخدم",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: اختبار المفردات.",
+      "اكتب لكل كلمة مثالًا قصيرًا يوضح الأداة أو الفعل المصاحب لها.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 3,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 24,
+    "video_id": "Jx-CxV4XFK4",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم الفرق بين als و wenn عند الحديث عن الزمن والمواقف المتكررة أو المفردة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم الفرق بين als و wenn عند الحديث عن الزمن والمواقف المتكررة أو المفردة.",
+      "التعبير عن أحداث ماضية أو متكررة بدقة أكبر."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "als تُستخدم غالبًا لحدث واحد في الماضي، أما wenn فللتكرار أو الحاضر والمستقبل أو الشرط."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع als و wenn، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار الرابط",
+        "explanation": "اسأل: هل الحدث وحيد وماضٍ؟ استخدم als؛ وإلا غالبًا wenn.",
+        "pattern": "einmal früher → als · wiederholt/bedingt → wenn"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Als ich klein war, wohnte ich in Bonn.",
+        "ar": "عندما كنت صغيرًا كنت أسكن في بون.",
+        "note": ""
+      },
+      {
+        "de": "Wenn ich Zeit habe, koche ich.",
+        "ar": "عندما يكون لدي وقت أطبخ.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "als",
+        "ar": "عندما مرة واحدة في الماضي",
+        "note": ""
+      },
+      {
+        "de": "wenn",
+        "ar": "عندما/إذا",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: als و wenn.",
+      "اسأل: هل الحدث وحيد وماضٍ؟ استخدم als؛ وإلا غالبًا wenn.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 25,
+    "video_id": "bZeyfgT66Zs",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "التعرف على حروف الجر الزمنية الأساسية وكيفية استعمالها مع الأيام والأوقات والمواعيد. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "التعرف على حروف الجر الزمنية الأساسية وكيفية استعمالها مع الأيام والأوقات والمواعيد.",
+      "تحديد الزمن والموعد والفترة الزمنية بشكل أوضح أثناء الحديث."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تربط حروف الجر الزمنية الحدث بنقطة أو مدة: um مع الساعة، am مع اليوم وأجزاء اليوم، im مع الشهر والفصل، seit لبداية مستمرة، و vor لوقت سابق."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع حروف الجر الزمنية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار حرف الزمن",
+        "explanation": "حدّد هل التعبير ساعة أم يوم أم شهر/فصل أم مدة، ثم اختر الحرف والحالة الملازمة له.",
+        "pattern": "um + Uhrzeit · am + Tag · im + Monat/Jahreszeit"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Kurs beginnt um neun Uhr.",
+        "ar": "تبدأ الدورة الساعة التاسعة.",
+        "note": ""
+      },
+      {
+        "de": "Im Sommer fahre ich ans Meer.",
+        "ar": "في الصيف أذهب إلى البحر.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "um neun Uhr",
+        "ar": "الساعة التاسعة",
+        "note": ""
+      },
+      {
+        "de": "am Montag",
+        "ar": "يوم الاثنين",
+        "note": ""
+      },
+      {
+        "de": "im Mai",
+        "ar": "في مايو",
+        "note": ""
+      },
+      {
+        "de": "seit zwei Jahren",
+        "ar": "منذ سنتين",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: حروف الجر الزمنية.",
+      "حدّد هل التعبير ساعة أم يوم أم شهر/فصل أم مدة، ثم اختر الحرف والحالة الملازمة له.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 26,
+    "video_id": "kZb0JJlbBP4",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "متابعة تعلم حروف الجر الزمنية مع أمثلة إضافية تساعد على تثبيت الاستخدام الصحيح. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "متابعة تعلم حروف الجر الزمنية مع أمثلة إضافية تساعد على تثبيت الاستخدام الصحيح.",
+      "الحديث عن التاريخ والمدة والمواعيد بطريقة أكثر دقة وسلاسة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تربط حروف الجر الزمنية الحدث بنقطة أو مدة: um مع الساعة، am مع اليوم وأجزاء اليوم، im مع الشهر والفصل، seit لبداية مستمرة، و vor لوقت سابق."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع تطبيق حروف الجر الزمنية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار حرف الزمن",
+        "explanation": "حدّد هل التعبير ساعة أم يوم أم شهر/فصل أم مدة، ثم اختر الحرف والحالة الملازمة له.",
+        "pattern": "um + Uhrzeit · am + Tag · im + Monat/Jahreszeit"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Kurs beginnt um neun Uhr.",
+        "ar": "تبدأ الدورة الساعة التاسعة.",
+        "note": ""
+      },
+      {
+        "de": "Im Sommer fahre ich ans Meer.",
+        "ar": "في الصيف أذهب إلى البحر.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "um neun Uhr",
+        "ar": "الساعة التاسعة",
+        "note": ""
+      },
+      {
+        "de": "am Montag",
+        "ar": "يوم الاثنين",
+        "note": ""
+      },
+      {
+        "de": "im Mai",
+        "ar": "في مايو",
+        "note": ""
+      },
+      {
+        "de": "seit zwei Jahren",
+        "ar": "منذ سنتين",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: تطبيق حروف الجر الزمنية.",
+      "حدّد هل التعبير ساعة أم يوم أم شهر/فصل أم مدة، ثم اختر الحرف والحالة الملازمة له.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حدّد موضع الخطأ قبل التصحيح: الأداة أو الحالة أو نهاية الفعل أو ترتيب الكلمات، ثم اكتب سببًا قصيرًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 27,
+    "video_id": "uBQ4jQfNEWo",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم حروف الجر التي قد تأتي مع حالتين مختلفتين بحسب الحركة أو الثبات. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم حروف الجر التي قد تأتي مع حالتين مختلفتين بحسب الحركة أو الثبات.",
+      "التعبير عن المكان والاتجاه بثقة أكبر مع اختيار الحالة الصحيحة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "حرف الجر يحدد معنى العلاقة وغالبًا يفرض حالة إعرابية ثابتة؛ مع حروف المكان المشتركة يحدد الاتجاه Akkusativ والموقع Dativ."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع حروف الجر المشتركة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اتجاه أم موقع",
+        "explanation": "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+        "pattern": "wohin? + Akkusativ · wo? + Dativ"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich warte auf den Bus.",
+        "ar": "أنتظر الحافلة.",
+        "note": ""
+      },
+      {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "ar": "الكتاب موضوع على الطاولة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "warten auf",
+        "ar": "ينتظر",
+        "note": ""
+      },
+      {
+        "de": "denken an",
+        "ar": "يفكر في",
+        "note": ""
+      },
+      {
+        "de": "mit",
+        "ar": "مع",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: حروف الجر المشتركة.",
+      "اسأل wohin للحركة نحو هدف و wo للموقع الثابت.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 28,
+    "video_id": "BusaYh6tJV0",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "التعرف على أفعال شائعة تأتي مع حروف جر مشتركة وكيفية استعمالها في الجمل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "التعرف على أفعال شائعة تأتي مع حروف جر مشتركة وكيفية استعمالها في الجمل.",
+      "بناء تعابير أكثر طبيعية عند وصف العلاقات والمواقف اليومية."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "الفعل مع حرف الجر وحدة ثابتة تحدد المعنى والسؤال والحالة؛ احفظ التركيب كاملًا مع مثال."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع أفعال مع حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "حفظ التركيب",
+        "explanation": "لا تختَر حرف الجر بالترجمة وحدها؛ احفظ الفعل والحرف والحالة مع سؤال wo(r)- أو حرف الجر مع شخص.",
+        "pattern": "Verb + Präposition + Kasus"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er nimmt an dem Kurs teil.",
+        "ar": "هو يشارك في الدورة.",
+        "note": ""
+      },
+      {
+        "de": "Ich erinnere mich an den Termin.",
+        "ar": "أتذكر الموعد.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "teilnehmen an + Dativ",
+        "ar": "يشارك في",
+        "note": ""
+      },
+      {
+        "de": "sich erinnern an + Akkusativ",
+        "ar": "يتذكر",
+        "note": ""
+      },
+      {
+        "de": "warten auf + Akkusativ",
+        "ar": "ينتظر",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich warte für den Bus.",
+        "correct": "Ich warte auf den Bus.",
+        "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: أفعال مع حروف الجر.",
+      "لا تختَر حرف الجر بالترجمة وحدها؛ احفظ الفعل والحرف والحالة مع سؤال wo(r)- أو حرف الجر مع شخص.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 29,
+    "video_id": "KC0hVfM6Ujw",
+    "source_type": "captions",
+    "caption_language": "de",
+    "reading_time_minutes": 4,
+    "summary": "اكتساب أسماء أهم الأشياء الموجودة في المنزل مع النطق الصحيح والاستعمال العملي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "اكتساب أسماء أهم الأشياء الموجودة في المنزل مع النطق الصحيح والاستعمال العملي.",
+      "وصف البيت والغرف والأشياء اليومية داخل المنزل بسهولة أكبر."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "اربط مفردات المنزل بمكانها ووظيفتها، وتعلّم الاسم مع الأداة والجمع عند الحاجة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع مفردات المنزل، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "وصف المكان",
+        "explanation": "استخدم in مع Dativ للموقع الثابت، و es gibt مع Akkusativ لذكر الموجودات.",
+        "pattern": "im Zimmer · es gibt einen/eine/ein …"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Tisch steht im Wohnzimmer.",
+        "ar": "الطاولة في غرفة الجلوس.",
+        "note": ""
+      },
+      {
+        "de": "In der Küche gibt es einen Kühlschrank.",
+        "ar": "يوجد في المطبخ ثلاجة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "das Wohnzimmer",
+        "ar": "غرفة الجلوس",
+        "note": ""
+      },
+      {
+        "de": "die Küche",
+        "ar": "المطبخ",
+        "note": ""
+      },
+      {
+        "de": "der Schrank",
+        "ar": "الخزانة",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: مفردات المنزل.",
+      "استخدم in مع Dativ للموقع الثابت، و es gibt مع Akkusativ لذكر الموجودات.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 30,
+    "video_id": "_LNADc4HEgI",
+    "source_type": "captions",
+    "caption_language": "de",
+    "reading_time_minutes": 4,
+    "summary": "تعلم مجموعة من الكلمات الأساسية التي تتكرر كثيراً في امتحان A2 وفي المواقف الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم مجموعة من الكلمات الأساسية التي تتكرر كثيراً في امتحان A2 وفي المواقف الشائعة.",
+      "فهم مفردات الامتحان واستعمالها في القراءة والكتابة والحوار بثقة أكبر."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تعلّم المفردة مع أداة الاسم وصيغة الجمع أو مع عكس الصفة وسياق قصير، لا كترجمة منفردة فقط."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع مفردات امتحان A2، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "تثبيت المفردات",
+        "explanation": "اكتب لكل كلمة مثالًا قصيرًا يوضح الأداة أو الفعل المصاحب لها.",
+        "pattern": "Wort + typische Verbindung + Beispielsatz"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wetter ist heute schön.",
+        "ar": "الطقس جميل اليوم.",
+        "note": ""
+      },
+      {
+        "de": "Ich brauche eine warme Jacke.",
+        "ar": "أحتاج إلى سترة دافئة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "wichtig",
+        "ar": "مهم",
+        "note": ""
+      },
+      {
+        "de": "praktisch",
+        "ar": "عملي",
+        "note": ""
+      },
+      {
+        "de": "benutzen",
+        "ar": "يستخدم",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: مفردات امتحان A2.",
+      "اكتب لكل كلمة مثالًا قصيرًا يوضح الأداة أو الفعل المصاحب لها.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 31,
+    "video_id": "Z-lIVaIfEQs",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "مراجعة وتوسيع استعمال الصفات في الألمانية لوصف الأشخاص والأشياء والمواقف بدقة أكبر. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "مراجعة وتوسيع استعمال الصفات في الألمانية لوصف الأشخاص والأشياء والمواقف بدقة أكبر.",
+      "الوصف بشكل أوضح وأكثر تنوعاً في المحادثة اليومية."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تعلّم المفردة مع أداة الاسم وصيغة الجمع أو مع عكس الصفة وسياق قصير، لا كترجمة منفردة فقط."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الصفات، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "تثبيت المفردات",
+        "explanation": "اكتب لكل كلمة مثالًا قصيرًا يوضح الأداة أو الفعل المصاحب لها.",
+        "pattern": "Wort + typische Verbindung + Beispielsatz"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wetter ist heute schön.",
+        "ar": "الطقس جميل اليوم.",
+        "note": ""
+      },
+      {
+        "de": "Ich brauche eine warme Jacke.",
+        "ar": "أحتاج إلى سترة دافئة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "wichtig",
+        "ar": "مهم",
+        "note": ""
+      },
+      {
+        "de": "praktisch",
+        "ar": "عملي",
+        "note": ""
+      },
+      {
+        "de": "benutzen",
+        "ar": "يستخدم",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الصفات.",
+      "اكتب لكل كلمة مثالًا قصيرًا يوضح الأداة أو الفعل المصاحب لها.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 32,
+    "video_id": "cM76EHbqjvs",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "تعلم صيغة المقارنة بين الأشخاص والأشياء وكيفية بنائها واستعمالها داخل الجمل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم صيغة المقارنة بين الأشخاص والأشياء وكيفية بنائها واستعمالها داخل الجمل.",
+      "المقارنة بين الخيارات أو الصفات بطريقة طبيعية وواضحة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تُبنى المقارنة غالبًا بإضافة -er مع als، والتفضيل بصيغة am …-sten أو أداة تعريف ونهاية صفة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع صيغة المقارنة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "المقارنة",
+        "explanation": "استخدم als بعد Komparativ، و wie عند التساوي.",
+        "pattern": "größer als · so groß wie"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Berlin ist größer als Bonn.",
+        "ar": "برلين أكبر من بون.",
+        "note": ""
+      },
+      {
+        "de": "Heute ist es am wärmsten.",
+        "ar": "اليوم هو الأدفأ.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "größer",
+        "ar": "أكبر",
+        "note": ""
+      },
+      {
+        "de": "besser",
+        "ar": "أفضل",
+        "note": ""
+      },
+      {
+        "de": "am besten",
+        "ar": "الأفضل",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: صيغة المقارنة.",
+      "استخدم als بعد Komparativ، و wie عند التساوي.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 33,
+    "video_id": "68NXd5RAGFA",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم صيغة التفضيل واستعمالها للحديث عن الأفضل أو الأعلى أو الأجمل وغيرها. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم صيغة التفضيل واستعمالها للحديث عن الأفضل أو الأعلى أو الأجمل وغيرها.",
+      "التعبير عن التفضيلات والآراء الشخصية بشكل أقوى وأكثر دقة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تُبنى المقارنة غالبًا بإضافة -er مع als، والتفضيل بصيغة am …-sten أو أداة تعريف ونهاية صفة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع صيغة التفضيل، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "المقارنة",
+        "explanation": "استخدم als بعد Komparativ، و wie عند التساوي.",
+        "pattern": "größer als · so groß wie"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Berlin ist größer als Bonn.",
+        "ar": "برلين أكبر من بون.",
+        "note": ""
+      },
+      {
+        "de": "Heute ist es am wärmsten.",
+        "ar": "اليوم هو الأدفأ.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "größer",
+        "ar": "أكبر",
+        "note": ""
+      },
+      {
+        "de": "besser",
+        "ar": "أفضل",
+        "note": ""
+      },
+      {
+        "de": "am besten",
+        "ar": "الأفضل",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: صيغة التفضيل.",
+      "استخدم als بعد Komparativ، و wie عند التساوي.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 34,
+    "video_id": "Jy93kaJQGcs",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "تعلم بناء زمن المستقبل الأول واستعماله للتحدث عن الخطط والتوقعات المقبلة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم بناء زمن المستقبل الأول واستعماله للتحدث عن الخطط والتوقعات المقبلة.",
+      "شرح ما ستفعله لاحقاً أو ما تتوقع حدوثه بطريقة سليمة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "Futur I يُبنى من werden المصرف والمصدر في النهاية، ويعبّر عن توقع أو خطة مستقبلية."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع زمن Futur I، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "البناء",
+        "explanation": "صرّف werden وضع المصدر في نهاية الجملة.",
+        "pattern": "werden + … + Infinitiv"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich werde morgen arbeiten.",
+        "ar": "سأعمل غدًا.",
+        "note": ""
+      },
+      {
+        "de": "Es wird wahrscheinlich regnen.",
+        "ar": "من المحتمل أن تمطر.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "werden",
+        "ar": "سوف/يصبح",
+        "note": ""
+      },
+      {
+        "de": "morgen",
+        "ar": "غدًا",
+        "note": ""
+      },
+      {
+        "de": "wahrscheinlich",
+        "ar": "على الأرجح",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: زمن Futur I.",
+      "صرّف werden وضع المصدر في نهاية الجملة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 35,
+    "video_id": "yuh7Tp8JrLE",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم أساسيات المبني للمجهول وكيفية تحويل الجمل من المبني للمعلوم إلى Passiv. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم أساسيات المبني للمجهول وكيفية تحويل الجمل من المبني للمعلوم إلى Passiv.",
+      "التعبير عن الأفعال والعمليات دون التركيز على الفاعل بشكل واضح."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "يركّز Passiv على الحدث أو النتيجة بدل الفاعل، ويُبنى في الحاضر من werden مع Partizip II."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع المبني للمجهول Passiv، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "مجهول الحدث",
+        "explanation": "صرّف werden في الزمن المطلوب وضع Partizip II في النهاية.",
+        "pattern": "werden + Partizip II"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Brief wird geschrieben.",
+        "ar": "تُكتب الرسالة.",
+        "note": ""
+      },
+      {
+        "de": "Das Haus wurde gebaut.",
+        "ar": "بُني المنزل.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "werden",
+        "ar": "فعل مساعد للمجهول",
+        "note": ""
+      },
+      {
+        "de": "von",
+        "ar": "من قِبل",
+        "note": ""
+      },
+      {
+        "de": "gebaut",
+        "ar": "مبني",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "…, weil ich bin müde.",
+        "correct": "…, weil ich müde bin.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: المبني للمجهول Passiv.",
+      "صرّف werden في الزمن المطلوب وضع Partizip II في النهاية.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 36,
+    "video_id": "uG40SNQwRyw",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "تعلم استعمال المبني للمجهول في الماضي وكيفية صياغته بشكل صحيح في الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تعلم استعمال المبني للمجهول في الماضي وكيفية صياغته بشكل صحيح في الجملة.",
+      "وصف أحداث أو إجراءات حدثت سابقاً دون ذكر الفاعل مباشرة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "يركّز Passiv في الماضي على حدث وقع دون إبراز فاعله، ويُبنى في Präteritum من wurde أو wurden مع Partizip II."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع Passiv في الماضي، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "Passiv Präteritum",
+        "explanation": "صرّف werden إلى wurde أو wurden، وضع Partizip II في نهاية الجملة.",
+        "pattern": "Subjekt + wurde/wurden + … + Partizip II"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Brücke wurde 1990 gebaut.",
+        "ar": "بُني الجسر سنة 1990.",
+        "note": ""
+      },
+      {
+        "de": "Die Geräte wurden gestern repariert.",
+        "ar": "أُصلحت الأجهزة أمس.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "wurde",
+        "ar": "صيغة المفرد من werden في الماضي",
+        "note": ""
+      },
+      {
+        "de": "wurden",
+        "ar": "صيغة الجمع من werden في الماضي",
+        "note": ""
+      },
+      {
+        "de": "gebaut",
+        "ar": "مبني",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "…, weil ich bin müde.",
+        "correct": "…, weil ich müde bin.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: Passiv في الماضي.",
+      "صرّف werden إلى wurde أو wurden، وضع Partizip II في نهاية الجملة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 37,
+    "video_id": "Qp-RTeiz-Ek",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "دمج Passiv مع Modalverben لفهم تراكيب أكثر شيوعاً في المستوى المتوسط المبتدئ. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "دمج Passiv مع Modalverben لفهم تراكيب أكثر شيوعاً في المستوى المتوسط المبتدئ.",
+      "التعبير عن الوجوب أو الإمكانية أو السماح داخل جمل Passiv بطريقة صحيحة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "مع Modalverb في المبني للمجهول يأتي الفعل الناقص مصرفًا في الموقع الثاني، ويقف Partizip II ثم werden غير المصرف في نهاية الجملة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع Passiv مع الأفعال المساعدة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "Passiv مع Modalverb",
+        "explanation": "صرّف Modalverb واترك werden في المصدر بعد Partizip II في نهاية الجملة.",
+        "pattern": "Modalverb + … + Partizip II + werden"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Tür muss geschlossen werden.",
+        "ar": "يجب إغلاق الباب.",
+        "note": ""
+      },
+      {
+        "de": "Das Formular kann online ausgefüllt werden.",
+        "ar": "يمكن ملء الاستمارة عبر الإنترنت.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "müssen",
+        "ar": "يجب",
+        "note": ""
+      },
+      {
+        "de": "können",
+        "ar": "يمكن",
+        "note": ""
+      },
+      {
+        "de": "dürfen",
+        "ar": "يُسمح",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich kann Deutsch spreche.",
+        "correct": "Ich kann Deutsch sprechen.",
+        "explanation": "بعد الفعل الناقص يأتي المصدر بلا تصريف."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: Passiv مع الأفعال المساعدة.",
+      "صرّف Modalverb واترك werden في المصدر بعد Partizip II في نهاية الجملة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 38,
+    "video_id": "xkx9d-IZaZw",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم أداة bevor وكيفية استعمالها لربط جملتين تتعلقان بترتيب الأحداث. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم أداة bevor وكيفية استعمالها لربط جملتين تتعلقان بترتيب الأحداث.",
+      "التحدث عن شيء يحدث قبل شيء آخر داخل جمل أكثر ترابطاً."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "في الجملة التابعة ينتقل الفعل المصرف إلى النهاية، وتفصلها فاصلة عن الجملة الرئيسية."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع قبل أن - bevor، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "الجملة التابعة",
+        "explanation": "بعد أداة الربط تأتي بقية العناصر ثم الفعل المصرف في النهاية.",
+        "pattern": "Konjunktion + Subjekt + … + Verb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bleibe zu Hause, weil ich krank bin.",
+        "ar": "أبقى في المنزل لأنني مريض.",
+        "note": ""
+      },
+      {
+        "de": "Bevor ich schlafe, lese ich.",
+        "ar": "قبل أن أنام أقرأ.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "weil",
+        "ar": "لأن",
+        "note": ""
+      },
+      {
+        "de": "obwohl",
+        "ar": "مع أن",
+        "note": ""
+      },
+      {
+        "de": "bevor",
+        "ar": "قبل أن",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "…, weil ich bin müde.",
+        "correct": "…, weil ich müde bin.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: قبل أن - bevor.",
+      "بعد أداة الربط تأتي بقية العناصر ثم الفعل المصرف في النهاية.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 39,
+    "video_id": "w2GFzRi9x1o",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "التعرف على الجمل الموصولة وكيفية استعمال الضمائر الموصولة لربط المعلومات في جملة واحدة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "التعرف على الجمل الموصولة وكيفية استعمال الضمائر الموصولة لربط المعلومات في جملة واحدة.",
+      "وصف الأشخاص والأشياء والأماكن بتفاصيل أكثر في نفس الجملة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "ضمير الوصل يطابق الاسم السابق في الجنس والعدد، لكن حالته يحددها دوره داخل الجملة الموصولة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع الجمل الموصولة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار الضمير",
+        "explanation": "حدّد مرجع الضمير ثم اسأل عن وظيفته داخل الجملة التابعة.",
+        "pattern": "Bezugswort + , + Relativpronomen + … + Verb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist der Mann, den ich kenne.",
+        "ar": "هذا هو الرجل الذي أعرفه.",
+        "note": ""
+      },
+      {
+        "de": "Die Kollegin, mit der ich arbeite, ist nett.",
+        "ar": "الزميلة التي أعمل معها لطيفة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "der/die/das",
+        "ar": "الذي/التي في Nominativ",
+        "note": ""
+      },
+      {
+        "de": "den/die/das",
+        "ar": "الذي/التي في Akkusativ",
+        "note": ""
+      },
+      {
+        "de": "dem/der",
+        "ar": "الذي/التي في Dativ",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Der Mann, ich kenne, kommt.",
+        "correct": "Der Mann, den ich kenne, kommt.",
+        "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: الجمل الموصولة.",
+      "حدّد مرجع الضمير ثم اسأل عن وظيفته داخل الجملة التابعة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 40,
+    "video_id": "-k7DN9Ob8ng",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "فهم معنى اللاحقة -bar وكيفية تكوين صفات جديدة منها واستعمالها في اللغة اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "فهم معنى اللاحقة -bar وكيفية تكوين صفات جديدة منها واستعمالها في اللغة اليومية.",
+      "توسيع المفردات واستعمال صفات أكثر دقة في الوصف والتعبير."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "تُضاف -bar إلى بعض جذور الأفعال لتكوين صفة بمعنى: يمكن أن يُفعل أو قابل لـ."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع اللاحقة -bar، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اشتقاق -bar",
+        "explanation": "احذف نهاية المصدر -en عند الحاجة ثم أضف -bar، مع الانتباه إلى الصيغ الثابتة.",
+        "pattern": "Verbstamm + bar"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Aufgabe ist lösbar.",
+        "ar": "المهمة قابلة للحل.",
+        "note": ""
+      },
+      {
+        "de": "Der Text ist gut lesbar.",
+        "ar": "النص سهل القراءة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "lesbar",
+        "ar": "قابل للقراءة",
+        "note": ""
+      },
+      {
+        "de": "machbar",
+        "ar": "قابل للتنفيذ",
+        "note": ""
+      },
+      {
+        "de": "erreichbar",
+        "ar": "يمكن الوصول إليه",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [],
+    "tables": [],
+    "quick_recap": [
+      "المحور: اللاحقة -bar.",
+      "احذف نهاية المصدر -en عند الحاجة ثم أضف -bar، مع الانتباه إلى الصيغ الثابتة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اقرأ الجملة كاملة، حدّد الوظيفة النحوية والمعنى، ثم اختر الصيغة وراجع النهاية أو موقع الفعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 41,
+    "video_id": "K9UQFYg9cm0",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "متابعة التدريب على الجمل الموصولة مع أمثلة إضافية وتوضيح حالات الاستعمال الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "متابعة التدريب على الجمل الموصولة مع أمثلة إضافية وتوضيح حالات الاستعمال الشائعة.",
+      "ربط الأفكار داخل جمل أطول وأكثر طبيعية أثناء الحديث والكتابة."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "ضمير الوصل يطابق الاسم السابق في الجنس والعدد، لكن حالته يحددها دوره داخل الجملة الموصولة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع تطبيق الجمل الموصولة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار الضمير",
+        "explanation": "حدّد مرجع الضمير ثم اسأل عن وظيفته داخل الجملة التابعة.",
+        "pattern": "Bezugswort + , + Relativpronomen + … + Verb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist der Mann, den ich kenne.",
+        "ar": "هذا هو الرجل الذي أعرفه.",
+        "note": ""
+      },
+      {
+        "de": "Die Kollegin, mit der ich arbeite, ist nett.",
+        "ar": "الزميلة التي أعمل معها لطيفة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "der/die/das",
+        "ar": "الذي/التي في Nominativ",
+        "note": ""
+      },
+      {
+        "de": "den/die/das",
+        "ar": "الذي/التي في Akkusativ",
+        "note": ""
+      },
+      {
+        "de": "dem/der",
+        "ar": "الذي/التي في Dativ",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Der Mann, ich kenne, kommt.",
+        "correct": "Der Mann, den ich kenne, kommt.",
+        "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: تطبيق الجمل الموصولة.",
+      "حدّد مرجع الضمير ثم اسأل عن وظيفته داخل الجملة التابعة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "اقرأ القاعدة والأمثلة أولًا، ثم استخدم الفيديو للجزء السمعي أو للأسئلة والأمثلة الخاصة بالدرس؛ لا تعتمد على التخمين ولا تدّعِ إكمال ما لا يظهر في الصفحة.",
+        "video_required": true
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن العلامة التي تميّز كل فئة، وسجّل سبب التصنيف بكلمة أو قاعدة قصيرة قبل الانتقال إلى المثال التالي.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "ارجع إلى الملخص والقاعدة والأمثلة، ثم نفّذ المهمة خطوة خطوة وراجع أن الصيغة تخدم المعنى المطلوب.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  },
+  {
+    "level": "A2",
+    "lesson_id": 42,
+    "video_id": "PgavSgPGgIU",
+    "source_type": "captions",
+    "caption_language": "ar",
+    "reading_time_minutes": 4,
+    "summary": "تثبيت استعمال الجمل الموصولة عبر أمثلة ومراجعة تساعد على إتقان هذا الباب في A2. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
+    "learning_objectives": [
+      "تثبيت استعمال الجمل الموصولة عبر أمثلة ومراجعة تساعد على إتقان هذا الباب في A2.",
+      "وصف التفاصيل وربط المعلومات بثقة أكبر عند التحدث عن الأشخاص والأشياء."
+    ],
+    "explanation": [
+      {
+        "heading": "الفكرة الأساسية",
+        "content": "ضمير الوصل يطابق الاسم السابق في الجنس والعدد، لكن حالته يحددها دوره داخل الجملة الموصولة."
+      },
+      {
+        "heading": "طريقة التعلّم",
+        "content": "في موضوع مراجعة الجمل الموصولة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      }
+    ],
+    "grammar_rules": [
+      {
+        "rule": "اختيار الضمير",
+        "explanation": "حدّد مرجع الضمير ثم اسأل عن وظيفته داخل الجملة التابعة.",
+        "pattern": "Bezugswort + , + Relativpronomen + … + Verb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist der Mann, den ich kenne.",
+        "ar": "هذا هو الرجل الذي أعرفه.",
+        "note": ""
+      },
+      {
+        "de": "Die Kollegin, mit der ich arbeite, ist nett.",
+        "ar": "الزميلة التي أعمل معها لطيفة.",
+        "note": ""
+      }
+    ],
+    "vocabulary": [
+      {
+        "de": "der/die/das",
+        "ar": "الذي/التي في Nominativ",
+        "note": ""
+      },
+      {
+        "de": "den/die/das",
+        "ar": "الذي/التي في Akkusativ",
+        "note": ""
+      },
+      {
+        "de": "dem/der",
+        "ar": "الذي/التي في Dativ",
+        "note": ""
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Der Mann, ich kenne, kommt.",
+        "correct": "Der Mann, den ich kenne, kommt.",
+        "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      }
+    ],
+    "tables": [],
+    "quick_recap": [
+      "المحور: مراجعة الجمل الموصولة.",
+      "حدّد مرجع الضمير ثم اسأل عن وظيفته داخل الجملة التابعة.",
+      "كوّن مثالًا جديدًا من حياتك ثم راجع المعنى والشكل معًا."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "حدّد الضمير والزمن أولًا، ثم املأ كل خانة من القاعدة نفسها وراجع توافق الفعل مع الفاعل.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حدّد موضع الخطأ قبل التصحيح: الأداة أو الحالة أو نهاية الفعل أو ترتيب الكلمات، ثم اكتب سببًا قصيرًا.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "حافظ على المعنى والفاعل والزمن، وغيّر البنية المطلوبة فقط ثم افحص موقع الأفعال والضمائر.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "خطط للفكرة بجمل قصيرة، طبّق النمط في كل جملة، ثم راجع التصريف والترتيب من دون نسخ الأمثلة حرفيًا.",
+        "video_required": false
+      }
+    ],
+    "review_status": "verified"
+  }
+]
