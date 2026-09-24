@@ -134,8 +134,12 @@ function bindEvents() {
   elements.lessonView?.addEventListener("change", (event) => {
     const checkbox = event.target.closest("[data-task-id]");
     if (!(checkbox instanceof HTMLInputElement)) return;
+    const lesson = getLesson(state.activeLevel, checkbox.dataset.lessonId);
+    const wasCompleted = lesson ? progressStore.getLessonStats(lesson).completed : false;
     progressStore.setTaskComplete(checkbox.dataset.taskId, checkbox.checked);
-    refreshLessonProgress(state.activeLevel, checkbox.dataset.lessonId);
+    refreshLessonProgress(state.activeLevel, checkbox.dataset.lessonId, {
+      scrollToNavigation: checkbox.checked && !wasCompleted,
+    });
     showToast(checkbox.checked ? "تم حفظ إنجاز المهمة" : "تم تحديث تقدم المهمة");
   });
 
@@ -182,7 +186,7 @@ function bindEvents() {
     const lesson = getLesson(state.activeLevel, completionButton.dataset.completeLesson);
     if (!lesson) return;
     progressStore.setLessonComplete(lesson, true);
-    refreshLessonProgress(state.activeLevel, lesson.id);
+    refreshLessonProgress(state.activeLevel, lesson.id, { scrollToNavigation: true });
     showToast("أحسنت! اكتمل الدرس وحُفظ تقدمك");
   });
 
@@ -566,7 +570,7 @@ function renderLessonDetail(levelKey, lessonId) {
 
     <nav class="lesson-navigation" aria-label="التنقل بين الدروس">
       ${previous ? `<a href="${lessonHref(levelKey, previous.id)}"><span>الدرس السابق</span><strong >${escapeHtml(previous.title)}</strong></a>` : '<span class="nav-placeholder">هذا أول درس في المستوى</span>'}
-      ${next ? `<a href="${lessonHref(levelKey, next.id)}"><span>الدرس التالي</span><strong >${escapeHtml(next.title)}</strong></a>` : '<span class="nav-placeholder">أكملت آخر درس في المستوى</span>'}
+      ${next ? `<a href="${lessonHref(levelKey, next.id)}" data-next-lesson><span>الدرس التالي</span><strong >${escapeHtml(next.title)}</strong></a>` : '<span class="nav-placeholder">أكملت آخر درس في المستوى</span>'}
     </nav>`;
 
   activateLessonMode(state.lessonMode, { save: false, focus: false });
@@ -848,7 +852,7 @@ function saveLessonViewPreference(mode) {
   }
 }
 
-function refreshLessonProgress(levelKey, lessonId) {
+function refreshLessonProgress(levelKey, lessonId, { scrollToNavigation = false } = {}) {
   const lesson = getLesson(levelKey, lessonId);
   if (!lesson) return;
 
@@ -881,6 +885,23 @@ function refreshLessonProgress(levelKey, lessonId) {
     completionButton.textContent = stats.completed ? "تم إكمال الدرس ✓" : "تحديد كل المهام كمكتملة";
   }
   renderGlobalProgress();
+
+  if (scrollToNavigation && stats.completed) {
+    const target = elements.lessonView.querySelector("[data-next-lesson]")
+      ?? elements.lessonView.querySelector(".lesson-navigation");
+    window.requestAnimationFrame(() => {
+      target?.scrollIntoView({
+        behavior: prefersReducedMotion() ? "auto" : "smooth",
+        block: "center",
+      });
+      if (target instanceof HTMLElement) {
+        target.classList.remove("is-completion-highlight");
+        void target.offsetWidth;
+        target.classList.add("is-completion-highlight");
+        window.setTimeout(() => target.classList.remove("is-completion-highlight"), 3000);
+      }
+    });
+  }
 }
 
 function createTaskItem(levelKey, lesson, task) {
