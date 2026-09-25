@@ -530,7 +530,7 @@ function renderLessonDetail(levelKey, lessonId) {
     <div class="lesson-layout">
       <div class="lesson-main">
         <div class="lesson-mode-tabs" role="tablist" aria-label="طريقة تعلّم الدرس">
-          <button id="videoTab" class="lesson-mode-tab" type="button" role="tab" aria-controls="lessonVideoPanel" data-lesson-mode="video">شاهد الفيديو</button>
+          <button id="videoTab" class="lesson-mode-tab" type="button" role="tab" aria-controls="lessonVideoPanel" data-lesson-mode="video">شاهد الدرس</button>
           <button id="readingTab" class="lesson-mode-tab" type="button" role="tab" aria-controls="lessonReadingPanel" data-lesson-mode="reading">اقرأ الدرس</button>
         </div>
 
@@ -698,8 +698,10 @@ function createReadingArticle(entry, lesson) {
     ["reading-tasks", "الاستعداد للمهام", (entry.task_preparation ?? []).length > 0],
   ].filter(([, , visible]) => visible);
   const toc = tocSections.length >= 6 ? `<nav class="reading-toc" aria-label="محتويات الدرس"><strong>في هذا الدرس</strong><ul>${tocSections.map(([id, label]) => `<li><a href="#${id}" data-reading-anchor="${id}">${label}</a></li>`).join("")}</ul></nav>` : "";
+  const hasEditorialEnrichment = Boolean(entry.editorial_enrichment);
+  const hasReadableEditorialContent = Boolean(entry.summary || explanations.length || rules.length || examples.length);
   const sourcePanel = `<aside class="reading-source" aria-label="مصدر محتوى الدرس">
-    <strong>مبني على محتوى الفيديو</strong>
+    <strong>${hasEditorialEnrichment ? "مصدر المحتوى وحدوده" : "مبني على محتوى الفيديو"}</strong>
     <dl>
       <div><dt>المصدر</dt><dd>${escapeHtml(sourceLabels[entry.source_type] ?? entry.source_type)}</dd></div>
       ${sourceLanguage ? `<div><dt>اللغة</dt><dd>${escapeHtml(sourceLanguage === "ar" || sourceLanguage === "ar+de" ? "العربية مع أمثلة ألمانية" : sourceLanguage === "de" ? "الألمانية" : sourceLanguage)}</dd></div>` : ""}
@@ -708,9 +710,10 @@ function createReadingArticle(entry, lesson) {
       ${visualCoverage ? `<div><dt>الخط الزمني المرئي</dt><dd>${escapeHtml(visualCoverage)}</dd></div>` : ""}
       <div><dt>الحالة</dt><dd>${escapeHtml(reviewLabels[entry.review_status] ?? entry.review_status)}</dd></div>
     </dl>
+    ${hasEditorialEnrichment ? "<p>يتضمن الدرس شرحًا وأمثلة تعليمية إضافية لإكمال الفكرة. هذه الإضافات واضحة المصدر ولا تُنسب حرفيًا إلى الفيديو.</p>" : ""}
   </aside>`;
 
-  if (unavailable) {
+  if (unavailable && !hasReadableEditorialContent) {
     return `<article aria-labelledby="readingTitle">
       <header class="reading-header"><div><h2 id="readingTitle">${formatMixedTitle(lesson.title)}</h2></div></header>
       ${sourcePanel}
@@ -791,7 +794,9 @@ function createRulesSection(rules, lesson) {
 
 function createExamplesSection(examples, lesson) {
   if (!examples.length) return "";
-  return `<section id="reading-examples" class="reading-section"><h3>أمثلة من الفيديو</h3><div class="example-list">${examples.map((example) => `<article class="language-example"><p lang="de" dir="ltr">${escapeHtml(example.de)}</p><p>${escapeHtml(example.ar)}</p>${example.note ? `<small>${escapeHtml(example.note)}</small>` : ""}${example.verified === false ? '<small class="source-uncertain">تفريغ غير مؤكّد بالكامل</small>' : ""}${createTimestampLink(example.timestamp, lesson)}</article>`).join("")}</div></section>`;
+  const hasEditorialExamples = examples.some((example) => example.origin === "editorial_clarification");
+  const title = hasEditorialExamples ? "أمثلة من الدرس وتطبيقات إضافية" : "أمثلة من الفيديو";
+  return `<section id="reading-examples" class="reading-section"><h3>${title}</h3><div class="example-list">${examples.map((example) => `<article class="language-example"><p lang="de" dir="ltr">${escapeHtml(example.de)}</p><p>${escapeHtml(example.ar)}</p>${example.note ? `<small>${escapeHtml(example.note)}</small>` : ""}${example.verified === false ? '<small class="source-uncertain">تفريغ غير مؤكّد بالكامل</small>' : ""}${createTimestampLink(example.timestamp, lesson)}</article>`).join("")}</div></section>`;
 }
 
 function createTablesSection(tables) {

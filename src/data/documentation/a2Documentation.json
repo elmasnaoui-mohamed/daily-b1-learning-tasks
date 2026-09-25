@@ -9,13 +9,61 @@
     "source_duration_seconds": 1021,
     "review_status": "needs_source",
     "source_failure": "YouTube HTTP 429; public audio access currently requires sign-in.",
-    "reading_time_minutes": 4,
-    "summary": "",
+    "reading_time_minutes": 5,
+    "summary": "شرح عملي للأفعال المنعكسة في مستوى A2: اختيار الضمير الصحيح، التفريق بين Akkusativ وDativ، وبناء جمل يومية سليمة. المحتوى تعليمي تحريري لأن مصدر الفيديو النصي غير متاح حاليًا.",
     "video_outline": [],
     "learning_objectives": [],
-    "explanation": [],
+    "explanation": [
+      {
+        "heading": "الفعل والضمير المنعكس",
+        "content": "يعود الفعل المنعكس على الفاعل نفسه. نختار mich مع ich، dich مع du، sich مع er/sie/es وSie، uns مع wir، وeuch مع ihr.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "Akkusativ أم Dativ؟",
+        "content": "يكون الضمير غالبًا في Akkusativ. ويأتي Dativ عندما يوجد مفعول Akkusativ آخر، مثل: Ich wasche mir die Hände.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "rules_from_video": [],
-    "examples_from_video": [],
+    "examples_from_video": [
+      {
+        "de": "Ich freue mich auf das Wochenende.",
+        "ar": "أتطلع إلى عطلة نهاية الأسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du musst dich beeilen.",
+        "ar": "يجب أن تسرع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir treffen uns vor dem Kino.",
+        "ar": "نلتقي أمام السينما.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie interessiert sich für Musik.",
+        "ar": "هي تهتم بالموسيقى.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich wasche mir jeden Morgen das Gesicht.",
+        "ar": "أغسل وجهي كل صباح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Habt ihr euch schon angemeldet?",
+        "ar": "هل سجلتم أنفسكم بالفعل؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      }
+    ],
     "vocabulary_from_video": [],
     "teacher_notes": [],
     "exercises_demonstrated": [],
@@ -43,8 +91,26 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
-    "evidence_checks": []
+    "common_mistakes": [
+      {
+        "wrong": "Ich freue auf den Urlaub.",
+        "correct": "Ich freue mich auf den Urlaub.",
+        "explanation": "sich freuen فعل منعكس ويحتاج الضمير المناسب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich wasche mich die Hände.",
+        "correct": "Ich wasche mir die Hände.",
+        "explanation": "مع وجود مفعول مباشر نستخدم الضمير المنعكس في Dativ.",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "evidence_checks": [],
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -52,7 +118,7 @@
     "video_id": "KwG_L4GC0ck",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "متابعة استعمال الأفعال المنعكسة مع أمثلة أكثر تساعد على تثبيت القاعدة في مواقف يومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة استعمال الأفعال المنعكسة مع أمثلة أكثر تساعد على تثبيت القاعدة في مواقف يومية.",
@@ -66,6 +132,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيق الأفعال المنعكسة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الفعل والضمير المنعكس",
+        "content": "يعود الفعل المنعكس على الفاعل نفسه. نختار mich مع ich، dich مع du، sich مع er/sie/es وSie، uns مع wir، وeuch مع ihr.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "Akkusativ أم Dativ؟",
+        "content": "يكون الضمير غالبًا في Akkusativ. ويأتي Dativ عندما يوجد مفعول Akkusativ آخر، مثل: Ich wasche mir die Hände.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -85,6 +161,36 @@
         "de": "Wir waschen uns die Hände.",
         "ar": "نغسل أيدينا.",
         "note": ""
+      },
+      {
+        "de": "Du musst dich beeilen.",
+        "ar": "يجب أن تسرع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir treffen uns vor dem Kino.",
+        "ar": "نلتقي أمام السينما.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie interessiert sich für Musik.",
+        "ar": "هي تهتم بالموسيقى.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich wasche mir jeden Morgen das Gesicht.",
+        "ar": "أغسل وجهي كل صباح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Habt ihr euch schon angemeldet?",
+        "ar": "هل سجلتم أنفسكم بالفعل؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -109,6 +215,18 @@
         "wrong": "Ich freue dich.",
         "correct": "Ich freue mich.",
         "explanation": "الضمير المنعكس يجب أن يعود على الفاعل ich."
+      },
+      {
+        "wrong": "Ich freue auf den Urlaub.",
+        "correct": "Ich freue mich auf den Urlaub.",
+        "explanation": "sich freuen فعل منعكس ويحتاج الضمير المناسب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich wasche mich die Hände.",
+        "correct": "Ich wasche mir die Hände.",
+        "explanation": "مع وجود مفعول مباشر نستخدم الضمير المنعكس في Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -180,7 +298,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -188,7 +311,7 @@
     "video_id": "GKB3cgYUy4A",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "التعرف على Genitiv واستعماله للتعبير عن الملكية والعلاقات بين الأسماء في مستوى A2. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على Genitiv واستعماله للتعبير عن الملكية والعلاقات بين الأسماء في مستوى A2.",
@@ -202,6 +325,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حالة Genitiv، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "التعبير عن الملكية",
+        "content": "يجيب Genitiv عن سؤال wessen؟ وتكون أدواته des للمذكر والمحايد وder للمؤنث والجمع.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "نهاية الاسم",
+        "content": "يأخذ الاسم المذكر أو المحايد غالبًا -s أو -es بعد des، بينما لا تتغير أسماء المؤنث والجمع.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -221,6 +354,36 @@
         "de": "Die Farbe der Tasche gefällt mir.",
         "ar": "يعجبني لون الحقيبة.",
         "note": ""
+      },
+      {
+        "de": "Das Auto meines Bruders ist neu.",
+        "ar": "سيارة أخي جديدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Ende des Films war überraschend.",
+        "ar": "كانت نهاية الفيلم مفاجئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Eltern meiner Freundin wohnen in Köln.",
+        "ar": "يسكن والدا صديقتي في كولونيا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wegen des schlechten Wetters bleiben wir zu Hause.",
+        "ar": "نبقى في المنزل بسبب سوء الطقس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Während der Ferien besuche ich meine Familie.",
+        "ar": "أزور عائلتي أثناء العطلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -245,6 +408,18 @@
         "wrong": "Das Auto der Mann ist neu.",
         "correct": "Das Auto des Mannes ist neu.",
         "explanation": "المذكر يأخذ des، ويضاف غالبًا s أو es إلى الاسم."
+      },
+      {
+        "wrong": "das Auto von meines Bruders",
+        "correct": "das Auto meines Bruders",
+        "explanation": "بعد أداة Genitiv يأتي الاسم أو المحدد بصيغته الصحيحة بلا von.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die Tür des Wohnung",
+        "correct": "die Tür der Wohnung",
+        "explanation": "المؤنث يأخذ der في Genitiv.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -306,7 +481,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -314,7 +494,7 @@
     "video_id": "HaFiYczo4z8",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "متابعة قاعدة Genitiv مع أمثلة إضافية تساعدك على فهم البنية والاستعمال العملي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة قاعدة Genitiv مع أمثلة إضافية تساعدك على فهم البنية والاستعمال العملي.",
@@ -328,6 +508,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيق Genitiv، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "التعبير عن الملكية",
+        "content": "يجيب Genitiv عن سؤال wessen؟ وتكون أدواته des للمذكر والمحايد وder للمؤنث والجمع.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "نهاية الاسم",
+        "content": "يأخذ الاسم المذكر أو المحايد غالبًا -s أو -es بعد des، بينما لا تتغير أسماء المؤنث والجمع.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -347,6 +537,36 @@
         "de": "Die Farbe der Tasche gefällt mir.",
         "ar": "يعجبني لون الحقيبة.",
         "note": ""
+      },
+      {
+        "de": "Das Auto meines Bruders ist neu.",
+        "ar": "سيارة أخي جديدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Ende des Films war überraschend.",
+        "ar": "كانت نهاية الفيلم مفاجئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Eltern meiner Freundin wohnen in Köln.",
+        "ar": "يسكن والدا صديقتي في كولونيا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wegen des schlechten Wetters bleiben wir zu Hause.",
+        "ar": "نبقى في المنزل بسبب سوء الطقس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Während der Ferien besuche ich meine Familie.",
+        "ar": "أزور عائلتي أثناء العطلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -371,6 +591,18 @@
         "wrong": "Das Auto der Mann ist neu.",
         "correct": "Das Auto des Mannes ist neu.",
         "explanation": "المذكر يأخذ des، ويضاف غالبًا s أو es إلى الاسم."
+      },
+      {
+        "wrong": "das Auto von meines Bruders",
+        "correct": "das Auto meines Bruders",
+        "explanation": "بعد أداة Genitiv يأتي الاسم أو المحدد بصيغته الصحيحة بلا von.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die Tür des Wohnung",
+        "correct": "die Tür der Wohnung",
+        "explanation": "المؤنث يأخذ der في Genitiv.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -432,7 +664,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -440,7 +677,7 @@
     "video_id": "0vjE-XopATY",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم الماضي البسيط في الألمانية ومتى نستخدمه خاصة في السرد وبعض الأفعال الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم الماضي البسيط في الألمانية ومتى نستخدمه خاصة في السرد وبعض الأفعال الشائعة.",
@@ -454,6 +691,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع زمن Präteritum، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الماضي البسيط",
+        "content": "يشيع Präteritum في الكتابة والحكايات، ويستعمل في الكلام كثيرًا مع sein وhaben والأفعال الناقصة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال القوية",
+        "content": "تغير الأفعال القوية غالبًا حرف الجذر ولا تأخذ -te؛ لذلك تحفظ صيغة الماضي مع كل فعل: gehen → ging، sehen → sah.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -473,6 +720,42 @@
         "de": "Wir hatten keine Zeit.",
         "ar": "لم يكن لدينا وقت.",
         "note": ""
+      },
+      {
+        "de": "Gestern war ich sehr müde.",
+        "ar": "كنت متعبًا جدًا أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Früher hatte er mehr Freizeit.",
+        "ar": "كان لديه وقت فراغ أكثر سابقًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ging zu Fuß nach Hause.",
+        "ar": "ذهبت إلى المنزل سيرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sahen einen interessanten Film.",
+        "ar": "شاهدنا فيلمًا ممتعًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er kam erst um Mitternacht zurück.",
+        "ar": "عاد عند منتصف الليل فقط.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Kind schlief sofort ein.",
+        "ar": "نام الطفل فورًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -497,6 +780,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Er gehte nach Hause.",
+        "correct": "Er ging nach Hause.",
+        "explanation": "gehen فعل قوي وصيغته في Präteritum هي ging.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Wir waren gesehen den Film.",
+        "correct": "Wir sahen den Film.",
+        "explanation": "Präteritum فعل بسيط ولا يحتاج فعلًا مساعدًا هنا.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -527,7 +822,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -535,7 +835,7 @@
     "video_id": "-mYamuCZKOw",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "استعمال الأفعال المساعدة في الزمن الماضي وكيف تتغير مع الفاعل داخل الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "استعمال الأفعال المساعدة في الزمن الماضي وكيف تتغير مع الفاعل داخل الجملة.",
@@ -549,6 +849,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال المساعدة في الماضي، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الأفعال الناقصة في الماضي",
+        "content": "تفقد الأفعال الناقصة غالبًا Umlaut في Präteritum: konnte، musste، durfte، sollte، wollte و mochte.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المصدر في النهاية",
+        "content": "يأتي Modalverb مصرفًا في الموقع الثاني، ويبقى الفعل الأساسي في المصدر في نهاية الجملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -568,6 +878,36 @@
         "de": "Wir konnten nicht kommen.",
         "ar": "لم نستطع الحضور.",
         "note": ""
+      },
+      {
+        "de": "Ich musste gestern lange arbeiten.",
+        "ar": "كان عليّ أن أعمل طويلًا أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Durftet ihr als Kinder lange aufbleiben?",
+        "ar": "هل كان مسموحًا لكم بالسهر طويلًا حين كنتم أطفالًا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie wollte Ärztin werden.",
+        "ar": "كانت تريد أن تصبح طبيبة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du solltest mehr Wasser trinken.",
+        "ar": "كان ينبغي أن تشرب ماء أكثر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er mochte früher keinen Kaffee.",
+        "ar": "لم يكن يحب القهوة سابقًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -592,6 +932,18 @@
         "wrong": "Ich kann Deutsch spreche.",
         "correct": "Ich kann Deutsch sprechen.",
         "explanation": "بعد الفعل الناقص يأتي المصدر بلا تصريف."
+      },
+      {
+        "wrong": "Ich musste gearbeitet.",
+        "correct": "Ich musste arbeiten.",
+        "explanation": "بعد Modalverb يأتي المصدر لا Partizip II.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Wir könnten gestern nicht kommen.",
+        "correct": "Wir konnten gestern nicht kommen.",
+        "explanation": "للماضي الواقعي نستخدم konnten، لا صيغة Konjunktiv könnten.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -653,7 +1005,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -661,7 +1018,7 @@
     "video_id": "Aofn3BkzshY",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم تصريف الأفعال المنتظمة في الماضي البسيط وتطبيقها في جمل واضحة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم تصريف الأفعال المنتظمة في الماضي البسيط وتطبيقها في جمل واضحة.",
@@ -675,6 +1032,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال المنتظمة في Präteritum، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "قاعدة الأفعال المنتظمة",
+        "content": "يتكون Präteritum المنتظم من جذر الفعل + te ثم نهاية الشخص: ich machte، du machtest، wir machten.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الجذور المنتهية بـ t أو d",
+        "content": "نضيف e لتسهيل النطق: arbeiten → arbeitete، warten → wartete.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -694,6 +1061,42 @@
         "de": "Wir hatten keine Zeit.",
         "ar": "لم يكن لدينا وقت.",
         "note": ""
+      },
+      {
+        "de": "Ich lernte gestern drei Stunden.",
+        "ar": "درست ثلاث ساعات أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir machten am Sonntag einen Ausflug.",
+        "ar": "قمنا برحلة يوم الأحد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie arbeitete früher in Berlin.",
+        "ar": "كانت تعمل سابقًا في برلين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er wartete lange auf den Bus.",
+        "ar": "انتظر الحافلة طويلًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Kinder spielten im Garten.",
+        "ar": "لعب الأطفال في الحديقة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du fragtest nach dem Weg.",
+        "ar": "سألت عن الطريق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -713,7 +1116,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich lernete Deutsch.",
+        "correct": "Ich lernte Deutsch.",
+        "explanation": "مع الجذر lernen نضيف -te مباشرة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Er arbeitte gestern.",
+        "correct": "Er arbeitete gestern.",
+        "explanation": "بعد جذر ينتهي بـ t نضيف -ete.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الأفعال المنتظمة في Präteritum.",
@@ -742,7 +1158,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -754,13 +1175,61 @@
     "source_duration_seconds": 673,
     "review_status": "needs_source",
     "source_failure": "YouTube HTTP 429; public audio access currently requires sign-in.",
-    "reading_time_minutes": 4,
-    "summary": "",
+    "reading_time_minutes": 5,
+    "summary": "مجموعة أساسية من مفردات الحيوانات مع أدوات الأسماء وصيغ الجمع، إضافة إلى جمل بسيطة لوصف الشكل والقدرة ومكان العيش. المحتوى تعليمي تحريري لأن مصدر الفيديو النصي غير متاح حاليًا.",
     "video_outline": [],
     "learning_objectives": [],
-    "explanation": [],
+    "explanation": [
+      {
+        "heading": "الاسم مع أداته وجمعه",
+        "content": "تعلم اسم الحيوان كوحدة كاملة مع أداة المفرد وصيغة الجمع: der Hund – die Hunde، die Katze – die Katzen.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "وصف الحيوان",
+        "content": "استعمل sein مع الصفة، haben مع الصفات الجسدية، و können مع القدرة: Der Vogel kann fliegen.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "rules_from_video": [],
-    "examples_from_video": [],
+    "examples_from_video": [
+      {
+        "de": "Der Hund ist freundlich und verspielt.",
+        "ar": "الكلب ودود ويحب اللعب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Meine Katze schläft auf dem Sofa.",
+        "ar": "قطتي تنام على الأريكة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vögel können fliegen.",
+        "ar": "تستطيع الطيور الطيران.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Pferd hat starke Beine.",
+        "ar": "للحصان أرجل قوية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Zoo haben wir einen Elefanten gesehen.",
+        "ar": "شاهدنا في حديقة الحيوان فيلًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Viele Fische leben im Meer.",
+        "ar": "تعيش أسماك كثيرة في البحر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      }
+    ],
     "vocabulary_from_video": [],
     "teacher_notes": [],
     "exercises_demonstrated": [],
@@ -788,8 +1257,26 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
-    "evidence_checks": []
+    "common_mistakes": [
+      {
+        "wrong": "die Hund",
+        "correct": "der Hund",
+        "explanation": "Hund اسم مذكر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "zwei Katze",
+        "correct": "zwei Katzen",
+        "explanation": "بعد العدد نحتاج صيغة الجمع.",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "evidence_checks": [],
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -797,7 +1284,7 @@
     "video_id": "EBE1Oon-j9w",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم مفردات وتراكيب تساعدك على وصف يومك العادي بتفاصيل أكثر من مستوى A1. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم مفردات وتراكيب تساعدك على وصف يومك العادي بتفاصيل أكثر من مستوى A1.",
@@ -811,6 +1298,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الروتين اليومي، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "ترتيب أحداث اليوم",
+        "content": "استخدم zuerst، dann، danach، später و schließlich لربط خطوات الروتين بوضوح.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال المنفصلة",
+        "content": "ينفصل الجزء الأول في الجملة الرئيسية: Ich stehe um sieben Uhr auf. وفي المصدر يبقى الفعل متصلًا: früh aufzustehen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -830,6 +1327,42 @@
         "de": "Danach fahre ich zur Arbeit.",
         "ar": "بعد ذلك أذهب إلى العمل.",
         "note": ""
+      },
+      {
+        "de": "Ich stehe jeden Tag um sieben Uhr auf.",
+        "ar": "أستيقظ كل يوم في السابعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Danach dusche ich und ziehe mich an.",
+        "ar": "بعد ذلك أستحم وأرتدي ملابسي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Um acht Uhr fahre ich zur Arbeit.",
+        "ar": "أذهب إلى العمل في الثامنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mittags esse ich mit meinen Kollegen.",
+        "ar": "أتناول الغداء مع زملائي ظهرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nach der Arbeit kaufe ich oft ein.",
+        "ar": "أتسوق غالبًا بعد العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Abends bereite ich mich auf den nächsten Tag vor.",
+        "ar": "أستعد مساءً لليوم التالي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -854,7 +1387,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich aufstehe um sieben Uhr.",
+        "correct": "Ich stehe um sieben Uhr auf.",
+        "explanation": "ينفصل الفعل aufstehen في الجملة الرئيسية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Dann ich frühstücke.",
+        "correct": "Dann frühstücke ich.",
+        "explanation": "عند بدء الجملة بظرف يأتي الفعل في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الروتين اليومي.",
@@ -883,7 +1429,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -891,7 +1442,7 @@
     "video_id": "pl0zXcWGYoA",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم استخدام welch بصيغها المختلفة للسؤال عن الاختيار أو النوع أو الشيء المحدد. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم استخدام welch بصيغها المختلفة للسؤال عن الاختيار أو النوع أو الشيء المحدد.",
@@ -905,6 +1456,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أداة السؤال welch، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "نهاية welch-",
+        "content": "تأخذ welch- نهايات أدوات التعريف نفسها تقريبًا: welcher للمذكر، welche للمؤنث والجمع، welches للمحايد في Nominativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الحالة الإعرابية",
+        "content": "حدد جنس الاسم وحالته: Welchen Film siehst du? Akkusativ مذكر، Mit welcher Kollegin sprichst du? Dativ مؤنث.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -924,6 +1485,42 @@
         "de": "Welche Farbe magst du?",
         "ar": "أي لون تحب؟",
         "note": ""
+      },
+      {
+        "de": "Welcher Bus fährt zum Bahnhof?",
+        "ar": "أي حافلة تذهب إلى المحطة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Welche Jacke gefällt dir?",
+        "ar": "أي سترة تعجبك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Welches Buch liest du gerade?",
+        "ar": "أي كتاب تقرأ الآن؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Welchen Film möchtest du sehen?",
+        "ar": "أي فيلم تريد مشاهدته؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mit welcher Kollegin arbeitest du?",
+        "ar": "مع أي زميلة تعمل؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Welche Schuhe nimmst du?",
+        "ar": "أي حذاء ستأخذ؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -943,7 +1540,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Welche Bus kommt?",
+        "correct": "Welcher Bus kommt?",
+        "explanation": "Bus مذكر وفاعل، لذا نستخدم welcher.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Mit welchen Frau sprichst du?",
+        "correct": "Mit welcher Frau sprichst du?",
+        "explanation": "بعد mit نحتاج Dativ مؤنث: welcher.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: أداة السؤال welch.",
@@ -972,7 +1582,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -980,7 +1595,7 @@
     "video_id": "6rzANuCC2z8",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم مفردات وتراكيب لشرح ما فعلته أو ستفعله في عطلة نهاية الأسبوع. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم مفردات وتراكيب لشرح ما فعلته أو ستفعله في عطلة نهاية الأسبوع.",
@@ -994,6 +1609,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الحديث عن نهاية الأسبوع، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "حكاية نشاط ماضٍ",
+        "content": "استخدم Perfekt للأحداث اليومية الماضية، وأضف متى ومع من وأين حتى تكون الإجابة مترابطة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "روابط السرد",
+        "content": "اربط الأحداث بـ zuerst، dann، danach و am Ende، وأضف تقييمًا مثل Es hat mir gut gefallen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1013,6 +1638,42 @@
         "de": "Danach sind wir ins Kino gegangen.",
         "ar": "بعد ذلك ذهبنا إلى السينما.",
         "note": ""
+      },
+      {
+        "de": "Am Wochenende habe ich meine Freunde besucht.",
+        "ar": "زرت أصدقائي في عطلة نهاية الأسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Samstag sind wir ins Kino gegangen.",
+        "ar": "ذهبنا إلى السينما يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Danach haben wir in einem Restaurant gegessen.",
+        "ar": "بعد ذلك أكلنا في مطعم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Sonntag bin ich lange im Bett geblieben.",
+        "ar": "بقيت في السرير طويلًا يوم الأحد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Wetter war schön, deshalb machten wir einen Spaziergang.",
+        "ar": "كان الطقس جميلًا، لذلك قمنا بنزهة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Insgesamt war das Wochenende sehr erholsam.",
+        "ar": "عمومًا كانت عطلة نهاية الأسبوع مريحة جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1037,7 +1698,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich habe ins Kino gegangen.",
+        "correct": "Ich bin ins Kino gegangen.",
+        "explanation": "gehen يبني Perfekt مع sein.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Am Samstag ich habe Freunde besucht.",
+        "correct": "Am Samstag habe ich Freunde besucht.",
+        "explanation": "الفعل المصرف يبقى في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الحديث عن نهاية الأسبوع.",
@@ -1066,7 +1740,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1074,7 +1753,7 @@
     "video_id": "fFKuIgf89IU",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم أسماء الإشارة وكيفية استعمالها للإشارة إلى الأشخاص والأشياء بوضوح. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم أسماء الإشارة وكيفية استعمالها للإشارة إلى الأشخاص والأشياء بوضوح.",
@@ -1088,6 +1767,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أسماء الإشارة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "dies- كأداة إشارة",
+        "content": "تتبع dies- نهايات أداة التعريف: dieser، diese، dieses، diesen، diesem. وهي تشير إلى شخص أو شيء محدد.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مطابقة الاسم والحالة",
+        "content": "لا يكفي معرفة جنس الاسم؛ يجب تحديد الحالة أيضًا: dieser Mann فاعل، diesen Mann مفعول، mit diesem Mann بعد mit.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1107,6 +1796,42 @@
         "de": "Ich kaufe diese Tasche.",
         "ar": "أشتري هذه الحقيبة.",
         "note": ""
+      },
+      {
+        "de": "Dieser Pullover ist zu teuer.",
+        "ar": "هذه السترة غالية جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Diese Tasche gehört mir.",
+        "ar": "هذه الحقيبة لي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Dieses Handy funktioniert nicht.",
+        "ar": "هذا الهاتف لا يعمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich nehme diesen Bus.",
+        "ar": "سأستقل هذه الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mit dieser App kann man Vokabeln lernen.",
+        "ar": "يمكن تعلم المفردات بهذا التطبيق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Diese Schuhe sind bequemer.",
+        "ar": "هذا الحذاء أكثر راحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1126,7 +1851,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "dieser Frau",
+        "correct": "diese Frau",
+        "explanation": "في Nominativ المؤنث نستخدم diese.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich kaufe dieser Mantel.",
+        "correct": "Ich kaufe diesen Mantel.",
+        "explanation": "المذكر في Akkusativ يأخذ diesen.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [
       {
         "title": "dies- في Nominativ و Akkusativ",
@@ -1186,7 +1924,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1194,7 +1937,7 @@
     "video_id": "YKwt6K-8CE0",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "التعرف على أهم حروف الجر التي تأتي دائماً مع Akkusativ واستعمالها في العلاقات والمعاني الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على أهم حروف الجر التي تأتي دائماً مع Akkusativ واستعمالها في العلاقات والمعاني الشائعة.",
@@ -1208,6 +1951,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حروف الجر مع Akkusativ، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "حروف Akkusativ الثابتة",
+        "content": "أهمها durch، für، gegen، ohne و um. يأتي الاسم بعدها دائمًا في Akkusativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تغير المذكر",
+        "content": "يظهر التغير بوضوح مع المذكر: der يصبح den، ein يصبح einen، mein يصبح meinen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1227,6 +1980,30 @@
         "de": "Das Geschenk ist für meinen Bruder.",
         "ar": "الهدية لأخي.",
         "note": ""
+      },
+      {
+        "de": "Er ist gegen diesen Vorschlag.",
+        "ar": "هو ضد هذا الاقتراح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ohne einen Termin müssen Sie warten.",
+        "ar": "عليك الانتظار من دون موعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Kinder sitzen um den Tisch.",
+        "ar": "يجلس الأطفال حول الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Zug fährt durch einen langen Tunnel.",
+        "ar": "يمر القطار عبر نفق طويل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1261,6 +2038,18 @@
         "wrong": "Ich sehe der Mann.",
         "correct": "Ich sehe den Mann.",
         "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      },
+      {
+        "wrong": "für mein Bruder",
+        "correct": "für meinen Bruder",
+        "explanation": "بعد für نحتاج Akkusativ مذكر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "ohne dem Schlüssel",
+        "correct": "ohne den Schlüssel",
+        "explanation": "ohne يأخذ Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1291,7 +2080,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1299,7 +2093,7 @@
     "video_id": "c5NdMTMWaf4",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم حروف الجر التي تأتي دائماً مع Dativ وكيفية استخدامها في المعاني المكانية والزمنية وغيرها. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم حروف الجر التي تأتي دائماً مع Dativ وكيفية استخدامها في المعاني المكانية والزمنية وغيرها.",
@@ -1313,6 +2107,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حروف الجر مع Dativ، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "حروف Dativ الثابتة",
+        "content": "أهمها aus، bei، mit، nach، seit، von و zu. يأتي الاسم بعدها دائمًا في Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "أشكال مختصرة",
+        "content": "تندمج بعض الحروف مع الأداة: bei dem → beim، von dem → vom، zu dem → zum، zu der → zur.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1332,6 +2136,42 @@
         "de": "Sie kommt aus der Schweiz.",
         "ar": "هي قادمة من سويسرا.",
         "note": ""
+      },
+      {
+        "de": "Ich komme aus der Schweiz.",
+        "ar": "أنا قادم من سويسرا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie arbeitet bei einer Versicherung.",
+        "ar": "تعمل لدى شركة تأمين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir fahren mit dem Zug.",
+        "ar": "نسافر بالقطار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nach dem Kurs gehe ich nach Hause.",
+        "ar": "أذهب إلى المنزل بعد الدورة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er wohnt seit einem Jahr in Berlin.",
+        "ar": "يسكن في برلين منذ سنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich gehe heute zum Arzt.",
+        "ar": "أذهب اليوم إلى الطبيب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1371,6 +2211,18 @@
         "wrong": "Ich helfe den Mann.",
         "correct": "Ich helfe dem Mann.",
         "explanation": "الفعل helfen يطلب Dativ."
+      },
+      {
+        "wrong": "mit der Bus",
+        "correct": "mit dem Bus",
+        "explanation": "Bus مذكر وبعد mit يأتي Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "nach die Arbeit",
+        "correct": "nach der Arbeit",
+        "explanation": "nach يأخذ Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1401,7 +2253,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1409,7 +2266,7 @@
     "video_id": "0LLRh_dHn1c",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "التدرب على الإجابة عن أسئلة المكان واستعمال حرف الجر الأنسب بحسب المعنى. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التدرب على الإجابة عن أسئلة المكان واستعمال حرف الجر الأنسب بحسب المعنى.",
@@ -1423,6 +2280,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختيار حرف الجر المناسب، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "السؤال يحدد التركيب",
+        "content": "Wo? يسأل عن موقع ثابت ويأتي غالبًا مع Dativ. Wohin? يسأل عن وجهة أو انتقال إلى مكان ويأتي مع Akkusativ في حروف الجر المشتركة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مكان أم اتجاه؟",
+        "content": "قارن: Das Bild hängt an der Wand (موقع) و Ich hänge das Bild an die Wand (اتجاه/تغيير مكان).",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1442,6 +2309,36 @@
         "de": "Das Buch liegt auf dem Tisch.",
         "ar": "الكتاب موضوع على الطاولة.",
         "note": ""
+      },
+      {
+        "de": "Ich lege das Buch auf den Tisch.",
+        "ar": "أضع الكتاب على الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sitzen in der Küche.",
+        "ar": "نجلس في المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie geht in die Küche.",
+        "ar": "تذهب إلى المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Lampe hängt über dem Esstisch.",
+        "ar": "المصباح معلق فوق طاولة الطعام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Stell den Stuhl neben das Fenster.",
+        "ar": "ضع الكرسي بجانب النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1466,6 +2363,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Ich bin in die Schule.",
+        "correct": "Ich bin in der Schule.",
+        "explanation": "sein يصف موقعًا، لذلك نجيب عن Wo? بـ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich gehe in der Schule.",
+        "correct": "Ich gehe in die Schule.",
+        "explanation": "الوجهة بعد in تأتي هنا في Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1496,7 +2405,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1504,7 +2418,7 @@
     "video_id": "ZrbyFbmzqM4",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "متابعة التدريب على الفرق بين الحروف بحسب السؤال والحركة أو الثبات في المكان. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة التدريب على الفرق بين الحروف بحسب السؤال والحركة أو الثبات في المكان.",
@@ -1518,6 +2432,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع استعمالات حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "السؤال يحدد التركيب",
+        "content": "Wo? يسأل عن موقع ثابت ويأتي غالبًا مع Dativ. Wohin? يسأل عن وجهة أو انتقال إلى مكان ويأتي مع Akkusativ في حروف الجر المشتركة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مكان أم اتجاه؟",
+        "content": "قارن: Das Bild hängt an der Wand (موقع) و Ich hänge das Bild an die Wand (اتجاه/تغيير مكان).",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1537,6 +2461,36 @@
         "de": "Das Buch liegt auf dem Tisch.",
         "ar": "الكتاب موضوع على الطاولة.",
         "note": ""
+      },
+      {
+        "de": "Ich lege das Buch auf den Tisch.",
+        "ar": "أضع الكتاب على الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sitzen in der Küche.",
+        "ar": "نجلس في المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie geht in die Küche.",
+        "ar": "تذهب إلى المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Lampe hängt über dem Esstisch.",
+        "ar": "المصباح معلق فوق طاولة الطعام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Stell den Stuhl neben das Fenster.",
+        "ar": "ضع الكرسي بجانب النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1561,6 +2515,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Ich bin in die Schule.",
+        "correct": "Ich bin in der Schule.",
+        "explanation": "sein يصف موقعًا، لذلك نجيب عن Wo? بـ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich gehe in der Schule.",
+        "correct": "Ich gehe in die Schule.",
+        "explanation": "الوجهة بعد in تأتي هنا في Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1591,7 +2557,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1599,7 +2570,7 @@
     "video_id": "X9NWlVV-P3E",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "مراجعة حروف الجر المكانية وقياس قدرتك على اختيار الصيغة الصحيحة في الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "مراجعة حروف الجر المكانية وقياس قدرتك على اختيار الصيغة الصحيحة في الجملة.",
@@ -1613,6 +2584,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "السؤال يحدد التركيب",
+        "content": "Wo? يسأل عن موقع ثابت ويأتي غالبًا مع Dativ. Wohin? يسأل عن وجهة أو انتقال إلى مكان ويأتي مع Akkusativ في حروف الجر المشتركة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مكان أم اتجاه؟",
+        "content": "قارن: Das Bild hängt an der Wand (موقع) و Ich hänge das Bild an die Wand (اتجاه/تغيير مكان).",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1632,6 +2613,36 @@
         "de": "Das Buch liegt auf dem Tisch.",
         "ar": "الكتاب موضوع على الطاولة.",
         "note": ""
+      },
+      {
+        "de": "Ich lege das Buch auf den Tisch.",
+        "ar": "أضع الكتاب على الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sitzen in der Küche.",
+        "ar": "نجلس في المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie geht in die Küche.",
+        "ar": "تذهب إلى المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Lampe hängt über dem Esstisch.",
+        "ar": "المصباح معلق فوق طاولة الطعام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Stell den Stuhl neben das Fenster.",
+        "ar": "ضع الكرسي بجانب النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1656,6 +2667,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Ich bin in die Schule.",
+        "correct": "Ich bin in der Schule.",
+        "explanation": "sein يصف موقعًا، لذلك نجيب عن Wo? بـ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich gehe in der Schule.",
+        "correct": "Ich gehe in die Schule.",
+        "explanation": "الوجهة بعد in تأتي هنا في Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1686,7 +2709,12 @@
         "video_required": true
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1694,7 +2722,7 @@
     "video_id": "5SChfbaty4g",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تطبيق إضافي على أجوبة المكان والاتجاه حتى يصبح الاختيار بين الحروف أوضح وأسهل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تطبيق إضافي على أجوبة المكان والاتجاه حتى يصبح الاختيار بين الحروف أوضح وأسهل.",
@@ -1708,6 +2736,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مراجعة حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "السؤال يحدد التركيب",
+        "content": "Wo? يسأل عن موقع ثابت ويأتي غالبًا مع Dativ. Wohin? يسأل عن وجهة أو انتقال إلى مكان ويأتي مع Akkusativ في حروف الجر المشتركة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مكان أم اتجاه؟",
+        "content": "قارن: Das Bild hängt an der Wand (موقع) و Ich hänge das Bild an die Wand (اتجاه/تغيير مكان).",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1727,6 +2765,36 @@
         "de": "Das Buch liegt auf dem Tisch.",
         "ar": "الكتاب موضوع على الطاولة.",
         "note": ""
+      },
+      {
+        "de": "Ich lege das Buch auf den Tisch.",
+        "ar": "أضع الكتاب على الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sitzen in der Küche.",
+        "ar": "نجلس في المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie geht in die Küche.",
+        "ar": "تذهب إلى المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Lampe hängt über dem Esstisch.",
+        "ar": "المصباح معلق فوق طاولة الطعام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Stell den Stuhl neben das Fenster.",
+        "ar": "ضع الكرسي بجانب النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1751,6 +2819,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Ich bin in die Schule.",
+        "correct": "Ich bin in der Schule.",
+        "explanation": "sein يصف موقعًا، لذلك نجيب عن Wo? بـ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich gehe in der Schule.",
+        "correct": "Ich gehe in die Schule.",
+        "explanation": "الوجهة بعد in تأتي هنا في Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1781,7 +2861,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1789,7 +2874,7 @@
     "video_id": "EBkqQLDEFrI",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم بنية الجملة الرئيسية وترتيب العناصر الأساسية فيها بشكل منظم. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم بنية الجملة الرئيسية وترتيب العناصر الأساسية فيها بشكل منظم.",
@@ -1803,6 +2888,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الجملة الرئيسية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الفعل في الموقع الثاني",
+        "content": "في الجملة الرئيسية يكون الفعل المصرف ثاني عنصر، لا ثاني كلمة بالضرورة. قد يشغل ظرف كامل الموقع الأول.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "القوس الفعلي",
+        "content": "مع فعل منفصل أو Perfekt أو Modalverb، يأتي الجزء المصرف ثانيًا والجزء الآخر في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1822,6 +2917,42 @@
         "de": "Am Abend sehe ich einen Film.",
         "ar": "في المساء أشاهد فيلمًا.",
         "note": ""
+      },
+      {
+        "de": "Ich lerne jeden Abend Deutsch.",
+        "ar": "أتعلم الألمانية كل مساء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute lerne ich zu Hause.",
+        "ar": "اليوم أدرس في المنزل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Wochenende besucht meine Schwester uns.",
+        "ar": "تزورنا أختي في عطلة نهاية الأسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Zug kommt um acht Uhr an.",
+        "ar": "يصل القطار في الثامنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben gestern lange gearbeitet.",
+        "ar": "عملنا طويلًا أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen muss ich früh aufstehen.",
+        "ar": "يجب أن أستيقظ باكرًا غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1841,7 +2972,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Heute ich arbeite zu Hause.",
+        "correct": "Heute arbeite ich zu Hause.",
+        "explanation": "عند تقديم الظرف يبقى الفعل في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich anrufe dich später.",
+        "correct": "Ich rufe dich später an.",
+        "explanation": "ينفصل الفعل anrufen في الجملة الرئيسية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الجملة الرئيسية.",
@@ -1870,7 +3014,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -1885,7 +3034,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 5,
     "summary": "يشرح الفيديو خمس أدوات تربط جملة رئيسية بجملة رئيسية—aber و denn و und و oder و sondern—من دون تغيير موقع الفعل، ثم يبيّن الفاصلة وإمكان حذف العناصر المكررة لكل أداة ويختم باختبار من خمس جمل.",
     "video_outline": [
       {
@@ -1963,6 +3112,16 @@
         "source_start": "17:00",
         "source_end": "22:20",
         "origin": "video"
+      },
+      {
+        "heading": "روابط لا تغير الترتيب",
+        "content": "und، aber، oder، denn و sondern تربط جملتين رئيسيتين ويبقى الفعل في الموقع الثاني في كل جملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الفرق بين denn و sondern",
+        "content": "denn يذكر السبب، أما sondern فيصحح نفيًا سابقًا: nicht heute, sondern morgen.",
+        "origin": "editorial_clarification"
       }
     ],
     "rules_from_video": [
@@ -2023,6 +3182,42 @@
         "timestamp": "17:00",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Ich koche, und mein Bruder deckt den Tisch.",
+        "ar": "أنا أطبخ وأخي يرتب الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ist müde, aber sie arbeitet weiter.",
+        "ar": "هي متعبة لكنها تواصل العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kommst du mit, oder bleibst du zu Hause?",
+        "ar": "هل ستأتي معنا أم ستبقى في المنزل؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich gehe früh schlafen, denn ich muss morgen arbeiten.",
+        "ar": "أنام باكرًا لأن عليّ العمل غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir fahren nicht am Freitag, sondern am Samstag.",
+        "ar": "لن نسافر الجمعة بل السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er spricht nicht nur Deutsch, sondern auch Englisch.",
+        "ar": "لا يتحدث الألمانية فقط بل الإنجليزية أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -2113,7 +3308,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "denn ich morgen arbeite",
+        "correct": "denn ich arbeite morgen",
+        "explanation": "denn لا يدفع الفعل إلى النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "nicht Kaffee, aber Tee",
+        "correct": "nicht Kaffee, sondern Tee",
+        "explanation": "بعد نفي البديل الأول نستخدم sondern للتصحيح.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يذكر خمس أدوات في بداية الدرس.",
@@ -2151,6 +3359,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -2159,7 +3372,7 @@
     "video_id": "WCNUgkHtIxc",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم بناء الجملة الجانبية ومكان الفعل فيها مع أمثلة عملية مناسبة لمستوى A2. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم بناء الجملة الجانبية ومكان الفعل فيها مع أمثلة عملية مناسبة لمستوى A2.",
@@ -2173,6 +3386,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الجملة الجانبية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الفعل في النهاية",
+        "content": "تبدأ الجملة التابعة بأداة مثل weil، dass أو obwohl وينتقل فعلها المصرف إلى النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "عند تقديم الجملة التابعة",
+        "content": "إذا جاءت الجملة التابعة أولًا، تشغل الموقع الأول كاملًا ويأتي فعل الجملة الرئيسية بعد الفاصلة مباشرة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2192,6 +3415,36 @@
         "de": "Bevor ich schlafe, lese ich.",
         "ar": "قبل أن أنام أقرأ.",
         "note": ""
+      },
+      {
+        "de": "Sie sagt, dass sie später kommt.",
+        "ar": "تقول إنها ستأتي لاحقًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Obwohl es regnet, gehen wir spazieren.",
+        "ar": "نخرج للمشي رغم هطول المطر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wenn ich Zeit habe, rufe ich dich an.",
+        "ar": "عندما يكون لدي وقت أتصل بك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Weil der Bus zu spät kam, nahm ich ein Taxi.",
+        "ar": "لأن الحافلة تأخرت أخذت سيارة أجرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich weiß nicht, ob er heute arbeitet.",
+        "ar": "لا أعرف إن كان يعمل اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2216,6 +3469,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "weil ich bin müde",
+        "correct": "weil ich müde bin",
+        "explanation": "في الجملة التابعة يأتي الفعل المصرف في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Wenn ich Zeit habe, ich komme.",
+        "correct": "Wenn ich Zeit habe, komme ich.",
+        "explanation": "بعد الجملة التابعة المتقدمة يأتي فعل الجملة الرئيسية.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2246,7 +3511,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2254,7 +3524,7 @@
     "video_id": "t9yQpNuUFus",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "الفرق بين weil و da في التعبير عن السبب ومتى يفضل استعمال كل واحدة منهما. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "الفرق بين weil و da في التعبير عن السبب ومتى يفضل استعمال كل واحدة منهما.",
@@ -2268,6 +3538,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع weil و da، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "المعنى المشترك",
+        "content": "weil و da يقدمان سببًا ويدفعان الفعل إلى نهاية الجملة التابعة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الفرق في الاستعمال",
+        "content": "weil شائع ومحايد ويجيب مباشرة عن warum. أما da فيستعمل أكثر عندما يكون السبب معروفًا أو واضحًا، ويأتي كثيرًا في بداية الجملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2287,6 +3567,42 @@
         "de": "Bevor ich schlafe, lese ich.",
         "ar": "قبل أن أنام أقرأ.",
         "note": ""
+      },
+      {
+        "de": "Ich gehe früh ins Bett, weil ich müde bin.",
+        "ar": "أنام باكرًا لأنني متعب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Weil der Zug ausfällt, nehmen wir den Bus.",
+        "ar": "لأن القطار ملغى نأخذ الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Da morgen ein Feiertag ist, bleiben die Geschäfte geschlossen.",
+        "ar": "بما أن غدًا عطلة، تبقى المتاجر مغلقة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Da du schon hier bist, können wir anfangen.",
+        "ar": "بما أنك هنا بالفعل، يمكننا البدء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er lernt Deutsch, weil er in Deutschland arbeiten möchte.",
+        "ar": "يتعلم الألمانية لأنه يريد العمل في ألمانيا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Da es stark regnete, wurde das Spiel abgesagt.",
+        "ar": "بما أن المطر كان غزيرًا، أُلغيت المباراة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2311,6 +3627,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "weil er ist krank",
+        "correct": "weil er krank ist",
+        "explanation": "الفعل يأتي في نهاية الجملة السببية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Da ich bin müde, gehe ich.",
+        "correct": "Da ich müde bin, gehe ich.",
+        "explanation": "تطبق قاعدة الفعل النهائي مع da أيضًا.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2341,7 +3669,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2349,7 +3682,7 @@
     "video_id": "oGsTpyuYdGM",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "مراجعة مجموعة من الكلمات من خلال الصور وقياس سرعة الفهم والاستدعاء. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "مراجعة مجموعة من الكلمات من خلال الصور وقياس سرعة الفهم والاستدعاء.",
@@ -2363,6 +3696,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار المفردات، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "تعلم الكلمة في سياق",
+        "content": "احفظ الاسم مع أداته وجمعه، والفعل مع مفعوله أو حرف الجر، والصفة مع عكسها. الجملة القصيرة أفضل من ترجمة منفردة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المراجعة النشطة",
+        "content": "غطِّ الترجمة وحاول إنتاج الكلمة، ثم استعملها في جملة من حياتك. راجعها بعد يوم ثم بعد عدة أيام.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2382,6 +3725,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Ich habe einen Termin beim Zahnarzt.",
+        "ar": "لدي موعد عند طبيب الأسنان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bitte füllen Sie dieses Formular aus.",
+        "ar": "يرجى ملء هذه الاستمارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung muss bis Freitag bezahlt werden.",
+        "ar": "يجب دفع الفاتورة بحلول الجمعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Unser Nachbar ist sehr hilfsbereit.",
+        "ar": "جارنا متعاون جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wegen einer Verspätung verpasse ich den Anschluss.",
+        "ar": "بسبب تأخير سأفوت وسيلة المواصلات التالية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Könnten Sie mir weitere Informationen schicken?",
+        "ar": "هل يمكنكم إرسال معلومات إضافية إليّ؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2401,7 +3780,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Termin = موعد فقط",
+        "correct": "einen Termin vereinbaren / absagen",
+        "explanation": "احفظ الكلمة مع التراكيب الشائعة لا كترجمة منفردة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die Formular",
+        "correct": "das Formular",
+        "explanation": "احفظ أداة الاسم معه.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اختبار المفردات.",
@@ -2430,7 +3822,12 @@
         "video_required": true
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2438,7 +3835,7 @@
     "video_id": "Jx-CxV4XFK4",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم الفرق بين als و wenn عند الحديث عن الزمن والمواقف المتكررة أو المفردة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم الفرق بين als و wenn عند الحديث عن الزمن والمواقف المتكررة أو المفردة.",
@@ -2452,6 +3849,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع als و wenn، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "als لحدث واحد في الماضي",
+        "content": "نستخدم als لحدث أو فترة حدثت مرة واحدة في الماضي: Als ich zehn Jahre alt war …",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "wenn للتكرار والحاضر والمستقبل",
+        "content": "نستخدم wenn للأحداث المتكررة في الماضي وللشرط أو الزمن في الحاضر والمستقبل.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2471,6 +3878,42 @@
         "de": "Wenn ich Zeit habe, koche ich.",
         "ar": "عندما يكون لدي وقت أطبخ.",
         "note": ""
+      },
+      {
+        "de": "Als ich klein war, wohnte ich auf dem Land.",
+        "ar": "عندما كنت صغيرًا سكنت في الريف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Als der Bus kam, stiegen wir ein.",
+        "ar": "عندما جاءت الحافلة صعدنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wenn ich krank bin, bleibe ich zu Hause.",
+        "ar": "عندما أمرض أبقى في المنزل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Immer wenn es regnete, spielten wir drinnen.",
+        "ar": "كلما أمطرت كنا نلعب في الداخل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wenn du morgen Zeit hast, können wir uns treffen.",
+        "ar": "إذا كان لديك وقت غدًا يمكننا اللقاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ruf mich an, wenn du angekommen bist.",
+        "ar": "اتصل بي عندما تصل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2485,7 +3928,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Als ich jeden Tag zur Schule ging",
+        "correct": "Wenn ich jeden Tag zur Schule ging",
+        "explanation": "للتكرار في الماضي نستخدم wenn.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Wenn ich gestern ankam",
+        "correct": "Als ich gestern ankam",
+        "explanation": "للحدث الواحد المحدد في الماضي نستخدم als.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: als و wenn.",
@@ -2514,7 +3970,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2522,7 +3983,7 @@
     "video_id": "bZeyfgT66Zs",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "التعرف على حروف الجر الزمنية الأساسية وكيفية استعمالها مع الأيام والأوقات والمواعيد. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على حروف الجر الزمنية الأساسية وكيفية استعمالها مع الأيام والأوقات والمواعيد.",
@@ -2536,6 +3997,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حروف الجر الزمنية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الوقت كنقطة أو مدة",
+        "content": "um لوقت الساعة، am للأيام وأجزاء اليوم، im للأشهر والفصول، seit لبداية مستمرة، vor لوقت مضى، وfür لمدة مخطط لها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال المناسب",
+        "content": "اسأل wann عن الموعد، seit wann عن بداية مستمرة، wie lange عن المدة، و bis wann عن النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2555,6 +4026,36 @@
         "de": "Im Sommer fahre ich ans Meer.",
         "ar": "في الصيف أذهب إلى البحر.",
         "note": ""
+      },
+      {
+        "de": "Am Montag arbeite ich von zu Hause.",
+        "ar": "أعمل من المنزل يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Sommer fahren wir ans Meer.",
+        "ar": "نسافر إلى البحر في الصيف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich wohne seit drei Jahren hier.",
+        "ar": "أسكن هنا منذ ثلاث سنوات.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vor einer Woche habe ich ihn getroffen.",
+        "ar": "قابلته قبل أسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir bleiben für zwei Tage in Hamburg.",
+        "ar": "نبقى يومين في هامبورغ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2584,6 +4085,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "um Montag",
+        "correct": "am Montag",
+        "explanation": "للأيام نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "seit drei Jahren gewohnt",
+        "correct": "seit drei Jahren wohnen",
+        "explanation": "مع seit يستمر الحدث حتى الحاضر ويأتي غالبًا Präsens.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2614,7 +4127,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2622,7 +4140,7 @@
     "video_id": "kZb0JJlbBP4",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "متابعة تعلم حروف الجر الزمنية مع أمثلة إضافية تساعد على تثبيت الاستخدام الصحيح. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة تعلم حروف الجر الزمنية مع أمثلة إضافية تساعد على تثبيت الاستخدام الصحيح.",
@@ -2636,6 +4154,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيق حروف الجر الزمنية، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الوقت كنقطة أو مدة",
+        "content": "um لوقت الساعة، am للأيام وأجزاء اليوم، im للأشهر والفصول، seit لبداية مستمرة، vor لوقت مضى، وfür لمدة مخطط لها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال المناسب",
+        "content": "اسأل wann عن الموعد، seit wann عن بداية مستمرة، wie lange عن المدة، و bis wann عن النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2655,6 +4183,36 @@
         "de": "Im Sommer fahre ich ans Meer.",
         "ar": "في الصيف أذهب إلى البحر.",
         "note": ""
+      },
+      {
+        "de": "Am Montag arbeite ich von zu Hause.",
+        "ar": "أعمل من المنزل يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Sommer fahren wir ans Meer.",
+        "ar": "نسافر إلى البحر في الصيف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich wohne seit drei Jahren hier.",
+        "ar": "أسكن هنا منذ ثلاث سنوات.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vor einer Woche habe ich ihn getroffen.",
+        "ar": "قابلته قبل أسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir bleiben für zwei Tage in Hamburg.",
+        "ar": "نبقى يومين في هامبورغ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2684,6 +4242,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "um Montag",
+        "correct": "am Montag",
+        "explanation": "للأيام نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "seit drei Jahren gewohnt",
+        "correct": "seit drei Jahren wohnen",
+        "explanation": "مع seit يستمر الحدث حتى الحاضر ويأتي غالبًا Präsens.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2714,7 +4284,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2722,7 +4297,7 @@
     "video_id": "uBQ4jQfNEWo",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم حروف الجر التي قد تأتي مع حالتين مختلفتين بحسب الحركة أو الثبات. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم حروف الجر التي قد تأتي مع حالتين مختلفتين بحسب الحركة أو الثبات.",
@@ -2736,6 +4311,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حروف الجر المشتركة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "السؤال يحدد التركيب",
+        "content": "Wo? يسأل عن موقع ثابت ويأتي غالبًا مع Dativ. Wohin? يسأل عن وجهة أو انتقال إلى مكان ويأتي مع Akkusativ في حروف الجر المشتركة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مكان أم اتجاه؟",
+        "content": "قارن: Das Bild hängt an der Wand (موقع) و Ich hänge das Bild an die Wand (اتجاه/تغيير مكان).",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2755,6 +4340,36 @@
         "de": "Das Buch liegt auf dem Tisch.",
         "ar": "الكتاب موضوع على الطاولة.",
         "note": ""
+      },
+      {
+        "de": "Ich lege das Buch auf den Tisch.",
+        "ar": "أضع الكتاب على الطاولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sitzen in der Küche.",
+        "ar": "نجلس في المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie geht in die Küche.",
+        "ar": "تذهب إلى المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Lampe hängt über dem Esstisch.",
+        "ar": "المصباح معلق فوق طاولة الطعام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Stell den Stuhl neben das Fenster.",
+        "ar": "ضع الكرسي بجانب النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2779,6 +4394,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Ich bin in die Schule.",
+        "correct": "Ich bin in der Schule.",
+        "explanation": "sein يصف موقعًا، لذلك نجيب عن Wo? بـ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich gehe in der Schule.",
+        "correct": "Ich gehe in die Schule.",
+        "explanation": "الوجهة بعد in تأتي هنا في Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2809,7 +4436,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2817,7 +4449,7 @@
     "video_id": "BusaYh6tJV0",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "التعرف على أفعال شائعة تأتي مع حروف جر مشتركة وكيفية استعمالها في الجمل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على أفعال شائعة تأتي مع حروف جر مشتركة وكيفية استعمالها في الجمل.",
@@ -2831,6 +4463,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أفعال مع حروف الجر، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الفعل وحرف الجر وحدة",
+        "content": "تعلم الفعل مع حرف الجر والحالة: warten auf + Akkusativ، sprechen mit + Dativ، denken an + Akkusativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "لا تعتمد على الترجمة",
+        "content": "قد يختلف الحرف الألماني عن العربية؛ لذلك احفظ سؤالًا وجوابًا نموذجيين مع كل تركيب.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2850,6 +4492,42 @@
         "de": "Ich erinnere mich an den Termin.",
         "ar": "أتذكر الموعد.",
         "note": ""
+      },
+      {
+        "de": "Ich warte auf den nächsten Bus.",
+        "ar": "أنتظر الحافلة التالية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sprechen über das neue Projekt.",
+        "ar": "نتحدث عن المشروع الجديد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie träumt von einer langen Reise.",
+        "ar": "تحلم برحلة طويلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er bittet seinen Kollegen um Hilfe.",
+        "ar": "يطلب من زميله المساعدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Denkst du noch an unseren Termin?",
+        "ar": "هل ما زلت تتذكر موعدنا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich danke dir für deine Unterstützung.",
+        "ar": "أشكرك على دعمك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2874,6 +4552,12 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Sie spricht über ihrem Chef.",
+        "correct": "Sie spricht mit ihrem Chef.",
+        "explanation": "للحديث مع شخص نستخدم mit + Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2904,7 +4588,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -2912,7 +4601,7 @@
     "video_id": "KC0hVfM6Ujw",
     "source_type": "captions",
     "caption_language": "de",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "اكتساب أسماء أهم الأشياء الموجودة في المنزل مع النطق الصحيح والاستعمال العملي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب أسماء أهم الأشياء الموجودة في المنزل مع النطق الصحيح والاستعمال العملي.",
@@ -2926,6 +4615,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات المنزل، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "المفردات حسب الغرفة",
+        "content": "قسّم مفردات المنزل إلى غرف وأثاث وأجهزة، واحفظ كل اسم مع أداته وصيغة الجمع.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "وصف المكان",
+        "content": "استعمل stehen للأشياء الواقفة، liegen للأشياء الموضوعة أفقيًا، hängen للمعلقات، و sich befinden للوصف العام.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2945,6 +4644,42 @@
         "de": "In der Küche gibt es einen Kühlschrank.",
         "ar": "يوجد في المطبخ ثلاجة.",
         "note": ""
+      },
+      {
+        "de": "Der Kühlschrank steht in der Küche.",
+        "ar": "الثلاجة موجودة في المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Auf dem Sofa liegen zwei Kissen.",
+        "ar": "توجد وسادتان على الأريكة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Über dem Bett hängt ein Bild.",
+        "ar": "توجد صورة معلقة فوق السرير.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Badezimmer gibt es eine Dusche.",
+        "ar": "يوجد دش في الحمام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kleiderschrank steht neben der Tür.",
+        "ar": "خزانة الملابس بجانب الباب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir bewahren das Geschirr im Küchenschrank auf.",
+        "ar": "نحفظ الأواني في خزانة المطبخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2964,7 +4699,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "die Tisch",
+        "correct": "der Tisch",
+        "explanation": "Tisch اسم مذكر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das Bild steht an der Wand.",
+        "correct": "Das Bild hängt an der Wand.",
+        "explanation": "للصورة المعلقة نستخدم hängen.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات المنزل.",
@@ -2993,7 +4741,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3001,7 +4754,7 @@
     "video_id": "_LNADc4HEgI",
     "source_type": "captions",
     "caption_language": "de",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم مجموعة من الكلمات الأساسية التي تتكرر كثيراً في امتحان A2 وفي المواقف الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم مجموعة من الكلمات الأساسية التي تتكرر كثيراً في امتحان A2 وفي المواقف الشائعة.",
@@ -3015,6 +4768,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات امتحان A2، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "تعلم الكلمة في سياق",
+        "content": "احفظ الاسم مع أداته وجمعه، والفعل مع مفعوله أو حرف الجر، والصفة مع عكسها. الجملة القصيرة أفضل من ترجمة منفردة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المراجعة النشطة",
+        "content": "غطِّ الترجمة وحاول إنتاج الكلمة، ثم استعملها في جملة من حياتك. راجعها بعد يوم ثم بعد عدة أيام.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3034,6 +4797,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Ich habe einen Termin beim Zahnarzt.",
+        "ar": "لدي موعد عند طبيب الأسنان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bitte füllen Sie dieses Formular aus.",
+        "ar": "يرجى ملء هذه الاستمارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung muss bis Freitag bezahlt werden.",
+        "ar": "يجب دفع الفاتورة بحلول الجمعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Unser Nachbar ist sehr hilfsbereit.",
+        "ar": "جارنا متعاون جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wegen einer Verspätung verpasse ich den Anschluss.",
+        "ar": "بسبب تأخير سأفوت وسيلة المواصلات التالية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Könnten Sie mir weitere Informationen schicken?",
+        "ar": "هل يمكنكم إرسال معلومات إضافية إليّ؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3053,7 +4852,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Termin = موعد فقط",
+        "correct": "einen Termin vereinbaren / absagen",
+        "explanation": "احفظ الكلمة مع التراكيب الشائعة لا كترجمة منفردة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die Formular",
+        "correct": "das Formular",
+        "explanation": "احفظ أداة الاسم معه.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات امتحان A2.",
@@ -3082,7 +4894,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3090,7 +4907,7 @@
     "video_id": "Z-lIVaIfEQs",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "مراجعة وتوسيع استعمال الصفات في الألمانية لوصف الأشخاص والأشياء والمواقف بدقة أكبر. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "مراجعة وتوسيع استعمال الصفات في الألمانية لوصف الأشخاص والأشياء والمواقف بدقة أكبر.",
@@ -3104,6 +4921,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الصفات، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "الصفة الخبرية",
+        "content": "بعد sein وwerden وbleiben تبقى الصفة بلا نهاية: Das Zimmer ist hell.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الصفة قبل الاسم",
+        "content": "قبل الاسم تأخذ الصفة نهاية تعتمد على الأداة والجنس والحالة: ein helles Zimmer، die nette Nachbarin.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3123,6 +4950,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Die Wohnung ist modern und hell.",
+        "ar": "الشقة عصرية ومضيئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir suchen eine ruhige Wohnung.",
+        "ar": "نبحث عن شقة هادئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er trägt einen schwarzen Mantel.",
+        "ar": "يرتدي معطفًا أسود.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist ein interessantes Angebot.",
+        "ar": "هذا عرض ممتع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich spreche mit einer freundlichen Mitarbeiterin.",
+        "ar": "أتحدث مع موظفة ودودة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die neuen Möbel sind sehr praktisch.",
+        "ar": "الأثاث الجديد عملي جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3142,7 +5005,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Das Zimmer ist helles.",
+        "correct": "Das Zimmer ist hell.",
+        "explanation": "بعد sein لا تأخذ الصفة نهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "ein modern Wohnung",
+        "correct": "eine moderne Wohnung",
+        "explanation": "المؤنث مع eine يحتاج نهاية -e.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الصفات.",
@@ -3171,7 +5047,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3179,7 +5060,7 @@
     "video_id": "cM76EHbqjvs",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم صيغة المقارنة بين الأشخاص والأشياء وكيفية بنائها واستعمالها داخل الجمل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم صيغة المقارنة بين الأشخاص والأشياء وكيفية بنائها واستعمالها داخل الجمل.",
@@ -3193,6 +5074,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع صيغة المقارنة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "صيغة المقارنة",
+        "content": "نضيف غالبًا -er إلى الصفة ونستعمل als للمقارنة: schneller als. بعض الصفات تأخذ Umlaut مثل älter وgrößer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المساواة",
+        "content": "للتعبير عن التساوي نستخدم so … wie: Der Bus ist so schnell wie der Zug.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3212,6 +5103,42 @@
         "de": "Heute ist es am wärmsten.",
         "ar": "اليوم هو الأدفأ.",
         "note": ""
+      },
+      {
+        "de": "Mein Fahrrad ist schneller als deins.",
+        "ar": "دراجتي أسرع من دراجتك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Diese Wohnung ist größer, aber teurer.",
+        "ar": "هذه الشقة أكبر لكنها أغلى.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute ist es wärmer als gestern.",
+        "ar": "الجو اليوم أدفأ من أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Anna ist so groß wie ihre Schwester.",
+        "ar": "آنا بطول أختها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der neue Weg ist besser als der alte.",
+        "ar": "الطريق الجديد أفضل من القديم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mit dem Zug reist man bequemer.",
+        "ar": "السفر بالقطار أكثر راحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3231,7 +5158,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "mehr schnell",
+        "correct": "schneller",
+        "explanation": "الصفات القصيرة تكوّن المقارنة غالبًا بـ -er.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "größer wie",
+        "correct": "größer als",
+        "explanation": "بعد صيغة المقارنة نستخدم als، أما wie فللتساوي.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: صيغة المقارنة.",
@@ -3260,7 +5200,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3268,7 +5213,7 @@
     "video_id": "68NXd5RAGFA",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم صيغة التفضيل واستعمالها للحديث عن الأفضل أو الأعلى أو الأجمل وغيرها. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم صيغة التفضيل واستعمالها للحديث عن الأفضل أو الأعلى أو الأجمل وغيرها.",
@@ -3282,6 +5227,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع صيغة التفضيل، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "صيغتان شائعتان",
+        "content": "بعد sein نستخدم am + -sten: am schnellsten. وقبل الاسم نستخدم أداة التعريف ونهاية الصفة: der schnellste Zug.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "صيغ غير منتظمة",
+        "content": "من الصيغ المهمة: gut → besser → am besten، viel → mehr → am meisten، gern → lieber → am liebsten.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3301,6 +5256,42 @@
         "de": "Heute ist es am wärmsten.",
         "ar": "اليوم هو الأدفأ.",
         "note": ""
+      },
+      {
+        "de": "Der Juli ist der heißeste Monat.",
+        "ar": "يوليو هو أكثر الشهور حرارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Dieses Buch gefällt mir am besten.",
+        "ar": "يعجبني هذا الكتاب أكثر من غيره.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ist die jüngste Person im Team.",
+        "ar": "هي أصغر شخص في الفريق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Wochenende schlafe ich am längsten.",
+        "ar": "أنام أطول وقت في عطلة نهاية الأسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist die wichtigste Aufgabe.",
+        "ar": "هذه أهم مهمة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Von allen Verkehrsmitteln ist das Fahrrad am umweltfreundlichsten.",
+        "ar": "الدراجة هي الأكثر صداقة للبيئة بين وسائل النقل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3320,7 +5311,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "am beste",
+        "correct": "am besten",
+        "explanation": "الصيغة الخبرية تنتهي عادةً بـ -sten.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "der am schnellsten Zug",
+        "correct": "der schnellste Zug",
+        "explanation": "قبل الاسم نستعمل الصفة المصرفة بلا am.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: صيغة التفضيل.",
@@ -3349,7 +5353,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3357,7 +5366,7 @@
     "video_id": "Jy93kaJQGcs",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم بناء زمن المستقبل الأول واستعماله للتحدث عن الخطط والتوقعات المقبلة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم بناء زمن المستقبل الأول واستعماله للتحدث عن الخطط والتوقعات المقبلة.",
@@ -3371,6 +5380,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع زمن Futur I، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "بناء Futur I",
+        "content": "نصرف werden في الموقع الثاني، ويأتي المصدر في نهاية الجملة: Ich werde morgen arbeiten.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المستقبل أم التخمين؟",
+        "content": "يعبّر Futur I عن خطة أو توقع، وقد يعبّر عن تخمين في الحاضر: Er wird jetzt zu Hause sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3390,6 +5409,42 @@
         "de": "Es wird wahrscheinlich regnen.",
         "ar": "من المحتمل أن تمطر.",
         "note": ""
+      },
+      {
+        "de": "Ich werde dich morgen anrufen.",
+        "ar": "سأتصل بك غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir werden nächstes Jahr umziehen.",
+        "ar": "سننتقل العام المقبل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wirst du an dem Kurs teilnehmen?",
+        "ar": "هل ستشارك في الدورة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Wetter wird wahrscheinlich besser werden.",
+        "ar": "من المحتمل أن يتحسن الطقس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er wird jetzt im Büro sein.",
+        "ar": "يُرجح أنه في المكتب الآن.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "In Zukunft werden mehr Menschen von zu Hause arbeiten.",
+        "ar": "في المستقبل سيعمل أشخاص أكثر من المنزل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3409,7 +5464,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich werde morgen arbeite.",
+        "correct": "Ich werde morgen arbeiten.",
+        "explanation": "بعد werden يأتي المصدر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich wird kommen.",
+        "correct": "Ich werde kommen.",
+        "explanation": "تصريف werden مع ich هو werde.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: زمن Futur I.",
@@ -3438,7 +5506,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3446,7 +5519,7 @@
     "video_id": "yuh7Tp8JrLE",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم أساسيات المبني للمجهول وكيفية تحويل الجمل من المبني للمعلوم إلى Passiv. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم أساسيات المبني للمجهول وكيفية تحويل الجمل من المبني للمعلوم إلى Passiv.",
@@ -3460,6 +5533,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع المبني للمجهول Passiv، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "التركيز على الحدث",
+        "content": "يبنى Passiv في الحاضر من werden + Partizip II، ويكون المهم هو الفعل أو نتيجته لا من قام به.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "ذكر الفاعل",
+        "content": "يمكن ذكر المنفذ بـ von + Dativ عند الحاجة: Der Brief wird vom Chef unterschrieben.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3479,6 +5562,42 @@
         "de": "Das Haus wurde gebaut.",
         "ar": "بُني المنزل.",
         "note": ""
+      },
+      {
+        "de": "Die Straße wird repariert.",
+        "ar": "يُصلح الطريق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Essen wird frisch zubereitet.",
+        "ar": "يُحضّر الطعام طازجًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die E-Mails werden jeden Morgen beantwortet.",
+        "ar": "يُرد على الرسائل كل صباح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Vertrag wird vom Direktor unterschrieben.",
+        "ar": "يُوقّع العقد من المدير.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hier werden Fahrräder verkauft.",
+        "ar": "تُباع الدراجات هنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann wird das Paket geliefert?",
+        "ar": "متى سيُسلّم الطرد؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3503,6 +5622,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Die Straße wird reparieren.",
+        "correct": "Die Straße wird repariert.",
+        "explanation": "بعد werden نحتاج Partizip II.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Der Brief ist geschrieben vom Chef.",
+        "correct": "Der Brief wird vom Chef geschrieben.",
+        "explanation": "لعملية تحدث الآن نستخدم werden، لا sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -3533,7 +5664,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3541,7 +5677,7 @@
     "video_id": "uG40SNQwRyw",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تعلم استعمال المبني للمجهول في الماضي وكيفية صياغته بشكل صحيح في الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم استعمال المبني للمجهول في الماضي وكيفية صياغته بشكل صحيح في الجملة.",
@@ -3555,6 +5691,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Passiv في الماضي، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "Präteritum Passiv",
+        "content": "يتكون من wurde/wurden + Partizip II: Das Haus wurde gebaut.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "Perfekt Passiv",
+        "content": "يتكون من ist/sind + Partizip II + worden: Das Haus ist gebaut worden. لا نستعمل geworden هنا.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3574,6 +5720,36 @@
         "de": "Die Geräte wurden gestern repariert.",
         "ar": "أُصلحت الأجهزة أمس.",
         "note": ""
+      },
+      {
+        "de": "Die Fenster wurden gestern gereinigt.",
+        "ar": "نُظفت النوافذ أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin wurde kurzfristig abgesagt.",
+        "ar": "أُلغي الموعد في وقت قصير.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Problem ist inzwischen gelöst worden.",
+        "ar": "حُلّت المشكلة في هذه الأثناء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung ist bereits bezahlt worden.",
+        "ar": "دُفعت الفاتورة بالفعل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann wurde die Firma gegründet?",
+        "ar": "متى تأسست الشركة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3598,6 +5774,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Das Haus war gebaut.",
+        "correct": "Das Haus wurde gebaut.",
+        "explanation": "للعملية الماضية نستخدم wurde؛ war gebaut يصف حالة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Der Brief ist geschrieben geworden.",
+        "correct": "Der Brief ist geschrieben worden.",
+        "explanation": "Perfekt Passiv يستعمل worden.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -3628,7 +5816,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3636,7 +5829,7 @@
     "video_id": "Qp-RTeiz-Ek",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "دمج Passiv مع Modalverben لفهم تراكيب أكثر شيوعاً في المستوى المتوسط المبتدئ. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "دمج Passiv مع Modalverben لفهم تراكيب أكثر شيوعاً في المستوى المتوسط المبتدئ.",
@@ -3650,6 +5843,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Passiv مع الأفعال المساعدة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "البناء",
+        "content": "يأتي Modalverb مصرفًا، ثم Partizip II، ثم werden في المصدر: Die Aufgabe muss gemacht werden.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المعنى",
+        "content": "يعبّر الفعل الناقص عن الوجوب أو الإمكان أو السماح، بينما يبقى الحدث نفسه في المبني للمجهول.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3669,6 +5872,36 @@
         "de": "Das Formular kann online ausgefüllt werden.",
         "ar": "يمكن ملء الاستمارة عبر الإنترنت.",
         "note": ""
+      },
+      {
+        "de": "Die Aufgabe muss heute erledigt werden.",
+        "ar": "يجب إنجاز المهمة اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hier darf nicht geraucht werden.",
+        "ar": "لا يُسمح بالتدخين هنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung soll bis Freitag bezahlt werden.",
+        "ar": "ينبغي دفع الفاتورة بحلول الجمعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin muss verschoben werden.",
+        "ar": "يجب تأجيل الموعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Medikamente dürfen nicht zusammen eingenommen werden.",
+        "ar": "لا يجوز تناول الأدوية معًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3693,6 +5926,18 @@
         "wrong": "Ich kann Deutsch spreche.",
         "correct": "Ich kann Deutsch sprechen.",
         "explanation": "بعد الفعل الناقص يأتي المصدر بلا تصريف."
+      },
+      {
+        "wrong": "Die Aufgabe muss gemacht.",
+        "correct": "Die Aufgabe muss gemacht werden.",
+        "explanation": "نحتاج werden في نهاية Passiv مع Modalverb.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das kann werden repariert.",
+        "correct": "Das kann repariert werden.",
+        "explanation": "Partizip II يسبق werden في نهاية الجملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -3723,7 +5968,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3731,7 +5981,7 @@
     "video_id": "xkx9d-IZaZw",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم أداة bevor وكيفية استعمالها لربط جملتين تتعلقان بترتيب الأحداث. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم أداة bevor وكيفية استعمالها لربط جملتين تتعلقان بترتيب الأحداث.",
@@ -3745,6 +5995,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع قبل أن - bevor، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "ترتيب حدثين",
+        "content": "bevor تعني قبل أن وتقدم الحدث اللاحق زمنيًا؛ الحدث في الجملة الرئيسية يقع أولًا.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الفعل في النهاية",
+        "content": "bevor تبدأ جملة تابعة، لذلك يقف فعلها المصرف في النهاية. وعند تقديمها يأتي فعل الجملة الرئيسية بعد الفاصلة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3764,6 +6024,42 @@
         "de": "Bevor ich schlafe, lese ich.",
         "ar": "قبل أن أنام أقرأ.",
         "note": ""
+      },
+      {
+        "de": "Ich frühstücke, bevor ich zur Arbeit gehe.",
+        "ar": "أتناول الإفطار قبل أن أذهب إلى العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bevor du gehst, schließ bitte das Fenster.",
+        "ar": "قبل أن تذهب أغلق النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie prüft die Adresse, bevor sie das Paket abschickt.",
+        "ar": "تراجع العنوان قبل إرسال الطرد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir müssen tanken, bevor wir losfahren.",
+        "ar": "يجب أن نزود السيارة بالوقود قبل الانطلاق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bevor der Kurs begann, stellte sich die Lehrerin vor.",
+        "ar": "قبل أن تبدأ الدورة عرّفت المعلمة بنفسها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ruf mich an, bevor du eine Entscheidung triffst.",
+        "ar": "اتصل بي قبل أن تتخذ قرارًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3788,6 +6084,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "bevor ich gehe zur Arbeit",
+        "correct": "bevor ich zur Arbeit gehe",
+        "explanation": "فعل الجملة التابعة يأتي في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Bevor du gehst, du musst zahlen.",
+        "correct": "Bevor du gehst, musst du zahlen.",
+        "explanation": "بعد الجملة التابعة المتقدمة يأتي فعل الجملة الرئيسية.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -3818,7 +6126,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3826,7 +6139,7 @@
     "video_id": "w2GFzRi9x1o",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "التعرف على الجمل الموصولة وكيفية استعمال الضمائر الموصولة لربط المعلومات في جملة واحدة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على الجمل الموصولة وكيفية استعمال الضمائر الموصولة لربط المعلومات في جملة واحدة.",
@@ -3840,6 +6153,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الجمل الموصولة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "مرجع الضمير",
+        "content": "يطابق ضمير الوصل الاسم السابق في الجنس والعدد، أما حالته فتحددها وظيفته داخل الجملة الموصولة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "Nominativ وAkkusativ",
+        "content": "إذا كان الضمير فاعلًا نستخدم der/die/das، وإذا كان مفعولًا مذكرًا نستخدم den. يقف الفعل في نهاية الجملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3859,6 +6182,42 @@
         "de": "Die Kollegin, mit der ich arbeite, ist nett.",
         "ar": "الزميلة التي أعمل معها لطيفة.",
         "note": ""
+      },
+      {
+        "de": "Das ist der Mann, der nebenan wohnt.",
+        "ar": "هذا هو الرجل الذي يسكن بجوارنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Frau, die dort wartet, ist meine Chefin.",
+        "ar": "المرأة التي تنتظر هناك هي مديرتي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Buch, das auf dem Tisch liegt, gehört mir.",
+        "ar": "الكتاب الموجود على الطاولة لي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Film, den wir gestern gesehen haben, war spannend.",
+        "ar": "الفيلم الذي شاهدناه أمس كان مشوقًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Tasche, die ich gekauft habe, war reduziert.",
+        "ar": "الحقيبة التي اشتريتها كانت مخفضة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Kinder, die im Garten spielen, sind unsere Nachbarn.",
+        "ar": "الأطفال الذين يلعبون في الحديقة هم جيراننا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3883,6 +6242,12 @@
         "wrong": "Der Mann, ich kenne, kommt.",
         "correct": "Der Mann, den ich kenne, kommt.",
         "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      },
+      {
+        "wrong": "Die Frau, die dort arbeitet ist nett.",
+        "correct": "Die Frau, die dort arbeitet, ist nett.",
+        "explanation": "نفصل الجملة الموصولة بفاصلتين عند وقوعها وسط الجملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -3913,7 +6278,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -3921,7 +6291,7 @@
     "video_id": "-k7DN9Ob8ng",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "فهم معنى اللاحقة -bar وكيفية تكوين صفات جديدة منها واستعمالها في اللغة اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم معنى اللاحقة -bar وكيفية تكوين صفات جديدة منها واستعمالها في اللغة اليومية.",
@@ -3935,6 +6305,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اللاحقة -bar، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "المعنى",
+        "content": "تحول اللاحقة -bar كثيرًا من الأفعال إلى صفات بمعنى قابل لأن يُفعل: lesen → lesbar، bezahlen → bezahlbar.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "حدود القاعدة",
+        "content": "لا يمكن إضافة -bar إلى كل فعل بصورة طبيعية؛ تعلم الصفات الشائعة في سياق، وانتبه إلى تغيرات الجذر مثل erklären → erklärbar.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3954,6 +6334,42 @@
         "de": "Der Text ist gut lesbar.",
         "ar": "النص سهل القراءة.",
         "note": ""
+      },
+      {
+        "de": "Die Schrift ist gut lesbar.",
+        "ar": "الخط مقروء جيدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Wohnung ist für uns bezahlbar.",
+        "ar": "الشقة في متناول قدرتنا المادية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Dieses Problem ist lösbar.",
+        "ar": "هذه المشكلة قابلة للحل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Fehler war leicht vermeidbar.",
+        "ar": "كان الخطأ سهل التجنب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Datei ist nicht mehr verwendbar.",
+        "ar": "لم يعد الملف قابلًا للاستخدام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Seine Entscheidung ist nachvollziehbar.",
+        "ar": "قراره مفهوم ويمكن تتبع منطقه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3973,7 +6389,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "können lesenbar",
+        "correct": "lesbar",
+        "explanation": "تضاف -bar إلى جذر مناسب، لا إلى المصدر كاملًا مع en.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Die Text ist lesbar.",
+        "correct": "Der Text ist lesbar.",
+        "explanation": "الخطأ هنا في أداة الاسم؛ Text مذكر.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اللاحقة -bar.",
@@ -4002,7 +6431,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -4010,7 +6444,7 @@
     "video_id": "K9UQFYg9cm0",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "متابعة التدريب على الجمل الموصولة مع أمثلة إضافية وتوضيح حالات الاستعمال الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة التدريب على الجمل الموصولة مع أمثلة إضافية وتوضيح حالات الاستعمال الشائعة.",
@@ -4024,6 +6458,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيق الجمل الموصولة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "Dativ داخل الجملة الموصولة",
+        "content": "إذا كان الفعل أو حرف الجر يطلب Dativ نستخدم dem للمذكر والمحايد، der للمؤنث، وdenen للجمع.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "حرف الجر قبل الضمير",
+        "content": "يوضع حرف الجر قبل ضمير الوصل: die Kollegin, mit der ich arbeite. ويبقى الفعل في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4043,6 +6487,42 @@
         "de": "Die Kollegin, mit der ich arbeite, ist nett.",
         "ar": "الزميلة التي أعمل معها لطيفة.",
         "note": ""
+      },
+      {
+        "de": "Der Kollege, dem ich geholfen habe, bedankt sich.",
+        "ar": "الزميل الذي ساعدته يشكرني.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Frau, mit der ich gesprochen habe, ist Ärztin.",
+        "ar": "المرأة التي تحدثت معها طبيبة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Kind, dem das Fahrrad gehört, wartet draußen.",
+        "ar": "الطفل الذي تعود إليه الدراجة ينتظر في الخارج.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Freunde, bei denen wir übernachtet haben, wohnen in Bonn.",
+        "ar": "الأصدقاء الذين بتنا عندهم يسكنون في بون.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Thema, über das wir sprechen, ist wichtig.",
+        "ar": "الموضوع الذي نتحدث عنه مهم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Firma, für die er arbeitet, ist international.",
+        "ar": "الشركة التي يعمل لديها دولية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4067,6 +6547,18 @@
         "wrong": "Der Mann, ich kenne, kommt.",
         "correct": "Der Mann, den ich kenne, kommt.",
         "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      },
+      {
+        "wrong": "Die Frau, die ich geholfen habe",
+        "correct": "Die Frau, der ich geholfen habe",
+        "explanation": "helfen يطلب Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Der Kollege, mit dem ich arbeite mit",
+        "correct": "Der Kollege, mit dem ich arbeite",
+        "explanation": "يوضع حرف الجر مرة واحدة قبل ضمير الوصل.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4097,7 +6589,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A2",
@@ -4105,7 +6602,7 @@
     "video_id": "PgavSgPGgIU",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "تثبيت استعمال الجمل الموصولة عبر أمثلة ومراجعة تساعد على إتقان هذا الباب في A2. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تثبيت استعمال الجمل الموصولة عبر أمثلة ومراجعة تساعد على إتقان هذا الباب في A2.",
@@ -4119,6 +6616,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مراجعة الجمل الموصولة، حدّد القاعدة والسياق العملي أولًا، ثم غيّر الفاعل أو الحالة أو الزمن في المثال وراجع النهايات وترتيب الكلمات."
+      },
+      {
+        "heading": "طريقة الاختيار",
+        "content": "حدد أولًا جنس وعدد الاسم المرجعي، ثم اسأل عن وظيفة الفراغ داخل الجملة الموصولة لتعرف الحالة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "ترتيب الجملة",
+        "content": "يأتي ضمير الوصل في البداية، ثم الفاعل وبقية العناصر، ويقف الفعل المصرف في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4138,6 +6645,42 @@
         "de": "Die Kollegin, mit der ich arbeite, ist nett.",
         "ar": "الزميلة التي أعمل معها لطيفة.",
         "note": ""
+      },
+      {
+        "de": "Ich suche einen Kurs, der am Abend stattfindet.",
+        "ar": "أبحث عن دورة تُقام مساءً.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist die Wohnung, die wir mieten möchten.",
+        "ar": "هذه هي الشقة التي نريد استئجارها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kennst du den Mann, dem dieses Auto gehört?",
+        "ar": "هل تعرف الرجل الذي تعود إليه هذه السيارة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Stadt, in der ich wohne, ist sehr ruhig.",
+        "ar": "المدينة التي أسكن فيها هادئة جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das sind die Leute, mit denen wir gereist sind.",
+        "ar": "هؤلاء هم الأشخاص الذين سافرنا معهم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Computer, den ich gestern gekauft habe, funktioniert gut.",
+        "ar": "الحاسوب الذي اشتريته أمس يعمل جيدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4162,6 +6705,18 @@
         "wrong": "Der Mann, ich kenne, kommt.",
         "correct": "Der Mann, den ich kenne, kommt.",
         "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      },
+      {
+        "wrong": "Das Buch, das ich lese es",
+        "correct": "Das Buch, das ich lese",
+        "explanation": "ضمير الوصل يشغل موقع المفعول، فلا نكرر es.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Die Stadt, wo ich wohne",
+        "correct": "Die Stadt, in der ich wohne",
+        "explanation": "في اللغة المعيارية نفضل حرف الجر مع ضمير الوصل للمكان المحدد.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4192,6 +6747,11 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   }
 ]

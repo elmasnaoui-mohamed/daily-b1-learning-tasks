@@ -12,7 +12,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 6,
     "summary": "يشرح الفيديو تحويل الفعل إلى Partizip I بإضافة d إلى المصدر واستعمال الناتج كصفة لحركة جارية، ثم يصرّفه مثل الصفات ويحوّل جملًا موصولة إلى تراكيب أكثر تكثيفًا في حالات Nominativ و Akkusativ و Dativ.",
     "video_outline": [
       {
@@ -149,6 +149,18 @@
         "timestamp": "05:10",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Die steigenden Preise belasten viele Haushalte.",
+        "ar": "تُثقل الأسعار المتزايدة كاهل كثير من الأسر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die von vielen Fachleuten kritisierte Maßnahme wurde geändert.",
+        "ar": "عُدّل الإجراء الذي انتقده كثير من الخبراء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -244,7 +256,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "die steigen Preise",
+        "correct": "die steigenden Preise",
+        "explanation": "يُبنى Partizip I من المصدر مع d ثم يأخذ نهاية الصفة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die von Experten kritisieren Maßnahme",
+        "correct": "die von Experten kritisierte Maßnahme",
+        "explanation": "المعنى مبني للمجهول ومكتمل، لذلك نستخدم Partizip II مع نهاية الصفة.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يعرّف القاعدة Infinitiv + d.",
@@ -282,6 +307,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -304,6 +334,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Partizip II als Attribut، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "متى نستخدم Partizip II كصفة؟",
+        "content": "يصف Partizip II غالبًا نتيجة حدث اكتمل: النافذة التي كُسرت أصبحت مكسورة، والرسالة التي كُتبت أصبحت مكتوبة. لذلك يكون التركيز على الحالة الناتجة لا على الشخص الذي قام بالفعل.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تصريف النهاية",
+        "content": "يتصرف Partizip II مثل أي صفة قبل الاسم. نحدد الأداة والجنس والحالة أولًا، ثم نضيف النهاية المناسبة: ein geschriebener Brief، eine geschriebene Nachricht، mit einem geschriebenen Text.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -323,6 +363,36 @@
         "de": "die geschlossene Tür",
         "ar": "الباب المغلق",
         "note": ""
+      },
+      {
+        "de": "Das zerbrochene Fenster muss ersetzt werden.",
+        "ar": "يجب استبدال النافذة المكسورة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich habe die unterschriebenen Verträge abgeschickt.",
+        "ar": "أرسلتُ العقود الموقعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie spricht mit dem verletzten Mann.",
+        "ar": "هي تتحدث مع الرجل المصاب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das frisch gekochte Essen riecht gut.",
+        "ar": "رائحة الطعام المطهو حديثًا طيبة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das vergessene Passwort wurde zurückgesetzt.",
+        "ar": "أُعيد تعيين كلمة المرور المنسية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -347,6 +417,18 @@
         "wrong": "das schlafen Kind",
         "correct": "das schlafende Kind",
         "explanation": "Partizip I يُبنى من المصدر مع d ثم يأخذ نهاية الصفة."
+      },
+      {
+        "wrong": "die schließen Tür",
+        "correct": "die geschlossene Tür",
+        "explanation": "نحتاج Partizip II من schließen ثم نهاية الصفة المناسبة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "mit ein geschrieben Brief",
+        "correct": "mit einem geschriebenen Brief",
+        "explanation": "بعد mit نستخدم Dativ، ولذلك تتغير الأداة ونهاية الصفة معًا.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -382,7 +464,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -404,6 +491,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Anwendung von Partizipien، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "الفرق في المعنى",
+        "content": "Partizip I يصف من يقوم بالفعل في الوقت نفسه: der wartende Kunde. أما Partizip II فيصف من وقع عليه الفعل أو النتيجة: der reparierte Computer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اختبار سريع للاختيار",
+        "content": "حوّل التركيب إلى جملة موصولة. إذا كان الاسم هو الفاعل فاختر غالبًا Partizip I؛ وإذا كان الفعل قد اكتمل أو وقع على الاسم فاختر غالبًا Partizip II.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -423,6 +520,42 @@
         "de": "die geschlossene Tür",
         "ar": "الباب المغلق",
         "note": ""
+      },
+      {
+        "de": "die lächelnde Verkäuferin",
+        "ar": "البائعة المبتسمة",
+        "note": "هي التي تبتسم: معنى نشط.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "die verkaufte Wohnung",
+        "ar": "الشقة المبيعة",
+        "note": "تم بيعها: نتيجة مكتملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir beruhigten das weinende Kind.",
+        "ar": "هدّأنا الطفل الباكي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die beschädigten Geräte werden repariert.",
+        "ar": "تُصلح الأجهزة المتضررة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die gestern veröffentlichten Zahlen überraschten alle.",
+        "ar": "فاجأت الأرقام المنشورة أمس الجميع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der vor der Tür wartende Mann ist mein Nachbar.",
+        "ar": "الرجل المنتظر أمام الباب هو جاري.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -447,6 +580,18 @@
         "wrong": "das schlafen Kind",
         "correct": "das schlafende Kind",
         "explanation": "Partizip I يُبنى من المصدر مع d ثم يأخذ نهاية الصفة."
+      },
+      {
+        "wrong": "der reparierende Computer",
+        "correct": "der reparierte Computer",
+        "explanation": "الحاسوب لا يُجري الإصلاح بنفسه؛ المقصود أنه تم إصلاحه، لذا نستخدم Partizip II.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die gelacht Frau",
+        "correct": "die lachende Frau",
+        "explanation": "المرأة تقوم بالفعل الآن، لذا نستخدم Partizip I.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -482,7 +627,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -504,6 +654,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Verben mit Präpositionen، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "التركيب ثابت",
+        "content": "الحالة لا تتعلق هنا بالحركة والمكان. الفعل نفسه يفرض an + Dativ، لذلك احفظه مع حرف الجر والحالة: teilnehmen an + Dativ، leiden an + Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال والضمير",
+        "content": "نسأل عن الأشخاص بـ an wem، وعن الأشياء بـ woran. وفي الجواب يمكن استبدال الشيء بـ daran: Woran arbeitest du? – Ich arbeite daran.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -523,6 +683,42 @@
         "de": "Er leidet an einer Allergie.",
         "ar": "هو يعاني حساسية.",
         "note": ""
+      },
+      {
+        "de": "Mehr als hundert Personen nahmen an der Umfrage teil.",
+        "ar": "شارك أكثر من مئة شخص في الاستطلاع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie leidet seit Jahren an einer seltenen Krankheit.",
+        "ar": "تعاني منذ سنوات من مرض نادر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich zweifle an seiner Erklärung.",
+        "ar": "أشك في تفسيره.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Team arbeitet an einer neuen Lösung.",
+        "ar": "يعمل الفريق على حل جديد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Dem Projekt mangelt es an finanzieller Unterstützung.",
+        "ar": "يفتقر المشروع إلى الدعم المالي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Woran liegt die Verzögerung? – Sie liegt an einem technischen Problem.",
+        "ar": "ما سبب التأخير؟ سببه مشكلة تقنية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -547,6 +743,18 @@
         "wrong": "Ich helfe den Mann.",
         "correct": "Ich helfe dem Mann.",
         "explanation": "الفعل helfen يطلب Dativ."
+      },
+      {
+        "wrong": "Wir nehmen an den Kurs teil.",
+        "correct": "Wir nehmen an dem Kurs teil.",
+        "explanation": "teilnehmen يأتي مع an + Dativ؛ المذكر يصبح dem.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "An was arbeitest du?",
+        "correct": "Woran arbeitest du?",
+        "explanation": "مع الأشياء تُستعمل صيغة wo(r) + حرف الجر في اللغة المعيارية.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -582,7 +790,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -604,6 +817,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Verben mit Präpositionen، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "أفعال تأخذ an + Akkusativ",
+        "content": "من أهمها denken an، sich erinnern an، glauben an، sich gewöhnen an، sich wenden an و appellieren an. يجب حفظ الضمير المنعكس أيضًا عندما يكون جزءًا من الفعل.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال والضمير",
+        "content": "نسأل عن شخص بـ an wen، وعن شيء بـ woran. وعند الإحالة إلى شيء سبق ذكره نستخدم daran: Ich erinnere mich daran.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -623,6 +846,42 @@
         "de": "Wir denken an unsere Freunde.",
         "ar": "نفكر في أصدقائنا.",
         "note": ""
+      },
+      {
+        "de": "Denk bitte an deinen Termin.",
+        "ar": "تذكّر موعدك من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie erinnert sich gern an ihre Studienzeit.",
+        "ar": "تتذكر فترة دراستها بسرور.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Viele Menschen glauben an einen Neuanfang.",
+        "ar": "يؤمن كثير من الناس ببداية جديدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich muss mich erst an das neue System gewöhnen.",
+        "ar": "يجب أن أعتاد أولًا على النظام الجديد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bitte wenden Sie sich an unsere Personalabteilung.",
+        "ar": "يرجى التوجه إلى قسم الموارد البشرية لدينا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Organisation appelliert an die Verantwortung der Politik.",
+        "ar": "تناشد المنظمة حس المسؤولية لدى الساسة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -647,6 +906,18 @@
         "wrong": "Ich sehe der Mann.",
         "correct": "Ich sehe den Mann.",
         "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      },
+      {
+        "wrong": "Ich erinnere den Urlaub.",
+        "correct": "Ich erinnere mich an den Urlaub.",
+        "explanation": "الفعل في هذا المعنى منعكس ويحتاج an + Akkusativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "An wem denkst du? – Daran denke ich.",
+        "correct": "An wen denkst du? – An meinen Bruder.",
+        "explanation": "مع الشخص نستخدم an wen، أما daran فللأشياء أو الأفكار.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -682,7 +953,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -704,6 +980,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Konjunktiv II und Vergleichssätze، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "المعنى غير الواقعي",
+        "content": "تأتي als ob بعد انطباع أو تصرف يبدو حقيقيًا، لكن المتكلم يشك فيه أو يعدّه غير واقعي. لذلك تستعمل الجملة التابعة غالبًا Konjunktiv II.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "ترتيب الجملة",
+        "content": "في الصيغة القياسية يقف الفعل المصرف في نهاية جملة als ob: Er tut so, als ob er mich nicht kennen würde. ويمكن أيضًا استعمال als مع الفعل مباشرة في أسلوب أكثر اختصارًا.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -723,6 +1009,42 @@
         "de": "Er tut so, als ob er alles wüsste.",
         "ar": "يتصرف وكأنه يعرف كل شيء.",
         "note": ""
+      },
+      {
+        "de": "Sie sieht aus, als ob sie die ganze Nacht gearbeitet hätte.",
+        "ar": "تبدو كما لو أنها عملت طوال الليل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er redet, als wäre er der Chef.",
+        "ar": "يتحدث كما لو كان المدير.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du tust so, als hättest du nichts gehört.",
+        "ar": "تتصرف كأنك لم تسمع شيئًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Kind verhält sich, als ob es schon erwachsen wäre.",
+        "ar": "يتصرف الطفل كما لو كان بالغًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es klingt, als könnte die Lösung funktionieren.",
+        "ar": "يبدو الأمر كما لو أن الحل قد ينجح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er sah mich an, als kenne er mich nicht.",
+        "ar": "نظر إليّ كما لو أنه لا يعرفني.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -747,6 +1069,18 @@
         "wrong": "Wenn ich Zeit habe, würde ich reisen.",
         "correct": "Wenn ich Zeit hätte, würde ich reisen.",
         "explanation": "في الشرط غير الواقعي نستخدم Konjunktiv II في الجملة التابعة أيضًا."
+      },
+      {
+        "wrong": "Er tut so, als ob er weiß alles.",
+        "correct": "Er tut so, als ob er alles wüsste.",
+        "explanation": "بعد als ob يأتي الفعل في النهاية، ويُستعمل Konjunktiv II للمعنى غير الواقعي.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "als ob er würde alles wissen",
+        "correct": "als ob er alles wissen würde",
+        "explanation": "المصدر يسبق würde في نهاية الجملة التابعة.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -782,7 +1116,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -804,6 +1143,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Indirekte Rede، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "الحياد في نقل الكلام",
+        "content": "Konjunktiv I لا يعني أن الكلام صحيح أو خاطئ؛ بل يوضح أن المتكلم ينقل قول شخص آخر دون أن يتبناه مباشرة. لذلك يشيع في الصحافة والتقارير.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "عندما تتطابق الصيغة",
+        "content": "إذا كانت صيغة Konjunktiv I مطابقة لـ Indikativ ولا يظهر الفرق، يُستعمل غالبًا Konjunktiv II لتوضيح النقل، خصوصًا مع الجمع: Sie sagten, sie hätten keine Zeit.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -823,6 +1172,42 @@
         "de": "Sie erklärt, sie habe keine Zeit.",
         "ar": "توضح أنه ليس لديها وقت.",
         "note": ""
+      },
+      {
+        "de": "Die Ministerin erklärt, die Lage sei unter Kontrolle.",
+        "ar": "توضح الوزيرة أن الوضع تحت السيطرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Zeuge sagt, er habe nichts gesehen.",
+        "ar": "يقول الشاهد إنه لم ير شيئًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Firma teilt mit, sie werde neue Stellen schaffen.",
+        "ar": "تعلن الشركة أنها ستوفر وظائف جديدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er behauptet, er könne das Problem allein lösen.",
+        "ar": "يدعي أنه يستطيع حل المشكلة وحده.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Ärztin sagt, der Patient müsse sich ausruhen.",
+        "ar": "تقول الطبيبة إن على المريض أن يرتاح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Mitarbeiter sagten, sie hätten davon nichts gewusst.",
+        "ar": "قال الموظفون إنهم لم يكونوا على علم بذلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -847,6 +1232,18 @@
         "wrong": "Er sagt, er ist krank.",
         "correct": "Er sagt, er sei krank.",
         "explanation": "في النقل الرسمي المحايد نستخدم Konjunktiv I."
+      },
+      {
+        "wrong": "Sie sagt, ich sei müde.",
+        "correct": "Sie sagt, sie sei müde.",
+        "explanation": "يجب تعديل الضمير وفق الشخص الذي نُنقل كلامه.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Er sagt, er wäre krank.",
+        "correct": "Er sagt, er sei krank.",
+        "explanation": "عندما تكون صيغة Konjunktiv I واضحة نستخدم sei؛ wäre تُستعمل بديلًا عند الحاجة أو لمعنى افتراضي.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -882,7 +1279,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -895,12 +1297,78 @@
     "review_status": "needs_source",
     "source_failure": "YouTube HTTP 429; public audio access currently requires sign-in.",
     "reading_time_minutes": 7,
-    "summary": "",
+    "summary": "يبني هذا الدرس على أساسيات الكلام غير المباشر ويوسّعها إلى الماضي والمستقبل والأفعال الناقصة، مع الانتباه إلى الضمائر وإشارات الزمان والمكان. الشرح التالي تعليمي تحريري لأن مصدر الفيديو النصي غير متاح حاليًا.",
     "video_outline": [],
     "learning_objectives": [],
-    "explanation": [],
-    "rules_from_video": [],
-    "examples_from_video": [],
+    "explanation": [
+      {
+        "heading": "نقل الماضي",
+        "content": "لنقل حدث سابق نستخدم غالبًا Konjunktiv I من haben أو sein مع Partizip II: Er sagt, er habe gearbeitet. Sie erklärt, sie sei früh gegangen.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "نقل المستقبل",
+        "content": "للمستقبل نستخدم werde مع المصدر: Die Firma erklärt, sie werde die Preise senken. وفي الجملة التابعة يبقى المصدر في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال الناقصة",
+        "content": "يُصرّف Modalverb في Konjunktiv I ويبقى المصدر في النهاية: Er sagt, er müsse länger arbeiten.",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "rules_from_video": [
+      {
+        "rule": "الماضي في الكلام غير المباشر",
+        "explanation": "استخدم habe أو sei بصيغة Konjunktiv I مع Partizip II.",
+        "pattern": "habe/sei + Partizip II",
+        "origin": "editorial_clarification"
+      },
+      {
+        "rule": "المستقبل في الكلام غير المباشر",
+        "explanation": "استخدم werde مع المصدر في نهاية الجملة.",
+        "pattern": "werde + … + Infinitiv",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "examples_from_video": [
+      {
+        "de": "Er berichtet, er habe den Antrag bereits gestellt.",
+        "ar": "يفيد بأنه قدّم الطلب بالفعل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie sagt, sie sei gestern in Berlin angekommen.",
+        "ar": "تقول إنها وصلت إلى برلين أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Sprecher erklärt, die Regierung werde bald reagieren.",
+        "ar": "يوضح المتحدث أن الحكومة سترد قريبًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Studentin meint, sie müsse mehr üben.",
+        "ar": "ترى الطالبة أن عليها أن تتدرب أكثر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er behauptet, man habe ihn falsch verstanden.",
+        "ar": "يدعي أن الناس فهموه بصورة خاطئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie sagte, sie könne an diesem Tag nicht kommen.",
+        "ar": "قالت إنها لا تستطيع الحضور في ذلك اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      }
+    ],
     "vocabulary_from_video": [],
     "teacher_notes": [],
     "exercises_demonstrated": [],
@@ -933,8 +1401,26 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
-    "evidence_checks": []
+    "common_mistakes": [
+      {
+        "wrong": "Er sagt, er habe gestern gearbeitet hier.",
+        "correct": "Er sagt, er habe gestern hier gearbeitet.",
+        "explanation": "يقف Partizip II في نهاية الجملة المنقولة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie sagt, sie werde kommt.",
+        "correct": "Sie sagt, sie werde kommen.",
+        "explanation": "بعد werde يأتي المصدر غير المصرف.",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "evidence_checks": [],
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -1988,6 +2474,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Indirekte Rede، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "من السؤال المباشر إلى غير المباشر",
+        "content": "نحذف ترتيب السؤال المباشر ونبني جملة تابعة. تبقى أداة السؤال في البداية، ثم يأتي الفاعل وبقية العناصر، ويقف الفعل في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تغيير المنظور",
+        "content": "عدّل الضمائر والزمان والمكان بما يناسب موقف الناقل: heute قد تصبح an diesem Tag، وhier قد تصبح dort، وich قد تتحول إلى er أو sie.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2007,6 +2503,42 @@
         "de": "Er möchte wissen, warum sie gegangen sei.",
         "ar": "يريد أن يعرف لماذا غادرت.",
         "note": ""
+      },
+      {
+        "de": "Der Journalist fragt, wie die Regierung das Problem lösen wolle.",
+        "ar": "يسأل الصحفي كيف تريد الحكومة حل المشكلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie möchte wissen, woher die Daten stammten.",
+        "ar": "تريد أن تعرف من أين جاءت البيانات.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er fragte, wer die Verantwortung übernommen habe.",
+        "ar": "سأل من الذي تحمّل المسؤولية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Kundin fragt, wie lange die Lieferung dauere.",
+        "ar": "تسأل الزبونة كم يستغرق التوصيل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Man wollte wissen, weshalb das Treffen abgesagt worden sei.",
+        "ar": "أراد الناس معرفة سبب إلغاء الاجتماع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Prüfer fragte, welche Lösung der Teilnehmer vorschlage.",
+        "ar": "سأل الممتحن أي حل يقترحه المشارك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2036,6 +2568,18 @@
         "wrong": "Er sagt, er ist krank.",
         "correct": "Er sagt, er sei krank.",
         "explanation": "في النقل الرسمي المحايد نستخدم Konjunktiv I."
+      },
+      {
+        "wrong": "Sie fragt, wann beginnt der Kurs.",
+        "correct": "Sie fragt, wann der Kurs beginne.",
+        "explanation": "في السؤال غير المباشر يأتي الفاعل قبل الفعل، والفعل في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Er fragt, ob warum sie fehlt.",
+        "correct": "Er fragt, warum sie fehlt.",
+        "explanation": "مع W-Frage نحتفظ بأداة السؤال ولا نضيف ob.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2071,7 +2615,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -2093,6 +2642,21 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Leseverstehen und Wortschatz، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "قراءة موجهة بالأسئلة",
+        "content": "اقرأ السؤال أولًا وحدد الكلمات المفتاحية، ثم ابحث عن إعادة صياغتها في النص. الإجابة الصحيحة كثيرًا ما تستعمل مرادفًا بدل تكرار كلمات السؤال حرفيًا.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تمييز الرأي عن المعلومة",
+        "content": "انتبه إلى مؤشرات مثل laut der Studie و dem Autor zufolge للمعلومات المنقولة، وإلى meiner Ansicht nach أو der Autor kritisiert للرأي والتقييم.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "استنتاج معنى الكلمة",
+        "content": "افحص الجملة السابقة واللاحقة، والروابط مثل jedoch و deshalb و obwohl؛ فهي تكشف علاقة التضاد أو السبب أو النتيجة وتساعد على استنتاج المعنى.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2112,6 +2676,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Dem Text zufolge hat sich die Situation deutlich verbessert.",
+        "ar": "وفقًا للنص، تحسن الوضع بوضوح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Gegensatz dazu vertritt die Autorin eine kritischere Position.",
+        "ar": "في المقابل تتبنى الكاتبة موقفًا أكثر نقدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Aus diesem Grund wurden zusätzliche Maßnahmen ergriffen.",
+        "ar": "لهذا السبب اتُّخذت إجراءات إضافية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Aussage lässt sich nicht eindeutig aus dem Text ableiten.",
+        "ar": "لا يمكن استنتاج العبارة بوضوح من النص.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Obwohl die Nachfrage gestiegen ist, blieb das Angebot unverändert.",
+        "ar": "على الرغم من ارتفاع الطلب، بقي العرض دون تغيير.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Verfasser weist auf mögliche langfristige Folgen hin.",
+        "ar": "يشير الكاتب إلى عواقب محتملة طويلة المدى.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2131,7 +2731,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich wähle eine Antwort nur, weil sie ein Wort aus dem Text wiederholt.",
+        "correct": "Ich prüfe, ob die Antwort die gesamte Aussage des Textes wiedergibt.",
+        "explanation": "قد يكون تكرار الكلمة فخًا؛ المطلوب مطابقة الفكرة لا كلمة منفردة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich übersetze jedes Wort, bevor ich die Hauptaussage bestimme.",
+        "correct": "Ich bestimme zuerst die Hauptaussage und die logischen Verbindungen.",
+        "explanation": "الترجمة كلمة بكلمة تستهلك الوقت وقد تخفي بنية الحجة.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Leseverstehen und Wortschatz.",
@@ -2165,7 +2778,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -2187,6 +2805,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Verben mit Präpositionen، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "التعلم في مجموعات",
+        "content": "رتّب الأفعال بحسب حرف الجر والحالة: auf + Akkusativ، über + Akkusativ، zu + Dativ، von + Dativ، mit + Dativ. يساعد ذلك على استرجاعها أسرع من قائمة عشوائية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "wo(r)- و da(r)-",
+        "content": "للأشياء نستخدم السؤال wo(r) + Präposition والجواب da(r) + Präposition: Worauf verzichtest du? – Darauf kann ich nicht verzichten. أما الأشخاص فنستخدم حرف الجر مع wen أو wem.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2206,6 +2834,48 @@
         "de": "Ich erinnere mich an den Termin.",
         "ar": "أتذكر الموعد.",
         "note": ""
+      },
+      {
+        "de": "Viele Unternehmen verzichten auf gedruckte Rechnungen.",
+        "ar": "تستغني شركات كثيرة عن الفواتير المطبوعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Studie verfügt über eine breite Datengrundlage.",
+        "ar": "تتوفر للدراسة قاعدة بيانات واسعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Jeder kann zu einer nachhaltigen Entwicklung beitragen.",
+        "ar": "يمكن لكل شخص المساهمة في تنمية مستدامة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Erfolg hängt von einer sorgfältigen Planung ab.",
+        "ar": "يعتمد النجاح على تخطيط دقيق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir müssen uns intensiver mit diesem Thema auseinandersetzen.",
+        "ar": "يجب أن نتناول هذا الموضوع بصورة أعمق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Ergebnisse beziehen sich auf den Zeitraum von 2020 bis 2025.",
+        "ar": "تتعلق النتائج بالفترة من 2020 إلى 2025.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Expertin überzeugte uns von der Wirksamkeit der Methode.",
+        "ar": "أقنعتنا الخبيرة بفاعلية الطريقة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2230,6 +2900,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Das hängt an dem Wetter ab.",
+        "correct": "Das hängt von dem Wetter ab.",
+        "explanation": "abhängen يرتبط بـ von + Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich beschäftige mich über das Thema.",
+        "correct": "Ich beschäftige mich mit dem Thema.",
+        "explanation": "sich beschäftigen يرتبط بـ mit + Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2265,7 +2947,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -2287,6 +2974,21 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Tempora (Tenses)، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "حدث مكتمل في المستقبل",
+        "content": "نستخدم Futur II عندما ننظر من نقطة مستقبلية إلى حدث سيكون قد انتهى قبلها. تظهر معه كثيرًا عبارات مثل bis morgen و bis Ende des Jahres.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "افتراض عن الماضي",
+        "content": "يمكن أيضًا استعماله للتخمين بشأن حدث ماضٍ: Er wird den Zug verpasst haben تعني على الأرجح أنه فاته القطار.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اختيار haben أو sein",
+        "content": "نتبع قاعدة Perfekt نفسها: أفعال الحركة أو تغير الحالة الشائعة تأخذ sein، ومعظم الأفعال الأخرى تأخذ haben.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2306,6 +3008,42 @@
         "de": "Er wird schon angekommen sein.",
         "ar": "يُفترض أنه وصل بالفعل.",
         "note": ""
+      },
+      {
+        "de": "Bis Ende des Monats werden wir das Projekt abgeschlossen haben.",
+        "ar": "بحلول نهاية الشهر سنكون قد أنهينا المشروع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "In zwei Jahren wird sie ihr Studium beendet haben.",
+        "ar": "خلال سنتين ستكون قد أنهت دراستها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wenn du ankommst, werde ich bereits gegessen haben.",
+        "ar": "عندما تصل سأكون قد أكلت بالفعل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er wird die Nachricht noch nicht gelesen haben.",
+        "ar": "يُرجح أنه لم يقرأ الرسالة بعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Gäste werden inzwischen nach Hause gefahren sein.",
+        "ar": "يُفترض أن الضيوف قد عادوا إلى بيوتهم في هذه الأثناء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bis 18 Uhr muss der Bericht fertiggestellt worden sein.",
+        "ar": "يجب أن يكون التقرير قد أُنجز بحلول السادسة مساءً.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2330,6 +3068,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Ich werde den Bericht geschrieben.",
+        "correct": "Ich werde den Bericht geschrieben haben.",
+        "explanation": "يحتاج Futur II إلى haben أو sein بعد Partizip II.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie wird angekommen haben.",
+        "correct": "Sie wird angekommen sein.",
+        "explanation": "ankommen يكون Perfekt الخاص به مع sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2365,7 +3115,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -2380,7 +3135,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 5,
+    "reading_time_minutes": 6,
     "summary": "يشرح الفيديو ضميري الوصل في Genitiv: dessen مع المذكر والمحايد و deren مع المؤنث والجمع، ويؤكد أن الاختيار يعتمد على الاسم المرجعي وأن الاسم بعد الضمير يأتي بلا أداة، ثم يقارن الأسلوب الرسمي بصيغة von الدارجة.",
     "video_outline": [
       {
@@ -2511,6 +3266,18 @@
         "timestamp": "13:51",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Das ist eine Firma, deren Produkte weltweit verkauft werden.",
+        "ar": "هذه شركة تُباع منتجاتها في جميع أنحاء العالم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Junge, dessen Fahrrad gestohlen wurde, rief die Polizei.",
+        "ar": "اتصل الفتى الذي سُرقت دراجته بالشرطة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -2606,7 +3373,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Die Frau, dessen Auto kaputt ist",
+        "correct": "Die Frau, deren Auto kaputt ist",
+        "explanation": "نختار deren لأن الاسم المرجعي Frau مؤنث.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Der Mann, dessen das Haus verkauft wurde",
+        "correct": "Der Mann, dessen Haus verkauft wurde",
+        "explanation": "لا تأتي أداة تعريف بين dessen أو deren والاسم المملوك.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يعرض dessen للمذكر والمحايد.",
@@ -2644,6 +3424,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -2666,6 +3451,21 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Relativpronomen und Satzbau، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "خطوتان لاختيار الضمير",
+        "content": "أولًا خذ الجنس والعدد من الاسم المرجعي. ثانيًا حدد وظيفة الضمير داخل الجملة الموصولة: فاعل Nominativ، مفعول Akkusativ، أو بعد فعل أو حرف جر يطلب Dativ أو Genitiv.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الفعل في النهاية",
+        "content": "الجملة الموصولة جملة تابعة؛ لذلك يقف الفعل المصرف في نهايتها. وإذا وُجد مصدر أو Partizip II تتجمع الأفعال في النهاية وفق القاعدة المناسبة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "حرف الجر قبل الضمير",
+        "content": "إذا احتاج المعنى حرف جر، يوضع قبل ضمير الوصل: die Firma, bei der ich arbeite؛ das Thema, über das wir sprechen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2685,6 +3485,48 @@
         "de": "Die Kollegin, mit der ich arbeite, ist nett.",
         "ar": "الزميلة التي أعمل معها لطيفة.",
         "note": ""
+      },
+      {
+        "de": "Der Mann, der dort wartet, ist mein Vermieter.",
+        "ar": "الرجل الذي ينتظر هناك هو مالك البيت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Buch, das du mir empfohlen hast, war sehr hilfreich.",
+        "ar": "الكتاب الذي نصحتني به كان مفيدًا جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Kollegin, der ich geholfen habe, bedankt sich.",
+        "ar": "الزميلة التي ساعدتها تشكرني.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist die Organisation, für die ich ehrenamtlich arbeite.",
+        "ar": "هذه هي المنظمة التي أعمل لديها تطوعًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Bewerber, dessen Unterlagen vollständig sind, wird eingeladen.",
+        "ar": "سيُدعى المتقدم الذي ملفاته مكتملة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Alles, was er gesagt hat, wurde protokolliert.",
+        "ar": "دُوّن كل ما قاله.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Stadt, in der ich geboren wurde, liegt am Meer.",
+        "ar": "المدينة التي وُلدت فيها تقع على البحر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2709,6 +3551,18 @@
         "wrong": "Der Mann, ich kenne, kommt.",
         "correct": "Der Mann, den ich kenne, kommt.",
         "explanation": "تحتاج الجملة ضمير وصل في Akkusativ لأنه مفعول kennen."
+      },
+      {
+        "wrong": "Die Frau, die ich geholfen habe",
+        "correct": "Die Frau, der ich geholfen habe",
+        "explanation": "helfen يطلب Dativ، ولذلك نستخدم der للمؤنث.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das Thema, das wir darüber sprechen",
+        "correct": "Das Thema, über das wir sprechen",
+        "explanation": "يوضع حرف الجر قبل ضمير الوصل ولا نضيف darüber داخل الجملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2744,7 +3598,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -2766,6 +3625,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Anwendung von Präpositionalobjekten، راقب المعنى الدقيق والسجل وبنية الجملة، ثم أعد الصياغة بأسلوب بديل وتحقق من أن الفرق المقصود ما زال واضحًا."
+      },
+      {
+        "heading": "طريقة الحل",
+        "content": "ابدأ بالفعل، ثم استخرج حرف الجر المحفوظ معه، ثم حدد الحالة. بعد ذلك اختر أداة السؤال: wo(r)- للأشياء، وحرف الجر مع wen أو wem للأشخاص.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الضمائر الإحالية",
+        "content": "عند تجنب تكرار شيء استعمل da(r) + Präposition: Ich freue mich auf den Urlaub. Ich freue mich darauf. لا تستعمل هذه الصيغة عادةً للإشارة إلى الأشخاص.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2785,6 +3654,48 @@
         "de": "Ich erinnere mich an den Termin.",
         "ar": "أتذكر الموعد.",
         "note": ""
+      },
+      {
+        "de": "Worüber beschwert sich der Kunde? – Über die lange Wartezeit.",
+        "ar": "ممَّ يشتكي الزبون؟ من وقت الانتظار الطويل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mit wem hast du dich verabredet? – Mit einer Kollegin.",
+        "ar": "مع من اتفقت على موعد؟ مع زميلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich interessiere mich für digitale Bildung und beschäftige mich täglich damit.",
+        "ar": "أهتم بالتعليم الرقمي وأتناول هذا الموضوع يوميًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Entscheidung hängt davon ab, wie hoch die Kosten sind.",
+        "ar": "يعتمد القرار على مدى ارتفاع التكاليف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir freuen uns darauf, Sie persönlich kennenzulernen.",
+        "ar": "نتطلع إلى التعرف إليكم شخصيًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er entschuldigte sich bei seiner Kollegin für den Fehler.",
+        "ar": "اعتذر لزميلته عن الخطأ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Bevölkerung protestiert gegen die geplante Maßnahme.",
+        "ar": "يحتج السكان على الإجراء المخطط له.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2809,6 +3720,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Wofür hast du gesprochen? – Für meinen Chef.",
+        "correct": "Für wen hast du gesprochen? – Für meinen Chef.",
+        "explanation": "مع الأشخاص نستخدم حرف الجر + wen أو wem، لا wo(r)-.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich freue mich über zu reisen.",
+        "correct": "Ich freue mich darauf, zu reisen.",
+        "explanation": "قبل جملة مصدرية نستعمل الضمير الإحالي المناسب ثم فاصلة وzu + Infinitiv.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2844,7 +3767,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B2",
@@ -2862,12 +3790,36 @@
     "reading_time_minutes": 8,
     "summary": "يشرح الدرس الفرق بين sobald و wenn. تستعمل sobald عندما يقع الحدث الثاني فور تحقق الحدث الأول، بينما يمكن أن تكون wenn زمنية ومحايدة من حيث سرعة التتابع أو شرطية بمعنى إذا. كلتاهما تدخلان جملة تابعة ويأتي الفعل المصرف في نهايتها.",
     "video_outline": [
-      { "heading": "معنى sobald", "summary": "تقديم معنى أول ما أو بمجرد أن من خلال مكالمة تحدث بعد الانتهاء من الطعام.", "timestamp": "00:30" },
-      { "heading": "بناء الجملة", "summary": "وضع الفعل في نهاية الجملة التابعة وقلب ترتيب الجملة الرئيسية عند تقديمها.", "timestamp": "01:25" },
-      { "heading": "الفرق عن wenn الزمنية", "summary": "المقارنة بين التتابع الفوري مع sobald والتوقيت المحايد مع wenn.", "timestamp": "03:04" },
-      { "heading": "استعمالا wenn", "summary": "التمييز بين wenn الزمنية و wenn الشرطية.", "timestamp": "04:47" },
-      { "heading": "متى لا تصلح sobald؟", "summary": "أمثلة شرطية لا تعبّر عن حدث تالٍ مباشر، لذلك تحتاج إلى wenn.", "timestamp": "05:56" },
-      { "heading": "اختبار فوري", "summary": "اختيار الأداة المناسبة في جمل زمنية وشرطية.", "timestamp": "08:35" }
+      {
+        "heading": "معنى sobald",
+        "summary": "تقديم معنى أول ما أو بمجرد أن من خلال مكالمة تحدث بعد الانتهاء من الطعام.",
+        "timestamp": "00:30"
+      },
+      {
+        "heading": "بناء الجملة",
+        "summary": "وضع الفعل في نهاية الجملة التابعة وقلب ترتيب الجملة الرئيسية عند تقديمها.",
+        "timestamp": "01:25"
+      },
+      {
+        "heading": "الفرق عن wenn الزمنية",
+        "summary": "المقارنة بين التتابع الفوري مع sobald والتوقيت المحايد مع wenn.",
+        "timestamp": "03:04"
+      },
+      {
+        "heading": "استعمالا wenn",
+        "summary": "التمييز بين wenn الزمنية و wenn الشرطية.",
+        "timestamp": "04:47"
+      },
+      {
+        "heading": "متى لا تصلح sobald؟",
+        "summary": "أمثلة شرطية لا تعبّر عن حدث تالٍ مباشر، لذلك تحتاج إلى wenn.",
+        "timestamp": "05:56"
+      },
+      {
+        "heading": "اختبار فوري",
+        "summary": "اختيار الأداة المناسبة في جمل زمنية وشرطية.",
+        "timestamp": "08:35"
+      }
     ],
     "learning_objectives": [
       "تمييز التتابع الفوري الذي تعبّر عنه sobald عن الزمن المحايد الذي قد تعبّر عنه wenn.",
@@ -2875,44 +3827,189 @@
       "بناء الجملة التابعة والرئيسية بترتيب فعل صحيح."
     ],
     "explanation": [
-      { "heading": "sobald: الحدث الثاني يبدأ فوراً", "content": "تربط sobald حدثين متتابعين؛ بمجرد انتهاء الحدث في الجملة التابعة يبدأ الحدث الرئيسي مباشرة. لذلك تحمل معنى زمنياً أدق من عندما العامة.", "origin": "video", "source_start": "00:30", "source_end": "01:24" },
-      { "heading": "ترتيب الكلمات", "content": "تدخل sobald و wenn جملة تابعة، فينتقل الفعل المصرف إلى النهاية. وإذا بدأت الجملة بالجملة التابعة، يأتي الفعل المصرف في بداية الجملة الرئيسية بعد الفاصلة مباشرة.", "origin": "video", "source_start": "01:25", "source_end": "02:43" },
-      { "heading": "wenn الزمنية", "content": "يمكن أن تصف wenn وقت وقوع الحدث من دون أن تؤكد أن الحدث الثاني سيقع فوراً. قد تصلح الأداتان في الجملة نفسها، لكن sobald تضيف معنى المباشرة.", "origin": "video", "source_start": "03:04", "source_end": "05:55" },
-      { "heading": "wenn الشرطية", "content": "عندما يكون السؤال تحت أي شرط؟ تكون wenn بمعنى إذا. هنا لا تستبدل عادةً بـ sobald، لأن sobald تغيّر المعنى إلى أول ما وتفترض تتابعاً زمنياً مباشراً.", "origin": "video", "source_start": "05:56", "source_end": "08:34" }
+      {
+        "heading": "sobald: الحدث الثاني يبدأ فوراً",
+        "content": "تربط sobald حدثين متتابعين؛ بمجرد انتهاء الحدث في الجملة التابعة يبدأ الحدث الرئيسي مباشرة. لذلك تحمل معنى زمنياً أدق من عندما العامة.",
+        "origin": "video",
+        "source_start": "00:30",
+        "source_end": "01:24"
+      },
+      {
+        "heading": "ترتيب الكلمات",
+        "content": "تدخل sobald و wenn جملة تابعة، فينتقل الفعل المصرف إلى النهاية. وإذا بدأت الجملة بالجملة التابعة، يأتي الفعل المصرف في بداية الجملة الرئيسية بعد الفاصلة مباشرة.",
+        "origin": "video",
+        "source_start": "01:25",
+        "source_end": "02:43"
+      },
+      {
+        "heading": "wenn الزمنية",
+        "content": "يمكن أن تصف wenn وقت وقوع الحدث من دون أن تؤكد أن الحدث الثاني سيقع فوراً. قد تصلح الأداتان في الجملة نفسها، لكن sobald تضيف معنى المباشرة.",
+        "origin": "video",
+        "source_start": "03:04",
+        "source_end": "05:55"
+      },
+      {
+        "heading": "wenn الشرطية",
+        "content": "عندما يكون السؤال تحت أي شرط؟ تكون wenn بمعنى إذا. هنا لا تستبدل عادةً بـ sobald، لأن sobald تغيّر المعنى إلى أول ما وتفترض تتابعاً زمنياً مباشراً.",
+        "origin": "video",
+        "source_start": "05:56",
+        "source_end": "08:34"
+      }
     ],
     "rules_from_video": [
-      { "rule": "sobald للتتابع المباشر", "explanation": "استعملها عندما يبدأ الحدث الرئيسي مباشرة بعد تحقق الحدث التابع.", "pattern": "Sobald + Subjekt + … + Verb, Verb + Subjekt + …", "timestamp": "00:30" },
-      { "rule": "الفعل في نهاية الجملة التابعة", "explanation": "كل من sobald و wenn أداة ربط لجملة تابعة، ولذلك يأتي الفعل المصرف في النهاية.", "pattern": "…, sobald/wenn + Subjekt + … + Verb.", "timestamp": "01:25" },
-      { "rule": "wenn الشرطية لا تُستبدل بـ sobald", "explanation": "إذا كان المعنى شرطاً لا وقتاً، فإن sobald تعطي معنى زمنياً مختلفاً وغير مقصود.", "pattern": "Wenn + Bedingung, Folge.", "timestamp": "05:56" }
+      {
+        "rule": "sobald للتتابع المباشر",
+        "explanation": "استعملها عندما يبدأ الحدث الرئيسي مباشرة بعد تحقق الحدث التابع.",
+        "pattern": "Sobald + Subjekt + … + Verb, Verb + Subjekt + …",
+        "timestamp": "00:30"
+      },
+      {
+        "rule": "الفعل في نهاية الجملة التابعة",
+        "explanation": "كل من sobald و wenn أداة ربط لجملة تابعة، ولذلك يأتي الفعل المصرف في النهاية.",
+        "pattern": "…, sobald/wenn + Subjekt + … + Verb.",
+        "timestamp": "01:25"
+      },
+      {
+        "rule": "wenn الشرطية لا تُستبدل بـ sobald",
+        "explanation": "إذا كان المعنى شرطاً لا وقتاً، فإن sobald تعطي معنى زمنياً مختلفاً وغير مقصود.",
+        "pattern": "Wenn + Bedingung, Folge.",
+        "timestamp": "05:56"
+      }
     ],
     "examples_from_video": [
-      { "de": "Sobald ich mit dem Essen fertig bin, rufe ich dich an.", "ar": "أول ما أنتهي من الطعام، أتصل بك.", "note": "الحدث الثاني يقع مباشرة.", "timestamp": "00:30", "origin": "video", "verified": true },
-      { "de": "Ich rufe dich an, sobald ich mit dem Essen fertig bin.", "ar": "أتصل بك أول ما أنتهي من الطعام.", "note": "المعنى نفسه مع تقديم الجملة الرئيسية.", "timestamp": "01:58", "origin": "video", "verified": true },
-      { "de": "Sobald ich mehr weiß, melde ich mich direkt bei dir.", "ar": "بمجرد أن أعرف المزيد، سأتواصل معك فوراً.", "note": "sobald تؤكد المباشرة.", "timestamp": "03:04", "origin": "video", "verified": true },
-      { "de": "Wenn du fertig bist, sag mir Bescheid.", "ar": "عندما تنتهي، أخبرني.", "note": "wenn زمنية ومحايدة.", "timestamp": "04:47", "origin": "video", "verified": true },
-      { "de": "Wenn das Essen zu teuer ist, bestelle ich es nicht.", "ar": "إذا كان الطعام غالياً جداً، فلن أطلبه.", "note": "wenn شرطية ولا تناسبها sobald.", "timestamp": "06:20", "origin": "video", "verified": true },
-      { "de": "Wenn das Geschäft geschlossen ist, kommen wir morgen wieder.", "ar": "إذا كان المتجر مغلقاً، نعود غداً.", "note": "وجود غداً يوضح أن المقصود شرط لا تتابع فوري.", "timestamp": "07:03", "origin": "video", "verified": true }
+      {
+        "de": "Sobald ich mit dem Essen fertig bin, rufe ich dich an.",
+        "ar": "أول ما أنتهي من الطعام، أتصل بك.",
+        "note": "الحدث الثاني يقع مباشرة.",
+        "timestamp": "00:30",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich rufe dich an, sobald ich mit dem Essen fertig bin.",
+        "ar": "أتصل بك أول ما أنتهي من الطعام.",
+        "note": "المعنى نفسه مع تقديم الجملة الرئيسية.",
+        "timestamp": "01:58",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Sobald ich mehr weiß, melde ich mich direkt bei dir.",
+        "ar": "بمجرد أن أعرف المزيد، سأتواصل معك فوراً.",
+        "note": "sobald تؤكد المباشرة.",
+        "timestamp": "03:04",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wenn du fertig bist, sag mir Bescheid.",
+        "ar": "عندما تنتهي، أخبرني.",
+        "note": "wenn زمنية ومحايدة.",
+        "timestamp": "04:47",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wenn das Essen zu teuer ist, bestelle ich es nicht.",
+        "ar": "إذا كان الطعام غالياً جداً، فلن أطلبه.",
+        "note": "wenn شرطية ولا تناسبها sobald.",
+        "timestamp": "06:20",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wenn das Geschäft geschlossen ist, kommen wir morgen wieder.",
+        "ar": "إذا كان المتجر مغلقاً، نعود غداً.",
+        "note": "وجود غداً يوضح أن المقصود شرط لا تتابع فوري.",
+        "timestamp": "07:03",
+        "origin": "video",
+        "verified": true
+      }
     ],
     "vocabulary_from_video": [
-      { "de": "sobald", "ar": "بمجرد أن / أول ما", "note": "أداة ربط زمنية", "timestamp": "00:30" },
-      { "de": "wenn", "ar": "عندما أو إذا بحسب السياق", "note": "زمنية أو شرطية", "timestamp": "04:47" },
-      { "de": "direkt", "ar": "مباشرةً", "note": "يبرز معنى التتابع الفوري", "timestamp": "03:30" },
-      { "de": "Bescheid sagen", "ar": "يُخبر / يُعلم", "note": "تعبير شائع", "timestamp": "05:10" }
+      {
+        "de": "sobald",
+        "ar": "بمجرد أن / أول ما",
+        "note": "أداة ربط زمنية",
+        "timestamp": "00:30"
+      },
+      {
+        "de": "wenn",
+        "ar": "عندما أو إذا بحسب السياق",
+        "note": "زمنية أو شرطية",
+        "timestamp": "04:47"
+      },
+      {
+        "de": "direkt",
+        "ar": "مباشرةً",
+        "note": "يبرز معنى التتابع الفوري",
+        "timestamp": "03:30"
+      },
+      {
+        "de": "Bescheid sagen",
+        "ar": "يُخبر / يُعلم",
+        "note": "تعبير شائع",
+        "timestamp": "05:10"
+      }
     ],
     "teacher_notes": [
-      { "text": "لا تستبدل كل wenn بـ sobald؛ حدّد أولاً هل wenn زمنية أم شرطية.", "timestamp": "07:56" },
-      { "text": "قد تكون الجملة صحيحة بالأداتين، لكن sobald تجعل التتابع الفوري جزءاً من المعنى.", "timestamp": "03:30" }
+      {
+        "text": "لا تستبدل كل wenn بـ sobald؛ حدّد أولاً هل wenn زمنية أم شرطية.",
+        "timestamp": "07:56"
+      },
+      {
+        "text": "قد تكون الجملة صحيحة بالأداتين، لكن sobald تجعل التتابع الفوري جزءاً من المعنى.",
+        "timestamp": "03:30"
+      }
     ],
     "exercises_demonstrated": [
-      { "text": "اختيار wenn أو sobald في جملة عن الانتهاء ثم الذهاب إلى شخص آخر.", "timestamp": "08:35" },
-      { "text": "اختيار wenn وحدها في جملة شرطية عن عدم امتلاك المال.", "timestamp": "09:30" }
+      {
+        "text": "اختيار wenn أو sobald في جملة عن الانتهاء ثم الذهاب إلى شخص آخر.",
+        "timestamp": "08:35"
+      },
+      {
+        "text": "اختيار wenn وحدها في جملة شرطية عن عدم امتلاك المال.",
+        "timestamp": "09:30"
+      }
     ],
     "tables": [
-      { "title": "مقارنة سريعة", "headers": ["الأداة", "السؤال", "المعنى"], "rows": [["sobald", "Wann direkt danach?", "أول ما؛ تتابع مباشر"], ["wenn (temporal)", "Wann?", "عندما؛ توقيت محايد"], ["wenn (konditional)", "Unter welcher Bedingung?", "إذا؛ شرط"]] }
+      {
+        "title": "مقارنة سريعة",
+        "headers": [
+          "الأداة",
+          "السؤال",
+          "المعنى"
+        ],
+        "rows": [
+          [
+            "sobald",
+            "Wann direkt danach?",
+            "أول ما؛ تتابع مباشر"
+          ],
+          [
+            "wenn (temporal)",
+            "Wann?",
+            "عندما؛ توقيت محايد"
+          ],
+          [
+            "wenn (konditional)",
+            "Unter welcher Bedingung?",
+            "إذا؛ شرط"
+          ]
+        ]
+      }
     ],
     "common_mistakes": [
-      { "wrong": "Sobald das Geschäft geschlossen ist, kommen wir morgen wieder.", "correct": "Wenn das Geschäft geschlossen ist, kommen wir morgen wieder.", "explanation": "المقصود شرط، كما أن العودة غداً ليست نتيجة مباشرة." },
-      { "wrong": "Sobald ich bin fertig, rufe ich dich an.", "correct": "Sobald ich fertig bin, rufe ich dich an.", "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة." }
+      {
+        "wrong": "Sobald das Geschäft geschlossen ist, kommen wir morgen wieder.",
+        "correct": "Wenn das Geschäft geschlossen ist, kommen wir morgen wieder.",
+        "explanation": "المقصود شرط، كما أن العودة غداً ليست نتيجة مباشرة."
+      },
+      {
+        "wrong": "Sobald ich bin fertig, rufe ich dich an.",
+        "correct": "Sobald ich fertig bin, rufe ich dich an.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
     ],
     "quick_recap": [
       "sobald تعني أن الحدث التالي يبدأ مباشرة بعد تحقق الحدث الأول.",
@@ -2920,21 +4017,75 @@
       "الفعل المصرف يأتي في نهاية الجملة التابعة مع الأداتين."
     ],
     "task_preparation": [
-      { "task_index": 0, "guidance": "ابدأ بالسؤال: هل العلاقة زمنية أم شرطية، وهل توجد مباشرة بين الحدثين؟", "video_required": false },
-      { "task_index": 1, "guidance": "حدّد الحدث الأول والثاني، ثم ضع الفعل المصرف في نهاية الجملة التابعة.", "video_required": false },
-      { "task_index": 2, "guidance": "اختبر معنى wenn بسؤال Wann أو Unter welcher Bedingung قبل الاستبدال.", "video_required": false },
-      { "task_index": 3, "guidance": "راجع الأداة وموقع فعل الجملة التابعة ثم انقلاب الفعل والفاعل في الجملة الرئيسية.", "video_required": false },
-      { "task_index": 4, "guidance": "وزّع الأدوات الأربع على مواقف واضحة، ثم راجع أن sofort مفهوم في جمل sobald فقط.", "video_required": false }
+      {
+        "task_index": 0,
+        "guidance": "ابدأ بالسؤال: هل العلاقة زمنية أم شرطية، وهل توجد مباشرة بين الحدثين؟",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "حدّد الحدث الأول والثاني، ثم ضع الفعل المصرف في نهاية الجملة التابعة.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اختبر معنى wenn بسؤال Wann أو Unter welcher Bedingung قبل الاستبدال.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "راجع الأداة وموقع فعل الجملة التابعة ثم انقلاب الفعل والفاعل في الجملة الرئيسية.",
+        "video_required": false
+      },
+      {
+        "task_index": 4,
+        "guidance": "وزّع الأدوات الأربع على مواقف واضحة، ثم راجع أن sofort مفهوم في جمل sobald فقط.",
+        "video_required": false
+      }
     ],
     "evidence_checks": [
-      { "claim": "يعرّف sobald بمعنى أول ما أو بمجرد أن.", "timestamp": "00:30", "verified": true },
-      { "claim": "يشرح انتقال الفعل إلى نهاية الجملة التابعة.", "timestamp": "01:25", "verified": true },
-      { "claim": "يقارن Sobald ich mehr weiß بـ Wenn ich mehr weiß.", "timestamp": "03:04", "verified": true },
-      { "claim": "يقسم wenn إلى زمنية وشرطية.", "timestamp": "04:47", "verified": true },
-      { "claim": "يبيّن أن sobald لا تناسب الشرط المتعلق بسعر الطعام.", "timestamp": "06:20", "verified": true },
-      { "claim": "يختبر الاختيار بين wenn و sobald في نهاية الفيديو.", "timestamp": "08:35", "verified": true }
+      {
+        "claim": "يعرّف sobald بمعنى أول ما أو بمجرد أن.",
+        "timestamp": "00:30",
+        "verified": true
+      },
+      {
+        "claim": "يشرح انتقال الفعل إلى نهاية الجملة التابعة.",
+        "timestamp": "01:25",
+        "verified": true
+      },
+      {
+        "claim": "يقارن Sobald ich mehr weiß بـ Wenn ich mehr weiß.",
+        "timestamp": "03:04",
+        "verified": true
+      },
+      {
+        "claim": "يقسم wenn إلى زمنية وشرطية.",
+        "timestamp": "04:47",
+        "verified": true
+      },
+      {
+        "claim": "يبيّن أن sobald لا تناسب الشرط المتعلق بسعر الطعام.",
+        "timestamp": "06:20",
+        "verified": true
+      },
+      {
+        "claim": "يختبر الاختيار بين wenn و sobald في نهاية الفيديو.",
+        "timestamp": "08:35",
+        "verified": true
+      }
     ],
-    "completeness": { "meaningful_source_segments": 297, "documented_sections": 6, "german_examples_detected": 6, "german_examples_documented": 6, "vocabulary_items_detected": 4, "vocabulary_items_documented": 4, "beginning_represented": true, "middle_represented": true, "end_represented": true }
+    "completeness": {
+      "meaningful_source_segments": 297,
+      "documented_sections": 6,
+      "german_examples_detected": 6,
+      "german_examples_documented": 6,
+      "vocabulary_items_detected": 4,
+      "vocabulary_items_documented": 4,
+      "beginning_represented": true,
+      "middle_represented": true,
+      "end_represented": true
+    }
   },
   {
     "level": "B2",
@@ -2952,13 +4103,41 @@
     "reading_time_minutes": 9,
     "summary": "يشرح الدرس أن solange تحدد المدة التي تبقى فيها نتيجة أو قاعدة سارية، وغالباً تجمع بين المدة والشرط. أما während فتركز على أن حدثين يقعان في الوقت نفسه من دون أن تجعل استمرار أحدهما شرطاً لاستمرار الآخر. الأداتان تدخلان جملة تابعة ويأتي الفعل في نهايتها.",
     "video_outline": [
-      { "heading": "معنى solange", "summary": "شرح معنى طالما أو ما دام وربط المدة بشرط مستمر.", "timestamp": "00:31" },
-      { "heading": "أمثلة من الحياة اليومية", "summary": "تطبيق solange على خطة ومال يكفيان طوال مدة معينة.", "timestamp": "02:35" },
-      { "heading": "الفرق عن während", "summary": "solange تضع حداً زمنياً وقد تضيف شرطاً، بينما während تصف التزامن فقط.", "timestamp": "03:48" },
-      { "heading": "خلاصة الفرق", "summary": "مقارنة مباشرة بين المدة المشروطة والتزامن المحايد.", "timestamp": "05:32" },
-      { "heading": "أمثلة متقدمة", "summary": "استعمال solange في التعبير عن التعلم من الأخطاء وقواعد الحياة اليومية.", "timestamp": "06:49" },
-      { "heading": "اختبار فوري", "summary": "اختيار الأداة الصحيحة وضبط ترتيب الفعل.", "timestamp": "08:43" },
-      { "heading": "الخاتمة", "summary": "جملة تحفيزية تلخص استعمال solange مع شرط مستمر.", "timestamp": "12:32" }
+      {
+        "heading": "معنى solange",
+        "summary": "شرح معنى طالما أو ما دام وربط المدة بشرط مستمر.",
+        "timestamp": "00:31"
+      },
+      {
+        "heading": "أمثلة من الحياة اليومية",
+        "summary": "تطبيق solange على خطة ومال يكفيان طوال مدة معينة.",
+        "timestamp": "02:35"
+      },
+      {
+        "heading": "الفرق عن während",
+        "summary": "solange تضع حداً زمنياً وقد تضيف شرطاً، بينما während تصف التزامن فقط.",
+        "timestamp": "03:48"
+      },
+      {
+        "heading": "خلاصة الفرق",
+        "summary": "مقارنة مباشرة بين المدة المشروطة والتزامن المحايد.",
+        "timestamp": "05:32"
+      },
+      {
+        "heading": "أمثلة متقدمة",
+        "summary": "استعمال solange في التعبير عن التعلم من الأخطاء وقواعد الحياة اليومية.",
+        "timestamp": "06:49"
+      },
+      {
+        "heading": "اختبار فوري",
+        "summary": "اختيار الأداة الصحيحة وضبط ترتيب الفعل.",
+        "timestamp": "08:43"
+      },
+      {
+        "heading": "الخاتمة",
+        "summary": "جملة تحفيزية تلخص استعمال solange مع شرط مستمر.",
+        "timestamp": "12:32"
+      }
     ],
     "learning_objectives": [
       "فهم كيف تجمع solange بين مدة الاستمرار وشرط بقاء النتيجة.",
@@ -2966,46 +4145,194 @@
       "اختيار الأداة الأنسب وضبط ترتيب الفعل في الجملة التابعة."
     ],
     "explanation": [
-      { "heading": "solange: مدة وشرط مستمر", "content": "تعني solange طالما أو ما دام. تبقى نتيجة الجملة الرئيسية صحيحة طوال استمرار الحالة المذكورة في الجملة التابعة، وتنتهي صلاحية النتيجة غالباً بانتهاء تلك الحالة.", "origin": "video", "source_start": "00:31", "source_end": "02:34" },
-      { "heading": "مرونة ترتيب الجملتين", "content": "يمكن تقديم جملة solange أو تأخيرها. في الجملة التابعة يأتي الفعل في النهاية، وعند تقديمها تبدأ الجملة الرئيسية بالفعل المصرف بعد الفاصلة.", "origin": "video", "source_start": "01:45", "source_end": "02:34" },
-      { "heading": "während: تزامن فقط", "content": "تربط während حدثين يقعان في الوقت نفسه. لا تقول وحدها إن استمرار الحدث الأول شرط لاستمرار الثاني، بل تركز على التزامن.", "origin": "video", "source_start": "03:48", "source_end": "05:31" },
-      { "heading": "الاختيار بحسب المقصود", "content": "قد تكون الجملة صحيحة بالأداتين، لكن solange تبرز كامل المدة والشرط المستمر، بينما während تكتفي بوصف ما يحدث بالتزامن.", "origin": "video", "source_start": "05:32", "source_end": "08:42" }
+      {
+        "heading": "solange: مدة وشرط مستمر",
+        "content": "تعني solange طالما أو ما دام. تبقى نتيجة الجملة الرئيسية صحيحة طوال استمرار الحالة المذكورة في الجملة التابعة، وتنتهي صلاحية النتيجة غالباً بانتهاء تلك الحالة.",
+        "origin": "video",
+        "source_start": "00:31",
+        "source_end": "02:34"
+      },
+      {
+        "heading": "مرونة ترتيب الجملتين",
+        "content": "يمكن تقديم جملة solange أو تأخيرها. في الجملة التابعة يأتي الفعل في النهاية، وعند تقديمها تبدأ الجملة الرئيسية بالفعل المصرف بعد الفاصلة.",
+        "origin": "video",
+        "source_start": "01:45",
+        "source_end": "02:34"
+      },
+      {
+        "heading": "während: تزامن فقط",
+        "content": "تربط während حدثين يقعان في الوقت نفسه. لا تقول وحدها إن استمرار الحدث الأول شرط لاستمرار الثاني، بل تركز على التزامن.",
+        "origin": "video",
+        "source_start": "03:48",
+        "source_end": "05:31"
+      },
+      {
+        "heading": "الاختيار بحسب المقصود",
+        "content": "قد تكون الجملة صحيحة بالأداتين، لكن solange تبرز كامل المدة والشرط المستمر، بينما während تكتفي بوصف ما يحدث بالتزامن.",
+        "origin": "video",
+        "source_start": "05:32",
+        "source_end": "08:42"
+      }
     ],
     "rules_from_video": [
-      { "rule": "solange تحدد مدة صلاحية النتيجة", "explanation": "تبقى نتيجة الجملة الرئيسية قائمة ما دام الشرط أو الوضع في الجملة التابعة مستمراً.", "pattern": "Solange + Subjekt + … + Verb, Verb + Subjekt + …", "timestamp": "00:31" },
-      { "rule": "während تصف التزامن", "explanation": "استعملها عندما تريد القول إن حدثين يقعان في الوقت نفسه بلا شرط مستمر.", "pattern": "Während + Subjekt + … + Verb, Verb + Subjekt + …", "timestamp": "03:48" },
-      { "rule": "الفعل في نهاية الجملة التابعة", "explanation": "تدفع الأداتان الفعل المصرف إلى نهاية الجملة التي تدخلان عليها.", "pattern": "…, solange/während + Subjekt + … + Verb.", "timestamp": "02:00" }
+      {
+        "rule": "solange تحدد مدة صلاحية النتيجة",
+        "explanation": "تبقى نتيجة الجملة الرئيسية قائمة ما دام الشرط أو الوضع في الجملة التابعة مستمراً.",
+        "pattern": "Solange + Subjekt + … + Verb, Verb + Subjekt + …",
+        "timestamp": "00:31"
+      },
+      {
+        "rule": "während تصف التزامن",
+        "explanation": "استعملها عندما تريد القول إن حدثين يقعان في الوقت نفسه بلا شرط مستمر.",
+        "pattern": "Während + Subjekt + … + Verb, Verb + Subjekt + …",
+        "timestamp": "03:48"
+      },
+      {
+        "rule": "الفعل في نهاية الجملة التابعة",
+        "explanation": "تدفع الأداتان الفعل المصرف إلى نهاية الجملة التي تدخلان عليها.",
+        "pattern": "…, solange/während + Subjekt + … + Verb.",
+        "timestamp": "02:00"
+      }
     ],
     "examples_from_video": [
-      { "de": "Solange du ruhig bist, kannst du hier bleiben.", "ar": "طالما أنت هادئ، يمكنك البقاء هنا.", "note": "البقاء مرتبط باستمرار الهدوء.", "timestamp": "00:31", "origin": "video", "verified": true },
-      { "de": "Solange wir uns an den Plan halten, sollten wir rechtzeitig fertig werden.", "ar": "طالما نلتزم بالخطة، يفترض أن ننتهي في الوقت المحدد.", "note": "النتيجة صحيحة طوال استمرار الالتزام.", "timestamp": "02:35", "origin": "video", "verified": true },
-      { "de": "Solange ich studiere, arbeite ich als Kellner.", "ar": "طالما أنني أدرس، أعمل نادلاً.", "note": "فترة الدراسة تحدد مدة العمل.", "timestamp": "03:48", "origin": "video", "verified": true },
-      { "de": "Während ich studiere, arbeite ich als Kellner.", "ar": "أثناء دراستي، أعمل نادلاً.", "note": "التركيز على وقوع النشاطين في الوقت نفسه.", "timestamp": "04:15", "origin": "video", "verified": true },
-      { "de": "Solange man bereit ist, aus seinen Fehlern zu lernen, kann man sich weiterentwickeln.", "ar": "طالما أن المرء مستعد للتعلم من أخطائه، يمكنه أن يتطور.", "note": "صياغة مفيدة لإبداء الرأي في مستوى B2.", "timestamp": "06:49", "origin": "video", "verified": true },
-      { "de": "Du darfst mein Auto benutzen, solange du vorsichtig fährst.", "ar": "يمكنك استعمال سيارتي طالما تقود بحذر.", "note": "الحذر شرط يجب أن يستمر طوال الاستعمال.", "timestamp": "10:45", "origin": "video", "verified": true }
+      {
+        "de": "Solange du ruhig bist, kannst du hier bleiben.",
+        "ar": "طالما أنت هادئ، يمكنك البقاء هنا.",
+        "note": "البقاء مرتبط باستمرار الهدوء.",
+        "timestamp": "00:31",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Solange wir uns an den Plan halten, sollten wir rechtzeitig fertig werden.",
+        "ar": "طالما نلتزم بالخطة، يفترض أن ننتهي في الوقت المحدد.",
+        "note": "النتيجة صحيحة طوال استمرار الالتزام.",
+        "timestamp": "02:35",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Solange ich studiere, arbeite ich als Kellner.",
+        "ar": "طالما أنني أدرس، أعمل نادلاً.",
+        "note": "فترة الدراسة تحدد مدة العمل.",
+        "timestamp": "03:48",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Während ich studiere, arbeite ich als Kellner.",
+        "ar": "أثناء دراستي، أعمل نادلاً.",
+        "note": "التركيز على وقوع النشاطين في الوقت نفسه.",
+        "timestamp": "04:15",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Solange man bereit ist, aus seinen Fehlern zu lernen, kann man sich weiterentwickeln.",
+        "ar": "طالما أن المرء مستعد للتعلم من أخطائه، يمكنه أن يتطور.",
+        "note": "صياغة مفيدة لإبداء الرأي في مستوى B2.",
+        "timestamp": "06:49",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Du darfst mein Auto benutzen, solange du vorsichtig fährst.",
+        "ar": "يمكنك استعمال سيارتي طالما تقود بحذر.",
+        "note": "الحذر شرط يجب أن يستمر طوال الاستعمال.",
+        "timestamp": "10:45",
+        "origin": "video",
+        "verified": true
+      }
     ],
     "vocabulary_from_video": [
-      { "de": "solange", "ar": "طالما / ما دام", "note": "مدة مع شرط مستمر غالباً", "timestamp": "00:31" },
-      { "de": "während", "ar": "بينما / أثناء", "note": "تزامن حدثين", "timestamp": "03:48" },
-      { "de": "sich an den Plan halten", "ar": "يلتزم بالخطة", "note": "تعبير انعكاسي", "timestamp": "02:35" },
-      { "de": "bereit sein, etwas zu tun", "ar": "يكون مستعداً لفعل شيء", "note": "تركيب مع zu + Infinitiv", "timestamp": "07:10" },
-      { "de": "sich weiterentwickeln", "ar": "يتطور أكثر", "note": "فعل انعكاسي", "timestamp": "07:25" }
+      {
+        "de": "solange",
+        "ar": "طالما / ما دام",
+        "note": "مدة مع شرط مستمر غالباً",
+        "timestamp": "00:31"
+      },
+      {
+        "de": "während",
+        "ar": "بينما / أثناء",
+        "note": "تزامن حدثين",
+        "timestamp": "03:48"
+      },
+      {
+        "de": "sich an den Plan halten",
+        "ar": "يلتزم بالخطة",
+        "note": "تعبير انعكاسي",
+        "timestamp": "02:35"
+      },
+      {
+        "de": "bereit sein, etwas zu tun",
+        "ar": "يكون مستعداً لفعل شيء",
+        "note": "تركيب مع zu + Infinitiv",
+        "timestamp": "07:10"
+      },
+      {
+        "de": "sich weiterentwickeln",
+        "ar": "يتطور أكثر",
+        "note": "فعل انعكاسي",
+        "timestamp": "07:25"
+      }
     ],
     "teacher_notes": [
-      { "text": "اسأل هل استمرار النتيجة مرتبط باستمرار الحالة؛ إذا نعم فغالباً solange هي الأنسب.", "timestamp": "05:32" },
-      { "text": "إذا كان المقصود فقط أن نشاطين يحدثان معاً، فاستعمل während.", "timestamp": "05:32" }
+      {
+        "text": "اسأل هل استمرار النتيجة مرتبط باستمرار الحالة؛ إذا نعم فغالباً solange هي الأنسب.",
+        "timestamp": "05:32"
+      },
+      {
+        "text": "إذا كان المقصود فقط أن نشاطين يحدثان معاً، فاستعمل während.",
+        "timestamp": "05:32"
+      }
     ],
     "exercises_demonstrated": [
-      { "text": "اختيار ترتيب الفعل الصحيح في جملة تبدأ بـ solange.", "timestamp": "08:43" },
-      { "text": "مقارنة solange و während في جملة عن الدراسة والهاتف الصامت.", "timestamp": "09:45" },
-      { "text": "اختيار solange في شرط السماح باستعمال السيارة.", "timestamp": "10:45" }
+      {
+        "text": "اختيار ترتيب الفعل الصحيح في جملة تبدأ بـ solange.",
+        "timestamp": "08:43"
+      },
+      {
+        "text": "مقارنة solange و während في جملة عن الدراسة والهاتف الصامت.",
+        "timestamp": "09:45"
+      },
+      {
+        "text": "اختيار solange في شرط السماح باستعمال السيارة.",
+        "timestamp": "10:45"
+      }
     ],
     "tables": [
-      { "title": "solange و während", "headers": ["الأداة", "التركيز", "العلاقة"], "rows": [["solange", "كامل مدة الحالة", "مدة وقد تكون شرطاً مستمراً"], ["während", "حدوث شيئين معاً", "تزامن من دون شرط لازم"]] }
+      {
+        "title": "solange و während",
+        "headers": [
+          "الأداة",
+          "التركيز",
+          "العلاقة"
+        ],
+        "rows": [
+          [
+            "solange",
+            "كامل مدة الحالة",
+            "مدة وقد تكون شرطاً مستمراً"
+          ],
+          [
+            "während",
+            "حدوث شيئين معاً",
+            "تزامن من دون شرط لازم"
+          ]
+        ]
+      }
     ],
     "common_mistakes": [
-      { "wrong": "Du darfst mein Auto benutzen, während du vorsichtig fährst.", "correct": "Du darfst mein Auto benutzen, solange du vorsichtig fährst.", "explanation": "السماح مرتبط باستمرار الحذر، وليس مجرد تزامن الحدثين." },
-      { "wrong": "Solange ich habe den Gips, kann ich nicht Auto fahren.", "correct": "Solange ich den Gips habe, kann ich nicht Auto fahren.", "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة." }
+      {
+        "wrong": "Du darfst mein Auto benutzen, während du vorsichtig fährst.",
+        "correct": "Du darfst mein Auto benutzen, solange du vorsichtig fährst.",
+        "explanation": "السماح مرتبط باستمرار الحذر، وليس مجرد تزامن الحدثين."
+      },
+      {
+        "wrong": "Solange ich habe den Gips, kann ich nicht Auto fahren.",
+        "correct": "Solange ich den Gips habe, kann ich nicht Auto fahren.",
+        "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      }
     ],
     "quick_recap": [
       "solange تحدد مدة استمرار نتيجة وقد تجعل الحالة شرطاً لها.",
@@ -3013,20 +4340,74 @@
       "يأتي الفعل المصرف في نهاية الجملة التابعة مع الأداتين."
     ],
     "task_preparation": [
-      { "task_index": 0, "guidance": "حدّد هل العلاقة مدة مشروطة أم مجرد تزامن، ثم اشرح الفرق بكلماتك.", "video_required": false },
-      { "task_index": 1, "guidance": "ابحث عن نتيجة تستمر بقدر استمرار الحالة لاختيار solange، وإلا اختبر معنى während.", "video_required": false },
-      { "task_index": 2, "guidance": "عند تقديم الجملة التابعة، راجع نهاية فعلها وبداية الجملة الرئيسية بالفعل المصرف.", "video_required": false },
-      { "task_index": 3, "guidance": "صحح المعنى أولاً ثم ترتيب الكلمات، ولا تغيّر عناصر الجملة الأخرى بلا حاجة.", "video_required": false },
-      { "task_index": 4, "guidance": "اجعل كل أداة تخدم علاقة واضحة، وراجع أن جمل solange تحافظ على النتيجة طوال المدة.", "video_required": false }
+      {
+        "task_index": 0,
+        "guidance": "حدّد هل العلاقة مدة مشروطة أم مجرد تزامن، ثم اشرح الفرق بكلماتك.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن نتيجة تستمر بقدر استمرار الحالة لاختيار solange، وإلا اختبر معنى während.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "عند تقديم الجملة التابعة، راجع نهاية فعلها وبداية الجملة الرئيسية بالفعل المصرف.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "صحح المعنى أولاً ثم ترتيب الكلمات، ولا تغيّر عناصر الجملة الأخرى بلا حاجة.",
+        "video_required": false
+      },
+      {
+        "task_index": 4,
+        "guidance": "اجعل كل أداة تخدم علاقة واضحة، وراجع أن جمل solange تحافظ على النتيجة طوال المدة.",
+        "video_required": false
+      }
     ],
     "evidence_checks": [
-      { "claim": "يعرّف solange بمعنى طالما أو ما دام.", "timestamp": "00:31", "verified": true },
-      { "claim": "يربط solange بين المدة والشرط المستمر.", "timestamp": "01:20", "verified": true },
-      { "claim": "يقارن Solange ich studiere بـ Während ich studiere.", "timestamp": "03:48", "verified": true },
-      { "claim": "يشرح أن während تركز على التزامن فقط.", "timestamp": "04:40", "verified": true },
-      { "claim": "يقدم مثال التعلم من الأخطاء كصياغة مفيدة لمستوى B2.", "timestamp": "06:49", "verified": true },
-      { "claim": "يختبر الفرق من خلال مثال الهاتف الصامت والسيارة.", "timestamp": "09:45", "verified": true }
+      {
+        "claim": "يعرّف solange بمعنى طالما أو ما دام.",
+        "timestamp": "00:31",
+        "verified": true
+      },
+      {
+        "claim": "يربط solange بين المدة والشرط المستمر.",
+        "timestamp": "01:20",
+        "verified": true
+      },
+      {
+        "claim": "يقارن Solange ich studiere بـ Während ich studiere.",
+        "timestamp": "03:48",
+        "verified": true
+      },
+      {
+        "claim": "يشرح أن während تركز على التزامن فقط.",
+        "timestamp": "04:40",
+        "verified": true
+      },
+      {
+        "claim": "يقدم مثال التعلم من الأخطاء كصياغة مفيدة لمستوى B2.",
+        "timestamp": "06:49",
+        "verified": true
+      },
+      {
+        "claim": "يختبر الفرق من خلال مثال الهاتف الصامت والسيارة.",
+        "timestamp": "09:45",
+        "verified": true
+      }
     ],
-    "completeness": { "meaningful_source_segments": 405, "documented_sections": 7, "german_examples_detected": 6, "german_examples_documented": 6, "vocabulary_items_detected": 5, "vocabulary_items_documented": 5, "beginning_represented": true, "middle_represented": true, "end_represented": true }
+    "completeness": {
+      "meaningful_source_segments": 405,
+      "documented_sections": 7,
+      "german_examples_detected": 6,
+      "german_examples_documented": 6,
+      "vocabulary_items_detected": 5,
+      "vocabulary_items_documented": 5,
+      "beginning_represented": true,
+      "middle_represented": true,
+      "end_represented": true
+    }
   }
 ]

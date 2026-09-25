@@ -12,7 +12,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "يعرّف الفيديو جملة المصدر مع zu بوصفها جملة جانبية بلا فاعل مستقل، ويشرح موقع المصدر وكتابة zu مع الأفعال القابلة للانفصال، ثم يعرض استعمالها بعد أفعال وصفات وأسماء ويختم باختبار.",
     "video_outline": [
       {
@@ -143,6 +143,18 @@
         "timestamp": "13:15",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Ich hoffe, bald eine passende Stelle zu finden.",
+        "ar": "آمل أن أجد قريبًا وظيفة مناسبة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es ist wichtig, regelmäßig Pausen zu machen.",
+        "ar": "من المهم أخذ فترات راحة بانتظام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -233,7 +245,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich hoffe, finde eine Stelle.",
+        "correct": "Ich hoffe, eine Stelle zu finden.",
+        "explanation": "عندما يشترك الفعلان في الفاعل، يأتي المصدر مع zu في نهاية التركيب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich versuche, zu pünktlich kommen.",
+        "correct": "Ich versuche, pünktlich zu kommen.",
+        "explanation": "تأتي zu مباشرة قبل المصدر البسيط.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يعرّفها كجملة جانبية بلا فاعل.",
@@ -271,6 +296,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -293,6 +323,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Satzstruktur، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "متى نحذف zu؟",
+        "content": "لا تأتي zu بعد الأفعال الناقصة مثل können و müssen، وبعد werden، وكذلك في تراكيب شائعة مع lassen وأفعال الإدراك والحركة مثل sehen، hören و gehen.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مصدران في نهاية الجملة",
+        "content": "يبقى الفعل الثاني في المصدر من دون zu: Ich kann heute kommen. ومع Perfekt لبعض هذه التراكيب يظهر Ersatzinfinitiv: Ich habe ihn kommen sehen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -312,6 +352,36 @@
         "de": "Ich höre ihn singen.",
         "ar": "أسمعه يغني.",
         "note": ""
+      },
+      {
+        "de": "Wir müssen morgen früh aufstehen.",
+        "ar": "يجب أن نستيقظ غدًا باكرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich höre die Kinder im Garten spielen.",
+        "ar": "أسمع الأطفال يلعبون في الحديقة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie geht nach der Arbeit einkaufen.",
+        "ar": "تذهب للتسوق بعد العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bitte lass mich ausreden.",
+        "ar": "دعني أكمل كلامي من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er bleibt trotz des Lärms ruhig sitzen.",
+        "ar": "يبقى جالسًا بهدوء رغم الضوضاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -336,6 +406,18 @@
         "wrong": "Ich versuche, zu früher schlafen.",
         "correct": "Ich versuche, früher zu schlafen.",
         "explanation": "تأتي zu مباشرة قبل المصدر البسيط."
+      },
+      {
+        "wrong": "Ich muss zu arbeiten.",
+        "correct": "Ich muss arbeiten.",
+        "explanation": "بعد Modalverb يأتي المصدر بلا zu.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie lässt ihn zu warten.",
+        "correct": "Sie lässt ihn warten.",
+        "explanation": "بعد lassen يأتي المصدر بلا zu.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -366,7 +448,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -388,6 +475,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Infinitiv mit zu، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "الفعل يفتح تركيب المصدر",
+        "content": "أفعال مثل versuchen، planen، hoffen، vergessen، versprechen و scheinen تُستعمل كثيرًا مع zu + Infinitiv عندما يتعلق الفعلان بالشخص نفسه.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال المنفصلة",
+        "content": "مع الفعل المنفصل تدخل zu بين السابقة والجذر: anzufangen، einzukaufen، teilzunehmen. أما الأفعال غير المنفصلة فتبقى كلمة واحدة: zu verstehen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -407,6 +504,42 @@
         "de": "Er hat vergessen, mich anzurufen.",
         "ar": "نسي أن يتصل بي.",
         "note": ""
+      },
+      {
+        "de": "Sie versucht, weniger Zucker zu essen.",
+        "ar": "تحاول أن تتناول سكرًا أقل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir planen, im Sommer umzuziehen.",
+        "ar": "نخطط للانتقال في الصيف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vergiss nicht, die Tür abzuschließen.",
+        "ar": "لا تنسَ إغلاق الباب بالمفتاح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er hat versprochen, pünktlich zu sein.",
+        "ar": "وعد بأن يكون في الموعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Problem scheint schwer zu lösen zu sein.",
+        "ar": "تبدو المشكلة صعبة الحل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich freue mich darauf, am Kurs teilzunehmen.",
+        "ar": "أتطلع إلى المشاركة في الدورة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -431,6 +564,18 @@
         "wrong": "Ich versuche, zu früher schlafen.",
         "correct": "Ich versuche, früher zu schlafen.",
         "explanation": "تأتي zu مباشرة قبل المصدر البسيط."
+      },
+      {
+        "wrong": "Ich versuche, zu weniger arbeiten.",
+        "correct": "Ich versuche, weniger zu arbeiten.",
+        "explanation": "توضع zu قبل المصدر، لا قبل بقية عناصر الجملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich plane, zu umziehen.",
+        "correct": "Ich plane, umzuziehen.",
+        "explanation": "في الفعل المنفصل تدخل zu بين السابقة والجذر.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -461,7 +606,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -483,6 +633,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Finalsätze (Purpose Clauses)، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "um … zu مع فاعل واحد",
+        "content": "نستخدم um … zu عندما يكون فاعل الجملة الرئيسية هو نفسه منفذ الفعل في جملة الهدف. لا نكرر الفاعل داخل تركيب المصدر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "damit مع فاعلين",
+        "content": "نستخدم damit عندما يختلف الفاعل، أو عندما نريد جملة كاملة بفعل مصرف. يقف الفعل في نهاية جملة damit.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -502,6 +662,36 @@
         "de": "Ich spreche langsam, damit du mich verstehst.",
         "ar": "أتحدث ببطء لكي تفهمني.",
         "note": ""
+      },
+      {
+        "de": "Ich lerne jeden Tag, um die Prüfung zu bestehen.",
+        "ar": "أدرس كل يوم لكي أنجح في الامتحان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie fährt früher los, um nicht im Stau zu stehen.",
+        "ar": "تنطلق أبكر كي لا تعلق في الازدحام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich spreche langsam, damit alle mich verstehen.",
+        "ar": "أتحدث ببطء لكي يفهمني الجميع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir schicken dir die Adresse, damit du den Ort findest.",
+        "ar": "نرسل إليك العنوان لكي تجد المكان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er spart Geld, um sich ein Auto kaufen zu können.",
+        "ar": "يدخر المال كي يتمكن من شراء سيارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -521,6 +711,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Ich lerne, damit die Prüfung bestehen.",
+        "correct": "Ich lerne, um die Prüfung zu bestehen.",
+        "explanation": "الفاعل واحد، لذا نستخدم um … zu.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich erkläre es dir, um du es verstehst.",
+        "correct": "Ich erkläre es dir, damit du es verstehst.",
+        "explanation": "الفاعلان مختلفان، لذلك نحتاج damit مع جملة كاملة.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -551,7 +753,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -573,6 +780,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Verben-Nuancen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "معاني lassen الأساسية",
+        "content": "قد يعني lassen السماح، أو جعل شخص يفعل شيئًا، أو ترك شيء في مكانه. يحدد السياق المعنى، ويأتي الفعل الثاني في المصدر بلا zu.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "sich lassen كبديل للمبني للمجهول",
+        "content": "التركيب sich lassen + Infinitiv يعني أن الشيء قابل للفعل: Das Problem lässt sich lösen = يمكن حل المشكلة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -592,6 +809,36 @@
         "de": "Lass das Fenster offen!",
         "ar": "اترك النافذة مفتوحة!",
         "note": ""
+      },
+      {
+        "de": "Meine Eltern lassen mich heute länger ausgehen.",
+        "ar": "يسمح لي والداي بالخروج لوقت أطول اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Lass bitte die Tür offen.",
+        "ar": "اترك الباب مفتوحًا من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Fenster lässt sich nicht öffnen.",
+        "ar": "لا يمكن فتح النافذة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ließ ihre Tasche im Zug liegen.",
+        "ar": "تركت حقيبتها في القطار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Lass uns eine kurze Pause machen.",
+        "ar": "دعنا نأخذ استراحة قصيرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -616,6 +863,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Ich lasse mein Auto zu reparieren.",
+        "correct": "Ich lasse mein Auto reparieren.",
+        "explanation": "بعد lassen يأتي المصدر بلا zu.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das Problem lässt lösen.",
+        "correct": "Das Problem lässt sich lösen.",
+        "explanation": "في معنى القابلية نحتاج الضمير المنعكس sich.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -646,7 +905,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -668,6 +932,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Irreale Bedingungen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "الافتراض والرغبة",
+        "content": "يصف Konjunktiv II موقفًا غير واقعي أو رغبة أو احتمالًا: Wenn ich mehr Zeit hätte … وتستعمل hätte و wäre وصيغ الأفعال الناقصة مباشرة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "würde + Infinitiv",
+        "content": "تصلح würde مع معظم الأفعال، لكننا نفضل الصيغ الشائعة hätte، wäre، könnte، müsste و sollte بدل würde haben أو würde sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -687,6 +961,42 @@
         "de": "Er tut so, als ob er alles wüsste.",
         "ar": "يتصرف وكأنه يعرف كل شيء.",
         "note": ""
+      },
+      {
+        "de": "Wenn ich näher wohnen würde, käme ich öfter vorbei.",
+        "ar": "لو كنت أسكن أقرب لزرتكم أكثر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "An deiner Stelle würde ich mit dem Chef sprechen.",
+        "ar": "لو كنت مكانك لتحدثت مع المدير.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich hätte gern einen Termin am Montag.",
+        "ar": "أرغب في موعد يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Könnten Sie mir bitte helfen?",
+        "ar": "هل يمكنكم مساعدتي من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es wäre besser, früher anzufangen.",
+        "ar": "سيكون من الأفضل أن نبدأ أبكر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wenn das Wetter besser wäre, könnten wir wandern gehen.",
+        "ar": "لو كان الطقس أفضل لاستطعنا الذهاب للمشي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -711,6 +1021,18 @@
         "wrong": "Wenn ich Zeit habe, würde ich reisen.",
         "correct": "Wenn ich Zeit hätte, würde ich reisen.",
         "explanation": "في الشرط غير الواقعي نستخدم Konjunktiv II في الجملة التابعة أيضًا."
+      },
+      {
+        "wrong": "Wenn ich Zeit würde haben",
+        "correct": "Wenn ich Zeit hätte",
+        "explanation": "مع haben نستخدم الصيغة الشائعة hätte.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Wenn ich hätte Zeit, würde ich kommen.",
+        "correct": "Wenn ich Zeit hätte, würde ich kommen.",
+        "explanation": "الفعل المصرف يقف في نهاية جملة wenn.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -741,7 +1063,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -763,6 +1090,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Präpositionalobjekte، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "احفظ الوحدة كاملة",
+        "content": "حرف الجر والحالة جزء من معنى الفعل: warten auf + Akkusativ، teilnehmen an + Dativ، abhängen von + Dativ. لا يمكن اختيار الحرف بالترجمة الحرفية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال عن شخص أو شيء",
+        "content": "للأشياء نستعمل wo(r) + حرف الجر، وللأشخاص حرف الجر مع wen أو wem: Worauf wartest du? Auf wen wartest du?",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -782,6 +1119,42 @@
         "de": "Ich erinnere mich an den Termin.",
         "ar": "أتذكر الموعد.",
         "note": ""
+      },
+      {
+        "de": "Wir warten seit einer Stunde auf den Bus.",
+        "ar": "ننتظر الحافلة منذ ساعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er interessiert sich für moderne Kunst.",
+        "ar": "يهتم بالفن الحديث.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Entscheidung hängt vom Preis ab.",
+        "ar": "يعتمد القرار على السعر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie nimmt regelmäßig an Fortbildungen teil.",
+        "ar": "تشارك بانتظام في دورات تدريبية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich denke oft an meine Schulzeit.",
+        "ar": "أفكر كثيرًا في فترة المدرسة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Worüber sprecht ihr? – Über unsere Reise.",
+        "ar": "عمّ تتحدثون؟ عن رحلتنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -806,6 +1179,18 @@
         "wrong": "Ich warte für den Bus.",
         "correct": "Ich warte auf den Bus.",
         "explanation": "الفعل warten يرتبط بحرف الجر auf."
+      },
+      {
+        "wrong": "Ich warte für den Zug.",
+        "correct": "Ich warte auf den Zug.",
+        "explanation": "warten يرتبط بـ auf + Akkusativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Womit wartest du?",
+        "correct": "Worauf wartest du?",
+        "explanation": "أداة السؤال يجب أن تحتوي حرف الجر الذي يطلبه الفعل.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -836,7 +1221,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -858,6 +1248,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Reflexive Verben mit Präpositionen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "الفعل المنعكس مع حرف الجر",
+        "content": "احفظ الضمير المنعكس وحرف الجر مع الفعل: sich freuen auf، sich erinnern an، sich kümmern um. يتغير الضمير مع الفاعل بينما يبقى حرف الجر ثابتًا.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "Akkusativ أم Dativ للضمير؟",
+        "content": "معظم هذه الأفعال تستعمل الضمير المنعكس في Akkusativ، لكن بعض التراكيب قد تستعمل Dativ عند وجود مفعول آخر، لذلك تعلم المثال الكامل.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -877,6 +1277,42 @@
         "de": "Ich erinnere mich an den Termin.",
         "ar": "أتذكر الموعد.",
         "note": ""
+      },
+      {
+        "de": "Ich freue mich auf das Wochenende.",
+        "ar": "أتطلع إلى عطلة نهاية الأسبوع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie erinnert sich an ihren ersten Arbeitstag.",
+        "ar": "تتذكر أول يوم عمل لها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir kümmern uns um die neuen Gäste.",
+        "ar": "نهتم بالضيوف الجدد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er beschwert sich über den Lärm.",
+        "ar": "يشتكي من الضوضاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Interessierst du dich für Politik?",
+        "ar": "هل تهتم بالسياسة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Kollegen unterhalten sich über das Projekt.",
+        "ar": "يتحدث الزملاء عن المشروع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -901,6 +1337,18 @@
         "wrong": "Ich freue dich.",
         "correct": "Ich freue mich.",
         "explanation": "الضمير المنعكس يجب أن يعود على الفاعل ich."
+      },
+      {
+        "wrong": "Ich freue auf den Urlaub.",
+        "correct": "Ich freue mich auf den Urlaub.",
+        "explanation": "الفعل sich freuen منعكس ويحتاج الضمير المناسب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie erinnert sich über den Termin.",
+        "correct": "Sie erinnert sich an den Termin.",
+        "explanation": "sich erinnern يرتبط بـ an + Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -931,7 +1379,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -946,7 +1399,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "يشرح الفيديو Pronominaladverbien المركبة من wo-/da- وحرف جر: wo- للسؤال عن الأشياء و da- للإحالة إليها، بينما تُستعمل صيغة حرف الجر مع wem أو wen عند السؤال عن الأشخاص، مع إضافة r قبل حرف جر يبدأ بحركة.",
     "video_outline": [
       {
@@ -1078,6 +1531,12 @@
         "timestamp": "06:15",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Worauf freust du dich? – Darauf, meine Familie wiederzusehen.",
+        "ar": "إلى ماذا تتطلع؟ إلى رؤية عائلتي مجددًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -1168,7 +1627,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Worauf wartest du? – Auf ihn warte ich darauf.",
+        "correct": "Auf ihn warte ich.",
+        "explanation": "مع الشخص نستعمل حرف الجر والضمير مباشرة، ولا نضيف darauf.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Daüber sprechen wir morgen.",
+        "correct": "Darüber sprechen wir morgen.",
+        "explanation": "تُضاف r عندما يبدأ حرف الجر بحركة: darüber، darauf، daran.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يقسم الصيغة إلى wo/da وحرف جر.",
@@ -1206,6 +1678,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -1228,6 +1705,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Präpositionaladverbien (damit, dabei, darauf)، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "الإحالة إلى جملة أو فعل",
+        "content": "يمكن لـ da(r)- أن يمهد لجملة مصدرية أو جملة dass: Ich freue mich darauf, dich zu sehen. Er besteht darauf, dass wir pünktlich kommen.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "معاني dabei",
+        "content": "قد تعني dabei أثناء ذلك، أو حاضرًا/مشاركًا، أو مع الشخص: Ich war dabei. Ich habe meinen Ausweis dabei.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1247,6 +1734,42 @@
         "de": "Worüber sprecht ihr?",
         "ar": "عمّ تتحدثون؟",
         "note": ""
+      },
+      {
+        "de": "Ich denke darüber nach, den Arbeitsplatz zu wechseln.",
+        "ar": "أفكر في تغيير مكان العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie besteht darauf, dass alle pünktlich sind.",
+        "ar": "تصر على أن يكون الجميع في الموعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir rechnen damit, dass die Preise steigen.",
+        "ar": "نتوقع ارتفاع الأسعار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er hat Angst davor, einen Fehler zu machen.",
+        "ar": "يخشى ارتكاب خطأ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich koche, und du kannst mir dabei helfen.",
+        "ar": "أنا أطبخ ويمكنك مساعدتي في ذلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du deinen Ausweis dabei?",
+        "ar": "هل تحمل بطاقة هويتك معك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1271,6 +1794,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Ich freue mich darüber, dich zu sehen.",
+        "correct": "Ich freue mich darauf, dich zu sehen.",
+        "explanation": "sich freuen على حدث مستقبلي يأتي غالبًا مع auf، لذا نستخدم darauf.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich warte darauf ihn.",
+        "correct": "Ich warte auf ihn.",
+        "explanation": "لا نستخدم da(r)- للإشارة إلى شخص.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1301,7 +1836,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -1323,6 +1863,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Kasus bei Verben، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "الشخص والشيء",
+        "content": "في أفعال العطاء والإرسال والشرح يكون الشخص غالبًا Dativ والشيء Akkusativ: jemandem etwas geben. اسأل wem للشخص و was للشيء.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "ترتيب المفعولين",
+        "content": "إذا كانا اسمين يأتي Dativ غالبًا قبل Akkusativ. وإذا كان أحدهما ضميرًا يتقدم الضمير، وإذا كانا ضميرين يأتي Akkusativ قبل Dativ: Ich gebe es ihm.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1342,6 +1892,42 @@
         "de": "Ich gebe es ihm.",
         "ar": "أعطيه إياه.",
         "note": ""
+      },
+      {
+        "de": "Die Lehrerin erklärt den Teilnehmern die Aufgabe.",
+        "ar": "تشرح المعلمة المهمة للمشاركين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kannst du mir deinen Stift leihen?",
+        "ar": "هل يمكنك إعارتي قلمك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich schicke meiner Schwester ein Paket.",
+        "ar": "أرسل لأختي طردًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Arzt verschreibt dem Patienten ein Medikament.",
+        "ar": "يصف الطبيب للمريض دواءً.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich gebe es ihm morgen zurück.",
+        "ar": "سأعيده إليه غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie hat mir die neue Kollegin vorgestellt.",
+        "ar": "عرّفتني بالزميلة الجديدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1366,6 +1952,18 @@
         "wrong": "Ich sehe der Mann.",
         "correct": "Ich sehe den Mann.",
         "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      },
+      {
+        "wrong": "Ich gebe der Mann das Buch.",
+        "correct": "Ich gebe dem Mann das Buch.",
+        "explanation": "المذكر في Dativ يأخذ dem.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich erkläre ihm sie.",
+        "correct": "Ich erkläre sie ihm.",
+        "explanation": "عندما يكون المفعولان ضميرين يأتي Akkusativ قبل Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -1422,7 +2020,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -1444,6 +2047,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Kasus bei Verben، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "أفعال مهمة",
+        "content": "من الأفعال الشائعة ذات المفعولين: anbieten، empfehlen، erlauben، verbieten، versprechen، zeigen، wünschen و vorlesen. احفظها بالنمط jemandem etwas.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التحويل إلى ضمائر",
+        "content": "حدد الحالة قبل الاستبدال: der Kollegin تصبح ihr، و den Plan يصبح ihn. بهذه الطريقة تتجنب اختيار ضمير صحيح في حالة خاطئة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1463,6 +2076,42 @@
         "de": "Ich gebe es ihm.",
         "ar": "أعطيه إياه.",
         "note": ""
+      },
+      {
+        "de": "Der Chef bietet den Mitarbeitern flexible Arbeitszeiten an.",
+        "ar": "يعرض المدير على الموظفين ساعات عمل مرنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich empfehle dir diesen Film.",
+        "ar": "أنصحك بهذا الفيلم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Eltern erlauben dem Kind eine Stunde Fernsehen.",
+        "ar": "يسمح الوالدان للطفل بساعة من مشاهدة التلفاز.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie versprach ihrem Freund Unterstützung.",
+        "ar": "وعدت صديقها بالدعم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Zeigst du uns den Weg?",
+        "ar": "هل ترينا الطريق؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich wünsche Ihnen einen angenehmen Aufenthalt.",
+        "ar": "أتمنى لكم إقامة طيبة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1487,6 +2136,18 @@
         "wrong": "Ich sehe der Mann.",
         "correct": "Ich sehe den Mann.",
         "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      },
+      {
+        "wrong": "Ich empfehle dich diesen Kurs.",
+        "correct": "Ich empfehle dir diesen Kurs.",
+        "explanation": "الشخص مع empfehlen يأتي في Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie zeigt zu mir das Foto.",
+        "correct": "Sie zeigt mir das Foto.",
+        "explanation": "الشخص مفعول Dativ مباشر ولا يحتاج zu.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -1543,7 +2204,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -1558,7 +2224,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 4,
+    "reading_time_minutes": 5,
     "summary": "يضع الفيديو Plusquamperfekt على خط الزمن بوصفه الماضي الأبعد، ثم يكوّنه من hatte أو war مع Partizip II ويستعمله لتمييز الحدث الذي اكتمل قبل حدث ماضٍ آخر، مع bevor و nachdem.",
     "video_outline": [
       {
@@ -1668,6 +2334,30 @@
         "timestamp": "06:40",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Nachdem ich die E-Mail gelesen hatte, antwortete ich sofort.",
+        "ar": "بعد أن قرأت الرسالة، أجبت فورًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie war bereits gegangen, als ich anrief.",
+        "ar": "كانت قد غادرت بالفعل عندما اتصلت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir hatten lange gewartet, bevor der Bus kam.",
+        "ar": "كنا قد انتظرنا طويلًا قبل أن تأتي الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er konnte die Tür öffnen, weil er den Schlüssel gefunden hatte.",
+        "ar": "تمكن من فتح الباب لأنه كان قد وجد المفتاح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -1757,7 +2447,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich hatte nach Hause gegangen.",
+        "correct": "Ich war nach Hause gegangen.",
+        "explanation": "gehen يأخذ sein في الأزمنة المركبة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie hatte gegessen gehabt.",
+        "correct": "Sie hatte gegessen.",
+        "explanation": "Plusquamperfekt يتكون من hatte أو war مع Partizip II مرة واحدة.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يضع Plusquamperfekt في أقصى الماضي على خط الزمن.",
@@ -1795,6 +2498,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -1817,6 +2525,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Satzstruktur، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "حدث يسبق آخر",
+        "content": "تربط nachdem حدثين؛ الحدث في جملة nachdem يحدث أولًا. في سرد الماضي يأتي هذا الحدث غالبًا في Plusquamperfekt، والحدث التالي في Präteritum أو Perfekt.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "ترتيب الجملة",
+        "content": "بعد nachdem يقف الفعل المصرف في النهاية. وإذا بدأت الجملة بـ nachdem، يأتي فعل الجملة الرئيسية مباشرة بعد الفاصلة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1836,6 +2554,36 @@
         "de": "Ich habe angerufen, nachdem ich angekommen war.",
         "ar": "اتصلت بعد أن كنت قد وصلت.",
         "note": ""
+      },
+      {
+        "de": "Nachdem er gefrühstückt hatte, fuhr er zur Arbeit.",
+        "ar": "بعد أن تناول الإفطار، ذهب إلى العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir gingen spazieren, nachdem der Regen aufgehört hatte.",
+        "ar": "خرجنا للمشي بعد أن توقف المطر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nachdem sie angekommen war, rief sie ihre Eltern an.",
+        "ar": "بعد أن وصلت، اتصلت بوالديها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nachdem ich den Vertrag geprüft hatte, unterschrieb ich ihn.",
+        "ar": "بعد أن راجعت العقد، وقّعته.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er entspannte sich, nachdem er die Prüfung bestanden hatte.",
+        "ar": "استرخى بعد أن نجح في الامتحان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1860,6 +2608,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Nachdem er hatte gegessen, ging er.",
+        "correct": "Nachdem er gegessen hatte, ging er.",
+        "explanation": "يتجمع Partizip II والفعل المساعد في نهاية الجملة التابعة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Nachdem ich angekommen war, ich rief an.",
+        "correct": "Nachdem ich angekommen war, rief ich an.",
+        "explanation": "عند تقديم الجملة التابعة يأتي الفعل أولًا في الجملة الرئيسية.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1890,7 +2650,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -1912,6 +2677,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Nebensätze، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "سؤال نعم أو لا",
+        "content": "نستخدم ob عندما لا توجد أداة سؤال: Kommst du? تصبح Ich möchte wissen, ob du kommst. يقف الفعل في نهاية الجملة غير المباشرة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "W-Frage",
+        "content": "نحتفظ بأداة السؤال مثل wann، warum، wo أو wie، ثم يأتي الفاعل وبقية العناصر، والفعل في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1931,6 +2706,42 @@
         "de": "Ich weiß nicht, ob er kommt.",
         "ar": "لا أعرف إن كان سيأتي.",
         "note": ""
+      },
+      {
+        "de": "Können Sie mir sagen, ob der Zug pünktlich ist?",
+        "ar": "هل يمكنكم إخباري ما إذا كان القطار في الموعد؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich weiß nicht, wann das Geschäft öffnet.",
+        "ar": "لا أعرف متى يفتح المتجر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie fragt, warum du so spät gekommen bist.",
+        "ar": "تسأل لماذا أتيت متأخرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Weißt du, wo ich die Fahrkarten kaufen kann?",
+        "ar": "هل تعرف أين يمكنني شراء التذاكر؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mich interessiert, wie lange der Kurs dauert.",
+        "ar": "يهمني أن أعرف مدة الدورة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er möchte wissen, wer an dem Projekt teilnimmt.",
+        "ar": "يريد معرفة من يشارك في المشروع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1955,6 +2766,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Ich weiß nicht, wann kommt er.",
+        "correct": "Ich weiß nicht, wann er kommt.",
+        "explanation": "في السؤال غير المباشر يأتي الفعل في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie fragt, ob warum ich gehe.",
+        "correct": "Sie fragt, warum ich gehe.",
+        "explanation": "لا نجمع ob مع أداة سؤال.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -1985,7 +2808,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2007,6 +2835,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Pronomen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "ضمير عام",
+        "content": "man يعني الناس أو المرء أو صيغة عامة غير محددة. يُكتب بحرف صغير ويأخذ دائمًا فعل المفرد الغائب: man sagt، man kann.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "حالات man",
+        "content": "في Nominativ نقول man، وفي Akkusativ einen، وفي Dativ einem. ضمير الملكية الموافق هو sein: Man muss seinen Ausweis zeigen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2026,6 +2864,42 @@
         "de": "Ich habe niemanden gesehen.",
         "ar": "لم أرَ أحدًا.",
         "note": ""
+      },
+      {
+        "de": "In Deutschland trennt man den Müll.",
+        "ar": "في ألمانيا يفرز الناس النفايات.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hier darf man nicht rauchen.",
+        "ar": "لا يُسمح بالتدخين هنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Man sollte regelmäßig seine E-Mails prüfen.",
+        "ar": "ينبغي للمرء مراجعة بريده الإلكتروني بانتظام.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Diese Musik macht einen ruhig.",
+        "ar": "هذه الموسيقى تجعل المرء هادئًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "So etwas kann einem leicht passieren.",
+        "ar": "قد يحدث شيء كهذا للمرء بسهولة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wie sagt man das auf Deutsch?",
+        "ar": "كيف يُقال ذلك بالألمانية؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2050,6 +2924,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Man sagen, dass …",
+        "correct": "Man sagt, dass …",
+        "explanation": "man يأخذ فعل المفرد الغائب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Man muss ihre Anmeldung schicken.",
+        "correct": "Man muss seine Anmeldung schicken.",
+        "explanation": "ضمير الملكية الموافق لـ man هو sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2080,7 +2966,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2102,6 +2993,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Deklination، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "التصريف بحسب الحالة",
+        "content": "jemand و niemand يكونان فاعلًا بلا نهاية، ويأتيان غالبًا بصيغة jemanden و niemanden في Akkusativ، و jemandem و niemandem في Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "مع الإضافة",
+        "content": "يمكن تحديد الشخص أكثر باستعمال jemand مع صفة اسمية: jemand Neues، jemand Nettes. بعد nichts و etwas تتصرف الصفة بالطريقة نفسها.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2121,6 +3022,36 @@
         "de": "Ich habe niemanden gesehen.",
         "ar": "لم أرَ أحدًا.",
         "note": ""
+      },
+      {
+        "de": "Jemand wartet vor der Tür.",
+        "ar": "هناك شخص ينتظر أمام الباب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kann mir jemand helfen?",
+        "ar": "هل يستطيع أحد مساعدتي؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie hat mit niemandem darüber gesprochen.",
+        "ar": "لم تتحدث مع أحد عن ذلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich möchte jemand Neues kennenlernen.",
+        "ar": "أود التعرف إلى شخص جديد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Niemand wusste die richtige Antwort.",
+        "ar": "لم يعرف أحد الإجابة الصحيحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2140,7 +3071,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich kenne jemand hier.",
+        "correct": "Ich kenne jemanden hier.",
+        "explanation": "بعد kennen نحتاج Akkusativ: jemanden.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich spreche mit niemanden.",
+        "correct": "Ich spreche mit niemandem.",
+        "explanation": "بعد mit نحتاج Dativ: niemandem.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Deklination.",
@@ -2169,7 +3113,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2191,6 +3140,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Lokal- und Temporaladverbien، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "عدم التحديد",
+        "content": "تضيف irgend- معنى غير محدد: irgendwer شخص ما، irgendwo في مكان ما، irgendwann في وقت ما، irgendwie بطريقة ما، irgendetwas شيء ما.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الفرق عن السؤال",
+        "content": "wer و wo و wann أدوات سؤال، أما irgendwer و irgendwo و irgendwann فتدل على وجود شخص أو مكان أو وقت غير معروف أو غير مهم.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2210,6 +3169,42 @@
         "de": "Ich habe niemanden gesehen.",
         "ar": "لم أرَ أحدًا.",
         "note": ""
+      },
+      {
+        "de": "Irgendjemand hat mein Fenster geöffnet.",
+        "ar": "شخص ما فتح نافذتي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir treffen uns irgendwann nächste Woche.",
+        "ar": "سنلتقي في وقت ما الأسبوع المقبل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mein Schlüssel muss irgendwo hier sein.",
+        "ar": "لا بد أن مفتاحي موجود في مكان ما هنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Irgendwie werden wir eine Lösung finden.",
+        "ar": "سنجد حلًا بطريقة ما.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Möchtest du irgendetwas trinken?",
+        "ar": "هل ترغب في شرب شيء ما؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du kannst irgendeinen Termin auswählen.",
+        "ar": "يمكنك اختيار أي موعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2229,7 +3224,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Irgendwo hat angerufen.",
+        "correct": "Irgendjemand hat angerufen.",
+        "explanation": "irgendwo للمكان، أما الشخص فهو irgendjemand أو irgendwer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Wir treffen uns irgendwer.",
+        "correct": "Wir treffen uns irgendwann.",
+        "explanation": "لوقت غير محدد نستخدم irgendwann.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Lokal- und Temporaladverbien.",
@@ -2258,7 +3266,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2280,6 +3293,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Wortschatz (Vocabulary)، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "تعلم الصفة مع مقابلها",
+        "content": "احفظ الصفة داخل جملة ومع مرادف أو ضد، مثل zuverlässig ↔ unzuverlässig و geduldig ↔ ungeduldig. هذا يثبت المعنى والاستعمال.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الصفة الخبرية والوصفية",
+        "content": "بعد sein و werden تبقى الصفة بلا نهاية: Der Kollege ist zuverlässig. وقبل الاسم تأخذ نهاية: ein zuverlässiger Kollege.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2299,6 +3322,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Unsere neue Kollegin ist sehr zuverlässig.",
+        "ar": "زميلتنا الجديدة جديرة بالثقة جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du musst bei dieser Aufgabe geduldig sein.",
+        "ar": "يجب أن تكون صبورًا في هذه المهمة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Kind ist neugierig und stellt viele Fragen.",
+        "ar": "الطفل فضولي ويطرح أسئلة كثيرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie arbeitet selbstständig und sorgfältig.",
+        "ar": "تعمل باستقلالية وعناية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Umzug war anstrengend, aber gut organisiert.",
+        "ar": "كان الانتقال متعبًا لكنه منظم جيدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Eine pünktliche Antwort wäre sehr hilfreich.",
+        "ar": "سيكون الرد في الوقت المناسب مفيدًا جدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2318,7 +3377,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Er ist ein zuverlässig Mitarbeiter.",
+        "correct": "Er ist ein zuverlässiger Mitarbeiter.",
+        "explanation": "قبل الاسم تحتاج الصفة إلى نهاية مناسبة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Die Aufgabe ist anstrengende.",
+        "correct": "Die Aufgabe ist anstrengend.",
+        "explanation": "بعد sein تبقى الصفة الخبرية بلا نهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Wortschatz (Vocabulary).",
@@ -2347,7 +3419,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2369,6 +3446,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Doppelkonjunktionen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "نفي عنصرين معًا",
+        "content": "weder … noch تعني لا … ولا، وتربط كلمتين أو مجموعتين أو جملتين متوازيتين. لا نضيف عادةً nicht لأن weder تحمل النفي.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التوازي",
+        "content": "ينبغي أن يكون العنصران من النوع النحوي نفسه قدر الإمكان: اسمان مع اسمين، صفتان مع صفتين، أو فعلان مع فعلين.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2388,6 +3475,36 @@
         "de": "Er trinkt weder Kaffee noch Tee.",
         "ar": "لا يشرب قهوة ولا شايًا.",
         "note": ""
+      },
+      {
+        "de": "Ich trinke weder Kaffee noch Tee.",
+        "ar": "لا أشرب القهوة ولا الشاي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Film war weder spannend noch lustig.",
+        "ar": "لم يكن الفيلم مشوقًا ولا مضحكًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie kann weder kommen noch anrufen.",
+        "ar": "لا تستطيع الحضور ولا الاتصال.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Weder mein Bruder noch meine Schwester wohnt hier.",
+        "ar": "لا أخي ولا أختي يسكن هنا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er hat weder die E-Mail gelesen noch darauf geantwortet.",
+        "ar": "لم يقرأ الرسالة ولم يرد عليها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2407,7 +3524,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich trinke nicht weder Kaffee noch Tee.",
+        "correct": "Ich trinke weder Kaffee noch Tee.",
+        "explanation": "weder … noch تحمل معنى النفي ولا تحتاج nicht إضافية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "weder Kaffee oder Tee",
+        "correct": "weder Kaffee noch Tee",
+        "explanation": "الشريك الثابت لـ weder هو noch.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Doppelkonjunktionen.",
@@ -2436,7 +3566,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2458,6 +3593,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Doppelkonjunktionen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "إضافة متساوية",
+        "content": "sowohl … als auch تعني كلا … و، وتجمع عنصرين مثبتين لهما الأهمية نفسها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "موضع العناصر",
+        "content": "ضع sowohl مباشرة قبل العنصر الأول و als auch قبل العنصر الثاني، وحافظ على بنية متوازية وواضحة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2477,6 +3622,36 @@
         "de": "Er trinkt weder Kaffee noch Tee.",
         "ar": "لا يشرب قهوة ولا شايًا.",
         "note": ""
+      },
+      {
+        "de": "Sie spricht sowohl Deutsch als auch Französisch.",
+        "ar": "هي تتحدث الألمانية والفرنسية معًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kurs ist sowohl interessant als auch praktisch.",
+        "ar": "الدورة ممتعة وعملية في آن واحد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir müssen sowohl die Kosten senken als auch die Qualität verbessern.",
+        "ar": "يجب أن نخفض التكاليف ونحسن الجودة معًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sowohl die Lehrerin als auch die Teilnehmer waren zufrieden.",
+        "ar": "كانت المعلمة والمشاركون راضين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er hat sowohl angerufen als auch eine Nachricht geschickt.",
+        "ar": "اتصل وأرسل رسالة أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2496,7 +3671,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "sowohl Deutsch und Englisch",
+        "correct": "sowohl Deutsch als auch Englisch",
+        "explanation": "التركيب الثابت هو sowohl … als auch.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie sowohl liest als auch schreibt gern.",
+        "correct": "Sie liest sowohl gern als auch regelmäßig.",
+        "explanation": "ضع الجزأين حول عنصرين متوازيين لتجنب بنية غير واضحة.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Doppelkonjunktionen.",
@@ -2525,7 +3713,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2547,6 +3740,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Doppelkonjunktionen، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "إضافة مع تأكيد",
+        "content": "nicht nur … sondern auch تعني ليس فقط … بل أيضًا. العنصر الثاني يضيف معلومة أقوى أو غير متوقعة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "sondern بعد النفي",
+        "content": "يأتي sondern لتصحيح أو توسيع فكرة منفية. في هذا التركيب يجب الحفاظ على توازٍ واضح بين العنصرين.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2566,6 +3769,36 @@
         "de": "Er trinkt weder Kaffee noch Tee.",
         "ar": "لا يشرب قهوة ولا شايًا.",
         "note": ""
+      },
+      {
+        "de": "Sie ist nicht nur freundlich, sondern auch sehr hilfsbereit.",
+        "ar": "هي ليست ودودة فحسب، بل متعاونة جدًا أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kurs vermittelt nicht nur Grammatik, sondern auch Alltagssprache.",
+        "ar": "لا تقدم الدورة القواعد فقط، بل لغة الحياة اليومية أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er arbeitet nicht nur schnell, sondern auch sorgfältig.",
+        "ar": "لا يعمل بسرعة فقط، بل بعناية أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben nicht nur diskutiert, sondern auch konkrete Lösungen gefunden.",
+        "ar": "لم نناقش فقط، بل وجدنا حلولًا عملية أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nicht nur die Miete, sondern auch die Nebenkosten sind gestiegen.",
+        "ar": "لم يرتفع الإيجار فقط، بل التكاليف الإضافية أيضًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2585,7 +3818,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "nicht nur … aber auch",
+        "correct": "nicht nur … sondern auch",
+        "explanation": "الشريك القياسي لـ nicht nur هو sondern auch.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Er nicht nur lernt, sondern arbeitet auch.",
+        "correct": "Er lernt nicht nur, sondern arbeitet auch.",
+        "explanation": "في الجملة الرئيسية يبقى الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Doppelkonjunktionen.",
@@ -2614,7 +3860,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2636,6 +3887,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Konzessivsätze (Concessive Clauses)، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "obwohl جملة تابعة",
+        "content": "obwohl تربط التناقض داخل جملة تابعة، لذلك يذهب الفعل المصرف إلى النهاية: Obwohl es regnet, gehen wir spazieren.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "trotzdem ظرف رابط",
+        "content": "trotzdem يبدأ جملة رئيسية جديدة ويشغل الموقع الأول، لذلك يأتي الفعل بعده مباشرة: Es regnet. Trotzdem gehen wir spazieren.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2655,6 +3916,42 @@
         "de": "Es regnet. Trotzdem gehe ich spazieren.",
         "ar": "الجو ممطر. ومع ذلك أخرج للمشي.",
         "note": ""
+      },
+      {
+        "de": "Obwohl er müde war, arbeitete er weiter.",
+        "ar": "واصل العمل رغم أنه كان متعبًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er war müde. Trotzdem arbeitete er weiter.",
+        "ar": "كان متعبًا، ومع ذلك واصل العمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Obwohl die Wohnung klein ist, gefällt sie uns.",
+        "ar": "تعجبنا الشقة رغم صغرها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Prüfung war schwierig. Trotzdem hat sie bestanden.",
+        "ar": "كان الامتحان صعبًا، ومع ذلك نجحت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Obwohl wir wenig Zeit hatten, konnten wir alles erledigen.",
+        "ar": "رغم أن وقتنا كان قليلًا، استطعنا إنجاز كل شيء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es regnete stark; trotzdem fand das Konzert statt.",
+        "ar": "هطل المطر بغزارة، ومع ذلك أُقيم الحفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2669,7 +3966,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Obwohl es regnet, wir gehen spazieren.",
+        "correct": "Obwohl es regnet, gehen wir spazieren.",
+        "explanation": "بعد الجملة التابعة المتقدمة يأتي فعل الجملة الرئيسية مباشرة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Trotzdem er müde ist, arbeitet er.",
+        "correct": "Obwohl er müde ist, arbeitet er.",
+        "explanation": "trotzdem لا يقدم جملة تابعة؛ هنا نحتاج obwohl.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: Konzessivsätze (Concessive Clauses).",
@@ -2698,7 +4008,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "B1",
@@ -2720,6 +4035,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع Kausalsätze vs. Finalsätze، قارن بين الشكل والمعنى، ثم أعد بناء المثال في جملة مترابطة واشرح لنفسك سبب موضع الفعل أو اختيار الحالة."
+      },
+      {
+        "heading": "weil يذكر السبب",
+        "content": "weil يجيب عن لماذا؟ ويشرح سبب الحدث. الجملة الناتجة سببية والفعل المصرف فيها في النهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "damit يذكر الهدف",
+        "content": "damit يجيب عن لأي غرض؟ ويشرح النتيجة المقصودة التي نريد تحقيقها. قد يكون فاعل جملة الهدف مختلفًا عن فاعل الجملة الرئيسية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2739,6 +4064,42 @@
         "de": "Ich spreche langsam, damit du mich verstehst.",
         "ar": "أتحدث ببطء لكي تفهمني.",
         "note": ""
+      },
+      {
+        "de": "Ich bleibe zu Hause, weil ich krank bin.",
+        "ar": "أبقى في المنزل لأنني مريض.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich nehme ein Taxi, weil der Bus nicht fährt.",
+        "ar": "أستقل سيارة أجرة لأن الحافلة لا تعمل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich schreibe die Adresse auf, damit ich sie nicht vergesse.",
+        "ar": "أكتب العنوان كي لا أنساه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie wiederholt die Erklärung, damit alle sie verstehen.",
+        "ar": "تكرر الشرح كي يفهمه الجميع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir schließen das Fenster, weil es draußen laut ist.",
+        "ar": "نغلق النافذة لأن الخارج صاخب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir schließen das Fenster, damit das Baby schlafen kann.",
+        "ar": "نغلق النافذة كي يستطيع الطفل النوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2768,6 +4129,18 @@
         "wrong": "…, weil ich bin müde.",
         "correct": "…, weil ich müde bin.",
         "explanation": "الفعل المصرف يأتي في نهاية الجملة التابعة."
+      },
+      {
+        "wrong": "Ich lerne, weil ich die Prüfung bestehe.",
+        "correct": "Ich lerne, damit ich die Prüfung bestehe.",
+        "explanation": "النجاح هو الهدف من التعلم، وليس سببه.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich bleibe im Bett, damit ich krank bin.",
+        "correct": "Ich bleibe im Bett, weil ich krank bin.",
+        "explanation": "المرض سبب البقاء في السرير، لذلك نستخدم weil.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2798,6 +4171,11 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "B1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   }
 ]

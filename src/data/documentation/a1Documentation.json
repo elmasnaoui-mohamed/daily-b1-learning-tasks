@@ -12,7 +12,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "يقدّم المعلّم الحروف الألمانية بالترتيب مع كلمة توضيحية لكل صوت، ثم يشرح الحروف ذات النقطتين و ß، وينبّه إلى تعلّم الاسم مع أداة التعريف وإلى الفرق بين ss و ß.",
     "video_outline": [
       {
@@ -84,6 +84,16 @@
         "source_start": "09:00",
         "source_end": "10:25",
         "origin": "video"
+      },
+      {
+        "heading": "الحرف والصوت",
+        "content": "استمع إلى صوت الحرف داخل الكلمة ولا تعتمد على اسمه فقط. كرر الكلمة ببطء ثم بسرعة طبيعية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التهجئة",
+        "content": "عند تهجئة الاسم ننطق كل حرف منفردًا. انتبه إلى Ä وÖ وÜ وß وإلى اختلاف نطق V وW وJ عن الإنجليزية.",
+        "origin": "editorial_clarification"
       }
     ],
     "rules_from_video": [
@@ -137,6 +147,30 @@
         "timestamp": "09:18",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Wie heißt du?",
+        "ar": "ما اسمك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich heiße Lina.",
+        "ar": "اسمي لينا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wie schreibt man das?",
+        "ar": "كيف تُكتب ذلك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "L-I-N-A",
+        "ar": "ل، ي، ن، ا — تهجئة الاسم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -227,7 +261,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "W مثل الإنجليزية",
+        "correct": "W يُنطق قريبًا من ڤ",
+        "explanation": "اربط الحرف بمثال ألماني مسموع.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "ei = إي",
+        "correct": "ei يُنطق آي غالبًا",
+        "explanation": "تدرب على mein و nein.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يبدأ عرض الأبجدية بعد مقدمة قصيرة.",
@@ -265,6 +312,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -280,7 +332,7 @@
     "source_compute_type": null,
     "source_device": null,
     "review_status": "source_verified",
-    "reading_time_minutes": 2,
+    "reading_time_minutes": 4,
     "summary": "يبني الفيديو الأعداد الألمانية من 0 حتى الملايين: يبدأ بالأعداد الأساسية، ثم يشرح تركيب 13–19 والعشرات، وقلب ترتيب الآحاد والعشرات بعد 20، ثم المئات والآلاف و Million و Milliarde.",
     "video_outline": [
       {
@@ -358,6 +410,16 @@
         "source_start": "12:00",
         "source_end": "20:10",
         "origin": "video"
+      },
+      {
+        "heading": "الآحاد قبل العشرات",
+        "content": "من 21 نقول الآحاد ثم und ثم العشرات: einundzwanzig. تُكتب الكلمة العددية متصلة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأرقام في الحياة اليومية",
+        "content": "درّب الأعداد داخل العمر والسعر ورقم الهاتف والوقت بدل حفظ القائمة وحدها.",
+        "origin": "editorial_clarification"
       }
     ],
     "rules_from_video": [
@@ -418,6 +480,30 @@
         "timestamp": "16:10",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Ich bin achtundzwanzig Jahre alt.",
+        "ar": "عمري ثمانية وعشرون عامًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das kostet fünfzehn Euro.",
+        "ar": "هذا يكلف خمسة عشر يورو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Meine Nummer ist null eins sieben sechs.",
+        "ar": "رقمي هو صفر واحد سبعة ستة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sind drei Personen.",
+        "ar": "نحن ثلاثة أشخاص.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -508,7 +594,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "zwanzig und eins",
+        "correct": "einundzwanzig",
+        "explanation": "في الأعداد المركبة تأتي الآحاد قبل العشرات.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "zwei Euro und fünfzig",
+        "correct": "zwei Euro fünfzig",
+        "explanation": "في الأسعار نذكر اليورو ثم السنتات بلا und غالبًا.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يميّز بين Zahl و Zahlen.",
@@ -546,6 +645,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -695,6 +799,16 @@
         "source_start": "15:34",
         "source_end": "17:34",
         "origin": "video"
+      },
+      {
+        "heading": "تصريفان أساسيان",
+        "content": "احفظ sein وhaben مع الضمائر لأنهما غير منتظمين ويستعملان في الوصف والملكية وبناء الأزمنة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الفعل في الموقع الثاني",
+        "content": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Heute bin ich müde.",
+        "origin": "editorial_clarification"
       }
     ],
     "chronological_sections": [
@@ -1203,6 +1317,30 @@
         "timestamp": "13:48",
         "verified": false,
         "origin": "video"
+      },
+      {
+        "de": "Ich bin müde.",
+        "ar": "أنا متعب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du hast heute frei.",
+        "ar": "لديك عطلة اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sind aus Marokko.",
+        "ar": "نحن من المغرب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie haben zwei Kinder.",
+        "ar": "لديهم طفلان / لديكم طفلان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -1423,7 +1561,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich sein müde.",
+        "correct": "Ich bin müde.",
+        "explanation": "مع ich نصرف sein إلى bin.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Er haben Zeit.",
+        "correct": "Er hat Zeit.",
+        "explanation": "مع er نصرف haben إلى hat.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يعلن أن الدرس عن Personalpronomen في Nominativ.",
@@ -1511,6 +1662,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -1519,7 +1675,7 @@
     "video_id": "d_o8Ny4455E",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على أدوات التعريف والتنكير الأساسية واستعمالها مع الأسماء الشائعة في البداية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على أدوات التعريف والتنكير الأساسية واستعمالها مع الأسماء الشائعة في البداية.",
@@ -1533,6 +1689,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أدوات التعريف والتنكير، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "احفظ الاسم مع أداته",
+        "content": "لا توجد قاعدة واحدة تحدد جنس كل اسم؛ تعلمه كوحدة: der Tisch، die Lampe، das Buch.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "معرفة أم نكرة؟",
+        "content": "نستخدم ein/eine عند ذكر شيء لأول مرة، ثم der/die/das عند الإشارة إلى الشيء المعروف.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1552,6 +1718,30 @@
         "de": "Die Lampe ist neu.",
         "ar": "المصباح جديد.",
         "note": ""
+      },
+      {
+        "de": "Das ist ein Tisch. Der Tisch ist groß.",
+        "ar": "هذه طاولة. الطاولة كبيرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich habe eine Tasche. Die Tasche ist neu.",
+        "ar": "لدي حقيبة. الحقيبة جديدة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist ein Kind.",
+        "ar": "هذا طفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Bücher sind interessant.",
+        "ar": "الكتب ممتعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1576,6 +1766,18 @@
         "wrong": "Das ist eine Tisch.",
         "correct": "Das ist ein Tisch.",
         "explanation": "Tisch اسم مذكر، لذلك نستخدم ein."
+      },
+      {
+        "wrong": "ein Lampe",
+        "correct": "eine Lampe",
+        "explanation": "الاسم المؤنث يأخذ eine.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "eine Buch",
+        "correct": "ein Buch",
+        "explanation": "Buch محايد ويأخذ ein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -1637,7 +1839,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -1645,7 +1852,7 @@
     "video_id": "4wvtNkoLyNY",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم الضمائر الملكية البسيطة مثل mein و dein وكيفية ربطها بالأسماء في جمل سهلة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم الضمائر الملكية البسيطة مثل mein و dein وكيفية ربطها بالأسماء في جمل سهلة.",
@@ -1659,6 +1866,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الضمائر الملكية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "صاحب الشيء",
+        "content": "اختر أولًا الجذر: ich → mein، du → dein، er → sein، sie → ihr، wir → unser.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "نهاية الاسم",
+        "content": "يتغير ضمير الملكية مثل ein: mein Bruder، meine Schwester، mein Kind، meine Freunde.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1678,6 +1895,30 @@
         "de": "Sie sucht ihre Tasche.",
         "ar": "هي تبحث عن حقيبتها.",
         "note": ""
+      },
+      {
+        "de": "Wie heißt deine Mutter?",
+        "ar": "ما اسم والدتك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ihre Wohnung ist groß.",
+        "ar": "شقتها كبيرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Unsere Freunde wohnen in Berlin.",
+        "ar": "أصدقاؤنا يسكنون في برلين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ist das euer Lehrer?",
+        "ar": "هل هذا معلمكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1702,6 +1943,18 @@
         "wrong": "Das ist meine Bruder.",
         "correct": "Das ist mein Bruder.",
         "explanation": "Bruder مذكر في Nominativ، لذلك لا تُضاف e."
+      },
+      {
+        "wrong": "mein Schwester",
+        "correct": "meine Schwester",
+        "explanation": "المؤنث يحتاج النهاية -e.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "er Auto",
+        "correct": "sein Auto",
+        "explanation": "الملكية مع er هي sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -1763,7 +2016,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -1771,7 +2029,7 @@
     "video_id": "V8xl5tfDqL0",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب مفردات أفراد العائلة الأساسية واستخدامها في التعريف بالعائلة ووصف العلاقات القريبة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب مفردات أفراد العائلة الأساسية واستخدامها في التعريف بالعائلة ووصف العلاقات القريبة.",
@@ -1785,6 +2043,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات العائلة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "المفردات مع الأداة",
+        "content": "احفظ فرد العائلة مع أداته وجمعه: der Bruder – die Brüder، die Schwester – die Schwestern.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تقديم العائلة",
+        "content": "استعمل Das ist … للتعريف، mein/meine للملكية، وwohnen أو arbeiten لإضافة معلومة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1804,6 +2072,30 @@
         "de": "Mein Bruder wohnt in Berlin.",
         "ar": "أخي يسكن في برلين.",
         "note": ""
+      },
+      {
+        "de": "Das sind meine Eltern.",
+        "ar": "هذان والداي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich habe einen Bruder und eine Schwester.",
+        "ar": "لدي أخ وأخت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Meine Großeltern wohnen auf dem Land.",
+        "ar": "يسكن جدي وجدتي في الريف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Meine Tante arbeitet als Lehrerin.",
+        "ar": "تعمل عمتي/خالتي معلمة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1823,7 +2115,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "meine Vater",
+        "correct": "mein Vater",
+        "explanation": "Vater مذكر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "zwei Bruder",
+        "correct": "zwei Brüder",
+        "explanation": "جمع Bruder هو Brüder.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات العائلة.",
@@ -1852,7 +2157,12 @@
         "video_required": true
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -1860,7 +2170,7 @@
     "video_id": "W3X1UbMrCYE",
     "source_type": "captions",
     "caption_language": "de",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم أساسيات السؤال عن الوقت وقراءة الساعة بالألمانية بطريقة بسيطة تناسب المبتدئين. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم أساسيات السؤال عن الوقت وقراءة الساعة بالألمانية بطريقة بسيطة تناسب المبتدئين.",
@@ -1874,6 +2184,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الوقت والساعة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "السؤال عن الساعة",
+        "content": "نسأل Wie spät ist es? ونجيب رسميًا بالأرقام أو يوميًا بـ Viertel وhalb وvor وnach.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "موعد عند ساعة",
+        "content": "نستخدم um قبل وقت محدد: Der Kurs beginnt um neun Uhr.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1893,6 +2213,42 @@
         "de": "Der Kurs beginnt um neun Uhr.",
         "ar": "تبدأ الدورة الساعة التاسعة.",
         "note": ""
+      },
+      {
+        "de": "Es ist acht Uhr.",
+        "ar": "الساعة الثامنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es ist halb neun.",
+        "ar": "الساعة الثامنة والنصف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es ist Viertel nach zehn.",
+        "ar": "الساعة العاشرة والربع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Zug fährt um Viertel vor sechs.",
+        "ar": "ينطلق القطار في السادسة إلا ربعًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann beginnt der Film?",
+        "ar": "متى يبدأ الفيلم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Film beginnt um zwanzig Uhr.",
+        "ar": "يبدأ الفيلم في الثامنة مساءً.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -1912,7 +2268,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "halb acht = 8:30",
+        "correct": "halb acht = 7:30",
+        "explanation": "في الألمانية النصف يتجه إلى الساعة التالية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "in neun Uhr",
+        "correct": "um neun Uhr",
+        "explanation": "مع وقت الساعة المحدد نستخدم um.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الوقت والساعة.",
@@ -1941,7 +2310,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -1949,7 +2323,7 @@
     "video_id": "bdSE3OwoG_c",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "متابعة تعلم قراءة الساعة واستعمال الوقت في أسئلة وأجوبة أكثر شيوعاً في الحياة اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة تعلم قراءة الساعة واستعمال الوقت في أسئلة وأجوبة أكثر شيوعاً في الحياة اليومية.",
@@ -1963,6 +2337,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع استخدامات الوقت في الحوار، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "السؤال عن الساعة",
+        "content": "نسأل Wie spät ist es? ونجيب رسميًا بالأرقام أو يوميًا بـ Viertel وhalb وvor وnach.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "موعد عند ساعة",
+        "content": "نستخدم um قبل وقت محدد: Der Kurs beginnt um neun Uhr.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -1982,6 +2366,42 @@
         "de": "Der Kurs beginnt um neun Uhr.",
         "ar": "تبدأ الدورة الساعة التاسعة.",
         "note": ""
+      },
+      {
+        "de": "Es ist acht Uhr.",
+        "ar": "الساعة الثامنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es ist halb neun.",
+        "ar": "الساعة الثامنة والنصف.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es ist Viertel nach zehn.",
+        "ar": "الساعة العاشرة والربع.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Zug fährt um Viertel vor sechs.",
+        "ar": "ينطلق القطار في السادسة إلا ربعًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann beginnt der Film?",
+        "ar": "متى يبدأ الفيلم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Film beginnt um zwanzig Uhr.",
+        "ar": "يبدأ الفيلم في الثامنة مساءً.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2001,7 +2421,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "halb acht = 8:30",
+        "correct": "halb acht = 7:30",
+        "explanation": "في الألمانية النصف يتجه إلى الساعة التالية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "in neun Uhr",
+        "correct": "um neun Uhr",
+        "explanation": "مع وقت الساعة المحدد نستخدم um.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: استخدامات الوقت في الحوار.",
@@ -2030,7 +2463,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2038,7 +2476,7 @@
     "video_id": "E9R3AJH-4Ak",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم أسماء الألوان الأساسية واستعمالها في وصف الملابس والأشياء والأماكن بطريقة سهلة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم أسماء الألوان الأساسية واستعمالها في وصف الملابس والأشياء والأماكن بطريقة سهلة.",
@@ -2052,6 +2490,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات الألوان، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "اللون بعد sein",
+        "content": "بعد sein يبقى اللون بلا نهاية: Das Auto ist rot.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اللون قبل الاسم",
+        "content": "قبل الاسم يأخذ اللون نهاية الصفة: ein rotes Auto، eine blaue Tasche.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2071,6 +2519,30 @@
         "de": "Ich kaufe eine rote Jacke.",
         "ar": "أشتري سترة حمراء.",
         "note": ""
+      },
+      {
+        "de": "Der Himmel ist blau.",
+        "ar": "السماء زرقاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich trage eine schwarze Hose.",
+        "ar": "أرتدي بنطالًا أسود.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Ampel ist rot.",
+        "ar": "إشارة المرور حمراء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie kauft ein weißes Hemd.",
+        "ar": "تشتري قميصًا أبيض.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2090,7 +2562,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Das Auto ist rotes.",
+        "correct": "Das Auto ist rot.",
+        "explanation": "بعد sein لا نضيف نهاية للصفة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "eine blau Tasche",
+        "correct": "eine blaue Tasche",
+        "explanation": "قبل الاسم المؤنث نحتاج نهاية -e.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات الألوان.",
@@ -2119,7 +2604,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2127,7 +2617,7 @@
     "video_id": "eFKwVAoZ_Yg",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم ترتيب الكلمات في الجملة الألمانية البسيطة وبناء جمل صحيحة في السؤال والجواب والتصريح. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم ترتيب الكلمات في الجملة الألمانية البسيطة وبناء جمل صحيحة في السؤال والجواب والتصريح.",
@@ -2141,6 +2631,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تركيب الجملة الأساسية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الفعل ثاني عنصر",
+        "content": "في الجملة الرئيسية يأتي الفعل المصرف في الموقع الثاني، حتى إذا بدأنا بزمان أو مكان.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "القوس الفعلي",
+        "content": "مع فعل منفصل أو Modalverb يأتي الجزء الثاني في النهاية: Ich stehe früh auf. Ich kann Deutsch sprechen.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2160,6 +2660,30 @@
         "de": "Am Abend sehe ich einen Film.",
         "ar": "في المساء أشاهد فيلمًا.",
         "note": ""
+      },
+      {
+        "de": "Ich lerne jeden Tag Deutsch.",
+        "ar": "أتعلم الألمانية كل يوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute arbeite ich zu Hause.",
+        "ar": "أعمل اليوم في المنزل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen muss ich früh aufstehen.",
+        "ar": "يجب أن أستيقظ باكرًا غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nach dem Kurs fahre ich direkt nach Hause.",
+        "ar": "بعد الدورة أذهب مباشرة إلى المنزل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2179,7 +2703,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Heute ich arbeite.",
+        "correct": "Heute arbeite ich.",
+        "explanation": "الفعل يبقى في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich aufstehe früh.",
+        "correct": "Ich stehe früh auf.",
+        "explanation": "الفعل المنفصل يضع السابقة في النهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: تركيب الجملة الأساسية.",
@@ -2208,7 +2745,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2216,7 +2758,7 @@
     "video_id": "XlW6dFxJUvQ",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على أهم أدوات الاستفهام الألمانية واستعمالها لبناء أسئلة قصيرة وواضحة في المواقف اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على أهم أدوات الاستفهام الألمانية واستعمالها لبناء أسئلة قصيرة وواضحة في المواقف اليومية.",
@@ -2230,6 +2772,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أدوات الاستفهام، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "W-Frage",
+        "content": "تأتي أداة السؤال أولًا، ثم الفعل المصرف، ثم الفاعل: Wo wohnst du?",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "سؤال نعم أو لا",
+        "content": "يبدأ بالفعل المصرف: Kommst du heute? ويُجاب بـ ja أو nein مع جملة قصيرة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2249,6 +2801,36 @@
         "de": "Kommst du aus Marokko?",
         "ar": "هل أنت من المغرب؟",
         "note": ""
+      },
+      {
+        "de": "Wie heißt du?",
+        "ar": "ما اسمك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann beginnt der Kurs?",
+        "ar": "متى تبدأ الدورة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du heute Zeit?",
+        "ar": "هل لديك وقت اليوم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Warum lernst du Deutsch?",
+        "ar": "لماذا تتعلم الألمانية؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Was machst du am Wochenende?",
+        "ar": "ماذا تفعل في عطلة نهاية الأسبوع؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2273,7 +2855,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Wo du wohnst?",
+        "correct": "Wo wohnst du?",
+        "explanation": "في السؤال المباشر يأتي الفعل بعد أداة السؤال.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Du hast Zeit?",
+        "correct": "Hast du Zeit?",
+        "explanation": "سؤال نعم أو لا يبدأ بالفعل.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: أدوات الاستفهام.",
@@ -2302,7 +2897,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2310,7 +2910,7 @@
     "video_id": "CPa4pXBlB4w",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم عبارات التحية والوداع والتعريف بالنفس بطريقة مناسبة للمستوى المبتدئ. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم عبارات التحية والوداع والتعريف بالنفس بطريقة مناسبة للمستوى المبتدئ.",
@@ -2324,6 +2924,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع التحيات وتقديم النفس، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "معلومات أساسية",
+        "content": "ابدأ بالاسم والبلد والسكن واللغة والمهنة. استخدم جملًا قصيرة مستقلة وواضحة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "رسمي وغير رسمي",
+        "content": "استعمل du مع الأصدقاء وSie في المواقف الرسمية: Wie heißt du? / Wie heißen Sie?",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2343,6 +2953,42 @@
         "de": "Ich wohne in Rabat. Und du?",
         "ar": "أسكن في الرباط. وأنت؟",
         "note": ""
+      },
+      {
+        "de": "Guten Tag, ich heiße Sara.",
+        "ar": "مرحبًا، اسمي سارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich komme aus Marokko und wohne in Bonn.",
+        "ar": "أنا من المغرب وأسكن في بون.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich bin Studentin und lerne Deutsch.",
+        "ar": "أنا طالبة وأتعلم الألمانية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "In meiner Freizeit lese ich gern.",
+        "ar": "أحب القراءة في وقت فراغي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Freut mich, Sie kennenzulernen.",
+        "ar": "يسرني التعرف إليكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Auf Wiedersehen!",
+        "ar": "إلى اللقاء!",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2367,7 +3013,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich bin heißen Ali.",
+        "correct": "Ich heiße Ali.",
+        "explanation": "heißen فعل مستقل ولا يأتي مع sein.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich komme von Marokko.",
+        "correct": "Ich komme aus Marokko.",
+        "explanation": "مع بلد الأصل نستخدم aus.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: التحيات وتقديم النفس.",
@@ -2396,7 +3055,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2404,7 +3068,7 @@
     "video_id": "RL0ztyekXp8",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم طرق النفي الأساسية في الألمانية مثل nicht و kein واستعمالهما في الجمل البسيطة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم طرق النفي الأساسية في الألمانية مثل nicht و kein واستعمالهما في الجمل البسيطة.",
@@ -2418,6 +3082,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع النفي الأساسي، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "kein مع الاسم",
+        "content": "نستخدم kein لنفي اسم نكرة أو اسم بلا أداة: Ich habe kein Auto.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "nicht لبقية الجملة",
+        "content": "نستخدم nicht لنفي الفعل أو الصفة أو الاسم المعروف: Ich komme nicht. Das ist nicht teuer.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2437,6 +3111,42 @@
         "de": "Ich habe kein Auto.",
         "ar": "ليس لدي سيارة.",
         "note": ""
+      },
+      {
+        "de": "Ich habe keinen Bruder.",
+        "ar": "ليس لدي أخ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie trinkt keinen Kaffee.",
+        "ar": "هي لا تشرب القهوة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Wetter ist heute nicht schön.",
+        "ar": "الطقس ليس جميلًا اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er arbeitet am Sonntag nicht.",
+        "ar": "هو لا يعمل يوم الأحد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist nicht mein Buch.",
+        "ar": "هذا ليس كتابي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben keine Zeit.",
+        "ar": "ليس لدينا وقت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2456,6 +3166,12 @@
         "wrong": "Ich habe nicht Auto.",
         "correct": "Ich habe kein Auto.",
         "explanation": "يُنفي الاسم النكرة هنا بـ kein."
+      },
+      {
+        "wrong": "Ich bin kein müde.",
+        "correct": "Ich bin nicht müde.",
+        "explanation": "الصفة تُنفى بـ nicht.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -2486,7 +3202,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2494,7 +3215,7 @@
     "video_id": "UXVKld8kJrc",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب أهم مفردات الطقس والفصول اليومية حتى تتمكن من وصف الجو بطريقة سهلة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب أهم مفردات الطقس والفصول اليومية حتى تتمكن من وصف الجو بطريقة سهلة.",
@@ -2508,6 +3229,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات الطقس، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "تراكيب الطقس",
+        "content": "نستخدم es ist مع الصفات، es regnet أو es schneit مع الأفعال، وdie Sonne scheint مع الاسم.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "درجة الحرارة",
+        "content": "نسأل Wie viel Grad sind es? ونجيب Es sind zwanzig Grad.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2527,6 +3258,36 @@
         "de": "Es sind zehn Grad.",
         "ar": "درجة الحرارة عشر درجات.",
         "note": ""
+      },
+      {
+        "de": "Es regnet seit dem Morgen.",
+        "ar": "تمطر منذ الصباح.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen wird es kalt.",
+        "ar": "سيكون الجو باردًا غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Es sind fünfundzwanzig Grad.",
+        "ar": "درجة الحرارة خمس وعشرون درجة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Winter schneit es oft.",
+        "ar": "تتساقط الثلوج كثيرًا في الشتاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wie ist das Wetter heute?",
+        "ar": "كيف الطقس اليوم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2546,7 +3307,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Heute ist sonnig.",
+        "correct": "Heute ist es sonnig.",
+        "explanation": "تعبير الطقس يحتاج الضمير es.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Es hat zwanzig Grad.",
+        "correct": "Es sind zwanzig Grad.",
+        "explanation": "لدرجة الحرارة نستخدم sein بصيغة الجمع.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات الطقس.",
@@ -2575,7 +3349,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2583,7 +3362,7 @@
     "video_id": "9a-5SMOC6mQ",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم حالة الرفع في الألمانية واستعمالها مع الفاعل وأدوات التعريف والتنكير الأساسية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم حالة الرفع في الألمانية واستعمالها مع الفاعل وأدوات التعريف والتنكير الأساسية.",
@@ -2597,6 +3376,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حالة الرفع Nominativ، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "وظيفة الحالة",
+        "content": "Nominativ للفاعل، Akkusativ للمفعول المباشر، وDativ غالبًا للمتلقي أو بعد أفعال وحروف محددة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تغير الأدوات",
+        "content": "أوضح تغير مع المذكر: der → den في Akkusativ وdem في Dativ؛ ein → einen → einem.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2616,6 +3405,42 @@
         "de": "Das Kind ist müde.",
         "ar": "الطفل متعب.",
         "note": ""
+      },
+      {
+        "de": "Der Mann kauft einen Apfel.",
+        "ar": "الرجل يشتري تفاحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich sehe den Bus.",
+        "ar": "أرى الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie hilft dem Kind.",
+        "ar": "هي تساعد الطفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir geben der Frau das Buch.",
+        "ar": "نعطي المرأة الكتاب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er dankt seinem Lehrer.",
+        "ar": "يشكر معلمه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Mädchen braucht einen Stift.",
+        "ar": "تحتاج الفتاة قلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -2635,7 +3460,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich sehe der Mann.",
+        "correct": "Ich sehe den Mann.",
+        "explanation": "المفعول المذكر يأخذ den.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich helfe den Mann.",
+        "correct": "Ich helfe dem Mann.",
+        "explanation": "helfen يطلب Dativ.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: حالة الرفع Nominativ.",
@@ -2664,7 +3502,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -2679,7 +3522,7 @@
     "source_compute_type": "int8",
     "source_device": "cpu",
     "review_status": "source_verified",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "هذا هو الجزء الأول من Akkusativ: يبدأ بالسؤال عن المعلومة الناقصة في الفعل، ويعرّف المفعول به، ثم يعرض أدوات التعريف والنكرة والنفي ويبيّن أن التغيير الظاهر يقع في المذكر فقط، قبل سلسلة تمارين على الأدوات والأفعال.",
     "video_outline": [
       {
@@ -2763,6 +3606,16 @@
         "source_start": "06:00",
         "source_end": "10:45",
         "origin": "video"
+      },
+      {
+        "heading": "وظيفة الحالة",
+        "content": "Nominativ للفاعل، Akkusativ للمفعول المباشر، وDativ غالبًا للمتلقي أو بعد أفعال وحروف محددة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تغير الأدوات",
+        "content": "أوضح تغير مع المذكر: der → den في Akkusativ وdem في Dativ؛ ein → einen → einem.",
+        "origin": "editorial_clarification"
       }
     ],
     "rules_from_video": [
@@ -2823,6 +3676,42 @@
         "timestamp": "14:35",
         "verified": true,
         "origin": "video"
+      },
+      {
+        "de": "Der Mann kauft einen Apfel.",
+        "ar": "الرجل يشتري تفاحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich sehe den Bus.",
+        "ar": "أرى الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie hilft dem Kind.",
+        "ar": "هي تساعد الطفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir geben der Frau das Buch.",
+        "ar": "نعطي المرأة الكتاب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er dankt seinem Lehrer.",
+        "ar": "يشكر معلمه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Mädchen braucht einen Stift.",
+        "ar": "تحتاج الفتاة قلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -2918,7 +3807,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich sehe der Mann.",
+        "correct": "Ich sehe den Mann.",
+        "explanation": "المفعول المذكر يأخذ den.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich helfe den Mann.",
+        "correct": "Ich helfe dem Mann.",
+        "explanation": "helfen يطلب Dativ.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يبدأ بجملتين ناقصتين وأسئلة Was.",
@@ -2956,6 +3858,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -2964,7 +3871,7 @@
     "video_id": "wgha0w2Zshc",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "متابعة التدريب على حالة النصب واستعمالها في أمثلة أكثر حتى تصبح أوضح وأسهل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة التدريب على حالة النصب واستعمالها في أمثلة أكثر حتى تصبح أوضح وأسهل.",
@@ -2978,6 +3885,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيق Akkusativ، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "وظيفة الحالة",
+        "content": "Nominativ للفاعل، Akkusativ للمفعول المباشر، وDativ غالبًا للمتلقي أو بعد أفعال وحروف محددة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تغير الأدوات",
+        "content": "أوضح تغير مع المذكر: der → den في Akkusativ وdem في Dativ؛ ein → einen → einem.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -2997,6 +3914,42 @@
         "de": "Sie sieht den Mann.",
         "ar": "هي ترى الرجل.",
         "note": ""
+      },
+      {
+        "de": "Der Mann kauft einen Apfel.",
+        "ar": "الرجل يشتري تفاحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich sehe den Bus.",
+        "ar": "أرى الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie hilft dem Kind.",
+        "ar": "هي تساعد الطفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir geben der Frau das Buch.",
+        "ar": "نعطي المرأة الكتاب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er dankt seinem Lehrer.",
+        "ar": "يشكر معلمه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Mädchen braucht einen Stift.",
+        "ar": "تحتاج الفتاة قلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3021,6 +3974,12 @@
         "wrong": "Ich sehe der Mann.",
         "correct": "Ich sehe den Mann.",
         "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      },
+      {
+        "wrong": "Ich helfe den Mann.",
+        "correct": "Ich helfe dem Mann.",
+        "explanation": "helfen يطلب Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -3082,7 +4041,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3090,7 +4054,7 @@
     "video_id": "2hkDcmSQZbs",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم استعمال Dativ مع بعض الأفعال والتراكيب الأساسية في مستوى A1. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم استعمال Dativ مع بعض الأفعال والتراكيب الأساسية في مستوى A1.",
@@ -3104,6 +4068,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حالة الجر غير المباشر Dativ، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "وظيفة الحالة",
+        "content": "Nominativ للفاعل، Akkusativ للمفعول المباشر، وDativ غالبًا للمتلقي أو بعد أفعال وحروف محددة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "تغير الأدوات",
+        "content": "أوضح تغير مع المذكر: der → den في Akkusativ وdem في Dativ؛ ein → einen → einem.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3123,6 +4097,42 @@
         "de": "Sie gibt der Frau das Buch.",
         "ar": "تعطي المرأةَ الكتابَ.",
         "note": ""
+      },
+      {
+        "de": "Der Mann kauft einen Apfel.",
+        "ar": "الرجل يشتري تفاحة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich sehe den Bus.",
+        "ar": "أرى الحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie hilft dem Kind.",
+        "ar": "هي تساعد الطفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir geben der Frau das Buch.",
+        "ar": "نعطي المرأة الكتاب.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er dankt seinem Lehrer.",
+        "ar": "يشكر معلمه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Mädchen braucht einen Stift.",
+        "ar": "تحتاج الفتاة قلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3147,6 +4157,12 @@
         "wrong": "Ich helfe den Mann.",
         "correct": "Ich helfe dem Mann.",
         "explanation": "الفعل helfen يطلب Dativ."
+      },
+      {
+        "wrong": "Ich sehe der Mann.",
+        "correct": "Ich sehe den Mann.",
+        "explanation": "المفعول المذكر يأخذ den.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -3208,7 +4224,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3216,7 +4237,7 @@
     "video_id": "RifQTs-nxrc",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "مراجعة ما سبق تعلمه في الدروس الأولى واكتشاف النقاط التي تحتاج إلى إعادة أو تثبيت. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "مراجعة ما سبق تعلمه في الدروس الأولى واكتشاف النقاط التي تحتاج إلى إعادة أو تثبيت.",
@@ -3230,6 +4251,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار مستوى A1، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "افهم المهمة أولًا",
+        "content": "حدد المطلوب والكلمات المفتاحية، ثم أجب بجملة بسيطة كاملة. لا تستخدم قاعدة معقدة إذا لم تكن متأكدًا منها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "راجع الأساسيات",
+        "content": "تحقق من الفعل في الموقع الثاني، الحرف الكبير للاسم، الأداة، ونقطة أو علامة سؤال في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3249,6 +4280,42 @@
         "de": "Danach prüfe ich meine Antwort.",
         "ar": "بعد ذلك أراجع إجابتي.",
         "note": ""
+      },
+      {
+        "de": "Ich wohne seit einem Jahr in Berlin.",
+        "ar": "أسكن في برلين منذ سنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Können Sie mir bitte helfen?",
+        "ar": "هل يمكنكم مساعدتي من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Samstag habe ich keine Zeit.",
+        "ar": "ليس لدي وقت يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin ist um zehn Uhr.",
+        "ar": "الموعد في العاشرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vielen Dank für Ihre Nachricht.",
+        "ar": "شكرًا جزيلًا على رسالتكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich freue mich auf Ihre Antwort.",
+        "ar": "أتطلع إلى ردكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3268,7 +4335,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Samstag.",
+        "correct": "Am Samstag habe ich Zeit.",
+        "explanation": "اكتب جملة قصيرة كاملة عندما تطلب المهمة ذلك.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Heute ich kann nicht.",
+        "correct": "Heute kann ich nicht.",
+        "explanation": "الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اختبار مستوى A1.",
@@ -3297,7 +4377,12 @@
         "video_required": true
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3305,7 +4390,7 @@
     "video_id": "yq3DahSQKaQ",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب مفردات أساسية عن الطعام والمشروبات التي تظهر كثيراً في الحياة اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب مفردات أساسية عن الطعام والمشروبات التي تظهر كثيراً في الحياة اليومية.",
@@ -3319,6 +4404,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات الطعام، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الطعام مع الكمية",
+        "content": "احفظ أسماء الطعام مع الأدوات واستعمل gern للتفضيل وmöchten للطلب المهذب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "في المطعم أو المتجر",
+        "content": "استخدم Ich hätte gern … وFür mich bitte … وWas kostet …؟ لبناء حوار بسيط.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3338,6 +4433,42 @@
         "de": "Was kostet die Suppe?",
         "ar": "كم ثمن الحساء؟",
         "note": ""
+      },
+      {
+        "de": "Ich esse gern Brot mit Käse.",
+        "ar": "أحب أكل الخبز مع الجبن.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Zum Frühstück trinke ich Kaffee.",
+        "ar": "أشرب القهوة في الإفطار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich hätte gern eine Suppe, bitte.",
+        "ar": "أود حساءً من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Für mich bitte einen Salat.",
+        "ar": "لي سلطة من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung, bitte.",
+        "ar": "الحساب من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Eine Kugel Vanille kostet zwei Euro.",
+        "ar": "كرة فانيليا تكلف يوروين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3372,7 +4503,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich möchte ein Kaffee.",
+        "correct": "Ich möchte einen Kaffee.",
+        "explanation": "Kaffee مذكر ومفعول مباشر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich bekomme eine Pizza?",
+        "correct": "Kann ich eine Pizza bekommen?",
+        "explanation": "صيغة السؤال ألطف وأوضح عند الطلب.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات الطعام.",
@@ -3401,7 +4545,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3409,7 +4558,7 @@
     "video_id": "RH7FXZ1riyE",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم صيغة الأمر في الألمانية لاستعمالها في التعليمات والطلبات البسيطة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم صيغة الأمر في الألمانية لاستعمالها في التعليمات والطلبات البسيطة.",
@@ -3423,6 +4572,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع صيغة الأمر Imperativ، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "ثلاث صيغ",
+        "content": "مع du نستعمل الجذر غالبًا، مع ihr صيغة الحاضر بلا ضمير، ومع Sie المصدر ثم Sie.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال المنفصلة",
+        "content": "تبقى السابقة في نهاية الأمر: Ruf mich an! Stehen Sie bitte auf!",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3442,6 +4601,30 @@
         "de": "Warten Sie bitte hier!",
         "ar": "انتظر هنا من فضلك!",
         "note": ""
+      },
+      {
+        "de": "Wartet einen Moment!",
+        "ar": "انتظروا لحظة!",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mach das Fenster zu!",
+        "ar": "أغلق النافذة!",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sei bitte vorsichtig!",
+        "ar": "كن حذرًا من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nehmen Sie Platz!",
+        "ar": "تفضل بالجلوس!",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3461,7 +4644,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Du komm hier!",
+        "correct": "Komm hierher!",
+        "explanation": "في أمر du نحذف الضمير ونستخدم صيغة الأمر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Aufstehen Sie!",
+        "correct": "Stehen Sie auf!",
+        "explanation": "مع الفعل المنفصل تأتي السابقة في النهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: صيغة الأمر Imperativ.",
@@ -3490,7 +4686,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3498,7 +4699,7 @@
     "video_id": "kEAN5yEyv7M",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "توسيع حصيلة مفردات الطعام والمشروبات مع كلمات إضافية تحتاجها في السوق والمطعم والمنزل. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "توسيع حصيلة مفردات الطعام والمشروبات مع كلمات إضافية تحتاجها في السوق والمطعم والمنزل.",
@@ -3512,6 +4713,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات الطعام اليومية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الطعام مع الكمية",
+        "content": "احفظ أسماء الطعام مع الأدوات واستعمل gern للتفضيل وmöchten للطلب المهذب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "في المطعم أو المتجر",
+        "content": "استخدم Ich hätte gern … وFür mich bitte … وWas kostet …؟ لبناء حوار بسيط.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3531,6 +4742,42 @@
         "de": "Was kostet die Suppe?",
         "ar": "كم ثمن الحساء؟",
         "note": ""
+      },
+      {
+        "de": "Ich esse gern Brot mit Käse.",
+        "ar": "أحب أكل الخبز مع الجبن.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Zum Frühstück trinke ich Kaffee.",
+        "ar": "أشرب القهوة في الإفطار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich hätte gern eine Suppe, bitte.",
+        "ar": "أود حساءً من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Für mich bitte einen Salat.",
+        "ar": "لي سلطة من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung, bitte.",
+        "ar": "الحساب من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Eine Kugel Vanille kostet zwei Euro.",
+        "ar": "كرة فانيليا تكلف يوروين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3565,7 +4812,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich möchte ein Kaffee.",
+        "correct": "Ich möchte einen Kaffee.",
+        "explanation": "Kaffee مذكر ومفعول مباشر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich bekomme eine Pizza?",
+        "correct": "Kann ich eine Pizza bekommen?",
+        "explanation": "صيغة السؤال ألطف وأوضح عند الطلب.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات الطعام اليومية.",
@@ -3594,7 +4854,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3602,7 +4867,7 @@
     "video_id": "CkiCgxlIrgc",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم العبارات الأساسية التي تحتاجها عند الجلوس في مطعم وطلب الطعام أو السؤال عن شيء. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم العبارات الأساسية التي تحتاجها عند الجلوس في مطعم وطلب الطعام أو السؤال عن شيء.",
@@ -3616,6 +4881,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حوار في المطعم، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الطعام مع الكمية",
+        "content": "احفظ أسماء الطعام مع الأدوات واستعمل gern للتفضيل وmöchten للطلب المهذب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "في المطعم أو المتجر",
+        "content": "استخدم Ich hätte gern … وFür mich bitte … وWas kostet …؟ لبناء حوار بسيط.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3635,6 +4910,42 @@
         "de": "Entschuldigung, können wir bitte zahlen?",
         "ar": "عذرًا، هل يمكننا دفع الحساب؟",
         "note": ""
+      },
+      {
+        "de": "Ich esse gern Brot mit Käse.",
+        "ar": "أحب أكل الخبز مع الجبن.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Zum Frühstück trinke ich Kaffee.",
+        "ar": "أشرب القهوة في الإفطار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich hätte gern eine Suppe, bitte.",
+        "ar": "أود حساءً من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Für mich bitte einen Salat.",
+        "ar": "لي سلطة من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung, bitte.",
+        "ar": "الحساب من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Eine Kugel Vanille kostet zwei Euro.",
+        "ar": "كرة فانيليا تكلف يوروين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3659,7 +4970,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich möchte ein Kaffee.",
+        "correct": "Ich möchte einen Kaffee.",
+        "explanation": "Kaffee مذكر ومفعول مباشر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich bekomme eine Pizza?",
+        "correct": "Kann ich eine Pizza bekommen?",
+        "explanation": "صيغة السؤال ألطف وأوضح عند الطلب.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: حوار في المطعم.",
@@ -3688,7 +5012,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3696,7 +5025,7 @@
     "video_id": "FNsHH3hQRFs",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم طريقة تصريف الأفعال المنتظمة في الحاضر مع الضمائر الشخصية الأساسية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم طريقة تصريف الأفعال المنتظمة في الحاضر مع الضمائر الشخصية الأساسية.",
@@ -3710,6 +5039,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال المنتظمة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "التصريف المنتظم",
+        "content": "نحذف -en ونضيف -e، -st، -t، -en، -t، -en حسب الضمير.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال غير المنتظمة",
+        "content": "قد يتغير حرف الجذر مع du وer/sie/es: fahren → du fährst، lesen → er liest.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3729,6 +5068,42 @@
         "de": "Er liest ein Buch.",
         "ar": "هو يقرأ كتابًا.",
         "note": ""
+      },
+      {
+        "de": "Ich lerne Deutsch.",
+        "ar": "أتعلم الألمانية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du arbeitest heute.",
+        "ar": "أنت تعمل اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er fährt mit dem Bus.",
+        "ar": "هو يذهب بالحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie liest ein Buch.",
+        "ar": "هي تقرأ كتابًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sprechen Arabisch.",
+        "ar": "نحن نتحدث العربية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nehmt ihr den Zug?",
+        "ar": "هل تستقلون القطار؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3748,7 +5123,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "du lernen",
+        "correct": "du lernst",
+        "explanation": "مع du نضيف -st.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "er lesen",
+        "correct": "er liest",
+        "explanation": "lesen يغير e إلى ie مع er/sie/es.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الأفعال المنتظمة.",
@@ -3777,7 +5165,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3785,7 +5178,7 @@
     "video_id": "h3yJLcUMR8Y",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على مفردات وعبارات بسيطة مرتبطة بالشراء والطلب داخل محل الآيس كريم. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على مفردات وعبارات بسيطة مرتبطة بالشراء والطلب داخل محل الآيس كريم.",
@@ -3799,6 +5192,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حوار شراء الآيس كريم، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الطعام مع الكمية",
+        "content": "احفظ أسماء الطعام مع الأدوات واستعمل gern للتفضيل وmöchten للطلب المهذب.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "في المطعم أو المتجر",
+        "content": "استخدم Ich hätte gern … وFür mich bitte … وWas kostet …؟ لبناء حوار بسيط.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3818,6 +5221,42 @@
         "de": "Im Becher oder in der Waffel?",
         "ar": "في كوب أم في قرطاس؟",
         "note": ""
+      },
+      {
+        "de": "Ich esse gern Brot mit Käse.",
+        "ar": "أحب أكل الخبز مع الجبن.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Zum Frühstück trinke ich Kaffee.",
+        "ar": "أشرب القهوة في الإفطار.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich hätte gern eine Suppe, bitte.",
+        "ar": "أود حساءً من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Für mich bitte einen Salat.",
+        "ar": "لي سلطة من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Die Rechnung, bitte.",
+        "ar": "الحساب من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Eine Kugel Vanille kostet zwei Euro.",
+        "ar": "كرة فانيليا تكلف يوروين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3842,7 +5281,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich möchte ein Kaffee.",
+        "correct": "Ich möchte einen Kaffee.",
+        "explanation": "Kaffee مذكر ومفعول مباشر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich bekomme eine Pizza?",
+        "correct": "Kann ich eine Pizza bekommen?",
+        "explanation": "صيغة السؤال ألطف وأوضح عند الطلب.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: حوار شراء الآيس كريم.",
@@ -3871,7 +5323,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3879,7 +5336,7 @@
     "video_id": "2bq-baqpwUw",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على الأفعال غير المنتظمة الشائعة وطريقة تغيرها مع الضمائر في الزمن الحاضر. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على الأفعال غير المنتظمة الشائعة وطريقة تغيرها مع الضمائر في الزمن الحاضر.",
@@ -3893,6 +5350,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال غير المنتظمة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "التصريف المنتظم",
+        "content": "نحذف -en ونضيف -e، -st، -t، -en، -t، -en حسب الضمير.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأفعال غير المنتظمة",
+        "content": "قد يتغير حرف الجذر مع du وer/sie/es: fahren → du fährst، lesen → er liest.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -3912,6 +5379,42 @@
         "de": "Er liest ein Buch.",
         "ar": "هو يقرأ كتابًا.",
         "note": ""
+      },
+      {
+        "de": "Ich lerne Deutsch.",
+        "ar": "أتعلم الألمانية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Du arbeitest heute.",
+        "ar": "أنت تعمل اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er fährt mit dem Bus.",
+        "ar": "هو يذهب بالحافلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie liest ein Buch.",
+        "ar": "هي تقرأ كتابًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sprechen Arabisch.",
+        "ar": "نحن نتحدث العربية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Nehmt ihr den Zug?",
+        "ar": "هل تستقلون القطار؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -3931,7 +5434,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "du lernen",
+        "correct": "du lernst",
+        "explanation": "مع du نضيف -st.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "er lesen",
+        "correct": "er liest",
+        "explanation": "lesen يغير e إلى ie مع er/sie/es.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الأفعال غير المنتظمة.",
@@ -3960,7 +5476,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -3968,7 +5489,7 @@
     "video_id": "cFAL6PhExPU",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم الفرق بين الأفعال القابلة للانفصال وغير القابلة للانفصال داخل الجملة الألمانية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم الفرق بين الأفعال القابلة للانفصال وغير القابلة للانفصال داخل الجملة الألمانية.",
@@ -3982,6 +5503,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال القابلة للانفصال، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الفعل المنفصل",
+        "content": "في الجملة الرئيسية يتصرف الجذر وتذهب السابقة إلى النهاية: Ich rufe dich an.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "غير المنفصل",
+        "content": "سوابق مثل be- وver- وent- لا تنفصل: Ich besuche dich. Er versteht die Frage.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4001,6 +5532,30 @@
         "de": "Ich verstehe die Aufgabe.",
         "ar": "أفهم المهمة.",
         "note": ""
+      },
+      {
+        "de": "Wir kaufen am Samstag ein.",
+        "ar": "نتسوق يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Rufst du mich später an?",
+        "ar": "هل ستتصل بي لاحقًا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kurs fängt um neun Uhr an.",
+        "ar": "تبدأ الدورة في التاسعة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie besucht ihre Freundin.",
+        "ar": "تزور صديقتها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4030,6 +5585,18 @@
         "wrong": "Ich aufstehe um sieben Uhr.",
         "correct": "Ich stehe um sieben Uhr auf.",
         "explanation": "في الجملة الرئيسية ينفصل الجزء الأول ويأتي في النهاية."
+      },
+      {
+        "wrong": "Ich aufstehe früh.",
+        "correct": "Ich stehe früh auf.",
+        "explanation": "تفصل السابقة في الجملة الرئيسية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich suche be meine Freundin.",
+        "correct": "Ich besuche meine Freundin.",
+        "explanation": "besuchen فعل غير منفصل.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4060,7 +5627,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4068,7 +5640,7 @@
     "video_id": "We_KqZuND7A",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على شكل الصفات مع بعض الأدوات والتراكيب الأساسية في مستوى A1. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على شكل الصفات مع بعض الأدوات والتراكيب الأساسية في مستوى A1.",
@@ -4082,6 +5654,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تصريف الصفات، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الوصف بعد sein",
+        "content": "تبقى الصفة بلا نهاية بعد sein: Das Haus ist groß.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الوصف قبل الاسم",
+        "content": "قبل الاسم تأخذ نهاية بحسب الأداة والجنس والحالة: ein großes Haus، eine schöne Stadt.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4101,6 +5683,42 @@
         "de": "mit einer netten Kollegin",
         "ar": "مع زميلة لطيفة",
         "note": ""
+      },
+      {
+        "de": "Das Zimmer ist klein, aber hell.",
+        "ar": "الغرفة صغيرة لكنها مضيئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie trägt ein rotes Kleid.",
+        "ar": "ترتدي فستانًا أحمر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist freundlich, nicht unhöflich.",
+        "ar": "هو ودود وليس فظًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist eine einfache Aufgabe.",
+        "ar": "هذه مهمة سهلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kaffee ist heiß.",
+        "ar": "القهوة ساخنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir suchen eine günstige Wohnung.",
+        "ar": "نبحث عن شقة رخيصة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4120,7 +5738,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "ein schön Stadt",
+        "correct": "eine schöne Stadt",
+        "explanation": "الاسم المؤنث مع eine يحتاج نهاية -e.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das Haus ist großes.",
+        "correct": "Das Haus ist groß.",
+        "explanation": "بعد sein لا نضيف نهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: تصريف الصفات.",
@@ -4149,7 +5780,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4157,7 +5793,7 @@
     "video_id": "KN7jwA8WDkA",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم أسماء أيام الأسبوع وكيفية استعمالها عند الكلام عن الروتين والمواعيد. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم أسماء أيام الأسبوع وكيفية استعمالها عند الكلام عن الروتين والمواعيد.",
@@ -4171,6 +5807,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أيام الأسبوع، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الأيام والأشهر",
+        "content": "نستخدم am مع أيام الأسبوع والتاريخ، وim مع الأشهر والفصول: am Montag، im Mai، im Sommer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التاريخ",
+        "content": "بعد am يأخذ العدد الترتيبي نهاية -en: am dritten Mai. من 1 إلى 19 غالبًا -te، ومن 20 فما فوق -ste.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4190,6 +5836,42 @@
         "de": "Am dritten Mai habe ich Geburtstag.",
         "ar": "عيد ميلادي في الثالث من مايو.",
         "note": ""
+      },
+      {
+        "de": "Am Montag habe ich Deutschkurs.",
+        "ar": "لدي دورة ألمانية يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im August haben wir Urlaub.",
+        "ar": "لدينا عطلة في أغسطس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mein Geburtstag ist am dritten Mai.",
+        "ar": "عيد ميلادي في الثالث من مايو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute ist der erste April.",
+        "ar": "اليوم هو الأول من أبريل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Winter ist es kalt.",
+        "ar": "الجو بارد في الشتاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen treffe ich meine Freunde.",
+        "ar": "سأقابل أصدقائي غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4209,7 +5891,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "in Montag",
+        "correct": "am Montag",
+        "explanation": "مع أيام الأسبوع نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "am drei Mai",
+        "correct": "am dritten Mai",
+        "explanation": "بعد am نستخدم العدد الترتيبي بنهاية -en.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: أيام الأسبوع.",
@@ -4238,7 +5933,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4246,7 +5946,7 @@
     "video_id": "_1eOCBvxeX4",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم الأفعال المساعدة الأساسية وكيفية استعمالها مع فعل آخر داخل الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم الأفعال المساعدة الأساسية وكيفية استعمالها مع فعل آخر داخل الجملة.",
@@ -4260,6 +5960,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال المساعدة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الفعلان في الجملة",
+        "content": "يأتي Modalverb مصرفًا في الموقع الثاني، والفعل الأساسي في المصدر في نهاية الجملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "المعنى",
+        "content": "können للقدرة، müssen للضرورة، dürfen للسماح، sollen للنصيحة، wollen للإرادة، وmöchten للرغبة المهذبة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4279,6 +5989,36 @@
         "de": "Du musst heute arbeiten.",
         "ar": "يجب أن تعمل اليوم.",
         "note": ""
+      },
+      {
+        "de": "Ich kann gut schwimmen.",
+        "ar": "أستطيع السباحة جيدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Darf ich hier sitzen?",
+        "ar": "هل يُسمح لي بالجلوس هنا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir möchten einen Kaffee bestellen.",
+        "ar": "نود طلب قهوة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ihr sollt mehr Wasser trinken.",
+        "ar": "ينبغي أن تشربوا ماء أكثر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie will Ärztin werden.",
+        "ar": "تريد أن تصبح طبيبة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4303,6 +6043,18 @@
         "wrong": "Ich kann Deutsch spreche.",
         "correct": "Ich kann Deutsch sprechen.",
         "explanation": "بعد الفعل الناقص يأتي المصدر بلا تصريف."
+      },
+      {
+        "wrong": "Ich kann schwimme.",
+        "correct": "Ich kann schwimmen.",
+        "explanation": "الفعل الثاني يبقى في المصدر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich müssen arbeiten.",
+        "correct": "Ich muss arbeiten.",
+        "explanation": "يجب تصريف Modalverb مع الفاعل.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4333,7 +6085,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4341,7 +6098,7 @@
     "video_id": "0VmUW7XX0Jo",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على أشهر طرق جمع الأسماء في الألمانية مع أمثلة سهلة للمبتدئين. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على أشهر طرق جمع الأسماء في الألمانية مع أمثلة سهلة للمبتدئين.",
@@ -4355,6 +6112,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الجمع، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "لا توجد نهاية واحدة",
+        "content": "قد يكون الجمع بـ -e أو -er أو -(e)n أو -s أو بلا تغيير، وقد يظهر Umlaut. احفظ الجمع مع كل اسم.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "أداة الجمع",
+        "content": "أداة التعريف في Nominativ وAkkusativ هي die، ولا توجد أداة نكرة للجمع.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4374,6 +6141,30 @@
         "de": "die Frau – die Frauen",
         "ar": "المرأة — النساء",
         "note": ""
+      },
+      {
+        "de": "der Tisch – die Tische",
+        "ar": "الطاولة – الطاولات",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "das Auto – die Autos",
+        "ar": "السيارة – السيارات",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "der Lehrer – die Lehrer",
+        "ar": "المعلم – المعلمون",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich kaufe zwei Äpfel.",
+        "ar": "أشتري تفاحتين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4393,7 +6184,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "zwei Buch",
+        "correct": "zwei Bücher",
+        "explanation": "بعد العدد نستخدم صيغة الجمع.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "die Autos sind neues",
+        "correct": "die Autos sind neu",
+        "explanation": "بعد sein تبقى الصفة بلا نهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الجمع.",
@@ -4422,7 +6226,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4430,7 +6239,7 @@
     "video_id": "dNY85buE-R0",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم بداية استعمال الزمن الماضي في الألمانية للتحدث عن أحداث حصلت وانتهت. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم بداية استعمال الزمن الماضي في الألمانية للتحدث عن أحداث حصلت وانتهت.",
@@ -4444,6 +6253,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الماضي باللغة الألمانية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "بناء Perfekt",
+        "content": "نصرف haben أو sein في الموقع الثاني ونضع Partizip II في نهاية الجملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اختيار الفعل المساعد",
+        "content": "تأخذ معظم الأفعال haben، بينما تأخذ أفعال الحركة وتغير الحالة الشائعة sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4463,6 +6282,42 @@
         "de": "Wir sind nach Berlin gefahren.",
         "ar": "سافرنا إلى برلين.",
         "note": ""
+      },
+      {
+        "de": "Ich habe gestern gearbeitet.",
+        "ar": "عملت أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben einen Film gesehen.",
+        "ar": "شاهدنا فيلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ist nach Berlin gefahren.",
+        "ar": "ذهبت إلى برلين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist früh aufgestanden.",
+        "ar": "استيقظ باكرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du gut geschlafen?",
+        "ar": "هل نمت جيدًا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann seid ihr angekommen?",
+        "ar": "متى وصلتم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4487,6 +6342,18 @@
         "wrong": "Ich habe nach Berlin gefahren.",
         "correct": "Ich bin nach Berlin gefahren.",
         "explanation": "fahren مع انتقال مكاني يستخدم sein في Perfekt."
+      },
+      {
+        "wrong": "Ich bin gearbeitet.",
+        "correct": "Ich habe gearbeitet.",
+        "explanation": "arbeiten يبني Perfekt مع haben.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich habe gegangen.",
+        "correct": "Ich bin gegangen.",
+        "explanation": "gehen يبني Perfekt مع sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4517,7 +6384,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4525,7 +6397,7 @@
     "video_id": "JSgVZ4QtWRk",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "متابعة تعلم الزمن الماضي مع أمثلة إضافية تساعد على تثبيت الفكرة واستعمالها بسهولة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة تعلم الزمن الماضي مع أمثلة إضافية تساعد على تثبيت الفكرة واستعمالها بسهولة.",
@@ -4539,6 +6411,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيقات الماضي، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "بناء Perfekt",
+        "content": "نصرف haben أو sein في الموقع الثاني ونضع Partizip II في نهاية الجملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اختيار الفعل المساعد",
+        "content": "تأخذ معظم الأفعال haben، بينما تأخذ أفعال الحركة وتغير الحالة الشائعة sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4558,6 +6440,42 @@
         "de": "Wir sind nach Berlin gefahren.",
         "ar": "سافرنا إلى برلين.",
         "note": ""
+      },
+      {
+        "de": "Ich habe gestern gearbeitet.",
+        "ar": "عملت أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben einen Film gesehen.",
+        "ar": "شاهدنا فيلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ist nach Berlin gefahren.",
+        "ar": "ذهبت إلى برلين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist früh aufgestanden.",
+        "ar": "استيقظ باكرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du gut geschlafen?",
+        "ar": "هل نمت جيدًا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann seid ihr angekommen?",
+        "ar": "متى وصلتم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4582,6 +6500,18 @@
         "wrong": "Ich habe nach Berlin gefahren.",
         "correct": "Ich bin nach Berlin gefahren.",
         "explanation": "fahren مع انتقال مكاني يستخدم sein في Perfekt."
+      },
+      {
+        "wrong": "Ich bin gearbeitet.",
+        "correct": "Ich habe gearbeitet.",
+        "explanation": "arbeiten يبني Perfekt مع haben.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich habe gegangen.",
+        "correct": "Ich bin gegangen.",
+        "explanation": "gehen يبني Perfekt مع sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4612,7 +6542,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4620,7 +6555,7 @@
     "video_id": "8NFS6fECKvs",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "معرفة الأفعال التي تأتي مع sein في الزمن الماضي وكيفية استعمالها في الجمل الأساسية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "معرفة الأفعال التي تأتي مع sein في الزمن الماضي وكيفية استعمالها في الجمل الأساسية.",
@@ -4634,6 +6569,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أفعال الماضي مع sein، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "بناء Perfekt",
+        "content": "نصرف haben أو sein في الموقع الثاني ونضع Partizip II في نهاية الجملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اختيار الفعل المساعد",
+        "content": "تأخذ معظم الأفعال haben، بينما تأخذ أفعال الحركة وتغير الحالة الشائعة sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4653,6 +6598,42 @@
         "de": "Wir sind nach Berlin gefahren.",
         "ar": "سافرنا إلى برلين.",
         "note": ""
+      },
+      {
+        "de": "Ich habe gestern gearbeitet.",
+        "ar": "عملت أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben einen Film gesehen.",
+        "ar": "شاهدنا فيلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ist nach Berlin gefahren.",
+        "ar": "ذهبت إلى برلين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist früh aufgestanden.",
+        "ar": "استيقظ باكرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du gut geschlafen?",
+        "ar": "هل نمت جيدًا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann seid ihr angekommen?",
+        "ar": "متى وصلتم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4677,6 +6658,18 @@
         "wrong": "Ich sein müde.",
         "correct": "Ich bin müde.",
         "explanation": "يجب تصريف sein مع الضمير ich."
+      },
+      {
+        "wrong": "Ich bin gearbeitet.",
+        "correct": "Ich habe gearbeitet.",
+        "explanation": "arbeiten يبني Perfekt مع haben.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich habe gegangen.",
+        "correct": "Ich bin gegangen.",
+        "explanation": "gehen يبني Perfekt مع sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [],
@@ -4707,7 +6700,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4715,7 +6713,7 @@
     "video_id": "e0HZqudDY8E",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التدرب على أهم الأفعال غير المنتظمة في الماضي وكيفية استعمالها في الجمل اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التدرب على أهم الأفعال غير المنتظمة في الماضي وكيفية استعمالها في الجمل اليومية.",
@@ -4729,6 +6727,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأفعال غير المنتظمة في الماضي، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "بناء Perfekt",
+        "content": "نصرف haben أو sein في الموقع الثاني ونضع Partizip II في نهاية الجملة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "اختيار الفعل المساعد",
+        "content": "تأخذ معظم الأفعال haben، بينما تأخذ أفعال الحركة وتغير الحالة الشائعة sein.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4748,6 +6756,42 @@
         "de": "Wir sind nach Hause gegangen.",
         "ar": "ذهبنا إلى المنزل.",
         "note": ""
+      },
+      {
+        "de": "Ich habe gestern gearbeitet.",
+        "ar": "عملت أمس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir haben einen Film gesehen.",
+        "ar": "شاهدنا فيلمًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie ist nach Berlin gefahren.",
+        "ar": "ذهبت إلى برلين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist früh aufgestanden.",
+        "ar": "استيقظ باكرًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du gut geschlafen?",
+        "ar": "هل نمت جيدًا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann seid ihr angekommen?",
+        "ar": "متى وصلتم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4767,7 +6811,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich bin gearbeitet.",
+        "correct": "Ich habe gearbeitet.",
+        "explanation": "arbeiten يبني Perfekt مع haben.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich habe gegangen.",
+        "correct": "Ich bin gegangen.",
+        "explanation": "gehen يبني Perfekt مع sein.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الأفعال غير المنتظمة في الماضي.",
@@ -4796,7 +6853,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4804,7 +6866,7 @@
     "video_id": "JUSld6o_5kU",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب أسماء الملابس الأساسية والألوان والوصف البسيط المتعلق بها. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب أسماء الملابس الأساسية والألوان والوصف البسيط المتعلق بها.",
@@ -4818,6 +6880,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع مفردات الملابس، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الاسم مع الأداة",
+        "content": "احفظ قطعة الملابس مع أداتها وجمعها، واستعمل tragen للارتداء وanziehen لفعل ارتداء الملابس.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التسوق",
+        "content": "اسأل عن المقاس واللون والسعر واستعمل passen للملاءمة وgefallen للإعجاب.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4837,6 +6909,42 @@
         "de": "Kann ich die Jacke anprobieren?",
         "ar": "هل يمكنني تجربة السترة؟",
         "note": ""
+      },
+      {
+        "de": "Ich trage heute eine blaue Jeans.",
+        "ar": "أرتدي اليوم بنطال جينز أزرق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Diese Jacke passt mir gut.",
+        "ar": "هذه السترة تناسبني جيدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Haben Sie das Hemd in Größe M?",
+        "ar": "هل لديكم القميص بمقاس M؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kann ich die Schuhe anprobieren?",
+        "ar": "هل يمكنني تجربة الحذاء؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Pullover ist mir zu groß.",
+        "ar": "السترة الصوفية كبيرة عليّ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Was kostet dieser Mantel?",
+        "ar": "كم يكلف هذا المعطف؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4861,7 +6969,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Die Jacke passt mich.",
+        "correct": "Die Jacke passt mir.",
+        "explanation": "passen يأخذ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich probiere die Jacke.",
+        "correct": "Ich probiere die Jacke an.",
+        "explanation": "تجربة الملابس هي anprobieren وهو فعل منفصل.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: مفردات الملابس.",
@@ -4890,7 +7011,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4898,7 +7024,7 @@
     "video_id": "2m9TdE8g8lY",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم جمل وعبارات بسيطة تستعمل عند السؤال عن المقاس أو السعر أو اللون في محل الملابس. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم جمل وعبارات بسيطة تستعمل عند السؤال عن المقاس أو السعر أو اللون في محل الملابس.",
@@ -4912,6 +7038,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع حوار في محل الثياب، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الاسم مع الأداة",
+        "content": "احفظ قطعة الملابس مع أداتها وجمعها، واستعمل tragen للارتداء وanziehen لفعل ارتداء الملابس.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التسوق",
+        "content": "اسأل عن المقاس واللون والسعر واستعمل passen للملاءمة وgefallen للإعجاب.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -4931,6 +7067,42 @@
         "de": "Was kostet die Hose, und kann ich sie anprobieren?",
         "ar": "كم ثمن السروال، وهل يمكنني تجربته؟",
         "note": ""
+      },
+      {
+        "de": "Ich trage heute eine blaue Jeans.",
+        "ar": "أرتدي اليوم بنطال جينز أزرق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Diese Jacke passt mir gut.",
+        "ar": "هذه السترة تناسبني جيدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Haben Sie das Hemd in Größe M?",
+        "ar": "هل لديكم القميص بمقاس M؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kann ich die Schuhe anprobieren?",
+        "ar": "هل يمكنني تجربة الحذاء؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Pullover ist mir zu groß.",
+        "ar": "السترة الصوفية كبيرة عليّ.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Was kostet dieser Mantel?",
+        "ar": "كم يكلف هذا المعطف؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -4955,7 +7127,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Die Jacke passt mich.",
+        "correct": "Die Jacke passt mir.",
+        "explanation": "passen يأخذ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich probiere die Jacke.",
+        "correct": "Ich probiere die Jacke an.",
+        "explanation": "تجربة الملابس هي anprobieren وهو فعل منفصل.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: حوار في محل الثياب.",
@@ -4984,7 +7169,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -4992,7 +7182,7 @@
     "video_id": "hvNBiaQ_WaE",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم أسماء الأشهر والفصول وكيفية استعمالها في الحديث عن الوقت والمناسبات والخطط. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم أسماء الأشهر والفصول وكيفية استعمالها في الحديث عن الوقت والمناسبات والخطط.",
@@ -5006,6 +7196,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأشهر وفصول السنة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الأيام والأشهر",
+        "content": "نستخدم am مع أيام الأسبوع والتاريخ، وim مع الأشهر والفصول: am Montag، im Mai، im Sommer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التاريخ",
+        "content": "بعد am يأخذ العدد الترتيبي نهاية -en: am dritten Mai. من 1 إلى 19 غالبًا -te، ومن 20 فما فوق -ste.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5025,6 +7225,42 @@
         "de": "Am dritten Mai habe ich Geburtstag.",
         "ar": "عيد ميلادي في الثالث من مايو.",
         "note": ""
+      },
+      {
+        "de": "Am Montag habe ich Deutschkurs.",
+        "ar": "لدي دورة ألمانية يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im August haben wir Urlaub.",
+        "ar": "لدينا عطلة في أغسطس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mein Geburtstag ist am dritten Mai.",
+        "ar": "عيد ميلادي في الثالث من مايو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute ist der erste April.",
+        "ar": "اليوم هو الأول من أبريل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Winter ist es kalt.",
+        "ar": "الجو بارد في الشتاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen treffe ich meine Freunde.",
+        "ar": "سأقابل أصدقائي غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5044,7 +7280,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "in Montag",
+        "correct": "am Montag",
+        "explanation": "مع أيام الأسبوع نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "am drei Mai",
+        "correct": "am dritten Mai",
+        "explanation": "بعد am نستخدم العدد الترتيبي بنهاية -en.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الأشهر وفصول السنة.",
@@ -5073,7 +7322,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5081,7 +7335,7 @@
     "video_id": "aXftUnzLheY",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم أهم الظروف الزمنية التي تساعدك على تحديد متى يحدث الفعل في الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم أهم الظروف الزمنية التي تساعدك على تحديد متى يحدث الفعل في الجملة.",
@@ -5095,6 +7349,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الظروف الزمنية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الأيام والأشهر",
+        "content": "نستخدم am مع أيام الأسبوع والتاريخ، وim مع الأشهر والفصول: am Montag، im Mai، im Sommer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التاريخ",
+        "content": "بعد am يأخذ العدد الترتيبي نهاية -en: am dritten Mai. من 1 إلى 19 غالبًا -te، ومن 20 فما فوق -ste.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5114,6 +7378,42 @@
         "de": "Dort treffe ich meine Freunde.",
         "ar": "هناك ألتقي أصدقائي.",
         "note": ""
+      },
+      {
+        "de": "Am Montag habe ich Deutschkurs.",
+        "ar": "لدي دورة ألمانية يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im August haben wir Urlaub.",
+        "ar": "لدينا عطلة في أغسطس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mein Geburtstag ist am dritten Mai.",
+        "ar": "عيد ميلادي في الثالث من مايو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute ist der erste April.",
+        "ar": "اليوم هو الأول من أبريل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Winter ist es kalt.",
+        "ar": "الجو بارد في الشتاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen treffe ich meine Freunde.",
+        "ar": "سأقابل أصدقائي غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5133,7 +7433,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "in Montag",
+        "correct": "am Montag",
+        "explanation": "مع أيام الأسبوع نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "am drei Mai",
+        "correct": "am dritten Mai",
+        "explanation": "بعد am نستخدم العدد الترتيبي بنهاية -en.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الظروف الزمنية.",
@@ -5162,7 +7475,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5177,7 +7495,7 @@
     "source_compute_type": "int8",
     "source_device": "cpu",
     "review_status": "needs_human_review",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "يبني الفيديو تعريفًا شخصيًا خطوة خطوة: الاسم، بلد الأصل، مكان السكن، المهنة، الحالة الاجتماعية، الأطفال، اللغة الأم واللغات الأخرى، الهوايات، ثم يجمع العناصر في تقديم متصل يصلح للحياة اليومية والامتحان.",
     "video_outline": [
       {
@@ -5255,6 +7573,16 @@
         "source_start": "03:50",
         "source_end": "07:45",
         "origin": "video"
+      },
+      {
+        "heading": "معلومات أساسية",
+        "content": "ابدأ بالاسم والبلد والسكن واللغة والمهنة. استخدم جملًا قصيرة مستقلة وواضحة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "رسمي وغير رسمي",
+        "content": "استعمل du مع الأصدقاء وSie في المواقف الرسمية: Wie heißt du? / Wie heißen Sie?",
+        "origin": "editorial_clarification"
       }
     ],
     "rules_from_video": [
@@ -5308,6 +7636,42 @@
         "timestamp": "03:07",
         "verified": false,
         "origin": "video"
+      },
+      {
+        "de": "Guten Tag, ich heiße Sara.",
+        "ar": "مرحبًا، اسمي سارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich komme aus Marokko und wohne in Bonn.",
+        "ar": "أنا من المغرب وأسكن في بون.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich bin Studentin und lerne Deutsch.",
+        "ar": "أنا طالبة وأتعلم الألمانية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "In meiner Freizeit lese ich gern.",
+        "ar": "أحب القراءة في وقت فراغي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Freut mich, Sie kennenzulernen.",
+        "ar": "يسرني التعرف إليكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Auf Wiedersehen!",
+        "ar": "إلى اللقاء!",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary_from_video": [
@@ -5404,7 +7768,20 @@
       }
     ],
     "tables": [],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich bin heißen Ali.",
+        "correct": "Ich heiße Ali.",
+        "explanation": "heißen فعل مستقل ولا يأتي مع sein.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich komme von Marokko.",
+        "correct": "Ich komme aus Marokko.",
+        "explanation": "مع بلد الأصل نستخدم aus.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "evidence_checks": [
       {
         "claim": "يذكر أن التعريف بالنفس مطلوب في الامتحان والحياة اليومية.",
@@ -5442,6 +7819,11 @@
       "beginning_represented": true,
       "middle_represented": true,
       "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
     }
   },
   {
@@ -5450,7 +7832,7 @@
     "video_id": "b6cakuASMzw",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب أهم الصفات الأساسية مع أضدادها لتسهيل الوصف والمقارنة في المستوى المبتدئ. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب أهم الصفات الأساسية مع أضدادها لتسهيل الوصف والمقارنة في المستوى المبتدئ.",
@@ -5464,6 +7846,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الصفات وعكسها، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الوصف بعد sein",
+        "content": "تبقى الصفة بلا نهاية بعد sein: Das Haus ist groß.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الوصف قبل الاسم",
+        "content": "قبل الاسم تأخذ نهاية بحسب الأداة والجنس والحالة: ein großes Haus، eine schöne Stadt.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5483,6 +7875,42 @@
         "de": "Der Weg ist kurz, nicht lang.",
         "ar": "الطريق قصير، وليس طويلًا.",
         "note": ""
+      },
+      {
+        "de": "Das Zimmer ist klein, aber hell.",
+        "ar": "الغرفة صغيرة لكنها مضيئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie trägt ein rotes Kleid.",
+        "ar": "ترتدي فستانًا أحمر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist freundlich, nicht unhöflich.",
+        "ar": "هو ودود وليس فظًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist eine einfache Aufgabe.",
+        "ar": "هذه مهمة سهلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kaffee ist heiß.",
+        "ar": "القهوة ساخنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir suchen eine günstige Wohnung.",
+        "ar": "نبحث عن شقة رخيصة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5502,7 +7930,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "ein schön Stadt",
+        "correct": "eine schöne Stadt",
+        "explanation": "الاسم المؤنث مع eine يحتاج نهاية -e.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das Haus ist großes.",
+        "correct": "Das Haus ist groß.",
+        "explanation": "بعد sein لا نضيف نهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الصفات وعكسها.",
@@ -5531,7 +7972,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5539,7 +7985,7 @@
     "video_id": "Fh5gnuNXy1s",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "مراجعة الصفات وعكسها بطريقة تطبيقية تساعدك على تثبيت المفردات الجديدة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "مراجعة الصفات وعكسها بطريقة تطبيقية تساعدك على تثبيت المفردات الجديدة.",
@@ -5553,6 +7999,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار الصفات، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الوصف بعد sein",
+        "content": "تبقى الصفة بلا نهاية بعد sein: Das Haus ist groß.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الوصف قبل الاسم",
+        "content": "قبل الاسم تأخذ نهاية بحسب الأداة والجنس والحالة: ein großes Haus، eine schöne Stadt.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5572,6 +8028,42 @@
         "de": "Der Weg ist kurz, nicht lang.",
         "ar": "الطريق قصير، وليس طويلًا.",
         "note": ""
+      },
+      {
+        "de": "Das Zimmer ist klein, aber hell.",
+        "ar": "الغرفة صغيرة لكنها مضيئة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie trägt ein rotes Kleid.",
+        "ar": "ترتدي فستانًا أحمر.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er ist freundlich, nicht unhöflich.",
+        "ar": "هو ودود وليس فظًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das ist eine einfache Aufgabe.",
+        "ar": "هذه مهمة سهلة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Kaffee ist heiß.",
+        "ar": "القهوة ساخنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir suchen eine günstige Wohnung.",
+        "ar": "نبحث عن شقة رخيصة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5591,7 +8083,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "ein schön Stadt",
+        "correct": "eine schöne Stadt",
+        "explanation": "الاسم المؤنث مع eine يحتاج نهاية -e.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Das Haus ist großes.",
+        "correct": "Das Haus ist groß.",
+        "explanation": "بعد sein لا نضيف نهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اختبار الصفات.",
@@ -5620,7 +8125,12 @@
         "video_required": true
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5628,7 +8138,7 @@
     "video_id": "Fu7HaUe9gzs",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على مجموعة مهمة من الأفعال التي تحتاج دائماً إلى Akkusativ في الجملة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على مجموعة مهمة من الأفعال التي تحتاج دائماً إلى Akkusativ في الجملة.",
@@ -5642,6 +8152,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أفعال مع Akkusativ، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الفعل يحدد الحالة",
+        "content": "أفعال مثل sehen، brauchen وkaufen تأخذ Akkusativ، بينما helfen، danken، gefallen وgehören تأخذ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال المناسب",
+        "content": "اسأل wen/was للمفعول Akkusativ وwem للمفعول Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5661,6 +8181,42 @@
         "de": "Sie sieht den Mann.",
         "ar": "هي ترى الرجل.",
         "note": ""
+      },
+      {
+        "de": "Ich brauche einen Termin.",
+        "ar": "أحتاج إلى موعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie sieht ihren Freund.",
+        "ar": "ترى صديقها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir kaufen das Brot.",
+        "ar": "نشتري الخبز.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kannst du mir helfen?",
+        "ar": "هل يمكنك مساعدتي؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Film gefällt meiner Schwester.",
+        "ar": "يعجب الفيلم أختي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Fahrrad gehört dem Kind.",
+        "ar": "الدراجة للطفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5685,6 +8241,18 @@
         "wrong": "Ich sehe der Mann.",
         "correct": "Ich sehe den Mann.",
         "explanation": "المفعول المذكر يأخذ den في Akkusativ."
+      },
+      {
+        "wrong": "Ich helfe dich.",
+        "correct": "Ich helfe dir.",
+        "explanation": "helfen يأخذ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich brauche einem Stift.",
+        "correct": "Ich brauche einen Stift.",
+        "explanation": "brauchen يأخذ Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -5746,7 +8314,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5754,7 +8327,7 @@
     "video_id": "ZRldRYrP-nA",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "جمع أهم الأفعال التي تأتي مع Dativ في درس واحد لتسهيل المراجعة والحفظ. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "جمع أهم الأفعال التي تأتي مع Dativ في درس واحد لتسهيل المراجعة والحفظ.",
@@ -5768,6 +8341,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أفعال مع Dativ، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الفعل يحدد الحالة",
+        "content": "أفعال مثل sehen، brauchen وkaufen تأخذ Akkusativ، بينما helfen، danken، gefallen وgehören تأخذ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "السؤال المناسب",
+        "content": "اسأل wen/was للمفعول Akkusativ وwem للمفعول Dativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5787,6 +8370,42 @@
         "de": "Sie gibt der Frau das Buch.",
         "ar": "تعطي المرأةَ الكتابَ.",
         "note": ""
+      },
+      {
+        "de": "Ich brauche einen Termin.",
+        "ar": "أحتاج إلى موعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sie sieht ihren Freund.",
+        "ar": "ترى صديقها.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir kaufen das Brot.",
+        "ar": "نشتري الخبز.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kannst du mir helfen?",
+        "ar": "هل يمكنك مساعدتي؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Film gefällt meiner Schwester.",
+        "ar": "يعجب الفيلم أختي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das Fahrrad gehört dem Kind.",
+        "ar": "الدراجة للطفل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5811,6 +8430,18 @@
         "wrong": "Ich helfe den Mann.",
         "correct": "Ich helfe dem Mann.",
         "explanation": "الفعل helfen يطلب Dativ."
+      },
+      {
+        "wrong": "Ich helfe dich.",
+        "correct": "Ich helfe dir.",
+        "explanation": "helfen يأخذ Dativ.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich brauche einem Stift.",
+        "correct": "Ich brauche einen Stift.",
+        "explanation": "brauchen يأخذ Akkusativ.",
+        "origin": "editorial_clarification"
       }
     ],
     "tables": [
@@ -5872,7 +8503,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5880,7 +8516,7 @@
     "video_id": "psTMUA-X_i0",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب مفردات أعضاء الجسم الأساسية اللازمة للوصف والصحة والحياة اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب مفردات أعضاء الجسم الأساسية اللازمة للوصف والصحة والحياة اليومية.",
@@ -5894,6 +8530,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع أجزاء الجسم، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "أجزاء الجسم",
+        "content": "احفظ الاسم مع أداته وجمعه: der Kopf، die Hand – die Hände، das Auge – die Augen.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التعبير عن الألم",
+        "content": "نقول Mein Kopf tut weh أو Ich habe Kopfschmerzen. مع عضو جمع نقول Meine Augen tun weh.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -5913,6 +8559,30 @@
         "de": "Ich wasche mir die Hände.",
         "ar": "أغسل يديّ.",
         "note": ""
+      },
+      {
+        "de": "Ich habe Halsschmerzen.",
+        "ar": "لدي ألم في الحلق.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Meine Augen sind müde.",
+        "ar": "عيناي متعبتان.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Er hat sich den Arm verletzt.",
+        "ar": "أصاب ذراعه.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Bitte öffnen Sie den Mund.",
+        "ar": "افتح فمك من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -5932,7 +8602,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich habe Schmerz in Kopf.",
+        "correct": "Ich habe Kopfschmerzen.",
+        "explanation": "استعمل الاسم المركب الشائع للتعبير عن الألم.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Meine Hand tun weh.",
+        "correct": "Meine Hand tut weh.",
+        "explanation": "العضو المفرد يأخذ فعلًا مفردًا.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: أجزاء الجسم.",
@@ -5961,7 +8644,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -5969,7 +8657,7 @@
     "video_id": "r3hZ7WK7jhw",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "توسيع فهمك للأرقام حتى 500 واستعمالها في الأسعار والعناوين والعمر والمعلومات اليومية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "توسيع فهمك للأرقام حتى 500 واستعمالها في الأسعار والعناوين والعمر والمعلومات اليومية.",
@@ -5983,6 +8671,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأرقام الكبيرة، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الآحاد قبل العشرات",
+        "content": "من 21 نقول الآحاد ثم und ثم العشرات: einundzwanzig. تُكتب الكلمة العددية متصلة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأرقام في الحياة اليومية",
+        "content": "درّب الأعداد داخل العمر والسعر ورقم الهاتف والوقت بدل حفظ القائمة وحدها.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6002,6 +8700,30 @@
         "de": "Die Nummer ist vier, sieben, zwei.",
         "ar": "الرقم هو أربعة، سبعة، اثنان.",
         "note": ""
+      },
+      {
+        "de": "Ich bin achtundzwanzig Jahre alt.",
+        "ar": "عمري ثمانية وعشرون عامًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Das kostet fünfzehn Euro.",
+        "ar": "هذا يكلف خمسة عشر يورو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Meine Nummer ist null eins sieben sechs.",
+        "ar": "رقمي هو صفر واحد سبعة ستة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wir sind drei Personen.",
+        "ar": "نحن ثلاثة أشخاص.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6021,7 +8743,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "zwanzig und eins",
+        "correct": "einundzwanzig",
+        "explanation": "في الأعداد المركبة تأتي الآحاد قبل العشرات.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "zwei Euro und fünfzig",
+        "correct": "zwei Euro fünfzig",
+        "explanation": "في الأسعار نذكر اليورو ثم السنتات بلا und غالبًا.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [
       {
         "title": "الأعداد من 0 إلى 20",
@@ -6128,7 +8863,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6136,7 +8876,7 @@
     "video_id": "V1kkY8ZorBI",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم الأعداد الترتيبية مثل الأول والثاني وكيفية استعمالها في التواريخ والترتيب. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم الأعداد الترتيبية مثل الأول والثاني وكيفية استعمالها في التواريخ والترتيب.",
@@ -6150,6 +8890,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الأعداد الترتيبية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الأيام والأشهر",
+        "content": "نستخدم am مع أيام الأسبوع والتاريخ، وim مع الأشهر والفصول: am Montag، im Mai، im Sommer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التاريخ",
+        "content": "بعد am يأخذ العدد الترتيبي نهاية -en: am dritten Mai. من 1 إلى 19 غالبًا -te، ومن 20 فما فوق -ste.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6169,6 +8919,42 @@
         "de": "Am dritten Mai habe ich Geburtstag.",
         "ar": "عيد ميلادي في الثالث من مايو.",
         "note": ""
+      },
+      {
+        "de": "Am Montag habe ich Deutschkurs.",
+        "ar": "لدي دورة ألمانية يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im August haben wir Urlaub.",
+        "ar": "لدينا عطلة في أغسطس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mein Geburtstag ist am dritten Mai.",
+        "ar": "عيد ميلادي في الثالث من مايو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute ist der erste April.",
+        "ar": "اليوم هو الأول من أبريل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Winter ist es kalt.",
+        "ar": "الجو بارد في الشتاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen treffe ich meine Freunde.",
+        "ar": "سأقابل أصدقائي غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6193,7 +8979,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "in Montag",
+        "correct": "am Montag",
+        "explanation": "مع أيام الأسبوع نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "am drei Mai",
+        "correct": "am dritten Mai",
+        "explanation": "بعد am نستخدم العدد الترتيبي بنهاية -en.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الأعداد الترتيبية.",
@@ -6222,7 +9021,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6230,7 +9034,7 @@
     "video_id": "QJ6QNF-DxK4",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "فهم طريقة قول التاريخ بالألمانية واستعمال الأيام والأشهر والأعداد الترتيبية معاً. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "فهم طريقة قول التاريخ بالألمانية واستعمال الأيام والأشهر والأعداد الترتيبية معاً.",
@@ -6244,6 +9048,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع التاريخ بالألمانية، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الأيام والأشهر",
+        "content": "نستخدم am مع أيام الأسبوع والتاريخ، وim مع الأشهر والفصول: am Montag، im Mai، im Sommer.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "التاريخ",
+        "content": "بعد am يأخذ العدد الترتيبي نهاية -en: am dritten Mai. من 1 إلى 19 غالبًا -te، ومن 20 فما فوق -ste.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6263,6 +9077,42 @@
         "de": "Am dritten Mai habe ich Geburtstag.",
         "ar": "عيد ميلادي في الثالث من مايو.",
         "note": ""
+      },
+      {
+        "de": "Am Montag habe ich Deutschkurs.",
+        "ar": "لدي دورة ألمانية يوم الاثنين.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im August haben wir Urlaub.",
+        "ar": "لدينا عطلة في أغسطس.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mein Geburtstag ist am dritten Mai.",
+        "ar": "عيد ميلادي في الثالث من مايو.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Heute ist der erste April.",
+        "ar": "اليوم هو الأول من أبريل.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Im Winter ist es kalt.",
+        "ar": "الجو بارد في الشتاء.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Morgen treffe ich meine Freunde.",
+        "ar": "سأقابل أصدقائي غدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6282,7 +9132,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "in Montag",
+        "correct": "am Montag",
+        "explanation": "مع أيام الأسبوع نستخدم am.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "am drei Mai",
+        "correct": "am dritten Mai",
+        "explanation": "بعد am نستخدم العدد الترتيبي بنهاية -en.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: التاريخ بالألمانية.",
@@ -6311,7 +9174,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6319,7 +9187,7 @@
     "video_id": "0p7EkJee_pI",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تطبيق مباشر على التعريف بالنفس مع أمثلة وأسئلة وأجوبة تساعدك على تثبيت التعبير الشفهي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تطبيق مباشر على التعريف بالنفس مع أمثلة وأسئلة وأجوبة تساعدك على تثبيت التعبير الشفهي.",
@@ -6333,6 +9201,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع تطبيق التعريف بالنفس، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "معلومات أساسية",
+        "content": "ابدأ بالاسم والبلد والسكن واللغة والمهنة. استخدم جملًا قصيرة مستقلة وواضحة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "رسمي وغير رسمي",
+        "content": "استعمل du مع الأصدقاء وSie في المواقف الرسمية: Wie heißt du? / Wie heißen Sie?",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6352,6 +9230,42 @@
         "de": "Ich wohne in Rabat. Und du?",
         "ar": "أسكن في الرباط. وأنت؟",
         "note": ""
+      },
+      {
+        "de": "Guten Tag, ich heiße Sara.",
+        "ar": "مرحبًا، اسمي سارة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich komme aus Marokko und wohne in Bonn.",
+        "ar": "أنا من المغرب وأسكن في بون.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich bin Studentin und lerne Deutsch.",
+        "ar": "أنا طالبة وأتعلم الألمانية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "In meiner Freizeit lese ich gern.",
+        "ar": "أحب القراءة في وقت فراغي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Freut mich, Sie kennenzulernen.",
+        "ar": "يسرني التعرف إليكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Auf Wiedersehen!",
+        "ar": "إلى اللقاء!",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6376,7 +9290,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ich bin heißen Ali.",
+        "correct": "Ich heiße Ali.",
+        "explanation": "heißen فعل مستقل ولا يأتي مع sein.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich komme von Marokko.",
+        "correct": "Ich komme aus Marokko.",
+        "explanation": "مع بلد الأصل نستخدم aus.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: تطبيق التعريف بالنفس.",
@@ -6405,7 +9332,12 @@
         "video_required": true
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6413,7 +9345,7 @@
     "video_id": "jAsoIOvAolE",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تعلم صيغ بسيطة للطلب والرد في مواقف يومية مثل الشراء والسؤال والخدمة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تعلم صيغ بسيطة للطلب والرد في مواقف يومية مثل الشراء والسؤال والخدمة.",
@@ -6427,6 +9359,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع الطلب والجواب، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "الطلب المهذب",
+        "content": "استخدم ich möchte، ich hätte gern، können Sie …? أو könnten Sie …? بدل الأمر المباشر.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "جواب قصير واضح",
+        "content": "أكد الطلب واذكر إمكانية التنفيذ: Ja, gern. / Natürlich. / Leider geht das heute nicht.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6446,6 +9388,42 @@
         "de": "Bitte öffnen Sie das Fenster. – Tut mir leid, das geht gerade nicht.",
         "ar": "افتح النافذة من فضلك. — عذرًا، لا يمكن ذلك الآن.",
         "note": ""
+      },
+      {
+        "de": "Ich hätte gern einen Termin.",
+        "ar": "أود موعدًا.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Könnten Sie das bitte wiederholen?",
+        "ar": "هل يمكنكم تكرار ذلك من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Kann ich mit Karte bezahlen?",
+        "ar": "هل يمكنني الدفع بالبطاقة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ja, natürlich. Einen Moment, bitte.",
+        "ar": "نعم بالطبع. لحظة من فضلك.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Leider haben wir heute keinen Termin frei.",
+        "ar": "للأسف ليس لدينا موعد متاح اليوم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Darf ich hier warten?",
+        "ar": "هل يُسمح لي بالانتظار هنا؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6470,7 +9448,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Gib mir einen Termin!",
+        "correct": "Ich hätte gern einen Termin.",
+        "explanation": "الصيغة المهذبة أنسب في الخدمة والمواقف الرسمية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich will Kaffee.",
+        "correct": "Ich möchte einen Kaffee.",
+        "explanation": "möchten ألطف من wollen عند الطلب.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: الطلب والجواب.",
@@ -6499,7 +9490,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6507,7 +9503,7 @@
     "video_id": "1Z_qrqet0dE",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تطبيق عملي على بناء الأسئلة والأجوبة القصيرة في مواقف واقعية تناسب المبتدئين. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تطبيق عملي على بناء الأسئلة والأجوبة القصيرة في مواقف واقعية تناسب المبتدئين.",
@@ -6521,6 +9517,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع السؤال والجواب، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "W-Frage",
+        "content": "تأتي أداة السؤال أولًا، ثم الفعل المصرف، ثم الفاعل: Wo wohnst du?",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "سؤال نعم أو لا",
+        "content": "يبدأ بالفعل المصرف: Kommst du heute? ويُجاب بـ ja أو nein مع جملة قصيرة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6540,6 +9546,36 @@
         "de": "Kommst du aus Marokko?",
         "ar": "هل أنت من المغرب؟",
         "note": ""
+      },
+      {
+        "de": "Wie heißt du?",
+        "ar": "ما اسمك؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Wann beginnt der Kurs?",
+        "ar": "متى تبدأ الدورة؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Hast du heute Zeit?",
+        "ar": "هل لديك وقت اليوم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Warum lernst du Deutsch?",
+        "ar": "لماذا تتعلم الألمانية؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Was machst du am Wochenende?",
+        "ar": "ماذا تفعل في عطلة نهاية الأسبوع؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6564,7 +9600,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Wo du wohnst?",
+        "correct": "Wo wohnst du?",
+        "explanation": "في السؤال المباشر يأتي الفعل بعد أداة السؤال.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Du hast Zeit?",
+        "correct": "Hast du Zeit?",
+        "explanation": "سؤال نعم أو لا يبدأ بالفعل.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: السؤال والجواب.",
@@ -6593,7 +9642,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6601,7 +9655,7 @@
     "video_id": "31cKMQluhqg",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "التعرف على أهم نماذج الرسائل المطلوبة في امتحان A1 وطريقة تنظيمها بمستوى بسيط. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "التعرف على أهم نماذج الرسائل المطلوبة في امتحان A1 وطريقة تنظيمها بمستوى بسيط.",
@@ -6615,6 +9669,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع رسائل امتحان A1، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "بنية الرسالة",
+        "content": "ابدأ بتحية مناسبة، غطِّ كل النقاط المطلوبة بوضوح، ثم اختم بعبارة وداع واسمك.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "الأسلوب",
+        "content": "استعمل Sie وIhr في الرسالة الرسمية وdu/dein مع الصديق. اجعل كل نقطة في جملة بسيطة.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6634,6 +9698,36 @@
         "de": "Viele Grüße\nMona",
         "ar": "مع أطيب التحيات\nمنى",
         "note": ""
+      },
+      {
+        "de": "Leider kann ich am Samstag nicht kommen.",
+        "ar": "للأسف لا أستطيع الحضور السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Können wir uns am Sonntag treffen?",
+        "ar": "هل يمكننا اللقاء يوم الأحد؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Sehr geehrte Damen und Herren,",
+        "ar": "السيدات والسادة المحترمون،",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich möchte einen Termin vereinbaren.",
+        "ar": "أرغب في تحديد موعد.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Mit freundlichen Grüßen",
+        "ar": "مع خالص التحية.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6658,7 +9752,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Hallo في رسالة رسمية",
+        "correct": "Sehr geehrte Damen und Herren",
+        "explanation": "اختر التحية المناسبة لدرجة الرسمية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich kann nicht kommen weil ich bin krank.",
+        "correct": "Ich kann nicht kommen, weil ich krank bin.",
+        "explanation": "بعد weil يأتي الفعل في النهاية.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: رسائل امتحان A1.",
@@ -6687,7 +9794,12 @@
         "video_required": false
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6695,7 +9807,7 @@
     "video_id": "kOMtDJg2B4Q",
     "source_type": "metadata",
     "caption_language": null,
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "مراجعة شاملة لعدة مهارات أساسية في A1 من خلال اختبار مباشر وتطبيقي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "مراجعة شاملة لعدة مهارات أساسية في A1 من خلال اختبار مباشر وتطبيقي.",
@@ -6709,6 +9821,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار A1 مباشر، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "افهم المهمة أولًا",
+        "content": "حدد المطلوب والكلمات المفتاحية، ثم أجب بجملة بسيطة كاملة. لا تستخدم قاعدة معقدة إذا لم تكن متأكدًا منها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "راجع الأساسيات",
+        "content": "تحقق من الفعل في الموقع الثاني، الحرف الكبير للاسم، الأداة، ونقطة أو علامة سؤال في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6728,6 +9850,42 @@
         "de": "Danach prüfe ich meine Antwort.",
         "ar": "بعد ذلك أراجع إجابتي.",
         "note": ""
+      },
+      {
+        "de": "Ich wohne seit einem Jahr in Berlin.",
+        "ar": "أسكن في برلين منذ سنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Können Sie mir bitte helfen?",
+        "ar": "هل يمكنكم مساعدتي من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Samstag habe ich keine Zeit.",
+        "ar": "ليس لدي وقت يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin ist um zehn Uhr.",
+        "ar": "الموعد في العاشرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vielen Dank für Ihre Nachricht.",
+        "ar": "شكرًا جزيلًا على رسالتكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich freue mich auf Ihre Antwort.",
+        "ar": "أتطلع إلى ردكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6747,7 +9905,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Samstag.",
+        "correct": "Am Samstag habe ich Zeit.",
+        "explanation": "اكتب جملة قصيرة كاملة عندما تطلب المهمة ذلك.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Heute ich kann nicht.",
+        "correct": "Heute kann ich nicht.",
+        "explanation": "الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اختبار A1 مباشر.",
@@ -6776,7 +9947,12 @@
         "video_required": true
       }
     ],
-    "review_status": "generated_from_metadata"
+    "review_status": "generated_from_metadata",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6784,7 +9960,7 @@
     "video_id": "w2S_YFFrtvg",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "اكتساب مجموعة مهمة من الكلمات التي تتكرر كثيراً في امتحان A1 وفي الاستعمال اليومي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "اكتساب مجموعة مهمة من الكلمات التي تتكرر كثيراً في امتحان A1 وفي الاستعمال اليومي.",
@@ -6798,6 +9974,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع كلمات أساسية للامتحان، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "افهم المهمة أولًا",
+        "content": "حدد المطلوب والكلمات المفتاحية، ثم أجب بجملة بسيطة كاملة. لا تستخدم قاعدة معقدة إذا لم تكن متأكدًا منها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "راجع الأساسيات",
+        "content": "تحقق من الفعل في الموقع الثاني، الحرف الكبير للاسم، الأداة، ونقطة أو علامة سؤال في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6817,6 +10003,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Ich wohne seit einem Jahr in Berlin.",
+        "ar": "أسكن في برلين منذ سنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Können Sie mir bitte helfen?",
+        "ar": "هل يمكنكم مساعدتي من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Samstag habe ich keine Zeit.",
+        "ar": "ليس لدي وقت يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin ist um zehn Uhr.",
+        "ar": "الموعد في العاشرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vielen Dank für Ihre Nachricht.",
+        "ar": "شكرًا جزيلًا على رسالتكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich freue mich auf Ihre Antwort.",
+        "ar": "أتطلع إلى ردكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6836,7 +10058,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Samstag.",
+        "correct": "Am Samstag habe ich Zeit.",
+        "explanation": "اكتب جملة قصيرة كاملة عندما تطلب المهمة ذلك.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Heute ich kann nicht.",
+        "correct": "Heute kann ich nicht.",
+        "explanation": "الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: كلمات أساسية للامتحان.",
@@ -6865,7 +10100,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6873,7 +10113,7 @@
     "video_id": "koRRyGVYbuM",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "تطبيق إضافي لاختبار مهارات A1 الأساسية بطريقة مباشرة تساعد على كشف الثغرات المتبقية. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "تطبيق إضافي لاختبار مهارات A1 الأساسية بطريقة مباشرة تساعد على كشف الثغرات المتبقية.",
@@ -6887,6 +10127,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار A1 مباشر، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "افهم المهمة أولًا",
+        "content": "حدد المطلوب والكلمات المفتاحية، ثم أجب بجملة بسيطة كاملة. لا تستخدم قاعدة معقدة إذا لم تكن متأكدًا منها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "راجع الأساسيات",
+        "content": "تحقق من الفعل في الموقع الثاني، الحرف الكبير للاسم، الأداة، ونقطة أو علامة سؤال في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6906,6 +10156,42 @@
         "de": "Danach prüfe ich meine Antwort.",
         "ar": "بعد ذلك أراجع إجابتي.",
         "note": ""
+      },
+      {
+        "de": "Ich wohne seit einem Jahr in Berlin.",
+        "ar": "أسكن في برلين منذ سنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Können Sie mir bitte helfen?",
+        "ar": "هل يمكنكم مساعدتي من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Samstag habe ich keine Zeit.",
+        "ar": "ليس لدي وقت يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin ist um zehn Uhr.",
+        "ar": "الموعد في العاشرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vielen Dank für Ihre Nachricht.",
+        "ar": "شكرًا جزيلًا على رسالتكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich freue mich auf Ihre Antwort.",
+        "ar": "أتطلع إلى ردكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -6925,7 +10211,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Samstag.",
+        "correct": "Am Samstag habe ich Zeit.",
+        "explanation": "اكتب جملة قصيرة كاملة عندما تطلب المهمة ذلك.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Heute ich kann nicht.",
+        "correct": "Heute kann ich nicht.",
+        "explanation": "الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اختبار A1 مباشر.",
@@ -6954,7 +10253,12 @@
         "video_required": true
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -6962,7 +10266,7 @@
     "video_id": "YlLPF7ncCMQ",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "متابعة حفظ الكلمات المهمة لامتحان A1 مع توسيع الحصيلة اللفظية للمواقف الشائعة. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "متابعة حفظ الكلمات المهمة لامتحان A1 مع توسيع الحصيلة اللفظية للمواقف الشائعة.",
@@ -6976,6 +10280,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع كلمات أساسية للامتحان، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "افهم المهمة أولًا",
+        "content": "حدد المطلوب والكلمات المفتاحية، ثم أجب بجملة بسيطة كاملة. لا تستخدم قاعدة معقدة إذا لم تكن متأكدًا منها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "راجع الأساسيات",
+        "content": "تحقق من الفعل في الموقع الثاني، الحرف الكبير للاسم، الأداة، ونقطة أو علامة سؤال في النهاية.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -6995,6 +10309,42 @@
         "de": "Ich brauche eine warme Jacke.",
         "ar": "أحتاج إلى سترة دافئة.",
         "note": ""
+      },
+      {
+        "de": "Ich wohne seit einem Jahr in Berlin.",
+        "ar": "أسكن في برلين منذ سنة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Können Sie mir bitte helfen?",
+        "ar": "هل يمكنكم مساعدتي من فضلكم؟",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Am Samstag habe ich keine Zeit.",
+        "ar": "ليس لدي وقت يوم السبت.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Der Termin ist um zehn Uhr.",
+        "ar": "الموعد في العاشرة.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Vielen Dank für Ihre Nachricht.",
+        "ar": "شكرًا جزيلًا على رسالتكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Ich freue mich auf Ihre Antwort.",
+        "ar": "أتطلع إلى ردكم.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -7014,7 +10364,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "Samstag.",
+        "correct": "Am Samstag habe ich Zeit.",
+        "explanation": "اكتب جملة قصيرة كاملة عندما تطلب المهمة ذلك.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Heute ich kann nicht.",
+        "correct": "Heute kann ich nicht.",
+        "explanation": "الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: كلمات أساسية للامتحان.",
@@ -7043,7 +10406,12 @@
         "video_required": false
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   },
   {
     "level": "A1",
@@ -7051,7 +10419,7 @@
     "video_id": "iMYZh-8PhSc",
     "source_type": "captions",
     "caption_language": "ar",
-    "reading_time_minutes": 3,
+    "reading_time_minutes": 4,
     "summary": "قياس جودة نطقك للألمانية وملاحظة الأصوات أو الكلمات التي تحتاج إلى تدريب إضافي. يقدّم هذا الشرح الفكرة بصورة مركّزة حتى تتمكن من تطبيقها في مهام الدرس دون نسخ إجابات جاهزة.",
     "learning_objectives": [
       "قياس جودة نطقك للألمانية وملاحظة الأصوات أو الكلمات التي تحتاج إلى تدريب إضافي.",
@@ -7065,6 +10433,16 @@
       {
         "heading": "طريقة التعلّم",
         "content": "في موضوع اختبار النطق، اقرأ المثال ببطء، حدّد الكلمة الجديدة أو الفعل المصرف، ثم بدّل عنصرًا واحدًا لتكوين جملة قصيرة من حياتك."
+      },
+      {
+        "heading": "استمع وقارن",
+        "content": "اختر صوتًا واحدًا، استمع إلى النموذج، سجّل نفسك، ثم قارن طول الحركة وموضع اللسان والنهاية.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "heading": "أصوات مهمة",
+        "content": "ميّز بين ich-Laut وach-Laut، وبين ü وu، وبين ö وo، وانتبه إلى أن z تبدأ بصوت ts.",
+        "origin": "editorial_clarification"
       }
     ],
     "grammar_rules": [
@@ -7084,6 +10462,30 @@
         "de": "vier – wir",
         "ar": "ميّز بين بداية الكلمتين وطول الحركة.",
         "note": ""
+      },
+      {
+        "de": "Buch – machen",
+        "ar": "تدريب على ch الخلفي.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "schön – schon",
+        "ar": "التمييز بين ö وo.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "müde – Mutter",
+        "ar": "التمييز بين ü وu.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
+      },
+      {
+        "de": "Zeit – zehn",
+        "ar": "يبدأ z بصوت ts.",
+        "note": "مثال تعليمي إضافي",
+        "origin": "editorial_clarification"
       }
     ],
     "vocabulary": [
@@ -7103,7 +10505,20 @@
         "note": ""
       }
     ],
-    "common_mistakes": [],
+    "common_mistakes": [
+      {
+        "wrong": "نطق كل ch مثل ش",
+        "correct": "قارن ich وBuch",
+        "explanation": "يتغير صوت ch بحسب الحركة السابقة.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "نطق z مثل ز",
+        "correct": "انطق z قريبًا من ts",
+        "explanation": "تدرب على Zeit وzehn.",
+        "origin": "editorial_clarification"
+      }
+    ],
     "tables": [],
     "quick_recap": [
       "المحور: اختبار النطق.",
@@ -7132,6 +10547,11 @@
         "video_required": true
       }
     ],
-    "review_status": "verified"
+    "review_status": "verified",
+    "editorial_enrichment": {
+      "standard": "A1",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   }
 ]
