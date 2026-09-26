@@ -543,8 +543,8 @@ function renderLessonDetail(levelKey, lessonId) {
           </section>
 
           <section class="learning-grid" aria-label="أهداف الدرس">
-            <article><span class="info-icon" aria-hidden="true">01</span><h2>ما ستتعلّمه</h2><p>${escapeHtml(lesson.what_you_learn)}</p></article>
-            <article><span class="info-icon" aria-hidden="true">02</span><h2>هدفك الحواري</h2><p>${escapeHtml(lesson.conversational_goal)}</p></article>
+            <article><h2>ما ستتعلّمه</h2><p>${escapeHtml(lesson.what_you_learn)}</p></article>
+            <article><h2>هدفك الحواري</h2><p>${escapeHtml(lesson.conversational_goal)}</p></article>
           </section>
         </div>
 
