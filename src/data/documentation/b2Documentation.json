@@ -4409,5 +4409,673 @@
       "middle_represented": true,
       "end_represented": true
     }
+  },
+  {
+    "level": "B2",
+    "lesson_id": 19,
+    "video_id": "CsG1tS8TDX0",
+    "source_type": "automatic_captions_verified",
+    "source_language": "ar+de",
+    "source_coverage_percent": 100,
+    "source_duration_seconds": 878,
+    "source_segment_count": 215,
+    "source_model": "youtube_ar-orig",
+    "source_compute_type": "not_applicable",
+    "source_device": "youtube",
+    "review_status": "source_verified",
+    "reading_time_minutes": 12,
+    "summary": "يجيب الدرس عن سؤال: كيف نقول «قبل» بالألمانية؟ يبدأ بترتيب الأحداث باستعمال zuerst، ثم يوضح الفروق بين vorher و davor و zuvor من حيث المرجع والأسلوب، ويعرض ثلاثة استعمالات مختلفة لـ davor. بعد ذلك يشرح vorab لما يتم مسبقاً، و vorhin لما وقع قبل قليل، ثم ينتقل إلى bevor التي تدخل جملة تابعة وإلى vor + اسم في حالة الداتيف. الهدف ليس حفظ ترجمات منفصلة، بل اختيار الصيغة التي تناسب العلاقة الزمنية والسياق وبنية الجملة.",
+    "video_outline": [
+      {
+        "heading": "لماذا توجد صيغ كثيرة لمعنى «قبل»؟",
+        "summary": "تمهيد يطرح الكلمات التي قد يقابل بها المتعلم معنى «قبل» ويبين أن الاختيار يعتمد على المقصود والبنية.",
+        "timestamp": "00:00"
+      },
+      {
+        "heading": "ترتيب الأحداث مع zuerst",
+        "summary": "استعمال zuerst لبيان أن فعلاً يقع أولاً ثم يليه فعل آخر.",
+        "timestamp": "00:30"
+      },
+      {
+        "heading": "vorher و davor و zuvor",
+        "summary": "تعريف الكلمات الثلاث كظروف زمنية مستقلة، ثم بيان الفروق الأسلوبية بينها.",
+        "timestamp": "01:31"
+      },
+      {
+        "heading": "المرجع العام والمرجع المحدد",
+        "summary": "مقارنة vorher العام بـ davor الذي يشير عادة إلى حدث أو وقت معروف، مع zuvor الرسمي.",
+        "timestamp": "03:02"
+      },
+      {
+        "heading": "اختباران للفروق الدقيقة",
+        "summary": "تطبيق يبين متى تصح الكلمات الثلاث، ومتى يكون vorher أو zuvor أكثر طبيعية من davor.",
+        "timestamp": "06:14"
+      },
+      {
+        "heading": "ثلاثة استعمالات لـ davor",
+        "summary": "davor ظرف زمني، وضمير ظرفي مع أفعال تتطلب vor، وظرف مكاني بمعنى أمامه أو أمامها.",
+        "timestamp": "08:19"
+      },
+      {
+        "heading": "vorab: مسبقاً",
+        "summary": "استعمال vorab في الرسائل والوثائق والمواعيد والمعلومات الرسمية لما ينبغي إنجازه مسبقاً.",
+        "timestamp": "10:15"
+      },
+      {
+        "heading": "vorhin: قبل قليل",
+        "summary": "تحديد vorhin للماضي القريب في الفترة الحالية، ومقارنته بـ vorher المرتبط بحدث مرجعي.",
+        "timestamp": "11:08"
+      },
+      {
+        "heading": "bevor والجملة التابعة",
+        "summary": "bevor أداة ربط بمعنى قبل أن، ويأتي الفعل المصرف في نهاية الجملة التابعة.",
+        "timestamp": "12:23"
+      },
+      {
+        "heading": "vor + Dativ والتحويل الاسمي",
+        "summary": "التعبير عن المعنى نفسه تقريباً باسم بعد vor في الداتيف بدلاً من جملة bevor.",
+        "timestamp": "13:20"
+      }
+    ],
+    "learning_objectives": [
+      "ترتيب الأحداث باستعمال zuerst ثم ربط الحدث التالي بصورة واضحة.",
+      "تمييز vorher و davor و zuvor بحسب وضوح المرجع ودرجة الرسمية.",
+      "التعرف على الاستعمال الزمني والمكاني والضميري لـ davor.",
+      "اختيار vorab للأفعال المسبقة و vorhin للماضي القريب.",
+      "بناء جملة تابعة صحيحة بـ bevor وتحويلها عند الإمكان إلى vor + اسم في الداتيف."
+    ],
+    "explanation": [
+      {
+        "heading": "zuerst: الحدث الأول في التسلسل",
+        "content": "عندما تريد تحديد ترتيب حدثين، تستعمل zuerst للحدث الذي يقع أولاً، ثم تعرض الحدث اللاحق غالباً مع dann. المثال في الفيديو يبدأ بتنظيف الغرفة ثم إعداد شيء للأكل؛ التركيز هنا على Reihenfolge، أي ترتيب الأحداث، لا على مجرد قول إن شيئاً وقع في الماضي.",
+        "origin": "video",
+        "source_start": "00:30",
+        "source_end": "01:30"
+      },
+      {
+        "heading": "ثلاثة ظروف زمنية مستقلة",
+        "content": "vorher و davor و zuvor ظروف زمنية، ولذلك يمكنها أن تقف في جملة مستقلة ولا تحتاج إلى جملة تابعة. تستعمل vorher و davor كثيراً في الكلام اليومي، أما zuvor فتظهر أكثر في اللغة الرسمية والكتابية. يعرض الفيديو مثال الذهاب إلى السينما، وفيه تصح الصيغ الثلاث نحوياً، لكن الاختيار يغير النبرة والسياق.",
+        "origin": "video",
+        "source_start": "01:31",
+        "source_end": "04:19"
+      },
+      {
+        "heading": "vorher عام، و davor يعود إلى مرجع محدد",
+        "content": "يمكن أن يعني vorher «سابقاً» أو «قبل ذلك» بصورة عامة، وقد يفهم الحدث المرجعي من السياق من غير ذكره في الجملة نفسها. أما davor فيشير عادة إلى حدث أو وقت محدد سبق ذكره أو يعرفه الطرفان؛ من دون هذا المرجع قد يسأل السامع: Vor was genau? وتستعمل zuvor بالمعنى الزمني نفسه تقريباً لكن بنبرة أكثر رسمية.",
+        "origin": "video",
+        "source_start": "04:20",
+        "source_end": "06:13"
+      },
+      {
+        "heading": "ليست كل الفروق قواعد صواب وخطأ",
+        "content": "في اختبار الضيوف يمكن استعمال Davor و Zuvor و Vorher كلها لأن الجملة الأولى توفر مرجعاً واضحاً. وفي جملة «لم أفعل هذا من قبل» يكون vorher أو zuvor طبيعياً، بينما davor ممكن من حيث القواعد لكنه أقل طبيعية إذا لم يعرف السامع الحدث الذي تشير إليه. إذن السياق والأسلوب مهمان بقدر صحة التركيب.",
+        "origin": "video",
+        "source_start": "06:14",
+        "source_end": "08:18"
+      },
+      {
+        "heading": "davor بثلاث وظائف",
+        "content": "أولاً، تأتي davor زمنية بمعنى «قبل ذلك» مع مرجع واضح. ثانياً، تكون ضميراً ظرفياً مع فعل أو تركيب يتطلب vor، مثل Angst davor haben؛ هنا لا تعبر عن الزمن. ثالثاً، تأتي مكانية بمعنى «أمامه». وفي المثال المكاني يعود davor إلى الاسم المذكور أخيراً، أي Auto لا Haus.",
+        "origin": "video",
+        "source_start": "08:19",
+        "source_end": "10:14"
+      },
+      {
+        "heading": "vorab لما يتم مسبقاً",
+        "content": "تعني vorab «مسبقاً» أو «سلفاً»، وتستعمل عندما يجب إرسال مستندات أو الدفع أو تقديم معلومات قبل موعد أو إجراء لاحق. يبرز الفيديو شيوعها في الرسائل والبريد الإلكتروني والوثائق والمواقف الرسمية.",
+        "origin": "video",
+        "source_start": "10:15",
+        "source_end": "11:07"
+      },
+      {
+        "heading": "vorhin للماضي القريب",
+        "content": "تشير vorhin إلى شيء وقع قبل دقائق أو ساعات ضمن الفترة الزمنية الحالية. أما vorher فتحدد أن الحدث وقع قبل حدث آخر مرجعي. لذلك يسأل Hast du vorhin mit ihr gesprochen? عن حديث وقع قبل قليل، بينما Hast du vorher mit ihr gesprochen? يسأل هل وقع الحديث قبل حدث معروف في السياق.",
+        "origin": "video",
+        "source_start": "11:08",
+        "source_end": "12:22"
+      },
+      {
+        "heading": "bevor: قبل أن + جملة تابعة",
+        "content": "bevor أداة ربط تدخل جملة تابعة وتربط حدثين؛ يأتي الفعل المصرف في نهاية جملة bevor. في المثال يريد المتكلم معرفة كل الحقائق قبل أن يقول رأيه. هنا توجد أفعال مصرفة في الجملتين، بخلاف الظروف الزمنية التي يمكنها الوقوف وحدها.",
+        "origin": "video",
+        "source_start": "12:23",
+        "source_end": "13:19"
+      },
+      {
+        "heading": "vor + اسم في الداتيف",
+        "content": "إذا عُبّر عن الحدث باسم، تأتي vor مع الداتيف: Vor dem Essen. ويقارن الفيديو ذلك بـ Bevor wir essen. التحويل يحتاج إلى صيغة اسمية مناسبة، مثل essen ← das Essen، وليس مجرد حذف الفعل. الصيغتان تعبران هنا عن غسل اليدين قبل الأكل.",
+        "origin": "video",
+        "source_start": "13:20",
+        "source_end": "14:07"
+      }
+    ],
+    "rules_from_video": [
+      {
+        "rule": "zuerst يحدد الحدث الأول في ترتيب واضح",
+        "explanation": "يأتي الحدث الأول مع zuerst، ويمكن تقديم الحدث التالي مع dann.",
+        "pattern": "Zuerst + Verb + Subjekt + …, dann + Verb + Subjekt + …",
+        "timestamp": "00:30"
+      },
+      {
+        "rule": "vorher و davor و zuvor ظروف زمنية وليست أدوات ربط",
+        "explanation": "يمكن لكل منها أن تبدأ جملة رئيسية مستقلة؛ لا تنشئ وحدها Nebensatz.",
+        "pattern": "Vorher/Davor/Zuvor + Verb + Subjekt + …",
+        "timestamp": "01:31"
+      },
+      {
+        "rule": "davor الزمنية تحتاج عادة إلى مرجع واضح",
+        "explanation": "تشير إلى حدث أو وقت محدد مذكور أو معلوم، بينما vorher أوسع ويمكن أن يعني سابقاً بصورة عامة.",
+        "pattern": "Ereignis A. Davor + Verb + Subjekt + …",
+        "timestamp": "04:20"
+      },
+      {
+        "rule": "zuvor أكثر رسمية وكتابية",
+        "explanation": "معناها الزمني قريب من vorher و davor، لكن اختيارها يرفع درجة الرسمية.",
+        "pattern": "Zuvor + Verb + Subjekt + …",
+        "timestamp": "02:00"
+      },
+      {
+        "rule": "vorhin للماضي القريب في الفترة الحالية",
+        "explanation": "تستعمل لما وقع قبل دقائق أو ساعات، لا لمجرد كل حدث سبق حدثاً آخر.",
+        "pattern": "Subjekt + Verb + vorhin + …",
+        "timestamp": "11:08"
+      },
+      {
+        "rule": "bevor ترسل الفعل المصرف إلى نهاية الجملة التابعة",
+        "explanation": "تربط حدثين بمعنى قبل أن، ولها فعل مصروف داخل الجملة التابعة.",
+        "pattern": "Bevor + Subjekt + … + Verb, Verb + Subjekt + …",
+        "timestamp": "12:23"
+      },
+      {
+        "rule": "vor مع الاسم تتطلب الداتيف",
+        "explanation": "عند تحويل الحدث إلى اسم تستعمل vor + Dativ، مثل vor dem Essen.",
+        "pattern": "vor + Dativ + Nomen",
+        "timestamp": "13:20"
+      }
+    ],
+    "examples_from_video": [
+      {
+        "de": "Zuerst räume ich mein Zimmer auf, dann koche ich etwas zu essen.",
+        "ar": "أرتب غرفتي أولاً، ثم أطبخ شيئاً للأكل.",
+        "note": "مثال ترتيب حدثين بـ zuerst ثم dann.",
+        "timestamp": "00:40",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wir gehen ins Kino. Vorher essen wir noch etwas.",
+        "ar": "سنذهب إلى السينما. وقبل ذلك سنأكل شيئاً.",
+        "note": "يعرض الفيديو أيضاً Davor و Zuvor مكان Vorher في السياق نفسه.",
+        "timestamp": "03:02",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich komme gleich und helfe dir beim Kochen, aber vorher muss ich noch einen wichtigen Anruf machen.",
+        "ar": "سآتي حالاً وأساعدك في الطبخ، لكن عليّ قبل ذلك إجراء مكالمة مهمة.",
+        "note": "vorher شائعة وطبيعية في الكلام اليومي.",
+        "timestamp": "03:42",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Sie war vorher in einem anderen Team.",
+        "ar": "كانت سابقاً في فريق آخر.",
+        "note": "vorher تعبر هنا عن حالة سابقة بصورة عامة.",
+        "timestamp": "04:20",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Davor war sie in einem anderen Team, mittlerweile spielt sie in einem neuen Team.",
+        "ar": "قبل ذلك كانت في فريق آخر، أما الآن فهي تلعب في فريق جديد.",
+        "note": "davor تعود إلى زمن أو انتقال محدد يفهم من السياق.",
+        "timestamp": "04:54",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Sie war zuvor in einem anderen Team.",
+        "ar": "كانت قبل ذلك في فريق آخر.",
+        "note": "صياغة أكثر رسمية أو كتابية.",
+        "timestamp": "05:22",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Die Gäste sind um acht Uhr gekommen. Davor haben wir alles vorbereitet.",
+        "ar": "وصل الضيوف في الثامنة. وقبل ذلك أعددنا كل شيء.",
+        "note": "في الاختبار تصح Davor و Zuvor و Vorher لأن المرجع واضح.",
+        "timestamp": "06:15",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich habe das noch nie vorher gemacht.",
+        "ar": "لم أفعل هذا من قبل قط.",
+        "note": "vorher طبيعية بلا حاجة إلى تسمية حدث مرجعي محدد.",
+        "timestamp": "07:00",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich habe das noch nie zuvor gemacht.",
+        "ar": "لم يسبق لي أن فعلت هذا قط.",
+        "note": "zuvor صحيحة وبنبرة أكثر رسمية.",
+        "timestamp": "07:20",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wir treffen uns um 9 Uhr. Davor muss ich noch einkaufen.",
+        "ar": "سنلتقي في التاسعة. وقبل ذلك ما زال عليّ أن أتسوق.",
+        "note": "استعمال davor الزمني مع موعد مرجعي واضح.",
+        "timestamp": "08:20",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich habe Angst davor, eine schwierige Entscheidung zu treffen.",
+        "ar": "أخشى اتخاذ قرار صعب.",
+        "note": "davor ضمير ظرفي مرتبط بالتركيب Angst vor etwas haben، لا ظرفاً زمنياً.",
+        "timestamp": "08:58",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Der Baum steht davor, deshalb sieht man das Schild nicht.",
+        "ar": "تقف الشجرة أمامه، ولذلك لا يمكن رؤية اللافتة.",
+        "note": "davor مكانية بمعنى أمامه.",
+        "timestamp": "09:25",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Vor dem Haus steht ein Auto. Davor spielen die Kinder.",
+        "ar": "تقف سيارة أمام البيت. ويلعب الأطفال أمامها.",
+        "note": "davor تعود إلى Auto لأنه الاسم المذكور أخيراً، لا إلى Haus.",
+        "timestamp": "09:47",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Können Sie mir die Unterlagen bitte vorab zusenden?",
+        "ar": "هل يمكنكم إرسال المستندات إليّ مسبقاً من فضلكم؟",
+        "note": "vorab في طلب رسمي متعلق بإرسال مستندات مسبقاً.",
+        "timestamp": "10:15",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Muss ich vorab bezahlen?",
+        "ar": "هل يجب أن أدفع مسبقاً؟",
+        "note": "سؤال عن الدفع قبل الإجراء أو الموعد.",
+        "timestamp": "10:33",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wir schicken Ihnen die Informationen vorab per E-Mail.",
+        "ar": "سنرسل لكم المعلومات مسبقاً عبر البريد الإلكتروني.",
+        "note": "vorab في سياق رسمي وكتابي.",
+        "timestamp": "10:53",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Sie hat mich vorhin angerufen.",
+        "ar": "اتصلت بي قبل قليل.",
+        "note": "vorhin تشير إلى ماضٍ قريب.",
+        "timestamp": "11:08",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Hast du vorhin mit ihr gesprochen?",
+        "ar": "هل تحدثت معها قبل قليل؟",
+        "note": "السؤال عن وقت قريب من اللحظة الحالية.",
+        "timestamp": "11:50",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Hast du vorher mit ihr gesprochen?",
+        "ar": "هل تحدثت معها قبل ذلك؟",
+        "note": "السؤال يربط الحديث بحدث مرجعي آخر.",
+        "timestamp": "12:04",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Bevor ich meine Meinung sage, will ich erst alle Fakten wissen.",
+        "ar": "قبل أن أقول رأيي، أريد أولاً معرفة كل الحقائق.",
+        "note": "الفعل sage في نهاية جملة bevor التابعة.",
+        "timestamp": "12:23",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Vor dem Essen waschen wir uns die Hände.",
+        "ar": "نغسل أيدينا قبل الأكل.",
+        "note": "vor + dem Essen في حالة الداتيف.",
+        "timestamp": "13:20",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Bevor wir essen, waschen wir uns die Hände.",
+        "ar": "قبل أن نأكل، نغسل أيدينا.",
+        "note": "الصيغة الفعلية المقابلة بـ bevor وجملة تابعة.",
+        "timestamp": "13:43",
+        "origin": "video",
+        "verified": true
+      }
+    ],
+    "vocabulary_from_video": [
+      {
+        "de": "die Reihenfolge",
+        "ar": "الترتيب أو تسلسل الأحداث",
+        "note": "الفكرة التي يشرحها مثال zuerst",
+        "timestamp": "00:30"
+      },
+      {
+        "de": "zuerst",
+        "ar": "أولاً",
+        "note": "لتحديد الحدث الأول في التسلسل",
+        "timestamp": "00:40"
+      },
+      {
+        "de": "vorher",
+        "ar": "قبل ذلك / سابقاً",
+        "note": "عام وشائع في الكلام اليومي",
+        "timestamp": "01:31"
+      },
+      {
+        "de": "davor",
+        "ar": "قبل ذلك / أمامه / من ذلك بحسب التركيب",
+        "note": "زمني أو مكاني أو ضمير ظرفي مع vor",
+        "timestamp": "04:20"
+      },
+      {
+        "de": "zuvor",
+        "ar": "قبل ذلك / سابقاً",
+        "note": "أكثر رسمية وكتابية",
+        "timestamp": "02:00"
+      },
+      {
+        "de": "vorab",
+        "ar": "مسبقاً / سلفاً",
+        "note": "شائعة في الرسائل والوثائق والمواعيد",
+        "timestamp": "10:15"
+      },
+      {
+        "de": "vorhin",
+        "ar": "قبل قليل",
+        "note": "لماضٍ قريب في الفترة الحالية",
+        "timestamp": "11:08"
+      },
+      {
+        "de": "bevor",
+        "ar": "قبل أن",
+        "note": "أداة ربط تدخل جملة تابعة",
+        "timestamp": "12:23"
+      },
+      {
+        "de": "die Unterlagen",
+        "ar": "المستندات أو الوثائق",
+        "note": "في مثال الإرسال المسبق",
+        "timestamp": "10:15"
+      },
+      {
+        "de": "eine Entscheidung treffen",
+        "ar": "يتخذ قراراً",
+        "note": "في مثال Angst davor haben",
+        "timestamp": "08:58"
+      }
+    ],
+    "teacher_notes": [
+      {
+        "text": "لا تختزل vorher و davor و zuvor في ترجمة عربية واحدة؛ افحص المرجع ودرجة الرسمية أولاً.",
+        "timestamp": "05:30"
+      },
+      {
+        "text": "إذا استعملت davor زمنياً من دون سياق واضح، فقد يسأل السامع: Vor was genau?",
+        "timestamp": "04:48"
+      },
+      {
+        "text": "في جملة لم أفعل هذا من قبل تكون davor صحيحة من حيث الإمكان، لكنها أقل طبيعية من vorher أو zuvor بلا مرجع سابق.",
+        "timestamp": "07:40"
+      },
+      {
+        "text": "davor المكانية تعود في المثال إلى آخر اسم مذكور، أي Auto، وليس إلى Haus.",
+        "timestamp": "09:47"
+      },
+      {
+        "text": "vorhin لا تعني كل ما وقع سابقاً؛ إنها تشير إلى دقائق أو ساعات قريبة ضمن الفترة الحالية.",
+        "timestamp": "11:08"
+      },
+      {
+        "text": "عند استعمال bevor، راقب الفعل في نهاية الجملة التابعة. وعند استعمال vor مع اسم، راقب الداتيف.",
+        "timestamp": "13:20"
+      }
+    ],
+    "exercises_demonstrated": [
+      {
+        "text": "إكمال: Die Gäste sind um acht Uhr gekommen. _____ haben wir alles vorbereitet. يوضح الشرح أن Davor و Zuvor و Vorher كلها صحيحة مع اختلاف الأسلوب.",
+        "timestamp": "06:14"
+      },
+      {
+        "text": "مقارنة Ich habe das noch nie vorher/zuvor/davor gemacht: السابقان طبيعيان، أما davor فأقل طبيعية بلا مرجع واضح.",
+        "timestamp": "07:00"
+      },
+      {
+        "text": "مقارنة السؤالين بـ vorhin و vorher لتحديد الفرق بين الماضي القريب والحدث السابق لمرجع معلوم.",
+        "timestamp": "11:50"
+      }
+    ],
+    "tables": [
+      {
+        "title": "اختيار التعبير المناسب",
+        "headers": [
+          "التعبير",
+          "الوظيفة الأساسية",
+          "ملاحظة السياق"
+        ],
+        "rows": [
+          [
+            "zuerst",
+            "الحدث الأول في التسلسل",
+            "غالباً يقابله dann للحدث التالي"
+          ],
+          [
+            "vorher",
+            "سابقاً أو قبل ذلك بصورة عامة",
+            "شائع في الكلام ولا يحتاج دائماً إلى مرجع مصرح به"
+          ],
+          [
+            "davor",
+            "قبل حدث محدد",
+            "يحتاج عادة إلى مرجع واضح، وله استعمالات غير زمنية أيضاً"
+          ],
+          [
+            "zuvor",
+            "قبل ذلك",
+            "أكثر رسمية وكتابية"
+          ],
+          [
+            "vorab",
+            "مسبقاً",
+            "للإرسال أو الدفع أو الإعلام قبل إجراء لاحق"
+          ],
+          [
+            "vorhin",
+            "قبل قليل",
+            "ماضٍ قريب في الفترة الحالية"
+          ],
+          [
+            "bevor",
+            "قبل أن + حدث",
+            "تدخل جملة تابعة وفعلها في النهاية"
+          ],
+          [
+            "vor + Dativ",
+            "قبل + اسم",
+            "تحتاج اسماً في حالة الداتيف"
+          ]
+        ]
+      },
+      {
+        "title": "وظائف davor الثلاث",
+        "headers": [
+          "الوظيفة",
+          "المعنى",
+          "مثال الفيديو"
+        ],
+        "rows": [
+          [
+            "زمنية",
+            "قبل ذلك",
+            "Davor muss ich noch einkaufen."
+          ],
+          [
+            "ضمير ظرفي",
+            "مرتبط بفعل أو تركيب مع vor",
+            "Ich habe Angst davor, …"
+          ],
+          [
+            "مكانية",
+            "أمامه أو أمامها",
+            "Davor spielen die Kinder."
+          ]
+        ]
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich habe das noch nie davor gemacht.",
+        "correct": "Ich habe das noch nie vorher gemacht.",
+        "explanation": "الصيغة الأولى ممكنة نحوياً، لكنها أقل طبيعية إذا لم يسبق ذكر حدث محدد تعود إليه davor.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Bevor ich sage meine Meinung, will ich alle Fakten wissen.",
+        "correct": "Bevor ich meine Meinung sage, will ich alle Fakten wissen.",
+        "explanation": "bevor تدخل جملة تابعة، ولذلك يأتي الفعل المصرف في نهايتها.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Vor das Essen waschen wir uns die Hände.",
+        "correct": "Vor dem Essen waschen wir uns die Hände.",
+        "explanation": "vor الزمنية مع الاسم تتطلب الداتيف: dem Essen.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich war letztes Jahr vorhin in Berlin.",
+        "correct": "Ich war letztes Jahr in Berlin.",
+        "explanation": "vorhin مخصصة للماضي القريب، فلا تناسب حدثاً وقع العام الماضي.",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "quick_recap": [
+      "zuerst يرتب الحدث الأول، بينما vorher و davor و zuvor تشير إلى ما سبق مع فروق في المرجع والأسلوب.",
+      "davor قد تكون زمنية أو مكانية أو ضميراً ظرفياً مع تركيب يتطلب vor.",
+      "vorab تعني مسبقاً، و vorhin تعني قبل قليل.",
+      "bevor تدخل جملة تابعة وفعلها في النهاية، أما vor + اسم فتتطلب الداتيف."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "ابنِ المقارنة على أربعة محاور: ترتيب الحدث، وجود مرجع محدد، قرب الزمن من الحاضر، ودرجة الرسمية. اذكر أن davor لها وظائف غير زمنية أيضاً.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "اقرأ الجملة السابقة واللاحقة قبل الاختيار: ابحث عن حدث مرجعي لـ davor، أو ماضٍ قريب لـ vorhin، أو إجراء مسبق لـ vorab، أو تسلسل يبدأ بـ zuerst.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "اسأل في كل مثال: هل davor تجيب عن «متى؟»، أم «أين؟»، أم تكمل فعلاً أو اسماً يتطلب vor؟ ثم تأكد من وضوح الاسم أو الحدث الذي تعود إليه.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "في صيغة bevor أبقِ فعلاً مصروفاً في نهاية الجملة التابعة. وفي الصيغة الاسمية حوّل الحدث إلى اسم مناسب واستعمل vor مع الداتيف.",
+        "video_required": false
+      },
+      {
+        "task_index": 4,
+        "guidance": "خطط للنص كسلسلة زمنية: حدث أول، ومرجع محدد، وفعل وقع قبل قليل، وإجراء تم مسبقاً. راجع طبيعية كل تعبير والأسلوب المناسب للسياق.",
+        "video_required": false
+      }
+    ],
+    "evidence_checks": [
+      {
+        "claim": "يقدم الفيديو zuerst لبيان ترتيب الأحداث.",
+        "timestamp": "00:30",
+        "verified": true
+      },
+      {
+        "claim": "يصف vorher و davor و zuvor بأنها ظروف زمنية تستطيع الوقوف في جملة مستقلة.",
+        "timestamp": "01:31",
+        "verified": true
+      },
+      {
+        "claim": "يميز zuvor بوصفها أكثر رسمية وكتابية.",
+        "timestamp": "02:00",
+        "verified": true
+      },
+      {
+        "claim": "يوضح أن davor الزمنية تشير عادة إلى حدث أو وقت محدد.",
+        "timestamp": "04:20",
+        "verified": true
+      },
+      {
+        "claim": "يعرض اختباراً يمكن فيه استعمال Davor و Zuvor و Vorher كلها.",
+        "timestamp": "06:14",
+        "verified": true
+      },
+      {
+        "claim": "يعرض ثلاثة استعمالات لـ davor: زمني وضميري ومكاني.",
+        "timestamp": "08:19",
+        "verified": true
+      },
+      {
+        "claim": "يشرح vorab في سياقات الإرسال والدفع والإعلام المسبق.",
+        "timestamp": "10:15",
+        "verified": true
+      },
+      {
+        "claim": "يميز vorhin للماضي القريب من vorher المرتبطة بحدث مرجعي.",
+        "timestamp": "11:50",
+        "verified": true
+      },
+      {
+        "claim": "يشرح أن الفعل المصرف يأتي في نهاية جملة bevor التابعة.",
+        "timestamp": "12:23",
+        "verified": true
+      },
+      {
+        "claim": "يقارن Vor dem Essen بـ Bevor wir essen ويبين vor + Dativ.",
+        "timestamp": "13:20",
+        "verified": true
+      }
+    ],
+    "completeness": {
+      "meaningful_source_segments": 215,
+      "documented_sections": 10,
+      "german_examples_detected": 26,
+      "german_examples_documented": 22,
+      "vocabulary_items_detected": 10,
+      "vocabulary_items_documented": 10,
+      "beginning_represented": true,
+      "middle_represented": true,
+      "end_represented": true
+    },
+    "editorial_enrichment": {
+      "standard": "B2",
+      "purpose": "clear_explanations_and_additional_practice_examples",
+      "video_claim": false
+    }
   }
 ]

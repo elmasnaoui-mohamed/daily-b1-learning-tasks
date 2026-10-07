@@ -7,7 +7,7 @@ const expected = {
   a1: { lessons: 57, tasks: 228 },
   a2: { lessons: 42, tasks: 168 },
   b1: { lessons: 24, tasks: 96 },
-  b2: { lessons: 18, tasks: 90 },
+  b2: { lessons: 19, tasks: 95 },
 };
 const requiredFields = ["id", "title", "focus", "what_you_learn", "conversational_goal", "url", "tasks"];
 const textFields = ["title", "focus", "what_you_learn", "conversational_goal", "url"];
@@ -111,8 +111,8 @@ for (const [level, expectedCounts] of Object.entries(expected)) {
 }
 
 console.log(`Validated ${totalLessons} lessons and ${totalTasks} tasks.`);
-if (totalLessons !== 141 || totalTasks !== 582) {
+if (totalLessons !== 142 || totalTasks !== 587) {
   failed = true;
-  console.error(`FAIL TOTAL: expected 141 lessons and 582 tasks, found ${totalLessons} and ${totalTasks}`);
+  console.error(`FAIL TOTAL: expected 142 lessons and 587 tasks, found ${totalLessons} and ${totalTasks}`);
 }
 if (failed) process.exitCode = 1;
