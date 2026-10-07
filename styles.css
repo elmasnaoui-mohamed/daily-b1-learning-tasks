@@ -1129,6 +1129,24 @@ a {
   color: var(--color-text-primary);
 }
 
+.custom-select__option-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.custom-select__option-copy small {
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.custom-select__option:hover .custom-select__option-copy small,
+.custom-select__option:focus-visible .custom-select__option-copy small,
+.custom-select__option.is-selected .custom-select__option-copy small {
+  color: var(--color-text-secondary);
+}
+
 .custom-select__indicator {
   position: relative;
   width: 20px;

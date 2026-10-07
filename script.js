@@ -420,8 +420,9 @@ function syncCustomSelect(select) {
   triggerValue.textContent = selected?.textContent ?? "";
   menu.innerHTML = [...select.options].map((option) => {
     const isSelected = option.value === select.value;
+    const hint = option.dataset.hint?.trim();
     return `<button class="custom-select__option${isSelected ? " is-selected" : ""}" type="button" role="option" aria-selected="${isSelected}" data-custom-select-option data-value="${escapeAttribute(option.value)}">
-      <span>${escapeHtml(option.textContent)}</span>
+      <span class="custom-select__option-copy"><span>${escapeHtml(option.textContent)}</span>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</span>
       <span class="custom-select__indicator" aria-hidden="true"></span>
     </button>`;
   }).join("");
@@ -458,7 +459,8 @@ function renderLessonList() {
   const search = normalizeForSearch(filters.search);
   const lessons = level.lessons.filter((lesson) => {
     const stats = progressStore.getLessonStats(lesson);
-    const matchesStatus = filters.status === "all" || filters.status === stats.status;
+    const matchesStatus = filters.status === "all"
+      || (filters.status === "incomplete" ? stats.status !== "completed" : filters.status === stats.status);
     const matchesFocus = filters.focus === "all" || filters.focus === lesson.focus;
     const documentationSearch = state.documentationLevels
       .get(state.activeLevel)?.searchableByLessonId.get(String(lesson.id)) ?? "";
