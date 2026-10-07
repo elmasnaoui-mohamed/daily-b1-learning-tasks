@@ -831,6 +831,11 @@ a {
   gap: 22px;
 }
 
+.level-summary__details {
+  min-width: 0;
+  flex: 1;
+}
+
 .level-progress-ring {
   --level-progress: 0;
   position: relative;
@@ -883,6 +888,43 @@ a {
 .level-summary__intro p {
   margin: 4px 0 0;
   color: var(--color-text-secondary);
+}
+
+.level-summary__intro .level-ai-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 11px 13px;
+  border: 1px solid color-mix(in srgb, var(--color-accent-cyan) 24%, var(--color-border));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--color-accent-cyan) 6%, var(--color-surface-muted));
+}
+
+.level-summary__intro .level-ai-note p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.level-ai-note strong {
+  color: var(--color-text-primary);
+}
+
+.level-ai-note__icon {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  place-items: center;
+  color: var(--color-accent-cyan);
+}
+
+.level-ai-note__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .summary-stats {
@@ -2375,12 +2417,14 @@ a {
   }
 
   .level-summary__intro {
-    align-items: center;
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .level-progress-ring {
     width: 94px;
     height: 94px;
+    align-self: center;
     flex-basis: 94px;
   }
 
