@@ -5,12 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Deutsch mit Mira</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>TELC B1 &amp; B2 Prüfungsauswahl | Deutsch mit Mira</title>
   <meta name="description"
     content="لوحة عربية لتعلّم الألمانية بمستويات متعددة مع متابعة التقدم، البحث، والتصفية اعتمادًا على خطط دراسية يومية.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link rel="icon" type="image/svg+xml" href="/src/assets/Deutsch mit Rinkute.ico">
+  <script>
+    (function () {
+      if (!("serviceWorker" in navigator)) return;
+
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        if (!registrations.length) return;
+
+        return Promise.all(registrations.map(function (registration) {
+          return registration.unregister();
+        })).then(function () {
+          if (!navigator.serviceWorker.controller) return;
+
+          var reloadKey = "telc-selector-reloaded";
+          if (sessionStorage.getItem(reloadKey)) return;
+          sessionStorage.setItem(reloadKey, "true");
+          location.reload();
+        });
+      }).catch(function (error) {
+        console.error("Unable to remove the stale TELC service worker.", error);
+      });
+    })();
+  </script>
 
   <!-- Fonts and styles -->
   <link rel="preload" as="style"
