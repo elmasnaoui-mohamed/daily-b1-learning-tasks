@@ -1443,8 +1443,6 @@
     "visual_review_status": "source_verified",
     "audio_review_status": "source_verified",
     "overall_review_status": "source_verified",
-    "evidence_fixture": "scripts/fixtures/b2-9-evidence.json",
-    "evidence_fixture_sha256": "c71a77fbff2683a756556fc55af1d9ddf4983a3cb507208359a294a698fde786",
     "reading_time_minutes": 12,
     "summary": "يشرح الفيديو ثمانية أسماء ألمانية مؤنثة من مفردات B2، مع معناها واستعمالها في جمل: Kommunikation، Situation، Diskussion، Kultur، Disziplin، Institution، Struktur، Konsultation. كما يوضّح معنيين مختلفين لـ Disziplin، ويضيف سياقات منطوقة للثقافة والمؤسسات والبنية والاستشارة.",
     "learning_objectives": [

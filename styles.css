@@ -2185,7 +2185,7 @@ a {
 .back-to-top {
   position: fixed;
   z-index: 50;
-  left: 1.5rem;
+  right: 1.5rem;
   bottom: 1.5rem;
   display: grid;
   width: 46px;
