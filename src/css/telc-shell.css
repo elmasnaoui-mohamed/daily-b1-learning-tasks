@@ -1783,3 +1783,15 @@ body[data-telc-view='dashboard'] select {
     transition-duration: .01ms !important;
   }
 }
+
+/* Let reading passages use the page height on desktop instead of creating a
+   second, nested scrollbar inside every text card. Compact layouts already
+   expand these blocks; this keeps the same readable behaviour on wide screens. */
+@media (min-width: 901px) {
+  body[data-telc-view='dashboard'] .lq-tcnt,
+  body[data-telc-view='dashboard'] .lesen-text-body,
+  body[data-telc-view='dashboard'] .teil1-text-content {
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+}
