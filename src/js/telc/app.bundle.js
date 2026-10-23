@@ -2918,7 +2918,7 @@ Auf seinem Weg [35] das empfindliche Obst and Gem\xFCse keinesfalls Schaden nehm
 .lq-ptitle{font-size:10px;font-weight:700;color:#6b7688;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;padding:0 3px}
 .lq-tcard{background:#12151f;border:1px solid #1e2333;border-radius:14px;margin-bottom:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:border-color .2s}
 .lq-tcard.csel{border-color:rgba(99,102,241,.5)}.lq-tcard.cok{border-color:rgba(16,185,129,.4)}.lq-tcard.cer{border-color:rgba(239,68,68,.4)}
-.lq-dz{min-height:52px;border-bottom:2px dashed #2a2f42;padding:10px 16px;display:flex;align-items:center;cursor:pointer;background:rgba(99,102,241,.02);transition:all .16s}
+.lq-dz{border-top-left-radius:18px!important;border-top-right-radius:18px!important;min-height:52px;border-bottom:2px dashed #2a2f42;padding:10px 16px;display:flex;align-items:center;cursor:pointer;background:rgba(99,102,241,.02);transition:all .16s}
 .lq-dz:hover{background:rgba(99,102,241,.06);border-color:#7c7ff4}
 .lq-dz.dzover{background:rgba(59,130,246,.1);border-color:#3b82f6;border-style:solid}
 .lq-dz.dzfill{background:rgba(99,102,241,.08);border-color:#7c7ff4;border-style:solid}
@@ -2977,7 +2977,7 @@ Auf seinem Weg [35] das empfindliche Obst and Gem\xFCse keinesfalls Schaden nehm
   .lq-wrap{padding:10px 10px 0!important}
   .lq-opt{padding:10px 12px!important;font-size:12.5px!important;text-align:left!important;border-radius:8px!important;margin-bottom:6px!important}
   .lq-tcard{border-radius:12px!important;margin-bottom:12px!important}
-  .lq-dz{min-height:46px!important;padding:8px 13px!important}
+  .lq-dz{border-top-left-radius:18px!important;border-top-right-radius:18px!important;min-height:46px!important;padding:8px 13px!important}
   .lq-tb{padding:11px 13px 13px!important}
   .lq-panel{padding:10px!important;border-radius:12px!important}
 }
@@ -3013,7 +3013,7 @@ Auf seinem Weg [35] das empfindliche Obst and Gem\xFCse keinesfalls Schaden nehm
 .lq-ptitle{font-size:10px;font-weight:700;color:#6b7688;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;padding:0 3px}
 .lq-tcard{background:#12151f;border:1px solid #1e2333;border-radius:14px;margin-bottom:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:border-color .2s}
 .lq-tcard.csel{border-color:rgba(99,102,241,.5)}.lq-tcard.cok{border-color:rgba(16,185,129,.4)}.lq-tcard.cer{border-color:rgba(239,68,68,.4)}
-.lq-dz{min-height:52px;border-bottom:2px dashed #2a2f42;padding:10px 16px;display:flex;align-items:center;cursor:pointer;background:rgba(99,102,241,.02);transition:all .16s}
+.lq-dz{border-top-left-radius:18px!important;border-top-right-radius:18px!important;min-height:52px;border-bottom:2px dashed #2a2f42;padding:10px 16px;display:flex;align-items:center;cursor:pointer;background:rgba(99,102,241,.02);transition:all .16s}
 .lq-dz:hover{background:rgba(99,102,241,.06);border-color:#7c7ff4}
 .lq-dz.dzover{background:rgba(59,130,246,.1);border-color:#3b82f6;border-style:solid}
 .lq-dz.dzfill{background:rgba(99,102,241,.08);border-color:#7c7ff4;border-style:solid}
@@ -3072,7 +3072,7 @@ Auf seinem Weg [35] das empfindliche Obst and Gem\xFCse keinesfalls Schaden nehm
   .lq-wrap{padding:10px 10px 0!important}
   .lq-opt{padding:10px 12px!important;font-size:12.5px!important;text-align:left!important;border-radius:8px!important;margin-bottom:6px!important}
   .lq-tcard{border-radius:12px!important;margin-bottom:12px!important}
-  .lq-dz{min-height:46px!important;padding:8px 13px!important}
+  .lq-dz{border-top-left-radius:18px!important;border-top-right-radius:18px!important;min-height:46px!important;padding:8px 13px!important}
   .lq-tb{padding:11px 13px 13px!important}
   .lq-panel{padding:10px!important;border-radius:12px!important}
 }
@@ -3109,7 +3109,7 @@ Auf seinem Weg [35] das empfindliche Obst and Gem\xFCse keinesfalls Schaden nehm
 .lq-ptitle{font-size:10px;font-weight:700;color:#6b7688;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;padding:0 3px}
 .lq-tcard{background:#12151f;border:1px solid #1e2333;border-radius:14px;margin-bottom:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:border-color .2s}
 .lq-tcard.csel{border-color:rgba(99,102,241,.5)}.lq-tcard.cok{border-color:rgba(16,185,129,.4)}.lq-tcard.cer{border-color:rgba(239,68,68,.4)}
-.lq-dz{min-height:52px;border-bottom:2px dashed #2a2f42;padding:10px 16px;display:flex;align-items:center;cursor:pointer;background:rgba(99,102,241,.02);transition:all .16s}
+.lq-dz{border-top-left-radius:18px!important;border-top-right-radius:18px!important;min-height:52px;border-bottom:2px dashed #2a2f42;padding:10px 16px;display:flex;align-items:center;cursor:pointer;background:rgba(99,102,241,.02);transition:all .16s}
 .lq-dz:hover{background:rgba(99,102,241,.06);border-color:#7c7ff4}
 .lq-dz.dzover{background:rgba(59,130,246,.1);border-color:#3b82f6;border-style:solid}
 .lq-dz.dzfill{background:rgba(99,102,241,.08);border-color:#7c7ff4;border-style:solid}
@@ -3168,7 +3168,7 @@ Auf seinem Weg [35] das empfindliche Obst and Gem\xFCse keinesfalls Schaden nehm
   .lq-wrap{padding:10px 10px 0!important}
   .lq-opt{padding:10px 12px!important;font-size:12.5px!important;text-align:left!important;border-radius:8px!important;margin-bottom:6px!important}
   .lq-tcard{border-radius:12px!important;margin-bottom:12px!important}
-  .lq-dz{min-height:46px!important;padding:8px 13px!important}
+  .lq-dz{border-top-left-radius:18px!important;border-top-right-radius:18px!important;min-height:46px!important;padding:8px 13px!important}
   .lq-tb{padding:11px 13px 13px!important}
   .lq-panel{padding:10px!important;border-radius:12px!important}
 }
