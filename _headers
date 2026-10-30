@@ -1,8 +1,17 @@
-/telc-exams
+/
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/telc-exams.html
+/index.html
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
-/src/js/telc/boot.js
-  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+/script.js
+  Cache-Control: public, no-cache, must-revalidate
+
+/src/js/telc-app.js
+  Cache-Control: public, no-cache, must-revalidate
+
+/src/css/telc.css
+  Cache-Control: public, no-cache, must-revalidate
+
+/src/data/telc/*
+  Cache-Control: public, no-cache, must-revalidate

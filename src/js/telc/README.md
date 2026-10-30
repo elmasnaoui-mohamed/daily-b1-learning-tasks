@@ -1,27 +1,20 @@
-# TELC integration
+# TELC Prüfungsstudio
 
-The TELC experience is part of the main Deutsch mit Mira source tree. It is
-loaded by `telc-exams.html`; there is no second website directory.
+The TELC experience is an original module inside the Deutsch mit Mira learning
+platform. It uses the same `index.html`, header, hash router, visual tokens, and
+browser-local persistence as the course experience.
 
-## Files
+## Architecture
 
-- `app.bundle.js` — the preserved exam engine and exercise datasets.
-- `boot.js` — stale service-worker cleanup before the app starts.
-- `runtime.js` — local session and API compatibility layer required by the
-  preserved engine.
-- `enhancements.js` — product copy, unavailable-feature filtering, shared
-  navigation, and DOM hooks used by the new shell.
-- `../../css/telc-legacy.css` — original component styles required by the
-  engine.
-- `../../css/telc-shell.css` — the maintained Prüfungsstudio visual system and
-  responsive overrides.
-- `../../vendor/` — local React runtime used by the exam engine.
+- `../telc-app.js` renders the selector, dashboards, libraries, exercises,
+  scoring, results, writing drafts, and speaking notes.
+- `../../css/telc.css` contains the responsive TELC visual system.
+- `../../data/telc/b1.json` and `../../data/telc/b2.json` contain exam content
+  only. They do not contain UI or application logic.
+- Routes start at `#/telc`, for example `#/telc/B1/lesen/lesenTeil1/0`.
+- Progress is stored under `deutschMira:telc:v1` in `localStorage`.
 
-## Maintenance contract
+There is no separate TELC website, minified application bundle, premium wall,
+authentication shim, or DOM-patching compatibility layer.
 
-Do not edit the minified bundle for visual or copy changes. Put those changes
-in `enhancements.js` and `telc-shell.css`. Keep the local-storage keys and the
-API compatibility layer stable so existing learner progress survives updates.
-
-Run `node scripts/verify-telc.mjs` after changing the integration, then open
-both B1 and B2 from `telc-exams.html` and confirm that an exercise library opens.
+Run `node scripts/verify-telc.mjs` after changing the module or datasets.

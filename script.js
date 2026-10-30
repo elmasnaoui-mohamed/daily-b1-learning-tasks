@@ -8,6 +8,7 @@ import {
 } from "./src/js/course-data.js";
 import { createProgressStore } from "./src/js/progress-store.js";
 import { loadLevelDocumentation } from "./src/js/documentation-data.js";
+import { createTelcApp } from "./src/js/telc-app.js";
 
 const BACK_TO_TOP_THRESHOLD = 500;
 const BACK_TO_TOP_COLLISION_SELECTOR = "a, button:not(#backToTopButton), input, select, textarea, .site-footer p";
@@ -21,6 +22,7 @@ const state = {
   backToTopFrame: null,
   lessonMode: getLessonViewPreference(),
   documentationLevels: new Map(),
+  telcApp: null,
 };
 
 const elements = {
@@ -30,6 +32,7 @@ const elements = {
   app: document.querySelector("#appContent"),
   dashboard: document.querySelector("#dashboardView"),
   lessonView: document.querySelector("#lessonView"),
+  telcView: document.querySelector("#telcView"),
   continueButton: document.querySelector("#continueButton"),
   levelTabs: document.querySelector("#levelTabs"),
   activeLevelBadge: document.querySelector("#activeLevelBadge"),
@@ -63,6 +66,7 @@ bootstrap();
 
 function bootstrap() {
   try {
+    state.telcApp = createTelcApp({ root: elements.telcView, showToast });
     bindEvents();
     if (!VALIDATION_REPORT.valid) {
       showFatalError(`وجدنا مشكلة في بيانات الدروس: ${VALIDATION_REPORT.errors.join(" ")}`);
@@ -248,6 +252,12 @@ function handleRoute() {
     return;
   }
 
+  if (route.view === "telc") {
+    renderTelc(route);
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
+    return;
+  }
+
   state.activeLevel = route.level;
   if (route.view === "lesson") {
     const lesson = getLesson(route.level, route.lessonId);
@@ -266,6 +276,15 @@ function handleRoute() {
 
 function parseRoute(hash) {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
+  if (parts[0] === "telc") {
+    return {
+      view: "telc",
+      level: ["B1", "B2"].includes(parts[1]) ? parts[1] : null,
+      area: parts[2] || null,
+      module: parts[3] || null,
+      exercise: parts[4] || null,
+    };
+  }
   if (parts[0] !== "level" || !COURSE_LEVELS[parts[1]]) return null;
   if (parts.length === 2) return { view: "dashboard", level: parts[1] };
   if (parts[2] === "lesson" && parts[3] != null) return { view: "lesson", level: parts[1], lessonId: parts[3] };
@@ -277,6 +296,8 @@ function renderDashboard() {
   elements.app.hidden = false;
   elements.dashboard.hidden = false;
   elements.lessonView.hidden = true;
+  elements.telcView.hidden = true;
+  document.body.classList.remove("is-telc-view");
   document.title = `${state.activeLevel} | Deutsch mit Mira`;
   renderGlobalProgress();
   renderLevelTabs();
@@ -284,6 +305,16 @@ function renderDashboard() {
   renderFilters();
   renderLessonList();
   preloadDocumentationForLevel(state.activeLevel);
+}
+
+function renderTelc(route) {
+  elements.error.hidden = true;
+  elements.app.hidden = false;
+  elements.dashboard.hidden = true;
+  elements.lessonView.hidden = true;
+  elements.telcView.hidden = false;
+  document.body.classList.add("is-telc-view");
+  state.telcApp.render(route);
 }
 
 function renderGlobalProgress() {
@@ -517,6 +548,8 @@ function renderLessonDetail(levelKey, lessonId) {
   elements.app.hidden = false;
   elements.dashboard.hidden = true;
   elements.lessonView.hidden = false;
+  elements.telcView.hidden = true;
+  document.body.classList.remove("is-telc-view");
   document.title = `${lesson.title} | ${levelKey}`;
 
   elements.lessonView.innerHTML = `
