@@ -16,12 +16,18 @@ const redirects = await read("_redirects");
 
 assert.match(html, /href="#\/telc"/);
 assert.match(html, /id="telcView"/);
+assert.match(html, /id="telcHeaderNav"/);
 assert.match(html, /src\/css\/telc\.css/);
 assert.match(main, /createTelcApp/);
 assert.match(main, /parts\[0\] === "telc"/);
 assert.match(telcApp, /deutschMira:telc:v1/);
 assert.match(telcApp, /تصحيح الإجابات/);
+assert.match(telcApp, /renderSimulation/);
+assert.match(telcApp, /data-simulation-timer/);
+assert.doesNotMatch(telcApp, /telcTopbar/);
 assert.match(telcCss, /\.telc-workspace/);
+assert.match(telcCss, /\.telc-simulation-plan/);
+assert.match(telcCss, /bottom:\s*0/);
 assert.match(netlifyHeaders, /\/src\/data\/telc\/\*/);
 assert.match(redirects, /\/telc-exams\s+\/#\/telc\s+301/);
 

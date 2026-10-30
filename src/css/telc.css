@@ -13,45 +13,6 @@
   padding: 28px 0 72px;
 }
 
-.telc-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  min-height: 52px;
-  margin-bottom: 48px;
-  padding: 8px;
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
-  background: rgba(17, 23, 39, 0.82);
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.16);
-  backdrop-filter: blur(16px);
-}
-
-.telc-topbar > a,
-.telc-topbar > div > a,
-.telc-topbar > span a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 36px;
-  padding: 6px 12px;
-  border-radius: 10px;
-  color: var(--color-text-secondary);
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.telc-topbar > div {
-  display: flex;
-  gap: 4px;
-}
-
-.telc-topbar a:hover {
-  background: var(--color-surface-hover);
-  color: var(--color-text-primary);
-}
-
 .telc-kicker {
   display: block;
   margin-bottom: 10px;
@@ -106,6 +67,7 @@
     radial-gradient(circle at 86% 16%, rgba(139, 92, 246, 0.16), transparent 14rem),
     var(--color-surface);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+  text-align: center;
 }
 
 .telc-level-card[data-accent="lime"] {
@@ -214,6 +176,7 @@
   color: var(--color-text-muted);
   font-size: 0.8rem;
   font-weight: 700;
+  text-align: initial;
 }
 
 .telc-level-mark {
@@ -231,11 +194,13 @@
   margin: 52px 0 8px;
   font-size: clamp(2.3rem, 5vw, 4.5rem);
   letter-spacing: -0.06em;
+  text-align: center;
 }
 
 .telc-level-card > p {
   margin: 0 0 28px;
   color: var(--color-text-secondary);
+  text-align: center;
 }
 
 .telc-metric-row {
@@ -663,13 +628,33 @@
 
 .telc-workspace select,
 .telc-select-question select {
+  appearance: none;
+  width: min(100%, 220px);
   max-width: 100%;
-  min-height: 40px;
-  padding: 7px 34px 7px 10px;
+  min-height: 48px;
+  padding: 9px 18px 9px 46px;
   border: 1px solid var(--color-border-strong);
-  border-radius: 9px;
-  background: var(--color-surface-muted);
+  border-radius: 13px;
+  outline: 0;
+  background-color: var(--color-surface-elevated);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23aab3c8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E");
+  background-position: left 14px center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
   color: var(--color-text-primary);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.telc-workspace select:is(:hover, :focus),
+.telc-select-question select:is(:hover, :focus) {
+  border-color: #9f8cff;
+  background-color: var(--color-surface-hover);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.14);
 }
 
 .telc-reference-panel,
@@ -950,15 +935,107 @@
 .telc-exam-actions {
   position: sticky;
   z-index: 10;
-  bottom: 12px;
+  bottom: 0;
   margin-top: 20px;
   padding: 10px;
+  padding-inline-start: 72px;
   border: 1px solid var(--color-border);
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   background: rgba(11, 16, 32, 0.94);
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(18px);
 }
+
+.telc-simulation-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(180px, 0.35fr);
+  gap: 26px;
+  align-items: center;
+  margin-top: 22px;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid rgba(139, 92, 246, 0.45);
+  border-radius: 22px;
+  background: radial-gradient(circle at 10% 50%, rgba(139, 92, 246, 0.17), transparent 18rem), var(--color-surface);
+}
+
+.telc-simulation-card h2,
+.telc-simulation-hero h1 {
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.telc-simulation-card p,
+.telc-simulation-hero p {
+  margin: 10px 0 0;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+.telc-simulation-card__status {
+  display: grid;
+  min-width: 130px;
+  text-align: center;
+}
+
+.telc-simulation-card__status strong { color: #a994ff; font-size: 2rem; }
+.telc-simulation-card__status span { color: var(--color-text-muted); font-size: 0.75rem; }
+.telc-simulation-card__status time { margin-top: 7px; direction: ltr; font-weight: 800; }
+.telc-simulation-card .telc-primary-link { margin: 0; }
+
+.telc-simulation-hero {
+  max-width: 780px;
+  margin: 20px auto 32px;
+  text-align: center;
+}
+
+.telc-simulation-clock {
+  display: block;
+  margin-top: 20px;
+  color: #a994ff;
+  direction: ltr;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.telc-simulation-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-surface);
+}
+
+.telc-simulation-overview div { padding: 24px; text-align: center; }
+.telc-simulation-overview div + div { border-inline-start: 1px solid var(--color-border); }
+.telc-simulation-overview strong { display: block; color: #a994ff; font-size: 2rem; }
+.telc-simulation-overview span { color: var(--color-text-muted); font-size: 0.78rem; }
+.telc-simulation-start { width: min(100%, 360px); margin: 28px auto 0; }
+
+.telc-simulation-plan { display: grid; gap: 10px; }
+.telc-simulation-step {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 15px;
+  background: var(--color-surface);
+  color: inherit;
+  text-decoration: none;
+}
+.telc-simulation-step:hover { border-color: var(--color-border-strong); background: var(--color-surface-hover); }
+.telc-simulation-step > span { color: #a994ff; font-weight: 900; }
+.telc-simulation-step small { color: var(--color-text-muted); }
+.telc-simulation-step h2 { margin: 4px 0 0; font-size: 1rem; }
+.telc-simulation-step > strong { color: var(--color-text-secondary); font-size: 0.78rem; }
+.telc-simulation-step.is-complete { border-color: rgba(118, 185, 138, 0.38); }
+.telc-simulation-step.is-complete > strong { color: var(--color-success); }
+.telc-simulation-reset { margin-top: 20px; }
 
 .telc-exam-actions > div {
   display: flex;
@@ -1036,14 +1113,6 @@
     padding-top: 16px;
   }
 
-  .telc-topbar {
-    margin-bottom: 28px;
-  }
-
-  .telc-topbar > span {
-    display: none;
-  }
-
   .telc-level-grid,
   .telc-dashboard-hero,
   .telc-area-grid,
@@ -1082,6 +1151,21 @@
   .telc-exam-actions {
     align-items: stretch;
     flex-direction: column;
+    padding-inline: 10px 72px;
+  }
+
+  .telc-simulation-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .telc-simulation-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .telc-simulation-overview div + div {
+    border-top: 1px solid var(--color-border);
+    border-inline-start: 0;
   }
 
   .telc-exam-actions > div,

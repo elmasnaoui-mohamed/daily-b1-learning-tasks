@@ -33,6 +33,8 @@ const elements = {
   dashboard: document.querySelector("#dashboardView"),
   lessonView: document.querySelector("#lessonView"),
   telcView: document.querySelector("#telcView"),
+  telcEntryLink: document.querySelector("#telcEntryLink"),
+  telcHeaderNav: document.querySelector("#telcHeaderNav"),
   continueButton: document.querySelector("#continueButton"),
   levelTabs: document.querySelector("#levelTabs"),
   activeLevelBadge: document.querySelector("#activeLevelBadge"),
@@ -66,7 +68,12 @@ bootstrap();
 
 function bootstrap() {
   try {
-    state.telcApp = createTelcApp({ root: elements.telcView, showToast });
+    state.telcApp = createTelcApp({
+      root: elements.telcView,
+      headerRoot: elements.telcHeaderNav,
+      entryLink: elements.telcEntryLink,
+      showToast,
+    });
     bindEvents();
     if (!VALIDATION_REPORT.valid) {
       showFatalError(`وجدنا مشكلة في بيانات الدروس: ${VALIDATION_REPORT.errors.join(" ")}`);
@@ -292,6 +299,7 @@ function parseRoute(hash) {
 }
 
 function renderDashboard() {
+  state.telcApp?.leave();
   elements.error.hidden = true;
   elements.app.hidden = false;
   elements.dashboard.hidden = false;
@@ -534,6 +542,7 @@ function createLessonCard(lesson, index) {
 }
 
 function renderLessonDetail(levelKey, lessonId) {
+  state.telcApp?.leave();
   const level = COURSE_LEVELS[levelKey];
   const lesson = getLesson(levelKey, lessonId);
   if (!lesson) return;

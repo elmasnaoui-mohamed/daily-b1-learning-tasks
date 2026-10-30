@@ -53,15 +53,18 @@ const MODULE_LABELS = {
 
 const dataCache = new Map();
 
-export function createTelcApp({ root, showToast = () => {} }) {
+export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {} }) {
   const state = readState();
   let renderToken = 0;
+  let activeRoute = null;
 
   root.addEventListener("change", handleChange);
   root.addEventListener("input", handleInput);
   root.addEventListener("click", handleClick);
 
   async function render(route) {
+    activeRoute = route;
+    renderHeader(route);
     const token = ++renderToken;
     root.innerHTML = loadingMarkup();
 
@@ -85,6 +88,13 @@ export function createTelcApp({ root, showToast = () => {} }) {
     if (route.area === "results") {
       root.innerHTML = renderResults(route.level, data, state);
       document.title = `Ergebnisse · TELC ${route.level}`;
+      return;
+    }
+
+    if (route.area === "simulation") {
+      root.innerHTML = renderSimulation(route.level, data, state);
+      document.title = `Prüfungssimulation · TELC ${route.level}`;
+      updateSimulationTimers();
       return;
     }
 
@@ -133,6 +143,21 @@ export function createTelcApp({ root, showToast = () => {} }) {
   }
 
   function handleClick(event) {
+    const simulationStart = event.target.closest("[data-simulation-start]");
+    if (simulationStart) {
+      startSimulation(simulationStart.dataset.simulationStart);
+      return;
+    }
+
+    const simulationReset = event.target.closest("[data-simulation-reset]");
+    if (simulationReset) {
+      if (!confirm("هل تريد حذف جلسة المحاكاة الحالية وبدء جلسة جديدة؟")) return;
+      delete state.simulations[simulationReset.dataset.simulationReset];
+      saveState(state);
+      rerenderCurrentRoute();
+      return;
+    }
+
     const submit = event.target.closest("[data-telc-submit]");
     if (submit) {
       submitExercise(submit.dataset.telcSubmit);
@@ -142,6 +167,7 @@ export function createTelcApp({ root, showToast = () => {} }) {
     const complete = event.target.closest("[data-telc-complete]");
     if (complete) {
       state.completed[complete.dataset.telcComplete] = !state.completed[complete.dataset.telcComplete];
+      if (state.completed[complete.dataset.telcComplete]) markSimulationStep(complete.dataset.telcComplete);
       saveState(state);
       showToast(state.completed[complete.dataset.telcComplete] ? "تم حفظ إنجاز التمرين" : "تم فتح التمرين من جديد");
       rerenderCurrentRoute();
@@ -168,6 +194,7 @@ export function createTelcApp({ root, showToast = () => {} }) {
     const expected = JSON.parse(exercise.dataset.expected || "null");
     if (!expected) {
       state.completed[key] = true;
+      markSimulationStep(key);
       saveState(state);
       showToast("تم حفظ إنجاز التمرين");
       rerenderCurrentRoute();
@@ -190,6 +217,7 @@ export function createTelcApp({ root, showToast = () => {} }) {
       submittedAt: new Date().toISOString(),
     };
     state.completed[key] = true;
+    markSimulationStep(key);
     saveState(state);
     showToast(`النتيجة ${score} من ${entries.length} — يمكنك المحاولة بلا حدود`);
     rerenderCurrentRoute();
@@ -208,7 +236,75 @@ export function createTelcApp({ root, showToast = () => {} }) {
     window.setTimeout(() => indicator.classList.remove("is-saved"), 900);
   }
 
-  return { render };
+  async function startSimulation(level) {
+    const data = await loadLevel(level);
+    const plan = Object.entries(data.modules).map(([module, items]) => {
+      const index = Math.floor(Math.random() * items.length);
+      const item = items[index];
+      return {
+        module,
+        area: areaForModule(module),
+        index,
+        key: exerciseKey(level, module, item),
+        title: exerciseTitle(item),
+      };
+    });
+    state.simulations[level] = {
+      startedAt: Date.now(),
+      durationSeconds: level === "B1" ? 150 * 60 : 180 * 60,
+      plan,
+      completed: [],
+    };
+    saveState(state);
+    showToast("بدأت محاكاة الامتحان — المؤقت يعمل الآن");
+    rerenderCurrentRoute();
+  }
+
+  function markSimulationStep(key) {
+    const level = key.split(":")[0];
+    const session = state.simulations[level];
+    if (!session?.plan?.some((step) => step.key === key)) return;
+    if (!session.completed.includes(key)) session.completed.push(key);
+    if (session.completed.length === session.plan.length) session.finishedAt = Date.now();
+    saveState(state);
+    renderHeader(activeRoute);
+  }
+
+  function renderHeader(route) {
+    if (entryLink) entryLink.hidden = true;
+    if (!headerRoot) return;
+    headerRoot.hidden = false;
+    const level = route.level;
+    const session = level ? state.simulations[level] : null;
+    headerRoot.innerHTML = [
+      '<a href="#/level/A1">منصة التعلّم</a>',
+      level ? `<a href="#/telc/${level}">لوحة ${level}</a>` : "",
+      level ? `<a href="#/telc/${level}/simulation" class="telc-header-nav__simulation">محاكاة${session ? ' · <time data-simulation-timer></time>' : ""}</a>` : "",
+      level ? `<a href="#/telc/${level}/results">النتائج</a>` : "",
+      '<a href="#/telc">تغيير المستوى</a>',
+    ].join("");
+    updateSimulationTimers();
+  }
+
+  function leave() {
+    if (entryLink) entryLink.hidden = false;
+    if (headerRoot) {
+      headerRoot.hidden = true;
+      headerRoot.innerHTML = "";
+    }
+  }
+
+  function updateSimulationTimers() {
+    document.querySelectorAll("[data-simulation-timer]").forEach((timer) => {
+      const level = timer.closest("[data-simulation-level]")?.dataset.simulationLevel || activeRoute?.level;
+      const session = state.simulations[level];
+      timer.textContent = session ? formatRemaining(session) : "";
+    });
+  }
+
+  window.setInterval(updateSimulationTimers, 1000);
+
+  return { render, leave };
 }
 
 async function loadLevel(level) {
@@ -229,9 +325,10 @@ function readState() {
       drafts: saved?.drafts || {},
       results: saved?.results || {},
       completed: saved?.completed || {},
+      simulations: saved?.simulations || {},
     };
   } catch {
-    return { answers: {}, drafts: {}, results: {}, completed: {} };
+    return { answers: {}, drafts: {}, results: {}, completed: {}, simulations: {} };
   }
 }
 
@@ -241,7 +338,6 @@ function saveState(state) {
 
 function renderLevelSelector(b1, b2, state) {
   return `<div class="telc-shell telc-selector">
-    ${telcTopbar()}
     <header class="telc-hero">
       <span class="telc-kicker">Prüfungsstudio · استوديو الامتحانات</span>
       <h1>اختر مستوى امتحانك</h1>
@@ -269,7 +365,6 @@ function levelCard(level, data, state, accent) {
 function renderDashboard(level, data, state) {
   const stats = levelStats(level, data, state);
   return `<div class="telc-shell">
-    ${telcTopbar(level)}
     <header class="telc-dashboard-hero">
       <div><span class="telc-kicker">TELC Deutsch ${level}</span><h1>مساحة تدريبك للامتحان</h1><p>اختر المهارة، أكمل التمارين بالترتيب، وارجع في أي وقت لتجد إجاباتك محفوظة.</p></div>
       <div class="telc-progress-card"><strong>${stats.percent}%</strong><span>${stats.completed} من ${stats.total} مجموعة مكتملة</span><div class="telc-progress"><span style="width:${stats.percent}%"></span></div></div>
@@ -277,6 +372,39 @@ function renderDashboard(level, data, state) {
     <section class="telc-area-grid" aria-label="أقسام امتحان TELC ${level}">
       ${Object.entries(AREA_META).map(([key, area]) => areaCard(level, key, area, data, state)).join("")}
     </section>
+    ${renderSimulationCard(level, data, state)}
+  </div>`;
+}
+
+function renderSimulationCard(level, data, state) {
+  const session = state.simulations[level];
+  const moduleCount = Object.keys(data.modules).length;
+  const completed = session?.completed?.length || 0;
+  return `<section class="telc-simulation-card" data-simulation-level="${level}">
+    <div class="telc-simulation-card__copy"><span class="telc-kicker">Prüfungssimulation · محاكاة الامتحان</span><h2>اختبر استعدادك في جلسة كاملة</h2><p>تمرين واحد من كل جزء، مؤقت مستمر، وإجابات محفوظة حتى عند مغادرة الصفحة.</p></div>
+    <div class="telc-simulation-card__status"><strong>${session ? `${completed}/${moduleCount}` : moduleCount}</strong><span>${session ? "أجزاء مكتملة" : "أجزاء الامتحان"}</span>${session ? '<time data-simulation-timer></time>' : ""}</div>
+    <a class="telc-primary-link" href="#/telc/${level}/simulation">${session ? "تابع المحاكاة" : "ابدأ المحاكاة"}<span aria-hidden="true">←</span></a>
+  </section>`;
+}
+
+function renderSimulation(level, data, state) {
+  const session = state.simulations[level];
+  if (!session) {
+    return `<div class="telc-shell telc-simulation" data-simulation-level="${level}">
+      <header class="telc-simulation-hero"><span class="telc-kicker">TELC ${level} · Prüfungssimulation</span><h1>محاكاة امتحان كاملة</h1><p>سنختار تمرينًا من كل جزء من أجزاء الامتحان. يعمل المؤقت باستمرار، وتبقى إجاباتك محفوظة محليًا إذا غادرت وعدت لاحقًا.</p></header>
+      <section class="telc-simulation-overview"><div><strong>${Object.keys(data.modules).length}</strong><span>أجزاء امتحانية</span></div><div><strong>${level === "B1" ? "150" : "180"}</strong><span>دقيقة</span></div><div><strong>∞</strong><span>إعادة بلا حدود</span></div></section>
+      <button class="telc-primary-link telc-simulation-start" type="button" data-simulation-start="${level}">ابدأ المحاكاة الآن</button>
+    </div>`;
+  }
+
+  const finished = session.completed.length === session.plan.length;
+  return `<div class="telc-shell telc-simulation" data-simulation-level="${level}">
+    <header class="telc-simulation-hero"><span class="telc-kicker">TELC ${level} · Prüfungssimulation</span><h1>${finished ? "اكتملت المحاكاة" : "المحاكاة قيد التنفيذ"}</h1><p>${finished ? "أكملت جميع أجزاء هذه الجلسة. يمكنك مراجعة إجاباتك أو بدء جلسة جديدة." : "أكمل الأجزاء بالترتيب الذي يناسبك. المؤقت والتقدم محفوظان تلقائيًا."}</p><time class="telc-simulation-clock" data-simulation-timer></time></header>
+    <section class="telc-simulation-plan" aria-label="أجزاء المحاكاة">${session.plan.map((step, index) => {
+      const complete = session.completed.includes(step.key);
+      return `<a class="telc-simulation-step ${complete ? "is-complete" : ""}" href="#/telc/${level}/${step.area}/${step.module}/${step.index}"><span>${String(index + 1).padStart(2, "0")}</span><div><small>${MODULE_LABELS[step.module]}</small><h2>${escapeHtml(step.title)}</h2></div><strong>${complete ? "مكتمل ✓" : "ابدأ"}</strong></a>`;
+    }).join("")}</section>
+    <button class="telc-quiet-button telc-simulation-reset" type="button" data-simulation-reset="${level}">بدء محاكاة جديدة</button>
   </div>`;
 }
 
@@ -287,7 +415,6 @@ function renderResults(level, data, state) {
   const total = scored.reduce((sum, [, result]) => sum + result.total, 0);
   const average = total ? Math.round((correct / total) * 100) : 0;
   return `<div class="telc-shell">
-    ${telcTopbar(level, `<a href="#/telc/${level}">لوحة ${level}</a>`)}
     <header class="telc-library-head"><span class="telc-kicker">Ergebnisse · النتائج</span><h1>تقدمك في TELC ${level}</h1><p>ملخص محلي مبني على التمارين التي صححتها أو أكملتها على هذا الجهاز.</p></header>
     <section class="telc-results-summary">
       <article><span>الإنجاز</span><strong>${stats.percent}%</strong><p>${stats.completed} من ${stats.total} مجموعة</p></article>
@@ -319,7 +446,6 @@ function renderLibrary(level, areaKey, data, state, selectedModule) {
   const area = AREA_META[areaKey];
   const modules = selectedModule && area.modules.includes(selectedModule) ? [selectedModule] : area.modules;
   return `<div class="telc-shell">
-    ${telcTopbar(level, `<a href="#/telc/${level}">لوحة ${level}</a>`)}
     <header class="telc-library-head"><span class="telc-kicker">${area.de}</span><h1>${area.label}</h1><p>${area.description}</p></header>
     <nav class="telc-module-tabs" aria-label="أجزاء ${area.de}">
       <a class="${selectedModule ? "" : "is-active"}" href="#/telc/${level}/${areaKey}">الكل</a>
@@ -354,7 +480,6 @@ function renderExercise(level, areaKey, module, index, item, total, state) {
   const next = index + 1 < total ? `#/telc/${level}/${areaKey}/${module}/${index + 1}` : `#/telc/${level}/${areaKey}/${module}`;
 
   return `<div class="telc-shell telc-exam-shell" data-exercise-key="${escapeAttribute(key)}" data-expected="${escapeAttribute(JSON.stringify(expected))}">
-    ${telcTopbar(level, `<a href="#/telc/${level}/${areaKey}/${module}">${MODULE_LABELS[module]}</a>`)}
     <header class="telc-exam-head"><div><span class="telc-kicker">${MODULE_LABELS[module]} · ${index + 1}/${total}</span><h1>${escapeHtml(exerciseTitle(item))}</h1></div><span data-saved-indicator>يُحفظ تلقائيًا</span></header>
     ${result ? `<div class="telc-result ${result.percent >= 60 ? "is-pass" : "is-review"}"><strong>${result.score}/${result.total}</strong><span>${result.percent >= 60 ? "أحسنت — نتيجة ناجحة" : "راجع الإجابات وحاول مجددًا"}</span><em>${result.percent}%</em></div>` : ""}
     ${body}
@@ -478,8 +603,19 @@ function feedbackClass(result, answer, expected) {
   return String(answer) === String(expected) ? "is-correct" : "is-wrong";
 }
 
-function telcTopbar(level = null, middle = "") {
-  return `<nav class="telc-topbar" aria-label="TELC navigation"><a href="#/level/A1">منصة التعلّم</a>${middle ? `<span>${middle}</span>` : ""}<div>${level ? `<a href="#/telc/${level}/results">النتائج</a><a href="#/telc/${level}">TELC ${level}</a>` : ""}<a href="#/telc">تغيير المستوى</a></div></nav>`;
+function areaForModule(module) {
+  return Object.entries(AREA_META).find(([, area]) => area.modules.includes(module))?.[0] || "lesen";
+}
+
+function formatRemaining(session) {
+  if (session.finishedAt) return "مكتمل";
+  const elapsed = Math.floor((Date.now() - session.startedAt) / 1000);
+  const remaining = Math.max(0, session.durationSeconds - elapsed);
+  if (remaining === 0) return "انتهى الوقت";
+  const hours = Math.floor(remaining / 3600);
+  const minutes = Math.floor((remaining % 3600) / 60);
+  const seconds = remaining % 60;
+  return [hours, minutes, seconds].map((value) => String(value).padStart(2, "0")).join(":");
 }
 
 function loadingMarkup() {

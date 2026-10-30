@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="./src/assets/Deutsch mit Rinkute.ico">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./src/css/telc.css">
+  <link rel="stylesheet" href="./styles.css?v=20261030-3">
+  <link rel="stylesheet" href="./src/css/telc.css?v=20261030-3">
 </head>
 
 <body>
@@ -36,8 +36,8 @@
         </span>
         <span class="brand-copy"><strong>Deutsch mit Mira</strong><small>مسارك لتعلّم الألمانية</small></span>
       </a>
-      <div class="header-actions">
-        <a class="telc-link" href="#/telc" aria-label="التحضير لامتحان TELC">
+      <div class="header-actions" id="headerActions">
+        <a class="telc-link" id="telcEntryLink" href="#/telc" aria-label="التحضير لامتحان TELC">
           <svg class="telc-link__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M7 3.75h7.2L18 7.55v12.7H7z" />
             <path d="M14 3.75v4h4M9.5 11.25h6M9.5 14.25h6" />
@@ -45,6 +45,7 @@
           <span class="telc-link__label">التحضير لـ TELC</span>
           <span class="telc-link__short" aria-hidden="true">TELC</span>
         </a>
+        <nav class="telc-header-nav" id="telcHeaderNav" aria-label="التنقل في استوديو TELC" hidden></nav>
       </div>
     </div>
   </header>
@@ -223,7 +224,7 @@
         stroke-linejoin="round" />
     </svg>
   </button>
-  <script type="module" src="./script.js"></script>
+  <script type="module" src="./script.js?v=20261030-3"></script>
 </body>
 
 </html>
