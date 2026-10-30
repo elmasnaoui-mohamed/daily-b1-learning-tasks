@@ -3,6 +3,16 @@
   direction: rtl;
 }
 
+body.is-telc-view {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+}
+
+body.is-telc-view > main {
+  flex: 1 0 auto;
+}
+
 .is-telc-view .site-footer {
   margin-top: 0;
 }
@@ -25,7 +35,7 @@
 
 .telc-hero {
   max-width: 780px;
-  margin: 0 auto 48px;
+  margin: 0 auto 36px;
   text-align: center;
 }
 
@@ -59,15 +69,29 @@
 .telc-level-card {
   position: relative;
   overflow: hidden;
-  min-height: 410px;
-  padding: 32px;
+  min-height: 300px;
+  padding: 22px;
   border: 1px solid var(--color-border);
   border-radius: 24px;
   background:
     radial-gradient(circle at 86% 16%, rgba(139, 92, 246, 0.16), transparent 14rem),
     var(--color-surface);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+  color: inherit;
+  text-decoration: none;
   text-align: center;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.telc-level-card:is(:hover, :focus-visible) {
+  border-color: rgba(169, 148, 255, 0.64);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.telc-level-card:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
 }
 
 .telc-level-card[data-accent="lime"] {
@@ -181,8 +205,8 @@
 
 .telc-level-mark {
   display: grid;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border: 1px solid rgba(169, 148, 255, 0.38);
   border-radius: 14px;
   place-items: center;
@@ -191,14 +215,14 @@
 }
 
 .telc-level-card h2 {
-  margin: 52px 0 8px;
-  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  margin: 18px 0 8px;
+  font-size: clamp(2rem, 3.5vw, 3.1rem);
   letter-spacing: -0.06em;
   text-align: center;
 }
 
 .telc-level-card > p {
-  margin: 0 0 28px;
+  margin: 0 0 14px;
   color: var(--color-text-secondary);
   text-align: center;
 }
@@ -206,14 +230,14 @@
 .telc-metric-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   border: 1px solid var(--color-border);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.02);
 }
 
 .telc-metric-row span {
-  padding: 13px 8px;
+  padding: 9px 8px;
   color: var(--color-text-muted);
   font-size: 0.72rem;
   text-align: center;
@@ -242,6 +266,12 @@
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, #8b5cf6, #67b7e5);
+}
+
+.telc-level-card > .telc-primary-link {
+  min-height: 46px;
+  margin-top: 16px;
+  padding-block: 9px;
 }
 
 .telc-primary-link,
@@ -492,6 +522,7 @@
 
 .telc-exam-shell {
   direction: rtl;
+  padding-bottom: 0;
 }
 
 .telc-exam-head {
@@ -500,6 +531,12 @@
   border: 1px solid var(--color-border);
   border-radius: 18px;
   background: var(--color-surface);
+  direction: ltr;
+}
+
+.telc-exam-head > div {
+  direction: ltr;
+  text-align: left;
 }
 
 .telc-exam-head h1 {
@@ -508,8 +545,10 @@
 
 .telc-exam-head > span {
   color: var(--color-text-muted);
+  direction: rtl;
   font-size: 0.74rem;
   font-weight: 700;
+  text-align: right;
   transition: color 160ms ease;
 }
 
@@ -621,8 +660,15 @@
 }
 
 .telc-text-card__answer span {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid rgba(169, 148, 255, 0.32);
+  border-radius: 9px;
+  background: rgba(139, 92, 246, 0.1);
   color: #a994ff;
-  font-size: 0.75rem;
+  font-size: 0.92rem;
   font-weight: 800;
 }
 
@@ -685,6 +731,34 @@
   color: var(--color-text-secondary);
   font-size: 0.82rem;
   line-height: 1.5;
+}
+
+.telc-reference-panel > .telc-heading-option {
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  text-align: left;
+}
+
+.telc-heading-option > strong:first-child {
+  display: grid;
+  min-height: 28px;
+  border-radius: 8px;
+  background: rgba(139, 92, 246, 0.1);
+  place-items: center;
+  line-height: 1;
+}
+
+.telc-heading-option > span {
+  min-width: 0;
+  padding-top: 3px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+.telc-heading-option > span strong {
+  color: #c5b8ff;
 }
 
 .telc-reference-panel > div strong,
@@ -998,6 +1072,18 @@
   letter-spacing: 0.04em;
 }
 
+.telc-simulation-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.telc-simulation-controls .telc-submit-button,
+.telc-simulation-controls .telc-quiet-button {
+  min-width: 150px;
+}
+
 .telc-simulation-overview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1035,8 +1121,6 @@
 .telc-simulation-step > strong { color: var(--color-text-secondary); font-size: 0.78rem; }
 .telc-simulation-step.is-complete { border-color: rgba(118, 185, 138, 0.38); }
 .telc-simulation-step.is-complete > strong { color: var(--color-success); }
-.telc-simulation-reset { margin-top: 20px; }
-
 .telc-exam-actions > div {
   display: flex;
   gap: 8px;
@@ -1122,8 +1206,8 @@
   }
 
   .telc-level-card {
-    min-height: 360px;
-    padding: 24px;
+    min-height: 300px;
+    padding: 20px;
   }
 
   .telc-area-card {
@@ -1133,6 +1217,10 @@
   .telc-exam-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .telc-exam-head > span {
+    align-self: flex-end;
   }
 
   .telc-situation-card {
@@ -1166,6 +1254,14 @@
   .telc-simulation-overview div + div {
     border-top: 1px solid var(--color-border);
     border-inline-start: 0;
+  }
+
+  .telc-simulation-controls {
+    flex-direction: column;
+  }
+
+  .telc-simulation-controls button {
+    width: 100%;
   }
 
   .telc-exam-actions > div,

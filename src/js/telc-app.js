@@ -64,6 +64,7 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
 
   async function render(route) {
     activeRoute = route;
+    syncSimulationForRoute(route);
     renderHeader(route);
     const token = ++renderToken;
     root.innerHTML = loadingMarkup();
@@ -154,6 +155,22 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
       if (!confirm("هل تريد حذف جلسة المحاكاة الحالية وبدء جلسة جديدة؟")) return;
       delete state.simulations[simulationReset.dataset.simulationReset];
       saveState(state);
+      rerenderCurrentRoute();
+      return;
+    }
+
+    const simulationToggle = event.target.closest("[data-simulation-toggle]");
+    if (simulationToggle) {
+      const level = simulationToggle.dataset.simulationToggle;
+      const session = state.simulations[level];
+      if (!session || session.finishedAt) return;
+      if (session.pausedAt) {
+        resumeSimulation(level);
+        showToast("تم استئناف مؤقت المحاكاة");
+      } else {
+        pauseSimulation(level);
+        showToast("تم إيقاف مؤقت المحاكاة مؤقتًا");
+      }
       rerenderCurrentRoute();
       return;
     }
@@ -270,16 +287,43 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     renderHeader(activeRoute);
   }
 
+  function syncSimulationForRoute(route) {
+    if (!route.level) {
+      Object.keys(state.simulations).forEach((level) => pauseSimulation(level));
+      return;
+    }
+    const session = state.simulations[route.level];
+    if (!session || session.finishedAt || session.pausedAt) return;
+    const insideSimulation = route.area === "simulation" || isSimulationExercise(route, session);
+    if (!insideSimulation) pauseSimulation(route.level);
+  }
+
+  function pauseSimulation(level) {
+    const session = state.simulations[level];
+    if (!session || session.finishedAt || session.pausedAt) return;
+    session.pausedAt = Date.now();
+    saveState(state);
+  }
+
+  function resumeSimulation(level) {
+    const session = state.simulations[level];
+    if (!session?.pausedAt || session.finishedAt) return;
+    session.startedAt += Date.now() - session.pausedAt;
+    delete session.pausedAt;
+    saveState(state);
+  }
+
   function renderHeader(route) {
     if (entryLink) entryLink.hidden = true;
     if (!headerRoot) return;
     headerRoot.hidden = false;
     const level = route.level;
     const session = level ? state.simulations[level] : null;
+    const showTimer = session && (route.area === "simulation" || isSimulationExercise(route, session));
     headerRoot.innerHTML = [
       '<a href="#/level/A1">منصة التعلّم</a>',
-      level ? `<a href="#/telc/${level}">لوحة ${level}</a>` : "",
-      level ? `<a href="#/telc/${level}/simulation" class="telc-header-nav__simulation">محاكاة${session ? ' · <time data-simulation-timer></time>' : ""}</a>` : "",
+      level && route.area ? `<a href="#/telc/${level}">لوحة ${level}</a>` : "",
+      level ? `<a href="#/telc/${level}/simulation" class="telc-header-nav__simulation">محاكاة${showTimer ? ' · <time data-simulation-timer></time>' : ""}</a>` : "",
       level ? `<a href="#/telc/${level}/results">النتائج</a>` : "",
       '<a href="#/telc">تغيير المستوى</a>',
     ].join("");
@@ -352,14 +396,14 @@ function renderLevelSelector(b1, b2, state) {
 
 function levelCard(level, data, state, accent) {
   const stats = levelStats(level, data, state);
-  return `<article class="telc-level-card" data-accent="${accent}">
+  return `<a class="telc-level-card" data-accent="${accent}" href="#/telc/${level}" aria-label="فتح تدريب TELC ${level}">
     <div class="telc-level-card__head"><span class="telc-level-mark">${level}</span><span>${stats.completed}/${stats.total} مكتمل</span></div>
     <h2>TELC ${level}</h2>
     <p>Niveau ${level} · تدريب متكامل على أقسام الامتحان</p>
     <div class="telc-metric-row"><span><strong>${stats.total}</strong> مجموعة تدريب</span><span><strong>5</strong> مهارات</span><span><strong>${stats.percent}%</strong> تقدم</span></div>
     <div class="telc-progress" aria-label="تقدم ${level}" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${stats.percent}"><span style="width:${stats.percent}%"></span></div>
-    <a class="telc-primary-link" href="#/telc/${level}">ابدأ تدريب ${level}<span aria-hidden="true">←</span></a>
-  </article>`;
+    <span class="telc-primary-link">ابدأ تدريب ${level}<span aria-hidden="true">←</span></span>
+  </a>`;
 }
 
 function renderDashboard(level, data, state) {
@@ -382,7 +426,7 @@ function renderSimulationCard(level, data, state) {
   const completed = session?.completed?.length || 0;
   return `<section class="telc-simulation-card" data-simulation-level="${level}">
     <div class="telc-simulation-card__copy"><span class="telc-kicker">Prüfungssimulation · محاكاة الامتحان</span><h2>اختبر استعدادك في جلسة كاملة</h2><p>تمرين واحد من كل جزء، مؤقت مستمر، وإجابات محفوظة حتى عند مغادرة الصفحة.</p></div>
-    <div class="telc-simulation-card__status"><strong>${session ? `${completed}/${moduleCount}` : moduleCount}</strong><span>${session ? "أجزاء مكتملة" : "أجزاء الامتحان"}</span>${session ? '<time data-simulation-timer></time>' : ""}</div>
+    <div class="telc-simulation-card__status"><strong>${session ? `${completed}/${moduleCount}` : moduleCount}</strong><span>${session ? `أجزاء مكتملة${session.pausedAt ? " · متوقفة مؤقتًا" : ""}` : "أجزاء الامتحان"}</span></div>
     <a class="telc-primary-link" href="#/telc/${level}/simulation">${session ? "تابع المحاكاة" : "ابدأ المحاكاة"}<span aria-hidden="true">←</span></a>
   </section>`;
 }
@@ -398,13 +442,13 @@ function renderSimulation(level, data, state) {
   }
 
   const finished = session.completed.length === session.plan.length;
+  const paused = Boolean(session.pausedAt) && !finished;
   return `<div class="telc-shell telc-simulation" data-simulation-level="${level}">
-    <header class="telc-simulation-hero"><span class="telc-kicker">TELC ${level} · Prüfungssimulation</span><h1>${finished ? "اكتملت المحاكاة" : "المحاكاة قيد التنفيذ"}</h1><p>${finished ? "أكملت جميع أجزاء هذه الجلسة. يمكنك مراجعة إجاباتك أو بدء جلسة جديدة." : "أكمل الأجزاء بالترتيب الذي يناسبك. المؤقت والتقدم محفوظان تلقائيًا."}</p><time class="telc-simulation-clock" data-simulation-timer></time></header>
+    <header class="telc-simulation-hero"><span class="telc-kicker">TELC ${level} · Prüfungssimulation</span><h1>${finished ? "اكتملت المحاكاة" : paused ? "المحاكاة متوقفة مؤقتًا" : "المحاكاة قيد التنفيذ"}</h1><p>${finished ? "أكملت جميع أجزاء هذه الجلسة. يمكنك مراجعة إجاباتك أو بدء جلسة جديدة." : paused ? "المؤقت متوقف وإجاباتك محفوظة. استأنف عندما تكون جاهزًا." : "أكمل الأجزاء بالترتيب الذي يناسبك. المؤقت والتقدم محفوظان تلقائيًا."}</p><time class="telc-simulation-clock" data-simulation-timer aria-live="polite"></time><div class="telc-simulation-controls">${finished ? "" : `<button class="telc-submit-button" type="button" data-simulation-toggle="${level}">${paused ? "استئناف المؤقت" : "إيقاف المؤقت"}</button>`}<button class="telc-quiet-button" type="button" data-simulation-reset="${level}">بدء محاكاة جديدة</button></div></header>
     <section class="telc-simulation-plan" aria-label="أجزاء المحاكاة">${session.plan.map((step, index) => {
       const complete = session.completed.includes(step.key);
       return `<a class="telc-simulation-step ${complete ? "is-complete" : ""}" href="#/telc/${level}/${step.area}/${step.module}/${step.index}"><span>${String(index + 1).padStart(2, "0")}</span><div><small>${MODULE_LABELS[step.module]}</small><h2>${escapeHtml(step.title)}</h2></div><strong>${complete ? "مكتمل ✓" : "ابدأ"}</strong></a>`;
     }).join("")}</section>
-    <button class="telc-quiet-button telc-simulation-reset" type="button" data-simulation-reset="${level}">بدء محاكاة جديدة</button>
   </div>`;
 }
 
@@ -484,7 +528,7 @@ function renderExercise(level, areaKey, module, index, item, total, state) {
     ${result ? `<div class="telc-result ${result.percent >= 60 ? "is-pass" : "is-review"}"><strong>${result.score}/${result.total}</strong><span>${result.percent >= 60 ? "أحسنت — نتيجة ناجحة" : "راجع الإجابات وحاول مجددًا"}</span><em>${result.percent}%</em></div>` : ""}
     ${body}
     <footer class="telc-exam-actions">
-      <div>${previous ? `<a class="telc-secondary-link" href="${previous}">السابق</a>` : ""}<a class="telc-secondary-link" href="${next}">التالي</a></div>
+      <div><a class="telc-secondary-link" href="#/telc/${level}/${areaKey}/${module}">العودة للقائمة</a>${previous ? `<a class="telc-secondary-link" href="${previous}">السابق</a>` : ""}<a class="telc-secondary-link" href="${next}">التالي</a></div>
       <div><button class="telc-quiet-button" type="button" data-telc-reset="${escapeAttribute(key)}">إعادة الضبط</button><button class="telc-submit-button" type="button" data-telc-${expected ? "submit" : "complete"}="${escapeAttribute(key)}">${expected ? "تصحيح الإجابات" : complete ? "تم الإنجاز ✓" : "حفظ كمنجز"}</button></div>
     </footer>
   </div>`;
@@ -506,7 +550,7 @@ function renderHeadingMatch(item, saved, result) {
   return `<div class="telc-workspace"><main class="telc-content-stack">${item.texte.map((text, index) => {
     const question = String(index);
     return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span>${selectControl(question, letters, saved[question], "اختر العنوان")}</div>${formatRichText(text)}</article>`;
-  }).join("")}</main><aside class="telc-reference-panel"><h2>Überschriften</h2>${item.headings.map((heading, index) => `<div><strong>${letters[index].toUpperCase()}</strong>${inlineRichText(heading)}</div>`).join("")}</aside></div>`;
+  }).join("")}</main><aside class="telc-reference-panel"><h2>Überschriften</h2>${item.headings.map((heading, index) => `<div class="telc-heading-option"><strong>${letters[index].toUpperCase()}</strong><span>${inlineRichText(heading)}</span></div>`).join("")}</aside></div>`;
 }
 
 function renderReadingChoice(item, saved, result) {
@@ -607,9 +651,15 @@ function areaForModule(module) {
   return Object.entries(AREA_META).find(([, area]) => area.modules.includes(module))?.[0] || "lesen";
 }
 
+function isSimulationExercise(route, session) {
+  if (!route?.module || route.exercise == null || !session?.plan) return false;
+  return session.plan.some((step) => step.module === route.module && String(step.index) === String(route.exercise));
+}
+
 function formatRemaining(session) {
   if (session.finishedAt) return "مكتمل";
-  const elapsed = Math.floor((Date.now() - session.startedAt) / 1000);
+  const referenceTime = session.pausedAt || Date.now();
+  const elapsed = Math.floor((referenceTime - session.startedAt) / 1000);
   const remaining = Math.max(0, session.durationSeconds - elapsed);
   if (remaining === 0) return "انتهى الوقت";
   const hours = Math.floor(remaining / 3600);
