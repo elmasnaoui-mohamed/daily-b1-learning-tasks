@@ -24,8 +24,8 @@ class MemoryStorage {
 }
 
 assert.deepEqual(LEVEL_KEYS, ["A1", "A2", "B1", "B2"]);
-assert.equal(Object.values(COURSE_LEVELS).reduce((sum, level) => sum + level.lessons.length, 0), 142);
-assert.equal(Object.values(COURSE_LEVELS).flatMap((level) => level.lessons).reduce((sum, lesson) => sum + lesson.tasks.length, 0), 587);
+assert.equal(Object.values(COURSE_LEVELS).reduce((sum, level) => sum + level.lessons.length, 0), 143);
+assert.equal(Object.values(COURSE_LEVELS).flatMap((level) => level.lessons).reduce((sum, lesson) => sum + lesson.tasks.length, 0), 592);
 
 for (const levelKey of LEVEL_KEYS) {
   const level = COURSE_LEVELS[levelKey];
@@ -42,10 +42,10 @@ assert.equal(getYoutubeEmbedUrl("not a url"), "");
 const emptyStorage = new MemoryStorage();
 const store = createProgressStore(COURSE_LEVELS, emptyStorage);
 assert.deepEqual(store.getOverallStats(), {
-  totalLessons: 142,
+  totalLessons: 143,
   completedLessons: 0,
-  remainingLessons: 142,
-  totalTasks: 587,
+  remainingLessons: 143,
+  totalTasks: 592,
   completedTasks: 0,
   percent: 0,
 });

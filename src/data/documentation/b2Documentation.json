@@ -5075,5 +5075,670 @@
       "purpose": "clear_explanations_and_additional_practice_examples",
       "video_claim": false
     }
+  },
+  {
+    "level": "B2",
+    "lesson_id": 20,
+    "video_id": "cV1_QBIcJyg",
+    "source_type": "automatic_captions_verified",
+    "source_language": "ar+de",
+    "source_coverage_percent": 99.7,
+    "source_duration_seconds": 1886,
+    "source_segment_count": 427,
+    "source_model": "youtube_de-orig",
+    "source_compute_type": "not_applicable",
+    "source_device": "youtube",
+    "review_status": "source_verified",
+    "reading_time_minutes": 14,
+    "summary": "يجمع الدرس أهم أدوات الربط المكوّنة من جزأين في الألمانية. يشرح sowohl … als auch لإضافة عنصرين بالتساوي، وweder … noch لنفيهما، وnicht nur … sondern auch لإضافة عنصر ثانٍ مع إبراز خاص، وentweder … oder للاختيار بين بديلين. ثم ينتقل إلى einerseits … andererseits لعرض جانبين مختلفين، وzwar … aber للاعتراف بنقطة ثم تقييدها أو نقدها، وأخيراً je … desto/umso للتعبير عن تغير شيئين معاً. يركّز الشرح على المعنى والتوازي وترتيب الفعل والنفي والفواصل وصيغة المقارنة.",
+    "video_outline": [
+      {
+        "heading": "sowohl … als auch",
+        "summary": "إضافة عنصرين ينطبق عليهما الكلام بالتساوي، مع أمثلة يومية ومهنية.",
+        "timestamp": "00:18",
+        "origin": "video"
+      },
+      {
+        "heading": "weder … noch",
+        "summary": "نفي عنصرين من دون إضافة nicht أو kein.",
+        "timestamp": "05:53",
+        "origin": "video"
+      },
+      {
+        "heading": "nicht nur … sondern auch",
+        "summary": "إضافة عنصر ثانٍ مع إبراز أو تأكيد أقوى.",
+        "timestamp": "10:39",
+        "origin": "video"
+      },
+      {
+        "heading": "entweder … oder",
+        "summary": "اختيار أحد بديلين، لا كليهما.",
+        "timestamp": "15:30",
+        "origin": "video"
+      },
+      {
+        "heading": "einerseits … andererseits",
+        "summary": "عرض موقف من جانبين مختلفين أو متعارضين.",
+        "timestamp": "18:13",
+        "origin": "video"
+      },
+      {
+        "heading": "zwar … aber",
+        "summary": "الاعتراف بصحة نقطة أولى ثم تقديم قيد أو انتقاد أهم.",
+        "timestamp": "22:01",
+        "origin": "video"
+      },
+      {
+        "heading": "je … desto/umso",
+        "summary": "ربط تغيرين متوازيين باستعمال صيغة المقارنة وترتيب الجملة الصحيح.",
+        "timestamp": "24:53",
+        "origin": "video"
+      },
+      {
+        "heading": "اختبار شامل",
+        "summary": "مراجعة الأدوات من خلال ست جمل قصيرة تغطي الوظائف الأساسية.",
+        "timestamp": "28:47",
+        "origin": "video"
+      }
+    ],
+    "learning_objectives": [
+      "تمييز الوظيفة الدلالية لكل أداة ربط ثنائية واختيارها وفق السياق.",
+      "ربط كلمات ومجموعات وجمل متوازية مع الحفاظ على ترتيب الفعل الصحيح.",
+      "تجنب النفي المزدوج وضبط الفواصل وشركاء أدوات الربط الثابتة.",
+      "بناء علاقة je … desto/umso بصيغة المقارنة في الجزأين."
+    ],
+    "explanation": [
+      {
+        "heading": "sowohl … als auch: الاثنان معاً",
+        "content": "تربط عنصرين مثبتين ينطبق عليهما الكلام بالتساوي. يمكن أن تربط اسمين أو صفتين أو مجموعتين أطول، ولا نضع فاصلة بين الجزأين عندما تربط عناصر الجملة العادية.",
+        "source_start": "00:18",
+        "source_end": "05:52",
+        "origin": "video"
+      },
+      {
+        "heading": "weder … noch: لا هذا ولا ذاك",
+        "content": "تنفي عنصرين معاً. الأداة نفسها تحمل النفي، لذلك لا نضيف nicht أو kein إلى كل عنصر. يجب أن يبقى العنصران متوازيين في البنية.",
+        "source_start": "05:53",
+        "source_end": "10:38",
+        "origin": "video"
+      },
+      {
+        "heading": "nicht nur … sondern auch: إضافة مع إبراز",
+        "content": "المعنى قريب من sowohl … als auch، لكن العنصر الثاني يحصل على تأكيد خاص أو يقدم معلومة إضافية أقوى. تأتي فاصلة قبل sondern عندما تربط جزأين من الجملة بهذه الصورة.",
+        "source_start": "10:39",
+        "source_end": "15:29",
+        "origin": "video"
+      },
+      {
+        "heading": "entweder … oder: واحد من بديلين",
+        "content": "تقدم اختياراً بين احتمالين. يوضح الدرس أن المقصود عادةً هذا أو ذاك، لا الاثنان معاً. ضع entweder قبل البديل الأول وoder قبل الثاني.",
+        "source_start": "15:30",
+        "source_end": "18:12",
+        "origin": "video"
+      },
+      {
+        "heading": "einerseits … andererseits: جانبان للموقف",
+        "content": "تستعمل لعرض ميزتين أو جانبين مختلفين، وغالباً يوجد بينهما تضاد. تصلح كثيراً لمهام إبداء الرأي والموازنة في الامتحان.",
+        "source_start": "18:13",
+        "source_end": "22:00",
+        "origin": "video"
+      },
+      {
+        "heading": "zwar … aber: صحيح أن … ولكن",
+        "content": "يعترف الجزء الأول بنقطة صحيحة، ثم يقدم الجزء الثاني قيداً أو انتقاداً يكون غالباً هو الأهم في الرسالة. تأتي فاصلة قبل aber.",
+        "source_start": "22:01",
+        "source_end": "24:52",
+        "origin": "video"
+      },
+      {
+        "heading": "je … desto/umso: كلما … ازداد",
+        "content": "تربط تغيرين يعتمد أحدهما على الآخر. تأتي صيغة المقارنة في الجزأين. جملة je تابعة وفعلها في النهاية، أما جزء desto أو umso فيحتل فيه تعبير المقارنة الموقع الأول ثم يأتي الفعل المصرف.",
+        "source_start": "24:53",
+        "source_end": "28:46",
+        "origin": "video"
+      }
+    ],
+    "rules_from_video": [
+      {
+        "rule": "sowohl يقابلها als auch",
+        "explanation": "ضع العنصر الأول بعد sowohl والثاني بعد als auch مع توازٍ نحوي واضح.",
+        "pattern": "sowohl + Element A + als auch + Element B",
+        "timestamp": "01:05",
+        "origin": "video"
+      },
+      {
+        "rule": "weder … noch نفي كامل",
+        "explanation": "لا تضف nicht أو kein لأن التركيب ينفي العنصرين بالفعل.",
+        "pattern": "weder + Element A + noch + Element B",
+        "timestamp": "10:08",
+        "origin": "video"
+      },
+      {
+        "rule": "sondern auch تبرز العنصر الثاني",
+        "explanation": "استعملها عندما لا تريد مجرد جمع عنصرين بل تريد التأكيد على الإضافة الثانية.",
+        "pattern": "nicht nur + Element A, sondern auch + Element B",
+        "timestamp": "11:42",
+        "origin": "video"
+      },
+      {
+        "rule": "entweder … oder للاختيار",
+        "explanation": "يعرض التركيب بديلين ويكون المطلوب عادة اختيار أحدهما.",
+        "pattern": "entweder + Alternative A + oder + Alternative B",
+        "timestamp": "15:30",
+        "origin": "video"
+      },
+      {
+        "rule": "einerseits … andererseits للموازنة",
+        "explanation": "اعرض الجانب الأول ثم الجانب المقابل في جملة أو جزء موازٍ.",
+        "pattern": "Einerseits + Satz A, andererseits + Satz B",
+        "timestamp": "18:13",
+        "origin": "video"
+      },
+      {
+        "rule": "zwar … aber للاعتراف ثم التقييد",
+        "explanation": "النقطة بعد aber تحمل غالباً الرسالة الأهم أو الانتقاد.",
+        "pattern": "zwar + Aussage A, aber + Aussage B",
+        "timestamp": "22:01",
+        "origin": "video"
+      },
+      {
+        "rule": "je … desto/umso تحتاج المقارنة",
+        "explanation": "استعمل Komparativ في الجزأين، وضع فعل جملة je في النهاية.",
+        "pattern": "Je + Komparativ + … + Verb, desto/umso + Komparativ + Verb + Subjekt",
+        "timestamp": "25:55",
+        "origin": "video"
+      }
+    ],
+    "examples_from_video": [
+      {
+        "de": "Ich mag sowohl Eis als auch Kuchen.",
+        "ar": "أحب الآيس كريم والكيك معاً.",
+        "note": "إضافة شيئين بالتساوي.",
+        "timestamp": "01:05",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich habe sowohl in Deutschland als auch im Ausland Berufserfahrung gesammelt.",
+        "ar": "اكتسبت خبرة مهنية في ألمانيا وفي الخارج أيضاً.",
+        "note": "ربط مجموعتين بحرف الجر نفسه.",
+        "timestamp": "03:58",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Man sollte sowohl auf gesunde Ernährung als auch auf genug Bewegung achten.",
+        "ar": "ينبغي الاهتمام بالغذاء الصحي وبالحركة الكافية معاً.",
+        "note": "توازٍ بين مجموعتين مع auf.",
+        "timestamp": "04:45",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich habe heute weder Zeit noch Lust auszugehen.",
+        "ar": "ليس لدي اليوم وقت ولا رغبة في الخروج.",
+        "note": "نفي اسمين من دون kein.",
+        "timestamp": "08:37",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Die Wohnung ist weder hell noch ruhig.",
+        "ar": "الشقة ليست مضيئة ولا هادئة.",
+        "note": "نفي صفتين.",
+        "timestamp": "08:47",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Weder meine Eltern noch meine Geschwister wussten davon.",
+        "ar": "لم يعرف والداي ولا إخوتي بذلك.",
+        "note": "نفي مجموعتي فاعل.",
+        "timestamp": "09:08",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Sie spricht nicht nur Deutsch, sondern auch Französisch.",
+        "ar": "هي لا تتحدث الألمانية فقط، بل الفرنسية أيضاً.",
+        "note": "إبراز اللغة الثانية.",
+        "timestamp": "13:35",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Sport ist nicht nur gesund, sondern macht auch Spaß.",
+        "ar": "الرياضة ليست صحية فقط، بل ممتعة أيضاً.",
+        "note": "ربط جملتين ببنيتين مختلفتين.",
+        "timestamp": "14:08",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Ich habe nicht nur die Prüfung bestanden, sondern auch eine sehr gute Note bekommen.",
+        "ar": "لم أنجح في الامتحان فقط، بل حصلت أيضاً على علامة جيدة جداً.",
+        "note": "العنصر الثاني نتيجة إضافية بارزة.",
+        "timestamp": "14:27",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wir treffen uns entweder bei mir oder bei dir.",
+        "ar": "سنلتقي إما عندي أو عندك.",
+        "note": "اختيار مكان من بديلين.",
+        "timestamp": "15:51",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Du kannst entweder mit dem Bus oder mit der Bahn fahren.",
+        "ar": "يمكنك الذهاب إما بالحافلة أو بالقطار.",
+        "note": "اختيار وسيلة نقل.",
+        "timestamp": "16:46",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Wir können entweder heute eine Lösung finden oder das Treffen verschieben.",
+        "ar": "يمكننا إما إيجاد حل اليوم أو تأجيل الاجتماع.",
+        "note": "اختيار بين فعلين كاملين.",
+        "timestamp": "17:54",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Einerseits gefällt mir das Haus, andererseits ist es ziemlich weit von der Stadt weg.",
+        "ar": "من جهة يعجبني المنزل، ومن جهة أخرى هو بعيد نسبياً عن المدينة.",
+        "note": "ميزة يقابلها عيب.",
+        "timestamp": "19:03",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Einerseits ist Homeoffice bequem, andererseits fehlt mir der Kontakt zu den Kollegen.",
+        "ar": "من جهة العمل من المنزل مريح، ومن جهة أخرى أفتقد التواصل مع الزملاء.",
+        "note": "موازنة مناسبة لإبداء الرأي.",
+        "timestamp": "20:36",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Einerseits sind soziale Medien praktisch, andererseits verbringen wir zu viel Zeit damit.",
+        "ar": "من جهة وسائل التواصل عملية، ومن جهة أخرى نقضي وقتاً طويلاً عليها.",
+        "note": "جانب إيجابي وآخر سلبي.",
+        "timestamp": "21:17",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Das Hotel war zwar schön, aber das Frühstück war schlecht.",
+        "ar": "صحيح أن الفندق كان جميلاً، لكن الإفطار كان سيئاً.",
+        "note": "اعتراف بنقطة إيجابية ثم نقد.",
+        "timestamp": "23:28",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Der Kurs ist zwar teuer, aber er lohnt sich.",
+        "ar": "صحيح أن الدورة غالية، لكنها تستحق.",
+        "note": "قيد إيجابي بعد نقطة سلبية.",
+        "timestamp": "24:00",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Die Arbeit ist zwar interessant, aber das Gehalt ist zu niedrig.",
+        "ar": "صحيح أن العمل ممتع، لكن الراتب منخفض جداً.",
+        "note": "التقييم الأهم يأتي بعد aber.",
+        "timestamp": "24:32",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Je mehr ich lerne, desto besser verstehe ich Deutsch.",
+        "ar": "كلما تعلمت أكثر، فهمت الألمانية بصورة أفضل.",
+        "note": "علاقة متدرجة مع desto.",
+        "timestamp": "27:17",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Je früher wir losfahren, desto schneller sind wir da.",
+        "ar": "كلما انطلقنا أبكر، وصلنا أسرع.",
+        "note": "المقارنة في الجزأين.",
+        "timestamp": "27:34",
+        "origin": "video",
+        "verified": true
+      },
+      {
+        "de": "Je mehr du übst, umso sicherer wirst du in der Prüfung.",
+        "ar": "كلما تدربت أكثر، أصبحت أكثر ثقة في الامتحان.",
+        "note": "umso بديل صحيح لـ desto.",
+        "timestamp": "28:06",
+        "origin": "video",
+        "verified": true
+      }
+    ],
+    "vocabulary_from_video": [
+      {
+        "de": "sowohl … als auch",
+        "ar": "كلا … و / سواء … وكذلك",
+        "note": "إضافة عنصرين بالتساوي",
+        "timestamp": "00:18",
+        "origin": "video"
+      },
+      {
+        "de": "weder … noch",
+        "ar": "لا … ولا",
+        "note": "نفي عنصرين",
+        "timestamp": "05:53",
+        "origin": "video"
+      },
+      {
+        "de": "nicht nur … sondern auch",
+        "ar": "ليس فقط … بل أيضاً",
+        "note": "إضافة مع إبراز الثاني",
+        "timestamp": "10:39",
+        "origin": "video"
+      },
+      {
+        "de": "entweder … oder",
+        "ar": "إما … أو",
+        "note": "اختيار بين بديلين",
+        "timestamp": "15:30",
+        "origin": "video"
+      },
+      {
+        "de": "einerseits … andererseits",
+        "ar": "من جهة … ومن جهة أخرى",
+        "note": "عرض جانبين",
+        "timestamp": "18:13",
+        "origin": "video"
+      },
+      {
+        "de": "zwar … aber",
+        "ar": "صحيح أن … لكن",
+        "note": "اعتراف ثم تقييد",
+        "timestamp": "22:01",
+        "origin": "video"
+      },
+      {
+        "de": "je … desto/umso",
+        "ar": "كلما … ازداد / كان أكثر",
+        "note": "علاقة متدرجة",
+        "timestamp": "24:53",
+        "origin": "video"
+      },
+      {
+        "de": "sich lohnen",
+        "ar": "يستحق العناء أو التكلفة",
+        "note": "فعل انعكاسي",
+        "timestamp": "24:00",
+        "origin": "video"
+      },
+      {
+        "de": "Berufserfahrung sammeln",
+        "ar": "يكتسب خبرة مهنية",
+        "note": "تعبير مهني",
+        "timestamp": "03:58",
+        "origin": "video"
+      },
+      {
+        "de": "eine Lösung finden",
+        "ar": "يجد حلاً",
+        "note": "تعبير شائع",
+        "timestamp": "17:54",
+        "origin": "video"
+      }
+    ],
+    "teacher_notes": [
+      {
+        "text": "اختبر التوازي: يجب أن يأتي بعد الجزأين نوع نحوي متقارب قدر الإمكان.",
+        "timestamp": "02:59",
+        "origin": "video"
+      },
+      {
+        "text": "لا تضف nicht أو kein مع weder … noch؛ التركيب نفسه نفي.",
+        "timestamp": "10:08",
+        "origin": "video"
+      },
+      {
+        "text": "استعمل nicht nur … sondern auch عندما تريد إبراز الإضافة الثانية، لا مجرد جمع عنصرين.",
+        "timestamp": "11:42",
+        "origin": "video"
+      },
+      {
+        "text": "في je … desto/umso تحتاج صيغة Komparativ في الجزأين، وفعل جملة je في النهاية.",
+        "timestamp": "25:55",
+        "origin": "video"
+      }
+    ],
+    "exercises_demonstrated": [
+      {
+        "text": "إنتاج جملة عن القهوة والشاي باستعمال sowohl … als auch.",
+        "timestamp": "02:00",
+        "origin": "video"
+      },
+      {
+        "text": "تصحيح النفي المزدوج في Ich habe weder keine Zeit noch keine Lust.",
+        "timestamp": "10:08",
+        "origin": "video"
+      },
+      {
+        "text": "إنشاء جملة شخصية بـ nicht nur … sondern auch.",
+        "timestamp": "15:20",
+        "origin": "video"
+      },
+      {
+        "text": "إنشاء جملة اختيار بـ entweder … oder.",
+        "timestamp": "18:03",
+        "origin": "video"
+      },
+      {
+        "text": "عرض جانبين لموضوع واحد بـ einerseits … andererseits.",
+        "timestamp": "21:48",
+        "origin": "video"
+      },
+      {
+        "text": "بناء نقد مهذب بـ zwar … aber.",
+        "timestamp": "24:41",
+        "origin": "video"
+      },
+      {
+        "text": "اختبار نهائي يختار أداة الربط المناسبة في ست جمل.",
+        "timestamp": "28:47",
+        "origin": "video"
+      }
+    ],
+    "tables": [
+      {
+        "title": "وظائف أدوات الربط الثنائية",
+        "headers": [
+          "الأداة",
+          "الوظيفة",
+          "الفكرة"
+        ],
+        "rows": [
+          [
+            "sowohl … als auch",
+            "إضافة",
+            "العنصران صحيحان بالتساوي"
+          ],
+          [
+            "weder … noch",
+            "نفي",
+            "العنصران منفيان"
+          ],
+          [
+            "nicht nur … sondern auch",
+            "إضافة مع تأكيد",
+            "إبراز العنصر الثاني"
+          ],
+          [
+            "entweder … oder",
+            "اختيار",
+            "أحد البديلين"
+          ],
+          [
+            "einerseits … andererseits",
+            "موازنة",
+            "جانبان مختلفان"
+          ],
+          [
+            "zwar … aber",
+            "تناقض أو قيد",
+            "اعتراف ثم تقييد"
+          ],
+          [
+            "je … desto/umso",
+            "تدرج",
+            "تغيران مرتبطان"
+          ]
+        ]
+      },
+      {
+        "title": "الترتيب والترقيم",
+        "headers": [
+          "التركيب",
+          "ملاحظة"
+        ],
+        "rows": [
+          [
+            "sowohl … als auch / weder … noch / entweder … oder",
+            "لا فاصلة عادةً عند ربط عناصر عادية"
+          ],
+          [
+            "nicht nur …, sondern auch / zwar …, aber",
+            "تأتي فاصلة قبل sondern أو aber في البناء الجُملي"
+          ],
+          [
+            "Einerseits …, andererseits …",
+            "كل جزء قد يكون جملة رئيسية وفعلها في الموقع الثاني"
+          ],
+          [
+            "Je …, desto/umso …",
+            "فعل je في النهاية؛ بعد desto/umso يأتي الفعل ثم الفاعل"
+          ]
+        ]
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ich habe weder keine Zeit noch keine Lust.",
+        "correct": "Ich habe weder Zeit noch Lust.",
+        "explanation": "weder … noch تحمل النفي بالفعل، فلا نضيف kein أو nicht.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Ich mag sowohl Kaffee und Tee.",
+        "correct": "Ich mag sowohl Kaffee als auch Tee.",
+        "explanation": "الشريك الثابت لـ sowohl هو als auch.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Sie spricht nicht nur Deutsch aber auch Französisch.",
+        "correct": "Sie spricht nicht nur Deutsch, sondern auch Französisch.",
+        "explanation": "الشريك الثابت لـ nicht nur هو sondern auch، وتأتي فاصلة قبله.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Je mehr ich lerne, desto ich verstehe besser Deutsch.",
+        "correct": "Je mehr ich lerne, desto besser verstehe ich Deutsch.",
+        "explanation": "بعد desto + Komparativ يأتي الفعل المصرف ثم الفاعل.",
+        "origin": "editorial_clarification"
+      },
+      {
+        "wrong": "Einerseits die Stadt ist schön, andererseits sie ist laut.",
+        "correct": "Einerseits ist die Stadt schön, andererseits ist sie laut.",
+        "explanation": "كل جزء جملة رئيسية؛ الفعل المصرف في الموقع الثاني.",
+        "origin": "editorial_clarification"
+      }
+    ],
+    "quick_recap": [
+      "sowohl … als auch تضيف عنصرين، وweder … noch تنفيهما، وentweder … oder تختار بينهما.",
+      "nicht nur … sondern auch تبرز العنصر الثاني، بينما einerseits … andererseits توازن بين جانبين.",
+      "zwar … aber تعترف بنقطة ثم تقيدها، وje … desto/umso تربط تغيرين بصيغة المقارنة.",
+      "حافظ على التوازي، وتجنب النفي المزدوج، واضبط الفواصل وترتيب الفعل."
+    ],
+    "task_preparation": [
+      {
+        "task_index": 0,
+        "guidance": "صنف كل أداة أولاً بحسب الوظيفة، ثم أضف مثالاً قصيراً يوضح الفرق عن أقرب أداة لها.",
+        "video_required": false
+      },
+      {
+        "task_index": 1,
+        "guidance": "ابحث عن المعنى المقصود والتوازي بين العنصرين قبل ملء الفراغ، ولا تعتمد على كلمة منفردة.",
+        "video_required": false
+      },
+      {
+        "task_index": 2,
+        "guidance": "احذف التكرار من الجملتين، واحتفظ بالعناصر المشتركة مرة واحدة، ثم ضع جزأي الرابط حول العنصرين المتوازيين.",
+        "video_required": false
+      },
+      {
+        "task_index": 3,
+        "guidance": "راجع بالترتيب: شريك الرابط، النفي، الفاصلة، موقع الفعل، ثم صيغة المقارنة.",
+        "video_required": false
+      },
+      {
+        "task_index": 4,
+        "guidance": "خطط لفقرات النص بحيث تخدم كل أداة علاقة حقيقية، ولا تجمع الأدوات لمجرد استيفاء العدد.",
+        "video_required": false
+      }
+    ],
+    "evidence_checks": [
+      {
+        "claim": "يعرّف sowohl … als auch بأنه يربط شيئين ينطبق عليهما الكلام معاً.",
+        "timestamp": "01:05",
+        "verified": true
+      },
+      {
+        "claim": "يشرح أن weder … noch نفي ولا يحتاج nicht أو kein إضافية.",
+        "timestamp": "10:08",
+        "verified": true
+      },
+      {
+        "claim": "يميز nicht nur … sondern auch بإبراز العنصر الثاني.",
+        "timestamp": "11:42",
+        "verified": true
+      },
+      {
+        "claim": "يعرّف entweder … oder بأنه اختيار أحد بديلين لا كليهما.",
+        "timestamp": "15:30",
+        "verified": true
+      },
+      {
+        "claim": "يعرض einerseits … andererseits لمناقشة جانبين غالباً بينهما تضاد.",
+        "timestamp": "18:13",
+        "verified": true
+      },
+      {
+        "claim": "يشرح zwar … aber بوصفه اعترافاً بنقطة ثم تقديم نقد أو قيد.",
+        "timestamp": "22:01",
+        "verified": true
+      },
+      {
+        "claim": "يشترط صيغة المقارنة في جزأي je … desto/umso.",
+        "timestamp": "25:55",
+        "verified": true
+      },
+      {
+        "claim": "يختم باختبار يغطي ست أدوات من الدرس.",
+        "timestamp": "28:47",
+        "verified": true
+      }
+    ],
+    "completeness": {
+      "meaningful_source_segments": 427,
+      "documented_sections": 8,
+      "german_examples_detected": 30,
+      "german_examples_documented": 21,
+      "vocabulary_items_detected": 10,
+      "vocabulary_items_documented": 10,
+      "beginning_represented": true,
+      "middle_represented": true,
+      "end_represented": true
+    }
   }
 ]
