@@ -444,7 +444,7 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
       level && route.area ? `<a href="#/telc/${level}">لوحة ${level}</a>` : "",
       level ? `<a href="#/telc/${level}/simulation" class="telc-header-nav__simulation">محاكاة${showTimer ? ' · <time data-simulation-timer></time>' : ""}</a>` : "",
       level ? `<a href="#/telc/${level}/results">النتائج</a>` : "",
-      '<a href="#/telc">تغيير المستوى</a>',
+      level ? '<a href="#/telc">تغيير المستوى</a>' : "",
     ].join("");
     updateSimulationTimers();
   }

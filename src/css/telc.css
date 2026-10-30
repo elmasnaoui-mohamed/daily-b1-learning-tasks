@@ -342,13 +342,19 @@ body.is-telc-view > main {
   display: flex;
   min-height: 300px;
   padding: 26px;
+  align-items: center;
   flex-direction: column;
   border: 1px solid var(--color-border);
   border-radius: 20px;
   background: linear-gradient(150deg, color-mix(in srgb, var(--area-accent) 9%, var(--color-surface)), var(--color-surface) 48%);
   color: inherit;
+  text-align: center;
   text-decoration: none;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.telc-area-card:last-child {
+  grid-column: span 2;
 }
 
 .telc-area-card[data-accent="magenta"] { --area-accent: #bd4cbb; }
@@ -363,6 +369,8 @@ body.is-telc-view > main {
 }
 
 .telc-area-card__top {
+  width: 100%;
+  justify-content: center;
   color: var(--color-text-muted);
   font-size: 0.76rem;
   font-weight: 700;
@@ -377,20 +385,25 @@ body.is-telc-view > main {
 .telc-area-card h2 {
   margin: 34px 0 2px;
   font-size: 1.7rem;
+  text-align: center;
 }
 
 .telc-area-card > strong {
   color: var(--area-accent);
   font-size: 0.78rem;
+  text-align: center;
 }
 
 .telc-area-card > p {
   margin: 14px 0 24px;
   color: var(--color-text-secondary);
   font-size: 0.88rem;
+  text-align: center;
 }
 
 .telc-area-card__footer {
+  width: 100%;
+  justify-content: center;
   margin-top: auto;
   padding-top: 18px;
   border-top: 1px solid var(--color-border);
@@ -1391,6 +1404,7 @@ body.is-telc-view > main {
   }
 
   .telc-area-card {
+    grid-column: auto;
     min-height: 240px;
   }
 
