@@ -132,7 +132,8 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     if (!exercise) return;
     const key = exercise.dataset.exerciseKey;
     state.answers[key] ||= {};
-    state.answers[key][answer.dataset.telcAnswer] = answer.value;
+    if (answer.type === "checkbox" && !answer.checked) delete state.answers[key][answer.dataset.telcAnswer];
+    else state.answers[key][answer.dataset.telcAnswer] = answer.value;
     delete state.results[key];
     saveState(state);
     updateSavedIndicator();
@@ -143,10 +144,18 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     if (!draft) return;
     state.drafts[draft.dataset.telcDraft] = draft.value;
     saveState(state);
+    const counter = draft.closest(".telc-editor-card")?.querySelector("[data-draft-count]");
+    if (counter) counter.textContent = `${draft.value.length} Zeichen`;
     updateSavedIndicator();
   }
 
   async function handleClick(event) {
+    const characterButton = event.target.closest("[data-telc-character]");
+    if (characterButton) {
+      insertDraftCharacter(characterButton);
+      return;
+    }
+
     const selectTrigger = event.target.closest("[data-telc-select-trigger]");
     if (selectTrigger) {
       toggleCustomSelect(selectTrigger);
@@ -306,18 +315,33 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     delete state.results[key];
     saveState(state);
 
-    select.querySelectorAll("[data-telc-select-option]").forEach((item) => {
-      const selected = item === option;
-      item.classList.toggle("is-selected", selected);
-      item.setAttribute("aria-selected", String(selected));
-    });
     const trigger = select.querySelector("[data-telc-select-trigger]");
-    const label = trigger?.querySelector("[data-telc-select-label]");
-    if (label) label.textContent = option.dataset.display;
-    trigger?.classList.add("has-value");
+    [...root.querySelectorAll("[data-telc-custom-select]")].filter((item) => item.dataset.question === question).forEach((matchingSelect) => {
+      const selectedOption = [...matchingSelect.querySelectorAll("[data-telc-select-option]")].find((item) => item.dataset.value === value);
+      matchingSelect.querySelectorAll("[data-telc-select-option]").forEach((item) => {
+        const selected = item.dataset.value === value;
+        item.classList.toggle("is-selected", selected);
+        item.setAttribute("aria-selected", String(selected));
+      });
+      const matchingTrigger = matchingSelect.querySelector("[data-telc-select-trigger]");
+      const label = matchingTrigger?.querySelector("[data-telc-select-label]");
+      if (label && selectedOption) label.textContent = selectedOption.dataset.display;
+      matchingTrigger?.classList.add("has-value");
+    });
     closeCustomSelects();
     trigger?.focus();
     updateSavedIndicator();
+  }
+
+  function insertDraftCharacter(button) {
+    const editor = button.closest(".telc-editor-card")?.querySelector("[data-telc-draft]");
+    if (!editor) return;
+    const character = button.dataset.telcCharacter || "";
+    const start = editor.selectionStart ?? editor.value.length;
+    const end = editor.selectionEnd ?? start;
+    editor.setRangeText(character, start, end, "end");
+    editor.focus();
+    editor.dispatchEvent(new Event("input", { bubbles: true }));
   }
 
   function askForConfirmation({ title, message, confirmLabel }) {
@@ -743,28 +767,64 @@ function renderSituationMatch(item, saved, result) {
 }
 
 function renderGapOptions(item, saved, result) {
-  return `<div class="telc-workspace"><article class="telc-reading-paper">${formatRichText(item.briefText)}</article><aside class="telc-question-panel"><h2>Lücken</h2>${item.items.map((gap, index) => radioQuestion(String(index), `Lücke ${gap.id}`, gap.opts || [], saved[String(index)], gap.answer, result, "letter")).join("")}</aside></div>`;
+  return `<article class="telc-reading-paper telc-gap-paper"><div class="telc-gap-paper__intro"><span>Sprachbausteine</span><strong>اختر الإجابة مباشرة داخل النص</strong></div>${formatGapText(item, saved, result)}</article>`;
 }
 
 function renderWordBank(item, saved, result) {
   const words = item.woerter || {};
   const keys = Object.keys(words);
-  return `<div class="telc-workspace"><article class="telc-reading-paper">${formatRichText(item.briefText)}</article><aside class="telc-question-panel"><h2>Wortbank</h2><div class="telc-word-bank">${keys.map((letter) => `<span><strong>${letter.toUpperCase()}</strong>${escapeHtml(words[letter])}</span>`).join("")}</div>${item.items.map((gap, index) => `<label class="telc-select-question ${feedbackClass(result, saved[String(index)], gap.answer)}"><span>Lücke ${gap.id}</span>${selectControl(String(index), keys, saved[String(index)], "اختر الكلمة", words)}</label>`).join("")}</aside></div>`;
+  return `<div class="telc-workspace telc-gap-workspace"><article class="telc-reading-paper telc-gap-paper"><div class="telc-gap-paper__intro"><span>Sprachbausteine</span><strong>اختر الكلمة مباشرة داخل النص</strong></div>${formatGapText(item, saved, result, words)}</article><aside class="telc-reference-panel"><h2>Wortbank</h2><div class="telc-word-bank">${keys.map((letter) => `<span><strong>${letter.toUpperCase()}</strong>${escapeHtml(words[letter])}</span>`).join("")}</div></aside></div>`;
 }
 
 function renderListening(item, saved, result) {
   const items = item.items || (item.aussagen || []).map((text, index) => ({ id: index + 1, text }));
   const hasAnswers = items.every((entry) => typeof entry.answer === "boolean");
-  return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining</span><h2>${escapeHtml(item.title || item.name)}</h2><p>${hasAnswers ? "اقرأ العبارات ثم اختر صحيح أو خطأ. يمكنك فتح نص الاستماع عند الحاجة." : "هذه المجموعة مخصصة للتدريب الذاتي. استمع إلى المادة المرتبطة بالكود ثم علّم العبارات التي راجعتها."}</p>${item.code ? `<strong>Audio-Code: ${escapeHtml(item.code)}</strong>` : ""}</section>${item.hoertext ? `<details class="telc-transcript"><summary>إظهار نص الاستماع · Hörtext</summary>${formatRichText(item.hoertext)}</details>` : ""}</main><aside class="telc-question-panel"><h2>Aussagen</h2>${items.map((entry, index) => hasAnswers ? radioQuestion(String(index), entry.text, ["Richtig", "Falsch"], saved[String(index)], entry.answer, result, "boolean") : `<label class="telc-self-check"><input type="checkbox" data-telc-answer="${index}" value="reviewed" ${saved[String(index)] ? "checked" : ""}><span>${escapeHtml(entry.text)}</span></label>`).join("")}</aside></div>`;
+  return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining</span><h2>${escapeHtml(item.title || item.name)}</h2><p>${hasAnswers ? "اقرأ العبارات ثم اختر صحيح أو خطأ. يمكنك فتح نص الاستماع عند الحاجة." : "هذه المجموعة مخصصة للتدريب الذاتي. استمع إلى المادة المرتبطة بالكود ثم علّم العبارات التي راجعتها."}</p>${item.code ? `<strong>Audio-Code: ${escapeHtml(item.code)}</strong>` : ""}</section>${item.hoertext ? `<details class="telc-transcript"><summary>إظهار نص الاستماع · Hörtext</summary>${formatRichText(item.hoertext)}</details>` : ""}</main><aside class="telc-question-panel"><h2>Aussagen</h2>${items.map((entry, index) => hasAnswers ? radioQuestion(String(index), entry.text, ["Richtig", "Falsch"], saved[String(index)], entry.answer, result, "boolean") : `<label class="telc-self-check"><input type="checkbox" data-telc-answer="${index}" value="reviewed" ${saved[String(index)] ? "checked" : ""}><span class="telc-checkmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span class="telc-self-check__text">${escapeHtml(entry.text)}</span></label>`).join("")}</aside></div>`;
 }
 
 function renderWriting(item, key, draft) {
-  return `<div class="telc-writing-layout"><section class="telc-prompt-card"><span>Situation</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.situation)}</p>${item.anzeige ? `<blockquote>${escapeHtml(item.anzeige)}</blockquote>` : ""}<h3>Behandeln Sie diese Punkte:</h3><ol>${item.punkte.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></section><section class="telc-editor-card"><label for="telc-draft">Ihre Antwort</label><textarea id="telc-draft" data-telc-draft="${escapeAttribute(key)}" placeholder="Schreiben Sie hier Ihre Antwort …">${escapeHtml(draft)}</textarea><div><span>${draft.length} Zeichen</span><span>المسودة محفوظة تلقائيًا</span></div></section></div>`;
+  return `<div class="telc-writing-layout"><section class="telc-prompt-card"><span>Situation</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.situation)}</p>${item.anzeige ? `<blockquote>${escapeHtml(item.anzeige)}</blockquote>` : ""}<h3>Behandeln Sie diese Punkte:</h3><ol>${item.punkte.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></section><section class="telc-editor-card"><label for="telc-draft">Ihre Antwort</label>${characterToolbar("telc-draft")}<textarea id="telc-draft" data-telc-draft="${escapeAttribute(key)}" placeholder="Schreiben Sie hier Ihre Antwort …">${escapeHtml(draft)}</textarea><div><span data-draft-count>${draft.length} Zeichen</span><span>المسودة محفوظة تلقائيًا</span></div></section></div>`;
 }
 
 function renderSpeaking(item, key, draft) {
   const planningPoints = item.teil3s || item.teil3_stichworte || [];
-  return `<div class="telc-speaking-layout"><section class="telc-prompt-card"><span>Thema</span><h2>${escapeHtml(item.titel || item.thema)}</h2>${item.mA ? `<div class="telc-opinion-grid"><article><strong>${escapeHtml(item.mA.name)}</strong>${formatRichText(item.mA.text)}</article><article><strong>${escapeHtml(item.mB?.name || "Position B")}</strong>${formatRichText(item.mB?.text || "")}</article></div>` : item.teil2 ? `<div class="telc-speaking-text">${formatRichText(item.teil2)}</div>` : ""}<h3>Gemeinsam planen</h3><p>${escapeHtml(item.teil3 || "")}</p>${planningPoints.length ? `<ul>${planningPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>` : ""}</section><section class="telc-editor-card"><label for="telc-notes">Notizen und Redemittel</label><textarea id="telc-notes" data-telc-draft="${escapeAttribute(key)}" placeholder="Notieren Sie Argumente, Beispiele und Redemittel …">${escapeHtml(draft)}</textarea><div><span>${draft.length} Zeichen</span><span>تُحفظ ملاحظاتك تلقائيًا</span></div></section></div>`;
+  return `<div class="telc-speaking-layout"><section class="telc-prompt-card"><span>Thema</span><h2>${escapeHtml(item.titel || item.thema)}</h2>${item.mA ? `<div class="telc-opinion-grid"><article><strong>${escapeHtml(item.mA.name)}</strong>${formatRichText(item.mA.text)}</article><article><strong>${escapeHtml(item.mB?.name || "Position B")}</strong>${formatRichText(item.mB?.text || "")}</article></div>` : item.teil2 ? `<div class="telc-speaking-text">${formatRichText(item.teil2)}</div>` : ""}<h3>Gemeinsam planen</h3><p>${escapeHtml(item.teil3 || "")}</p>${planningPoints.length ? `<ul>${planningPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>` : ""}</section><section class="telc-editor-card"><label for="telc-notes">Notizen und Redemittel</label>${characterToolbar("telc-notes")}<textarea id="telc-notes" data-telc-draft="${escapeAttribute(key)}" placeholder="Notieren Sie Argumente, Beispiele und Redemittel …">${escapeHtml(draft)}</textarea><div><span data-draft-count>${draft.length} Zeichen</span><span>تُحفظ ملاحظاتك تلقائيًا</span></div></section></div>`;
+}
+
+function characterToolbar(targetId) {
+  return `<div class="telc-character-toolbar" role="group" aria-label="Deutsche Sonderzeichen">${["ä", "ö", "ü", "Ä", "Ö", "Ü", "ß"].map((character) => `<button type="button" data-telc-character="${character}" aria-label="${character} in das Textfeld einfügen" aria-controls="${targetId}">${character}</button>`).join("")}</div>`;
+}
+
+function formatGapText(item, saved, result, wordLabels = null) {
+  const gaps = new Map(item.items.map((gap, index) => [String(gap.id), { gap, index }]));
+  return String(item.briefText ?? "").split(/\n{2,}/).map((paragraph) => {
+    let cursor = 0;
+    let content = "";
+    const placeholder = /\[(\d+)(b?)\]/g;
+    for (const match of paragraph.matchAll(placeholder)) {
+      content += inlineRichText(paragraph.slice(cursor, match.index)).replace(/\n/g, "<br>");
+      const entry = gaps.get(match[1]);
+      if (!entry) {
+        content += escapeHtml(match[0]);
+      } else {
+        const { gap, index } = entry;
+        const options = gap.opts ? gap.opts.map((_, optionIndex) => String.fromCharCode(97 + optionIndex)) : Object.keys(wordLabels || {});
+        const labels = gap.opts
+          ? Object.fromEntries(options.map((letter, optionIndex) => [letter, splitPairedOption(gap.opts[optionIndex], Boolean(match[2]))]))
+          : wordLabels;
+        const feedback = feedbackClass(result, saved[String(index)], gap.answer);
+        content += selectControl(String(index), options, saved[String(index)], `Lücke ${match[1]}${match[2]}`, labels, `telc-inline-select ${feedback}`);
+      }
+      cursor = match.index + match[0].length;
+    }
+    content += inlineRichText(paragraph.slice(cursor)).replace(/\n/g, "<br>");
+    return `<p>${content}</p>`;
+  }).join("");
+}
+
+function splitPairedOption(option, useSecondPart) {
+  const parts = String(option).split(/\s*\.\.\.\s*/);
+  return parts.length > 1 ? parts[useSecondPart ? 1 : 0] : option;
 }
 
 function radioQuestion(questionKey, prompt, options, saved, expected, result, mode) {
@@ -775,19 +835,19 @@ function radioQuestion(questionKey, prompt, options, saved, expected, result, mo
   }).join("")}</fieldset>`;
 }
 
-function selectControl(question, options, saved, placeholder, labels = null) {
+function selectControl(question, options, saved, placeholder, labels = null, className = "") {
   const selected = options.find((value) => String(saved) === String(value));
   const displayLabel = selected == null ? placeholder : optionDisplayLabel(selected, labels);
   const listboxId = `telc-select-${question}-${Math.random().toString(36).slice(2, 8)}`;
-  return `<div class="telc-custom-select" data-telc-custom-select data-question="${escapeAttribute(question)}">
+  return `<span class="telc-custom-select ${className}" data-telc-custom-select data-question="${escapeAttribute(question)}">
     <button class="telc-custom-select__trigger ${selected == null ? "" : "has-value"}" type="button" data-telc-select-trigger aria-haspopup="listbox" aria-expanded="false" aria-controls="${listboxId}" aria-label="${escapeAttribute(placeholder)}"><span data-telc-select-label>${escapeHtml(displayLabel)}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
-    <div class="telc-custom-select__menu" id="${listboxId}" role="listbox" data-telc-select-menu hidden>${options.map((value) => {
+    <span class="telc-custom-select__menu" id="${listboxId}" role="listbox" data-telc-select-menu hidden>${options.map((value) => {
       const isSelected = String(saved) === String(value);
       const title = labels ? stripFormatting(labels[value]) : "";
       const display = optionDisplayLabel(value, labels);
       return `<button class="telc-custom-select__option ${isSelected ? "is-selected" : ""}" type="button" role="option" aria-selected="${isSelected}" data-telc-select-option data-value="${escapeAttribute(value)}" data-display="${escapeAttribute(display)}" title="${escapeAttribute(display)}"><strong>${escapeHtml(String(value).toUpperCase())}</strong>${title ? `<span>${escapeHtml(title)}</span>` : ""}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>`;
-    }).join("")}</div>
-  </div>`;
+    }).join("")}</span>
+  </span>`;
 }
 
 function optionDisplayLabel(value, labels) {
