@@ -57,10 +57,13 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
   const state = readState();
   let renderToken = 0;
   let activeRoute = null;
+  const confirmationDialog = createConfirmationDialog();
 
   root.addEventListener("change", handleChange);
   root.addEventListener("input", handleInput);
   root.addEventListener("click", handleClick);
+  root.addEventListener("keydown", handleKeydown);
+  document.addEventListener("click", handleDocumentClick);
 
   async function render(route) {
     activeRoute = route;
@@ -143,7 +146,19 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     updateSavedIndicator();
   }
 
-  function handleClick(event) {
+  async function handleClick(event) {
+    const selectTrigger = event.target.closest("[data-telc-select-trigger]");
+    if (selectTrigger) {
+      toggleCustomSelect(selectTrigger);
+      return;
+    }
+
+    const selectOption = event.target.closest("[data-telc-select-option]");
+    if (selectOption) {
+      chooseCustomSelectOption(selectOption);
+      return;
+    }
+
     const simulationStart = event.target.closest("[data-simulation-start]");
     if (simulationStart) {
       startSimulation(simulationStart.dataset.simulationStart);
@@ -152,7 +167,12 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
 
     const simulationReset = event.target.closest("[data-simulation-reset]");
     if (simulationReset) {
-      if (!confirm("هل تريد حذف جلسة المحاكاة الحالية وبدء جلسة جديدة؟")) return;
+      const confirmed = await askForConfirmation({
+        title: "بدء محاكاة جديدة؟",
+        message: "سيتم حذف جلسة المحاكاة الحالية ومؤقتها، بينما ستبقى نتائج تمارينك المحفوظة.",
+        confirmLabel: "ابدأ جلسة جديدة",
+      });
+      if (!confirmed) return;
       delete state.simulations[simulationReset.dataset.simulationReset];
       saveState(state);
       rerenderCurrentRoute();
@@ -194,7 +214,12 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     const reset = event.target.closest("[data-telc-reset]");
     if (reset) {
       const key = reset.dataset.telcReset;
-      if (!confirm("هل تريد حذف إجابات هذا التمرين والبدء من جديد؟")) return;
+      const confirmed = await askForConfirmation({
+        title: "إعادة ضبط التمرين؟",
+        message: "سيتم حذف إجاباتك ونتيجتك المحفوظة لهذا التمرين فقط.",
+        confirmLabel: "إعادة الضبط",
+      });
+      if (!confirmed) return;
       delete state.answers[key];
       delete state.results[key];
       delete state.drafts[key];
@@ -203,6 +228,100 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
       showToast("تمت إعادة ضبط التمرين");
       rerenderCurrentRoute();
     }
+  }
+
+  function handleDocumentClick(event) {
+    if (!root.contains(event.target) || !event.target.closest("[data-telc-custom-select]")) closeCustomSelects();
+  }
+
+  function handleKeydown(event) {
+    const trigger = event.target.closest("[data-telc-select-trigger]");
+    if (trigger && ["ArrowDown", "ArrowUp", "Enter", " "].includes(event.key)) {
+      event.preventDefault();
+      openCustomSelect(trigger, event.key === "ArrowUp" ? "last" : "selected");
+      return;
+    }
+
+    const option = event.target.closest("[data-telc-select-option]");
+    if (!option) return;
+    const options = [...option.parentElement.querySelectorAll("[data-telc-select-option]")];
+    const index = options.indexOf(option);
+    if (["Enter", " "].includes(event.key)) {
+      event.preventDefault();
+      chooseCustomSelectOption(option);
+    } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      options[(index + (event.key === "ArrowDown" ? 1 : -1) + options.length) % options.length]?.focus();
+    } else if (event.key === "Home" || event.key === "End") {
+      event.preventDefault();
+      options[event.key === "Home" ? 0 : options.length - 1]?.focus();
+    } else if (event.key === "Escape") {
+      event.preventDefault();
+      const select = option.closest("[data-telc-custom-select]");
+      closeCustomSelects();
+      select?.querySelector("[data-telc-select-trigger]")?.focus();
+    }
+  }
+
+  function toggleCustomSelect(trigger) {
+    const select = trigger.closest("[data-telc-custom-select]");
+    const wasOpen = select?.classList.contains("is-open");
+    closeCustomSelects();
+    if (!wasOpen) openCustomSelect(trigger, "selected");
+  }
+
+  function openCustomSelect(trigger, focusTarget = null) {
+    const select = trigger.closest("[data-telc-custom-select]");
+    if (!select) return;
+    closeCustomSelects();
+    select.classList.add("is-open");
+    trigger.setAttribute("aria-expanded", "true");
+    const menu = select.querySelector("[data-telc-select-menu]");
+    menu.hidden = false;
+    if (focusTarget) {
+      const options = [...menu.querySelectorAll("[data-telc-select-option]")];
+      const target = focusTarget === "last" ? options.at(-1) : menu.querySelector('[aria-selected="true"]') || options[0];
+      target?.focus();
+    }
+  }
+
+  function closeCustomSelects() {
+    root.querySelectorAll("[data-telc-custom-select].is-open").forEach((select) => {
+      select.classList.remove("is-open");
+      select.querySelector("[data-telc-select-trigger]")?.setAttribute("aria-expanded", "false");
+      const menu = select.querySelector("[data-telc-select-menu]");
+      if (menu) menu.hidden = true;
+    });
+  }
+
+  function chooseCustomSelectOption(option) {
+    const select = option.closest("[data-telc-custom-select]");
+    const exercise = root.querySelector("[data-exercise-key]");
+    if (!select || !exercise) return;
+    const key = exercise.dataset.exerciseKey;
+    const question = select.dataset.question;
+    const value = option.dataset.value;
+    state.answers[key] ||= {};
+    state.answers[key][question] = value;
+    delete state.results[key];
+    saveState(state);
+
+    select.querySelectorAll("[data-telc-select-option]").forEach((item) => {
+      const selected = item === option;
+      item.classList.toggle("is-selected", selected);
+      item.setAttribute("aria-selected", String(selected));
+    });
+    const trigger = select.querySelector("[data-telc-select-trigger]");
+    const label = trigger?.querySelector("[data-telc-select-label]");
+    if (label) label.textContent = option.dataset.display;
+    trigger?.classList.add("has-value");
+    closeCustomSelects();
+    trigger?.focus();
+    updateSavedIndicator();
+  }
+
+  function askForConfirmation({ title, message, confirmLabel }) {
+    return confirmationDialog.open({ title, message, confirmLabel });
   }
 
   function submitExercise(key) {
@@ -331,6 +450,7 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
   }
 
   function leave() {
+    confirmationDialog.close(false);
     if (entryLink) entryLink.hidden = false;
     if (headerRoot) {
       headerRoot.hidden = true;
@@ -349,6 +469,58 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
   window.setInterval(updateSimulationTimers, 1000);
 
   return { render, leave };
+}
+
+function createConfirmationDialog() {
+  const dialog = document.createElement("dialog");
+  dialog.className = "telc-confirm-dialog";
+  dialog.setAttribute("aria-labelledby", "telc-confirm-title");
+  dialog.setAttribute("aria-describedby", "telc-confirm-message");
+  dialog.innerHTML = `<div class="telc-confirm-dialog__panel" dir="rtl">
+    <span class="telc-confirm-dialog__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 8v5m0 3.5v.5M10.3 4.5 3.6 16.1A2 2 0 0 0 5.3 19h13.4a2 2 0 0 0 1.7-2.9L13.7 4.5a2 2 0 0 0-3.4 0Z"/></svg></span>
+    <div><span class="telc-kicker">تأكيد الإجراء</span><h2 id="telc-confirm-title"></h2><p id="telc-confirm-message"></p></div>
+    <div class="telc-confirm-dialog__actions"><button class="telc-quiet-button" type="button" data-dialog-cancel>إلغاء</button><button class="telc-submit-button" type="button" data-dialog-confirm></button></div>
+  </div>`;
+  document.body.append(dialog);
+  const title = dialog.querySelector("#telc-confirm-title");
+  const message = dialog.querySelector("#telc-confirm-message");
+  const confirmButton = dialog.querySelector("[data-dialog-confirm]");
+  const cancelButton = dialog.querySelector("[data-dialog-cancel]");
+  let resolver = null;
+
+  function settle(value) {
+    if (!dialog.open) return;
+    dialog.close();
+    const resolve = resolver;
+    resolver = null;
+    resolve?.(value);
+  }
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) settle(false);
+  });
+  dialog.addEventListener("cancel", (event) => {
+    event.preventDefault();
+    settle(false);
+  });
+  cancelButton.addEventListener("click", () => settle(false));
+  confirmButton.addEventListener("click", () => settle(true));
+
+  return {
+    open(content) {
+      if (dialog.open) settle(false);
+      title.textContent = content.title;
+      message.textContent = content.message;
+      confirmButton.textContent = content.confirmLabel;
+      const result = new Promise((resolve) => { resolver = resolve; });
+      dialog.showModal();
+      cancelButton.focus();
+      return result;
+    },
+    close(value = false) {
+      settle(value);
+    },
+  };
 }
 
 async function loadLevel(level) {
@@ -547,9 +719,10 @@ function renderExerciseBody(module, item, key, saved, result, draft) {
 
 function renderHeadingMatch(item, saved, result) {
   const letters = item.headings.map((_, index) => String.fromCharCode(97 + index));
+  const headingLabels = Object.fromEntries(letters.map((letter, index) => [letter, item.headings[index]]));
   return `<div class="telc-workspace"><main class="telc-content-stack">${item.texte.map((text, index) => {
     const question = String(index);
-    return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span>${selectControl(question, letters, saved[question], "اختر العنوان")}</div>${formatRichText(text)}</article>`;
+    return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span>${selectControl(question, letters, saved[question], "اختر العنوان", headingLabels)}</div>${formatRichText(text)}</article>`;
   }).join("")}</main><aside class="telc-reference-panel"><h2>Überschriften</h2>${item.headings.map((heading, index) => `<div class="telc-heading-option"><strong>${letters[index].toUpperCase()}</strong><span>${inlineRichText(heading)}</span></div>`).join("")}</aside></div>`;
 }
 
@@ -603,7 +776,28 @@ function radioQuestion(questionKey, prompt, options, saved, expected, result, mo
 }
 
 function selectControl(question, options, saved, placeholder, labels = null) {
-  return `<select data-telc-answer="${question}" aria-label="${escapeAttribute(placeholder)}"><option value="">${placeholder}</option>${options.map((value) => `<option value="${escapeAttribute(value)}" ${String(saved) === String(value) ? "selected" : ""}>${String(value).toUpperCase()}${labels ? ` · ${escapeHtml(labels[value])}` : ""}</option>`).join("")}</select>`;
+  const selected = options.find((value) => String(saved) === String(value));
+  const displayLabel = selected == null ? placeholder : optionDisplayLabel(selected, labels);
+  const listboxId = `telc-select-${question}-${Math.random().toString(36).slice(2, 8)}`;
+  return `<div class="telc-custom-select" data-telc-custom-select data-question="${escapeAttribute(question)}">
+    <button class="telc-custom-select__trigger ${selected == null ? "" : "has-value"}" type="button" data-telc-select-trigger aria-haspopup="listbox" aria-expanded="false" aria-controls="${listboxId}" aria-label="${escapeAttribute(placeholder)}"><span data-telc-select-label>${escapeHtml(displayLabel)}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
+    <div class="telc-custom-select__menu" id="${listboxId}" role="listbox" data-telc-select-menu hidden>${options.map((value) => {
+      const isSelected = String(saved) === String(value);
+      const title = labels ? stripFormatting(labels[value]) : "";
+      const display = optionDisplayLabel(value, labels);
+      return `<button class="telc-custom-select__option ${isSelected ? "is-selected" : ""}" type="button" role="option" aria-selected="${isSelected}" data-telc-select-option data-value="${escapeAttribute(value)}" data-display="${escapeAttribute(display)}" title="${escapeAttribute(display)}"><strong>${escapeHtml(String(value).toUpperCase())}</strong>${title ? `<span>${escapeHtml(title)}</span>` : ""}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>`;
+    }).join("")}</div>
+  </div>`;
+}
+
+function optionDisplayLabel(value, labels) {
+  const letter = String(value).toUpperCase();
+  const title = labels ? stripFormatting(labels[value]) : "";
+  return title ? `${letter} · ${title}` : letter;
+}
+
+function stripFormatting(value) {
+  return String(value ?? "").replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
 }
 
 function expectedAnswers(module, item) {
