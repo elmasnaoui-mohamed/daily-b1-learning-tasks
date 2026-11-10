@@ -498,7 +498,7 @@ a {
 
 .extension-guide__body {
   min-height: 0;
-  padding: 0 clamp(20px, 4vw, 36px) 16px clamp(10px, 2vw, 18px);
+  padding: 0 clamp(10px, 2vw, 18px) 16px clamp(10px, 2vw, 14px);
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-color: var(--color-border-strong) transparent;
