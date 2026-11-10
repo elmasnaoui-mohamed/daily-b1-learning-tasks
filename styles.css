@@ -493,6 +493,7 @@ a {
 
 .extension-guide__content {
   padding: clamp(20px, 4vw, 36px);
+  padding-left: clamp(15px, 2.5vw, 26px);
 }
 
 .extension-guide__header {
