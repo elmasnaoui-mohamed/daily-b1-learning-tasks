@@ -35,6 +35,8 @@ const elements = {
   telcView: document.querySelector("#telcView"),
   telcEntryLink: document.querySelector("#telcEntryLink"),
   telcHeaderNav: document.querySelector("#telcHeaderNav"),
+  extensionGuideOpenButton: document.querySelector("#extensionGuideOpenButton"),
+  extensionGuideDialog: document.querySelector("#extensionGuideDialog"),
   continueButton: document.querySelector("#continueButton"),
   levelTabs: document.querySelector("#levelTabs"),
   activeLevelBadge: document.querySelector("#activeLevelBadge"),
@@ -118,6 +120,14 @@ function bindEvents() {
   window.addEventListener("resize", handleBackToTopScroll);
   elements.continueButton?.addEventListener("click", openContinueLesson);
   elements.backToTopButton?.addEventListener("click", scrollToTop);
+  elements.extensionGuideOpenButton?.addEventListener("click", () => {
+    elements.extensionGuideDialog?.showModal();
+  });
+  elements.extensionGuideDialog?.addEventListener("click", (event) => {
+    if (event.target === elements.extensionGuideDialog || event.target.closest("[data-extension-guide-close]")) {
+      elements.extensionGuideDialog.close();
+    }
+  });
   updateBackToTopVisibility();
 
   elements.searchInput?.addEventListener("input", (event) => {

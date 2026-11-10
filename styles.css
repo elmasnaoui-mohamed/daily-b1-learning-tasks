@@ -419,6 +419,238 @@ a {
   direction: ltr;
 }
 
+.extension-download {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 13px;
+  border: 1px solid var(--color-border);
+  border-radius: 11px;
+  background: var(--color-surface-muted);
+  color: var(--color-text-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.extension-download:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+  transform: translateY(-1px);
+}
+
+.extension-download__icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.extension-download__label {
+  direction: ltr;
+}
+
+.extension-download__short {
+  display: none;
+  direction: ltr;
+}
+
+.extension-guide {
+  width: min(940px, calc(100% - 28px));
+  max-width: none;
+  max-height: min(90dvh, 900px);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  scrollbar-color: var(--color-border-strong) transparent;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 16px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
+}
+
+.extension-guide::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.extension-guide::-webkit-scrollbar-thumb {
+  border-color: transparent;
+  background-color: var(--color-border-strong);
+}
+
+.extension-guide::backdrop {
+  background: rgba(5, 8, 17, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.extension-guide__content {
+  padding: clamp(20px, 4vw, 36px);
+}
+
+.extension-guide__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.extension-guide__header .eyebrow {
+  direction: ltr;
+  text-align: right;
+}
+
+.extension-guide__header h2 {
+  margin: 8px 0 4px;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.extension-guide__header p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.extension-guide__close {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 11px;
+  background: var(--color-surface-muted);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.extension-guide__close:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.extension-guide__close svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.extension-guide__notice,
+.extension-guide__note {
+  padding: 13px 15px;
+  border: 1px solid color-mix(in srgb, var(--color-accent-cyan) 36%, var(--color-border));
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--color-accent-cyan) 8%, var(--color-surface-muted));
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.extension-guide__notice {
+  margin: 22px 0 18px;
+}
+
+.extension-guide__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extension-guide__step {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 17px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface-elevated);
+}
+
+.extension-guide__number {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-primary) 22%, var(--color-surface));
+  color: var(--color-text-muted);
+  font-weight: 800;
+}
+
+.extension-guide__step h3 {
+  margin: 12px 0 6px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.extension-guide__step p {
+  flex: 1;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.extension-guide code {
+  display: inline-block;
+  padding: 1px 5px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 0.8em;
+}
+
+.extension-guide__illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.extension-guide__note {
+  margin: 16px 0 0;
+  border-color: var(--color-border);
+  background: var(--color-surface-muted);
+}
+
+.extension-guide__actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.extension-guide__actions .button {
+  gap: 8px;
+  text-decoration: none;
+}
+
+.extension-guide__actions svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .section-shell {
   width: min(calc(100% - 40px), var(--max-width));
   margin-inline: auto;
@@ -2384,9 +2616,13 @@ a {
     scrollbar-width: none;
   }
 
-  .header-actions::-webkit-scrollbar { display: none; }
+  .header-actions::-webkit-scrollbar {
+    display: none;
+  }
 
-  .telc-header-nav { gap: 4px; }
+  .telc-header-nav {
+    gap: 4px;
+  }
 
   .telc-header-nav a {
     min-height: 38px;
@@ -2413,6 +2649,59 @@ a {
   .telc-link__icon {
     width: 16px;
     height: 16px;
+  }
+
+  .extension-download {
+    min-height: 40px;
+    gap: 5px;
+    padding-inline: 8px;
+    font-size: 0.74rem;
+  }
+
+  .extension-download__label {
+    display: none;
+  }
+
+  .extension-download__short {
+    display: inline;
+  }
+
+  .extension-download__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .extension-guide__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .extension-guide__step {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .extension-guide__step h3 {
+    align-self: center;
+    margin: 0;
+  }
+
+  .extension-guide__step p,
+  .extension-guide__illustration {
+    grid-column: 2;
+  }
+
+  .extension-guide__step p {
+    margin-top: 6px;
+  }
+
+  .extension-guide__illustration {
+    width: min(240px, 100%);
+    margin-top: 10px;
+  }
+
+  .extension-guide__header {
+    gap: 12px;
   }
 
   .section-shell {
@@ -2569,6 +2858,10 @@ a {
 
   .telc-link {
     width: 60px;
+    padding-inline: 6px;
+  }
+
+  .extension-download {
     padding-inline: 6px;
   }
 }

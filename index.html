@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="./src/assets/Deutsch mit Rinkute.ico">
-  <link rel="stylesheet" href="./styles.css?v=20261030-8">
+  <link rel="stylesheet" href="./styles.css?v=20261110-2">
   <link rel="stylesheet" href="./src/css/telc.css?v=20261030-8">
 </head>
 
@@ -37,6 +37,15 @@
         <span class="brand-copy"><strong>Deutsch mit Mira</strong><small>مسارك لتعلّم الألمانية</small></span>
       </a>
       <div class="header-actions" id="headerActions">
+        <button class="extension-download" id="extensionGuideOpenButton" type="button" aria-haspopup="dialog"
+          aria-controls="extensionGuideDialog" aria-label="شرح وتنزيل إضافة Arabdict Translator">
+          <svg class="extension-download__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1.1-1.8 1.3-1.8 3m0 3v.1" />
+          </svg>
+          <span class="extension-download__label">Arabdict Translator Extension</span>
+          <span class="extension-download__short" aria-hidden="true">الإضافة</span>
+        </button>
         <a class="telc-link" id="telcEntryLink" href="#/telc" aria-label="التحضير لامتحان TELC">
           <svg class="telc-link__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M7 3.75h7.2L18 7.55v12.7H7z" />
@@ -49,6 +58,113 @@
       </div>
     </div>
   </header>
+
+  <dialog class="extension-guide" id="extensionGuideDialog" aria-labelledby="extensionGuideTitle">
+    <div class="extension-guide__content">
+      <header class="extension-guide__header">
+        <div>
+          <span class="eyebrow">Arabdict Translator Extension</span>
+          <h2 id="extensionGuideTitle">إضافة Arabdict Translator</h2>
+          <p>ترجم الكلمات والجمل الألمانية إلى العربية مباشرةً أثناء التصفح.</p>
+        </div>
+        <form method="dialog">
+          <button class="extension-guide__close" type="submit" aria-label="إغلاق نافذة شرح الإضافة">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          </button>
+        </form>
+      </header>
+
+      <p class="extension-guide__notice">
+        قبل البدء: ستنزّل ملف <bdi dir="ltr"><code>ZIP</code></bdi> ثم تثبّت الإضافة يدويًا. تعمل هذه النسخة على
+        المتصفحات المبنية على <bdi dir="ltr"><code>Chromium</code></bdi> مثل
+        <bdi dir="ltr"><code>Google Chrome</code></bdi> و<bdi dir="ltr"><code>Brave</code></bdi> و
+        <bdi dir="ltr"><code>Microsoft Edge</code></bdi>؛ ولا تدعم
+        <bdi dir="ltr"><code>Firefox</code></bdi> حاليًا. ستحتاج إلى تفعيل وضع المطوّر
+        (<bdi dir="ltr"><code>Developer mode</code></bdi>) في صفحة الإضافات لتثبيتها.
+      </p>
+
+      <ol class="extension-guide__steps">
+        <li class="extension-guide__step">
+          <h3><span class="extension-guide__number" aria-hidden="true">1</span> نزّل الملف وفكّ ضغطه</h3>
+          <p>نزّل الملف، ثم فكّ ضغط <bdi dir="ltr"><code>arabdict-dark-translator.zip</code></bdi>. احتفظ بالمجلد الناتج على جهازك.
+          </p>
+          <svg class="extension-guide__illustration" viewBox="0 0 240 110" aria-hidden="true" focusable="false">
+            <rect x="31" y="12" width="72" height="82" rx="12" fill="#202a40" stroke="#3b4667" />
+            <path d="M51 12v17h32V12M51 29v12h32V29" fill="#151c2d" stroke="#8c7bff" stroke-width="2" />
+            <path d="M67 45v20m0 0-8-8m8 8 8-8" fill="none" stroke="#b8adff" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="3" />
+            <path d="M136 43h28l9 9h37a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8h-74a8 8 0 0 1-8-8V51a8 8 0 0 1 8-8Z"
+              fill="#202a40" stroke="#3b4667" stroke-width="2" />
+            <path d="M128 61h91" stroke="#8c7bff" stroke-width="3" />
+            <path d="M108 54h14m-5-6 6 6-6 6" fill="none" stroke="#8c7bff" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" />
+          </svg>
+        </li>
+        <li class="extension-guide__step">
+          <h3><span class="extension-guide__number" aria-hidden="true">2</span> افتح صفحة الإضافات</h3>
+          <p>
+            لا يستطيع الموقع فتح صفحة إعدادات المتصفح مباشرةً؛ اكتب العنوان المناسب في شريط المتصفح:
+            <bdi dir="ltr"><code>chrome://extensions</code></bdi> لـ
+            <bdi dir="ltr"><code>Chrome</code></bdi>، أو
+            <bdi dir="ltr"><code>brave://extensions</code></bdi> لـ
+            <bdi dir="ltr"><code>Brave</code></bdi>، أو
+            <bdi dir="ltr"><code>edge://extensions</code></bdi> لـ
+            <bdi dir="ltr"><code>Edge</code></bdi>، ثم فعّل
+            <bdi dir="ltr"><code>Developer mode</code></bdi>.
+          </p>
+          <svg class="extension-guide__illustration" viewBox="0 0 240 110" aria-hidden="true" focusable="false">
+            <rect x="15" y="12" width="210" height="88" rx="10" fill="#151c2d" stroke="#3b4667" stroke-width="2" />
+            <path d="M15 34h210" stroke="#3b4667" />
+            <circle cx="29" cy="23" r="3" fill="#8c7bff" />
+            <circle cx="40" cy="23" r="3" fill="#57627e" />
+            <rect x="27" y="45" width="73" height="43" rx="6" fill="#202a40" />
+            <path d="M38 57h42M38 66h34M38 75h38" stroke="#57627e" stroke-linecap="round" stroke-width="3" />
+            <rect x="112" y="45" width="99" height="19" rx="5" fill="#202a40" />
+            <path d="M121 55h37" stroke="#b9c3d9" stroke-linecap="round" stroke-width="3" />
+            <rect x="112" y="71" width="69" height="17" rx="5" fill="#7555ed" />
+            <path d="M123 79h47" stroke="#fff" stroke-linecap="round" stroke-width="3" />
+            <circle cx="194" cy="79" r="10" fill="#192235" stroke="#8c7bff" stroke-width="2" />
+            <path d="M194 74v10m-5-5h10" stroke="#b8adff" stroke-linecap="round" stroke-width="2" />
+          </svg>
+        </li>
+        <li class="extension-guide__step">
+
+          <h3><span class="extension-guide__number" aria-hidden="true">3</span> ثبّت الإضافة واستخدمها</h3>
+          <p>
+            بعد تفعيل وضع المطوّر، اختر <bdi dir="ltr"><code>Load unpacked</code></bdi> وحدّد المجلد الذي فككت ضغطه.
+            بعد التثبيت، حدّد نصًا ألمانيًا في صفحة ويب واضغط أيقونة الإضافة التي تظهر بجانبه.
+          </p>
+          <svg class="extension-guide__illustration" viewBox="0 0 240 110" aria-hidden="true" focusable="false">
+            <rect x="15" y="13" width="210" height="84" rx="10" fill="#151c2d" stroke="#3b4667" stroke-width="2" />
+            <path d="M32 44h93m-93 14h72" stroke="#b9c3d9" stroke-linecap="round" stroke-width="5" />
+            <path d="M33 44h36" stroke="#8c7bff" stroke-linecap="round" stroke-width="5" />
+            <rect x="128" y="53" width="48" height="30" rx="8" fill="#202a40" stroke="#8c7bff" stroke-width="2" />
+            <path d="M138 68h28m-14-8v16" stroke="#b8adff" stroke-linecap="round" stroke-width="2" />
+            <path d="M177 55h18l8 9v19h-26z" fill="#202a40" stroke="#3b4667" stroke-width="2" />
+            <path d="M185 70h10m-5-5v10" stroke="#b8adff" stroke-linecap="round" stroke-width="2" />
+          </svg>
+        </li>
+      </ol>
+
+      <p class="extension-guide__note">
+        لا تعمل الإضافات على صفحات المتصفح الداخلية أو صفحات المتاجر. لترجمة ملف PDF، افتح الإضافة من شريط الأدوات
+        واختر <bdi dir="ltr"><code>Open translator PDF viewer</code></bdi>.
+      </p>
+
+      <footer class="extension-guide__actions">
+        <a class="button button--primary" href="./src/assets/arabdict-dark-translator.zip"
+          download="arabdict-dark-translator.zip">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3.75v11.5m0 0 4.25-4.25M12 15.25l-4.25-4.25M5 16.75v3.5h14v-3.5" />
+          </svg>
+          تنزيل الإضافة
+        </a>
+        <button class="button button--secondary" type="button" data-extension-guide-close>إغلاق</button>
+      </footer>
+    </div>
+  </dialog>
 
   <main id="mainContent" tabindex="-1">
     <div class="system-state" id="loadingState" role="status">جارٍ تجهيز خطتك الدراسية…</div>
@@ -224,7 +340,7 @@
         stroke-linejoin="round" />
     </svg>
   </button>
-  <script type="module" src="./script.js?v=20261030-8"></script>
+  <script type="module" src="./script.js?v=20261110-2"></script>
 </body>
 
 </html>
