@@ -466,10 +466,11 @@ a {
   width: min(940px, calc(100% - 28px));
   max-width: none;
   max-height: min(90dvh, 900px);
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 0;
-  overflow: auto;
-  scrollbar-color: var(--color-border-strong) transparent;
+  overflow: hidden;
   border: 1px solid var(--color-border-strong);
   border-radius: 16px;
   background: var(--color-surface);
@@ -477,11 +478,15 @@ a {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
 }
 
-.extension-guide::-webkit-scrollbar-track {
+.extension-guide:not([open]) {
+  display: none;
+}
+
+.extension-guide__body::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.extension-guide::-webkit-scrollbar-thumb {
+.extension-guide__body::-webkit-scrollbar-thumb {
   border-color: transparent;
   background-color: var(--color-border-strong);
 }
@@ -491,31 +496,40 @@ a {
   backdrop-filter: blur(5px);
 }
 
-.extension-guide__content {
-  padding: clamp(20px, 4vw, 36px);
-  padding-left: clamp(15px, 2.5vw, 26px);
+.extension-guide__body {
+  min-height: 0;
+  padding: 0 clamp(20px, 4vw, 36px) 16px clamp(10px, 2vw, 18px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--color-border-strong) transparent;
 }
 
 .extension-guide__header {
   display: flex;
-  align-items: flex-start;
+  flex: 0 0 auto;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
+  padding: 12px clamp(10px, 2vw, 18px);
 }
 
-.extension-guide__header .eyebrow {
+.extension-guide__eyebrow {
   direction: ltr;
   text-align: right;
 }
 
-.extension-guide__header h2 {
-  margin: 8px 0 4px;
+.extension-guide__intro h2 {
+  margin: 0 0 4px;
   font-size: clamp(1.35rem, 3vw, 1.8rem);
 }
 
-.extension-guide__header p {
+.extension-guide__intro p {
   margin: 0;
   color: var(--color-text-secondary);
+}
+
+.extension-guide__intro {
+  margin: 0 0 18px;
 }
 
 .extension-guide__close {
@@ -632,19 +646,26 @@ a {
 
 .extension-guide__actions {
   display: flex;
-  justify-content: flex-start;
+  flex: 0 0 auto;
+  justify-content: flex-end;
   gap: 10px;
-  margin-top: 20px;
+  margin: 0;
+  padding: 12px clamp(10px, 2vw, 18px);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .extension-guide__actions .button {
+  min-height: 38px;
   gap: 8px;
+  padding: 7px 12px;
+  font-size: 0.88rem;
   text-decoration: none;
 }
 
 .extension-guide__actions svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -2653,23 +2674,7 @@ a {
   }
 
   .extension-download {
-    min-height: 40px;
-    gap: 5px;
-    padding-inline: 8px;
-    font-size: 0.74rem;
-  }
-
-  .extension-download__label {
     display: none;
-  }
-
-  .extension-download__short {
-    display: inline;
-  }
-
-  .extension-download__icon {
-    width: 16px;
-    height: 16px;
   }
 
   .extension-guide__steps {
@@ -2862,9 +2867,6 @@ a {
     padding-inline: 6px;
   }
 
-  .extension-download {
-    padding-inline: 6px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
