@@ -876,6 +876,11 @@ body.is-telc-view>main {
   line-height: 1.5;
 }
 
+.telc-reference-panel>div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
 .telc-reference-panel>.telc-heading-option {
   grid-template-columns: 28px minmax(0, 1fr);
   align-items: start;
@@ -1320,6 +1325,7 @@ body.is-telc-view>main {
   margin-top: 20px;
   padding: 10px;
   border: 1px solid var(--color-border);
+  border-bottom: 0;
   border-radius: 15px 15px 0 0;
   background: rgba(11, 16, 32, 0.94);
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
