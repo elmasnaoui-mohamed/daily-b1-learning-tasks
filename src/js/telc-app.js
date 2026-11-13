@@ -53,7 +53,7 @@ const MODULE_LABELS = {
 
 const dataCache = new Map();
 
-export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {} }) {
+export function createTelcApp({ root, headerRoot, entryLink, showToast = () => { } }) {
   const state = readState();
   let renderToken = 0;
   let activeRoute = null;
@@ -63,11 +63,19 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
   root.addEventListener("input", handleInput);
   root.addEventListener("click", handleClick);
   root.addEventListener("keydown", handleKeydown);
+  root.addEventListener("pointerup", handleVocabularySelection);
+  root.addEventListener("touchend", handleVocabularySelection);
+  root.addEventListener("keyup", handleVocabularySelection);
+  root.addEventListener("pointerover", handleVocabularyPointerOver);
+  root.addEventListener("pointerout", handleVocabularyPointerOut);
+  root.addEventListener("focusin", handleVocabularyFocusIn);
+  root.addEventListener("focusout", handleVocabularyFocusOut);
   document.addEventListener("click", handleDocumentClick);
 
   async function render(route) {
     activeRoute = route;
     syncSimulationForRoute(route);
+    hideVocabularyPopover();
     renderHeader(route);
     const token = ++renderToken;
     root.innerHTML = loadingMarkup();
@@ -122,7 +130,324 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     }
 
     root.innerHTML = renderExercise(route.level, route.area, route.module, index, items[index], items.length, state);
+    restoreVocabularyHighlights();
     document.title = `${exerciseTitle(items[index])} · TELC ${route.level}`;
+  }
+
+  let selectedVocabularyRange = null;
+  let activeVocabularyMark = null;
+  let vocabularyPopoverPinned = false;
+
+  function handleVocabularySelection(event) {
+    if (!root.querySelector("[data-vocabulary-enabled]")) return;
+    if (event.target.closest?.("[data-vocab-selection-action], [data-vocab-popover]")) return;
+    if (event.type === "keyup" && (!event.shiftKey || !["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key))) return;
+    const selection = window.getSelection();
+    if (!selection || selection.isCollapsed || !selection.rangeCount) {
+      hideVocabularySelectionAction();
+      return;
+    }
+    const range = selection.getRangeAt(0);
+    const passage = range.commonAncestorContainer.nodeType === Node.ELEMENT_NODE
+      ? range.commonAncestorContainer.closest?.("[data-vocabulary-passage]")
+      : range.commonAncestorContainer.parentElement?.closest("[data-vocabulary-passage]");
+    if (!passage || !root.contains(passage) || !passage.contains(range.startContainer) || !passage.contains(range.endContainer)) {
+      hideVocabularySelectionAction();
+      return;
+    }
+    const model = buildPassageTextModel(passage);
+    let start = passageOffsetAt(model, range.startContainer, range.startOffset);
+    let end = passageOffsetAt(model, range.endContainer, range.endOffset);
+    while (start < end && /\s/u.test(model.text[start])) start += 1;
+    while (end > start && /\s/u.test(model.text[end - 1])) end -= 1;
+    if (start >= end || !model.text.slice(start, end).trim()) {
+      hideVocabularySelectionAction();
+      return;
+    }
+
+    selectedVocabularyRange = {
+      exerciseId: root.querySelector("[data-exercise-key]")?.dataset.exerciseKey,
+      passageId: passage.dataset.vocabularyPassage,
+      passageText: model.text,
+      start,
+      end,
+      selectedText: model.text.slice(start, end),
+      rect: range.getBoundingClientRect(),
+    };
+    const action = root.querySelector("[data-vocab-selection-action]");
+    if (!action) return;
+    action.hidden = false;
+    placeVocabularyPopup(action, selectedVocabularyRange.rect);
+  }
+
+  function handleVocabularyPointerOver(event) {
+    const mark = event.target.closest?.("[data-vocabulary-mark]");
+    if (!mark || mark.contains(event.relatedTarget) || vocabularyPopoverPinned) return;
+    openVocabularyPopover(mark, false);
+  }
+
+  function handleVocabularyPointerOut(event) {
+    const mark = event.target.closest?.("[data-vocabulary-mark]");
+    const popover = root.querySelector("[data-vocab-popover]");
+    if (mark && !mark.contains(event.relatedTarget) && !popover?.contains(event.relatedTarget)) {
+      if (!vocabularyPopoverPinned && !mark.matches(":focus")) hideVocabularyPopover();
+    }
+    if (popover?.contains(event.target) && !popover.contains(event.relatedTarget) && !vocabularyPopoverPinned) {
+      hideVocabularyPopover();
+    }
+  }
+
+  function handleVocabularyFocusIn(event) {
+    const mark = event.target.closest?.("[data-vocabulary-mark]");
+    if (mark && !vocabularyPopoverPinned) openVocabularyPopover(mark, false);
+  }
+
+  function handleVocabularyFocusOut(event) {
+    const popover = root.querySelector("[data-vocab-popover]");
+    if (popover?.contains(event.target) && !popover.contains(event.relatedTarget) && !vocabularyPopoverPinned) {
+      hideVocabularyPopover();
+    }
+    const mark = event.target.closest?.("[data-vocabulary-mark]");
+    if (mark && !mark.contains(event.relatedTarget) && !vocabularyPopoverPinned && !popover?.contains(event.relatedTarget)) {
+      hideVocabularyPopover();
+    }
+  }
+
+  function handleVocabularyClick(event) {
+    const markAction = event.target.closest("[data-vocab-mark-selection]");
+    if (markAction) {
+      if (!selectedVocabularyRange) return;
+      const action = root.querySelector("[data-vocab-selection-action]");
+      if (action) action.hidden = true;
+      openVocabularyEntry(selectedVocabularyRange);
+      return true;
+    }
+
+    const saveButton = event.target.closest("[data-vocab-save]");
+    if (saveButton) {
+      saveVocabularyAnnotation();
+      return true;
+    }
+
+    const cancelEntry = event.target.closest("[data-vocab-cancel-entry]");
+    if (cancelEntry) {
+      hideVocabularyPopover();
+      return true;
+    }
+
+    const annotationMark = event.target.closest("[data-vocabulary-mark]");
+    if (annotationMark) {
+      openVocabularyPopover(annotationMark, true);
+      return true;
+    }
+
+    const showTranslation = event.target.closest("[data-vocab-show-translation]");
+    if (showTranslation) {
+      const translation = root.querySelector("[data-vocab-translation]");
+      if (translation) translation.hidden = !translation.hidden;
+      showTranslation.textContent = translation?.hidden ? "إظهار الترجمة" : "إخفاء الترجمة";
+      return true;
+    }
+
+    const editTranslation = event.target.closest("[data-vocab-edit]");
+    if (editTranslation) {
+      const annotation = state.vocabulary[activeVocabularyMark];
+      const form = root.querySelector("[data-vocab-entry]");
+      const field = root.querySelector("[data-vocab-translation-input]");
+      if (!annotation || !form || !field) return true;
+      form.hidden = false;
+      root.querySelector("[data-vocab-annotation-actions]").hidden = true;
+      field.value = annotation.translation;
+      field.focus();
+      return true;
+    }
+
+    const learn = event.target.closest("[data-vocab-learn]");
+    if (learn) {
+      delete state.vocabulary[activeVocabularyMark];
+      saveState(state);
+      hideVocabularyPopover();
+      restoreVocabularyHighlights();
+      showToast("تمت إزالة الكلمة من النص");
+      return true;
+    }
+
+    const close = event.target.closest("[data-vocab-close]");
+    if (close) {
+      const markId = activeVocabularyMark;
+      hideVocabularyPopover();
+      [...root.querySelectorAll("[data-vocabulary-mark]")].find((mark) => mark.dataset.vocabularyMark === markId)?.focus();
+      return true;
+    }
+
+    return false;
+  }
+
+  function openVocabularyEntry(selection) {
+    const popover = root.querySelector("[data-vocab-popover]");
+    const form = root.querySelector("[data-vocab-entry]");
+    if (!popover || !form) return;
+    activeVocabularyMark = null;
+    vocabularyPopoverPinned = true;
+    root.querySelector("[data-vocab-annotation-actions]").hidden = true;
+    root.querySelector("[data-vocab-translation-container]").hidden = true;
+    root.querySelector("[data-vocab-selected-text]").textContent = selection.selectedText;
+    root.querySelector("[data-vocab-selected-text]").closest("[data-vocab-selected]").hidden = false;
+    form.hidden = false;
+    popover.hidden = false;
+    const field = root.querySelector("[data-vocab-translation-input]");
+    field.value = "";
+    placeVocabularyPopup(popover, selection.rect);
+    field.focus();
+  }
+
+  function openVocabularyPopover(mark, pinned) {
+    const annotation = state.vocabulary[mark.dataset.vocabularyMark];
+    const popover = root.querySelector("[data-vocab-popover]");
+    if (!annotation || !popover) return;
+    selectedVocabularyRange = null;
+    hideVocabularySelectionAction();
+    activeVocabularyMark = annotation.id;
+    vocabularyPopoverPinned = pinned;
+    root.querySelector("[data-vocab-entry]").hidden = true;
+    root.querySelector("[data-vocab-selected]").hidden = true;
+    root.querySelector("[data-vocab-translation]").textContent = annotation.translation;
+    root.querySelector("[data-vocab-translation-container]").hidden = false;
+    root.querySelector("[data-vocab-translation]").hidden = false;
+    const actions = root.querySelector("[data-vocab-annotation-actions]");
+    actions.hidden = !pinned;
+    const showButton = root.querySelector("[data-vocab-show-translation]");
+    showButton.textContent = "إخفاء الترجمة";
+    popover.hidden = false;
+    placeVocabularyPopup(popover, mark.getBoundingClientRect());
+    if (pinned) showButton.focus();
+  }
+
+  function saveVocabularyAnnotation() {
+    const selection = selectedVocabularyRange;
+    const field = root.querySelector("[data-vocab-translation-input]");
+    const translation = field?.value.trim();
+    if (!translation) {
+      field?.focus();
+      showToast("أدخل معنى الكلمة أولًا");
+      return;
+    }
+
+    if (activeVocabularyMark) {
+      const annotation = state.vocabulary[activeVocabularyMark];
+      if (!annotation) return;
+      annotation.translation = translation;
+      annotation.updatedAt = new Date().toISOString();
+      saveState(state);
+      hideVocabularyPopover();
+      restoreVocabularyHighlights();
+      [...root.querySelectorAll("[data-vocabulary-mark]")].find((mark) => mark.dataset.vocabularyMark === annotation.id)?.focus();
+      showToast("تم تحديث الترجمة");
+      return;
+    }
+    if (!selection) return;
+
+    const overlaps = Object.values(state.vocabulary).some((annotation) =>
+      annotation.exerciseId === selection.exerciseId
+      && annotation.passageId === selection.passageId
+      && selection.start < annotation.end
+      && selection.end > annotation.start
+    );
+    if (overlaps) {
+      showToast("هذا الجزء محدد بالفعل؛ اختر نصًا آخر");
+      return;
+    }
+
+    const now = new Date().toISOString();
+    const id = createVocabularyId();
+    state.vocabulary[id] = {
+      id,
+      exerciseId: selection.exerciseId,
+      passageId: selection.passageId,
+      selectedText: selection.selectedText,
+      start: selection.start,
+      end: selection.end,
+      passageText: selection.passageText,
+      translation,
+      createdAt: now,
+      updatedAt: now,
+    };
+    saveState(state);
+    hideVocabularyPopover();
+    selectedVocabularyRange = null;
+    restoreVocabularyHighlights();
+    [...root.querySelectorAll("[data-vocabulary-mark]")].find((mark) => mark.dataset.vocabularyMark === id)?.focus();
+    showToast("تم حفظ الكلمة");
+  }
+
+  function restoreVocabularyHighlights() {
+    root.querySelectorAll("[data-vocabulary-mark]").forEach((mark) => {
+      mark.replaceWith(...mark.childNodes);
+    });
+    const passages = new Map([...root.querySelectorAll("[data-vocabulary-passage]")].map((passage) => [passage.dataset.vocabularyPassage, passage]));
+    const annotations = Object.values(state.vocabulary)
+      .filter((annotation) => annotation.exerciseId === root.querySelector("[data-exercise-key]")?.dataset.exerciseKey)
+      .sort((left, right) => right.start - left.start);
+    for (const annotation of annotations) {
+      const passage = passages.get(annotation.passageId);
+      if (!passage) continue;
+      const model = buildPassageTextModel(passage);
+      if (model.text !== annotation.passageText || model.text.slice(annotation.start, annotation.end) !== annotation.selectedText) continue;
+      const segments = model.segments.filter((segment) => segment.start < annotation.end && segment.end > annotation.start).reverse();
+      let first = true;
+      for (const segment of segments) {
+        const start = Math.max(annotation.start, segment.start) - segment.start;
+        const end = Math.min(annotation.end, segment.end) - segment.start;
+        if (start >= end) continue;
+        const range = document.createRange();
+        range.setStart(segment.node, start);
+        range.setEnd(segment.node, end);
+        const mark = document.createElement("span");
+        mark.className = "telc-vocab-mark";
+        mark.dataset.vocabularyMark = annotation.id;
+        mark.tabIndex = first ? 0 : -1;
+        mark.setAttribute("role", "button");
+        mark.setAttribute("aria-haspopup", "dialog");
+        mark.setAttribute("aria-label", `${annotation.selectedText}، اضغط لإظهار الترجمة والإجراءات`);
+        mark.append(range.extractContents());
+        range.insertNode(mark);
+        first = false;
+      }
+    }
+  }
+
+  function hideVocabularySelectionAction() {
+    const action = root.querySelector("[data-vocab-selection-action]");
+    if (action) action.hidden = true;
+    selectedVocabularyRange = null;
+  }
+
+  function hideVocabularyPopover() {
+    const popover = root.querySelector("[data-vocab-popover]");
+    if (popover) popover.hidden = true;
+    if (popover) {
+      const translation = popover.querySelector("[data-vocab-translation]");
+      if (translation) translation.hidden = true;
+      const form = popover.querySelector("[data-vocab-entry]");
+      if (form) form.hidden = true;
+    }
+    activeVocabularyMark = null;
+    vocabularyPopoverPinned = false;
+    selectedVocabularyRange = null;
+  }
+
+  function placeVocabularyPopup(element, rect) {
+    if (!element || !rect) return;
+    const gap = 8;
+    const width = Math.min(element.offsetWidth || 280, window.innerWidth - 24);
+    const height = element.offsetHeight || 80;
+    const left = Math.max(12, Math.min(rect.left, window.innerWidth - width - 12));
+    const preferredTop = rect.bottom + gap + height < window.innerHeight
+      ? rect.bottom + gap
+      : rect.top - height - gap;
+    const top = Math.max(12, Math.min(preferredTop, window.innerHeight - height - 12));
+    element.style.left = `${left}px`;
+    element.style.top = `${top}px`;
   }
 
   function handleChange(event) {
@@ -150,6 +475,8 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
   }
 
   async function handleClick(event) {
+    if (handleVocabularyClick(event)) return;
+
     const characterButton = event.target.closest("[data-telc-character]");
     if (characterButton) {
       insertDraftCharacter(characterButton);
@@ -241,9 +568,30 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
 
   function handleDocumentClick(event) {
     if (!root.contains(event.target) || !event.target.closest("[data-telc-custom-select]")) closeCustomSelects();
+    const popover = root.querySelector("[data-vocab-popover]");
+    if (
+      popover?.hidden
+      || popover?.contains(event.target)
+      || event.target.closest?.("[data-vocabulary-mark], [data-vocab-selection-action]")
+    ) return;
+    hideVocabularyPopover();
   }
 
   function handleKeydown(event) {
+    const vocabularyMark = event.target.closest("[data-vocabulary-mark]");
+    if (vocabularyMark && ["Enter", " "].includes(event.key)) {
+      event.preventDefault();
+      openVocabularyPopover(vocabularyMark, true);
+      return;
+    }
+    if (event.key === "Escape" && !root.querySelector("[data-vocab-popover]")?.hidden) {
+      event.preventDefault();
+      const markId = activeVocabularyMark;
+      hideVocabularyPopover();
+      [...root.querySelectorAll("[data-vocabulary-mark]")].find((mark) => mark.dataset.vocabularyMark === markId)?.focus();
+      return;
+    }
+
     const trigger = event.target.closest("[data-telc-select-trigger]");
     if (trigger && ["ArrowDown", "ArrowUp", "Enter", " "].includes(event.key)) {
       event.preventDefault();
@@ -566,9 +914,10 @@ function readState() {
       results: saved?.results || {},
       completed: saved?.completed || {},
       simulations: saved?.simulations || {},
+      vocabulary: saved?.vocabulary && typeof saved.vocabulary === "object" && !Array.isArray(saved.vocabulary) ? saved.vocabulary : {},
     };
   } catch {
-    return { answers: {}, drafts: {}, results: {}, completed: {}, simulations: {} };
+    return { answers: {}, drafts: {}, results: {}, completed: {}, simulations: {}, vocabulary: {} };
   }
 }
 
@@ -642,9 +991,9 @@ function renderSimulation(level, data, state) {
   return `<div class="telc-shell telc-simulation" data-simulation-level="${level}">
     <header class="telc-simulation-hero"><span class="telc-kicker">TELC ${level} · Prüfungssimulation</span><h1>${finished ? "اكتملت المحاكاة" : paused ? "المحاكاة متوقفة مؤقتًا" : "المحاكاة قيد التنفيذ"}</h1><p>${finished ? "أكملت جميع أجزاء هذه الجلسة. يمكنك مراجعة إجاباتك أو بدء جلسة جديدة." : paused ? "المؤقت متوقف وإجاباتك محفوظة. استأنف عندما تكون جاهزًا." : "أكمل الأجزاء بالترتيب الذي يناسبك. المؤقت والتقدم محفوظان تلقائيًا."}</p><time class="telc-simulation-clock" data-simulation-timer aria-live="polite"></time><div class="telc-simulation-controls">${finished ? "" : `<button class="telc-submit-button" type="button" data-simulation-toggle="${level}">${paused ? "استئناف المؤقت" : "إيقاف المؤقت"}</button>`}<button class="telc-quiet-button" type="button" data-simulation-reset="${level}">بدء محاكاة جديدة</button></div></header>
     <section class="telc-simulation-plan" aria-label="أجزاء المحاكاة">${session.plan.map((step, index) => {
-      const complete = session.completed.includes(step.key);
-      return `<a class="telc-simulation-step ${complete ? "is-complete" : ""}" href="#/telc/${level}/${step.area}/${step.module}/${step.index}"><span>${String(index + 1).padStart(2, "0")}</span><div><small>${MODULE_LABELS[step.module]}</small><h2>${escapeHtml(step.title)}</h2></div><strong>${complete ? "مكتمل ✓" : "ابدأ"}</strong></a>`;
-    }).join("")}</section>
+    const complete = session.completed.includes(step.key);
+    return `<a class="telc-simulation-step ${complete ? "is-complete" : ""}" href="#/telc/${level}/${step.area}/${step.module}/${step.index}"><span>${String(index + 1).padStart(2, "0")}</span><div><small>${MODULE_LABELS[step.module]}</small><h2>${escapeHtml(step.title)}</h2></div><strong>${complete ? "مكتمل ✓" : "ابدأ"}</strong></a>`;
+  }).join("")}</section>
   </div>`;
 }
 
@@ -662,13 +1011,13 @@ function renderResults(level, data, state) {
       <article><span>محاولات مصححة</span><strong>${scored.length}</strong><p>يمكنك إعادة أي تمرين بلا حدود</p></article>
     </section>
     <section class="telc-result-breakdown">${Object.entries(AREA_META).map(([areaKey, area]) => {
-      const moduleNames = new Set(area.modules);
-      const areaResults = scored.filter(([key]) => moduleNames.has(key.split(":")[1]));
-      const areaCorrect = areaResults.reduce((sum, [, result]) => sum + result.score, 0);
-      const areaTotal = areaResults.reduce((sum, [, result]) => sum + result.total, 0);
-      const percent = areaTotal ? Math.round((areaCorrect / areaTotal) * 100) : 0;
-      return `<a href="#/telc/${level}/${areaKey}"><div><span>${area.de}</span><h2>${area.label}</h2></div><strong>${areaTotal ? `${percent}%` : "—"}</strong></a>`;
-    }).join("")}</section>
+    const moduleNames = new Set(area.modules);
+    const areaResults = scored.filter(([key]) => moduleNames.has(key.split(":")[1]));
+    const areaCorrect = areaResults.reduce((sum, [, result]) => sum + result.score, 0);
+    const areaTotal = areaResults.reduce((sum, [, result]) => sum + result.total, 0);
+    const percent = areaTotal ? Math.round((areaCorrect / areaTotal) * 100) : 0;
+    return `<a href="#/telc/${level}/${areaKey}"><div><span>${area.de}</span><h2>${area.label}</h2></div><strong>${areaTotal ? `${percent}%` : "—"}</strong></a>`;
+  }).join("")}</section>
   </div>`;
 }
 
@@ -698,15 +1047,15 @@ function renderLibrary(level, areaKey, data, state, selectedModule) {
 function exerciseSection(level, areaKey, module, items, state) {
   return `<section class="telc-exercise-section"><div class="telc-section-heading"><div><span>Prüfungsteil</span><h2>${MODULE_LABELS[module]}</h2></div><strong>${items.length} مجموعة</strong></div>
     <div class="telc-exercise-grid">${items.map((item, index) => {
-      const key = exerciseKey(level, module, item);
-      const result = state.results[key];
-      const complete = Boolean(state.completed[key]);
-      return `<a class="telc-exercise-card ${complete ? "is-complete" : ""}" href="#/telc/${level}/${areaKey}/${module}/${index}">
+    const key = exerciseKey(level, module, item);
+    const result = state.results[key];
+    const complete = Boolean(state.completed[key]);
+    return `<a class="telc-exercise-card ${complete ? "is-complete" : ""}" href="#/telc/${level}/${areaKey}/${module}/${index}">
         <span class="telc-exercise-number">${String(index + 1).padStart(2, "0")}</span>
         <div><h3>${escapeHtml(exerciseTitle(item))}</h3><p>${exerciseSubtitle(module, item)}</p></div>
         <span class="telc-exercise-status">${result ? `${result.score}/${result.total}` : complete ? "مكتمل" : "ابدأ"}</span>
       </a>`;
-    }).join("")}</div></section>`;
+  }).join("")}</div></section>`;
 }
 
 function renderExercise(level, areaKey, module, index, item, total, state) {
@@ -719,10 +1068,12 @@ function renderExercise(level, areaKey, module, index, item, total, state) {
   const previous = index > 0 ? `#/telc/${level}/${areaKey}/${module}/${index - 1}` : null;
   const next = index + 1 < total ? `#/telc/${level}/${areaKey}/${module}/${index + 1}` : `#/telc/${level}/${areaKey}/${module}`;
 
-  return `<div class="telc-shell telc-exam-shell" data-exercise-key="${escapeAttribute(key)}" data-expected="${escapeAttribute(JSON.stringify(expected))}">
+  const vocabularyControls = areaKey === "lesen" ? renderVocabularyControls() : "";
+  return `<div class="telc-shell telc-exam-shell" data-exercise-key="${escapeAttribute(key)}" data-expected="${escapeAttribute(JSON.stringify(expected))}" ${areaKey === "lesen" ? "data-vocabulary-enabled" : ""}>
     <header class="telc-exam-head"><div><span class="telc-kicker">${MODULE_LABELS[module]} · ${index + 1}/${total}</span><h1>${escapeHtml(exerciseTitle(item))}</h1></div><span data-saved-indicator>يُحفظ تلقائيًا</span></header>
     ${result ? `<div class="telc-result ${result.percent >= 60 ? "is-pass" : "is-review"}"><strong>${result.score}/${result.total}</strong><span>${result.percent >= 60 ? "أحسنت — نتيجة ناجحة" : "راجع الإجابات وحاول مجددًا"}</span><em>${result.percent}%</em></div>` : ""}
     ${body}
+    ${vocabularyControls}
     <footer class="telc-exam-actions">
       <div><a class="telc-secondary-link" href="#/telc/${level}/${areaKey}/${module}">العودة للقائمة</a>${previous ? `<a class="telc-secondary-link" href="${previous}">السابق</a>` : ""}<a class="telc-secondary-link" href="${next}">التالي</a></div>
       <div><button class="telc-quiet-button" type="button" data-telc-reset="${escapeAttribute(key)}">إعادة الضبط</button><button class="telc-submit-button" type="button" data-telc-${expected ? "submit" : "complete"}="${escapeAttribute(key)}">${expected ? "تصحيح الإجابات" : complete ? "تم الإنجاز ✓" : "حفظ كمنجز"}</button></div>
@@ -730,10 +1081,37 @@ function renderExercise(level, areaKey, module, index, item, total, state) {
   </div>`;
 }
 
+function renderVocabularyControls() {
+  return `<div class="telc-vocab-selection-action" data-vocab-selection-action hidden>
+      <button type="button" data-vocab-mark-selection>Markiere das Wort</button>
+    </div>
+    <section class="telc-vocab-popover" data-vocab-popover role="dialog" aria-label="مفردات النص" hidden>
+      <p class="telc-vocab-selected" data-vocab-selected hidden><bdi data-vocab-selected-text dir="auto"></bdi></p>
+      <div class="telc-vocab-translation" data-vocab-translation-container hidden>
+        <span>المعنى المحفوظ</span><bdi data-vocab-translation dir="auto" hidden></bdi>
+      </div>
+      <div class="telc-vocab-actions" data-vocab-annotation-actions hidden>
+        <button type="button" data-vocab-show-translation>إظهار الترجمة</button>
+        <button type="button" data-vocab-edit>تعديل الترجمة</button>
+        <button type="button" data-vocab-learn>تعلمتها وإزالة التحديد</button>
+        <button type="button" data-vocab-close>إغلاق</button>
+      </div>
+      <form class="telc-vocab-entry" data-vocab-entry hidden>
+        <label for="telc-vocab-translation-input">أدخل المعنى الذي تريد حفظه</label>
+        <textarea id="telc-vocab-translation-input" data-vocab-translation-input rows="3" dir="auto"></textarea>
+        <div><button type="button" data-vocab-cancel-entry>إلغاء</button><button type="button" data-vocab-save>حفظ</button></div>
+      </form>
+    </section>`;
+}
+
+function renderVocabularyPassage(text, passageId) {
+  return `<div data-vocabulary-passage="${escapeAttribute(passageId)}">${formatRichText(text)}</div>`;
+}
+
 function renderExerciseBody(module, item, key, saved, result, draft) {
-  if (module === "lesenTeil1") return renderHeadingMatch(item, saved, result);
-  if (module === "lesenTeil2") return renderReadingChoice(item, saved, result);
-  if (module === "lesenTeil3") return renderSituationMatch(item, saved, result);
+  if (module === "lesenTeil1") return renderHeadingMatch(item, key, saved, result);
+  if (module === "lesenTeil2") return renderReadingChoice(item, key, saved, result);
+  if (module === "lesenTeil3") return renderSituationMatch(item, key, saved, result);
   if (module === "sprachbausteineTeil1") return renderGapOptions(item, saved, result);
   if (module === "sprachbausteineTeil2") return renderWordBank(item, saved, result);
   if (module.startsWith("hoeren")) return renderListening(item, saved, result);
@@ -741,29 +1119,29 @@ function renderExerciseBody(module, item, key, saved, result, draft) {
   return renderSpeaking(item, key, draft);
 }
 
-function renderHeadingMatch(item, saved, result) {
+function renderHeadingMatch(item, key, saved, result) {
   const letters = item.headings.map((_, index) => String.fromCharCode(97 + index));
   const headingLabels = Object.fromEntries(letters.map((letter, index) => [letter, item.headings[index]]));
   return `<div class="telc-workspace"><main class="telc-content-stack">${item.texte.map((text, index) => {
     const question = String(index);
-    return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span>${selectControl(question, letters, saved[question], "اختر العنوان", headingLabels)}</div>${formatRichText(text)}</article>`;
+    return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span>${selectControl(question, letters, saved[question], "اختر العنوان", headingLabels)}</div>${renderVocabularyPassage(text, `${key}:text:${index}`)}</article>`;
   }).join("")}</main><aside class="telc-reference-panel"><h2>Überschriften</h2>${item.headings.map((heading, index) => `<div class="telc-heading-option"><strong>${letters[index].toUpperCase()}</strong><span>${inlineRichText(heading)}</span></div>`).join("")}</aside></div>`;
 }
 
-function renderReadingChoice(item, saved, result) {
+function renderReadingChoice(item, key, saved, result) {
   const variant = item.variants?.[0];
   const questions = item.questions || variant?.fragen || [];
-  return `<div class="telc-workspace"><article class="telc-reading-paper">${formatRichText(item.text)}</article><aside class="telc-question-panel"><h2>Aufgaben</h2>${questions.map((question, index) => {
+  return `<div class="telc-workspace"><article class="telc-reading-paper">${renderVocabularyPassage(item.text, `${key}:text`)}</article><aside class="telc-question-panel"><h2>Aufgaben</h2>${questions.map((question, index) => {
     const options = question.opts || question.options || [];
     const expected = question.answer ?? question.correct;
     return radioQuestion(String(index), question.text, options, saved[String(index)], expected, result, typeof expected === "number" ? "index" : "letter");
   }).join("")}</aside></div>`;
 }
 
-function renderSituationMatch(item, saved, result) {
+function renderSituationMatch(item, key, saved, result) {
   const materials = item.anzeigen || item.infotexts || {};
   const keys = Object.keys(materials);
-  return `<div class="telc-workspace"><main class="telc-content-stack">${item.situations.map((situation, index) => `<article class="telc-situation-card ${feedbackClass(result, saved[String(index)], situation.answer)}"><span>${situation.id ?? index + 1}</span><div>${inlineRichText(situation.text)}</div>${selectControl(String(index), keys, saved[String(index)], "اختر الإعلان")}</article>`).join("")}</main><aside class="telc-reference-panel telc-reference-panel--wide"><h2>Anzeigen</h2>${keys.map((letter) => `<details><summary><strong>${letter}</strong> Anzeige ${letter}</summary>${formatRichText(materials[letter])}</details>`).join("")}</aside></div>`;
+  return `<div class="telc-workspace"><main class="telc-content-stack">${item.situations.map((situation, index) => `<article class="telc-situation-card ${feedbackClass(result, saved[String(index)], situation.answer)}"><span>${situation.id ?? index + 1}</span><div>${renderVocabularyPassage(situation.text, `${key}:situation:${situation.id ?? index}`)}</div>${selectControl(String(index), keys, saved[String(index)], "اختر الإعلان")}</article>`).join("")}</main><aside class="telc-reference-panel telc-reference-panel--wide"><h2>Anzeigen</h2>${keys.map((letter) => `<details><summary><strong>${letter}</strong> Anzeige ${letter}</summary>${renderVocabularyPassage(materials[letter], `${key}:ad:${letter}`)}</details>`).join("")}</aside></div>`;
 }
 
 function renderGapOptions(item, saved, result) {
@@ -842,11 +1220,11 @@ function selectControl(question, options, saved, placeholder, labels = null, cla
   return `<span class="telc-custom-select ${className}" data-telc-custom-select data-question="${escapeAttribute(question)}">
     <button class="telc-custom-select__trigger ${selected == null ? "" : "has-value"}" type="button" data-telc-select-trigger aria-haspopup="listbox" aria-expanded="false" aria-controls="${listboxId}" aria-label="${escapeAttribute(placeholder)}"><span data-telc-select-label>${escapeHtml(displayLabel)}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
     <span class="telc-custom-select__menu" id="${listboxId}" role="listbox" data-telc-select-menu hidden>${options.map((value) => {
-      const isSelected = String(saved) === String(value);
-      const title = labels ? stripFormatting(labels[value]) : "";
-      const display = optionDisplayLabel(value, labels);
-      return `<button class="telc-custom-select__option ${isSelected ? "is-selected" : ""}" type="button" role="option" aria-selected="${isSelected}" data-telc-select-option data-value="${escapeAttribute(value)}" data-display="${escapeAttribute(display)}" title="${escapeAttribute(display)}"><strong>${escapeHtml(String(value).toUpperCase())}</strong>${title ? `<span>${escapeHtml(title)}</span>` : ""}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>`;
-    }).join("")}</span>
+    const isSelected = String(saved) === String(value);
+    const title = labels ? stripFormatting(labels[value]) : "";
+    const display = optionDisplayLabel(value, labels);
+    return `<button class="telc-custom-select__option ${isSelected ? "is-selected" : ""}" type="button" role="option" aria-selected="${isSelected}" data-telc-select-option data-value="${escapeAttribute(value)}" data-display="${escapeAttribute(display)}" title="${escapeAttribute(display)}"><strong>${escapeHtml(String(value).toUpperCase())}</strong>${title ? `<span>${escapeHtml(title)}</span>` : ""}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>`;
+  }).join("")}</span>
   </span>`;
 }
 
@@ -940,4 +1318,57 @@ function escapeHtml(value) {
 
 function escapeAttribute(value) {
   return escapeHtml(value).replace(/`/g, "&#96;");
+}
+
+function buildPassageTextModel(passage) {
+  let text = "";
+  let paragraphCount = 0;
+  const segments = [];
+
+  function visit(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const start = text.length;
+      text += node.nodeValue;
+      segments.push({ node, start, end: text.length });
+      return;
+    }
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+    if (node.tagName === "P") {
+      if (paragraphCount > 0 && text && !text.endsWith("\n\n")) text += "\n\n";
+      paragraphCount += 1;
+    } else if (node.tagName === "BR") {
+      if (!text.endsWith("\n")) text += "\n";
+      return;
+    }
+    node.childNodes.forEach(visit);
+  }
+
+  passage.childNodes.forEach(visit);
+  return { text, segments };
+}
+
+function passageOffsetAt(model, container, offset) {
+  const segment = model.segments.find((part) => part.node === container);
+  if (segment) return segment.start + Math.max(0, Math.min(offset, segment.end - segment.start));
+
+  const point = document.createRange();
+  point.setStart(container, offset);
+  point.collapse(true);
+  let previousEnd = 0;
+  for (const part of model.segments) {
+    const start = document.createRange();
+    start.setStart(part.node, 0);
+    start.collapse(true);
+    if (point.compareBoundaryPoints(Range.START_TO_START, start) <= 0) return part.start;
+    const end = document.createRange();
+    end.setStart(part.node, part.end - part.start);
+    end.collapse(true);
+    if (point.compareBoundaryPoints(Range.START_TO_START, end) <= 0) return part.end;
+    previousEnd = part.end;
+  }
+  return previousEnd;
+}
+
+function createVocabularyId() {
+  return globalThis.crypto?.randomUUID?.() || `vocab-${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
