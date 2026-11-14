@@ -1170,7 +1170,7 @@ function renderSpeaking(item, key, draft) {
 }
 
 function characterToolbar(targetId) {
-  return `<div class="telc-character-toolbar" role="group" aria-label="Deutsche Sonderzeichen">${["ä", "ö", "ü", "Ä", "Ö", "Ü", "ß"].map((character) => `<button type="button" data-telc-character="${character}" aria-label="${character} in das Textfeld einfügen" aria-controls="${targetId}">${character}</button>`).join("")}</div>`;
+  return `<div class="telc-character-toolbar" role="group" aria-label="Deutsche Sonderzeichen">${["ä", "Ä", "ö", "Ö", "ü", "Ü", "ß"].map((character) => `<button type="button" data-telc-character="${character}" aria-label="${character} in das Textfeld einfügen" aria-controls="${targetId}">${character}</button>`).join("")}</div>`;
 }
 
 function formatGapText(item, saved, result, wordLabels = null) {
