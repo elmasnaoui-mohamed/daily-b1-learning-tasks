@@ -1395,6 +1395,7 @@ body.is-telc-view>main {
   color: var(--color-text-secondary);
   font: inherit;
   font-weight: 800;
+  font-size: 16px;
   place-items: center;
   cursor: pointer;
   transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease, transform 150ms ease;
