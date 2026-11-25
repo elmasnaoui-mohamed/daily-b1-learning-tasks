@@ -71,8 +71,6 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
   root.addEventListener("focusin", handleVocabularyFocusIn);
   root.addEventListener("focusout", handleVocabularyFocusOut);
   document.addEventListener("click", handleDocumentClick);
-  document.addEventListener("click", handleHeaderMenuClick);
-  document.addEventListener("keydown", handleHeaderMenuKeydown);
 
   async function render(route) {
     activeRoute = route;
@@ -83,35 +81,19 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     root.innerHTML = loadingMarkup();
 
     if (!route.level) {
-      let b1;
-      let b2;
-      let c1;
-      try {
-        [b1, b2, c1] = await Promise.all([loadLevel("B1"), loadLevel("B2"), loadLevel("C1")]);
-      } catch (error) {
-        if (token !== renderToken) return;
-        root.innerHTML = renderLoadError(error);
-        return;
-      }
+      const [b1, b2] = await Promise.all([loadLevel("B1"), loadLevel("B2")]);
       if (token !== renderToken) return;
-      root.innerHTML = renderLevelSelector(b1, b2, c1, state);
-      document.title = "TELC Prüfungsstudio | Deutsch mit Rinkute";
+      root.innerHTML = renderLevelSelector(b1, b2, state);
+      document.title = "TELC Prüfungsstudio | Deutsch mit Mira";
       return;
     }
 
-    let data;
-    try {
-      data = await loadLevel(route.level);
-    } catch (error) {
-      if (token !== renderToken) return;
-      root.innerHTML = renderLoadError(error);
-      return;
-    }
+    const data = await loadLevel(route.level);
     if (token !== renderToken) return;
 
     if (!route.area) {
       root.innerHTML = renderDashboard(route.level, data, state);
-      document.title = `TELC ${route.level} | Deutsch mit Rinkute`;
+      document.title = `TELC ${route.level} | Deutsch mit Mira`;
       return;
     }
 
@@ -142,19 +124,14 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
 
     const items = data.modules[route.module];
     const index = Number.parseInt(route.exercise, 10);
-    if (!modulesForArea(route.level, route.area, data).includes(route.module) || !items || !Number.isInteger(index) || !items[index] || items[index].externalUrl) {
+    if (!area.modules.includes(route.module) || !items || !Number.isInteger(index) || !items[index]) {
       location.hash = `#/telc/${route.level}/${route.area}`;
       return;
     }
 
-    try {
-      root.innerHTML = renderExercise(route.level, route.area, route.module, index, items[index], items.length, state);
-      restoreVocabularyHighlights();
-      document.title = `${exerciseTitle(items[index])} · TELC ${route.level}`;
-    } catch (error) {
-      console.error("TELC exercise render failed", error);
-      if (token === renderToken) root.innerHTML = renderLoadError(error);
-    }
+    root.innerHTML = renderExercise(route.level, route.area, route.module, index, items[index], items.length, state);
+    restoreVocabularyHighlights();
+    document.title = `${exerciseTitle(items[index])} · TELC ${route.level}`;
   }
 
   let selectedVocabularyRange = null;
@@ -493,103 +470,12 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     state.drafts[draft.dataset.telcDraft] = draft.value;
     saveState(state);
     const counter = draft.closest(".telc-editor-card")?.querySelector("[data-draft-count]");
-    if (counter) {
-      const words = countWords(draft.value);
-      const target = Number(counter.dataset.wordTarget || 0);
-      counter.textContent = `${words}/${target} Wörter · ${draft.value.length} Zeichen`;
-      counter.classList.toggle("is-target-met", words >= target);
-    }
+    if (counter) counter.textContent = `${draft.value.length} Zeichen`;
     updateSavedIndicator();
   }
 
   async function handleClick(event) {
     if (handleVocabularyClick(event)) return;
-
-    if (event.target.closest("[data-telc-reload]")) {
-      dataCache.clear();
-      await render(activeRoute);
-      return;
-    }
-
-    const evidenceButton = event.target.closest("[data-telc-evidence-toggle]");
-    if (evidenceButton) {
-      const passage = evidenceButton.closest("[data-vocabulary-passage]")
-        || evidenceButton.closest("article, .telc-reading-paper")?.querySelector("[data-vocabulary-passage]");
-      if (!passage) return;
-      const visible = passage.classList.toggle("is-evidence-visible");
-      evidenceButton.classList.toggle("is-active", visible);
-      evidenceButton.setAttribute("aria-pressed", String(visible));
-      evidenceButton.setAttribute("aria-label", visible ? "Schlüsselwörter ausblenden" : "Schlüsselwörter anzeigen");
-      evidenceButton.title = visible ? "Schlüsselwörter ausblenden" : "Schlüsselwörter anzeigen";
-      evidenceButton.querySelector("span").textContent = visible ? "إخفاء الكلمات المفتاحية" : "إظهار الكلمات المفتاحية";
-      return;
-    }
-
-    const translationButton = event.target.closest("[data-telc-translate-passage]");
-    if (translationButton) {
-      await translatePassageToArabic(translationButton);
-      return;
-    }
-
-    const questionEvidenceButton = event.target.closest("[data-telc-question-evidence]");
-    if (questionEvidenceButton) {
-      const panel = questionEvidenceButton.closest("fieldset")?.querySelector("[data-telc-question-evidence-panel]");
-      if (!panel) return;
-      const visible = panel.hidden;
-      panel.hidden = !visible;
-      questionEvidenceButton.classList.toggle("is-active", visible);
-      questionEvidenceButton.setAttribute("aria-expanded", String(visible));
-      questionEvidenceButton.querySelector("span").textContent = visible ? "إخفاء الدليل" : "إظهار الدليل";
-      return;
-    }
-
-    const matchEvidenceButton = event.target.closest("[data-telc-match-evidence]");
-    if (matchEvidenceButton) {
-      const workspace = matchEvidenceButton.closest(".telc-workspace");
-      const target = workspace?.querySelector(`[data-telc-evidence-id="${CSS.escape(matchEvidenceButton.dataset.telcMatchEvidence)}"]`);
-      const noMatch = matchEvidenceButton.dataset.telcNoMatch === "true";
-      const active = matchEvidenceButton.classList.toggle("is-active");
-      workspace?.querySelectorAll("[data-telc-evidence-id].is-evidence-target").forEach((item) => item.classList.remove("is-evidence-target"));
-      workspace?.querySelectorAll("[data-telc-no-match-note]").forEach((item) => { item.hidden = true; });
-      if (active && target) {
-        target.classList.add("is-evidence-target");
-        target.open = true;
-        target.scrollIntoView({ behavior: "smooth", block: "center" });
-      } else if (active && noMatch) {
-        const note = matchEvidenceButton.parentElement.querySelector("[data-telc-no-match-note]");
-        if (note) note.hidden = false;
-      }
-      matchEvidenceButton.setAttribute("aria-pressed", String(active));
-      return;
-    }
-
-    const gapEvidenceButton = event.target.closest("[data-telc-gap-evidence]");
-    if (gapEvidenceButton) {
-      const paper = gapEvidenceButton.closest(".telc-gap-paper");
-      if (!paper) return;
-      const visible = paper.classList.toggle("is-gap-evidence-visible");
-      gapEvidenceButton.classList.toggle("is-active", visible);
-      gapEvidenceButton.setAttribute("aria-pressed", String(visible));
-      gapEvidenceButton.querySelector("span").textContent = visible ? "Lösungen ausblenden" : "Lösungen anzeigen";
-      return;
-    }
-
-    const writingTimerStart = event.target.closest("[data-writing-timer-start]");
-    if (writingTimerStart) {
-      const key = writingTimerStart.dataset.writingTimerStart;
-      if (!state.writingTimers[key]) state.writingTimers[key] = { startedAt: Date.now(), durationSeconds: 30 * 60 };
-      saveState(state);
-      updateWritingTimers();
-      return;
-    }
-
-    const writingTimerReset = event.target.closest("[data-writing-timer-reset]");
-    if (writingTimerReset) {
-      delete state.writingTimers[writingTimerReset.dataset.writingTimerReset];
-      saveState(state);
-      updateWritingTimers();
-      return;
-    }
 
     const characterButton = event.target.closest("[data-telc-character]");
     if (characterButton) {
@@ -680,61 +566,6 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     }
   }
 
-  async function translatePassageToArabic(button) {
-    const passage = button.closest("[data-vocabulary-passage]")
-      || button.closest(".telc-prompt-card")?.querySelector("[data-vocabulary-passage]")
-      || button.closest("article, .telc-reading-paper, .telc-situation-card")?.querySelector("[data-vocabulary-passage]");
-    const panel = passage?.querySelector("[data-telc-arabic-translation]");
-    const content = passage?.querySelector(".telc-evidence-content");
-    if (!passage || !panel || !content) return;
-
-    const scrollToTranslation = () => {
-      if (!panel.hidden) {
-        requestAnimationFrame(() => panel.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }));
-      }
-    };
-
-    if (panel.dataset.translated === "true") {
-      panel.hidden = !panel.hidden;
-      button.classList.toggle("is-active", !panel.hidden);
-      button.setAttribute("aria-pressed", String(!panel.hidden));
-      scrollToTranslation();
-      return;
-    }
-    if (!globalThis.Translator?.create) {
-      panel.textContent = "الترجمة العربية على الجهاز غير متاحة في هذا المتصفح.";
-      panel.hidden = false;
-      button.classList.add("is-active");
-      scrollToTranslation();
-      return;
-    }
-    button.disabled = true;
-    panel.textContent = "جارٍ إعداد الترجمة العربية…";
-    panel.hidden = false;
-    scrollToTranslation();
-    try {
-      const withTimeout = (promise, message) => Promise.race([
-        promise,
-        new Promise((_, reject) => setTimeout(() => reject(new Error(message)), 4000)),
-      ]);
-      const translator = await withTimeout(
-        globalThis.Translator.create({ sourceLanguage: "de", targetLanguage: "ar" }),
-        "translator-timeout",
-      );
-      panel.textContent = await withTimeout(
-        translator.translate(content.textContent.trim()),
-        "translation-timeout",
-      );
-      panel.dataset.translated = "true";
-      button.classList.add("is-active");
-      button.setAttribute("aria-pressed", "true");
-    } catch {
-      panel.textContent = "تعذر إنشاء الترجمة العربية على هذا الجهاز.";
-    } finally {
-      button.disabled = false;
-    }
-  }
-
   function handleDocumentClick(event) {
     if (!root.contains(event.target) || !event.target.closest("[data-telc-custom-select]")) closeCustomSelects();
     const popover = root.querySelector("[data-vocab-popover]");
@@ -744,35 +575,6 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
       || event.target.closest?.("[data-vocabulary-mark], [data-vocab-selection-action]")
     ) return;
     hideVocabularyPopover();
-  }
-
-  function handleHeaderMenuClick(event) {
-    const toggle = event.target.closest?.("[data-telc-menu-toggle]");
-    if (toggle) {
-      setHeaderMenuOpen(toggle.getAttribute("aria-expanded") !== "true");
-      return;
-    }
-
-    if (!headerRoot?.contains(event.target)) {
-      setHeaderMenuOpen(false);
-      return;
-    }
-
-    if (event.target.closest?.(".telc-header-nav__menu a")) setHeaderMenuOpen(false);
-  }
-
-  function handleHeaderMenuKeydown(event) {
-    if (event.key !== "Escape" || !headerRoot?.querySelector('[data-telc-menu-toggle][aria-expanded="true"]')) return;
-    setHeaderMenuOpen(false);
-    headerRoot.querySelector("[data-telc-menu-toggle]")?.focus();
-  }
-
-  function setHeaderMenuOpen(open) {
-    const toggle = headerRoot?.querySelector("[data-telc-menu-toggle]");
-    if (!toggle) return;
-    toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "إغلاق قائمة التنقل" : "فتح قائمة التنقل");
-    headerRoot.classList.toggle("is-menu-open", open);
   }
 
   function handleKeydown(event) {
@@ -1006,18 +808,16 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     if (entryLink) entryLink.hidden = true;
     if (!headerRoot) return;
     headerRoot.hidden = false;
-    headerRoot.classList.remove("is-menu-open");
     const level = route.level;
     const session = level ? state.simulations[level] : null;
     const showTimer = session && (route.area === "simulation" || isSimulationExercise(route, session));
-    const links = [
+    headerRoot.innerHTML = [
       '<a href="#/level/A1">منصة التعلّم</a>',
       level && route.area ? `<a href="#/telc/${level}">لوحة ${level}</a>` : "",
-      level && level !== "C1" ? `<a href="#/telc/${level}/simulation" class="telc-header-nav__simulation">محاكاة${showTimer ? ' · <time data-simulation-timer></time>' : ""}</a>` : "",
+      level ? `<a href="#/telc/${level}/simulation" class="telc-header-nav__simulation">محاكاة${showTimer ? ' · <time data-simulation-timer></time>' : ""}</a>` : "",
       level ? `<a href="#/telc/${level}/results">النتائج</a>` : "",
       level ? '<a href="#/telc">تغيير المستوى</a>' : "",
     ].join("");
-    headerRoot.innerHTML = `<button class="telc-header-nav__toggle" type="button" data-telc-menu-toggle aria-expanded="false" aria-controls="telcHeaderMenu" aria-label="فتح قائمة التنقل"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="telc-header-nav__menu" id="telcHeaderMenu">${links}</div>`;
     updateSimulationTimers();
   }
 
@@ -1038,27 +838,7 @@ export function createTelcApp({ root, headerRoot, entryLink, showToast = () => {
     });
   }
 
-  function updateWritingTimers() {
-    root.querySelectorAll("[data-writing-timer]").forEach((timer) => {
-      const key = timer.dataset.writingTimer;
-      const session = state.writingTimers[key];
-      const startButton = timer.parentElement.querySelector("[data-writing-timer-start]");
-      if (!session) {
-        timer.textContent = "30:00";
-        if (startButton) startButton.disabled = false;
-        return;
-      }
-      const remaining = Math.max(0, session.durationSeconds - Math.floor((Date.now() - session.startedAt) / 1000));
-      timer.textContent = `${String(Math.floor(remaining / 60)).padStart(2, "0")}:${String(remaining % 60).padStart(2, "0")}`;
-      timer.classList.toggle("is-expired", remaining === 0);
-      if (startButton) startButton.disabled = true;
-    });
-  }
-
-  window.setInterval(() => {
-    updateSimulationTimers();
-    updateWritingTimers();
-  }, 1000);
+  window.setInterval(updateSimulationTimers, 1000);
 
   return { render, leave };
 }
@@ -1117,87 +897,12 @@ function createConfirmationDialog() {
 
 async function loadLevel(level) {
   if (!dataCache.has(level)) {
-    dataCache.set(level, (async () => {
-      const response = await fetchWithTimeout(`./src/data/telc/${level.toLowerCase()}.json`);
+    dataCache.set(level, fetch(`./src/data/telc/${level.toLowerCase()}.json`).then((response) => {
       if (!response.ok) throw new Error(`Unable to load TELC ${level} data`);
-      const data = await response.json();
-      if (level === "C1") {
-        try {
-          const localResponse = await fetchWithTimeout("./src/data/telc/c1-local.json", 15000);
-          if (localResponse.ok) {
-            const local = await localResponse.json();
-            // Keep the complete published catalog and replace only entries that
-            // have a verified local payload.  The old spread replaced an entire
-            // C1 section with the one imported exercise, which made the totals
-            // and navigation misleading.
-            for (const [module, localItems] of Object.entries(local.modules || {})) {
-              // The source catalog currently publishes 18 Sprachbausteine exercises.
-              // Two older entries (m8/m9) are still present in the imported archive,
-              // which caused the duplicate dashboard cards the user reported.
-              const publishedSprachbausteineKeys = new Set([
-                "c1_sprachbausteine_s4_m15", "c1_sprachbausteine_s4_m16",
-                "c1_sprachbausteine_s4_m18", "c1_sprachbausteine_s4_m19",
-                "c1_sprachbausteine_s4_m20", "c1_sprachbausteine_s4_m21",
-                "c1_sprachbausteine_s4_m23", "c1_sprachbausteine_s4_m31",
-                "c1_sprachbausteine_s4_m32", "c1_sprachbausteine_s4_m34",
-                "c1_sprachbausteine_s4_m35", "c1_sprachbausteine_s4_m37",
-                "c1_sprachbausteine_s4_m39", "c1_sprachbausteine_s4_m41",
-                "c1_sprachbausteine_p87_sb_01", "c1_sprachbausteine_p87_sb_02",
-                "c1_sprachbausteine_p87_sb_10", "c1_sprachbausteine_p87_sb_09",
-              ]);
-              const filteredLocalItems = module === "sprachbausteineTeil1"
-                ? localItems.filter((item) => publishedSprachbausteineKeys.has(item.key || item.id))
-                : localItems;
-              const existing = (data.modules[module] || []).filter((item) => (
-                module !== "sprachbausteineTeil1"
-                || publishedSprachbausteineKeys.has(item.key || item.id)
-              ));
-              filteredLocalItems.forEach((item) => { item.localAvailable = true; item.externalUrl = ""; });
-              // Merge by the stable exercise key so a local payload replaces its
-              // catalog placeholder exactly once. This keeps every Teil/section
-              // in navigation without duplicate Aufgaben cards.
-              const merged = new Map(existing.map((item) => [item.key || item.id, item]));
-              filteredLocalItems.forEach((item) => merged.set(item.key || item.id, item));
-              data.modules[module] = [...merged.values()];
-            }
-            for (const [module, items] of Object.entries(data.modules)) {
-              for (const item of items) {
-                const complete = module === "lesenTeil1"
-                  ? Boolean(item.blocks)
-                  : module === "lesenTeil2"
-                    ? Boolean(item.text && item.questions?.length)
-                    : module === "lesenTeil3"
-                      ? Boolean(item.text && item.situations?.length)
-                      : module === "sprachbausteineTeil1"
-                        ? Boolean((item.briefText || item.text) && item.items?.length)
-                        : module.startsWith("hoeren")
-                          ? Boolean(item.sourceModel || item.items?.length)
-                          : module === "schreiben"
-                            ? Boolean(item.situation && item.punkte?.length)
-                            : true;
-                item.localAvailable = Boolean(item.localAvailable && complete);
-                if (!complete) item.externalUrl = "local-missing";
-              }
-            }
-          }
-        } catch (error) {
-          console.warn("C1 local payload could not be loaded; using the catalog fallback.", error);
-        }
-      }
-      return data;
-    })());
+      return response.json();
+    }));
   }
   return dataCache.get(level);
-}
-
-async function fetchWithTimeout(url, timeout = 10000) {
-  const controller = new AbortController();
-  const timer = window.setTimeout(() => controller.abort(), timeout);
-  try {
-    return await fetch(url, { cache: "no-store", signal: controller.signal });
-  } finally {
-    window.clearTimeout(timer);
-  }
 }
 
 function readState() {
@@ -1209,11 +914,10 @@ function readState() {
       results: saved?.results || {},
       completed: saved?.completed || {},
       simulations: saved?.simulations || {},
-      writingTimers: saved?.writingTimers || {},
       vocabulary: saved?.vocabulary && typeof saved.vocabulary === "object" && !Array.isArray(saved.vocabulary) ? saved.vocabulary : {},
     };
   } catch {
-    return { answers: {}, drafts: {}, results: {}, completed: {}, simulations: {}, writingTimers: {}, vocabulary: {} };
+    return { answers: {}, drafts: {}, results: {}, completed: {}, simulations: {}, vocabulary: {} };
   }
 }
 
@@ -1221,7 +925,7 @@ function saveState(state) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
-function renderLevelSelector(b1, b2, c1, state) {
+function renderLevelSelector(b1, b2, state) {
   return `<div class="telc-shell telc-selector">
     <header class="telc-hero">
       <span class="telc-kicker">Prüfungsstudio · استوديو الامتحانات</span>
@@ -1231,7 +935,6 @@ function renderLevelSelector(b1, b2, c1, state) {
     <div class="telc-level-grid">
       ${levelCard("B1", b1, state, "lime")}
       ${levelCard("B2", b2, state, "violet")}
-      ${levelCard("C1", c1, state, "cyan")}
     </div>
   </div>`;
 }
@@ -1242,7 +945,7 @@ function levelCard(level, data, state, accent) {
     <div class="telc-level-card__head"><span class="telc-level-mark">${level}</span><span>${stats.completed}/${stats.total} مكتمل</span></div>
     <h2>TELC ${level}</h2>
     <p>Niveau ${level} · تدريب متكامل على أقسام الامتحان</p>
-    <div class="telc-metric-row"><span><strong>${stats.total}</strong> مجموعة تدريب</span><span><strong>${Object.keys(data.areaModules || AREA_META).length}</strong> مهارات</span><span><strong>${stats.percent}%</strong> تقدم</span></div>
+    <div class="telc-metric-row"><span><strong>${stats.total}</strong> مجموعة تدريب</span><span><strong>5</strong> مهارات</span><span><strong>${stats.percent}%</strong> تقدم</span></div>
     <div class="telc-progress" aria-label="تقدم ${level}" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${stats.percent}"><span style="width:${stats.percent}%"></span></div>
     <span class="telc-primary-link">ابدأ تدريب ${level}<span aria-hidden="true">←</span></span>
   </a>`;
@@ -1256,22 +959,17 @@ function renderDashboard(level, data, state) {
       <div class="telc-progress-card"><strong>${stats.percent}%</strong><span>${stats.completed} من ${stats.total} مجموعة مكتملة</span><div class="telc-progress"><span style="width:${stats.percent}%"></span></div></div>
     </header>
     <section class="telc-area-grid" aria-label="أقسام امتحان TELC ${level}">
-      ${Object.entries(AREA_META).filter(([key]) => modulesForArea(level, key, data).length).map(([key, area]) => areaCard(level, key, area, data, state)).join("")}
-      ${renderSimulationCard(level, data, state)}
+      ${Object.entries(AREA_META).map(([key, area]) => areaCard(level, key, area, data, state)).join("")}
     </section>
+    ${renderSimulationCard(level, data, state)}
   </div>`;
 }
 
 function renderSimulationCard(level, data, state) {
-  if (level === "C1") {
-    const total = Object.values(data.modules).reduce((sum, items) => sum + items.reduce((count, item) => count + (item.count || 1), 0), 0);
-    const local = Object.values(data.modules).reduce((sum, items) => sum + items.filter((item) => item.localAvailable).length, 0);
-    return `<section class="telc-simulation-card telc-catalog-card telc-simulation-card--c1"><div class="telc-simulation-card__copy"><span class="telc-kicker">C1 · ÜBERSICHT</span><h2>فهرس C1 الكامل</h2><p>تظهر هنا كل التمارين المنشورة. التمارين المتاحة محليًا تفتح داخل التطبيق، أما البطاقات غير المستوردة فتظهر معلّمة بوضوح بدل التعليق أو التحويل إلى موقع خارجي.</p></div><div class="telc-simulation-card__status"><strong>${local}/${total}</strong><span>تمرينًا متاحًا محليًا</span></div></section>`;
-  }
   const session = state.simulations[level];
   const moduleCount = Object.keys(data.modules).length;
   const completed = session?.completed?.length || 0;
-  return `<section class="telc-simulation-card telc-simulation-card--${level.toLowerCase()}" data-simulation-level="${level}">
+  return `<section class="telc-simulation-card" data-simulation-level="${level}">
     <div class="telc-simulation-card__copy"><span class="telc-kicker">Prüfungssimulation · محاكاة الامتحان</span><h2>اختبر استعدادك في جلسة كاملة</h2><p>تمرين واحد من كل جزء، مؤقت مستمر، وإجابات محفوظة حتى عند مغادرة الصفحة.</p></div>
     <div class="telc-simulation-card__status"><strong>${session ? `${completed}/${moduleCount}` : moduleCount}</strong><span>${session ? `أجزاء مكتملة${session.pausedAt ? " · متوقفة مؤقتًا" : ""}` : "أجزاء الامتحان"}</span></div>
     <a class="telc-primary-link" href="#/telc/${level}/simulation">${session ? "تابع المحاكاة" : "ابدأ المحاكاة"}<span aria-hidden="true">←</span></a>
@@ -1312,7 +1010,7 @@ function renderResults(level, data, state) {
       <article><span>متوسط التصحيح</span><strong>${average}%</strong><p>${correct} من ${total || 0} إجابة صحيحة</p></article>
       <article><span>محاولات مصححة</span><strong>${scored.length}</strong><p>يمكنك إعادة أي تمرين بلا حدود</p></article>
     </section>
-    <section class="telc-result-breakdown">${Object.entries(AREA_META).filter(([areaKey]) => modulesForArea(level, areaKey, data).length).map(([areaKey, area]) => {
+    <section class="telc-result-breakdown">${Object.entries(AREA_META).map(([areaKey, area]) => {
     const moduleNames = new Set(area.modules);
     const areaResults = scored.filter(([key]) => moduleNames.has(key.split(":")[1]));
     const areaCorrect = areaResults.reduce((sum, [, result]) => sum + result.score, 0);
@@ -1324,10 +1022,9 @@ function renderResults(level, data, state) {
 }
 
 function areaCard(level, key, area, data, state) {
-  const modules = modulesForArea(level, key, data);
-  const keys = modules.flatMap((module) => (data.modules[module] || []).flatMap((item) => Array.from({ length: item.count || 1 }, (_, index) => exerciseKey(level, module, { ...item, key: `${item.key}:${index}` }))));
+  const keys = area.modules.flatMap((module) => (data.modules[module] || []).map((item) => exerciseKey(level, module, item)));
   const completed = keys.filter((itemKey) => state.completed[itemKey]).length;
-  return `<a class="telc-area-card telc-area-card--${key}" data-accent="${area.accent}" href="#/telc/${level}/${key}">
+  return `<a class="telc-area-card" data-accent="${area.accent}" href="#/telc/${level}/${key}">
     <div class="telc-area-card__top"><span class="telc-area-index">${String(Object.keys(AREA_META).indexOf(key) + 1).padStart(2, "0")}</span><span>${completed}/${keys.length}</span></div>
     <h2>${area.label}</h2><strong>${area.de}</strong><p>${area.description}</p>
     <div class="telc-area-card__footer"><span>${keys.length} مجموعة</span><span aria-hidden="true">←</span></div>
@@ -1336,33 +1033,27 @@ function areaCard(level, key, area, data, state) {
 
 function renderLibrary(level, areaKey, data, state, selectedModule) {
   const area = AREA_META[areaKey];
-  const availableModules = modulesForArea(level, areaKey, data);
-  const modules = selectedModule && availableModules.includes(selectedModule) ? [selectedModule] : availableModules;
-  const totalCount = modules.reduce((sum, module) => sum + (data.modules[module] || []).reduce((count, item) => count + (item.count || 1), 0), 0);
-  const moduleCount = (module) => (data.modules[module] || []).reduce((count, item) => count + (item.count || 1), 0);
+  const modules = selectedModule && area.modules.includes(selectedModule) ? [selectedModule] : area.modules;
   return `<div class="telc-shell">
     <header class="telc-library-head"><span class="telc-kicker">${area.de}</span><h1>${area.label}</h1><p>${area.description}</p></header>
     <nav class="telc-module-tabs" aria-label="أجزاء ${area.de}">
-      <a class="${selectedModule ? "" : "is-active"}" href="#/telc/${level}/${areaKey}">الكل <span class="telc-module-tab__count">${totalCount}</span></a>
-      ${availableModules.map((module) => `<a class="${selectedModule === module ? "is-active" : ""}" href="#/telc/${level}/${areaKey}/${module}">${MODULE_LABELS[module]} <span class="telc-module-tab__count">${moduleCount(module)}</span></a>`).join("")}
+      <a class="${selectedModule ? "" : "is-active"}" href="#/telc/${level}/${areaKey}">الكل</a>
+      ${area.modules.map((module) => `<a class="${selectedModule === module ? "is-active" : ""}" href="#/telc/${level}/${areaKey}/${module}">${MODULE_LABELS[module]}</a>`).join("")}
     </nav>
     ${modules.map((module) => exerciseSection(level, areaKey, module, data.modules[module] || [], state)).join("")}
   </div>`;
 }
 
 function exerciseSection(level, areaKey, module, items, state) {
-  const catalogCount = items.reduce((sum, item) => sum + (item.count || 1), 0);
-  return `<section class="telc-exercise-section"><div class="telc-section-heading"><div><span>Prüfungsteil</span><h2>${MODULE_LABELS[module]}</h2></div><strong>${catalogCount} مجموعة</strong></div>
+  return `<section class="telc-exercise-section"><div class="telc-section-heading"><div><span>Prüfungsteil</span><h2>${MODULE_LABELS[module]}</h2></div><strong>${items.length} مجموعة</strong></div>
     <div class="telc-exercise-grid">${items.map((item, index) => {
-    if (item.externalUrl) {
-      return `<div class="telc-exercise-card telc-exercise-card--unavailable" aria-label="${escapeAttribute(exerciseTitle(item))}"><div class="telc-exercise-card__content"><h3>${escapeHtml(exerciseTitle(item))}</h3><p>${escapeHtml(item.description || "تمرين منشور — سيتم استيراد محتواه المحلي")}</p></div><div class="telc-exercise-card__meta"><span class="telc-exercise-number">${String(index + 1).padStart(2, "0")}</span><span class="telc-exercise-status">المحتوى المحلي قيد الإضافة</span></div></div>`;
-    }
     const key = exerciseKey(level, module, item);
     const result = state.results[key];
     const complete = Boolean(state.completed[key]);
     return `<a class="telc-exercise-card ${complete ? "is-complete" : ""}" href="#/telc/${level}/${areaKey}/${module}/${index}">
-        <div class="telc-exercise-card__content"><h3>${escapeHtml(exerciseTitle(item))}</h3><p>${exerciseSubtitle(module, item)}</p></div>
-        <div class="telc-exercise-card__meta"><span class="telc-exercise-number">${String(index + 1).padStart(2, "0")}</span><span class="telc-exercise-status">${result ? `${result.score}/${result.total}` : complete ? "مكتمل" : "ابدأ"}</span></div>
+        <span class="telc-exercise-number">${String(index + 1).padStart(2, "0")}</span>
+        <div><h3>${escapeHtml(exerciseTitle(item))}</h3><p>${exerciseSubtitle(module, item)}</p></div>
+        <span class="telc-exercise-status">${result ? `${result.score}/${result.total}` : complete ? "مكتمل" : "ابدأ"}</span>
       </a>`;
   }).join("")}</div></section>`;
 }
@@ -1373,7 +1064,7 @@ function renderExercise(level, areaKey, module, index, item, total, state) {
   const saved = state.answers[key] || {};
   const result = state.results[key];
   const complete = Boolean(state.completed[key]);
-  const body = renderExerciseBody(level, module, item, key, saved, result, state.drafts[key] || "");
+  const body = renderExerciseBody(module, item, key, saved, result, state.drafts[key] || "");
   const previous = index > 0 ? `#/telc/${level}/${areaKey}/${module}/${index - 1}` : null;
   const next = index + 1 < total ? `#/telc/${level}/${areaKey}/${module}/${index + 1}` : `#/telc/${level}/${areaKey}/${module}`;
 
@@ -1383,12 +1074,10 @@ function renderExercise(level, areaKey, module, index, item, total, state) {
     ${result ? `<div class="telc-result ${result.percent >= 60 ? "is-pass" : "is-review"}"><strong>${result.score}/${result.total}</strong><span>${result.percent >= 60 ? "أحسنت — نتيجة ناجحة" : "راجع الإجابات وحاول مجددًا"}</span><em>${result.percent}%</em></div>` : ""}
     ${body}
     ${vocabularyControls}
-    <div class="telc-exam-actions-wrap">
-      <footer class="telc-exam-actions">
-        <div><a class="telc-secondary-link" href="#/telc/${level}/${areaKey}/${module}"><span class="telc-action-label">العودة للقائمة</span><span class="telc-action-icon" aria-hidden="true">☷</span></a>${previous ? `<a class="telc-secondary-link" href="${previous}"><span class="telc-action-label">السابق</span><span class="telc-action-icon" aria-hidden="true">←</span></a>` : ""}<a class="telc-secondary-link" href="${next}"><span class="telc-action-label">التالي</span><span class="telc-action-icon" aria-hidden="true">→</span></a></div>
-        <div><button class="telc-quiet-button" type="button" data-telc-reset="${escapeAttribute(key)}"><span class="telc-action-label">إعادة الضبط</span><span class="telc-action-icon" aria-hidden="true">↻</span></button><button class="telc-submit-button" type="button" data-telc-${expected ? "submit" : "complete"}="${escapeAttribute(key)}"><span class="telc-action-label">${expected ? "تصحيح الإجابات" : complete ? "تم الإنجاز ✓" : "حفظ كمنجز"}</span><span class="telc-action-icon" aria-hidden="true">✓</span></button></div>
-      </footer>
-    </div>
+    <footer class="telc-exam-actions">
+      <div><a class="telc-secondary-link" href="#/telc/${level}/${areaKey}/${module}">العودة للقائمة</a>${previous ? `<a class="telc-secondary-link" href="${previous}">السابق</a>` : ""}<a class="telc-secondary-link" href="${next}">التالي</a></div>
+      <div><button class="telc-quiet-button" type="button" data-telc-reset="${escapeAttribute(key)}">إعادة الضبط</button><button class="telc-submit-button" type="button" data-telc-${expected ? "submit" : "complete"}="${escapeAttribute(key)}">${expected ? "تصحيح الإجابات" : complete ? "تم الإنجاز ✓" : "حفظ كمنجز"}</button></div>
+    </footer>
   </div>`;
 }
 
@@ -1416,108 +1105,18 @@ function renderVocabularyControls() {
 }
 
 function renderVocabularyPassage(text, passageId) {
-  const hasEvidence = /\*\*.+?\*\*/s.test(String(text ?? ""));
-  return `<div class="telc-evidence-passage" data-vocabulary-passage="${escapeAttribute(passageId)}">
-    <div class="telc-evidence-toolbar">${hasEvidence ? renderEvidenceIcon() : ""}${renderTranslationIcon()}</div>
-    <div class="telc-evidence-content">${formatRichText(text)}</div>
-    <div class="telc-arabic-translation" data-telc-arabic-translation dir="rtl" lang="ar" hidden></div>
-  </div>`;
+  return `<div data-vocabulary-passage="${escapeAttribute(passageId)}">${formatRichText(text)}</div>`;
 }
 
-function renderEvidenceIcon() {
-  return '<button type="button" class="telc-evidence-toggle telc-icon-tool" data-telc-evidence-toggle aria-pressed="false" aria-label="Schlüsselwörter anzeigen" title="Schlüsselwörter anzeigen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.7 17.7 7 20.4H3.6v-3.3l6.1-6.2a6 6 0 1 1 3.4 3.4l-1.5 1.5-1.6-1.6-1.5 1.5 1.2 2Z"/><circle cx="15.5" cy="8.5" r="1.5"/></svg><span>إظهار الكلمات المفتاحية</span></button>';
-}
-
-function renderTranslationIcon() {
-  return '<button type="button" class="telc-translation-toggle telc-icon-tool" data-telc-translate-passage aria-pressed="false" aria-label="Gesamten Text ins Arabische übersetzen" title="Ins Arabische übersetzen"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 8L10 13M4 14L10 8L12 5M2 5H14M7 2H8M12.913 17H20.087M12.913 17L11 21M12.913 17L15.7783 11.009C16.0092 10.5263 16.1246 10.2849 16.2826 10.2086C16.4199 10.1423 16.5801 10.1423 16.7174 10.2086C16.8754 10.2849 16.9908 10.5263 17.2217 11.009L20.087 17M20.087 17L22 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ترجمة النص إلى العربية</span></button>';
-}
-
-function renderTestInstruction(de, ar) {
-  return `<details class="telc-instruction"><summary><span class="telc-instruction__de">Aufgabe</span></summary><p lang="de">${escapeHtml(de)}</p><p lang="ar" dir="rtl">${escapeHtml(ar)}</p></details>`;
-}
-
-function renderExerciseBody(level, module, item, key, saved, result, draft) {
-  if (module === "lesenTeil1" && item.blocks) return renderC1GapInsertion(item, key, saved, result);
-  if (level === "C1" && module === "hoerenTeil2" && item.items?.length) return renderC1ImportedSource(module, item, key, saved, result);
-  if (item.sourceModel) return renderC1ImportedSource(module, item, key, saved, result);
+function renderExerciseBody(module, item, key, saved, result, draft) {
   if (module === "lesenTeil1") return renderHeadingMatch(item, key, saved, result);
   if (module === "lesenTeil2") return renderReadingChoice(item, key, saved, result);
-  if (module === "lesenTeil3") return item.choices?.includes("not_stated")
-    ? renderC1ReadingStatements(item, key, saved, result)
-    : renderSituationMatch(item, key, saved, result);
+  if (module === "lesenTeil3") return renderSituationMatch(item, key, saved, result);
   if (module === "sprachbausteineTeil1") return renderGapOptions(item, saved, result);
   if (module === "sprachbausteineTeil2") return renderWordBank(item, saved, result);
   if (module.startsWith("hoeren")) return renderListening(item, saved, result);
-  if (module === "schreiben") return renderWriting(level, item, key, draft);
+  if (module === "schreiben") return renderWriting(item, key, draft);
   return renderSpeaking(item, key, draft);
-}
-
-function renderC1ImportedSource(module, item, key, saved, result) {
-  if (module === "lesenTeil2") return renderReadingChoice(item, key, saved, result);
-  if (module === "sprachbausteineTeil1") return renderGapOptions(item, saved, result);
-  if (module === "hoerenTeil2") {
-    const questions = item.items || [];
-    const reviewOnly = questions.some((question) => !(question.options || []).length);
-    const rows = questions.map((question, index) => {
-      if (!(question.options || []).length) {
-        return `<label class="telc-self-check telc-review-question"><input type="checkbox" data-telc-answer="${escapeAttribute(index)}" value="reviewed" ${saved[String(index)] ? "checked" : ""}><span class="telc-checkmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span class="telc-self-check__text">${escapeHtml(question.text || `Aufgabe ${index + 1}`)}</span></label>`;
-      }
-      return radioQuestion(String(index), question.text, question.options, saved[String(index)], question.answer, result, "letter", question.options?.[String(question.answer || "").toLowerCase().charCodeAt(0) - 97] || "");
-    }).join("");
-    return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining · Teil 2</span><h2>${escapeHtml(exerciseTitle(item))}</h2>${reviewOnly ? `<span class="telc-source-badge is-self-study">Selbststudium · ohne Lösungsschlüssel</span>` : ""}${renderTestInstruction(reviewOnly ? "Lesen Sie die Aufgabenstämme und markieren Sie jede Aufgabe nach dem Durcharbeiten." : "Hören Sie den Text und wählen Sie bei jeder Aufgabe die passende Antwort.", reviewOnly ? "اقرأ بدايات الأسئلة، وبعد مراجعتها علّم كل مهمة كمراجعة مكتملة." : "استمع إلى التسجيل واختر الإجابة المناسبة لكل سؤال.")}</section></main><aside class="telc-question-panel"><h2>Aufgaben</h2>${rows}</aside></div>`;
-  }
-  if (module === "hoerenTeil1") {
-    const choices = (item.statements || []).map((statement) => statement.id);
-    const labels = Object.fromEntries((item.statements || []).map((statement) => [statement.id, statement.de]));
-    const choiceLabels = choices.map((choice) => choice.toUpperCase());
-    const statementBank = choices.length ? `<section class="telc-choice-bank"><h3>Aussagen a–j</h3>${choices.map((choice) => `<div><strong>${choice.toUpperCase()}</strong><span>${escapeHtml(labels[choice] || "")}</span></div>`).join("")}</section>` : "";
-    const transcript = item.sourceModel.transcript || item.transcript || [];
-    const transcriptMarkup = transcript.length ? `<details class="telc-transcript"><summary>Hörtext · إظهار نص الاستماع</summary>${transcript.map((entry) => `<p><strong>Person ${escapeHtml(entry.speaker)}</strong><br>${escapeHtml(entry.de || "")}</p>`).join("")}</details>` : "";
-    return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining · Teil 1</span><h2>${escapeHtml(exerciseTitle(item))}</h2>${renderTestInstruction("Lesen Sie die Aussagen a–j. Hören Sie den Text und ordnen Sie jeder Person die passende Aussage zu.", "اقرأ العبارات من A إلى J، ثم استمع إلى التسجيل واربط كل شخص بالعبارة المناسبة.")}</section>${statementBank}${transcriptMarkup}</main><aside class="telc-question-panel"><h2>Personen</h2>${(item.sourceModel.questions || []).map((question, index) => radioQuestion(String(index), `Person ${question.speaker}`, choiceLabels, saved[String(index)], question.key, result, "letter", labels[question.key] || "")).join("")}</aside></div>`;
-  }
-  if (module === "hoerenTeil3") return renderListeningNotes(item, key, saved);
-  if (module === "lesenTeil3") {
-    const choices = ["true", "false", "not_stated"];
-    return `<div class="telc-workspace"><article class="telc-reading-paper">${renderVocabularyPassage(item.text, `${key}:text`)}</article><aside class="telc-question-panel"><h2>Aufgaben</h2>${(item.situations || []).map((question, index) => { const expected = question.answer === "true" ? "a" : question.answer === "false" ? "b" : "c"; return radioQuestion(String(index), question.text, choices.map((value) => value === "true" ? "Richtig" : value === "false" ? "Falsch" : "Nicht im Text"), saved[String(index)], expected, result, "letter"); }).join("")}</aside></div>`;
-  }
-  return renderListening(item, saved, result);
-}
-
-function renderC1ReadingStatements(item, key, saved, result) {
-  const choices = ["Richtig", "Falsch", "Nicht im Text"];
-  const expectedFor = (answer) => answer === "true" ? "a" : answer === "false" ? "b" : "c";
-  return `<div class="telc-workspace"><main class="telc-content-stack">${renderTestInstruction("Lesen Sie den Text und entscheiden Sie bei jeder Aussage: richtig, falsch oder nicht im Text.", "اقرأ النص وحدد لكل عبارة: صحيح أم خطأ أم أنها غير مذكورة في النص.")}<article class="telc-reading-paper">${renderVocabularyPassage(item.text, `${key}:text`)}</article></main><aside class="telc-question-panel"><h2>Aussagen</h2>${(item.situations || []).map((situation, index) => radioQuestion(String(index), situation.text, choices, saved[String(index)], expectedFor(situation.answer), result, "letter")).join("")}</aside></div>`;
-}
-
-function renderListeningNotes(item, key, saved) {
-  const source = item.sourceModel || {};
-  const questions = new Map((source.questions || []).map((question) => [String(question.n), question]));
-  const groups = source.groups || [];
-  const renderNoteRow = (entry) => {
-    const question = questions.get(String(entry.n));
-    if (!question) return "";
-    const fallbackPrompt = `Lücke ${entry.n}`;
-    const prompt = question.prompt?.de || item.items?.find((candidate) => String(candidate.id) === String(entry.n))?.text || fallbackPrompt;
-    const answer = question.a?.de || item.items?.find((candidate) => String(candidate.id) === String(entry.n))?.answer || "";
-    const value = saved[String(entry.n)] || "";
-    const promptText = prompt === fallbackPrompt ? "" : prompt;
-    return `<div class="telc-note-row"><label for="telc-note-${escapeAttribute(entry.n)}"><strong>Lücke ${escapeHtml(entry.n)}</strong>${promptText ? `<span>${escapeHtml(promptText)}</span>` : ""}</label><input id="telc-note-${escapeAttribute(entry.n)}" class="telc-note-input" type="text" data-telc-answer="${escapeAttribute(entry.n)}" value="${escapeAttribute(value)}" autocomplete="off"><details class="telc-note-answer"><summary>Antwort anzeigen</summary><p>${escapeHtml(answer)}</p></details></div>`;
-  };
-  const audio = item.audioUrl ? `<audio class="telc-listening-audio" controls preload="none" src="${escapeAttribute(item.audioUrl)}"><a href="${escapeAttribute(item.audioUrl)}">Audio abspielen</a></audio>` : "";
-  return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining · Teil 3</span><h2>${escapeHtml(exerciseTitle(item))}</h2><span class="telc-source-badge is-audio-only">Audio verfügbar · Lösungsschlüssel nicht verifiziert</span>${renderTestInstruction("Hören Sie den Text und ergänzen Sie die Notizen. Öffnen Sie die Antwort nur zur Kontrolle.", "استمع إلى التسجيل وأكمل الملاحظات. افتح الإجابة عند الحاجة للمراجعة فقط.")}${audio}</section></main><aside class="telc-question-panel telc-note-panel"><h2>Notizen und Redemittel</h2>${groups.map((group) => `<section class="telc-note-group"><h3>${escapeHtml(group.de || "Weitere Angaben")}</h3>${(group.sequence || []).filter((entry) => entry.kind === "gap").map(renderNoteRow).join("")}</section>`).join("")}</aside></div>`;
-}
-
-function renderC1GapInsertion(item, key, saved, result) {
-  const options = Object.fromEntries(item.options.filter((option) => !option.exampleOnly).map((option) => [option.id, option.text.de]));
-  const renderPart = (part) => part?.type === "gap"
-    ? `<span class="telc-c1-gap-slot">${part.id === 0 ? "Beispiel" : selectControl(String(part.id), Object.keys(options), saved[String(part.id)], "Lücke", options)}</span>`
-    : `<span>${escapeHtml(typeof part?.text === "object" ? part.text.de : part?.text || "")} </span>`;
-  const text = (item.blocks || []).map((block) => {
-    if (block.kind === "rich") return (block.parts || []).map(renderPart).join("");
-    return block.kind === "gap" ? renderPart(block) : renderPart({ type: "text", text: block.text });
-  }).join("");
-  const instruction = item.instructions?.de?.body || item.instructions?.de || "Lesen Sie den folgenden Text und ergänzen Sie die Lücken.";
-  return `<article class="telc-reading-paper telc-c1-reading-paper">${renderTestInstruction(instruction, "اقرأ النص واختر الجمل المناسبة للفراغات. لكل فراغ إجابة صحيحة واحدة فقط.")}<div class="telc-gap-paper__intro"><span>C1 · Leseverstehen · Teil 1</span>${renderTranslationIcon()}</div><h2>${escapeHtml(item.title?.de || item.title || "")}</h2><div class="telc-c1-reading-text" data-vocabulary-passage="${escapeAttribute(`${key}:passage`)}"><div class="telc-evidence-content">${text}</div><div class="telc-arabic-translation" data-telc-arabic-translation dir="rtl" lang="ar" hidden></div></div><aside class="telc-c1-option-bank"><h3>Sätze a–h</h3>${Object.entries(options).map(([id, label]) => `<div><strong>${id.toUpperCase()}</strong><span>${escapeHtml(label)}</span></div>`).join("")}</aside></article>`;
 }
 
 function renderHeadingMatch(item, key, saved, result) {
@@ -1525,155 +1124,49 @@ function renderHeadingMatch(item, key, saved, result) {
   const headingLabels = Object.fromEntries(letters.map((letter, index) => [letter, item.headings[index]]));
   return `<div class="telc-workspace"><main class="telc-content-stack">${item.texte.map((text, index) => {
     const question = String(index);
-    const correctHeading = item.headings[letters.indexOf(String(item.answers[index]).toLowerCase())] || "";
-    const explicitEvidence = HEADING_EVIDENCE_OVERRIDES[item.key]?.[index] || [];
-    const enrichedText = withExplicitKeywords(
-      withHeadingEvidence(text, correctHeading, explicitEvidence),
-      item.textKeywords?.[index] || [],
-    );
-    return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span><div class="telc-inline-tools">${renderEvidenceIcon()}${renderTranslationIcon()}</div>${selectControl(question, letters, saved[question], "اختر العنوان", headingLabels)}</div><div class="telc-evidence-passage" data-vocabulary-passage="${escapeAttribute(`${key}:text:${index}`)}"><div class="telc-evidence-content">${formatRichText(enrichedText)}</div><div class="telc-arabic-translation" data-telc-arabic-translation dir="rtl" lang="ar" hidden></div></div></article>`;
+    return `<article class="telc-text-card ${feedbackClass(result, saved[question], item.answers[index])}"><div class="telc-text-card__answer"><span>Text ${index + 1}</span>${selectControl(question, letters, saved[question], "اختر العنوان", headingLabels)}</div>${renderVocabularyPassage(text, `${key}:text:${index}`)}</article>`;
   }).join("")}</main><aside class="telc-reference-panel"><h2>Überschriften</h2>${item.headings.map((heading, index) => `<div class="telc-heading-option"><strong>${letters[index].toUpperCase()}</strong><span>${inlineRichText(heading)}</span></div>`).join("")}</aside></div>`;
-}
-
-const EVIDENCE_STOP_WORDS = new Set("aber alle allem allen aller alles auch beim bereits damit dann dass deine einem einen einer eines für haben ihre ihren ihrer ihres immer kann können macht mehr neue neuen neuer neues nicht noch oder ohne sehr sein seine seit sich sind sowie über unter vom von vor wenn werden wird wurde zum zur zwischen".split(" "));
-
-const HEADING_EVIDENCE_OVERRIDES = {
-  lv1_spiele: [["Plüschtiere einzeln angefertigt"], [], ["in die Hand nehmen"], ["Beim gemeinsamen Spiel"]],
-  lv1_familie: [[], ["Schwarze Schafe"], [], ["richtigen Partner", "zu finden"]],
-  lv1_umwelt: [["Tauschen, nicht wegwerfen"]],
-  lv1_bonbon: [["Geschichte reicht weit zurück"], ["abgelaufenen", "günstiger angeboten"], ["römischen Thermen"], ["kaum einen positiven Einfluss auf die Laune"], ["123 Thermalquellen"]],
-  lv1_wahlen: [["höchste Abschluss, den eine Frau"], [], ["Wahlverhalten von Frauen"], ["Weibliche Studierende", "Studium schneller"]],
-  lv1_rauchen: [[], [], [], ["Sport im Hochgebirge"]],
-  lv1_tanzkurs: [["Extremsport"], [], [], ["Hip-Hop-Tanzgruppe"], ["Terminkalender"]],
-  lv1_pferde: [["auf Pferden"], ["Weltmeisterschaften oder Olympischen Spielen"], ["Rentenalter"], ["Gewichtsabnahme"]],
-  lv1_benzin: [[], [], ["Pilotin"], [], ["Flugreisen"]],
-  lv1_nase: [["plastische Chirurg"]],
-  lv1_jugend: [[], [], [], [], ["Mobbing"]],
-  lv1_handwerk: [[], ["Altstadt", "Fachwerkhäuser"], ["zum Internat umfunktioniert"], ["Museen", "alte Feuerwehrwagen"], ["vor fast 900 Jahren", "Kaffee"]],
-  lv1_foto: [["nächtliche Finsternis"]],
-  lv1_wetter_sturm: [["Namen von Stürmen"]],
-  lv1_loewen: [[], ["südafrikanische Regierung gehandelt"]],
-  lv1_babytv: [["Sprachentwicklung bei Kleinkindern nicht förderlich"], [], [], ["Schwestern"]],
-};
-
-function withHeadingEvidence(text, heading, explicitEvidence = []) {
-  const source = String(text ?? "");
-  if (/\*\*.+?\*\*/s.test(source)) return source;
-  if (explicitEvidence.length) {
-    return explicitEvidence.reduce((result, phrase) => result.replace(
-      new RegExp(`(${escapeRegExp(phrase)})`, "iu"),
-      "**$1**",
-    ), source);
-  }
-  const headingWords = stripFormatting(heading).toLocaleLowerCase("de-DE").match(/[a-zäöüß]{5,}/gu) || [];
-  const sourceWords = source.match(/[A-Za-zÄÖÜäöüß]{5,}/gu) || [];
-  const candidates = [...new Set(headingWords)]
-    .filter((word) => !EVIDENCE_STOP_WORDS.has(word))
-    .map((word) => sourceWords.find((sourceWord) => {
-      const normalized = sourceWord.toLocaleLowerCase("de-DE");
-      return normalized === word || (word.length >= 7 && normalized.length >= 7 && normalized.slice(0, 6) === word.slice(0, 6));
-    }))
-    .filter(Boolean)
-    .sort((left, right) => right.length - left.length)
-    .slice(0, 3);
-  return candidates.reduce((result, word) => result.replace(
-    new RegExp(`(^|[^\\p{L}])(${escapeRegExp(word)})(?=$|[^\\p{L}])`, "iu"),
-    "$1**$2**",
-  ), source);
-}
-
-function withExplicitKeywords(text, keywords = []) {
-  let parts = String(text ?? "").split(/(\*\*.*?\*\*)/gs);
-  [...new Set(keywords.filter(Boolean))]
-    .sort((left, right) => right.length - left.length)
-    .forEach((phrase) => {
-      const expression = new RegExp(`(${escapeRegExp(phrase)})`, "iu");
-      const index = parts.findIndex((part, partIndex) => partIndex % 2 === 0 && expression.test(part));
-      if (index < 0) return;
-      parts[index] = parts[index].replace(expression, "**$1**");
-      parts = parts.flatMap((part) => part.split(/(\*\*.*?\*\*)/gs)).filter((part) => part !== "");
-    });
-  return parts.join("");
-}
-
-function escapeRegExp(value) {
-  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function renderReadingChoice(item, key, saved, result) {
   const variant = item.variants?.[0];
   const questions = item.questions || variant?.fragen || [];
-  const enrichedText = withExplicitKeywords(item.text, item.textKeywords || []);
-  const sections = item.paragraphs || [];
-  const sectionLabels = Object.fromEntries(sections.map((section) => [String(section.label).toLowerCase(), section.de]));
-  const sectionBank = sections.length ? `<section class="telc-c1-section-bank"><h2>Abschnitte a–e</h2>${sections.map((section) => `<article><strong>${escapeHtml(String(section.label).toUpperCase())}</strong><p>${escapeHtml(section.de)}</p></article>`).join("")}</section>` : "";
-  return `<div class="telc-workspace"><main class="telc-content-stack">${renderTestInstruction("Lesen Sie den Text und wählen Sie für jede Aufgabe den passenden Abschnitt.", "اقرأ النص واختر لكل سؤال الفقرة المناسبة.")}<article class="telc-reading-paper">${renderVocabularyPassage(enrichedText, `${key}:text`)}</article>${sectionBank}</main><aside class="telc-question-panel"><h2>Aufgaben</h2>${questions.map((question, index) => {
+  return `<div class="telc-workspace"><article class="telc-reading-paper">${renderVocabularyPassage(item.text, `${key}:text`)}</article><aside class="telc-question-panel"><h2>Aufgaben</h2>${questions.map((question, index) => {
     const options = question.opts || question.options || [];
-    const optionLabels = sections.length
-      ? options.map((option) => String(option).toUpperCase())
-      : options;
     const expected = question.answer ?? question.correct;
-    const correctIndex = typeof expected === "number" ? expected : String(expected).toLowerCase().charCodeAt(0) - 97;
-    const evidence = optionLabels[correctIndex] || "";
-    const clues = item.questionKeywords?.[index] || [];
-    return radioQuestion(String(index), question.text, optionLabels, saved[String(index)], expected, result, typeof expected === "number" ? "index" : "letter", evidence, clues);
+    return radioQuestion(String(index), question.text, options, saved[String(index)], expected, result, typeof expected === "number" ? "index" : "letter");
   }).join("")}</aside></div>`;
 }
 
 function renderSituationMatch(item, key, saved, result) {
   const materials = item.anzeigen || item.infotexts || {};
   const keys = Object.keys(materials);
-  const answerOptions = item.situations.some((situation) => String(situation.answer).toLowerCase() === "x")
-    ? [...keys, keys.some((letter) => letter === letter.toUpperCase()) ? "X" : "x"]
-    : keys;
-  return `<div class="telc-workspace"><main class="telc-content-stack">${item.situations.map((situation, index) => {
-    const answer = String(situation.answer).toLowerCase();
-    const noMatch = answer === "x" || !keys.some((letter) => letter.toLowerCase() === answer);
-    return `<article class="telc-situation-card ${feedbackClass(result, saved[String(index)], situation.answer)}"><span>${situation.id ?? index + 1}</span><div>${renderVocabularyPassage(situation.text, `${key}:situation:${situation.id ?? index}`)}</div>${selectControl(String(index), answerOptions, saved[String(index)], "اختر الإعلان")}<button class="telc-match-evidence" type="button" data-telc-match-evidence="${escapeAttribute(answer)}" data-telc-no-match="${noMatch}" aria-pressed="false"><b aria-hidden="true">🔑</b><span>إظهار الإعلان المناسب</span></button>${noMatch ? '<p class="telc-no-match-note" data-telc-no-match-note hidden>Keine passende Anzeige · لا يوجد إعلان مناسب</p>' : ""}</article>`;
-  }).join("")}</main><aside class="telc-reference-panel telc-reference-panel--wide"><h2>Anzeigen</h2>${keys.map((letter) => `<details data-telc-evidence-id="${escapeAttribute(letter.toLowerCase())}"><summary><strong>${letter}</strong> Anzeige ${letter}</summary>${renderVocabularyPassage(materials[letter], `${key}:ad:${letter}`)}</details>`).join("")}</aside></div>`;
+  return `<div class="telc-workspace"><main class="telc-content-stack">${item.situations.map((situation, index) => `<article class="telc-situation-card ${feedbackClass(result, saved[String(index)], situation.answer)}"><span>${situation.id ?? index + 1}</span><div>${renderVocabularyPassage(situation.text, `${key}:situation:${situation.id ?? index}`)}</div>${selectControl(String(index), keys, saved[String(index)], "اختر الإعلان")}</article>`).join("")}</main><aside class="telc-reference-panel telc-reference-panel--wide"><h2>Anzeigen</h2>${keys.map((letter) => `<details><summary><strong>${letter}</strong> Anzeige ${letter}</summary>${renderVocabularyPassage(materials[letter], `${key}:ad:${letter}`)}</details>`).join("")}</aside></div>`;
 }
 
 function renderGapOptions(item, saved, result) {
-  return `<article class="telc-reading-paper telc-gap-paper">${renderTestInstruction("Lesen Sie den Text und wählen Sie für jede Lücke die passende Lösung.", "اقرأ النص واختر الحل المناسب لكل فراغ.")}<div class="telc-gap-paper__intro"><span>Sprachbausteine</span><strong>اختر الإجابة مباشرة داخل النص</strong>${renderGapEvidenceButton()}</div>${formatGapText(item, saved, result)}</article>`;
+  return `<article class="telc-reading-paper telc-gap-paper"><div class="telc-gap-paper__intro"><span>Sprachbausteine</span><strong>اختر الإجابة مباشرة داخل النص</strong></div>${formatGapText(item, saved, result)}</article>`;
 }
 
 function renderWordBank(item, saved, result) {
   const words = item.woerter || {};
   const keys = Object.keys(words);
-  return `<div class="telc-workspace telc-gap-workspace"><article class="telc-reading-paper telc-gap-paper">${renderTestInstruction("Lesen Sie den Text und setzen Sie die passenden Wörter aus der Wortbank ein.", "اقرأ النص واستخدم الكلمات المناسبة من بنك الكلمات.")}<div class="telc-gap-paper__intro"><span>Sprachbausteine</span><strong>اختر الكلمة مباشرة داخل النص</strong>${renderGapEvidenceButton()}</div>${formatGapText(item, saved, result, words)}</article><aside class="telc-reference-panel"><h2>Wortbank</h2><div class="telc-word-bank">${keys.map((letter) => `<span><strong>${letter.toUpperCase()}</strong>${escapeHtml(words[letter])}</span>`).join("")}</div></aside></div>`;
-}
-
-function renderGapEvidenceButton() {
-  return '<button class="telc-gap-evidence" type="button" data-telc-gap-evidence aria-pressed="false"><span>Lösungen anzeigen</span></button>';
+  return `<div class="telc-workspace telc-gap-workspace"><article class="telc-reading-paper telc-gap-paper"><div class="telc-gap-paper__intro"><span>Sprachbausteine</span><strong>اختر الكلمة مباشرة داخل النص</strong></div>${formatGapText(item, saved, result, words)}</article><aside class="telc-reference-panel"><h2>Wortbank</h2><div class="telc-word-bank">${keys.map((letter) => `<span><strong>${letter.toUpperCase()}</strong>${escapeHtml(words[letter])}</span>`).join("")}</div></aside></div>`;
 }
 
 function renderListening(item, saved, result) {
   const items = item.items || (item.aussagen || []).map((text, index) => ({ id: index + 1, text }));
-  const listeningTitle = exerciseTitle(item);
   const hasAnswers = items.every((entry) => typeof entry.answer === "boolean");
-  const audio = item.audioUrl ? `<audio class="telc-listening-audio" controls preload="none" src="${escapeAttribute(item.audioUrl)}"><a href="${escapeAttribute(item.audioUrl)}">Audio abspielen</a></audio>` : "";
-  const sourceBadge = hasAnswers ? `<span class="telc-source-badge is-verified">Verifiziert</span>` : item.audioUrl ? `<span class="telc-source-badge is-audio-only">Audio verfügbar · Lösungsschlüssel nicht verifiziert</span>` : `<span class="telc-source-badge is-self-study">Selbststudium · ohne Lösungsschlüssel</span>`;
-  const listeningInstruction = hasAnswers ? "اقرأ العبارات ثم استمع واختر صحيح أو خطأ." : item.audioUrl ? "استمع إلى التسجيل وراجع العبارات؛ لم يتم اعتماد مفتاح إجابة لهذه النسخة." : "هذه المجموعة مخصصة للتدريب الذاتي؛ لا توجد إجابات موثقة أو تسجيل صوتي مضمّن لهذه النسخة.";
-  const germanInstruction = hasAnswers ? "Lesen Sie die Aussagen, hören Sie den Text und wählen Sie richtig oder falsch." : item.audioUrl ? "Hören Sie den Text und bearbeiten Sie die Aussagen. Der Lösungsschlüssel ist für diese Version nicht verifiziert." : "Bearbeiten Sie die Aussagen selbstständig; für diese Version gibt es keinen verifizierten Lösungsschlüssel.";
-  return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining</span><h2>${escapeHtml(listeningTitle)}</h2>${sourceBadge}${renderTestInstruction(germanInstruction, listeningInstruction)}${audio}${item.code ? `<strong>Audio-Code: ${escapeHtml(item.code)}</strong>` : ""}</section>${item.hoertext ? `<details class="telc-transcript"><summary>إظهار نص الاستماع · Hörtext</summary>${formatRichText(item.hoertext)}</details>` : ""}</main><aside class="telc-question-panel"><h2>Aussagen</h2>${items.map((entry, index) => hasAnswers ? radioQuestion(String(index), entry.text, ["Richtig", "Falsch"], saved[String(index)], entry.answer, result, "boolean", entry.answer ? "Richtig" : "Falsch") : `<label class="telc-self-check"><input type="checkbox" data-telc-answer="${index}" value="reviewed" ${saved[String(index)] ? "checked" : ""}><span class="telc-checkmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span class="telc-self-check__text">${escapeHtml(entry.text)}</span></label>`).join("")}</aside></div>`;
+  return `<div class="telc-workspace"><main class="telc-content-stack"><section class="telc-listening-intro"><span>Hörtraining</span><h2>${escapeHtml(item.title || item.name)}</h2><p>${hasAnswers ? "اقرأ العبارات ثم اختر صحيح أو خطأ. يمكنك فتح نص الاستماع عند الحاجة." : "هذه المجموعة مخصصة للتدريب الذاتي. استمع إلى المادة المرتبطة بالكود ثم علّم العبارات التي راجعتها."}</p>${item.code ? `<strong>Audio-Code: ${escapeHtml(item.code)}</strong>` : ""}</section>${item.hoertext ? `<details class="telc-transcript"><summary>إظهار نص الاستماع · Hörtext</summary>${formatRichText(item.hoertext)}</details>` : ""}</main><aside class="telc-question-panel"><h2>Aussagen</h2>${items.map((entry, index) => hasAnswers ? radioQuestion(String(index), entry.text, ["Richtig", "Falsch"], saved[String(index)], entry.answer, result, "boolean") : `<label class="telc-self-check"><input type="checkbox" data-telc-answer="${index}" value="reviewed" ${saved[String(index)] ? "checked" : ""}><span class="telc-checkmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span class="telc-self-check__text">${escapeHtml(entry.text)}</span></label>`).join("")}</aside></div>`;
 }
 
-function renderWriting(level, item, key, draft) {
-  const target = level === "C1" ? 350 : level === "B2" ? 150 : 80;
-  const words = countWords(draft);
-  const prompt = `<div class="telc-evidence-passage telc-writing-prompt" data-vocabulary-passage="${escapeAttribute(`${key}:prompt`)}"><div class="telc-evidence-content"><p>${escapeHtml(item.situation)}</p>${item.anzeige ? `<blockquote>${escapeHtml(item.anzeige)}</blockquote>` : ""}</div><div class="telc-arabic-translation" data-telc-arabic-translation dir="rtl" lang="ar" hidden></div></div>`;
-  const instruction = level === "C1" ? renderTestInstruction("Schreiben Sie einen klar gegliederten Text und behandeln Sie alle vorgegebenen Inhaltspunkte.", "اكتب نصًا منظمًا وواضحًا وتناول جميع النقاط المطلوبة.") : "";
-  return `<div class="telc-writing-layout"><section class="telc-prompt-card"><div class="telc-prompt-heading"><div><span>Situation</span><h2>${escapeHtml(item.title)}</h2></div>${renderTranslationIcon()}</div>${instruction}${prompt}<h3>Behandeln Sie diese Punkte:</h3><div class="telc-writing-checklist">${item.punkte.map((point, index) => `<label><input type="checkbox"><span>${index + 1}</span><b>${escapeHtml(point)}</b></label>`).join("")}</div><details class="telc-writing-guide"><summary>Redemittel und Aufbau</summary><ul><li>Anrede und passender Einstieg</li><li>Alle Inhaltspunkte logisch verbinden</li><li>Eigene Erwartung oder Bitte klar formulieren</li><li>Passender Schluss und Grußformel</li></ul></details></section><section class="telc-editor-card"><div class="telc-writing-status"><label for="telc-draft">Ihre Antwort</label><div><time data-writing-timer="${escapeAttribute(key)}">30:00</time><button class="telc-writing-timer-button" type="button" aria-label="Timer starten" title="Timer starten" data-writing-timer-start="${escapeAttribute(key)}">▶</button><button class="telc-writing-timer-button" type="button" aria-label="Timer zurücksetzen" title="Timer zurücksetzen" data-writing-timer-reset="${escapeAttribute(key)}">↻</button></div></div>${characterToolbar("telc-draft")}<textarea id="telc-draft" data-telc-draft="${escapeAttribute(key)}" placeholder="Schreiben Sie hier Ihre Antwort …">${escapeHtml(draft)}</textarea><div><span data-draft-count data-word-target="${target}" class="${words >= target ? "is-target-met" : ""}">${words}/${target} Wörter · ${draft.length} Zeichen</span><span>المسودة محفوظة تلقائيًا</span></div></section></div>`;
-}
-
-function countWords(value) {
-  return (String(value).trim().match(/[\p{L}\p{N}]+(?:['’\-][\p{L}\p{N}]+)*/gu) || []).length;
+function renderWriting(item, key, draft) {
+  return `<div class="telc-writing-layout"><section class="telc-prompt-card"><span>Situation</span><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.situation)}</p>${item.anzeige ? `<blockquote>${escapeHtml(item.anzeige)}</blockquote>` : ""}<h3>Behandeln Sie diese Punkte:</h3><ol>${item.punkte.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol></section><section class="telc-editor-card"><label for="telc-draft">Ihre Antwort</label>${characterToolbar("telc-draft")}<textarea id="telc-draft" data-telc-draft="${escapeAttribute(key)}" placeholder="Schreiben Sie hier Ihre Antwort …">${escapeHtml(draft)}</textarea><div><span data-draft-count>${draft.length} Zeichen</span><span>المسودة محفوظة تلقائيًا</span></div></section></div>`;
 }
 
 function renderSpeaking(item, key, draft) {
   const planningPoints = item.teil3s || item.teil3_stichworte || [];
-  const promptText = item.mA ? `${item.mA.text || ""}\n\n${item.mB?.text || ""}` : `${item.teil2 || ""}\n\n${item.teil3 || ""}`;
-  return `<div class="telc-speaking-layout"><section class="telc-prompt-card"><div class="telc-prompt-heading"><div><span>Thema</span><h2>${escapeHtml(item.titel || item.thema)}</h2></div>${renderTranslationIcon()}</div><div class="telc-evidence-passage telc-speaking-prompt" data-vocabulary-passage="${escapeAttribute(`${key}:prompt`)}"><div class="telc-evidence-content">${item.mA ? `<div class="telc-opinion-grid"><article><strong>${escapeHtml(item.mA.name)}</strong>${formatRichText(item.mA.text)}</article><article><strong>${escapeHtml(item.mB?.name || "Position B")}</strong>${formatRichText(item.mB?.text || "")}</article></div>` : item.teil2 ? `<div class="telc-speaking-text">${formatRichText(item.teil2)}</div>` : ""}</div><div class="telc-arabic-translation" data-telc-arabic-translation dir="rtl" lang="ar" hidden></div></div><h3>Gemeinsam planen</h3><p>${escapeHtml(item.teil3 || "")}</p>${planningPoints.length ? `<ul>${planningPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>` : ""}</section><section class="telc-editor-card"><label for="telc-notes">Notizen und Redemittel</label>${characterToolbar("telc-notes")}<textarea id="telc-notes" data-telc-draft="${escapeAttribute(key)}" placeholder="Notieren Sie Argumente, Beispiele und Redemittel …">${escapeHtml(draft)}</textarea><div><span data-draft-count>${draft.length} Zeichen</span><span>تُحفظ ملاحظاتك تلقائيًا</span></div></section></div>`;
+  return `<div class="telc-speaking-layout"><section class="telc-prompt-card"><span>Thema</span><h2>${escapeHtml(item.titel || item.thema)}</h2>${item.mA ? `<div class="telc-opinion-grid"><article><strong>${escapeHtml(item.mA.name)}</strong>${formatRichText(item.mA.text)}</article><article><strong>${escapeHtml(item.mB?.name || "Position B")}</strong>${formatRichText(item.mB?.text || "")}</article></div>` : item.teil2 ? `<div class="telc-speaking-text">${formatRichText(item.teil2)}</div>` : ""}<h3>Gemeinsam planen</h3><p>${escapeHtml(item.teil3 || "")}</p>${planningPoints.length ? `<ul>${planningPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>` : ""}</section><section class="telc-editor-card"><label for="telc-notes">Notizen und Redemittel</label>${characterToolbar("telc-notes")}<textarea id="telc-notes" data-telc-draft="${escapeAttribute(key)}" placeholder="Notieren Sie Argumente, Beispiele und Redemittel …">${escapeHtml(draft)}</textarea><div><span data-draft-count>${draft.length} Zeichen</span><span>تُحفظ ملاحظاتك تلقائيًا</span></div></section></div>`;
 }
 
 function characterToolbar(targetId) {
@@ -1681,7 +1174,7 @@ function characterToolbar(targetId) {
 }
 
 function formatGapText(item, saved, result, wordLabels = null) {
-  const gaps = new Map(normalizedGapItems(item).map((gap, index) => [String(gap.id), { gap, index }]));
+  const gaps = new Map(item.items.map((gap, index) => [String(gap.id), { gap, index }]));
   return String(item.briefText ?? "").split(/\n{2,}/).map((paragraph) => {
     let cursor = 0;
     let content = "";
@@ -1698,8 +1191,7 @@ function formatGapText(item, saved, result, wordLabels = null) {
           ? Object.fromEntries(options.map((letter, optionIndex) => [letter, splitPairedOption(gap.opts[optionIndex], Boolean(match[2]))]))
           : wordLabels;
         const feedback = feedbackClass(result, saved[String(index)], gap.answer);
-        const answerLabel = optionDisplayLabel(gap.answer, labels);
-        content += `${selectControl(String(index), options, saved[String(index)], `Lücke ${match[1]}${match[2]}`, labels, `telc-inline-select ${feedback}`)}<span class="telc-gap-evidence-answer" aria-label="Richtige Antwort">✓ ${escapeHtml(answerLabel)}</span>`;
+        content += selectControl(String(index), options, saved[String(index)], `Lücke ${match[1]}${match[2]}`, labels, `telc-inline-select ${feedback}`);
       }
       cursor = match.index + match[0].length;
     }
@@ -1713,12 +1205,12 @@ function splitPairedOption(option, useSecondPart) {
   return parts.length > 1 ? parts[useSecondPart ? 1 : 0] : option;
 }
 
-function radioQuestion(questionKey, prompt, options, saved, expected, result, mode, evidence = "", clues = []) {
+function radioQuestion(questionKey, prompt, options, saved, expected, result, mode) {
   return `<fieldset class="telc-radio-question"><legend>${escapeHtml(prompt)}</legend>${options.map((option, index) => {
     const value = mode === "boolean" ? String(index === 0) : mode === "index" ? String(index) : String.fromCharCode(97 + index);
     const stateClass = result ? String(value) === String(expected) ? "is-correct" : String(saved) === value ? "is-wrong" : "" : "";
     return `<label class="${stateClass}"><input type="radio" name="q-${questionKey}" data-telc-answer="${questionKey}" value="${value}" ${String(saved) === value ? "checked" : ""}><span>${escapeHtml(option)}</span></label>`;
-  }).join("")}${evidence ? `<button class="telc-question-evidence" type="button" data-telc-question-evidence aria-expanded="false"><span>Hinweis anzeigen</span></button><p class="telc-question-evidence__panel" data-telc-question-evidence-panel hidden><strong>Richtige Aussage:</strong> ${escapeHtml(evidence)}${clues.length ? `<br><strong>Schlüsselwörter:</strong> ${clues.map((clue) => `<mark>${escapeHtml(clue)}</mark>`).join(" · ")}` : ""}</p>` : ""}</fieldset>`;
+  }).join("")}</fieldset>`;
 }
 
 function selectControl(question, options, saved, placeholder, labels = null, className = "") {
@@ -1747,28 +1239,19 @@ function stripFormatting(value) {
 }
 
 function expectedAnswers(module, item) {
-  if (module === "lesenTeil1" && item.blocks) return Object.fromEntries(item.gaps.map((gap) => [String(gap), item.answerKey[gap]]));
   if (module === "lesenTeil1") return Object.fromEntries(item.answers.map((answer, index) => [String(index), answer]));
   if (module === "lesenTeil2") {
     const questions = item.questions || item.variants?.[0]?.fragen || [];
     return Object.fromEntries(questions.map((question, index) => [String(index), question.answer ?? question.correct]));
   }
   if (module === "lesenTeil3") return Object.fromEntries(item.situations.map((entry, index) => [String(index), entry.answer]));
-  if (module.startsWith("sprachbausteine")) return Object.fromEntries(normalizedGapItems(item).map((entry, index) => [String(index), entry.answer]));
+  if (module.startsWith("sprachbausteine")) return Object.fromEntries(item.items.map((entry, index) => [String(index), entry.answer]));
   if (module.startsWith("hoeren") && item.items?.every((entry) => typeof entry.answer === "boolean")) return Object.fromEntries(item.items.map((entry, index) => [String(index), String(entry.answer)]));
-  if (item.sourceModel && module === "hoerenTeil1") return Object.fromEntries((item.sourceModel.questions || []).map((question, index) => [String(index), question.key]));
-  if (item.sourceModel && module === "hoerenTeil2") return Object.fromEntries((item.items || []).map((question, index) => [String(index), question.answer]));
-  if (item.sourceModel && module === "lesenTeil3") return Object.fromEntries((item.situations || []).map((question, index) => [String(index), question.answer === "true" ? "a" : question.answer === "false" ? "b" : "c"]));
   return null;
 }
 
-function normalizedGapItems(item) {
-  if (Array.isArray(item.items)) return item.items;
-  return Object.entries(item.answers || {}).map(([id, answer]) => ({ id, answer }));
-}
-
 function levelStats(level, data, state) {
-  const keys = Object.entries(data.modules).flatMap(([module, items]) => items.flatMap((item) => Array.from({ length: item.count || 1 }, (_, index) => exerciseKey(level, module, { ...item, key: `${item.key}:${index}` }))));
+  const keys = Object.entries(data.modules).flatMap(([module, items]) => items.map((item) => exerciseKey(level, module, item)));
   const completed = keys.filter((key) => state.completed[key]).length;
   return { total: keys.length, completed, percent: keys.length ? Math.round((completed / keys.length) * 100) : 0 };
 }
@@ -1777,17 +1260,8 @@ function exerciseKey(level, module, item) {
   return `${level}:${module}:${item.key ?? item.id}`;
 }
 
-function modulesForArea(level, areaKey, data) {
-  const area = AREA_META[areaKey];
-  return (data?.areaModules?.[areaKey] || area?.modules || []).filter((module) => data?.modules?.[module]);
-}
-
 function exerciseTitle(item) {
-  const rawTitle = item.title && typeof item.title === "object" ? item.title.de : item.title;
-  return String(rawTitle || item.titel || item.name || item.thema || "Übung")
-    .replace(/\s*جديد\s*✨?/gu, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
+  return item.title || item.titel || item.name || item.thema || "Übung";
 }
 
 function exerciseSubtitle(module, item) {
@@ -1796,8 +1270,7 @@ function exerciseSubtitle(module, item) {
   if (item.items) return `${item.items.length} Aufgaben`;
   if (item.texte) return `${item.texte.length} Texte · ${item.headings.length} Überschriften`;
   if (item.situations) return `${item.situations.length} Situationen`;
-  if (item.blocks) return `${item.gaps?.length || 0} Lücken · C1 Leseverstehen`;
-  if (item.aussagen) return `${item.aussagen.length} Aussagen · تدريب ذاتي بلا مفتاح إجابة`;
+  if (item.aussagen) return `${item.aussagen.length} Aussagen`;
   return MODULE_LABELS[module];
 }
 
@@ -1829,13 +1302,6 @@ function formatRemaining(session) {
 
 function loadingMarkup() {
   return `<div class="telc-loading"><span></span><p>جارٍ تجهيز استوديو الامتحان…</p></div>`;
-}
-
-function renderLoadError(error) {
-  const detail = error?.name === "AbortError"
-    ? "استغرق تحميل التمرين وقتًا أطول من المتوقع. أعد المحاولة."
-    : "تعذر تحميل بيانات هذا القسم. أعد المحاولة أو ارجع إلى القائمة.";
-  return `<div class="telc-loading telc-loading--error"><strong>تعذر تجهيز التمرين</strong><p>${detail}</p><button type="button" class="telc-primary-button" data-telc-reload>إعادة المحاولة</button></div>`;
 }
 
 function inlineRichText(value) {
