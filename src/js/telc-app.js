@@ -1,4 +1,4 @@
-const STORAGE_KEY = "deutschMira:telc:v1";
+const STORAGE_KEY = "deutschRinkute:telc:v1";
 
 const AREA_META = {
   lesen: {

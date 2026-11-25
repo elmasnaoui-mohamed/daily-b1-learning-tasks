@@ -20,7 +20,7 @@ assert.match(html, /id="telcHeaderNav"/);
 assert.match(html, /src\/css\/telc\.css/);
 assert.match(main, /createTelcApp/);
 assert.match(main, /parts\[0\] === "telc"/);
-assert.match(telcApp, /deutschMira:telc:v1/);
+assert.match(telcApp, /deutschRinkute:telc:v1/);
 assert.match(telcApp, /تصحيح الإجابات/);
 assert.match(telcApp, /renderSimulation/);
 assert.match(telcApp, /data-simulation-timer/);
