@@ -1,6 +1,6 @@
 # TELC Prüfungsstudio
 
-The TELC experience is an original module inside the Deutsch mit Mira learning
+The TELC experience is an original module inside the Deutsch mit Rinkute learning
 platform. It uses the same `index.html`, header, hash router, visual tokens, and
 browser-local persistence as the course experience.
 

@@ -8,7 +8,7 @@ import {
 } from "./src/js/course-data.js";
 import { createProgressStore } from "./src/js/progress-store.js";
 import { loadLevelDocumentation } from "./src/js/documentation-data.js";
-import { createTelcApp } from "./src/js/telc-app.js";
+import { createTelcApp } from "./src/js/telc-app.js?v=20261124-2";
 
 const BACK_TO_TOP_THRESHOLD = 500;
 const BACK_TO_TOP_COLLISION_SELECTOR = "a, button:not(#backToTopButton), input, select, textarea, .site-footer p";
@@ -296,7 +296,7 @@ function parseRoute(hash) {
   if (parts[0] === "telc") {
     return {
       view: "telc",
-      level: ["B1", "B2"].includes(parts[1]) ? parts[1] : null,
+      level: ["B1", "B2", "C1"].includes(parts[1]) ? parts[1] : null,
       area: parts[2] || null,
       module: parts[3] || null,
       exercise: parts[4] || null,
@@ -316,7 +316,7 @@ function renderDashboard() {
   elements.lessonView.hidden = true;
   elements.telcView.hidden = true;
   document.body.classList.remove("is-telc-view");
-  document.title = `${state.activeLevel} | Deutsch mit Mira`;
+  document.title = `${state.activeLevel} | Deutsch mit Rinkute`;
   renderGlobalProgress();
   renderLevelTabs();
   renderLevelSummary();

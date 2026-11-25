@@ -31,6 +31,26 @@ assert.match(telcApp, /data-telc-custom-select/);
 assert.match(telcApp, /formatGapText/);
 assert.match(telcApp, /data-telc-character/);
 assert.match(telcApp, /telc-checkmark/);
+assert.match(telcApp, /data-telc-evidence-toggle/);
+assert.match(telcApp, /is-evidence-visible/);
+assert.match(telcApp, /withHeadingEvidence/);
+assert.match(telcApp, /data-telc-question-evidence/);
+assert.match(telcApp, /data-telc-match-evidence/);
+assert.match(telcApp, /Keine passende Anzeige/);
+assert.match(telcApp, /answerOptions/);
+assert.match(telcApp, /data-telc-gap-evidence/);
+assert.match(telcApp, /telc-gap-evidence-answer/);
+assert.match(telcApp, /entry\.answer \? "Richtig" : "Falsch"/);
+assert.match(telcApp, /data-telc-translate-passage/);
+assert.match(telcApp, /Translator\.create/);
+assert.match(telcCss, /\.telc-inline-tools/);
+assert.match(telcApp, /data-writing-timer/);
+assert.match(telcApp, /data-word-target/);
+assert.match(telcApp, /countWords/);
+assert.match(telcApp, /replace\(\/\\s\*جديد/);
+assert.match(telcApp, /M9\.7 17\.7/);
+assert.match(telcCss, /\.telc-evidence-toggle/);
+assert.match(telcCss, /\.telc-evidence-passage\.is-evidence-visible/);
 assert.doesNotMatch(telcApp, /\bconfirm\(/);
 assert.match(telcApp, /class="telc-level-card"[^>]+href=/);
 assert.match(telcApp, /العودة للقائمة/);
@@ -54,6 +74,8 @@ for (const path of [
   "src/css/telc.css",
   "src/data/telc/b1.json",
   "src/data/telc/b2.json",
+  "scripts/audit-telc-data.mjs",
+  "scripts/audit-telc-coverage.mjs",
 ]) {
   await access(new URL(path, new URL("../", import.meta.url)));
 }

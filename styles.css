@@ -349,6 +349,16 @@ a {
   gap: 6px;
 }
 
+.telc-header-nav__toggle {
+  display: none;
+}
+
+.telc-header-nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .telc-header-nav[hidden] {
   display: none;
 }
@@ -358,7 +368,7 @@ a {
   min-height: 40px;
   align-items: center;
   justify-content: center;
-  padding: 7px 11px;
+  padding: 8px 11px;
   border: 1px solid var(--color-border);
   border-radius: 10px;
   background: var(--color-surface-muted);
@@ -2633,23 +2643,76 @@ a {
 
   .header-actions {
     gap: 7px;
-    overflow-x: auto;
-    max-width: calc(100vw - 190px);
-    scrollbar-width: none;
-  }
-
-  .header-actions::-webkit-scrollbar {
-    display: none;
+    overflow: visible;
+    max-width: none;
   }
 
   .telc-header-nav {
-    gap: 4px;
+    position: relative;
+    gap: 0;
+  }
+
+  .telc-header-nav__toggle {
+    display: inline-grid;
+    width: 42px;
+    height: 40px;
+    place-items: center;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-surface-muted);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+  }
+
+  .telc-header-nav__toggle:hover {
+    border-color: var(--color-border-strong);
+    background: var(--color-surface-hover);
+    color: var(--color-text-primary);
+  }
+
+  .telc-header-nav__toggle:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+  .telc-header-nav__toggle svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-width: 2;
+  }
+
+  .telc-header-nav__menu {
+    position: absolute;
+    z-index: 21;
+    top: calc(100% + 8px);
+    inset-inline-end: 0;
+    display: none;
+    width: 180px;
+    max-width: calc(100vw - 32px);
+    min-width: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: var(--color-header);
+    box-shadow: 0 12px 30px var(--color-shadow);
+  }
+
+  .telc-header-nav.is-menu-open .telc-header-nav__menu {
+    display: flex;
   }
 
   .telc-header-nav a {
+    justify-content: flex-start;
     min-height: 38px;
     padding-inline: 9px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .telc-link {

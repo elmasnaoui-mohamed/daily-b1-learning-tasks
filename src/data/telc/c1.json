@@ -1,0 +1,1776 @@
+{
+  "schemaVersion": 1,
+  "level": "C1",
+  "areaModules": {
+    "lesen": [
+      "lesenTeil1",
+      "lesenTeil2",
+      "lesenTeil3"
+    ],
+    "sprachbausteine": [
+      "sprachbausteineTeil1"
+    ],
+    "hoeren": [
+      "hoerenTeil1",
+      "hoerenTeil2",
+      "hoerenTeil3"
+    ],
+    "schreiben": [
+      "schreiben"
+    ]
+  },
+  "modules": {
+    "lesenTeil1": [
+      {
+        "key": "c1_lesen_teil1_die_maus_als_stimmungsbarometer",
+        "title": "Die Maus als Stimmungsbarometer",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_goldvorkommen_deutschland",
+        "title": "Ein Edelmetall mit langer Geschichte: Goldvorkommen in Deutschland",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_aufzug_geschichte",
+        "title": "Der Lift – eine Würdigung",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_aufzug_bewegte_geschichte",
+        "title": "Die bewegte Geschichte des Aufzugs",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_eine_box_veraendert_die_welt",
+        "title": "Eine Box verändert die Welt",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_alternative_heilmethoden",
+        "title": "Alternative Heilmethoden",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_alternative_heilmethoden_beispiel_z",
+        "title": "Alternative Heilmethoden (Beispiel z)",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_satzzeichen_maechtige_werkzeuge",
+        "title": "Satzzeichen, mächtige Werkzeuge",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_satzzeichen_maechtige_werkzeuge_beispiel_z",
+        "title": "Satzzeichen, mächtige Werkzeuge (Beispiel z)",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_sprache_der_tiere",
+        "title": "Die Sprache der Tiere",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_sprache_der_tiere_beispiel_z",
+        "title": "Die Sprache der Tiere (Beispiel z)",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_piraten_frueher_und_heute",
+        "title": "Piraten früher und heute",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_auswirkungen_von_laerm",
+        "title": "Die Auswirkungen von Lärm",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_gesichtserkennung_b",
+        "title": "Gesichtserkennung",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_der_alte_mann_und_die_woerter",
+        "title": "Der alte Mann und die Wörter",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_der_alte_mann_und_die_woerter_version_2",
+        "title": "Der alte Mann und die Wörter (Version 2)",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_neue_sprache_nie_zu_spaet",
+        "title": "Für eine neue Sprache ist es nie zu spät",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_zimmerpflanzen_wohnzimmer",
+        "title": "Wie Zimmerpflanzen die Wohnzimmer eroberten",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_schreiben_oder_tippen",
+        "title": "Schreiben oder tippen – über die Vorteile der Handschrift",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_wochenendschlaf",
+        "title": "Wochenendschlaf – mehr Schaden als Nutzen?",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_geschichte_der_jeans",
+        "title": "Die Geschichte der Jeans",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_geschichte_des_supermarkts",
+        "title": "Die Geschichte des Supermarkts",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_polaroid_kultkamera",
+        "title": "Polaroid – die Geschichte der Kultkamera",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_rechtschreibung",
+        "title": "Rechtschreibung",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_alten_aegypten",
+        "title": "Erforschung des Alten Ägypten",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil1_hoehlenforschung",
+        "title": "Höhlenforschung – Expeditionen ins Erdinnere",
+        "count": 1,
+        "description": "C1 Lesen Teil 1",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "lesenTeil2": [
+      {
+        "key": "c1_lesen_teil2_s2_m1",
+        "title": "Fernstudenten einsam aber virtuelle Verbindungen",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_iss_dich_gluecklich",
+        "title": "Iss dich glücklich",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_s2_m3",
+        "title": "Akademisches Viertel",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_wenn_der_dozent_zehn_jahre_juenger_ist",
+        "title": "Wenn der Dozent zehn Jahre jünger ist",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_der_sinn_und_unsinn_von_abschlussarbeiten",
+        "title": "Der Sinn und Unsinn von Abschlussarbeiten",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_die_sprache_der_wissenschaft_geht_es_nicht_auch_einfacher",
+        "title": "Die Sprache der Wissenschaft: Geht es nicht auch einfacher?",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_doppelbelastung_im_studium",
+        "title": "Doppelbelastung im Studium",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_s2_m8",
+        "title": "Machtvoller Schein und scheinbare Macht",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_selbermachen_als_trend",
+        "title": "Selbermachen als Trend",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_traeume",
+        "title": "Träume",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_macht_reisen_gluecklich",
+        "title": "Macht Reisen Glücklich?",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_allein_im_restaurant",
+        "title": "Allein im Restaurant",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_nachhaltiger_konsum",
+        "title": "Nachhaltiger Konsum",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_s2_m14",
+        "title": "Präsentationen an der Uni",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_ruf_mich_nicht_an",
+        "title": "Ruf mich nicht an",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_smartwatches_fuer_kinder",
+        "title": "Smartwatches für Kinder",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_die_neue_sehnsucht_nach_der_natur",
+        "title": "Die neue Sehnsucht nach der Natur",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_selfie",
+        "title": "Selfie",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil2_p87_l2_08",
+        "title": "Eltern von heute",
+        "count": 1,
+        "description": "C1 Lesen Teil 2",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "lesenTeil3": [
+      {
+        "key": "c1-lesen-teil-3-reisen",
+        "title": "Reisen 16",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1-lesen-teil-3-schimpansen-und-gorilla",
+        "title": "Schimpansen und Gorilla 19",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1-lesen-teil-3-camping",
+        "title": "Camping 21",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1-lesen-teil-3-mehrsprachigkeit",
+        "title": "Mehrsprachigkeit 29",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m30",
+        "title": "Navigation 30",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m31",
+        "title": "Umweltschutz oder Insel 31",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m32",
+        "title": "Erika Fuchs - comic übersetzerin 32",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m33",
+        "title": "Bundesfreiwilligendienst 33",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m34",
+        "title": "Essen in der Mensa 34",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m35",
+        "title": "kleingarten 35",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m36",
+        "title": "Johan Friedrich oder Gold oder Porzellan 36",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m38",
+        "title": "Präsentation an der Uni oder zweitsStudium 38",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m42",
+        "title": "Schlangenhaargurke aus Nigeria 42",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_s3_m43",
+        "title": "SpielzeugIndustrie 43",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_04",
+        "title": "Tulpen",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_06",
+        "title": "Wie Kinder Sprachen lernen",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_07",
+        "title": "Was Deutschland von den Finnen lernen kann",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_09",
+        "title": "MINT-Fächer – Nachwuchs",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_10",
+        "title": "Schweden umwirbt deutsche Ärzte",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_11",
+        "title": "Zukunftsperspektiven für die Verpackungsindustrie",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_13",
+        "title": "Sabbatical",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_25",
+        "title": "Skuddenschafe",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_lesen_teil3_p29_l3_38",
+        "title": "Tourismus in der Antarktis",
+        "count": 1,
+        "description": "C1 Lesen Teil 3",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "sprachbausteineTeil1": [
+      {
+        "key": "c1_sprachbausteine_s4_m8",
+        "title": "Bio-giftiger als Chemie",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m9",
+        "title": "Die Ordnung der Dinge",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m15",
+        "title": "Sprache: Wenn Wörter verschwinden",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m16",
+        "title": "Wie kommen Hochs und Tiefs zu ihren Namen?",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m18",
+        "title": "Bio-giftiger als Chemie",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m19",
+        "title": "Wie das Geld in die Welt kam",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m20",
+        "title": "Die Ordnung der Dinge",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m21",
+        "title": "Eine kurze Geschichte der Werbung",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m23",
+        "title": "Hat der Hörsaal noch Zukunft?",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m31",
+        "title": "Die chronobiologischen Rhythmen der Kinder",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m32",
+        "title": "Lernen wird zum Spiel",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m34",
+        "title": "Über die Anfänge der Restaurantkultur",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m35",
+        "title": "Warum Spielen Kinder schlau macht",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m37",
+        "title": "Diktate – lernpsychologisch ungünstig?",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m39",
+        "title": "Unterschätzte Pflanzen",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_s4_m41",
+        "title": "Wieso wir irgendwann aufhören, neue Musik zu hören",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_p87_sb_01",
+        "title": "Ein Tag mit …",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_p87_sb_02",
+        "title": "Ehrenamtliches Engagement",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_p87_sb_10",
+        "title": "Das Gehirn eines Rauchers",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_sprachbausteine_p87_sb_09",
+        "title": "Konkurrenz und Kooperation",
+        "count": 1,
+        "description": "C1 Sprachbausteine",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "hoerenTeil1": [
+      {
+        "key": "c1_hoeren_teil1_s5_m15",
+        "title": "Studienwahl",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m16",
+        "title": "Glück",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m17",
+        "title": "Eltern und Studium",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m19",
+        "title": "Wohnkredit/Immobilien",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m21",
+        "title": "Tempolimit oder Geschwindigkeitslimit",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m22",
+        "title": "Pendeln",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m23",
+        "title": "Studiengebühren",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m32",
+        "title": "Studienfinanzierung",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m36",
+        "title": "Grünflächen/gärten",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m38",
+        "title": "Nebenjob",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m40",
+        "title": "Ernährung",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_s5_m41",
+        "title": "Hausarbeiten",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_p87_h1_01",
+        "title": "Gentechnik",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_p87_h1_02",
+        "title": "Umweltschutz",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_p87_h1_03",
+        "title": "Wikipedia",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil1_p87_h1_10",
+        "title": "Internet",
+        "count": 1,
+        "description": "C1 Hören Teil 1",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "hoerenTeil2": [
+      {
+        "key": "c1_hoeren_teil2_s6_m1",
+        "title": "Fischer Unternehmen",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m2",
+        "title": "Fahrrad",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m3",
+        "title": "Das Start-Up Von Niklas",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m4",
+        "title": "Schlafstörung für Kinder",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m5",
+        "title": "Mode",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m6",
+        "title": "Pflanzen Kommunizieren",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m7",
+        "title": "Anna Palmers Bolg",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m8",
+        "title": "Umweltfreundliche Städte",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m9",
+        "title": "Gärten",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m10",
+        "title": "Roboter",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m11",
+        "title": "Forschung Afrika",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m12",
+        "title": "Finja",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m13",
+        "title": "Landflucht/ Metropolen",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m14",
+        "title": "Beruf wechseln",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m15",
+        "title": "Drohnen",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m16",
+        "title": "Schwiegermutter",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m17",
+        "title": "Raumfahrt, ESA",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m18",
+        "title": "Astronaut",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil2_s6_m19",
+        "title": "Bürger Forschung",
+        "count": 1,
+        "description": "C1 Hören Teil 2",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "hoerenTeil3": [
+      {
+        "key": "c1_hoeren_teil3_p29_h3_01",
+        "title": "Literarische Übersetzung",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_02",
+        "title": "Legasthenie und Dyskalkulie",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_04",
+        "title": "Gründung von privaten Hochschulen",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_05",
+        "title": "Bedeutung von Spielen",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_06",
+        "title": "Speed Reading",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_08",
+        "title": "Hochbegabte und Intelligenz",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_09",
+        "title": "Begabtenförderung",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_12",
+        "title": "Mathematische Begabung",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_13",
+        "title": "Die Macht der Gewohnheit",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_15",
+        "title": "Neugier",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_18",
+        "title": "Etikette",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_21",
+        "title": "Smalltalk",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_24",
+        "title": "Kreativität als Schlüsselkompetenz",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_30",
+        "title": "Schlaf – ein rätselhaftes Phänomen",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_31",
+        "title": "Work-Life-Balance",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_32",
+        "title": "Introversion",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_33",
+        "title": "Wie Natur gegen Stress hilft",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_35",
+        "title": "Märchen und andere fantastische Geschichten",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_38",
+        "title": "Die Funktion von Vorbildern",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_hoeren_teil3_p29_h3_39",
+        "title": "Selbstdisziplin",
+        "count": 1,
+        "description": "C1 Hören Teil 3",
+        "externalUrl": "local-missing"
+      }
+    ],
+    "schreiben": [
+      {
+        "key": "c1_schreiben_001",
+        "title": "Studiengebühren",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_002",
+        "title": "Tabubrüche in der Werbung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_003",
+        "title": "Ganztagsschulen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_004",
+        "title": "Aktualität von Philosophie",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_005",
+        "title": "Vegetarismus",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_006",
+        "title": "Handyverbot an Schulen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_007",
+        "title": "Soziale Netzwerke",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_008",
+        "title": "Studiengebühren",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_009",
+        "title": "Tierversuche",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_010",
+        "title": "Atomenergie",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_011",
+        "title": "Mindestlohn",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_012",
+        "title": "Künstliche Intelligenz",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_013",
+        "title": "Klimawandel",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_014",
+        "title": "Globalisierung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_015",
+        "title": "Soziale Ungleichheit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_016",
+        "title": "Dynamik beim Datenaustausch",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_017",
+        "title": "Freizeitplanung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_018",
+        "title": "Ernährungstrends / Lebensmittelkunde",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_019",
+        "title": "Helden",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_020",
+        "title": "Literatur",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_021",
+        "title": "Gruppenarbeit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_022",
+        "title": "Selbstloses Handeln",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_023",
+        "title": "Finanzierung von Gesundheitsleistungen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_024",
+        "title": "Eintritt für Museen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_025",
+        "title": "Wahrheit um jeden Preis",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_026",
+        "title": "Karriere um jeden Preis",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_027",
+        "title": "Reisen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_028",
+        "title": "Fertiggerichte",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_029",
+        "title": "Rentensteuer",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_030",
+        "title": "Verbot kommerzieller Werbung in Städten",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_031",
+        "title": "Macht",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_032",
+        "title": "Gesundheit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_033",
+        "title": "Roboter als Arbeitskräfte",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_034",
+        "title": "Anonymität in sozialen Netzwerken",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_035",
+        "title": "Literaturunterricht in der Schule",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_036",
+        "title": "Begrenzung von Managergehältern",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_037",
+        "title": "Zukunft der ärztlichen Versorgung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_038",
+        "title": "Religionsunterricht in der Schule",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_039",
+        "title": "Konsumverzicht",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_040",
+        "title": "Medikamente",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_041",
+        "title": "Wissen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_042",
+        "title": "Trend zum Landleben",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_043",
+        "title": "Besteuerung hoher Vermögen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_044",
+        "title": "Höflichkeit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_045",
+        "title": "Meinungsfreiheit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_046",
+        "title": "Private Forschungsförderung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_047",
+        "title": "Arbeit im Ausland",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_048",
+        "title": "Bildung und Rationalität",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_049",
+        "title": "Besitz",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_050",
+        "title": "Preis und Qualität von Produkten",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_051",
+        "title": "Umweltsteuer auf Flugreisen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_052",
+        "title": "Höhere Steuern auf ungesunde Lebensmittel",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_053",
+        "title": "Texte in Papierform",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_054",
+        "title": "Rolle der Hochschulprofessoren in der Lehre",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_055",
+        "title": "Umgang mit den Eltern im Alter",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_056",
+        "title": "Bescheidenheit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_057",
+        "title": "Kooperationen zwischen Universitäten und Wirtschaft",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_058",
+        "title": "Unzufriedenheit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_059",
+        "title": "Eintrittspreise für Schwimmbäder",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_060",
+        "title": "Offenheit in Beziehungen zu Menschen oder Isolation",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_061",
+        "title": "Leistungsbewertung in den Schulfächern Sport, Musik und Kunst",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_062",
+        "title": "Das Informationsangebot in unserer komplexen Welt",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_063",
+        "title": "Politische Reformen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_064",
+        "title": "Identität geht durch den Magen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_065",
+        "title": "Manipulation von Informationen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_066",
+        "title": "Gesellschaftliche und technische Veränderungen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_067",
+        "title": "Klimawandel und Umwelt",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_068",
+        "title": "Bildung und Digitalisierung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_069",
+        "title": "Migration und Integration",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_070",
+        "title": "Technik im Alltag",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_071",
+        "title": "Gesundheit und Ernährung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_072",
+        "title": "Kulturelle Identität",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_073",
+        "title": "Nachhaltiger Konsum",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_074",
+        "title": "Freiheit und Verantwortung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_075",
+        "title": "Medien und Meinungsbildung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_076",
+        "title": "Sport und Gesellschaft",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_077",
+        "title": "Globalisierung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_078",
+        "title": "Wissenschaft und Ethik",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_079",
+        "title": "Arbeitswelt im Wandel",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_080",
+        "title": "Soziale Netzwerke",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_081",
+        "title": "Energie und Umwelt",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_082",
+        "title": "Jugend und Medien",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_083",
+        "title": "Kunst und Gesellschaft",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_084",
+        "title": "Wissenschaft und Gesellschaft",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_085",
+        "title": "Demokratie und Politik",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_086",
+        "title": "Mobilität und Verkehr",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_087",
+        "title": "Religion und Gesellschaft",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_088",
+        "title": "Tourismus und Kultur",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_089",
+        "title": "Wissenschaft und Technik",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_090",
+        "title": "Arbeit und Freizeit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_091",
+        "title": "Umweltverschmutzung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_092",
+        "title": "Schule und Vermittlung von Inhalten",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_093",
+        "title": "Bildungsangebote für Kinder",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_094",
+        "title": "Ganztagsschulen",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_095",
+        "title": "Aktualität von Philosophie",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_096",
+        "title": "Wahlpflicht",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_097",
+        "title": "Privatsphäre oder Sicherheit",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_098",
+        "title": "Einflussnahme des Staates auf die Wirtschaft",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_099",
+        "title": "Rolle des Sportunterrichts in der Schule",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_100",
+        "title": "Urheberrecht für Bücher",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_101",
+        "title": "Zugangsbeschränkungen für Studiengänge",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_102",
+        "title": "Studium der Geisteswissenschaften",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_103",
+        "title": "Egoismus",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_104",
+        "title": "Vor- und Nachteile veganer Ernährung",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      },
+      {
+        "key": "c1_schreiben_105",
+        "title": "Allgemeingültigkeit der Menschenrechte",
+        "count": 1,
+        "description": "C1 Schreiben",
+        "externalUrl": "local-missing"
+      }
+    ]
+  }
+}
